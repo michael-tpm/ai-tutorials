@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bảng tuần hoàn tài liệu PM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600;700&family=Lexend:wght@500;600;700&family=Noto+Sans+JP:wght@400;600&display=swap">
+<style>
+/* Layout: bảng tuần hoàn — 11 "họ" (mỗi họ = 1 câu hỏi dự án) xếp lưới, mỗi tài liệu là 1 ô nguyên tố; ngăn kéo chi tiết bên phải; các phần học (họ xBS, chữ V, đừng nhầm, luyện nhớ) bên dưới */
+:root {
+  --paper: #f3f5f8;
+  --sheet: #ffffff;
+  --ink: #131b29;
+  --muted: #5a6476;
+  --line: #d8dee7;
+  --accent: #24508f;
+  --accent-soft: #e5edf8;
+  --good: #1f7a46;
+  --good-soft: #e3f3e9;
+  --bad: #b3372a;
+  --bad-soft: #fbe8e5;
+  /* sắc độ ô theo họ: hsl(var(--h) S L) */
+  --ts: 72%; --tl: 95%; --bs: 42%; --bl: 80%; --ss: 62%; --sl: 30%;
+  --font-display: "Lexend", "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sym: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e131b; --sheet: #151c27; --ink: #e6eaf0; --muted: #9ba6b6; --line: #273142;
+    --accent: #8db3ea; --accent-soft: #1c2b42; --good: #7fd3a1; --good-soft: #15301f; --bad: #f09a8b; --bad-soft: #3a1f1b;
+    --ts: 28%; --tl: 17%; --bs: 30%; --bl: 33%; --ss: 72%; --sl: 74%;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e131b; --sheet: #151c27; --ink: #e6eaf0; --muted: #9ba6b6; --line: #273142;
+  --accent: #8db3ea; --accent-soft: #1c2b42; --good: #7fd3a1; --good-soft: #15301f; --bad: #f09a8b; --bad-soft: #3a1f1b;
+  --ts: 28%; --tl: 17%; --bs: 30%; --bl: 33%; --ss: 72%; --sl: 74%;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body {
+  background: var(--paper); color: var(--ink); font: 15px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--paper); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 24px 80px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.12; letter-spacing: -0.015em; }
+h2 { font-size: clamp(20px, 2.6vw, 26px); line-height: 1.25; }
+.lead { color: var(--muted); max-width: 68ch; margin: 10px 0 0; }
+.jp { font-family: var(--font-jp); }
+.sym { font-family: var(--font-sym); }
+button { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* câu chuyện 11 câu hỏi */
+.story { display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; margin: 18px 0 0; padding: 0; list-style: none; }
+.story li { display: flex; align-items: center; gap: 4px; }
+.story button { border: 1px solid hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); border-radius: 999px; padding: 3px 10px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.story li:not(:last-child)::after { content: "→"; color: var(--muted); font-size: 12px; }
+
+nav.sec { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); margin-top: 22px; display: flex; gap: 2px; overflow-x: auto; }
+nav.sec a { flex: 0 0 auto; padding: 11px 12px; color: var(--muted); text-decoration: none; font: 600 13.5px var(--font-display); border-bottom: 2px solid transparent; }
+nav.sec a:hover { color: var(--ink); }
+nav.sec a.on { color: var(--accent); border-bottom-color: var(--accent); }
+section { scroll-margin-top: 56px; padding-top: 34px; }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 10px 20px; margin-bottom: 14px; }
+.sec-head p { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+
+/* thanh lọc */
+.filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 14px; }
+.search { position: relative; flex: 1 1 240px; min-width: 0; max-width: 420px; }
+.search input { width: 100%; font: inherit; padding: 8px 12px 8px 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--sheet); color: var(--ink); }
+.search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.phases { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.phases span.lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-right: 2px; }
+.phases button { border: 1px solid var(--line); background: var(--sheet); border-radius: 6px; padding: 4px 9px; font-size: 13px; cursor: pointer; display: inline-flex; gap: 6px; align-items: baseline; }
+.phases button b { font: 600 12px var(--font-sym); color: var(--muted); }
+.phases button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.phases button[aria-pressed="true"] b { color: var(--accent); }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* bảng tuần hoàn */
+.table { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 268px), 1fr)); gap: 14px; }
+.fam { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 12px; min-width: 0; }
+.fam header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+.fam .en { font: 600 11px var(--font-sym); letter-spacing: .08em; color: hsl(var(--h) var(--ss) var(--sl)); }
+.fam h3 { font-size: 17px; }
+.fam .n { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(98px, 1fr)); gap: 8px; }
+.tile {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left;
+  min-height: 112px; padding: 8px 9px 9px; border-radius: 6px; cursor: pointer;
+  background: hsl(var(--h) var(--ts) var(--tl)); border: 1px solid hsl(var(--h) var(--bs) var(--bl));
+  transition: transform .12s ease, opacity .2s ease, box-shadow .12s ease;
+}
+.tile:hover { transform: translateY(-2px); box-shadow: 0 4px 14px -6px hsl(var(--h) 40% 30% / .45); }
+.tile .no, .tile .ph { font: 600 10.5px var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); opacity: .8; font-variant-numeric: tabular-nums; }
+.tile .ph { position: absolute; top: 7px; right: 8px; }
+.tile .s { font: 700 25px/1.05 var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); letter-spacing: -0.02em; margin-top: 4px; }
+.tile .tg { font: 600 10px var(--font-body); color: hsl(var(--h) var(--ss) var(--sl)); text-transform: uppercase; letter-spacing: .05em; }
+.tile .nm { font-size: 11px; line-height: 1.3; color: var(--ink); margin-top: 3px; }
+.tile .j { font: 10.5px/1.3 var(--font-jp); color: var(--muted); margin-top: auto; padding-top: 3px; }
+.tile.dim { opacity: .22; }
+.legend-note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+.legend-note .sym { font-size: 12px; }
+
+/* ngăn kéo chi tiết */
+.backdrop { position: fixed; inset: 0; background: rgb(8 12 20 / .42); z-index: 40; }
+aside.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 41; width: min(520px, 100%);
+  background: var(--sheet); border-left: 1px solid var(--line); overflow-y: auto;
+  padding: calc(18px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) 22px;
+  box-shadow: -18px 0 40px -24px rgb(0 0 0 / .4);
+}
+.d-top { display: flex; gap: 14px; align-items: flex-start; }
+.d-badge { flex: 0 0 auto; width: 84px; padding: 8px; border-radius: 8px; background: hsl(var(--h) var(--ts) var(--tl)); border: 1px solid hsl(var(--h) var(--bs) var(--bl)); }
+.d-badge .no { font: 600 11px var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); }
+.d-badge .s { font: 700 26px/1.1 var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); }
+.d-badge .tg { font: 600 10px var(--font-body); color: hsl(var(--h) var(--ss) var(--sl)); text-transform: uppercase; }
+.d-names { min-width: 0; flex: 1; }
+.d-names h2 { font-size: 20px; }
+.d-names .vi { margin: 2px 0 0; color: var(--muted); }
+.d-names .jpn { margin: 4px 0 0; font: 15px var(--font-jp); }
+.d-names .jpn small { font: 12.5px var(--font-body); color: var(--muted); margin-left: 6px; }
+.close { flex: 0 0 auto; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--line); background: var(--sheet); cursor: pointer; font-size: 18px; line-height: 1; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+.chip { font-size: 12px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.chip.f { border-color: hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); font-weight: 600; }
+.d-q { margin: 16px 0 0; padding: 12px 14px; border-radius: 8px; background: var(--accent-soft); color: var(--ink); font: 600 16px/1.45 var(--font-display); }
+.d-q span { display: block; font: 600 11px var(--font-body); text-transform: uppercase; letter-spacing: .07em; color: var(--accent); margin-bottom: 2px; }
+.d-what { margin: 12px 0 0; }
+dl.d-rows { margin: 14px 0 0; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px 14px; border-top: 1px solid var(--line); padding-top: 14px; }
+dl.d-rows dt { font: 600 12px var(--font-body); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding-top: 2px; }
+dl.d-rows dd { margin: 0; min-width: 0; }
+dl.d-rows ul { margin: 0; padding-left: 18px; }
+.hook { background: hsl(var(--h) var(--ts) var(--tl)); border-radius: 6px; padding: 6px 10px; font-weight: 600; }
+.say { font-style: italic; }
+.ex { margin: 16px 0 0; border-top: 1px solid var(--line); padding-top: 14px; }
+.ex h3 { font: 600 12px var(--font-body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 8px; }
+.ex .scroll { overflow-x: auto; }
+.ex table { border-collapse: collapse; font-size: 13px; min-width: 100%; }
+.ex th, .ex td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+.ex th { background: var(--paper); font-weight: 600; }
+.ex svg { width: 100%; height: auto; display: block; }
+.ex .mini-tree { margin: 0; padding-left: 18px; font-size: 13.5px; }
+.rel { margin: 16px 0 0; border-top: 1px solid var(--line); padding-top: 14px; }
+.rel h3 { font: 600 12px var(--font-body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 8px; }
+.rel button, .linkchip { border: 1px solid hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); border-radius: 6px; padding: 3px 9px; font: 600 13px var(--font-sym); cursor: pointer; margin: 0 6px 6px 0; }
+.d-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 18px; }
+.btn { font: 500 13.5px var(--font-body); padding: 8px 14px; border: 1px solid var(--accent); color: var(--accent); background: var(--sheet); border-radius: 8px; cursor: pointer; }
+.btn:hover { background: var(--accent-soft); }
+.btn.solid { background: var(--accent); color: var(--sheet); }
+
+/* họ xBS */
+.lens { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.lens button { border: 1px solid hsl(130 var(--bs) var(--bl)); background: var(--sheet); border-radius: 6px; padding: 5px 11px; font: 600 13px var(--font-sym); cursor: pointer; color: var(--ink); }
+.lens button[aria-pressed="true"] { background: hsl(130 var(--ts) var(--tl)); color: hsl(130 var(--ss) var(--sl)); border-color: hsl(130 var(--ss) var(--sl)); }
+.panel { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.lens-title { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin-bottom: 8px; }
+.lens-title b { font: 700 22px var(--font-sym); color: hsl(130 var(--ss) var(--sl)); }
+.lens-title span { color: var(--muted); }
+.svgbox { overflow-x: auto; }
+.svgbox svg { display: block; min-width: 760px; width: 100%; height: auto; }
+.tree-node rect { fill: hsl(130 var(--ts) var(--tl)); stroke: hsl(130 var(--bs) var(--bl)); }
+.tree-node.root rect { fill: hsl(130 var(--ss) var(--sl)); stroke: none; }
+.tree-node text { fill: var(--ink); font: 500 12px var(--font-body); }
+.tree-node.root text { fill: var(--sheet); font: 600 13.5px var(--font-display); }
+.tree-node.l1 text { font: 600 12.5px var(--font-body); }
+.tree-edge { stroke: var(--muted); stroke-opacity: .5; fill: none; stroke-width: 1.2; }
+.tree-node text.chg { animation: pop .35s ease; }
+@keyframes pop { from { opacity: 0; } to { opacity: 1; } }
+.formulas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; margin-top: 14px; }
+.formula { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--sheet); }
+.formula .eq { font: 600 14.5px var(--font-sym); }
+.formula .eq em { font-style: normal; color: hsl(270 var(--ss) var(--sl)); }
+.formula small { display: block; color: var(--muted); margin-top: 2px; }
+
+/* chữ V */
+.v-node rect { fill: var(--sheet); stroke: var(--line); }
+.v-node.left rect { fill: hsl(212 var(--ts) var(--tl)); stroke: hsl(212 var(--bs) var(--bl)); }
+.v-node.right rect { fill: hsl(315 var(--ts) var(--tl)); stroke: hsl(315 var(--bs) var(--bl)); }
+.v-node.bottom rect { fill: hsl(190 var(--ts) var(--tl)); stroke: hsl(190 var(--bs) var(--bl)); }
+.v-node .t { fill: var(--ink); font: 600 15px var(--font-jp); }
+.v-node .v { fill: var(--muted); font: 12px var(--font-body); }
+.v-doc { fill: var(--accent); font: 600 12px var(--font-sym); cursor: pointer; text-decoration: underline; text-decoration-color: transparent; }
+.v-doc:hover { text-decoration-color: currentColor; }
+.v-line { stroke: var(--ink); stroke-opacity: .35; stroke-width: 2; fill: none; }
+.v-pair { stroke: var(--accent); stroke-opacity: .55; stroke-width: 1.4; stroke-dasharray: 5 5; fill: none; }
+.v-lbl { fill: var(--accent); font: 600 11px var(--font-body); }
+.v-axis { fill: var(--muted); font: 600 11px var(--font-body); letter-spacing: .06em; }
+.mirror { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13.5px; }
+.mirror th, .mirror td { border-bottom: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: top; }
+.mirror th { font: 600 12px var(--font-body); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.mirror td.mid { color: var(--accent); text-align: center; white-space: nowrap; }
+
+/* đừng nhầm */
+.pairs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; }
+.pair { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 14px; min-width: 0; }
+.pair h3 { font: 700 17px var(--font-sym); display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.pair h3 i { font: 600 12px var(--font-body); color: var(--muted); font-style: normal; }
+.pair ul { margin: 8px 0 0; padding-left: 18px; font-size: 14px; }
+.pair .tip { margin: 10px 0 0; padding: 7px 10px; border-radius: 6px; background: var(--accent-soft); font-size: 13.5px; }
+
+/* luyện nhớ */
+.quiz { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 18px; max-width: 760px; }
+.qmodes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.qmodes button { border: 1px solid var(--line); background: var(--sheet); border-radius: 6px; padding: 6px 12px; font-size: 13.5px; cursor: pointer; }
+.qmodes button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.qhead { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.qtext { font: 600 18px/1.45 var(--font-display); margin: 8px 0 14px; }
+.qopts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 8px; }
+.qopt { text-align: left; border: 1px solid var(--line); background: var(--sheet); border-radius: 8px; padding: 9px 12px; cursor: pointer; display: flex; gap: 10px; align-items: baseline; }
+.qopt b { font: 700 15px var(--font-sym); min-width: 3.4em; }
+.qopt span { font-size: 13.5px; color: var(--muted); }
+.qopt:hover:not(:disabled) { border-color: var(--accent); }
+.qopt.ok { border-color: var(--good); background: var(--good-soft); }
+.qopt.ok span, .qopt.ok b { color: var(--good); }
+.qopt.no { border-color: var(--bad); background: var(--bad-soft); }
+.qopt.no span, .qopt.no b { color: var(--bad); }
+.qopt:disabled { cursor: default; }
+.qfb { margin: 14px 0 0; padding: 10px 12px; border-radius: 8px; background: var(--paper); font-size: 14px; }
+.qfoot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.qdone { text-align: center; padding: 10px 0; }
+.qdone .big { font: 700 44px var(--font-display); color: var(--accent); }
+footer.note { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+
+@media (max-width: 560px) {
+  dl.d-rows { grid-template-columns: minmax(0, 1fr); gap: 2px 0; }
+  dl.d-rows dd { margin-bottom: 10px; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
+  .tile .s { font-size: 22px; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Bảng tuần hoàn tài liệu PM</h1>
+    <p class="lead">55 tài liệu hay gặp trong dự án phần mềm (WBS, BRD, ERD, RACI, 見積書, 議事録…), xếp thành 11 họ theo câu hỏi mà mỗi tài liệu trả lời. Nhớ được câu hỏi là nhớ được tài liệu. Bấm vào ô bất kỳ để xem định nghĩa, tên tiếng Nhật, ai viết, lỗi hay gặp, câu nói khi phỏng vấn và mẹo nhớ.</p>
+    <ol class="story" id="story" aria-label="11 câu hỏi theo thứ tự câu chuyện dự án"></ol>
+  </header>
+
+  <nav class="sec" id="secnav" aria-label="Các phần">
+    <a href="#bang" class="on">Bảng tuần hoàn</a>
+    <a href="#xbs">Họ xBS</a>
+    <a href="#chu-v">Chữ V kiểu Nhật</a>
+    <a href="#dung-nham">Đừng nhầm</a>
+    <a href="#luyen">Luyện nhớ</a>
+  </nav>
+
+  <section id="bang" aria-labelledby="h-bang">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-bang">11 họ, 55 nguyên tố</h2>
+        <p>Mỗi họ là một câu hỏi. Số góc trái là số thứ tự; số góc phải là giai đoạn tài liệu ra đời lần đầu.</p>
+      </div>
+    </div>
+    <div class="filters">
+      <label class="search" for="q">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Tìm: WBS, 議事録, rủi ro, test…" autocomplete="off">
+      </label>
+      <div class="phases" id="phases" role="group" aria-label="Lọc theo giai đoạn"><span class="lbl">Giai đoạn</span></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="table" id="table"></div>
+    <p class="legend-note">Ở Nhật, mỗi giai đoạn gọi là 工程 (kōtei). Thứ tự giai đoạn là thứ tự tiêu biểu của dự án waterfall cho khách Nhật; dự án Agile sẽ lặp lại các bước 3–5 theo sprint.</p>
+  </section>
+
+  <section id="xbs" aria-labelledby="h-xbs">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-xbs">Họ xBS: cùng một cái cây, 7 chiếc kính</h2>
+        <p>WBS, PBS, ABS, OBS, hai loại RBS và CBS đều là cây phân rã từ trên xuống. Chỉ khác câu hỏi ở mỗi nút. Bấm từng chiếc kính để thấy cùng dự án "Website TMĐT" được chia theo 7 cách.</p>
+      </div>
+    </div>
+    <div class="lens" id="lens" role="group" aria-label="Chọn loại cây"></div>
+    <div class="panel">
+      <div class="lens-title"><b id="lensSym"></b><span id="lensTitle"></span></div>
+      <div class="svgbox"><svg id="treeSvg" viewBox="0 0 960 290" role="img" aria-label="Cây phân rã ví dụ"></svg></div>
+    </div>
+    <div class="formulas" id="formulas"></div>
+  </section>
+
+  <section id="chu-v" aria-labelledby="h-v">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-v">Chữ V kiểu Nhật: tài liệu nào kiểm chứng tài liệu nào</h2>
+        <p>Dự án cho khách Nhật thường đi theo V-model. Cánh trái là tài liệu yêu cầu và thiết kế, cánh phải là mức test kiểm chứng cánh trái ở cùng độ cao. RTM là sợi chỉ nối hai cánh. Bấm vào ký hiệu để mở tài liệu.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="svgbox"><svg id="vSvg" viewBox="0 0 960 462" role="img" aria-label="Sơ đồ chữ V"></svg></div>
+      <div style="overflow-x:auto"><table class="mirror" id="mirror"></table></div>
+    </div>
+  </section>
+
+  <section id="dung-nham" aria-labelledby="h-pairs">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-pairs">16 cặp hay nhầm</h2>
+        <p>Phần lớn câu hỏi bẫy khi phỏng vấn nằm ở đây. Mỗi cặp có 1 câu phân biệt nhanh.</p>
+      </div>
+    </div>
+    <div class="pairs" id="pairs"></div>
+  </section>
+
+  <section id="luyen" aria-labelledby="h-quiz">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-quiz">Luyện nhớ</h2>
+        <p>Mỗi lượt 10 câu. Chọn kiểu luyện, trả lời, xem giải thích ngay. Điểm cao nhất lưu trên trình duyệt này.</p>
+      </div>
+    </div>
+    <div class="quiz" id="quiz">
+      <div class="qmodes" id="qmodes" role="group" aria-label="Kiểu luyện">
+        <button data-m="scn" aria-pressed="true">Tình huống → tài liệu</button>
+        <button data-m="q" aria-pressed="false">Câu hỏi → tài liệu</button>
+        <button data-m="jp" aria-pressed="false">Tên tiếng Nhật → tài liệu</button>
+      </div>
+      <div id="qbody"></div>
+    </div>
+  </section>
+
+  <footer class="note">Tên tiếng Nhật là cách gọi phổ biến trong dự án outsourcing cho khách Nhật; mỗi công ty có thể đặt tên hơi khác. Các con số trong ví dụ (giờ, ngày, %) chỉ để minh họa và tham khảo.</footer>
+</div>
+
+<div class="backdrop" id="backdrop" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden></aside>
+
+<script>
+const D = {"phases": [{"n": 1, "vi": "Khởi động", "jp": "立ち上げ", "ro": "tachiage"}, {"n": 2, "vi": "Lập kế hoạch", "jp": "計画", "ro": "keikaku"}, {"n": 3, "vi": "Yêu cầu", "jp": "要件定義", "ro": "yōken teigi"}, {"n": 4, "vi": "Thiết kế", "jp": "設計", "ro": "sekkei"}, {"n": 5, "vi": "Làm & kiểm soát", "jp": "製造・テスト", "ro": "seizō, tesuto"}, {"n": 6, "vi": "Bàn giao & đóng", "jp": "リリース・検収", "ro": "rirīsu, kenshū"}], "families": [{"id": "why", "q": "Vì sao làm?", "en": "WHY", "h": 28}, {"id": "what", "q": "Làm gì?", "en": "WHAT", "h": 212}, {"id": "break", "q": "Chia nhỏ ra sao?", "en": "BREAKDOWN", "h": 130}, {"id": "who", "q": "Ai làm, ai duyệt?", "en": "WHO", "h": 270}, {"id": "how", "q": "Làm thế nào?", "en": "HOW", "h": 190}, {"id": "when", "q": "Khi nào xong?", "en": "WHEN", "h": 240}, {"id": "cost", "q": "Tốn bao nhiêu?", "en": "HOW MUCH", "h": 48}, {"id": "ctrl", "q": "Lệch thì sao?", "en": "WHAT IF", "h": 355}, {"id": "qual", "q": "Đạt chưa?", "en": "HOW GOOD", "h": 315}, {"id": "talk", "q": "Báo ai, thế nào?", "en": "TALK", "h": 85}, {"id": "done", "q": "Xong chưa?", "en": "DONE", "h": 160}], "docs": [{"id": "BC", "sym": "BC", "fam": "why", "ph": 1, "en": "Business Case", "vi": "Tình huống kinh doanh", "jp": "ビジネスケース・企画書", "ro": "bijinesu kēsu, kikakusho", "q": "Dự án có đáng bỏ tiền không?", "what": "Lý do đầu tư: vấn đề, các phương án (kể cả không làm), lợi ích đo được, chi phí, rủi ro lớn. Sponsor dựa vào đây để quyết định có làm.", "who": "Viết: sponsor/khách phía business · PM góp số liệu · Duyệt: ban lãnh đạo", "parts": ["Vấn đề hoặc cơ hội", "Các phương án, kể cả 'không làm'", "Lợi ích đo được", "Chi phí và ROI", "Rủi ro lớn"], "flow": "Từ chiến lược, nhu cầu → sang Charter", "trap": "Lợi ích không đo được ('tăng hiệu quả') nên sau dự án không ai kiểm được.", "say": "Em hỏi khách business case để biết tính năng nào gắn với lợi ích; khi phải cắt scope thì cắt cái ít giá trị nhất.", "hook": "BC = 'Bỏ tiền Có đáng?'", "rel": ["CHT", "BRD", "EST"], "no": 1}, {"id": "PRP", "sym": "PRP", "fam": "why", "ph": 1, "en": "Proposal", "vi": "Đề xuất giải pháp", "jp": "提案書", "ro": "teiansho", "q": "Vì sao khách nên chọn mình?", "what": "Tài liệu trả lời RFP (提案依頼書): hiểu bài toán, giải pháp, đội ngũ, lịch, giá, kinh nghiệm. Với khách Nhật thường viết bằng tiếng Nhật.", "who": "Viết: pre-sales/PM, BrSE chuyển ngữ · Duyệt: lãnh đạo vendor", "parts": ["背景・課題 (bối cảnh, vấn đề)", "Giải pháp và phạm vi", "体制図 (sơ đồ đội ngũ)", "Lịch và 見積 (báo giá)", "前提条件 (tiền đề), 実績 (kinh nghiệm)"], "flow": "Từ RFP → sang SOW, Estimate", "trap": "Nói về công ty mình quá nhiều, nói về vấn đề của khách quá ít.", "say": "Proposal cho khách Nhật em giữ 1 slide 1 thông điệp, và luôn có trang 前提条件 để bảo vệ estimate.", "hook": "Proposal là 'lời cầu hôn': nói về người kia trước, về mình sau.", "rel": ["SOW", "EST", "OBS"], "no": 2}, {"id": "SOW", "sym": "SOW", "fam": "why", "ph": 1, "en": "Statement of Work", "vi": "Bản mô tả công việc theo hợp đồng", "jp": "作業範囲記述書・契約別紙", "ro": "sagyō han'i kijutsusho, keiyaku besshi", "q": "Theo hợp đồng, mình phải giao gì?", "what": "Phụ lục hợp đồng mô tả phạm vi, deliverable, mốc, tiêu chí nghiệm thu và điều kiện tiền đề. Là căn cứ để phân biệt 'trong phạm vi' và change request.", "who": "Viết: sales/PM vendor cùng khách · Duyệt: hai bên ký", "parts": ["Phạm vi và 対象外 (ngoài phạm vi)", "Deliverable", "Mốc và lịch thanh toán", "Tiêu chí 検収 (nghiệm thu)", "前提条件 (tiền đề)"], "flow": "Từ RFP, Proposal → sang Charter, Scope Statement, WBS", "trap": "Không ghi 'ngoài phạm vi', nên mọi yêu cầu thêm đều thành 'đương nhiên phải có'.", "say": "Trước kick-off em đọc SOW để biết chính xác cái gì phải giao, cái gì là change request.", "hook": "SOW = 'Sổ Ước hẹn' với khách: ghi gì làm nấy.", "rel": ["PRP", "CHT", "SS", "CR", "UAT"], "no": 3}, {"id": "CHT", "sym": "CHT", "fam": "why", "ph": 1, "en": "Project Charter", "vi": "Điều lệ dự án", "jp": "プロジェクト憲章", "ro": "purojekuto kenshō", "q": "Ai cho phép dự án bắt đầu, PM có quyền gì?", "what": "Văn bản chính thức khai sinh dự án: mục tiêu, phạm vi cấp cao, mốc chính, ngân sách sơ bộ, sponsor và quyền hạn của PM.", "who": "Soạn: PM · Ký: sponsor", "parts": ["Mục tiêu đo được", "Phạm vi cấp cao", "Mốc chính", "Ngân sách sơ bộ", "Sponsor và quyền của PM"], "flow": "Từ Business Case, SOW → sang PM Plan, Stakeholder Register", "trap": "Không ghi quyền của PM, nên quyết định nhỏ nào cũng phải xin.", "say": "Charter là giấy khai sinh của dự án; không có nó thì PM không có quyền dùng nguồn lực.", "hook": "Charter = 'giấy khai sinh' của dự án.", "rel": ["BC", "SOW", "SHR", "PMP"], "no": 4}, {"id": "BRD", "sym": "BRD", "fam": "what", "ph": 3, "en": "Business Requirements Document", "vi": "Tài liệu yêu cầu nghiệp vụ", "jp": "業務要件定義書", "ro": "gyōmu yōken teigisho", "q": "Doanh nghiệp cần đạt điều gì?", "what": "Nhu cầu ở góc nghiệp vụ: mục tiêu, quy trình hiện tại (As-Is) và mong muốn (To-Be), quy tắc nghiệp vụ, KPI thành công. Chưa nói giải pháp kỹ thuật.", "who": "Viết: BA cùng người dùng nghiệp vụ phía khách · Duyệt: chủ nghiệp vụ phía khách", "parts": ["Mục tiêu và phạm vi nghiệp vụ", "Quy trình As-Is / To-Be", "Business rule", "Người dùng và các bên liên quan", "KPI thành công"], "flow": "Từ Business Case, phỏng vấn người dùng → sang FRD/SRS, RTM", "trap": "Viết giải pháp vào BRD ('cần nút xanh góc phải'), làm bó tay team thiết kế.", "say": "BRD trả lời 'business cần gì', FRD trả lời 'hệ thống phải làm gì'; em không để giải pháp lọt vào BRD.", "hook": "B = Business = 'Bà chủ Ra Đề': nêu mục tiêu, không chỉ cách làm.", "rel": ["FRD", "SRS", "PRD", "RTM", "UAT"], "ex": {"type": "table", "head": ["Mã", "Yêu cầu nghiệp vụ (ví dụ)", "Đo bằng"], "rows": [["BR-01", "Rút ngắn thời gian duyệt hồ sơ bảo hiểm", "Từ 3 ngày còn 1 ngày"], ["BR-02", "Nhân viên tra cứu hợp đồng không cần gọi tổng đài", "Số cuộc gọi tra cứu giảm"]]}, "no": 5}, {"id": "PRD", "sym": "PRD", "fam": "what", "ph": 3, "en": "Product Requirements Document", "vi": "Tài liệu yêu cầu sản phẩm", "jp": "製品要求仕様書", "ro": "seihin yōkyū shiyōsho", "q": "Sản phẩm cần có gì cho người dùng?", "what": "Dùng ở công ty làm sản phẩm: vấn đề của người dùng, persona, tính năng ưu tiên, chỉ số thành công và những gì không làm.", "who": "Viết: Product Manager/PO · Duyệt: lãnh đạo sản phẩm", "parts": ["Vấn đề và persona", "Mục tiêu và metric", "Tính năng ưu tiên (MoSCoW)", "Non-goals (không làm)", "Câu hỏi mở"], "flow": "Từ nghiên cứu người dùng → sang User Story, thiết kế", "trap": "Viết như BRD của dự án outsource nên thiếu persona và metric sản phẩm.", "say": "Dự án outsource cho khách Nhật thường có 要件定義書 thay cho PRD; PRD hợp khi khách là công ty sản phẩm.", "hook": "PRD nhìn từ người dùng, BRD nhìn từ doanh nghiệp.", "rel": ["BRD", "US"], "no": 6}, {"id": "FRD", "sym": "FRD", "fam": "what", "ph": 3, "en": "Functional Requirements Document", "vi": "Tài liệu yêu cầu chức năng", "jp": "機能要件定義書", "ro": "kinō yōken teigisho", "q": "Hệ thống phải làm những chức năng gì?", "what": "Chuyển nhu cầu nghiệp vụ thành chức năng cụ thể: input, xử lý, output, quy tắc, ngoại lệ của từng chức năng.", "who": "Viết: BA/BrSE · Review: tech lead · Duyệt: khách", "parts": ["機能一覧 (danh sách chức năng)", "Mô tả từng chức năng", "Rule và validate", "Ngoại lệ, lỗi", "Màn hình, IF liên quan"], "flow": "Từ BRD → sang 基本設計, test case, RTM", "trap": "Chỉ mô tả luồng đẹp, quên ngoại lệ, nên bug dồn về 結合テスト.", "say": "Mỗi chức năng trong FRD em yêu cầu có ít nhất 1 luồng lỗi, vì khách Nhật test luồng lỗi rất kỹ.", "hook": "F = Function = 'hệ thống Phải làm gì'.", "rel": ["BRD", "SRS", "BD", "RTM", "TS"], "no": 7}, {"id": "SRS", "sym": "SRS", "fam": "what", "ph": 3, "en": "Software Requirements Specification", "vi": "Đặc tả yêu cầu phần mềm", "jp": "要件定義書・ソフトウェア要求仕様書", "ro": "yōken teigisho", "q": "Toàn bộ yêu cầu đã đủ để thiết kế và test chưa?", "what": "Bộ đặc tả đầy đủ: chức năng, phi chức năng, giao diện ngoài, ràng buộc. Chuẩn tham khảo IEEE 830 / ISO/IEC/IEEE 29148. Ở Nhật thường gọi chung là 要件定義書.", "who": "Viết: BA/system analyst · Duyệt: khách và tech lead", "parts": ["Phạm vi và thuật ngữ", "Yêu cầu chức năng", "Yêu cầu phi chức năng", "Giao diện ngoài", "Ràng buộc, giả định"], "flow": "Từ BRD, FRD → sang 基本設計, Test Plan", "trap": "Viết câu không kiểm được ('hệ thống nhanh'), nên không test được.", "say": "SRS là hợp đồng kỹ thuật giữa yêu cầu và thiết kế; mỗi dòng phải test được.", "hook": "SRS = 'Sổ Rõ Sạch': đủ rõ để dev làm, QA test.", "rel": ["FRD", "NFR", "BD", "RTM"], "no": 8}, {"id": "NFR", "sym": "NFR", "fam": "what", "ph": 3, "en": "Non-functional Requirements", "vi": "Yêu cầu phi chức năng", "jp": "非機能要件定義書", "ro": "hi-kinō yōken teigisho", "q": "Hệ thống phải nhanh, bền, an toàn đến mức nào?", "what": "Tiêu chí chất lượng của hệ thống: hiệu năng, độ sẵn sàng, bảo mật, khả năng mở rộng, vận hành, di trú dữ liệu. IPA có bộ 非機能要求グレード dùng làm checklist.", "who": "Viết: kiến trúc sư/tech lead cùng BA · Duyệt: khách (IT, vận hành)", "parts": ["Hiệu năng (response time, throughput)", "Availability (uptime, RTO/RPO)", "Bảo mật", "Mở rộng", "Vận hành, bảo trì, migration"], "flow": "Từ BRD, ràng buộc hạ tầng → sang Architecture, test hiệu năng ở 総合テスト", "trap": "Để trống NFR, cuối dự án khách mới nói 'phải chịu 10.000 user'.", "say": "Em chốt NFR bằng con số đo được ngay trong 要件定義 và đưa vào test plan của 総合テスト.", "hook": "Chức năng là 'làm gì', NFR là 'làm tốt tới đâu': Nhanh, Bền, An toàn.", "rel": ["SRS", "ARC", "TP"], "no": 9}, {"id": "US", "sym": "US", "fam": "what", "ph": 3, "en": "User Story / Product Backlog", "vi": "User story và backlog", "jp": "ユーザーストーリー・プロダクトバックログ", "ro": "yūzā sutōrī, purodakuto bakkurogu", "q": "(Agile) Người dùng cần gì, làm cái nào trước?", "what": "Yêu cầu dạng 'Là <vai trò>, tôi muốn <việc>, để <lợi ích>' kèm acceptance criteria. Backlog là danh sách story xếp theo ưu tiên.", "who": "Viết: PO cùng team · Xếp ưu tiên: PO", "parts": ["Câu story", "Acceptance criteria (Given/When/Then)", "Story point", "Độ ưu tiên", "Definition of Done"], "flow": "Từ PRD, BRD → sang sprint backlog, test", "trap": "Đưa story quá to (epic) vào sprint nên không xong trong 1 sprint.", "say": "Story tốt theo INVEST: độc lập, thương lượng được, có giá trị, ước lượng được, nhỏ, test được.", "hook": "INVEST: 6 chữ để kiểm một story.", "rel": ["PRD", "BRD", "TS"], "no": 10}, {"id": "SS", "sym": "SS", "fam": "what", "ph": 2, "en": "Scope Statement", "vi": "Tuyên bố phạm vi", "jp": "スコープ記述書", "ro": "sukōpu kijutsusho", "q": "Dự án làm gì và KHÔNG làm gì?", "what": "Mô tả chi tiết phạm vi: deliverable, tiêu chí chấp nhận, ngoài phạm vi, giả định, ràng buộc. Cùng WBS và WBS dictionary tạo thành scope baseline.", "who": "Viết: PM · Duyệt: sponsor/khách", "parts": ["Mô tả sản phẩm", "Deliverable", "Tiêu chí chấp nhận", "Ngoài phạm vi", "Giả định, ràng buộc"], "flow": "Từ Charter, SOW, yêu cầu → sang WBS", "trap": "Thiếu mục 'ngoài phạm vi', nên scope cứ phình ra.", "say": "Scope baseline gồm scope statement, WBS và WBS dictionary; em chỉ đổi nó qua change request.", "hook": "Scope Statement là 'hàng rào': vẽ rõ trong và ngoài.", "rel": ["CHT", "SOW", "WBS", "CR"], "no": 11}, {"id": "WBS", "sym": "WBS", "fam": "break", "ph": 2, "en": "Work Breakdown Structure", "vi": "Cấu trúc phân rã công việc", "jp": "WBS・作業分解構成図", "ro": "sagyō bunkai kōseizu", "q": "Toàn bộ công việc gồm những phần nào?", "what": "Cây phân rã toàn bộ phạm vi thành deliverable rồi work package, đơn vị nhỏ nhất để estimate, giao việc và theo dõi.", "who": "Viết: PM cùng team · Khách xem bản mức cao", "parts": ["Cấp 1 theo phase hoặc deliverable", "Work package", "Mã WBS (1.2.3)", "WBS dictionary", "Quy tắc 100%"], "flow": "Từ Scope Statement, PBS → sang ABS, Estimate, Gantt, RACI, CBS", "trap": "Liệt kê việc theo người ('việc của Nam') thay vì theo deliverable.", "say": "Em tách WBS tới work package khoảng 8–80 giờ (tham khảo): đủ nhỏ để estimate, đủ lớn để không quản lý vụn.", "hook": "Quy tắc 100%: các con cộng lại đúng bằng cha. WBS viết bằng danh từ, không bằng động từ.", "rel": ["SS", "PBS", "ABS", "EST", "GNT", "RACI", "CBS"], "ex": {"type": "tree", "lens": "wbs"}, "no": 12}, {"id": "PBS", "sym": "PBS", "fam": "break", "ph": 2, "en": "Product Breakdown Structure", "vi": "Cấu trúc phân rã sản phẩm", "jp": "成果物分解構成", "ro": "seikabutsu bunkai kōsei", "q": "Sản phẩm cuối gồm những mảnh nào?", "what": "Cây phân rã sản phẩm và deliverable, không có việc quản lý. Là nền của PRINCE2 (lập kế hoạch dựa trên sản phẩm).", "who": "Viết: PM cùng tech lead", "parts": ["Sản phẩm cuối", "Các thành phần", "Tài liệu đi kèm", "Product description cho từng mảnh"], "flow": "Từ yêu cầu, kiến trúc → sang WBS", "trap": "Nhầm với WBS: PBS chỉ có 'thứ được giao', WBS có cả 'việc để làm ra nó'.", "say": "Em vẽ PBS trước để chắc không sót deliverable, rồi thêm việc quản lý, test, release để thành WBS.", "hook": "PBS = 'cái gì' thuần danh từ; WBS = 'cái gì' cộng việc làm ra nó.", "rel": ["WBS"], "ex": {"type": "tree", "lens": "pbs"}, "no": 13}, {"id": "ABS", "sym": "ABS", "fam": "break", "ph": 2, "en": "Activity Breakdown Structure / Activity List", "vi": "Danh sách/cấu trúc hoạt động", "jp": "アクティビティ一覧", "ro": "akutibiti ichiran", "q": "Mỗi work package cần làm những bước nào?", "what": "Tách mỗi work package thành activity (động từ) có thời lượng và quan hệ trước sau; là đầu vào trực tiếp của lịch. PMBOK gọi là Activity List, một số nơi gọi là ABS.", "who": "Viết: người phụ trách work package cùng PM", "parts": ["Activity (động từ)", "Thời lượng", "Quan hệ FS / SS / FF / SF", "Resource cần", "Milestone"], "flow": "Từ WBS → sang Network diagram, Gantt", "trap": "Nhảy từ WBS sang Gantt luôn, bỏ qua quan hệ phụ thuộc, nên lịch không có critical path.", "say": "WBS là danh từ, activity là động từ: 'Module thanh toán' tách thành thiết kế, code, unit test, review.", "hook": "A = Action = động từ. WBS là 'cái gì', ABS là 'làm sao để có'.", "rel": ["WBS", "NET", "GNT"], "ex": {"type": "tree", "lens": "abs"}, "no": 14}, {"id": "OBS", "sym": "OBS", "fam": "break", "ph": 2, "en": "Organizational Breakdown Structure", "vi": "Cấu trúc phân rã tổ chức", "jp": "体制図", "ro": "taisei-zu", "q": "Dự án gồm những nhóm nào, ai báo cáo ai?", "what": "Cây tổ chức dự án: các bên, nhóm, vai trò, tuyến báo cáo. Ở dự án Nhật hầu như luôn có trong 提案書 và 計画書 dưới tên 体制図.", "who": "Viết: PM · Duyệt: lãnh đạo vendor và khách", "parts": ["Phía khách (sponsor, 窓口 đầu mối)", "Phía vendor (PM, BrSE, team lead)", "Onsite / offshore", "Tuyến báo cáo, escalation"], "flow": "Từ Charter, kế hoạch nhân sự → sang RACI, Communication Plan", "trap": "Chỉ vẽ phía vendor, quên phía khách, nên không biết ai duyệt, ai quyết.", "say": "体制図 của em luôn có cả hai phía và đường escalation, để khi có sự cố ai cũng biết gọi ai.", "hook": "O = Org = 'Ông nào'. WBS × OBS = RACI.", "rel": ["RACI", "SHR", "RP"], "ex": {"type": "tree", "lens": "obs"}, "no": 15}, {"id": "RBSR", "sym": "RBS", "tag": "tài nguyên", "fam": "break", "ph": 2, "en": "Resource Breakdown Structure", "vi": "Cấu trúc phân rã tài nguyên", "jp": "資源分解構成", "ro": "shigen bunkai kōsei", "q": "Cần những loại tài nguyên gì?", "what": "Cây phân loại tài nguyên: người (theo kỹ năng), thiết bị, phần mềm, dịch vụ. Dùng để lập kế hoạch nhân sự và chi phí.", "who": "Viết: PM", "parts": ["Nhân sự theo kỹ năng, số lượng", "Thiết bị", "License phần mềm", "Dịch vụ (cloud, thuê ngoài)"], "flow": "Từ WBS, Estimate → sang kế hoạch nhân sự, CBS", "trap": "Trùng tên viết tắt với Risk Breakdown Structure. Luôn nói rõ 'RBS tài nguyên' hay 'RBS rủi ro'.", "say": "RBS tài nguyên giúp em thấy sớm cần bao nhiêu BrSE, QA, thiết bị test gì trước khi ramp-up.", "hook": "Có 2 RBS: R-esource (tài nguyên) và R-isk (rủi ro). Nghe 'RBS' thì hỏi lại.", "rel": ["RP", "CBS", "EST", "RBSK"], "ex": {"type": "tree", "lens": "rres"}, "no": 16}, {"id": "RBSK", "sym": "RBS", "tag": "rủi ro", "fam": "break", "ph": 2, "en": "Risk Breakdown Structure", "vi": "Cấu trúc phân loại rủi ro", "jp": "リスク分解構成", "ro": "risuku bunkai kōsei", "q": "Rủi ro có thể đến từ những nguồn nào?", "what": "Cây phân loại nguồn rủi ro (kỹ thuật, yêu cầu, con người, bên ngoài, quản lý), dùng làm checklist khi nhận diện rủi ro.", "who": "Viết: PM, dùng lại và bổ sung từ dự án trước", "parts": ["Kỹ thuật", "Yêu cầu", "Con người, tổ chức", "Bên ngoài (vendor khác, luật)", "Quản lý dự án"], "flow": "Từ Lessons Learned dự án trước → sang Risk Register", "trap": "Có RBS nhưng không dùng để rà rủi ro mỗi tuần, nên nó chỉ là hình vẽ.", "say": "Em dùng RBS rủi ro như checklist ở kick-off để không sót nhóm rủi ro nào.", "hook": "RBS rủi ro là 'bản đồ nguồn nguy hiểm'; Risk Register là 'danh sách nguy hiểm cụ thể'.", "rel": ["RR", "RAID", "LL", "RBSR"], "ex": {"type": "tree", "lens": "rrisk"}, "no": 17}, {"id": "CBS", "sym": "CBS", "fam": "break", "ph": 2, "en": "Cost Breakdown Structure", "vi": "Cấu trúc phân rã chi phí", "jp": "コスト分解構成", "ro": "kosuto bunkai kōsei", "q": "Tiền đi vào những hạng mục nào?", "what": "Cây chi phí theo hạng mục (nhân công, hạ tầng, license, đi lại, dự phòng), thường gắn với WBS để ra cost baseline.", "who": "Viết: PM cùng tài chính", "parts": ["Nhân công theo vai trò", "Hạ tầng", "License", "Đi lại, onsite", "Contingency và management reserve"], "flow": "Từ WBS, RBS tài nguyên, Estimate → sang Cost Baseline, EVM", "trap": "Quên chi phí ẩn: BrSE, dịch tài liệu, onsite, môi trường test.", "say": "CBS giúp em giải thích với lãnh đạo tiền đi đâu, và biết cắt hạng mục nào khi bị ép giá.", "hook": "C = Cash. WBS × CBS = cost baseline.", "rel": ["CB", "EST", "WBS"], "ex": {"type": "tree", "lens": "cbs"}, "no": 18}, {"id": "SHR", "sym": "SHR", "fam": "who", "ph": 1, "en": "Stakeholder Register", "vi": "Sổ các bên liên quan", "jp": "ステークホルダー登録簿", "ro": "sutēkuhorudā tōrokubo", "q": "Ai bị ảnh hưởng, ai có tiếng nói?", "what": "Danh sách các bên liên quan với vai trò, mối quan tâm, mức ảnh hưởng, mức ủng hộ và cách làm việc với từng bên.", "who": "Viết: PM", "parts": ["Tên, vai trò", "Quan tâm, kỳ vọng", "Quyền lực / mức quan tâm", "Mức ủng hộ hiện tại và mong muốn", "Cách tiếp cận"], "flow": "Từ Charter, OBS → sang Communication Plan", "trap": "Chỉ ghi người họp hằng tuần, quên người duyệt 稟議 và người dùng cuối.", "say": "Với khách Nhật em ghi rõ ai là người quyết thật trong chuỗi 稟議 (trình ký), không chỉ 窓口 (đầu mối).", "hook": "Lưới Quyền lực × Quan tâm: ô cao-cao thì quản lý chặt nhất.", "rel": ["CHT", "OBS", "CMP"], "ex": {"type": "table", "head": ["Bên (ví dụ)", "Vai trò", "Quyền lực", "Quan tâm", "Cách làm việc"], "rows": [["部長 phía khách", "Duyệt ngân sách", "Cao", "Thấp", "Báo cáo tháng ngắn gọn"], ["窓口 (đầu mối)", "Giao, nhận việc", "Vừa", "Cao", "定例会 tuần, 報連相 hằng ngày"], ["Người dùng nghiệp vụ", "Dùng hệ thống", "Thấp", "Cao", "Mời vào UAT sớm"]]}, "no": 19}, {"id": "RACI", "sym": "RACI", "fam": "who", "ph": 2, "en": "RACI / Responsibility Assignment Matrix", "vi": "Ma trận phân công trách nhiệm", "jp": "責任分担表・RACI表", "ro": "sekinin buntanhyō", "q": "Mỗi việc ai làm, ai chịu trách nhiệm, hỏi ai, báo ai?", "what": "Bảng việc × người với 4 vai: R làm, A chịu trách nhiệm cuối cùng (chỉ 1 người), C được hỏi ý kiến, I được thông báo.", "who": "Viết: PM · Xác nhận: tất cả các bên", "parts": ["Hàng: deliverable/việc (từ WBS)", "Cột: vai trò (từ OBS)", "Mỗi hàng đúng 1 chữ A", "Ít nhất 1 chữ R"], "flow": "Từ WBS × OBS → sang Communication Plan, onboarding", "trap": "Một việc có 2 chữ A, nên thật ra không ai chịu trách nhiệm.", "say": "Mỗi hàng RACI chỉ có 1 chữ A; nếu còn tranh cãi ai là A thì đó là rủi ro cần xử lý ngay.", "hook": "R-A-C-I = Làm · Chịu · Hỏi · Báo.", "rel": ["WBS", "OBS", "CMP"], "ex": {"type": "table", "head": ["Việc (ví dụ)", "PM", "BrSE", "Dev", "Khách"], "rows": [["Spec màn hình", "A", "R", "C", "C"], ["Code và unit test", "A", "I", "R", "–"], ["UAT", "C", "R", "I", "A"], ["Báo cáo tuần", "A/R", "C", "I", "I"]]}, "no": 20}, {"id": "RP", "sym": "RP", "fam": "who", "ph": 2, "en": "Resource / Staffing Plan", "vi": "Kế hoạch nhân sự", "jp": "要員計画", "ro": "yōin keikaku", "q": "Cần bao nhiêu người, vai trò gì, vào ra khi nào?", "what": "Số người theo vai trò và theo thời gian (đường ramp-up, ramp-down), kỹ năng, trình độ tiếng Nhật, kế hoạch onboarding và người dự phòng.", "who": "Viết: PM · Duyệt: trưởng bộ phận/resource manager", "parts": ["Vai trò và số lượng", "Kỹ năng, trình độ tiếng Nhật", "Thời điểm vào, ra", "Kế hoạch onboarding", "Người dự phòng"], "flow": "Từ Estimate, Gantt, RBS tài nguyên → sang CBS, OBS", "trap": "Ramp-up quá nhiều người cùng lúc, năng suất tụt (Brooks's law).", "say": "Em ramp-up theo đợt, mỗi đợt có người cũ kèm, và luôn có người dự phòng cho BrSE.", "hook": "Đường nhân sự hình 'quả núi': lên dần, đỉnh ở 製造/テスト, xuống dần.", "rel": ["RBSR", "OBS", "EST"], "no": 21}, {"id": "ARC", "sym": "ARC", "fam": "how", "ph": 4, "en": "Architecture / System Configuration", "vi": "Sơ đồ kiến trúc, cấu hình hệ thống", "jp": "システム構成図", "ro": "shisutemu kōseizu", "q": "Hệ thống gồm những khối nào, nối nhau ra sao?", "what": "Bức tranh tổng: client, server, DB, hệ thống ngoài, mạng, cloud, các môi trường; kèm lý do chọn công nghệ (ADR).", "who": "Viết: kiến trúc sư/tech lead · Duyệt: khách (IT) · PM đọc để thấy rủi ro, chi phí", "parts": ["Sơ đồ logic và vật lý", "Hệ thống ngoài, IF", "Môi trường dev / stg / 本番", "Bảo mật mạng", "Lý do chọn (ADR)"], "flow": "Từ NFR, SRS → sang Basic Design, API spec, estimate hạ tầng", "trap": "Chỉ có hình đẹp, không có lý do chọn; khách hỏi 'vì sao không dùng X' là lúng túng.", "say": "PM không vẽ kiến trúc, nhưng em đọc nó để thấy rủi ro, chi phí cloud và các điểm tích hợp.", "hook": "ARC là 'bản đồ thành phố': có những khu nào, đường nào nối.", "rel": ["NFR", "BD", "API", "ERD"], "no": 22}, {"id": "UC", "sym": "UC", "fam": "how", "ph": 3, "en": "Use Case", "vi": "Sơ đồ, đặc tả use case", "jp": "ユースケース図", "ro": "yūsukēsu zu", "q": "Ai dùng hệ thống để làm gì?", "what": "Tương tác giữa actor (người hoặc hệ thống) và hệ thống: các use case, luồng chính, luồng thay thế, ngoại lệ.", "who": "Viết: BA", "parts": ["Actor", "Use case", "Luồng chính", "Luồng thay thế, ngoại lệ", "Điều kiện trước, sau"], "flow": "Từ BRD → sang FRD, test case", "trap": "Vẽ use case kiểu 'nhấn nút': quá chi tiết, đó là màn hình chứ không phải mục tiêu người dùng.", "say": "Use case giúp em đếm phạm vi nhanh và làm khung cho test case.", "hook": "Hình người que và hình elip: AI làm GÌ.", "rel": ["BRD", "FRD", "TS"], "no": 23}, {"id": "DFD", "sym": "DFD", "fam": "how", "ph": 3, "en": "Data Flow Diagram", "vi": "Sơ đồ luồng dữ liệu", "jp": "DFD・データフロー図", "ro": "dēta furō zu", "q": "Dữ liệu chảy từ đâu, qua xử lý nào, lưu ở đâu?", "what": "Dữ liệu di chuyển giữa thực thể ngoài, tiến trình và kho dữ liệu. Không thể hiện thứ tự thời gian hay điều kiện rẽ nhánh.", "who": "Viết: BA/system analyst", "parts": ["Thực thể ngoài", "Tiến trình", "Kho dữ liệu", "Luồng dữ liệu", "Mức 0 (context) → 1 → 2"], "flow": "Từ BRD → sang ERD, Basic Design", "trap": "Nhầm DFD với flowchart: DFD không có rẽ nhánh if/else.", "say": "DFD trả lời 'dữ liệu đi đâu', ERD trả lời 'dữ liệu được tổ chức thế nào'.", "hook": "DFD là dòng sông (chảy), ERD là hồ chứa (cấu trúc).", "rel": ["ERD", "BD"], "no": 24}, {"id": "ERD", "sym": "ERD", "fam": "how", "ph": 4, "en": "Entity Relationship Diagram", "vi": "Sơ đồ thực thể – quan hệ", "jp": "ER図 → テーブル定義書", "ro": "ī-āru zu, tēburu teigisho", "q": "Dữ liệu gồm những thực thể nào, liên kết ra sao?", "what": "Mô hình dữ liệu: thực thể (bảng), thuộc tính, khóa, quan hệ 1–1, 1–n, n–n. Bản logic nằm ở 基本設計, bản vật lý thành テーブル定義書 (định nghĩa bảng) ở 詳細設計.", "who": "Viết: tech lead/DB designer · Review: BA (đúng nghiệp vụ)", "parts": ["Entity", "Thuộc tính, khóa PK / FK", "Quan hệ và bội số (cardinality)", "Chuẩn hóa", "Index chính"], "flow": "Từ BRD, DFD → sang Detailed Design, migration, estimate", "trap": "Sửa ERD giữa chừng mà không đánh giá ảnh hưởng, vỡ nhiều màn hình và báo cáo.", "say": "Em nhìn ERD để estimate: số bảng, quan hệ n–n và dữ liệu phải migrate là chỗ tốn công nhất.", "hook": "Entity là danh từ (bảng), Relationship là đường nối; chân chim (crow's foot) nghĩa là 'nhiều'.", "rel": ["DFD", "DD", "ARC"], "ex": {"type": "erd"}, "no": 25}, {"id": "SCR", "sym": "SCR", "fam": "how", "ph": 4, "en": "Screen Design & Transition", "vi": "Thiết kế màn hình, sơ đồ chuyển màn hình", "jp": "画面設計書・画面遷移図", "ro": "gamen sekkeisho, gamen sen'izu", "q": "Người dùng thấy gì, đi từ màn nào sang màn nào?", "what": "Bố cục từng màn hình (wireframe, mockup), danh sách item, validate, message lỗi và sơ đồ chuyển màn hình.", "who": "Viết: designer/BA · Duyệt: khách", "parts": ["画面一覧 (danh sách màn hình)", "Layout", "項目定義 (định nghĩa item, validate)", "Message", "画面遷移図 (sơ đồ chuyển màn)"], "flow": "Từ FRD, Use case → sang Detailed Design, test case", "trap": "Không có danh sách message lỗi, mỗi dev viết một kiểu, khách Nhật chê không thống nhất.", "say": "Với khách Nhật em yêu cầu có 項目定義 và danh sách message ngay trong 画面設計書.", "hook": "遷移 (sen'i) = di chuyển: màn này sang màn kia.", "rel": ["FRD", "UC", "BD", "TS"], "no": 26}, {"id": "API", "sym": "API", "fam": "how", "ph": 4, "en": "Interface / API Specification", "vi": "Đặc tả giao tiếp, API", "jp": "IF仕様書・API仕様書", "ro": "intāfēsu shiyōsho", "q": "Hai hệ thống nói chuyện với nhau bằng gì?", "what": "Hợp đồng giữa hai bên: endpoint, request/response, mã lỗi, xác thực, định dạng file batch (CSV, 固定長 độ dài cố định), tần suất, timeout.", "who": "Viết: tech lead · Duyệt: hai bên hệ thống", "parts": ["Endpoint, phương thức", "Schema request / response", "Mã lỗi, retry", "Xác thực", "Định dạng file batch"], "flow": "Từ Architecture → sang Detailed Design, 結合テスト", "trap": "Đổi IF mà không báo bên kia, lỗi chỉ lộ ra ở 結合テスト.", "say": "IF với hệ thống ngoài là rủi ro top của em; em chốt IF sớm và đưa nó vào change control.", "hook": "API là 'hợp đồng giữa hai cỗ máy'.", "rel": ["ARC", "BD", "DD"], "no": 27}, {"id": "BD", "sym": "BD", "fam": "how", "ph": 4, "en": "Basic Design (External Design)", "vi": "Thiết kế cơ bản (thiết kế ngoài)", "jp": "基本設計書", "ro": "kihon sekkeisho", "q": "Hệ thống trông thế nào nhìn từ bên ngoài?", "what": "Thiết kế nhìn từ phía người dùng và khách: màn hình, 帳票 (biểu mẫu, báo cáo in), IF, batch, DB logic, kiến trúc. Khách review và duyệt.", "who": "Viết: BrSE/tech lead · Duyệt: khách", "parts": ["Kiến trúc", "画面設計 (màn hình)", "帳票 (biểu mẫu)", "IF và batch", "DB logic (ERD)"], "flow": "Từ 要件定義書 → sang Detailed Design, spec 結合テスト", "trap": "Viết quá sâu vào code ở 基本設計: khách không đọc nổi, lại sai phạm vi.", "say": "基本設計 do khách duyệt, 詳細設計 thường là nội bộ vendor; em đặt gate review của khách trước khi sang 詳細設計.", "hook": "基本 = bên ngoài, khách thấy; 詳細 = bên trong, dev làm.", "rel": ["SRS", "DD", "SCR", "ERD", "API", "TS"], "no": 28}, {"id": "DD", "sym": "DD", "fam": "how", "ph": 4, "en": "Detailed Design (Internal Design)", "vi": "Thiết kế chi tiết (thiết kế trong)", "jp": "詳細設計書", "ro": "shōsai sekkeisho", "q": "Bên trong từng module chạy thế nào?", "what": "Thiết kế cho dev: module, class, xử lý từng bước, sequence diagram, テーブル定義書 (định nghĩa bảng), xử lý lỗi và log.", "who": "Viết: dev/tech lead · Review: tech lead (nội bộ)", "parts": ["Cấu trúc module, class", "Logic xử lý", "Sequence diagram", "Định nghĩa bảng", "Xử lý lỗi, log"], "flow": "Từ Basic Design → sang code, spec 単体テスト", "trap": "Bỏ 詳細設計 vì 'làm agile' trong dự án khách yêu cầu, nên thiếu deliverable lúc 検収.", "say": "Mức chi tiết của 詳細設計 em chốt với khách ngay từ đầu, vì nó ảnh hưởng thẳng tới estimate.", "hook": "DD = 'Dev Đọc': viết cho dev.", "rel": ["BD", "ERD", "TS"], "no": 29}, {"id": "PMP", "sym": "PMP", "fam": "when", "ph": 2, "en": "Project Management Plan", "vi": "Kế hoạch quản lý dự án", "jp": "プロジェクト計画書", "ro": "purojekuto keikakusho", "q": "Dự án sẽ được quản lý như thế nào?", "what": "Tài liệu 'mẹ' gom các kế hoạch con và baseline: phạm vi, lịch, chi phí, chất lượng, nhân sự, giao tiếp, rủi ro, quy trình thay đổi.", "who": "Viết: PM · Duyệt: sponsor/khách", "parts": ["Baseline phạm vi, lịch, chi phí", "Kế hoạch con (chất lượng, giao tiếp, rủi ro…)", "Quy trình change control", "体制図", "Công cụ, quy tắc làm việc"], "flow": "Từ Charter → sang mọi hoạt động thực thi", "trap": "Viết xong rồi để đó; sau 1 tháng kế hoạch không còn khớp thực tế.", "say": "計画書 của em là tài liệu sống: cập nhật khi có CR được duyệt và ở mỗi mốc phase.", "hook": "PM Plan là 'luật chơi' của dự án. Đừng nhầm với chứng chỉ PMP.", "rel": ["CHT", "WBS", "GNT", "QMP", "CMP", "RR"], "no": 30}, {"id": "NET", "sym": "NET", "fam": "when", "ph": 2, "en": "Network Diagram / Critical Path", "vi": "Sơ đồ mạng, đường găng", "jp": "ネットワーク図・PERT図", "ro": "nettowāku zu", "q": "Việc nào phải xong trước, đâu là đường găng?", "what": "Sơ đồ activity và quan hệ phụ thuộc. Từ đó tính critical path (chuỗi dài nhất, float = 0) và float của từng việc.", "who": "Viết: PM (bằng công cụ lập lịch)", "parts": ["Activity (node)", "Phụ thuộc FS / SS / FF / SF", "Thời lượng", "Critical path", "Float"], "flow": "Từ ABS → sang Gantt", "trap": "Không nhận ra critical path, dồn người vào việc không găng.", "say": "Khi có trễ, em xem việc đó có nằm trên critical path không trước khi báo khách lùi ngày.", "hook": "Critical path = con đường dài nhất quyết định ngày về đích.", "rel": ["ABS", "GNT"], "no": 31}, {"id": "GNT", "sym": "GNT", "fam": "when", "ph": 2, "en": "Gantt Chart / Schedule", "vi": "Biểu đồ Gantt, lịch dự án", "jp": "ガントチャート・スケジュール表", "ro": "ganto chāto, sukejūru hyō", "q": "Việc gì làm khi nào, ai làm, đang tới đâu?", "what": "Lịch dạng thanh thời gian: activity, ngày bắt đầu và kết thúc, phụ thuộc, người phụ trách, % hoàn thành, so với baseline.", "who": "Viết: PM · Cập nhật: hằng tuần", "parts": ["Activity, mã WBS", "Start / Finish", "Phụ thuộc", "Người phụ trách", "Baseline so với thực tế"], "flow": "Từ ABS, Network diagram, kế hoạch nhân sự → sang Status report, EVM", "trap": "Không lưu baseline, nên không chứng minh được trễ bao nhiêu và vì sao.", "say": "Khách Nhật quen bảng Excel có cột 予定 / 実績 (kế hoạch / thực tế); em luôn giữ baseline để so.", "hook": "Gantt là 'thanh ngang theo lịch'. Ở Nhật người ta hay gọi luôn bảng này là 'WBS', đừng nhầm với cây WBS.", "rel": ["WBS", "ABS", "NET", "MS", "SR"], "ex": {"type": "gantt"}, "no": 32}, {"id": "MS", "sym": "MS", "fam": "when", "ph": 2, "en": "Milestone Chart", "vi": "Bảng mốc", "jp": "マイルストーン表", "ro": "mairusutōn hyō", "q": "Những ngày chốt quan trọng là khi nào?", "what": "Danh sách mốc (thời điểm, độ dài bằng 0): duyệt 要件定義, xong 基本設計, bắt đầu UAT, go-live, 検収. Dùng để báo cáo lãnh đạo.", "who": "Viết: PM · Đồng ý: khách", "parts": ["Tên mốc", "Ngày", "Tiêu chí đạt (done criteria)", "Người xác nhận", "Trạng thái"], "flow": "Từ Gantt, SOW → sang Status report cho lãnh đạo", "trap": "Mốc không có tiêu chí đạt, nên 'xong' theo cảm giác.", "say": "Mỗi milestone của em có done criteria, vì khách Nhật sẽ hỏi 'xong' nghĩa là gì.", "hook": "Milestone là 'cột cây số': không có độ dài, chỉ có vị trí.", "rel": ["GNT", "SOW", "SR"], "no": 33}, {"id": "RLP", "sym": "RLP", "fam": "when", "ph": 6, "en": "Release / Cutover Plan", "vi": "Kế hoạch release, chuyển đổi production", "jp": "リリース計画書・本番移行計画書", "ro": "rirīsu keikakusho, honban ikō keikakusho", "q": "Đưa lên production thế nào, hỏng thì quay lại ra sao?", "what": "Từng bước đưa hệ thống và dữ liệu lên production: giờ giấc, người làm, kiểm tra, điều kiện go/no-go, rollback, liên lạc khẩn.", "who": "Viết: PM cùng tech lead · Duyệt: khách (vận hành)", "parts": ["Lịch theo giờ, phút", "Bước và người phụ trách", "Checklist kiểm tra", "Tiêu chí go / no-go", "Rollback, liên lạc khẩn"], "flow": "Từ Quality report, UAT → sang go-live, Closure report", "trap": "Không diễn tập (rehearsal), lần chạy đầu tiên lại là lần thật.", "say": "Em chạy rehearsal ít nhất 1 lần và đặt mốc giờ cụ thể để quyết định có rollback hay không.", "hook": "Release plan = kịch bản cất cánh kèm kịch bản hạ cánh khẩn.", "rel": ["QR", "UAT", "IR"], "no": 34}, {"id": "EST", "sym": "EST", "fam": "cost", "ph": 1, "en": "Estimate / Quotation", "vi": "Bảng ước lượng, báo giá", "jp": "見積書", "ro": "mitsumorisho", "q": "Mất bao nhiêu công, bao nhiêu tiền?", "what": "Ước lượng effort (人月 – người-tháng) và chi phí theo WBS, kèm phương pháp, buffer, 前提条件 (tiền đề) và 対象外 (ngoài phạm vi).", "who": "Viết: PM cùng tech lead · Duyệt: lãnh đạo vendor, rồi gửi khách", "parts": ["Hạng mục theo WBS", "Effort theo 工程 (giai đoạn)", "Phương pháp (bottom-up, FP…)", "Buffer rủi ro", "前提条件 và 対象外"], "flow": "Từ RFP, SOW, WBS → sang Proposal, Cost Baseline", "trap": "Gửi con số mà không gửi 前提条件, nên mọi thay đổi sau đều bị coi là 'trong giá'.", "say": "Estimate của em luôn đi kèm trang 前提条件; đó là thứ bảo vệ dự án khi spec thay đổi.", "hook": "Estimate = con số + 'nếu…'. Không có 'nếu' (tiền đề) thì chưa phải estimate.", "rel": ["WBS", "PRP", "CB", "CBS"], "ex": {"type": "table", "head": ["Hạng mục (ví dụ)", "工程", "Effort", "Ghi chú"], "rows": [["Đăng nhập", "基本設計", "3 人日", "Gồm SSO"], ["Đăng nhập", "製造・単体", "5 人日", ""], ["Buffer rủi ro", "–", "10% (tham khảo)", "Ghi rõ lý do"], ["前提条件", "–", "–", "Khách cấp dữ liệu test"]]}, "no": 35}, {"id": "CB", "sym": "CB", "fam": "cost", "ph": 2, "en": "Cost Baseline / Budget", "vi": "Đường cơ sở chi phí, ngân sách", "jp": "コストベースライン・予算", "ro": "kosuto bēsurain, yosan", "q": "Ngân sách được duyệt chia theo thời gian ra sao?", "what": "Ngân sách đã duyệt phân bổ theo thời gian (đường chữ S), dùng để so với thực chi. Ngân sách = cost baseline + management reserve.", "who": "Viết: PM · Duyệt: sponsor", "parts": ["Chi phí theo work package", "Phân bổ theo tháng (đường chữ S)", "Contingency reserve", "Management reserve", "Quy tắc dùng dự phòng"], "flow": "Từ Estimate, CBS → sang EVM", "trap": "Tiêu contingency như tiền thường, đến khi rủi ro thật xảy ra thì hết dự phòng.", "say": "Contingency để cho rủi ro đã biết, management reserve cho cái chưa biết; PM không tự dùng management reserve.", "hook": "Hình chữ S: chậm – nhanh – chậm.", "rel": ["EST", "CBS", "EVM"], "no": 36}, {"id": "EVM", "sym": "EVM", "fam": "cost", "ph": 5, "en": "EVM / Budget vs Actual Report", "vi": "Báo cáo giá trị thu được, kế hoạch – thực tế", "jp": "予実管理", "ro": "yojitsu kanri", "q": "Đang nhanh hay chậm, lố hay tiết kiệm?", "what": "So PV (kế hoạch), EV (giá trị đã làm được), AC (thực chi) để ra SV, CV, SPI, CPI và dự báo EAC.", "who": "Viết: PM · Gửi: lãnh đạo, đôi khi khách", "parts": ["PV, EV, AC", "SPI = EV / PV", "CPI = EV / AC", "EAC = BAC / CPI", "Nguyên nhân và hành động"], "flow": "Từ Cost Baseline, Gantt, timesheet → sang Status report, CR (nếu cần thêm ngân sách)", "trap": "Đo EV bằng % cảm tính, task cứ '90%' mãi không xong.", "say": "CPI < 1 nghĩa là mỗi đồng bỏ ra tạo chưa tới một đồng giá trị; em báo kèm nguyên nhân và kế hoạch kéo lại.", "hook": "Kế hoạch – Làm được – Tiêu hết = PV – EV – AC. Chỉ số dưới 1 là xấu.", "rel": ["CB", "GNT", "SR"], "no": 37}, {"id": "RAID", "sym": "RAID", "fam": "ctrl", "ph": 2, "en": "RAID Log", "vi": "Nhật ký Rủi ro – Giả định – Vấn đề – Phụ thuộc", "jp": "RAIDログ", "ro": "reido rogu", "q": "Mọi thứ có thể làm lệch dự án được theo dõi ở đâu?", "what": "Một bảng gom 4 loại: Risk (chưa xảy ra), Assumption (đang tin là đúng), Issue (đã xảy ra), Dependency (phụ thuộc bên ngoài).", "who": "Viết: PM · Rà: hằng tuần", "parts": ["R – rủi ro", "A – giả định", "I – vấn đề", "D – phụ thuộc", "Owner và hạn xử lý"], "flow": "Từ RBS rủi ro, PM Plan → sang Status report, CR", "trap": "Giả định không ai kiểm, khi nó sai thì đã muộn.", "say": "Giả định trong 見積 em đưa luôn vào RAID và kiểm từng cái; giả định sai là nguồn CR hợp lệ.", "hook": "RAID = 'đột kích': Rủi ro – Giả định – Vấn đề – Phụ thuộc.", "rel": ["RR", "IL", "CR"], "no": 38}, {"id": "RR", "sym": "RR", "fam": "ctrl", "ph": 2, "en": "Risk Register", "vi": "Sổ đăng ký rủi ro", "jp": "リスク管理表", "ro": "risuku kanrihyō", "q": "Điều gì CÓ THỂ xảy ra, đối phó ra sao?", "what": "Danh sách rủi ro chưa xảy ra: mô tả, xác suất, tác động, điểm, đối sách, owner, trigger, trạng thái.", "who": "Viết: PM · Cập nhật hằng tuần cùng team", "parts": ["Mô tả dạng 'nếu… thì…'", "Xác suất × tác động", "Đối sách: tránh, chuyển, giảm, chấp nhận", "Owner", "Trigger"], "flow": "Từ RBS rủi ro, RAID → sang Issue log (khi rủi ro xảy ra), CR", "trap": "Ghi rủi ro chung chung ('trễ tiến độ') thay vì nguyên nhân cụ thể.", "say": "Em viết rủi ro theo mẫu 'nếu nguyên nhân thì hậu quả'; rủi ro nào cũng có owner và trigger.", "hook": "Risk là TƯƠNG LAI (có thể xảy ra); Issue là HIỆN TẠI (đã xảy ra).", "rel": ["RBSK", "RAID", "IL"], "ex": {"type": "table", "head": ["ID", "Rủi ro (ví dụ)", "P", "I", "Đối sách", "Owner"], "rows": [["R-01", "Nếu khách trả lời Q&A chậm thì 基本設計 trễ", "Cao", "Cao", "Ghi hạn trả lời 2 ngày vào 議事録", "PM"], ["R-02", "Nếu BrSE nghỉ thì mất kênh với khách", "Vừa", "Cao", "Có BrSE dự phòng", "PM"]]}, "no": 39}, {"id": "IL", "sym": "IL", "fam": "ctrl", "ph": 5, "en": "Issue Log", "vi": "Nhật ký vấn đề", "jp": "課題管理表", "ro": "kadai kanrihyō", "q": "Vấn đề gì ĐANG xảy ra, ai xử lý, khi nào xong?", "what": "Danh sách vấn đề đã xảy ra cần xử lý: mô tả, ảnh hưởng, người phụ trách, hạn, trạng thái, kết luận.", "who": "Viết: PM/BrSE · Thường dùng chung với khách", "parts": ["Mô tả, ảnh hưởng", "Mức ưu tiên", "Người phụ trách (bên nào)", "Hạn xử lý", "Trạng thái, kết luận"], "flow": "Từ Risk register (khi rủi ro xảy ra), các cuộc họp → sang CR, Status report", "trap": "Ghi vấn đề không có hạn và người phụ trách, nên bảng dài mãi.", "say": "Khách Nhật rất hay dùng 課題管理表 chung; em rà nó ở mỗi 定例会 và đóng từng dòng có kết luận.", "hook": "Issue = 'cháy rồi': cần người cầm vòi và giờ dập.", "rel": ["RR", "RAID", "CR", "MOM"], "ex": {"type": "table", "head": ["No", "Vấn đề (ví dụ)", "Phụ trách", "Trạng thái"], "rows": [["12", "Môi trường test phía khách chưa mở", "Khách", "Đang xử lý"], ["13", "Spec tính phí chưa thống nhất", "BrSE", "Chờ khách trả lời"]]}, "no": 40}, {"id": "CR", "sym": "CR", "fam": "ctrl", "ph": 5, "en": "Change Request", "vi": "Yêu cầu thay đổi", "jp": "変更要求書・仕様変更依頼", "ro": "henkō yōkyūsho", "q": "Thay đổi này ảnh hưởng gì, ai duyệt?", "what": "Đề nghị chính thức thay đổi baseline (phạm vi, lịch, chi phí), kèm phân tích ảnh hưởng và quyết định duyệt hay từ chối.", "who": "Đề xuất: bất kỳ ai · Phân tích: PM và team · Duyệt: khách / CCB", "parts": ["Mô tả và lý do", "Ảnh hưởng: phạm vi, lịch, chi phí, chất lượng", "追加見積 (estimate bổ sung)", "Quyết định, người duyệt", "Cập nhật baseline"], "flow": "Từ Issue log, yêu cầu của khách → sang PM Plan, Gantt, Estimate cập nhật", "trap": "Nhận thay đổi qua chat rồi làm luôn: mất tiền và mất baseline.", "say": "Thay đổi nhỏ em vẫn ghi change log; thay đổi có ảnh hưởng thì có 追加見積 và chờ khách duyệt rồi mới làm.", "hook": "CR = 'Cổng Rào': không qua cổng thì không vào baseline.", "rel": ["IL", "SS", "EST", "RTM"], "ex": {"type": "table", "head": ["Mục", "Nội dung (ví dụ)"], "rows": [["Thay đổi", "Thêm đăng nhập bằng Apple ID"], ["Ảnh hưởng lịch", "+5 ngày"], ["Ảnh hưởng chi phí", "+0,4 人月"], ["Quyết định", "Chờ khách duyệt"]]}, "no": 41}, {"id": "IR", "sym": "IR", "fam": "ctrl", "ph": 6, "en": "Incident Report", "vi": "Báo cáo sự cố", "jp": "障害報告書", "ro": "shōgai hōkokusho", "q": "Sự cố gì đã xảy ra, vì sao, làm gì để không lặp lại?", "what": "Báo cáo sau sự cố production: thời điểm, ảnh hưởng, nguyên nhân, xử lý tạm thời, xử lý triệt để, biện pháp chống tái phát.", "who": "Viết: PM cùng tech lead · Gửi khách, thường có lãnh đạo vendor ký", "parts": ["発生日時 (thời điểm xảy ra)", "影響範囲 (phạm vi ảnh hưởng)", "原因 (nguyên nhân, なぜなぜ分析)", "暫定対応 / 恒久対応 (tạm thời / triệt để)", "再発防止策, 横展開 (chống tái phát, nhân rộng)"], "flow": "Từ Issue log, log hệ thống → sang Lessons learned, Quality plan cập nhật", "trap": "Nguyên nhân dừng ở 'do người làm sai'; khách Nhật không chấp nhận, họ cần nguyên nhân ở quy trình.", "say": "障害報告書 em gửi bản đầu (第一報) trong vài giờ, bản đầy đủ sau khi có なぜなぜ分析.", "hook": "5 câu: Khi nào – Ảnh hưởng gì – Vì sao – Đã xử lý ra sao – Làm gì để không lặp lại.", "rel": ["IL", "LL", "BUG"], "no": 42}, {"id": "QMP", "sym": "QMP", "fam": "qual", "ph": 2, "en": "Quality Management Plan", "vi": "Kế hoạch chất lượng", "jp": "品質計画書", "ro": "hinshitsu keikakusho", "q": "Thế nào là 'đạt', đo bằng gì, kiểm ở đâu?", "what": "Tiêu chuẩn chất lượng, chỉ số (mật độ review, mật độ test, mật độ bug), quality gate theo từng phase, vai trò QA.", "who": "Viết: PM cùng QA lead · Duyệt: khách", "parts": ["Tiêu chuẩn, quy trình", "Chỉ số và ngưỡng (テスト密度, バグ密度)", "Gate theo 工程", "Kế hoạch review", "Vai trò QA"], "flow": "Từ PM Plan, yêu cầu của khách → sang Test plan, Quality report", "trap": "Đặt ngưỡng chỉ số mà không có số liệu lịch sử, ngưỡng thành vô nghĩa.", "say": "Em chốt chỉ số chất lượng và ngưỡng với khách từ đầu, để báo cáo chất lượng về sau không bị tranh cãi.", "hook": "QMP là 'luật chấm điểm': viết trước khi thi.", "rel": ["PMP", "TP", "QR"], "no": 43}, {"id": "RTM", "sym": "RTM", "fam": "qual", "ph": 3, "en": "Requirements Traceability Matrix", "vi": "Ma trận truy vết yêu cầu", "jp": "トレーサビリティマトリクス", "ro": "torēsabiriti matorikusu", "q": "Mỗi yêu cầu đã được thiết kế, test ở đâu?", "what": "Bảng nối mỗi yêu cầu với mục thiết kế, chức năng, test case và kết quả, để không sót và để phân tích ảnh hưởng khi thay đổi.", "who": "Viết: BA/QA · Duy trì suốt dự án", "parts": ["Mã yêu cầu", "Mục thiết kế", "Chức năng, màn hình", "Test case", "Kết quả"], "flow": "Từ BRD, SRS → sang test spec, UAT, CR (phân tích ảnh hưởng)", "trap": "Chỉ làm RTM lúc cuối để đối phó, nên không giúp gì khi có thay đổi giữa chừng.", "say": "Khi có CR, em mở RTM để thấy ngay test case nào phải chạy lại.", "hook": "RTM là 'sợi chỉ đỏ' xuyên từ yêu cầu tới test.", "rel": ["BRD", "SRS", "BD", "TS", "CR", "UAT"], "ex": {"type": "table", "head": ["Yêu cầu (ví dụ)", "Thiết kế", "Test case", "Kết quả"], "rows": [["REQ-01 Đăng nhập", "BD 3.1", "TC-001~012", "Đạt"], ["REQ-02 Đổi mật khẩu", "BD 3.2", "TC-013~020", "Còn 2 lỗi"]]}, "no": 44}, {"id": "TP", "sym": "TP", "fam": "qual", "ph": 4, "en": "Test Plan", "vi": "Kế hoạch kiểm thử", "jp": "テスト計画書", "ro": "tesuto keikakusho", "q": "Test cái gì, khi nào, cách nào, khi nào dừng?", "what": "Phạm vi test, các mức test (単体 / 結合 / 総合 / 受入), môi trường, dữ liệu, lịch, nhân sự, tiêu chí bắt đầu và kết thúc.", "who": "Viết: QA lead · Duyệt: PM, khách", "parts": ["Phạm vi và phần không test", "Mức test, loại test", "Môi trường, dữ liệu", "Lịch, người", "Tiêu chí vào / ra (entry / exit)"], "flow": "Từ Quality plan, SRS, NFR → sang Test spec, Quality report", "trap": "Không có tiêu chí kết thúc, nên test mãi hoặc dừng theo deadline.", "say": "Exit criteria của em có số: tỉ lệ case đạt, không còn bug nghiêm trọng, đường cong bug đã hội tụ.", "hook": "Test plan = 'đánh trận ở đâu'; Test spec = 'từng phát bắn'.", "rel": ["QMP", "TS", "QR"], "no": 45}, {"id": "TS", "sym": "TS", "fam": "qual", "ph": 4, "en": "Test Specification / Test Cases", "vi": "Đặc tả kiểm thử, test case", "jp": "テスト仕様書", "ro": "tesuto shiyōsho", "q": "Từng bước test là gì, mong đợi kết quả gì?", "what": "Danh sách test case: テスト観点 (góc nhìn test), điều kiện, bước làm, dữ liệu, kết quả mong đợi, kết quả thực tế, evidence.", "who": "Viết: QA/dev · Review: tech lead/BrSE · Khách có thể duyệt", "parts": ["テスト観点 (góc nhìn test)", "Điều kiện trước", "Bước thực hiện", "Kết quả mong đợi", "Kết quả thực tế, evidence"], "flow": "Từ Basic/Detailed Design, màn hình, RTM → sang Bug list, Quality report", "trap": "Kết quả mong đợi ghi 'hiển thị đúng', nên không kiểm được.", "say": "Khách Nhật cần evidence cho từng case; em đặt quy tắc chụp màn hình và đặt tên file từ đầu.", "hook": "Mỗi case = 'Cho – Khi – Thì' (Given – When – Then).", "rel": ["TP", "RTM", "BUG"], "ex": {"type": "table", "head": ["ID", "Góc nhìn (ví dụ)", "Bước", "Mong đợi", "KQ"], "rows": [["TC-005", "Mật khẩu sai nhiều lần", "Nhập sai 5 lần", "Khóa tài khoản 30 phút", "OK"]]}, "no": 46}, {"id": "BUG", "sym": "BUG", "fam": "qual", "ph": 5, "en": "Bug List / Defect Log", "vi": "Danh sách lỗi", "jp": "不具合管理表", "ro": "fuguai kanrihyō", "q": "Có những lỗi nào, nặng cỡ nào, sửa chưa?", "what": "Nhật ký lỗi: mô tả, bước tái hiện, mức nghiêm trọng, ưu tiên, người sửa, nguyên nhân, pha gây ra lỗi, trạng thái.", "who": "Ghi: QA/khách · Sửa: dev · Theo dõi: PM", "parts": ["Mô tả, bước tái hiện", "Severity / priority", "Nguyên nhân, phân loại", "Pha gây lỗi (作り込み工程)", "Trạng thái, ngày đóng"], "flow": "Từ Test spec, UAT → sang Quality report, Incident report (nếu ở production)", "trap": "Không ghi nguyên nhân và pha gây lỗi, nên không phân tích được để cải tiến.", "say": "Em phân loại bug theo nguyên nhân để biết lỗi do spec, thiết kế hay code, rồi sửa quy trình đúng chỗ.", "hook": "Severity = mức đau; Priority = sửa trước hay sau.", "rel": ["TS", "QR", "IR"], "no": 47}, {"id": "QR", "sym": "QR", "fam": "qual", "ph": 5, "en": "Quality / Test Report", "vi": "Báo cáo chất lượng, kết quả test", "jp": "品質報告書・テスト結果報告書", "ro": "hinshitsu hōkokusho", "q": "Chất lượng hiện tại đủ để release chưa?", "what": "Tổng hợp kết quả test và review: số case, tỉ lệ đạt, mật độ test và bug so với ngưỡng, đường cong bug, phân tích, kết luận release.", "who": "Viết: QA lead cùng PM · Gửi: khách", "parts": ["Số liệu test, review", "So với ngưỡng trong Quality plan", "Đường cong hội tụ bug", "Phân tích nguyên nhân", "Kết luận, rủi ro còn lại"], "flow": "Từ Test spec, Bug list → sang Release plan, UAT (quyết định release)", "trap": "Chỉ đưa số, không có phân tích và kết luận; khách tự suy diễn.", "say": "Báo cáo chất lượng của em luôn kết thúc bằng 1 câu kết luận và danh sách rủi ro còn lại.", "hook": "Số → So sánh → Lý giải → Kết luận.", "rel": ["QMP", "BUG", "TS", "RLP"], "no": 48}, {"id": "CMP", "sym": "CMP", "fam": "talk", "ph": 2, "en": "Communication Plan", "vi": "Kế hoạch giao tiếp", "jp": "コミュニケーション計画書", "ro": "komyunikēshon keikakusho", "q": "Ai cần biết gì, khi nào, qua kênh nào?", "what": "Ma trận giao tiếp: đối tượng, thông tin, tần suất, kênh, người gửi, định dạng; quy tắc escalation và thời hạn trả lời.", "who": "Viết: PM · Đồng ý: khách", "parts": ["Đối tượng", "Nội dung", "Tần suất (定例会 tuần, báo cáo tháng)", "Kênh (email, chat, họp)", "Escalation, hạn trả lời"], "flow": "Từ Stakeholder register, OBS → sang Status report, 議事録, Q&A", "trap": "Không có quy tắc trả lời câu hỏi: khách đợi, team đợi, cùng trễ.", "say": "Em thống nhất từ đầu: câu hỏi trả lời trong bao lâu, sự cố báo qua kênh nào, ai được quyết.", "hook": "CMP là 'lịch phát sóng': ai nghe kênh nào, giờ nào.", "rel": ["SHR", "RACI", "SR", "MOM"], "no": 49}, {"id": "SR", "sym": "SR", "fam": "talk", "ph": 5, "en": "Status Report", "vi": "Báo cáo tiến độ", "jp": "進捗報告書", "ro": "shinchoku hōkokusho", "q": "Tuần này dự án đang ở đâu?", "what": "Báo cáo định kỳ: trạng thái chung (RAG: đỏ / vàng / xanh), tiến độ so kế hoạch, đã làm và sẽ làm, rủi ro và vấn đề, cần khách hỗ trợ gì.", "who": "Viết: PM · Gửi: khách, lãnh đạo", "parts": ["Trạng thái RAG", "Tiến độ (予定 so với 実績)", "Đã làm / sẽ làm", "Rủi ro, vấn đề", "Cần khách quyết định gì"], "flow": "Từ Gantt, EVM, Risk register, Issue log → sang 定例会, quyết định của khách", "trap": "Báo xanh suốt rồi đột nhiên đỏ (báo cáo 'dưa hấu': vỏ xanh ruột đỏ).", "say": "Báo cáo của em đặt tin xấu lên đầu và luôn có mục 'cần khách quyết gì'.", "hook": "RAG: Red – Amber – Green. Không có 'xanh dưa hấu'.", "rel": ["GNT", "EVM", "RR", "IL", "MOM"], "ex": {"type": "table", "head": ["Hạng mục", "Trạng thái", "Ghi chú (ví dụ)"], "rows": [["Tiến độ", "Vàng", "Trễ 2 ngày ở màn hình thanh toán"], ["Chất lượng", "Xanh", "Bug hội tụ đúng kế hoạch"], ["Cần khách", "–", "Trả lời Q&A #23 trước thứ Sáu"]]}, "no": 50}, {"id": "MOM", "sym": "MoM", "fam": "talk", "ph": 5, "en": "Minutes of Meeting", "vi": "Biên bản họp", "jp": "議事録", "ro": "gijiroku", "q": "Họp đã quyết gì, ai làm gì, hạn khi nào?", "what": "Ghi quyết định, việc cần làm (ai, hạn), vấn đề còn mở sau mỗi cuộc họp; gửi đi và xin xác nhận.", "who": "Viết: BrSE/PM · Xác nhận: người tham dự", "parts": ["Thời gian, người tham dự", "決定事項 (quyết định)", "Việc cần làm: ai, hạn", "Vấn đề còn mở", "Lần họp tới"], "flow": "Từ 定例会, các cuộc họp → sang Issue log, Q&A, CR", "trap": "Ghi diễn biến dài dòng, không ghi rõ quyết định; sau này cãi nhau.", "say": "Em gửi 議事録 trong 24 giờ và xin khách xác nhận; quyết định trong 議事録 là căn cứ khi có tranh chấp.", "hook": "Ba thứ phải có: Quyết gì – Ai làm – Bao giờ.", "rel": ["IL", "QA", "CMP"], "no": 51}, {"id": "QA", "sym": "QA", "fam": "talk", "ph": 3, "en": "Q&A List", "vi": "Bảng hỏi đáp với khách", "jp": "QA管理表", "ro": "kyū-ē kanrihyō", "q": "Còn câu hỏi nào với khách, đã trả lời chưa?", "what": "Bảng câu hỏi gửi khách (thường về spec): câu hỏi, người hỏi, ngày, câu trả lời, người trả lời, ảnh hưởng, trạng thái.", "who": "Viết: BrSE/BA · Trả lời: khách", "parts": ["Câu hỏi kèm phương án đề xuất", "Ngày hỏi, hạn trả lời", "Câu trả lời", "Ảnh hưởng tới tài liệu nào", "Trạng thái"], "flow": "Từ đọc spec, review → sang cập nhật FRD/BD, CR", "trap": "Hỏi câu mở ('cái này thế nào ạ?') nên khách trả lời chậm. Hãy hỏi kèm phương án A/B.", "say": "Câu hỏi của em luôn có phương án đề xuất để khách chỉ cần chọn; câu nào quá hạn chưa trả lời thành rủi ro trong báo cáo.", "hook": "Hỏi kiểu trắc nghiệm, đừng hỏi tự luận. (QA ở đây là hỏi đáp, không phải Quality Assurance.)", "rel": ["MOM", "IL", "FRD", "BD"], "no": 52}, {"id": "UAT", "sym": "UAT", "fam": "done", "ph": 6, "en": "UAT & Acceptance Sign-off", "vi": "Kiểm thử chấp nhận, biên bản nghiệm thu", "jp": "受入テスト・検収書", "ro": "ukeire tesuto, kenshūsho", "q": "Khách đã chấp nhận sản phẩm chưa?", "what": "Khách test theo nghiệp vụ thật (受入テスト), rồi ký 検収: mốc chuyển giao chính thức, thường là căn cứ thanh toán.", "who": "Test: khách · Hỗ trợ: vendor · Ký: khách", "parts": ["Phạm vi UAT", "Kịch bản nghiệp vụ", "Kết quả, bug còn lại", "Điều kiện chấp nhận", "Chữ ký 検収"], "flow": "Từ Quality report, RTM, SOW (tiêu chí) → sang thanh toán, Closure report, bảo hành", "trap": "Tiêu chí nghiệm thu không ghi trong SOW, khách kéo dài 検収.", "say": "Tiêu chí 検収 em chốt từ SOW; vào UAT chỉ đối chiếu, không thương lượng lại.", "hook": "検収 = 'ký nhận hàng', ký xong mới có tiền.", "rel": ["SOW", "RTM", "QR", "CLR"], "no": 53}, {"id": "LL", "sym": "LL", "fam": "done", "ph": 6, "en": "Lessons Learned", "vi": "Bài học kinh nghiệm", "jp": "振り返り・教訓", "ro": "furikaeri, kyōkun", "q": "Lần sau làm gì khác đi?", "what": "Điều làm tốt, điều chưa tốt, nguyên nhân và hành động cụ thể cho dự án sau. Nên làm cả giữa dự án, không chỉ lúc cuối.", "who": "Viết: PM cùng team (và khách nếu được)", "parts": ["Làm tốt", "Chưa tốt", "Nguyên nhân", "Hành động cho lần sau", "Người, nơi áp dụng"], "flow": "Từ Risk register, Issue log, Bug list, Incident report → sang dự án sau (RBS rủi ro, Quality plan, Estimate)", "trap": "Viết xong cất đi, dự án sau không ai đọc.", "say": "Mỗi bài học của em phải thành 1 thay đổi cụ thể: checklist mới, hệ số estimate mới, hoặc rủi ro mới trong RBS.", "hook": "KPT: Keep – Problem – Try, cách 振り返り phổ biến ở Nhật.", "rel": ["RBSK", "IR", "CLR"], "no": 54}, {"id": "CLR", "sym": "CLR", "fam": "done", "ph": 6, "en": "Closure Report", "vi": "Báo cáo đóng dự án", "jp": "完了報告書", "ro": "kanryō hōkokusho", "q": "Dự án kết thúc ra sao so với mục tiêu?", "what": "Tổng kết cuối: mục tiêu đạt hay không, phạm vi, lịch, chi phí so với baseline, chất lượng, bàn giao, việc còn lại, bài học.", "who": "Viết: PM · Duyệt: sponsor", "parts": ["So với mục tiêu (từ Charter, Business Case)", "Phạm vi – lịch – chi phí thực tế", "Chất lượng, sự cố", "Bàn giao, việc còn mở", "Bài học"], "flow": "Từ UAT, EVM, Lessons learned → sang lưu trữ, giải phóng nguồn lực", "trap": "Đóng dự án khi chưa bàn giao tài liệu vận hành, bên bảo trì gọi lại liên tục.", "say": "Em đóng dự án bằng checklist: 検収 xong, tài liệu bàn giao đủ, quyền truy cập đã thu hồi, bài học đã ghi.", "hook": "CLR = 'Clear': dọn sạch trước khi rời.", "rel": ["UAT", "LL", "CHT"], "no": 55}], "lenses": {"wbs": {"label": "WBS", "title": "Công việc (danh từ, theo deliverable)", "root": "Website TMĐT", "l1": ["1. Quản lý dự án", "2. Yêu cầu & thiết kế", "3. Phát triển", "4. Test & release"], "l2": [["1.1 Kế hoạch", "1.2 Báo cáo tuần"], ["2.1 要件定義書", "2.2 基本設計書"], ["3.1 Giỏ hàng", "3.2 Thanh toán"], ["4.1 結合テスト", "4.2 Release"]]}, "pbs": {"label": "PBS", "title": "Sản phẩm (chỉ thứ được giao)", "root": "Website TMĐT", "l1": ["Front-end", "Back-end API", "Cơ sở dữ liệu", "Tài liệu bàn giao"], "l2": [["Trang sản phẩm", "Trang giỏ hàng"], ["API đơn hàng", "API thanh toán"], ["Bảng User", "Bảng Order"], ["設計書", "Hướng dẫn vận hành"]]}, "abs": {"label": "ABS", "title": "Hoạt động (động từ, tách từ 1 work package)", "root": "WP 3.2 Thanh toán", "l1": ["Thiết kế", "Lập trình", "Kiểm thử", "Review & sửa"], "l2": [["Viết 詳細設計", "Review thiết kế"], ["Code API", "Nối cổng thanh toán"], ["Viết case UT", "Chạy UT"], ["Code review", "Sửa 指摘"]]}, "obs": {"label": "OBS", "title": "Tổ chức (ai thuộc nhóm nào)", "root": "Ban dự án", "l1": ["PM", "BrSE / Comtor", "Team Dev", "Team QA"], "l2": [["Sub-PM", "PMO"], ["BrSE onsite", "Comtor"], ["Team FE", "Team BE"], ["QA lead", "Tester"]]}, "rres": {"label": "RBS · tài nguyên", "title": "Tài nguyên (cần những gì)", "root": "Tài nguyên", "l1": ["Con người", "Thiết bị", "Phần mềm", "Dịch vụ"], "l2": [["Dev BE × 4", "Tester × 2"], ["Laptop", "Máy test iOS/Android"], ["License IDE", "Công cụ quản lý"], ["Cloud", "Môi trường staging"]]}, "rrisk": {"label": "RBS · rủi ro", "title": "Nguồn rủi ro (nguy hiểm đến từ đâu)", "root": "Rủi ro dự án", "l1": ["Kỹ thuật", "Yêu cầu", "Con người", "Bên ngoài"], "l2": [["Hiệu năng", "Tích hợp IF"], ["Spec mơ hồ", "Đổi spec"], ["Nghỉ việc", "Thiếu tiếng Nhật"], ["Vendor khác trễ", "Luật thay đổi"]]}, "cbs": {"label": "CBS", "title": "Chi phí (tiền đi đâu)", "root": "Ngân sách", "l1": ["Nhân công", "Hạ tầng", "License", "Dự phòng"], "l2": [["Dev", "QA & BrSE"], ["Cloud", "Môi trường test"], ["Công cụ", "Thư viện"], ["Contingency", "Mgmt reserve"]]}}, "formulas": [["WBS × OBS", "RACI", "ai làm gì"], ["WBS → ABS → NET", "Gantt", "lịch có đường găng"], ["WBS × CBS", "Cost baseline", "ngân sách theo thời gian"], ["PBS + việc quản lý", "WBS", "không sót deliverable"], ["RBS rủi ro", "Risk register", "rủi ro cụ thể"], ["RBS tài nguyên", "Kế hoạch nhân sự", "ai vào, khi nào"]], "vmodel": [{"l": {"jp": "業務要件", "vi": "Yêu cầu nghiệp vụ", "docs": ["BRD", "BC"]}, "r": {"jp": "受入テスト", "vi": "Test chấp nhận (khách)", "docs": ["UAT"]}}, {"l": {"jp": "要件定義", "vi": "Định nghĩa yêu cầu", "docs": ["SRS", "FRD", "NFR"]}, "r": {"jp": "総合テスト", "vi": "Test hệ thống", "docs": ["TP", "QR"]}}, {"l": {"jp": "基本設計", "vi": "Thiết kế cơ bản", "docs": ["BD", "ARC", "SCR", "API"]}, "r": {"jp": "結合テスト", "vi": "Test tích hợp", "docs": ["TS", "BUG"]}}, {"l": {"jp": "詳細設計", "vi": "Thiết kế chi tiết", "docs": ["DD", "ERD"]}, "r": {"jp": "単体テスト", "vi": "Test đơn vị", "docs": ["TS"]}}], "pairs": [{"a": "BRD", "b": "FRD / SRS", "diff": ["BRD: doanh nghiệp cần đạt gì (mục tiêu, quy trình, KPI)", "FRD: hệ thống phải làm chức năng gì", "SRS: toàn bộ đặc tả, thêm phi chức năng, giao diện, ràng buộc"], "tip": "Đọc theo thứ tự B → F → S: Business → Function → toàn bộ Software. Ở Nhật: 業務要件 → 機能要件 + 非機能要件 = 要件定義書."}, {"a": "BRD", "b": "PRD", "diff": ["BRD: dự án do khách đặt hàng, nhìn từ doanh nghiệp", "PRD: công ty làm sản phẩm, nhìn từ người dùng thị trường"], "tip": "Outsource cho khách Nhật: gần như luôn là BRD / 要件定義書."}, {"a": "WBS", "b": "Gantt", "diff": ["WBS: cây 'cái gì', không có ngày", "Gantt: 'khi nào, ai làm', thanh theo lịch"], "tip": "Ở Nhật, bảng Excel lịch hay bị gọi là 'WBS'. Nghe 'WBS' thì hỏi lại: cây phân rã hay lịch?"}, {"a": "WBS", "b": "ABS", "diff": ["WBS: danh từ, deliverable, work package", "ABS / Activity list: động từ, các bước làm ra 1 work package"], "tip": "'Module thanh toán' là WBS; 'viết thiết kế, code, test' là activity."}, {"a": "WBS", "b": "PBS", "diff": ["PBS: chỉ thứ được giao (sản phẩm)", "WBS: thứ được giao + việc để làm ra nó, kể cả quản lý dự án"], "tip": "PBS + việc quản lý, test, release = WBS."}, {"a": "RBS (tài nguyên)", "b": "RBS (rủi ro)", "diff": ["Resource BS: người, thiết bị, phần mềm, dịch vụ", "Risk BS: nguồn rủi ro theo nhóm"], "tip": "Cùng tên viết tắt: luôn nói rõ chữ R là Resource hay Risk."}, {"a": "OBS", "b": "RACI", "diff": ["OBS (体制図): ai thuộc nhóm nào, ai báo cáo ai", "RACI: với từng việc, ai làm, ai chịu, ai được hỏi, ai được báo"], "tip": "RACI = WBS (hàng) × OBS (cột)."}, {"a": "Risk register", "b": "Issue log", "diff": ["Risk: chưa xảy ra, có xác suất", "Issue: đã xảy ra, cần người xử lý và hạn"], "tip": "Rủi ro xảy ra thì chuyển từ リスク管理表 sang 課題管理表."}, {"a": "Issue", "b": "Change request", "diff": ["Issue: vấn đề cần giải quyết", "CR: đề nghị đổi baseline (phạm vi, lịch, chi phí)"], "tip": "Một issue có thể sinh ra CR, nhưng không phải issue nào cũng là CR."}, {"a": "ERD", "b": "DFD", "diff": ["ERD: dữ liệu tổ chức thế nào (bảng, khóa, quan hệ)", "DFD: dữ liệu chảy đi đâu (nguồn, xử lý, kho)"], "tip": "ERD là hồ chứa, DFD là dòng sông."}, {"a": "基本設計", "b": "詳細設計", "diff": ["基本設計 (Basic Design): nhìn từ ngoài, khách duyệt", "詳細設計 (Detailed Design): nhìn từ trong, viết cho dev"], "tip": "基本 = khách thấy; 詳細 = dev đọc."}, {"a": "Test plan", "b": "Test spec", "diff": ["Test plan: phạm vi, mức test, môi trường, tiêu chí dừng", "Test spec: từng case, bước làm, kết quả mong đợi"], "tip": "Plan là chiến lược, spec là từng phát bắn."}, {"a": "Charter", "b": "SOW / Scope statement", "diff": ["Charter: cho phép dự án bắt đầu, trao quyền cho PM", "SOW: phạm vi theo hợp đồng với khách", "Scope statement: phạm vi chi tiết để lập WBS"], "tip": "Charter = giấy khai sinh; SOW = hợp đồng; Scope statement = hàng rào."}, {"a": "Estimate", "b": "Cost baseline", "diff": ["Estimate: con số ước tính, kèm tiền đề", "Cost baseline: con số đã duyệt, chia theo thời gian, dùng để đo"], "tip": "Estimate là đề xuất; baseline là cam kết."}, {"a": "Status report", "b": "議事録 (MoM)", "diff": ["Status report: trạng thái định kỳ của cả dự án", "議事録: quyết định và việc cần làm của 1 cuộc họp"], "tip": "Báo cáo nhìn cả dự án; biên bản nhìn 1 cuộc họp."}, {"a": "Severity", "b": "Priority", "diff": ["Severity: lỗi nặng cỡ nào", "Priority: sửa trước hay sau"], "tip": "Lỗi chính tả ở trang chủ: severity thấp, priority cao."}], "scenarios": [["Khách hỏi: chức năng đổi mật khẩu đã được test ở những case nào?", "RTM"], ["Member mới hỏi: ai là người duyệt spec màn hình thanh toán?", "RACI"], ["Khách muốn thêm đăng nhập bằng LINE sau khi đã chốt 基本設計.", "CR"], ["Môi trường test phía khách chưa mở, team bị chặn 2 ngày.", "IL"], ["Nếu BrSE nghỉ việc thì mất kênh với khách: ghi nhận ở đâu?", "RR"], ["Họp xong cần ghi lại quyết định, ai làm gì, hạn khi nào.", "MOM"], ["Sponsor hỏi: dự án đang lố ngân sách bao nhiêu, dự báo cuối kỳ ra sao?", "EVM"], ["Dev cần biết bảng Order có những cột nào, khóa ngoại trỏ tới đâu.", "ERD"], ["Khách hỏi: tuần này dự án xanh hay đỏ, cần họ quyết gì?", "SR"], ["Đêm go-live: nếu lỗi thì quay về bản cũ thế nào, mấy giờ quyết định?", "RLP"], ["Batch đêm chạy sai số liệu, khách yêu cầu báo cáo chính thức có nguyên nhân và đối sách.", "IR"], ["Cần biết module thanh toán gồm những bước làm nào để xếp lịch.", "ABS"], ["Khách hỏi: hệ thống chịu được bao nhiêu người dùng cùng lúc?", "NFR"], ["Cần chia toàn bộ phạm vi thành gói việc để estimate và giao việc.", "WBS"], ["Spec còn chỗ chưa rõ, cần hỏi khách và theo dõi câu trả lời.", "QA"], ["Lãnh đạo hỏi: dự án được phép bắt đầu chưa, PM có quyền gì?", "CHT"], ["Hai hệ thống trao đổi file CSV mỗi đêm, cần thống nhất định dạng và mã lỗi.", "API"], ["Khách ký xác nhận đã nhận sản phẩm để làm thủ tục thanh toán.", "UAT"], ["Cần biết dự án cần bao nhiêu QA và thiết bị test gì trước khi ramp-up.", "RBSR"], ["Gửi khách: mình hiểu bài toán thế nào, giải pháp, đội ngũ, giá.", "PRP"], ["Cần biết việc nào phải xong trước và chuỗi việc nào quyết định ngày về đích.", "NET"], ["Cần thống nhất ngay từ đầu: ngưỡng mật độ bug, gate review từng phase.", "QMP"], ["Cần biết người dùng đi từ màn hình giỏ hàng sang những màn hình nào.", "SCR"], ["Sau dự án, ghi lại những gì lần sau sẽ làm khác.", "LL"], ["Cần chứng minh với khách: ai thuộc nhóm nào, ai báo cáo ai, onsite hay offshore.", "OBS"], ["Cần biết theo hợp đồng thì cái gì là ngoài phạm vi.", "SOW"], ["Cần ghi giả định 'khách cấp dữ liệu test trước ngày 10' và theo dõi nó.", "RAID"], ["Cần quyết định đủ chất lượng để release chưa, kèm rủi ro còn lại.", "QR"]]};
+const FAM = Object.fromEntries(D.families.map(f => [f.id, f]));
+const PH = Object.fromEntries(D.phases.map(p => [p.n, p]));
+const DOC = Object.fromEntries(D.docs.map((d, i) => [d.id, Object.assign(d, { no: i + 1 })]));
+const ORDER = D.docs.map(d => d.id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fold = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase();
+const firstJp = j => j.split(/[・→]/)[0].trim();
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+D.docs.forEach(d => { d._f = fold([d.sym, d.tag || "", d.en, d.vi, d.jp, d.ro, d.q, d.what].join(" ")); });
+
+/* ---------- câu chuyện 11 câu hỏi ---------- */
+document.getElementById("story").innerHTML = D.families.map(f =>
+  `<li><button style="--h:${f.h}" data-jump="${f.id}">${esc(f.q)}</button></li>`).join("");
+document.getElementById("story").addEventListener("click", e => {
+  const b = e.target.closest("[data-jump]"); if (!b) return;
+  document.getElementById("fam-" + b.dataset.jump).scrollIntoView({ block: "center", behavior: "smooth" });
+});
+
+/* ---------- bảng ---------- */
+function tileHTML(d) {
+  const f = FAM[d.fam];
+  return `<button class="tile" data-id="${d.id}" style="--h:${f.h}" aria-label="${esc(d.sym + (d.tag ? " " + d.tag : "") + ": " + d.en)}">
+    <span class="no">${d.no}</span><span class="ph" title="Giai đoạn ${d.ph}: ${esc(PH[d.ph].vi)}">${d.ph}</span>
+    <span class="s">${esc(d.sym)}</span>${d.tag ? `<span class="tg">${esc(d.tag)}</span>` : ""}
+    <span class="nm">${esc(d.en)}</span>
+    <span class="j">${esc(firstJp(d.jp))}</span>
+  </button>`;
+}
+document.getElementById("table").innerHTML = D.families.map(f => {
+  const docs = D.docs.filter(d => d.fam === f.id).sort((a, b) => a.ph - b.ph || a.no - b.no);
+  return `<div class="fam" id="fam-${f.id}" style="--h:${f.h}">
+    <header><div><div class="en">${esc(f.en)}</div><h3>${esc(f.q)}</h3></div><span class="n">${docs.length}</span></header>
+    <div class="tiles">${docs.map(tileHTML).join("")}</div></div>`;
+}).join("");
+
+const phEl = document.getElementById("phases");
+phEl.insertAdjacentHTML("beforeend", D.phases.map(p =>
+  `<button data-ph="${p.n}" aria-pressed="false" title="${esc(p.jp)} (${esc(p.ro)})"><b>${p.n}</b>${esc(p.vi)}</button>`).join(""));
+const filt = { ph: 0, text: "" };
+function applyFilter() {
+  const t = fold(filt.text.trim());
+  let n = 0;
+  document.querySelectorAll("#table .tile").forEach(el => {
+    const d = DOC[el.dataset.id];
+    const ok = (!filt.ph || d.ph === filt.ph) && (!t || d._f.includes(t));
+    el.classList.toggle("dim", !ok); if (ok) n++;
+  });
+  phEl.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.ph === filt.ph)));
+  document.getElementById("count").textContent = (filt.ph || t) ? `${n} / ${D.docs.length} tài liệu khớp${filt.ph ? " · giai đoạn " + filt.ph + ": " + PH[filt.ph].jp : ""}` : `${D.docs.length} tài liệu`;
+}
+phEl.addEventListener("click", e => { const b = e.target.closest("button[data-ph]"); if (!b) return; filt.ph = filt.ph === +b.dataset.ph ? 0 : +b.dataset.ph; applyFilter(); });
+let tmr; document.getElementById("q").addEventListener("input", e => { clearTimeout(tmr); tmr = setTimeout(() => { filt.text = e.target.value; applyFilter(); }, 120); });
+applyFilter();
+
+/* ---------- ngăn kéo chi tiết ---------- */
+const drawer = document.getElementById("drawer"), backdrop = document.getElementById("backdrop");
+let lastFocus = null, curId = null;
+function exHTML(d) {
+  const ex = d.ex; if (!ex) return "";
+  let body = "";
+  if (ex.type === "table") {
+    body = `<div class="scroll"><table><thead><tr>${ex.head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${ex.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  } else if (ex.type === "tree") {
+    const L = D.lenses[ex.lens];
+    body = `<ul class="mini-tree"><li><b>${esc(L.root)}</b><ul>${L.l1.map((a, i) => `<li>${esc(a)}<ul>${L.l2[i].map(b => `<li>${esc(b)}</li>`).join("")}</ul></li>`).join("")}</ul></li></ul>
+      <p style="margin:10px 0 0"><button class="btn" data-lensjump="${ex.lens}">Xem dạng cây trong họ xBS</button></p>`;
+  } else if (ex.type === "erd") {
+    body = erdSVG();
+  } else if (ex.type === "gantt") {
+    body = ganttSVG();
+  }
+  return `<div class="ex"><h3>Ví dụ minh họa</h3>${body}</div>`;
+}
+function openDoc(id) {
+  const d = DOC[id]; if (!d) return;
+  const f = FAM[d.fam], p = PH[d.ph];
+  curId = id;
+  if (drawer.hidden) lastFocus = document.activeElement;
+  const i = ORDER.indexOf(id), prev = DOC[ORDER[(i - 1 + ORDER.length) % ORDER.length]], next = DOC[ORDER[(i + 1) % ORDER.length]];
+  drawer.style.setProperty("--h", f.h);
+  drawer.innerHTML = `
+    <div class="d-top">
+      <div class="d-badge"><div class="no">${d.no}</div><div class="s">${esc(d.sym)}</div>${d.tag ? `<div class="tg">${esc(d.tag)}</div>` : ""}</div>
+      <div class="d-names">
+        <h2 id="dTitle">${esc(d.en)}</h2>
+        <p class="vi">${esc(d.vi)}</p>
+        <p class="jpn">${esc(d.jp)}<small>${esc(d.ro)}</small></p>
+      </div>
+      <button class="close" id="dClose" aria-label="Đóng">×</button>
+    </div>
+    <div class="chips"><span class="chip f">${esc(f.en)} · ${esc(f.q)}</span><span class="chip">Giai đoạn ${d.ph}: ${esc(p.vi)} · <span class="jp">${esc(p.jp)}</span></span></div>
+    <p class="d-q"><span>Trả lời câu hỏi</span>${esc(d.q)}</p>
+    <p class="d-what">${esc(d.what)}</p>
+    <dl class="d-rows">
+      <dt>Ai viết, duyệt</dt><dd>${esc(d.who)}</dd>
+      <dt>Gồm</dt><dd><ul>${d.parts.map(x => `<li>${esc(x)}</li>`).join("")}</ul></dd>
+      <dt>Dòng chảy</dt><dd>${esc(d.flow)}</dd>
+      <dt>Lỗi hay gặp</dt><dd>${esc(d.trap)}</dd>
+      <dt>Nói khi phỏng vấn</dt><dd class="say">“${esc(d.say)}”</dd>
+      <dt>Mẹo nhớ</dt><dd><div class="hook">${esc(d.hook)}</div></dd>
+    </dl>
+    ${exHTML(d)}
+    <div class="rel"><h3>Liên quan</h3>${d.rel.map(r => `<button data-open="${r}" style="--h:${FAM[DOC[r].fam].h}">${esc(DOC[r].sym)}${DOC[r].tag ? " · " + esc(DOC[r].tag) : ""}</button>`).join("")}</div>
+    <div class="d-nav">
+      <button class="btn" data-open="${prev.id}">← ${esc(prev.sym)}</button>
+      <button class="btn" data-open="${next.id}">${esc(next.sym)} →</button>
+    </div>`;
+  drawer.hidden = false; backdrop.hidden = false; drawer.scrollTop = 0;
+  document.getElementById("dClose").focus();
+}
+function closeDoc() { drawer.hidden = true; backdrop.hidden = true; curId = null; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+backdrop.addEventListener("click", closeDoc);
+document.addEventListener("keydown", e => {
+  if (drawer.hidden) return;
+  if (e.key === "Escape") closeDoc();
+  if (e.key === "ArrowRight" && !e.target.closest("input")) { const i = ORDER.indexOf(curId); openDoc(ORDER[(i + 1) % ORDER.length]); }
+  if (e.key === "ArrowLeft" && !e.target.closest("input")) { const i = ORDER.indexOf(curId); openDoc(ORDER[(i - 1 + ORDER.length) % ORDER.length]); }
+});
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-id].tile, [data-open], #dClose, [data-lensjump], .v-doc, .linkchip");
+  if (!t) return;
+  if (t.id === "dClose") return closeDoc();
+  if (t.dataset.lensjump) { closeDoc(); setLens(t.dataset.lensjump); document.getElementById("xbs").scrollIntoView({ behavior: "smooth" }); return; }
+  const id = t.dataset.id || t.dataset.open || t.getAttribute("data-doc");
+  if (id) openDoc(id);
+});
+
+/* ---------- ví dụ ERD & Gantt ---------- */
+function erdSVG() {
+  const boxes = [["User", "user_id (PK)", "email"], ["Order", "order_id (PK)", "user_id (FK)"], ["OrderItem", "order_id (FK)", "product_id (FK)"], ["Product", "product_id (PK)", "price"]];
+  const W = 84, G = 18, X = i => 4 + i * (W + G);
+  let s = `<svg viewBox="0 0 ${4 + 4 * W + 3 * G + 4} 118" role="img" aria-label="ERD ví dụ: User 1-n Order 1-n OrderItem n-1 Product">`;
+  boxes.forEach((b, i) => {
+    s += `<rect x="${X(i)}" y="20" width="${W}" height="70" rx="4" style="fill:var(--sheet);stroke:var(--ink);stroke-opacity:.5"/>
+      <rect x="${X(i)}" y="20" width="${W}" height="20" rx="4" style="fill:hsl(190 var(--ts) var(--tl));stroke:var(--ink);stroke-opacity:.5"/>
+      <text x="${X(i) + W / 2}" y="34" text-anchor="middle" style="fill:var(--ink);font:600 11px var(--font-sym)">${b[0]}</text>
+      <text x="${X(i) + 5}" y="56" style="fill:var(--muted);font:9.5px var(--font-sym)">${b[1]}</text>
+      <text x="${X(i) + 5}" y="72" style="fill:var(--muted);font:9.5px var(--font-sym)">${b[2]}</text>`;
+  });
+  const rel = (i, many) => { // nối hộp i và i+1; many: 'R' nhiều ở phải, 'L' nhiều ở trái
+    const x1 = X(i) + W, x2 = X(i + 1), y = 55;
+    let p = `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" style="stroke:var(--ink);stroke-opacity:.6"/>`;
+    const cf = (x, dir) => `<path d="M${x} ${y} L${x + dir * 9} ${y - 6} M${x} ${y} L${x + dir * 9} ${y + 6}" style="stroke:var(--ink);stroke-opacity:.6;fill:none"/>`;
+    if (many === "R") p += cf(x2, -1) + `<text x="${x1 + 2}" y="${y - 6}" style="fill:var(--accent);font:600 10px var(--font-sym)">1</text><text x="${x2 - 8}" y="${y + 16}" style="fill:var(--accent);font:600 10px var(--font-sym)">n</text>`;
+    else p += cf(x1, 1) + `<text x="${x1 + 2}" y="${y + 16}" style="fill:var(--accent);font:600 10px var(--font-sym)">n</text><text x="${x2 - 8}" y="${y - 6}" style="fill:var(--accent);font:600 10px var(--font-sym)">1</text>`;
+    return p;
+  };
+  s += rel(0, "R") + rel(1, "R") + rel(2, "L");
+  s += `<text x="4" y="110" style="fill:var(--muted);font:10.5px var(--font-body)">1 User có n Order · 1 Order có n OrderItem · n OrderItem cùng trỏ 1 Product (quan hệ n–n giữa Order và Product đi qua bảng trung gian)</text></svg>`;
+  return s;
+}
+function ganttSVG() {
+  const rows = [["基本設計", 0, 2, 0, 2], ["詳細設計", 2, 4, 2, 4.5], ["製造・単体", 3.5, 6, 4, 6.8], ["結合テスト", 6, 7.5, 6.8, 8]];
+  const X0 = 92, CW = 32, Y0 = 26, RH = 22;
+  let s = `<svg viewBox="0 0 ${X0 + 8 * CW + 6} ${Y0 + rows.length * RH + 46}" role="img" aria-label="Gantt ví dụ có baseline và thực tế">`;
+  for (let w = 0; w < 8; w++) s += `<text x="${X0 + w * CW + CW / 2}" y="16" text-anchor="middle" style="fill:var(--muted);font:600 9.5px var(--font-sym)">W${w + 1}</text><line x1="${X0 + w * CW}" y1="20" x2="${X0 + w * CW}" y2="${Y0 + rows.length * RH + 14}" style="stroke:var(--line)"/>`;
+  rows.forEach((r, i) => {
+    const y = Y0 + i * RH;
+    s += `<text x="0" y="${y + 13}" style="fill:var(--ink);font:11px var(--font-jp)">${r[0]}</text>
+      <rect x="${X0 + r[1] * CW}" y="${y + 2}" width="${(r[2] - r[1]) * CW}" height="6" rx="2" style="fill:var(--line)"/>
+      <rect x="${X0 + r[3] * CW}" y="${y + 9}" width="${(r[4] - r[3]) * CW}" height="8" rx="2" style="fill:hsl(240 var(--ss) var(--sl))"/>`;
+  });
+  const my = Y0 + rows.length * RH + 2, mx = X0 + 7.75 * CW;
+  s += `<path d="M${mx} ${my} l6 6 l-6 6 l-6 -6 z" style="fill:hsl(355 var(--ss) var(--sl))"/><text x="${mx - 10}" y="${my + 10}" text-anchor="end" style="fill:var(--ink);font:10.5px var(--font-body)">Mốc: リリース</text>`;
+  const tx = X0 + 5.5 * CW; s += `<line x1="${tx}" y1="20" x2="${tx}" y2="${my - 4}" style="stroke:hsl(355 var(--ss) var(--sl));stroke-dasharray:3 3"/><text x="${tx + 3}" y="${my - 6}" style="fill:hsl(355 var(--ss) var(--sl));font:9.5px var(--font-body)">hôm nay</text>`;
+  s += `<rect x="0" y="${my + 22}" width="14" height="5" style="fill:var(--line)"/><text x="18" y="${my + 27}" style="fill:var(--muted);font:10px var(--font-body)">Baseline (予定)</text>
+    <rect x="120" y="${my + 21}" width="14" height="7" style="fill:hsl(240 var(--ss) var(--sl))"/><text x="138" y="${my + 27}" style="fill:var(--muted);font:10px var(--font-body)">Thực tế (実績): 詳細設計 trễ, kéo 製造 và 結合テスト</text></svg>`;
+  return s;
+}
+
+/* ---------- họ xBS ---------- */
+const LENS_ORDER = ["wbs", "pbs", "abs", "obs", "rres", "rrisk", "cbs"];
+document.getElementById("lens").innerHTML = LENS_ORDER.map(k => `<button data-lens="${k}" aria-pressed="false">${esc(D.lenses[k].label)}</button>`).join("");
+document.getElementById("lens").addEventListener("click", e => { const b = e.target.closest("[data-lens]"); if (b) setLens(b.dataset.lens); });
+function wrapText(t, max) {
+  const words = t.split(" "), lines = []; let cur = "";
+  words.forEach(w => { if ((cur + " " + w).trim().length > max && cur) { lines.push(cur); cur = w; } else cur = (cur + " " + w).trim(); });
+  if (cur) lines.push(cur); return lines.slice(0, 2);
+}
+function nodeSVG(cls, cx, cy, w, h, label, max) {
+  const lines = wrapText(label, max), lh = 14, y0 = cy - (lines.length - 1) * lh / 2 + 4;
+  return `<g class="tree-node ${cls}"><rect x="${cx - w / 2}" y="${cy - h / 2}" width="${w}" height="${h}" rx="6"/>${lines.map((l, i) => `<text class="chg" x="${cx}" y="${y0 + i * lh}" text-anchor="middle">${esc(l)}</text>`).join("")}</g>`;
+}
+function setLens(k) {
+  const L = D.lenses[k];
+  document.querySelectorAll("#lens button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lens === k)));
+  document.getElementById("lensSym").textContent = L.label;
+  document.getElementById("lensTitle").textContent = L.title;
+  const rootY = 34, l1Y = 128, l2Y = 238, l1X = [120, 360, 600, 840];
+  let s = "";
+  l1X.forEach((x, i) => {
+    s += `<path class="tree-edge" d="M480 ${rootY + 18} V${(rootY + l1Y) / 2} H${x} V${l1Y - 18}"/>`;
+    [-62, 62].forEach(dx => { s += `<path class="tree-edge" d="M${x} ${l1Y + 18} V${(l1Y + l2Y) / 2 - 4} H${x + dx} V${l2Y - 22}"/>`; });
+  });
+  s += nodeSVG("root", 480, rootY, 240, 36, L.root, 30);
+  l1X.forEach((x, i) => {
+    s += nodeSVG("l1", x, l1Y, 210, 36, L.l1[i], 28);
+    L.l2[i].forEach((t, j) => { s += nodeSVG("l2", x + (j ? 62 : -62), l2Y, 116, 44, t, 15); });
+  });
+  document.getElementById("treeSvg").innerHTML = s;
+}
+document.getElementById("formulas").innerHTML = D.formulas.map(f =>
+  `<div class="formula"><div class="eq">${esc(f[0])} = <em>${esc(f[1])}</em></div><small>${esc(f[2])}</small></div>`).join("");
+setLens("wbs");
+
+/* ---------- chữ V ---------- */
+(function drawV() {
+  const W = 180, H = 74, lx = [24, 100, 176, 252], rx = lx.map(x => 960 - x - W), ys = [14, 98, 182, 266];
+  let s = `<text class="v-axis" x="24" y="452">YÊU CẦU · THIẾT KẾ ↓</text><text class="v-axis" x="936" y="452" text-anchor="end">↑ KIỂM THỬ · NGHIỆM THU</text>`;
+  const pts = [], rpts = [];
+  D.vmodel.forEach((row, i) => { pts.push([lx[i] + W / 2, ys[i] + H / 2]); rpts.unshift([rx[i] + W / 2, ys[i] + H / 2]); });
+  const bx = 480 - W / 2, by = 352;
+  s += `<path class="v-line" d="M${pts.map(p => p.join(" ")).join(" L")} L${bx + W / 2} ${by + H / 2} L${rpts.map(p => p.join(" ")).join(" L")}"/>`;
+  D.vmodel.forEach((row, i) => {
+    const y = ys[i] + H / 2;
+    s += `<path class="v-pair" d="M${lx[i] + W} ${y} H${rx[i]}"/><text class="v-lbl" x="${(lx[i] + W + rx[i]) / 2}" y="${y - 6}" text-anchor="middle">kiểm chứng</text>`;
+  });
+  const box = (cls, x, y, side) => {
+    let g = `<g class="v-node ${cls}"><rect x="${x}" y="${y}" width="${W}" height="${H}" rx="8"/><text class="t" x="${x + 12}" y="${y + 22}">${esc(side.jp)}</text><text class="v" x="${x + 12}" y="${y + 39}">${esc(side.vi)}</text>`;
+    let cx = x + 12;
+    side.docs.forEach(id => { const sym = DOC[id].sym; g += `<text class="v-doc" data-doc="${id}" x="${cx}" y="${y + 60}" tabindex="0" role="button">${esc(sym)}</text>`; cx += sym.length * 7.4 + 12; });
+    return g + "</g>";
+  };
+  D.vmodel.forEach((row, i) => { s += box("left", lx[i], ys[i], row.l) + box("right", rx[i], ys[i], row.r); });
+  s += box("bottom", bx, by, { jp: "製造", vi: "Lập trình, code review", docs: [] });
+  s += `<text class="v-lbl" x="480" y="${ys[0] + 12}" text-anchor="middle">RTM nối mọi cặp ↔</text>`;
+  document.getElementById("vSvg").innerHTML = s;
+  document.getElementById("vSvg").addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.dataset && e.target.dataset.doc) { e.preventDefault(); openDoc(e.target.dataset.doc); } });
+  const chips = ids => ids.map(id => `<button class="linkchip" data-open="${id}" style="--h:${FAM[DOC[id].fam].h}">${esc(DOC[id].sym)}</button>`).join("");
+  document.getElementById("mirror").innerHTML = `<thead><tr><th>Cánh trái (làm ra)</th><th>Tài liệu</th><th></th><th>Cánh phải (kiểm chứng)</th><th>Tài liệu</th></tr></thead><tbody>` +
+    D.vmodel.map(r => `<tr><td><span class="jp">${esc(r.l.jp)}</span><br><small>${esc(r.l.vi)}</small></td><td>${chips(r.l.docs)}</td><td class="mid">↔</td><td><span class="jp">${esc(r.r.jp)}</span><br><small>${esc(r.r.vi)}</small></td><td>${chips(r.r.docs)}</td></tr>`).join("") + `</tbody>`;
+})();
+
+/* ---------- đừng nhầm ---------- */
+document.getElementById("pairs").innerHTML = D.pairs.map(p => `<article class="pair">
+  <h3>${esc(p.a)} <i>và</i> ${esc(p.b)}</h3>
+  <ul>${p.diff.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+  <p class="tip">${esc(p.tip)}</p></article>`).join("");
+
+/* ---------- luyện nhớ ---------- */
+const QK = "pm-docs-quiz-best-v1";
+const Q = { mode: "scn", list: [], i: 0, score: 0, answered: false };
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+function options(correctId) {
+  const c = DOC[correctId];
+  const same = shuffle(D.docs.filter(d => d.fam === c.fam && d.id !== c.id)).slice(0, 1);
+  const rest = shuffle(D.docs.filter(d => d.id !== c.id && !same.includes(d))).slice(0, 3 - same.length);
+  return shuffle([c, ...same, ...rest]);
+}
+function newRound() {
+  let pool;
+  if (Q.mode === "scn") pool = shuffle(D.scenarios).slice(0, 10).map(s => ({ text: s[0], id: s[1] }));
+  else if (Q.mode === "q") pool = shuffle(D.docs).slice(0, 10).map(d => ({ text: `Tài liệu nào trả lời câu hỏi: “${d.q}”`, id: d.id }));
+  else pool = shuffle(D.docs).slice(0, 10).map(d => ({ text: `「${firstJp(d.jp)}」 là tài liệu nào?`, id: d.id, jp: true }));
+  Q.list = pool.map(x => Object.assign(x, { opts: options(x.id) }));
+  Q.i = 0; Q.score = 0; Q.answered = false; renderQ();
+}
+function renderQ() {
+  const box = document.getElementById("qbody");
+  const best = store.get(QK, {})[Q.mode];
+  if (Q.i >= Q.list.length) {
+    const all = store.get(QK, {}); if (!(all[Q.mode] >= Q.score)) { all[Q.mode] = Q.score; store.set(QK, all); }
+    box.innerHTML = `<div class="qdone"><div class="big">${Q.score}/10</div><p>${Q.score >= 9 ? "Thuộc rồi. Đổi kiểu luyện để chắc hơn." : Q.score >= 6 ? "Khá rồi. Xem lại các câu sai trong bảng rồi làm lượt mới." : "Đọc lại họ và mẹo nhớ của các tài liệu, rồi làm lượt mới."}</p><button class="btn solid" id="qAgain">Làm lượt mới</button></div>`;
+    return;
+  }
+  const it = Q.list[Q.i];
+  box.innerHTML = `<div class="qhead"><span>Câu ${Q.i + 1}/10</span><span>Đúng ${Q.score}${best != null ? ` · cao nhất ${best}/10` : ""}</span></div>
+    <p class="qtext ${it.jp ? "jp" : ""}">${esc(it.text)}</p>
+    <div class="qopts">${it.opts.map(o => `<button class="qopt" data-ans="${o.id}"><b>${esc(o.sym)}</b><span>${esc(o.tag ? o.tag + " · " : "")}${esc(o.en)}</span></button>`).join("")}</div>
+    <div id="qfb"></div>`;
+}
+document.getElementById("qbody").addEventListener("click", e => {
+  if (e.target.closest("#qAgain")) return newRound();
+  if (e.target.closest("#qNext")) { Q.i++; Q.answered = false; return renderQ(); }
+  const b = e.target.closest(".qopt"); if (!b || Q.answered) return;
+  const it = Q.list[Q.i], ok = b.dataset.ans === it.id; Q.answered = true; if (ok) Q.score++;
+  document.querySelectorAll(".qopt").forEach(x => { x.disabled = true; if (x.dataset.ans === it.id) x.classList.add("ok"); else if (x === b) x.classList.add("no"); });
+  const d = DOC[it.id];
+  document.getElementById("qfb").innerHTML = `<div class="qfb"><b>${ok ? "Đúng." : "Chưa đúng."}</b> <b class="sym">${esc(d.sym)}</b> (${esc(d.en)}, <span class="jp">${esc(firstJp(d.jp))}</span>) trả lời câu hỏi “${esc(d.q)}”. Mẹo: ${esc(d.hook)}</div>
+    <div class="qfoot"><button class="btn" data-open="${d.id}">Xem chi tiết ${esc(d.sym)}</button><button class="btn solid" id="qNext">${Q.i < 9 ? "Câu tiếp" : "Xem kết quả"}</button></div>`;
+});
+document.getElementById("qmodes").addEventListener("click", e => {
+  const b = e.target.closest("[data-m]"); if (!b) return;
+  Q.mode = b.dataset.m; document.querySelectorAll("#qmodes button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); newRound();
+});
+newRound();
+
+/* ---------- nav đang ở phần nào ---------- */
+const navLinks = [...document.querySelectorAll("#secnav a")];
+const io = "IntersectionObserver" in window ? new IntersectionObserver(ents => {
+  ents.forEach(en => { if (en.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); });
+}, { rootMargin: "-40% 0px -55% 0px" }) : null;
+if (io) document.querySelectorAll("section[id]").forEach(s => io.observe(s));
+</script>
+
+</html>

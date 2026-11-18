@@ -5,6 +5,13 @@
 - **Đọc trên GitHub:** [1000 câu hỏi](01_theo-JD/1000-cau-hoi-phong-van-PM.md) · [mindmap tổng hợp](01_theo-JD/mindmap-tong-hop.md) · [từng chương](01_theo-JD/chuong/)
 - **Bản tương tác** (tải về, mở bằng trình duyệt): `01_theo-JD/on-tap-1000-cau.html` (tìm không dấu, tự kiểm che đáp án, đánh dấu đã thuộc) · `01_theo-JD/mindmap.html` (sơ đồ / dàn ý)
 
+## Bảng tuần hoàn tài liệu PM (`03_tai-lieu-PM/`)
+
+55 tài liệu dự án phần mềm (WBS, PBS, ABS, OBS, RBS, CBS, BRD, FRD, SRS, ERD, RACI, 見積書, 議事録, 課題管理表…) xếp theo **11 câu hỏi** mà mỗi tài liệu trả lời: Vì sao làm? → Làm gì? → Chia nhỏ ra sao? → Ai làm, ai duyệt? → Làm thế nào? → Khi nào xong? → Tốn bao nhiêu? → Lệch thì sao? → Đạt chưa? → Báo ai, thế nào? → Xong chưa?
+
+- **Đọc trên GitHub:** [bảng tra nhanh](03_tai-lieu-PM/bang-tra-tai-lieu-PM.md) · [mindmap](03_tai-lieu-PM/mindmap-tai-lieu-PM.md)
+- **Bản tương tác** (tải về, mở bằng trình duyệt): `03_tai-lieu-PM/bang-tuan-hoan-tai-lieu-PM.html` gồm bảng tuần hoàn (bấm từng ô để xem định nghĩa, tên tiếng Nhật, ai viết, lỗi hay gặp, câu nói khi phỏng vấn, mẹo nhớ), họ xBS (1 cây, 7 cách chia), chữ V kiểu Nhật, 16 cặp hay nhầm và phần luyện nhớ
+
 ## 10 chương
 
 | # | Chương | Câu |
@@ -30,6 +37,10 @@ pm_documents/
     ├── on-tap-1000-cau.html           trang ôn tập
     ├── mindmap.html                   mindmap tương tác
     └── chuong/                        chuong-01…10 + mindmap-01…10 (đọc lẻ trên GitHub)
+└── 03_tai-lieu-PM/
+    ├── bang-tra-tai-lieu-PM.md        bảng tra 55 tài liệu theo 11 câu hỏi + cặp hay nhầm
+    ├── mindmap-tai-lieu-PM.md         mindmap dạng markmap
+    └── bang-tuan-hoan-tai-lieu-PM.html  trang tương tác
 ```
 
 ## Cách ôn
