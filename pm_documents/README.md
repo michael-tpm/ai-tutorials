@@ -27,20 +27,44 @@
 | 9 | Quản lý nguồn lực & phát triển đội ngũ | Q801–900 |
 | 10 | Chiến lược, domain tài chính/bảo hiểm/sản xuất & chi nhánh Đà Nẵng | Q901–1000 |
 
+## Bảng chỉ số PM (`04_chi-so-PM/`)
+
+64 chỉ số (SPI, CPI, EAC, TCPI, テスト密度, バグ密度, 流出率, velocity, lead time, 稼働率, MTTR, 粗利率…) xếp theo **9 câu hỏi**: Có kịp không? · Có lố tiền không? · Phạm vi có phình không? · Chất lượng ổn không? · Team chạy đều không? · Team có khỏe không? · Khách có hài lòng không? · Hệ thống chạy ổn không? · Dự án có lãi không?
+
+- **Đọc trên GitHub:** [bảng tra chỉ số](04_chi-so-PM/bang-tra-chi-so-PM.md) (công thức, ngưỡng tham khảo, mẹo nhớ) · [mindmap](04_chi-so-PM/mindmap-chi-so-PM.md)
+- **Bản tương tác:** `04_chi-so-PM/bang-chi-so-PM.html` gồm bảng chỉ số, máy tính (EVM có lưới SPI × CPI, chất lượng kiểu Nhật, dự báo Agile, availability ra phút ngừng), báo cáo tuần mẫu 9 chỉ số, 16 cặp hay nhầm, luyện nhớ (có bài tính EVM sinh số ngẫu nhiên)
+
+## Tình huống PM (`05_tinh-huong-PM/`)
+
+45 tình huống với khách Nhật trong 9 nhóm (tiến độ, phạm vi, chất lượng, sự cố 本番, khách hàng, team, chi phí, rủi ro & bảo mật, tình huống xám). Mỗi tình huống: bối cảnh có số liệu, 4 phương án cho việc làm đầu tiên, giải thích từng phương án, đáp án mẫu 4 nhịp (xác nhận fact → hành động → báo khách 報連相 → phòng ngừa), điều không nên làm, câu tiếng Nhật, câu trả lời 30 giây, tài liệu và chỉ số liên quan.
+
+- **Đọc trên GitHub:** [45 tình huống](05_tinh-huong-PM/tinh-huong-PM.md) (đáp án ẩn trong mục "Đáp án", bấm để mở) · [mindmap](05_tinh-huong-PM/mindmap-tinh-huong-PM.md)
+- **Bản tương tác:** `05_tinh-huong-PM/tinh-huong-PM.html`: chọn phương án rồi xem đáp án, lưu kết quả đúng/sai, lọc theo nhóm và mức độ, chế độ đọc tất cả
+
+Ba trang 03, 04, 05 liên kết với nhau: bấm ký hiệu tài liệu hoặc chỉ số ở trang này sẽ mở đúng mục ở trang kia (giữ nguyên cấu trúc thư mục khi tải về).
+
 ## Cấu trúc
 
 ```
 pm_documents/
-└── 01_theo-JD/
-    ├── 1000-cau-hoi-phong-van-PM.md   bản đầy đủ (mục lục + 10 chương)
-    ├── mindmap-tong-hop.md            mindmap dạng markmap + toàn cảnh mermaid
-    ├── on-tap-1000-cau.html           trang ôn tập
-    ├── mindmap.html                   mindmap tương tác
-    └── chuong/                        chuong-01…10 + mindmap-01…10 (đọc lẻ trên GitHub)
-└── 03_tai-lieu-PM/
-    ├── bang-tra-tai-lieu-PM.md        bảng tra 55 tài liệu theo 11 câu hỏi + cặp hay nhầm
-    ├── mindmap-tai-lieu-PM.md         mindmap dạng markmap
-    └── bang-tuan-hoan-tai-lieu-PM.html  trang tương tác
+├── 01_theo-JD/
+│   ├── 1000-cau-hoi-phong-van-PM.md   bản đầy đủ (mục lục + 10 chương)
+│   ├── mindmap-tong-hop.md            mindmap dạng markmap + toàn cảnh mermaid
+│   ├── on-tap-1000-cau.html           trang ôn tập
+│   ├── mindmap.html                   mindmap tương tác
+│   └── chuong/                        chuong-01…10 + mindmap-01…10 (đọc lẻ trên GitHub)
+├── 03_tai-lieu-PM/
+│   ├── bang-tra-tai-lieu-PM.md        bảng tra 55 tài liệu theo 11 câu hỏi + cặp hay nhầm
+│   ├── mindmap-tai-lieu-PM.md         mindmap dạng markmap
+│   └── bang-tuan-hoan-tai-lieu-PM.html  trang tương tác
+├── 04_chi-so-PM/
+│   ├── bang-tra-chi-so-PM.md          bảng tra 64 chỉ số theo 9 câu hỏi
+│   ├── mindmap-chi-so-PM.md
+│   └── bang-chi-so-PM.html            trang tương tác + máy tính
+└── 05_tinh-huong-PM/
+    ├── tinh-huong-PM.md               45 tình huống, đáp án gập lại
+    ├── mindmap-tinh-huong-PM.md
+    └── tinh-huong-PM.html             trang luyện tình huống
 ```
 
 ## Cách ôn

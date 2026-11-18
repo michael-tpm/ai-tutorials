@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bảng chỉ số PM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600;700&family=Lexend:wght@500;600;700&family=Noto+Sans+JP:wght@400;600&display=swap">
+<style>
+/* Layout: cùng hệ với "Bảng tuần hoàn tài liệu PM" — 9 họ chỉ số (mỗi họ = 1 câu hỏi), ô chỉ số, ngăn kéo chi tiết; bên dưới là máy tính, báo cáo tuần mẫu, đừng nhầm, luyện nhớ */
+:root {
+  --paper: #f3f5f8;
+  --sheet: #ffffff;
+  --ink: #131b29;
+  --muted: #5a6476;
+  --line: #d8dee7;
+  --accent: #24508f;
+  --accent-soft: #e5edf8;
+  --good: #1f7a46; --good-soft: #e3f3e9;
+  --warn: #9a6200; --warn-soft: #fbf0d9;
+  --bad: #b3372a; --bad-soft: #fbe8e5;
+  --ts: 72%; --tl: 95%; --bs: 42%; --bl: 80%; --ss: 62%; --sl: 30%;
+  --font-display: "Lexend", "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sym: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e131b; --sheet: #151c27; --ink: #e6eaf0; --muted: #9ba6b6; --line: #273142;
+    --accent: #8db3ea; --accent-soft: #1c2b42;
+    --good: #7fd3a1; --good-soft: #15301f; --warn: #f0c46a; --warn-soft: #3a2d12; --bad: #f09a8b; --bad-soft: #3a1f1b;
+    --ts: 28%; --tl: 17%; --bs: 30%; --bl: 33%; --ss: 72%; --sl: 74%;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e131b; --sheet: #151c27; --ink: #e6eaf0; --muted: #9ba6b6; --line: #273142;
+  --accent: #8db3ea; --accent-soft: #1c2b42;
+  --good: #7fd3a1; --good-soft: #15301f; --warn: #f0c46a; --warn-soft: #3a2d12; --bad: #f09a8b; --bad-soft: #3a1f1b;
+  --ts: 28%; --tl: 17%; --bs: 30%; --bl: 33%; --ss: 72%; --sl: 74%;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body {
+  background: var(--paper); color: var(--ink); font: 15px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--paper); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 18px 80px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.12; letter-spacing: -0.015em; }
+h2 { font-size: clamp(20px, 2.6vw, 26px); line-height: 1.25; }
+.lead { color: var(--muted); max-width: 70ch; margin: 10px 0 0; }
+.jp { font-family: var(--font-jp); }
+.sym { font-family: var(--font-sym); }
+button { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.kit { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin-bottom: 14px; }
+.kit a { color: var(--muted); text-decoration: none; }
+.kit a:hover { color: var(--accent); }
+.kit a.here { color: var(--accent); font-weight: 600; }
+
+.story { display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; margin: 18px 0 0; padding: 0; list-style: none; }
+.story li { display: flex; align-items: center; gap: 4px; }
+.story button { border: 1px solid hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); border-radius: 999px; padding: 3px 10px; font-size: 13px; font-weight: 600; cursor: pointer; }
+
+nav.sec { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); margin-top: 22px; display: flex; gap: 2px; overflow-x: auto; }
+nav.sec a { flex: 0 0 auto; padding: 11px 12px; color: var(--muted); text-decoration: none; font: 600 13.5px var(--font-display); border-bottom: 2px solid transparent; }
+nav.sec a:hover { color: var(--ink); }
+nav.sec a.on { color: var(--accent); border-bottom-color: var(--accent); }
+section { scroll-margin-top: 56px; padding-top: 34px; }
+.sec-head { margin-bottom: 14px; }
+.sec-head p { margin: 4px 0 0; color: var(--muted); max-width: 72ch; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 14px; }
+.search { position: relative; flex: 1 1 240px; min-width: 0; max-width: 420px; }
+.search input { width: 100%; font: inherit; padding: 8px 12px 8px 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--sheet); color: var(--ink); }
+.search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.table { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 268px), 1fr)); gap: 14px; }
+.fam { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 12px; min-width: 0; }
+.fam header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+.fam .en { font: 600 11px var(--font-sym); letter-spacing: .08em; color: hsl(var(--h) var(--ss) var(--sl)); }
+.fam h3 { font-size: 17px; }
+.fam .n { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(98px, 1fr)); gap: 8px; }
+.tile {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left;
+  min-height: 112px; padding: 8px 9px 9px; border-radius: 6px; cursor: pointer;
+  background: hsl(var(--h) var(--ts) var(--tl)); border: 1px solid hsl(var(--h) var(--bs) var(--bl));
+  transition: transform .12s ease, opacity .2s ease, box-shadow .12s ease;
+}
+.tile:hover { transform: translateY(-2px); box-shadow: 0 4px 14px -6px hsl(var(--h) 40% 30% / .45); }
+.tile .no { font: 600 10.5px var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); opacity: .8; }
+.tile .s { font: 700 23px/1.05 var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); letter-spacing: -0.02em; margin-top: 4px; }
+.tile .nm { font-size: 11px; line-height: 1.3; color: var(--ink); margin-top: 3px; }
+.tile .j { font: 10.5px/1.3 var(--font-jp); color: var(--muted); margin-top: auto; padding-top: 3px; }
+.tile.dim { opacity: .22; }
+
+.backdrop { position: fixed; inset: 0; background: rgb(8 12 20 / .42); z-index: 40; }
+aside.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 41; width: min(540px, 100%);
+  background: var(--sheet); border-left: 1px solid var(--line); overflow-y: auto;
+  padding: calc(18px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) 22px;
+  box-shadow: -18px 0 40px -24px rgb(0 0 0 / .4);
+}
+.d-top { display: flex; gap: 14px; align-items: flex-start; }
+.d-badge { flex: 0 0 auto; min-width: 84px; padding: 8px; border-radius: 8px; background: hsl(var(--h) var(--ts) var(--tl)); border: 1px solid hsl(var(--h) var(--bs) var(--bl)); }
+.d-badge .no { font: 600 11px var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); }
+.d-badge .s { font: 700 24px/1.1 var(--font-sym); color: hsl(var(--h) var(--ss) var(--sl)); }
+.d-names { min-width: 0; flex: 1; }
+.d-names h2 { font-size: 20px; }
+.d-names .vi { margin: 2px 0 0; color: var(--muted); }
+.d-names .jpn { margin: 4px 0 0; font: 15px var(--font-jp); }
+.d-names .jpn small { font: 12.5px var(--font-body); color: var(--muted); margin-left: 6px; }
+.close { flex: 0 0 auto; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--line); background: var(--sheet); cursor: pointer; font-size: 18px; line-height: 1; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+.chip { font-size: 12px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.chip.f { border-color: hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); font-weight: 600; }
+.d-q { margin: 16px 0 0; padding: 12px 14px; border-radius: 8px; background: var(--accent-soft); font: 600 16px/1.45 var(--font-display); }
+.d-q span { display: block; font: 600 11px var(--font-body); text-transform: uppercase; letter-spacing: .07em; color: var(--accent); margin-bottom: 2px; }
+.formula { margin: 12px 0 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed hsl(var(--h) var(--bs) var(--bl)); font: 600 15px/1.6 var(--font-sym); overflow-x: auto; }
+.formula small { display: block; font: 500 12px var(--font-body); color: var(--muted); }
+.bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 12px 0 0; }
+.band { border-radius: 6px; padding: 6px 8px; font-size: 13px; min-width: 0; }
+.band b { display: block; font: 600 10.5px var(--font-body); text-transform: uppercase; letter-spacing: .06em; }
+.band.g { background: var(--good-soft); color: var(--good); }
+.band.a { background: var(--warn-soft); color: var(--warn); }
+.band.r { background: var(--bad-soft); color: var(--bad); }
+.bandnote { font-size: 12px; color: var(--muted); margin: 4px 0 0; }
+dl.d-rows { margin: 14px 0 0; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px 14px; border-top: 1px solid var(--line); padding-top: 14px; }
+dl.d-rows dt { font: 600 12px var(--font-body); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding-top: 2px; }
+dl.d-rows dd { margin: 0; min-width: 0; }
+.hook { background: hsl(var(--h) var(--ts) var(--tl)); border-radius: 6px; padding: 6px 10px; font-weight: 600; }
+.say { font-style: italic; }
+.rel { margin: 16px 0 0; border-top: 1px solid var(--line); padding-top: 14px; }
+.rel h3 { font: 600 12px var(--font-body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; }
+.rel h3:not(:first-child) { margin-top: 10px; }
+.mchip, .dchip { display: inline-block; border: 1px solid hsl(var(--h) var(--bs) var(--bl)); background: hsl(var(--h) var(--ts) var(--tl)); color: hsl(var(--h) var(--ss) var(--sl)); border-radius: 6px; padding: 3px 9px; font: 600 13px var(--font-sym); cursor: pointer; margin: 0 6px 6px 0; text-decoration: none; }
+.dchip { border-style: dashed; }
+.d-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 18px; }
+.btn { font: 500 13.5px var(--font-body); padding: 8px 14px; border: 1px solid var(--accent); color: var(--accent); background: var(--sheet); border-radius: 8px; cursor: pointer; }
+.btn:hover { background: var(--accent-soft); }
+.btn.solid { background: var(--accent); color: var(--sheet); }
+
+/* máy tính */
+.calcs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 14px; }
+.calc { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.calc h3 { font-size: 17px; }
+.calc .sub { color: var(--muted); font-size: 13px; margin: 2px 0 12px; }
+.inputs { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+.inputs label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--muted); }
+.inputs label b { font: 600 12px var(--font-sym); color: var(--ink); }
+.inputs input { font: 600 15px var(--font-sym); padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); width: 100%; min-width: 0; font-variant-numeric: tabular-nums; }
+.out { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13.5px; }
+.out td { border-bottom: 1px solid var(--line); padding: 6px 4px; vertical-align: middle; }
+.out td:first-child { font: 600 13px var(--font-sym); white-space: nowrap; }
+.out td.v { font: 600 14px var(--font-sym); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.out td.f { color: var(--muted); font-size: 12px; }
+.pill { display: inline-block; font: 600 11px var(--font-body); padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.g { background: var(--good-soft); color: var(--good); }
+.pill.a { background: var(--warn-soft); color: var(--warn); }
+.pill.r { background: var(--bad-soft); color: var(--bad); }
+.pill.n { background: var(--paper); color: var(--muted); }
+.verdict { margin: 12px 0 0; padding: 10px 12px; border-radius: 8px; background: var(--paper); font-size: 14px; }
+.quad { margin-top: 12px; }
+.quad svg { width: 100%; max-width: 420px; height: auto; display: block; }
+.scroll-x { overflow-x: auto; }
+
+/* báo cáo tuần */
+.report { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.report-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 12px; }
+.report-head b { font: 600 16px var(--font-display); }
+.report-head span { color: var(--muted); font-size: 13px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 10px; }
+.kpi { text-align: left; border: 1px solid var(--line); border-left-width: 4px; border-radius: 8px; padding: 10px 12px; background: var(--sheet); cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kpi.g { border-left-color: var(--good); } .kpi.a { border-left-color: var(--warn); } .kpi.r { border-left-color: var(--bad); }
+.kpi .top { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.kpi .top b { font: 700 13px var(--font-sym); color: var(--muted); }
+.kpi .val { font: 700 22px var(--font-display); font-variant-numeric: tabular-nums; }
+.kpi .note { font-size: 12.5px; color: var(--muted); }
+.report-foot { margin-top: 12px; font-size: 13.5px; }
+.report-foot ol { margin: 6px 0 0; padding-left: 20px; }
+
+.pairs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; }
+.pair { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 14px; min-width: 0; }
+.pair h3 { font: 700 17px var(--font-sym); }
+.pair h3 i { font: 600 12px var(--font-body); color: var(--muted); font-style: normal; }
+.pair ul { margin: 8px 0 0; padding-left: 18px; font-size: 14px; }
+.pair .tip { margin: 10px 0 0; padding: 7px 10px; border-radius: 6px; background: var(--accent-soft); font-size: 13.5px; }
+
+.quiz { background: var(--sheet); border: 1px solid var(--line); border-radius: 10px; padding: 18px; max-width: 780px; }
+.qmodes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.qmodes button { border: 1px solid var(--line); background: var(--sheet); border-radius: 6px; padding: 6px 12px; font-size: 13.5px; cursor: pointer; }
+.qmodes button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.qhead { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.qtext { font: 600 18px/1.45 var(--font-display); margin: 8px 0 14px; }
+.qtext .sym { font-size: 16px; }
+.qopts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 8px; }
+.qopt { text-align: left; border: 1px solid var(--line); background: var(--sheet); border-radius: 8px; padding: 9px 12px; cursor: pointer; display: flex; gap: 10px; align-items: baseline; }
+.qopt b { font: 700 15px var(--font-sym); min-width: 3.6em; }
+.qopt span { font-size: 13.5px; color: var(--muted); }
+.qopt:hover:not(:disabled) { border-color: var(--accent); }
+.qopt.ok { border-color: var(--good); background: var(--good-soft); }
+.qopt.ok span, .qopt.ok b { color: var(--good); }
+.qopt.no { border-color: var(--bad); background: var(--bad-soft); }
+.qopt.no span, .qopt.no b { color: var(--bad); }
+.qopt:disabled { cursor: default; }
+.qfb { margin: 14px 0 0; padding: 10px 12px; border-radius: 8px; background: var(--paper); font-size: 14px; }
+.qfoot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.qdone { text-align: center; padding: 10px 0; }
+.qdone .big { font: 700 44px var(--font-display); color: var(--accent); }
+footer.note { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+
+@media (max-width: 560px) {
+  dl.d-rows { grid-template-columns: minmax(0, 1fr); gap: 2px 0; }
+  dl.d-rows dd { margin-bottom: 10px; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
+  .tile .s { font-size: 20px; }
+  .bands { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <nav class="kit" aria-label="Bộ tài liệu PM">
+    <a href="../03_tai-lieu-PM/bang-tuan-hoan-tai-lieu-PM.html">Bảng tuần hoàn tài liệu</a>
+    <a href="#" class="here" aria-current="page">Bảng chỉ số</a>
+    <a href="../05_tinh-huong-PM/tinh-huong-PM.html">Tình huống PM</a>
+  </nav>
+  <header>
+    <h1>Bảng chỉ số PM</h1>
+    <p class="lead">64 chỉ số PM hay dùng (SPI, CPI, バグ密度, 流出率, velocity, MTTR…), xếp theo 9 câu hỏi mà lãnh đạo và khách sẽ hỏi. Mỗi ô có công thức, cách đọc, ngưỡng tham khảo, ví dụ tính, tên tiếng Nhật, bẫy hay gặp và câu nói khi phỏng vấn. Bên dưới có máy tính để tự bấm số.</p>
+    <ol class="story" id="story" aria-label="9 câu hỏi"></ol>
+  </header>
+
+  <nav class="sec" id="secnav" aria-label="Các phần">
+    <a href="#bang" class="on">Bảng chỉ số</a>
+    <a href="#may-tinh">Máy tính</a>
+    <a href="#bao-cao">Báo cáo tuần mẫu</a>
+    <a href="#dung-nham">Đừng nhầm</a>
+    <a href="#luyen">Luyện nhớ</a>
+  </nav>
+
+  <section id="bang" aria-labelledby="h-bang">
+    <div class="sec-head">
+      <h2 id="h-bang">9 câu hỏi, 64 chỉ số</h2>
+      <p>Bấm vào ô để xem chi tiết. Ngưỡng xanh / vàng / đỏ là mức tham khảo phổ biến; mỗi công ty và mỗi khách sẽ chốt ngưỡng riêng trong 品質計画書 hoặc hợp đồng.</p>
+    </div>
+    <div class="filters">
+      <label class="search" for="q">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Tìm: CPI, バグ密度, lead time, OT…" autocomplete="off">
+      </label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="table" id="table"></div>
+  </section>
+
+  <section id="may-tinh" aria-labelledby="h-calc">
+    <div class="sec-head">
+      <h2 id="h-calc">Máy tính: nhập số, đọc kết quả</h2>
+      <p>Số mặc định là ví dụ minh họa. Sửa số để luyện; kết quả và nhận xét đổi ngay.</p>
+    </div>
+    <div class="calcs">
+      <div class="calc" id="calc-evm">
+        <h3>EVM: tiến độ và chi phí</h3>
+        <p class="sub">Đơn vị tùy chọn (人月, triệu đồng…), miễn là cùng một đơn vị cho cả 4 ô.</p>
+        <div class="inputs">
+          <label for="e-bac"><b>BAC</b>Ngân sách</label><input id="e-bac" type="number" step="any" value="100">
+          <label for="e-pv"><b>PV</b>Kế hoạch</label><input id="e-pv" type="number" step="any" value="40">
+          <label for="e-ev"><b>EV</b>Làm được</label><input id="e-ev" type="number" step="any" value="35">
+          <label for="e-ac"><b>AC</b>Đã tiêu</label><input id="e-ac" type="number" step="any" value="42">
+        </div>
+        <div class="scroll-x"><table class="out" id="e-out"></table></div>
+        <p class="verdict" id="e-verdict"></p>
+        <div class="quad" id="e-quad"></div>
+      </div>
+      <div class="calc" id="calc-qual">
+        <h3>Chất lượng kiểu Nhật</h3>
+        <p class="sub">Quy mô theo KLOC (nghìn dòng code). Ngưỡng thật lấy từ 品質計画書 của dự án.</p>
+        <div class="inputs">
+          <label for="q-kloc"><b>KLOC</b>Quy mô</label><input id="q-kloc" type="number" step="any" value="20">
+          <label for="q-tc"><b>Case</b>Test case</label><input id="q-tc" type="number" step="any" value="1200">
+          <label for="q-bin"><b>Bug nội bộ</b>Trước giao</label><input id="q-bin" type="number" step="any" value="190">
+          <label for="q-bout"><b>Bug khách</b>Sau giao</label><input id="q-bout" type="number" step="any" value="10">
+          <label for="q-rc"><b>指摘</b>Review</label><input id="q-rc" type="number" step="any" value="45">
+          <label for="q-pg"><b>Trang</b>Tài liệu</label><input id="q-pg" type="number" step="any" value="30">
+        </div>
+        <div class="scroll-x"><table class="out" id="q-out"></table></div>
+        <p class="verdict" id="q-verdict"></p>
+      </div>
+      <div class="calc" id="calc-agile">
+        <h3>Dự báo Agile theo velocity</h3>
+        <p class="sub">Dùng 3 sprint gần nhất; kết quả là một khoảng, không phải một con số.</p>
+        <div class="inputs">
+          <label for="a-bl"><b>Backlog</b>Điểm còn lại</label><input id="a-bl" type="number" step="any" value="300">
+          <label for="a-v1"><b>V1</b>Sprint −3</label><input id="a-v1" type="number" step="any" value="28">
+          <label for="a-v2"><b>V2</b>Sprint −2</label><input id="a-v2" type="number" step="any" value="32">
+          <label for="a-v3"><b>V3</b>Sprint −1</label><input id="a-v3" type="number" step="any" value="30">
+        </div>
+        <div class="scroll-x"><table class="out" id="a-out"></table></div>
+        <p class="verdict" id="a-verdict"></p>
+      </div>
+      <div class="calc" id="calc-avl">
+        <h3>Availability ra thời gian ngừng</h3>
+        <p class="sub">Đổi % sẵn sàng (システム稼働率) thành số phút được phép ngừng.</p>
+        <div class="inputs">
+          <label for="v-pct"><b>%</b>Availability</label><input id="v-pct" type="number" step="any" value="99.9">
+        </div>
+        <div class="scroll-x"><table class="out" id="v-out"></table></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bao-cao" aria-labelledby="h-report">
+    <div class="sec-head">
+      <h2 id="h-report">Báo cáo tuần mẫu: 9 chỉ số là đủ</h2>
+      <p>Không cần báo cả 64 chỉ số. Một 進捗報告書 (báo cáo tiến độ) gọn thường chỉ cần khoảng 9 con số, mỗi con số có màu và 1 dòng giải thích. Số dưới đây là ví dụ minh họa. Bấm vào ô để xem chỉ số.</p>
+    </div>
+    <div class="report">
+      <div class="report-head"><b>Báo cáo tuần · Dự án ví dụ (khách bảo hiểm B)</b><span>Trạng thái chung: <span class="pill a">Vàng</span></span></div>
+      <div class="kpis" id="kpis"></div>
+      <div class="report-foot"><b>Cần khách quyết định:</b>
+        <ol><li>Trả lời 4 câu Q&A về quy tắc tính phí trước thứ Sáu để giữ mốc 基本設計.</li><li>Mở môi trường test phía khách trước ngày 22.</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="dung-nham" aria-labelledby="h-pairs">
+    <div class="sec-head">
+      <h2 id="h-pairs">16 cặp chỉ số hay nhầm</h2>
+      <p>Phần lớn câu hỏi bẫy khi phỏng vấn nằm ở đây.</p>
+    </div>
+    <div class="pairs" id="pairs"></div>
+  </section>
+
+  <section id="luyen" aria-labelledby="h-quiz">
+    <div class="sec-head">
+      <h2 id="h-quiz">Luyện nhớ</h2>
+      <p>Mỗi lượt 10 câu. Kiểu "Tính nhanh EVM" sinh số mới mỗi lần. Điểm cao nhất lưu trên trình duyệt này.</p>
+    </div>
+    <div class="quiz">
+      <div class="qmodes" id="qmodes" role="group" aria-label="Kiểu luyện">
+        <button data-m="calc" aria-pressed="true">Tính nhanh EVM</button>
+        <button data-m="f" aria-pressed="false">Công thức → chỉ số</button>
+        <button data-m="q" aria-pressed="false">Câu hỏi → chỉ số</button>
+        <button data-m="jp" aria-pressed="false">Tên tiếng Nhật → chỉ số</button>
+      </div>
+      <div id="qbody"></div>
+    </div>
+  </section>
+
+  <footer class="note">Ngưỡng và ví dụ trong trang là mức tham khảo để học; dự án thật dùng ngưỡng trong 品質計画書, hợp đồng (SLA) và dữ liệu lịch sử của công ty. Công thức EVM theo cách dùng phổ biến trong PMBOK.</footer>
+</div>
+
+<div class="backdrop" id="backdrop" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden></aside>
+
+<script>
+const D = {"families": [{"id": "sched", "q": "Có kịp không?", "en": "SCHEDULE", "vi": "Tiến độ", "h": 240}, {"id": "cost", "q": "Có lố tiền không?", "en": "COST · EVM", "vi": "Chi phí", "h": 48}, {"id": "scope", "q": "Phạm vi có phình không?", "en": "SCOPE", "vi": "Phạm vi", "h": 212}, {"id": "qual", "q": "Chất lượng ổn không?", "en": "QUALITY", "vi": "Chất lượng kiểu Nhật", "h": 315}, {"id": "flow", "q": "Team chạy đều không?", "en": "AGILE · FLOW", "vi": "Agile & dòng chảy", "h": 140}, {"id": "people", "q": "Team có khỏe không?", "en": "PEOPLE", "vi": "Nguồn lực & con người", "h": 270}, {"id": "client", "q": "Khách có hài lòng không?", "en": "CLIENT", "vi": "Khách hàng", "h": 85}, {"id": "ops", "q": "Hệ thống chạy ổn không?", "en": "OPERATIONS", "vi": "Vận hành & DevOps", "h": 190}, {"id": "biz", "q": "Dự án có lãi không?", "en": "BUSINESS", "vi": "Kinh doanh", "h": 28}], "metrics": [{"id": "SV", "sym": "SV", "fam": "sched", "en": "Schedule Variance", "vi": "Chênh lệch tiến độ (quy ra giá trị)", "jp": "スケジュール差異", "ro": "sukejūru sai", "q": "Đang trước hay sau kế hoạch, quy ra giá trị bao nhiêu?", "f": "SV = EV − PV", "unit": "tiền hoặc 人月", "read": "Dương là nhanh hơn kế hoạch, âm là chậm. SV đo bằng giá trị công việc, không đo bằng ngày.", "bands": ["≥ 0", "từ −5% PV đến 0", "< −5% PV"], "ex": "PV 40 人月, EV 35 人月 → SV = −5 人月: còn thiếu 5 người-tháng công việc so với kế hoạch tới hôm nay.", "src": "PV từ Gantt/cost baseline; EV từ WBS đo khách quan", "freq": "Hằng tuần", "trap": "Cuối dự án SV luôn về 0 (EV = PV = BAC) kể cả khi trễ. Việc chậm nằm trên critical path có thể nguy hiểm hơn con số SV cho thấy.", "say": "SV âm em không dừng ở con số; em xem việc chậm có nằm trên critical path không rồi mới báo ảnh hưởng tới mốc.", "hook": "EV trừ PV: làm được trừ dự định.", "rel": ["SPI", "PV", "EV", "SLIP"], "docs": ["EVM", "GNT"]}, {"id": "SPI", "sym": "SPI", "fam": "sched", "en": "Schedule Performance Index", "vi": "Chỉ số hiệu suất tiến độ", "jp": "スケジュール効率指数", "ro": "sukejūru kōritsu shisū", "q": "Làm được bao nhiêu phần so với lẽ ra phải làm?", "f": "SPI = EV ÷ PV", "unit": "tỉ số", "read": "1 là đúng kế hoạch; dưới 1 là chậm; trên 1 là nhanh. SPI 0,9 nghĩa là mới làm được 90% khối lượng lẽ ra phải xong tới hôm nay.", "bands": ["≥ 0,95", "0,85 – 0,95", "< 0,85"], "ex": "EV 35, PV 40 → SPI = 0,875.", "src": "Như SV", "freq": "Hằng tuần", "trap": "Gần cuối dự án SPI tự tiến về 1 dù dự án trễ, nên đọc kèm số ngày trễ (SLIP) và critical path.", "say": "SPI 0,875 nghĩa là team mới làm được 87,5% khối lượng theo kế hoạch; em báo kèm 'trễ mấy ngày, ảnh hưởng mốc nào'.", "hook": "S chia: EV / PV. Dưới 1 là chậm.", "rel": ["SV", "CPI", "SLIP"], "docs": ["EVM", "SR"]}, {"id": "PCT", "sym": "%C", "fam": "sched", "en": "Percent Complete", "vi": "Tỷ lệ hoàn thành", "jp": "進捗率", "ro": "shinchoku-ritsu", "q": "Dự án đã xong bao nhiêu phần trăm?", "f": "%C = EV ÷ BAC × 100%  (hoặc số work package xong ÷ tổng)", "unit": "%", "read": "So với % kế hoạch cùng ngày (PV ÷ BAC). Chênh lệch giữa hai con số là mức chậm/nhanh.", "bands": ["lệch ≤ 2 điểm %", "lệch 3–5 điểm", "lệch > 5 điểm"], "ex": "BAC 100 人月, EV 35 → 35%; kế hoạch hôm nay 40% → chậm 5 điểm.", "src": "WBS với quy tắc đo 0/100, 50/50 hoặc milestone có trọng số", "freq": "Hằng tuần", "trap": "Dùng % do member tự khai, task cứ '90%' mãi không xong. Hãy dùng quy tắc đo khách quan.", "say": "進捗率 của em tính theo work package đã xong theo quy tắc 0/100, không theo % member tự báo.", "hook": "Đếm cái đã xong, đừng đếm cái 'gần xong'.", "rel": ["SPI", "EV"], "docs": ["WBS", "GNT"]}, {"id": "OTD", "sym": "OTD", "fam": "sched", "en": "On-time Delivery Rate", "vi": "Tỷ lệ giao đúng hạn", "jp": "納期遵守率", "ro": "nōki junshu-ritsu", "q": "Bao nhiêu lần giao đúng ngày đã hứa?", "f": "OTD = số mốc/release đúng hạn ÷ số mốc/release đã đến hạn × 100%", "unit": "%", "read": "Đo theo ngày đã cam kết (baseline). Càng gần 100% càng tốt.", "bands": ["≥ 95%", "85 – 95%", "< 85%"], "ex": "18 / 20 release đúng hạn → 90%.", "src": "Milestone chart, lịch release", "freq": "Hằng tháng, quý", "trap": "Dời ngày kế hoạch liên tục để lúc nào cũng 'đúng hạn'. Phải đo theo baseline đã cam kết và ghi lại mỗi lần đổi.", "say": "OTD em đo theo ngày đã cam kết với khách, kèm danh sách các lần đổi baseline và lý do.", "hook": "Đúng hạn theo ngày ĐÃ HỨA, không theo ngày mới sửa.", "rel": ["SLIP", "SDR"], "docs": ["MS", "SR"]}, {"id": "SLIP", "sym": "SLIP", "fam": "sched", "en": "Schedule Slip (days)", "vi": "Số ngày trễ so kế hoạch", "jp": "予実差異（日数）", "ro": "yojitsu sai (nissū)", "q": "Trễ mấy ngày, ảnh hưởng mốc nào?", "f": "SLIP = ngày xong dự báo (hoặc thực tế) − ngày baseline", "unit": "ngày làm việc", "read": "0 hoặc âm là kịp. Trễ trên critical path thì ảnh hưởng thẳng tới mốc.", "bands": ["≤ 0", "1 – 3 ngày", "> 3 ngày hoặc nằm trên critical path"], "ex": "基本設計 kế hoạch xong 15/11, dự báo 20/11 → trễ 3 ngày làm việc (không tính thứ Bảy, Chủ nhật).", "src": "Gantt, network diagram", "freq": "Hằng tuần, khi có biến động", "trap": "Báo trễ theo ngày lịch thay vì ngày làm việc; quên ngày nghỉ Nhật (Golden Week, お盆, 年末年始) và Việt Nam (Tết).", "say": "Khách Nhật hiểu 'trễ mấy ngày' nhanh hơn chỉ số, nên báo cáo của em có cả SPI lẫn số ngày và mốc bị ảnh hưởng.", "hook": "Lãnh đạo hỏi 'trễ mấy ngày?', không hỏi 'SPI bao nhiêu?'.", "rel": ["SPI", "FLOAT", "OTD"], "docs": ["GNT", "MS"]}, {"id": "FLOAT", "sym": "TF", "fam": "sched", "en": "Total Float", "vi": "Thời gian dự trữ", "jp": "トータルフロート", "ro": "tōtaru furōto", "q": "Việc này được phép chậm bao lâu mà chưa ảnh hưởng ngày kết thúc?", "f": "TF = LS − ES = LF − EF", "unit": "ngày", "read": "0 nghĩa là việc nằm trên critical path. Âm nghĩa là đã trễ so với mốc ràng buộc.", "bands": ["> 5 ngày", "1 – 5 ngày", "≤ 0"], "ex": "ES = ngày 10, LS = ngày 14 → TF = 4 ngày: trễ tối đa 4 ngày chưa ảnh hưởng ngày kết thúc.", "src": "Network diagram (CPM)", "freq": "Khi lập và cập nhật lịch", "trap": "Tiêu hết float của các việc không găng, rồi xuất hiện nhiều critical path mới cùng lúc.", "say": "Việc trễ còn float thì em chưa báo khách lùi ngày; em dùng float và theo dõi để nó không thành đường găng mới.", "hook": "Float = khoảng 'được phép chậm' mà chưa ai thấy.", "rel": ["SLIP", "SPI"], "docs": ["NET", "GNT"]}, {"id": "PV", "sym": "PV", "fam": "cost", "en": "Planned Value", "vi": "Giá trị kế hoạch", "jp": "計画価値", "ro": "keikaku kachi", "q": "Theo kế hoạch, tới hôm nay lẽ ra làm được bao nhiêu?", "f": "PV = tổng ngân sách các việc lên lịch tới hôm nay", "unit": "tiền hoặc 人月", "read": "Là 'đề bài' để so với EV và AC. Không có ngưỡng tốt/xấu.", "bands": ["–", "–", "–"], "ex": "BAC 100 人月 chia đều 10 tuần; cuối tuần 4 → PV = 40 人月.", "src": "Cost baseline, Gantt", "freq": "Hằng tuần", "trap": "Không có baseline thì không có PV, và không làm EVM được.", "say": "PV lấy từ baseline đã duyệt; baseline chỉ đổi khi CR được duyệt.", "hook": "P = Plan: 'lẽ ra'.", "rel": ["EV", "AC", "SV", "SPI"], "docs": ["CB", "GNT"]}, {"id": "EV", "sym": "EV", "fam": "cost", "en": "Earned Value", "vi": "Giá trị thu được", "jp": "出来高", "ro": "dekidaka", "q": "Thực tế đã làm ra giá trị bao nhiêu?", "f": "EV = % hoàn thành (đo khách quan) × BAC", "unit": "tiền hoặc 人月", "read": "Là trái tim của EVM: mọi chỉ số SV, CV, SPI, CPI đều dựa vào EV.", "bands": ["–", "–", "–"], "ex": "Đã xong 35% khối lượng, BAC 100 → EV = 35 人月.", "src": "WBS + quy tắc đo 0/100, 50/50, milestone có trọng số", "freq": "Hằng tuần", "trap": "Ước EV theo cảm tính thì mọi chỉ số phía sau đều sai.", "say": "出来高 em đo theo quy tắc khách quan; task chưa xong hẳn thì theo quy tắc 0/100 là 0.", "hook": "E = Earned: 'kiếm được thật'.", "rel": ["PV", "AC", "PCT"], "docs": ["EVM", "WBS"]}, {"id": "AC", "sym": "AC", "fam": "cost", "en": "Actual Cost", "vi": "Chi phí thực tế", "jp": "実コスト", "ro": "jitsu kosuto", "q": "Thực tế đã tiêu bao nhiêu?", "f": "AC = tổng effort/chi phí thực tế ghi nhận tới hôm nay", "unit": "tiền hoặc 人月", "read": "So với EV để biết hiệu quả chi tiêu.", "bands": ["–", "–", "–"], "ex": "Timesheet 4 tuần cộng lại 42 人月 → AC = 42.", "src": "Timesheet, kế toán", "freq": "Hằng tuần", "trap": "Timesheet ghi muộn hoặc ghi nhầm dự án, AC thấp giả và CPI đẹp giả.", "say": "AC em lấy từ timesheet chốt hằng tuần, không chờ cuối tháng.", "hook": "A = Actual: 'đã tiêu thật'.", "rel": ["PV", "EV", "CV", "CPI"], "docs": ["EVM"]}, {"id": "CV", "sym": "CV", "fam": "cost", "en": "Cost Variance", "vi": "Chênh lệch chi phí", "jp": "コスト差異", "ro": "kosuto sai", "q": "Đang tiết kiệm hay đang lố, bao nhiêu?", "f": "CV = EV − AC", "unit": "tiền hoặc 人月", "read": "Dương là tiết kiệm, âm là lố.", "bands": ["≥ 0", "từ −5% EV đến 0", "< −5% EV"], "ex": "EV 35, AC 42 → CV = −7 人月.", "src": "Như EV, AC", "freq": "Hằng tuần", "trap": "CV dương vì timesheet ghi thiếu, không phải vì làm giỏi.", "say": "CV âm 7 người-tháng em báo kèm nguyên nhân: rework, estimate thiếu hay thay đổi chưa có CR.", "hook": "EV trừ AC: làm được trừ đã tiêu.", "rel": ["CPI", "EV", "AC"], "docs": ["EVM", "CB"]}, {"id": "CPI", "sym": "CPI", "fam": "cost", "en": "Cost Performance Index", "vi": "Chỉ số hiệu suất chi phí", "jp": "コスト効率指数", "ro": "kosuto kōritsu shisū", "q": "Mỗi đồng bỏ ra tạo được bao nhiêu giá trị?", "f": "CPI = EV ÷ AC", "unit": "tỉ số", "read": "1 là đúng kế hoạch; dưới 1 là lố: mỗi đồng bỏ ra tạo chưa tới một đồng giá trị.", "bands": ["≥ 0,95", "0,85 – 0,95", "< 0,85"], "ex": "EV 35 ÷ AC 42 ≈ 0,83.", "src": "Như EV, AC", "freq": "Hằng tuần", "trap": "Kinh nghiệm EVM phổ biến: CPI ít khi tự hồi phục nhiều sau khoảng 20% dự án. Đừng hứa 'sẽ bù lại' nếu không có hành động cụ thể.", "say": "CPI 0,83 em không chờ tự hồi phục; em tìm nguyên nhân và trình EAC mới cho lãnh đạo.", "hook": "C chia: EV / AC. Dưới 1 là lố.", "rel": ["CV", "EAC", "TCPI", "SPI"], "docs": ["EVM"]}, {"id": "EAC", "sym": "EAC", "fam": "cost", "en": "Estimate at Completion", "vi": "Dự báo tổng chi phí khi hoàn thành", "jp": "完成時総コスト見積", "ro": "kanseiji sō-kosuto mitsumori", "q": "Nếu cứ thế này thì cuối cùng tốn bao nhiêu?", "f": "EAC = BAC ÷ CPI  ·  = AC + (BAC − EV)  ·  = AC + (BAC − EV) ÷ (CPI × SPI)  ·  = AC + ETC (ước lại từ dưới lên)", "unit": "tiền hoặc 人月", "read": "Chọn công thức theo giả định: hiệu suất hiện tại kéo dài (BAC/CPI); lệch chỉ là bất thường (AC + BAC − EV); cả tiến độ và chi phí cùng ảnh hưởng (chia CPI × SPI).", "bands": ["≤ BAC", "BAC đến +5%", "> BAC + 5%"], "ex": "BAC 100, AC 42, EV 35, CPI 0,83, SPI 0,875 → 107 (bất thường) · 120 (kéo dài) · ≈ 131 (cả hai).", "src": "Kết quả EVM", "freq": "Hằng tháng hoặc khi CPI lệch", "trap": "Chỉ đưa 1 con số EAC. Nên đưa một dải (lạc quan – bi quan) kèm giả định.", "say": "Em trình EAC dạng dải 107–131 người-tháng, mỗi con số có giả định rõ, để lãnh đạo quyết.", "hook": "'Nếu cứ thế này thì cuối cùng tốn bao nhiêu?'", "rel": ["ETC", "VAC", "CPI"], "docs": ["EVM", "CB"]}, {"id": "ETC", "sym": "ETC", "fam": "cost", "en": "Estimate to Complete", "vi": "Dự báo chi phí còn lại", "jp": "残作業見積", "ro": "zansagyō mitsumori", "q": "Còn phải tiêu bao nhiêu nữa?", "f": "ETC = EAC − AC  (hoặc estimate lại phần còn lại từ dưới lên)", "unit": "tiền hoặc 人月", "read": "Là số tiền/công còn cần để hoàn thành.", "bands": ["≤ BAC − AC", "vượt nhẹ", "vượt nhiều"], "ex": "EAC 120 − AC 42 = 78 人月.", "src": "EVM, estimate lại", "freq": "Hằng tháng", "trap": "Lấy BAC − AC làm ETC, tức là giả định phần còn lại chạy đúng kế hoạch dù đang lố.", "say": "Khi CPI lệch nhiều, em cho team estimate lại phần còn lại từ dưới lên thay vì dùng công thức.", "hook": "'Còn phải tiêu bao nhiêu nữa?'", "rel": ["EAC", "AC"], "docs": ["EVM", "EST"]}, {"id": "VAC", "sym": "VAC", "fam": "cost", "en": "Variance at Completion", "vi": "Chênh lệch khi hoàn thành", "jp": "完成時差異", "ro": "kanseiji sai", "q": "Cuối cùng hụt bao nhiêu so với ngân sách?", "f": "VAC = BAC − EAC", "unit": "tiền hoặc 人月", "read": "Âm là dự kiến lố ngân sách.", "bands": ["≥ 0", "từ −5% BAC đến 0", "< −5% BAC"], "ex": "BAC 100 − EAC 120 = −20 → dự kiến lố 20%.", "src": "EVM", "freq": "Hằng tháng", "trap": "VAC âm nhưng không báo sớm, lãnh đạo biết khi đã hết tiền.", "say": "VAC −20% em báo ngay kèm phương án: CR, giảm phạm vi, hay chấp nhận lỗ có kiểm soát.", "hook": "'Cuối cùng hụt bao nhiêu?'", "rel": ["EAC", "CPI"], "docs": ["EVM", "CB"]}, {"id": "TCPI", "sym": "TCPI", "fam": "cost", "en": "To-Complete Performance Index", "vi": "Hiệu suất cần đạt cho phần còn lại", "jp": "残作業効率指数", "ro": "zansagyō kōritsu shisū", "q": "Từ giờ phải làm hiệu quả hơn bao nhiêu mới giữ được ngân sách?", "f": "TCPI = (BAC − EV) ÷ (BAC − AC)  (giữ BAC)  ·  = (BAC − EV) ÷ (EAC − AC)  (theo EAC mới)", "unit": "tỉ số", "read": "Trên 1 nghĩa là từ giờ phải hiệu quả hơn kế hoạch. Nếu TCPI cao hơn CPI hiện tại nhiều thì giữ BAC không còn khả thi.", "bands": ["≤ CPI hiện tại", "cao hơn CPI ≤ 0,1", "cao hơn CPI > 0,1"], "ex": "(100 − 35) ÷ (100 − 42) = 65 ÷ 58 ≈ 1,12 trong khi CPI chỉ 0,83 → rất khó.", "src": "EVM", "freq": "Khi xem xét có giữ BAC hay không", "trap": "Hứa 'team sẽ cố' khi TCPI 1,12 mà CPI 0,83: gần như không khả thi.", "say": "TCPI 1,12 so với CPI 0,83, em nói thẳng là giữ BAC không khả thi và đề xuất EAC mới.", "hook": "'Từ giờ phải giỏi lên bao nhiêu mới kịp tiền?'", "rel": ["CPI", "EAC"], "docs": ["EVM"]}, {"id": "EFV", "sym": "EFV", "fam": "cost", "en": "Effort Variance", "vi": "Chênh lệch công số", "jp": "工数予実差異", "ro": "kōsū yojitsu sai", "q": "Tốn công hơn dự tính bao nhiêu phần trăm, ở giai đoạn nào?", "f": "EFV = (effort thực tế − effort kế hoạch) ÷ effort kế hoạch × 100%", "unit": "%", "read": "Đo theo task, phase hoặc 工程 để biết chỗ nào gây lố.", "bands": ["±5%", "±5 – 15%", "> ±15%"], "ex": "基本設計 kế hoạch 40 人日, thực tế 48 人日 → +20%.", "src": "Timesheet theo mã WBS", "freq": "Hằng tuần, khi đóng phase", "trap": "Chỉ xem tổng dự án nên không thấy phase nào gây lố.", "say": "Em xem 工数予実 theo từng 工程 để biết lố ở thiết kế hay ở test, rồi chỉnh hệ số estimate cho dự án sau.", "hook": "'Tốn công hơn dự tính bao nhiêu, ở đâu?'", "rel": ["EA", "CPI", "RW"], "docs": ["EVM", "EST"]}, {"id": "EA", "sym": "EA", "fam": "cost", "en": "Estimate Accuracy", "vi": "Độ chính xác estimate", "jp": "見積精度", "ro": "mitsumori seido", "q": "Estimate ban đầu sát thực tế tới đâu?", "f": "Sai lệch = (thực tế − estimate) ÷ estimate × 100%  (đo khi đóng dự án/phase)", "unit": "%", "read": "Càng gần 0 càng tốt. Dùng để cải tiến cách estimate lần sau.", "bands": ["±10%", "±10 – 20%", "> ±20%"], "ex": "Estimate 60 人月, thực tế 66 → +10%.", "src": "Estimate gốc, timesheet", "freq": "Khi đóng phase/dự án", "trap": "Cộng hết CR vào baseline rồi mới so, che mất sai số của estimate gốc.", "say": "Em giữ 2 con số: lệch so với estimate gốc để cải tiến cách estimate, và lệch sau CR để đánh giá quản lý thay đổi.", "hook": "Dự đoán giỏi cỡ nào? Đo ở cuối, dùng cho lần sau.", "rel": ["EFV", "SCR"], "docs": ["EST", "LL"]}, {"id": "SCR", "sym": "SCR", "fam": "scope", "en": "Scope Creep", "vi": "Tỷ lệ phạm vi phình ngầm", "jp": "スコープクリープ率", "ro": "sukōpu kurīpu-ritsu", "q": "Bao nhiêu việc lọt vào mà không qua CR?", "f": "SCR = effort (hoặc số yêu cầu) thêm vào KHÔNG qua CR ÷ baseline × 100%", "unit": "%", "read": "Phần đi qua CR không phải scope creep. Chỉ tính phần lọt vào âm thầm.", "bands": ["< 5%", "5 – 10%", "> 10%"], "ex": "Baseline 1.000 人時, thêm 60 人時 không qua CR → 6%.", "src": "So RTM/backlog với baseline; gắn nhãn 'ngoài CR' trong ticket", "freq": "Hằng tuần, hằng sprint", "trap": "Nhầm thay đổi đã duyệt là scope creep, hoặc ngược lại 'làm luôn cho khách vui' không ghi lại.", "say": "Scope creep là phần lọt qua mà không có CR; phần có CR là thay đổi được quản lý.", "hook": "Creep = bò lén vào. Có CR thì không còn là creep.", "rel": ["CRA", "RV"], "docs": ["CR", "SS", "RTM"]}, {"id": "CRA", "sym": "CRA", "fam": "scope", "en": "CR Approval Rate", "vi": "Tỷ lệ CR được duyệt", "jp": "変更要求承認率", "ro": "henkō yōkyū shōnin-ritsu", "q": "Gửi 10 CR, khách đồng ý mấy cái?", "f": "CRA = số CR (追加見積) khách duyệt ÷ số CR đã gửi × 100%", "unit": "%", "read": "Cao cho thấy CR có căn cứ và khách tin estimate.", "bands": ["≥ 80%", "60 – 80%", "< 60%"], "ex": "8 / 10 CR được duyệt → 80%.", "src": "Change log", "freq": "Hằng tháng", "trap": "Tỷ lệ cao vì chỉ gửi CR nhỏ, còn CR lớn thì 'làm luôn cho xong'. Đọc kèm SCR.", "say": "CR bị từ chối em phân tích: vì giá, vì lý do, hay vì khách cho là 'đương nhiên phải có', để sửa SOW lần sau.", "hook": "'Gửi 10 CR, khách gật mấy cái?'", "rel": ["SCR", "RV"], "docs": ["CR", "EST"]}, {"id": "RV", "sym": "RV", "fam": "scope", "en": "Requirement Volatility", "vi": "Tỷ lệ thay đổi yêu cầu", "jp": "要件変更率", "ro": "yōken henkō-ritsu", "q": "Yêu cầu đang 'rung' bao nhiêu?", "f": "RV = (số yêu cầu thêm + sửa + xóa trong kỳ) ÷ tổng yêu cầu baseline × 100%", "unit": "%", "read": "Cao ở giai đoạn đầu là bình thường; cao sau khi chốt 基本設計 là rủi ro lớn.", "bands": ["< 10% mỗi phase", "10 – 20%", "> 20%"], "ex": "200 yêu cầu; kỳ này thêm 6, sửa 10, xóa 4 → 10%.", "src": "RTM, change log", "freq": "Hằng tuần, mỗi phase", "trap": "RV cao sau 基本設計 mà vẫn giữ giá cố định 請負, dự án lỗ.", "say": "Khi RV vượt ngưỡng sau 基本設計, em đề xuất khách chuyển phần còn biến động sang 準委任 hoặc phase sau.", "hook": "'Yêu cầu đang rung bao nhiêu?'", "rel": ["SCR", "CRA", "RW"], "docs": ["RTM", "CR"]}, {"id": "RCOV", "sym": "RCOV", "fam": "scope", "en": "Requirement Coverage", "vi": "Độ phủ yêu cầu bằng test", "jp": "要件カバレッジ", "ro": "yōken kabarejji", "q": "Yêu cầu nào chưa được ai kiểm?", "f": "RCOV = số yêu cầu có test case đã chạy đạt ÷ tổng yêu cầu × 100%", "unit": "%", "read": "Trước 受入テスト nên đạt 100%.", "bands": ["100% trước UAT", "95 – 99%", "< 95%"], "ex": "190 / 200 yêu cầu có test case đạt → 95%.", "src": "RTM", "freq": "Hằng tuần trong giai đoạn test", "trap": "Có test case nhưng chưa chạy, hoặc chạy chưa đạt, vẫn tính là 'đã phủ'.", "say": "Trước 受入テスト em yêu cầu RTM phủ 100% yêu cầu bằng test case đã chạy đạt.", "hook": "'Yêu cầu nào chưa có ai kiểm?'", "rel": ["TEX", "TPR"], "docs": ["RTM", "TS"]}, {"id": "TD", "sym": "TD", "fam": "qual", "en": "Test Density", "vi": "Mật độ test", "jp": "テスト密度", "ro": "tesuto mitsudo", "q": "Mỗi 1.000 dòng code (hoặc mỗi FP) có bao nhiêu test case?", "f": "TD = số test case ÷ quy mô (KLOC hoặc FP)", "unit": "case/KLOC, case/FP", "read": "Thấp thì có thể test chưa đủ; cao quá có thể trùng lặp, tốn công. So với ngưỡng trên và dưới trong 品質計画書.", "bands": ["trong khoảng ngưỡng", "lệch ±20% ngưỡng", "ngoài ±20%"], "ex": "1.200 case ÷ 20 KLOC = 60 case/KLOC.", "src": "Test spec, công cụ đếm dòng code", "freq": "Theo từng mức test", "trap": "Đạt mật độ bằng cách nhân bản các case gần giống nhau.", "say": "テスト密度 thấp em không vội kết luận; em xem テスト観点 (góc nhìn test) có thiếu không.", "hook": "'Mỗi 1.000 dòng code được bắn bao nhiêu phát?'", "rel": ["BD", "COV", "RCOV"], "docs": ["QMP", "TS", "QR"]}, {"id": "BD", "sym": "BD", "fam": "qual", "en": "Bug Density", "vi": "Mật độ bug", "jp": "バグ密度", "ro": "bagu mitsudo", "q": "Mỗi 1.000 dòng code (hoặc mỗi FP) có bao nhiêu bug?", "f": "BD = số bug phát hiện ÷ quy mô (KLOC hoặc FP), tính riêng từng mức test", "unit": "bug/KLOC, bug/FP", "read": "So với ngưỡng trên và dưới. Thấp bất thường có thể do test chưa đủ chứ không phải code tốt.", "bands": ["trong khoảng ngưỡng", "lệch nhẹ", "ngoài khoảng (cả cao lẫn thấp)"], "ex": "90 bug ÷ 20 KLOC = 4,5 bug/KLOC.", "src": "Bug list, công cụ đếm dòng code", "freq": "Theo từng mức test", "trap": "Ăn mừng khi バグ密度 rất thấp; khách Nhật sẽ hỏi 'test đã đủ chưa?'.", "say": "バグ密度 có cả ngưỡng dưới; thấp bất thường em kiểm lại テスト密度 và テスト観点.", "hook": "Thấp quá cũng đáng ngờ như cao quá.", "rel": ["TD", "DL", "BCV"], "docs": ["BUG", "QR"]}, {"id": "RCD", "sym": "RCD", "fam": "qual", "en": "Review Comment Density", "vi": "Mật độ điểm chỉ ra khi review", "jp": "レビュー指摘密度", "ro": "rebyū shiteki mitsudo", "q": "Review bắt được bao nhiêu lỗi trên mỗi trang tài liệu / KLOC?", "f": "RCD = số 指摘 (điểm chỉ ra) ÷ quy mô (trang tài liệu hoặc KLOC)", "unit": "指摘/trang, 指摘/KLOC", "read": "Quá thấp có thể là review hời hợt; quá cao là tài liệu chất lượng kém.", "bands": ["trong khoảng ngưỡng", "lệch nhẹ", "ngoài khoảng"], "ex": "45 指摘 ÷ 30 trang 基本設計書 = 1,5 指摘/trang.", "src": "レビュー記録票 (biên bản review)", "freq": "Mỗi lần review", "trap": "Review hời hợt ra ít 指摘 nên tưởng tài liệu tốt; bug dồn xuống giai đoạn test.", "say": "Em theo dõi 指摘密度 theo từng 工程; thiết kế ít 指摘 bất thường thì em xem lại thời gian review.", "hook": "Bắt lỗi trên giấy rẻ hơn bắt lỗi trong code.", "rel": ["RER", "BD", "RW"], "docs": ["QMP", "BD"]}, {"id": "RER", "sym": "RER", "fam": "qual", "en": "Review Effort Ratio", "vi": "Tỷ lệ công dành cho review", "jp": "レビュー工数比率", "ro": "rebyū kōsū hiritsu", "q": "Bỏ bao nhiêu công để review so với công làm ra?", "f": "RER = effort review ÷ effort tạo tài liệu/code × 100%", "unit": "%", "read": "Quá thấp thì review chỉ là hình thức.", "bands": ["10 – 20%", "5 – 10%", "< 5%"], "ex": "Viết thiết kế 50 人時, review 6 人時 → 12%.", "src": "Timesheet có mã review", "freq": "Mỗi phase", "trap": "Review là việc bị cắt đầu tiên khi trễ tiến độ, rồi bug tăng ở cuối.", "say": "Khi bị ép tiến độ em không cắt review; em cắt phạm vi hoặc xin thêm thời gian.", "hook": "Review là bảo hiểm rẻ nhất.", "rel": ["RCD", "RW"], "docs": ["QMP"]}, {"id": "DL", "sym": "DL", "fam": "qual", "en": "Defect Leakage", "vi": "Tỷ lệ lọt lỗi ra khách", "jp": "流出率", "ro": "ryūshutsu-ritsu", "q": "Bao nhiêu phần trăm lỗi lọt qua lưới ra tới tay khách?", "f": "DL = bug khách/UAT/production phát hiện ÷ (bug nội bộ phát hiện + bug lọt ra) × 100%", "unit": "%", "read": "Càng thấp càng tốt. Phải nói rõ mẫu số gồm những gì.", "bands": ["< 5%", "5 – 10%", "> 10%"], "ex": "Nội bộ bắt 190, khách báo 10 → 10 ÷ 200 = 5%.", "src": "Bug list có cột 'ai phát hiện' và '工程 phát hiện'", "freq": "Mỗi release", "trap": "Nói 'leakage < 5%' mà không nói mẫu số có tính 指摘 review hay không; interviewer tính lại sẽ ra số khác.", "say": "Em định nghĩa rõ mẫu số và phạm vi khi báo 流出率, vì đây là con số khách Nhật hỏi kỹ nhất.", "hook": "'Lọt qua lưới bao nhiêu phần trăm?'", "rel": ["DRE", "BD", "CLM"], "docs": ["BUG", "QR", "IR"]}, {"id": "DRE", "sym": "DRE", "fam": "qual", "en": "Defect Removal Efficiency", "vi": "Hiệu quả loại bỏ lỗi", "jp": "欠陥除去率", "ro": "kekkan jokyo-ritsu", "q": "Bắt được bao nhiêu phần trăm lỗi trước khi giao?", "f": "DRE = bug bắt trước release ÷ (bug trước release + bug sau release) × 100%  = 100% − DL", "unit": "%", "read": "Càng cao càng tốt. Là mặt kia của defect leakage.", "bands": ["≥ 95%", "90 – 95%", "< 90%"], "ex": "190 ÷ 200 = 95%.", "src": "Bug list", "freq": "Sau một khoảng vận hành cố định (vd 1–3 tháng)", "trap": "Đo quá sớm sau release, bug sau release chưa kịp xuất hiện nên DRE đẹp giả.", "say": "Em đo DRE sau cùng một khoảng vận hành cố định để so được giữa các release.", "hook": "DRE + Leakage = 100%.", "rel": ["DL", "BCV"], "docs": ["QR", "BUG"]}, {"id": "BCV", "sym": "BCV", "fam": "qual", "en": "Bug Convergence", "vi": "Độ hội tụ bug", "jp": "バグ収束・信頼度成長曲線", "ro": "bagu shūsoku, shinraido seichō kyokusen", "q": "Bug mới có đang giảm dần về gần 0 không?", "f": "Vẽ số bug tích lũy theo ngày (hoặc theo số case đã chạy); hội tụ khi đường cong nằm ngang trong lúc vẫn đang chạy test", "unit": "đường cong", "read": "Đường cong cong xuống rồi nằm ngang là hội tụ; vẫn dốc lên là chưa nên release.", "bands": ["nằm ngang ở 20% case cuối", "đang cong xuống", "vẫn dốc lên"], "ex": "Ngày 1–5 mỗi ngày 15 bug, ngày 6–8 còn 3, ngày 9–10 còn 0–1 → đang hội tụ.", "src": "Bug list theo ngày, tiến độ chạy case", "freq": "Hằng ngày trong giai đoạn test", "trap": "Đường nằm ngang vì đã ngừng test, không phải vì hết bug.", "say": "Tiêu chí release của em có điều kiện 'đường cong bug đã nằm ngang trong khi vẫn đang chạy test'.", "hook": "Nằm ngang = gần hết bug, nếu vẫn đang test.", "rel": ["BD", "TEX", "OPB"], "docs": ["QR", "TP"]}, {"id": "RW", "sym": "RW", "fam": "qual", "en": "Rework Rate", "vi": "Tỷ lệ làm lại", "jp": "手戻り率", "ro": "temodori-ritsu", "q": "Bao nhiêu công bị mất vì phải làm lại?", "f": "RW = effort làm lại (sửa spec, thiết kế, code do lỗi) ÷ tổng effort × 100%", "unit": "%", "read": "Là chi phí của chất lượng kém. Càng thấp càng tốt.", "bands": ["< 10%", "10 – 20%", "> 20%"], "ex": "120 人時 sửa lại trên 1.000 人時 → 12%.", "src": "Timesheet có mã 'rework' hoặc phân loại ticket", "freq": "Hằng tháng, mỗi phase", "trap": "Không tách rework khỏi effort thường, nên không thấy tiền đang chảy mất ở đâu.", "say": "手戻り là chỗ tiền chảy mất; em gắn mã rework trong timesheet để thấy nó.", "hook": "Làm hai lần một việc là trả tiền hai lần.", "rel": ["EFV", "RCD", "RV"], "docs": ["BUG", "LL"]}, {"id": "TEX", "sym": "TEX", "fam": "qual", "en": "Test Execution Rate", "vi": "Tỷ lệ case đã chạy", "jp": "テスト消化率", "ro": "tesuto shōka-ritsu", "q": "Đã chạy được bao nhiêu phần trăm test case?", "f": "TEX = số case đã chạy ÷ tổng case kế hoạch × 100%", "unit": "%", "read": "So với kế hoạch theo ngày. Chạy 100% chưa có nghĩa là đạt.", "bands": ["đúng hoặc vượt kế hoạch", "chậm ≤ 5 điểm", "chậm > 5 điểm"], "ex": "900 / 1.200 case → 75%.", "src": "Test spec", "freq": "Hằng ngày trong giai đoạn test", "trap": "Nhầm với tỷ lệ đạt: chạy 100% nhưng chỉ đạt 70% thì vẫn chưa xong.", "say": "Em báo song song 消化率 và 合格率; khách Nhật đọc cả hai.", "hook": "消化 = đã 'ăn' được bao nhiêu case.", "rel": ["TPR", "BCV"], "docs": ["TS", "QR"]}, {"id": "TPR", "sym": "TPR", "fam": "qual", "en": "Test Pass Rate", "vi": "Tỷ lệ case đạt", "jp": "テスト合格率", "ro": "tesuto gōkaku-ritsu", "q": "Trong số case đã chạy, bao nhiêu đạt?", "f": "TPR = số case đạt ÷ số case đã chạy × 100%", "unit": "%", "read": "Trước release thường cần 100% case ưu tiên cao đạt.", "bands": ["≥ 95%", "90 – 95%", "< 90%"], "ex": "855 đạt / 900 đã chạy = 95%.", "src": "Test spec", "freq": "Hằng ngày trong giai đoạn test", "trap": "Bỏ các case 'pending/blocked' ra khỏi mẫu số cho số đẹp.", "say": "Case bị chặn em báo riêng, không bỏ khỏi mẫu số.", "hook": "合格 = đậu.", "rel": ["TEX", "OPB"], "docs": ["TS", "QR"]}, {"id": "COV", "sym": "C0/C1", "fam": "qual", "en": "Code Coverage", "vi": "Độ phủ code", "jp": "コードカバレッジ", "ro": "kōdo kabarejji", "q": "Unit test đã chạy qua bao nhiêu phần code?", "f": "C0 (statement) = số lệnh đã chạy ÷ tổng lệnh  ·  C1 (branch) = số nhánh đã chạy ÷ tổng nhánh", "unit": "%", "read": "So với ngưỡng trong 品質計画書 (vd C1 ≥ 80%, tham khảo).", "bands": ["đạt ngưỡng", "thấp hơn 5 – 10 điểm", "thấp hơn > 10 điểm"], "ex": "1.600 / 2.000 nhánh → C1 = 80%.", "src": "Công cụ đo coverage trong CI", "freq": "Mỗi build", "trap": "Coverage cao nhưng test không kiểm kết quả (không assert): code được chạy qua mà không được kiểm.", "say": "Khách Nhật hay yêu cầu C0/C1 ở 単体テスト; em kèm review chất lượng test, không chỉ con số.", "hook": "C0 = dòng, C1 = nhánh.", "rel": ["TD", "BD"], "docs": ["TS", "QMP"]}, {"id": "OPB", "sym": "OPB", "fam": "qual", "en": "Open Bugs by Severity", "vi": "Bug còn mở theo mức độ", "jp": "未解決バグ（重要度別）", "ro": "mikaiketsu bagu (jūyōdo-betsu)", "q": "Còn bao nhiêu bug chưa đóng, nặng cỡ nào?", "f": "Đếm bug chưa đóng theo severity (Critical / High / Medium / Low), kèm tuổi bug", "unit": "số bug", "read": "Không đếm tổng; đếm theo mức độ.", "bands": ["0 Critical, 0 High", "còn High có workaround", "còn Critical"], "ex": "0 Critical, 2 High (có workaround), 15 Medium.", "src": "Bug list", "freq": "Hằng ngày gần release", "trap": "Hạ severity trước release cho đẹp số.", "say": "Tiêu chí release của em: 0 Critical; High phải có workaround và được khách đồng ý.", "hook": "Đếm theo mức đau, đừng đếm tổng.", "rel": ["BCV", "TPR"], "docs": ["BUG", "QR", "RLP"]}, {"id": "VEL", "sym": "VEL", "fam": "flow", "en": "Velocity", "vi": "Tốc độ sprint", "jp": "ベロシティ", "ro": "beroshiti", "q": "Mỗi sprint team làm xong bao nhiêu điểm?", "f": "VEL = tổng story point của các story Done trong 1 sprint (dùng trung bình 3–5 sprint gần nhất)", "unit": "điểm/sprint", "read": "Dùng để dự báo, không dùng để so sánh giữa các team.", "bands": ["dao động ≤ ±15%", "±15 – 30%", "> ±30%"], "ex": "3 sprint gần nhất: 28, 32, 30 → trung bình 30 điểm/sprint.", "src": "Jira/Backlog", "freq": "Mỗi sprint", "trap": "So velocity giữa 2 team hoặc ép tăng velocity, team sẽ thổi phồng điểm.", "say": "Velocity em chỉ dùng để dự báo: backlog 300 điểm chia 30 điểm/sprint thì khoảng 10 sprint.", "hook": "Velocity là đồng hồ tốc độ của 1 xe, không phải để đua giữa 2 xe.", "rel": ["SDR", "BDN", "THR"], "docs": ["US"]}, {"id": "SDR", "sym": "SDR", "fam": "flow", "en": "Say/Do Ratio", "vi": "Tỷ lệ giữ cam kết sprint", "jp": "コミットメント達成率", "ro": "komittomento tassei-ritsu", "q": "Hứa làm 10, làm được mấy?", "f": "SDR = điểm Done ÷ điểm cam kết đầu sprint × 100%", "unit": "%", "read": "Ổn định quanh 85–100% là team dự báo tốt.", "bands": ["85 – 100%", "70 – 85%", "< 70% hoặc liên tục > 110%"], "ex": "Cam kết 32, xong 28 → 87,5%.", "src": "Sprint report", "freq": "Mỗi sprint", "trap": "Cam kết thấp để lúc nào cũng đạt 100%.", "say": "Say/do giúp khách tin kế hoạch sprint; liên tục trên 100% nghĩa là team đang cam kết quá ít.", "hook": "'Nói 10 làm mấy?'", "rel": ["VEL", "OTD"], "docs": ["US"]}, {"id": "BDN", "sym": "BDN", "fam": "flow", "en": "Burndown", "vi": "Biểu đồ đốt việc", "jp": "バーンダウンチャート", "ro": "bāndaun chāto", "q": "Việc còn lại có giảm đúng nhịp không?", "f": "Đường việc còn lại (điểm hoặc giờ) theo ngày, so với đường lý tưởng", "unit": "biểu đồ", "read": "Nằm trên đường lý tưởng là chậm; đi ngang là đang kẹt; nhảy lên là thêm việc giữa sprint.", "bands": ["bám đường lý tưởng", "lệch nhưng đang hội tụ", "đi ngang hoặc tăng"], "ex": "Ngày 5/10 của sprint còn 20/32 điểm (đường lý tưởng 16) → chậm 4 điểm.", "src": "Jira/Backlog", "freq": "Hằng ngày", "trap": "Đường đẹp vì mọi người cập nhật dồn vào cuối sprint.", "say": "Burndown đi ngang 2 ngày là tín hiệu em hỏi ngay ở daily: ai đang bị chặn.", "hook": "Đi ngang = kẹt; nhảy lên = thêm việc.", "rel": ["VEL", "WIP"], "docs": ["US"]}, {"id": "LT", "sym": "LT", "fam": "flow", "en": "Lead Time", "vi": "Thời gian từ lúc yêu cầu tới lúc giao", "jp": "リードタイム", "ro": "rīdo taimu", "q": "Khách yêu cầu bao lâu thì nhận được?", "f": "LT = thời điểm giao − thời điểm yêu cầu được tạo", "unit": "ngày", "read": "Là góc nhìn của khách. Thường so với SLA đã hứa.", "bands": ["≤ SLA", "vượt SLA ≤ 20%", "vượt SLA > 20%"], "ex": "Ticket tạo 1/11, release 15/11 → 14 ngày.", "src": "Jira/Backlog", "freq": "Hằng tuần, hằng tháng", "trap": "Nhầm với cycle time; khách cảm nhận lead time chứ không cảm nhận cycle time.", "say": "Khách hỏi 'bao lâu có tính năng' là hỏi lead time; em giảm nó bằng cách giảm thời gian chờ trong backlog.", "hook": "Lead = góc nhìn khách: từ lúc xin tới lúc nhận.", "rel": ["CT", "THR", "LTC"], "docs": ["US"]}, {"id": "CT", "sym": "CT", "fam": "flow", "en": "Cycle Time", "vi": "Thời gian xử lý", "jp": "サイクルタイム", "ro": "saikuru taimu", "q": "Team bắt tay làm thì bao lâu xong?", "f": "CT = thời điểm xong − thời điểm bắt đầu làm  ·  Little's Law: CT ≈ WIP ÷ Throughput", "unit": "ngày", "read": "Là góc nhìn của team. Giảm WIP thường giảm được cycle time.", "bands": ["ổn định hoặc giảm", "tăng ≤ 20%", "tăng > 20%"], "ex": "Bắt đầu 10/11, xong 13/11 → 3 ngày.", "src": "Jira/Backlog", "freq": "Hằng tuần", "trap": "Nhiều việc dở dang cùng lúc làm cycle time dài ra.", "say": "Muốn giảm cycle time, em giảm WIP trước khi đòi team làm nhanh hơn.", "hook": "Cycle = góc nhìn team: từ lúc bắt tay tới lúc xong.", "rel": ["LT", "WIP", "THR"], "docs": ["US"]}, {"id": "THR", "sym": "THR", "fam": "flow", "en": "Throughput", "vi": "Thông lượng", "jp": "スループット", "ro": "surūputto", "q": "Mỗi tuần làm xong bao nhiêu việc?", "f": "THR = số item hoàn thành ÷ kỳ", "unit": "item/tuần", "read": "Ổn định là tốt. Hợp với team bảo trì (保守) hơn story point.", "bands": ["ổn định", "giảm ~20%", "giảm > 30%"], "ex": "12 ticket/tuần.", "src": "Jira/Backlog", "freq": "Hằng tuần", "trap": "Các item to nhỏ quá khác nhau thì throughput khó so; nên chia việc đều cỡ.", "say": "Với team bảo trì (保守), em dự báo bằng throughput thay vì story point.", "hook": "'Mỗi tuần ra lò bao nhiêu việc?'", "rel": ["CT", "WIP", "VEL"], "docs": ["US"]}, {"id": "WIP", "sym": "WIP", "fam": "flow", "en": "Work in Progress", "vi": "Việc đang làm dở", "jp": "仕掛り作業", "ro": "shikakari sagyō", "q": "Đang có bao nhiêu việc dở dang cùng lúc?", "f": "WIP = số item ở trạng thái 'đang làm'  ·  CT ≈ WIP ÷ Throughput", "unit": "item", "read": "Thấp và có giới hạn thì việc chảy nhanh.", "bands": ["≤ giới hạn WIP", "vượt nhẹ", "vượt nhiều, việc tồn lâu"], "ex": "WIP 12, throughput 6/tuần → cycle time khoảng 2 tuần.", "src": "Kanban board", "freq": "Hằng ngày", "trap": "Mở nhiều việc để 'ai cũng bận', rốt cuộc không việc nào xong.", "say": "Em đặt giới hạn WIP cho cột review và test: ngừng bắt đầu, tập trung làm xong.", "hook": "Ít dở dang thì nhanh xong.", "rel": ["CT", "THR"], "docs": ["US"]}, {"id": "UTL", "sym": "UTL", "fam": "people", "en": "Utilization", "vi": "Tỷ lệ sử dụng nguồn lực", "jp": "稼働率", "ro": "kadō-ritsu", "q": "Mỗi người đang dùng bao nhiêu phần thời gian cho dự án?", "f": "UTL = giờ làm việc dự án ÷ giờ có thể làm × 100%", "unit": "%", "read": "Khoảng 75–85% là lành mạnh (tham khảo); quá cao thì không còn chỗ cho review, học, sự cố.", "bands": ["75 – 85%", "85 – 95% hoặc 60 – 75%", "> 95% hoặc < 60%"], "ex": "136 giờ dự án / 160 giờ → 85%.", "src": "Timesheet", "freq": "Hằng tuần, hằng tháng", "trap": "稼働率 cũng là từ chỉ độ sẵn sàng của hệ thống (システム稼働率); hỏi rõ ngữ cảnh. Ép 100% dễ dẫn tới burnout.", "say": "Em giữ utilization dưới khoảng 85% để còn chỗ cho review, đào tạo và việc phát sinh.", "hook": "100% giống đường kẹt xe: không còn chỗ để xoay.", "rel": ["BIL", "OT", "BENCH"], "docs": ["RP"]}, {"id": "BIL", "sym": "BIL", "fam": "people", "en": "Billable Rate", "vi": "Tỷ lệ giờ tính tiền được", "jp": "請求可能率", "ro": "seikyū kanō-ritsu", "q": "Bao nhiêu giờ làm được khách trả tiền?", "f": "BIL = giờ tính tiền khách ÷ tổng giờ làm × 100%", "unit": "%", "read": "Cao là tốt cho doanh thu, nhưng phải đọc kèm chất lượng.", "bands": ["≥ 80%", "70 – 80%", "< 70%"], "ex": "120 giờ billable / 160 giờ → 75%.", "src": "Timesheet, hợp đồng", "freq": "Hằng tháng", "trap": "Đẩy billable bằng cách bỏ đào tạo, bỏ review nội bộ; chất lượng giảm theo.", "say": "Billable thấp em tìm nguyên nhân: người chờ dự án, việc nội bộ, hay công không được khách trả (rework, CR chưa duyệt).", "hook": "'Giờ nào khách trả tiền?'", "rel": ["UTL", "GM", "BENCH"], "docs": ["CB"]}, {"id": "OT", "sym": "OT", "fam": "people", "en": "Overtime Hours", "vi": "Giờ làm thêm", "jp": "残業時間", "ro": "zangyō jikan", "q": "Team đang làm thêm bao nhiêu giờ?", "f": "OT/người/tháng = tổng giờ OT ÷ số người", "unit": "giờ/người/tháng", "read": "Thấp và ổn định là tốt. Tăng liên tục là triệu chứng của vấn đề khác.", "bands": ["thấp, ổn định", "tăng 2 tuần liền", "vượt giới hạn công ty/luật hoặc kéo dài > 1 tháng"], "ex": "12 người, 240 giờ OT/tháng → 20 giờ/người.", "src": "Chấm công, timesheet", "freq": "Hằng tuần", "trap": "Coi OT là giải pháp; OT kéo dài thường do estimate sai hoặc scope creep.", "say": "OT cao 2 tuần liền là tín hiệu em đi tìm nguyên nhân ở estimate hoặc scope, không phải xin thêm OT.", "hook": "OT là cơn sốt: chữa nguyên nhân, đừng chỉ hạ sốt.", "rel": ["UTL", "ATR", "SCR"], "docs": ["RP"]}, {"id": "ATR", "sym": "ATR", "fam": "people", "en": "Attrition Rate", "vi": "Tỷ lệ nghỉ việc", "jp": "離職率", "ro": "rishoku-ritsu", "q": "Bao nhiêu người rời đi, và là ai?", "f": "ATR = số người nghỉ trong kỳ ÷ số người bình quân × 100% (thường tính theo năm)", "unit": "%/năm", "read": "So với mức chung của công ty; quan trọng không kém là người nghỉ có giữ kiến thức chủ chốt không.", "bands": ["thấp hơn mức công ty", "ngang mức công ty", "cao hơn rõ, hoặc mất người chủ chốt"], "ex": "3 người nghỉ / 40 người bình quân = 7,5%/năm.", "src": "HR", "freq": "Hằng quý", "trap": "Chỉ đếm số người, không xem ai nghỉ.", "say": "Mất BrSE chủ chốt nguy hiểm hơn mất 2 junior, nên em theo dõi cả tỷ lệ lẫn 'ai nghỉ'.", "hook": "Không chỉ bao nhiêu người đi, mà ai đi.", "rel": ["BUS", "OT", "TTP"], "docs": ["RP", "RR"]}, {"id": "BUS", "sym": "BUS", "fam": "people", "en": "Bus Factor", "vi": "Số người 'không thể mất'", "jp": "属人化リスク", "ro": "zokujinka risuku", "q": "Vắng mấy người thì dự án đứng?", "f": "Số người ít nhất mà nếu cùng vắng thì một module/kiến thức bị đình trệ (đo theo từng module)", "unit": "người", "read": "Bằng 1 ở module quan trọng là rủi ro cao. Ở Nhật gọi hiện tượng này là 属人化 (phụ thuộc vào cá nhân).", "bands": ["≥ 2 ở mọi module quan trọng", "= 1 ở module phụ", "= 1 ở module chủ chốt hoặc BrSE"], "ex": "Module thanh toán chỉ 1 người hiểu → bus factor = 1.", "src": "Ma trận kỹ năng, review code", "freq": "Hằng quý, khi có biến động người", "trap": "Bus factor bằng 1 ở BrSE, kênh duy nhất với khách.", "say": "Mỗi module quan trọng em có ít nhất 2 người hiểu, và BrSE luôn có người dự phòng.", "hook": "Nếu 1 người nghỉ đột ngột, dự án có dừng không?", "rel": ["ATR", "TTP"], "docs": ["RP", "RR"]}, {"id": "PROD", "sym": "PROD", "fam": "people", "en": "Productivity", "vi": "Năng suất", "jp": "生産性", "ro": "seisansei", "q": "Mỗi người-tháng làm ra bao nhiêu sản phẩm?", "f": "PROD = quy mô sản phẩm ÷ effort  (vd FP/人月, KLOC/人月)", "unit": "FP/人月, KLOC/人月", "read": "Dùng để kiểm estimate bằng dữ liệu lịch sử của dự án tương tự.", "bands": ["gần mức lịch sử", "lệch 10 – 20%", "lệch > 20%"], "ex": "300 FP / 30 人月 = 10 FP/人月.", "src": "Quy mô (FP, KLOC), timesheet", "freq": "Khi đóng phase/dự án", "trap": "So năng suất giữa các dự án khác ngôn ngữ, khác domain, khác mức tài liệu.", "say": "Em dùng năng suất lịch sử của dự án tương tự để kiểm estimate, không dùng để chấm điểm cá nhân.", "hook": "'Mỗi người-tháng làm ra được bao nhiêu?'", "rel": ["EA", "EFV", "TTP"], "docs": ["EST"]}, {"id": "TTP", "sym": "TTP", "fam": "people", "en": "Time to Productivity", "vi": "Thời gian để người mới làm được việc", "jp": "戦力化までの期間", "ro": "senryokuka made no kikan", "q": "Người mới bao lâu thì tự làm được task chuẩn?", "f": "Số tuần từ ngày vào dự án tới khi người mới tự hoàn thành task chuẩn (vd đạt khoảng 80% năng suất trung bình)", "unit": "tuần", "read": "Ngắn là onboarding tốt.", "bands": ["≤ 2 – 4 tuần", "4 – 8 tuần", "> 8 tuần"], "ex": "Dev mới tự làm task chuẩn từ tuần thứ 3.", "src": "Theo dõi onboarding, task đầu tiên", "freq": "Mỗi người mới", "trap": "Ramp-up nhiều người cùng lúc mà không tính TTP, kế hoạch quá lạc quan.", "say": "Kế hoạch ramp-up của em tính cả TTP và thời gian người cũ kèm người mới.", "hook": "'Người mới chín sau mấy tuần?'", "rel": ["PROD", "BUS"], "docs": ["RP"]}, {"id": "CSAT", "sym": "CSAT", "fam": "client", "en": "Customer Satisfaction", "vi": "Mức hài lòng của khách", "jp": "顧客満足度", "ro": "kokyaku manzokudo", "q": "Khách chấm dự án mấy điểm?", "f": "Điểm khảo sát trung bình (thang 1–5 hoặc 1–10), theo kỳ hoặc sau mỗi milestone", "unit": "điểm", "read": "Nên hỏi theo từng mục (chất lượng, tiến độ, giao tiếp) để biết sửa ở đâu.", "bands": ["≥ 8/10 (≥ 4/5)", "6 – 8", "< 6"], "ex": "5 người phía khách chấm 8, 9, 7, 8, 9 → 8,2/10.", "src": "Khảo sát", "freq": "Hằng quý hoặc sau milestone", "trap": "Chỉ hỏi 窓口 thân thiện; nên hỏi cả người duyệt và người dùng nghiệp vụ.", "say": "Em khảo sát CSAT sau mỗi milestone, hỏi theo từng mục, để biết sửa ở đâu.", "hook": "Hỏi định kỳ, hỏi đúng người, hỏi theo mục.", "rel": ["NPS", "CLM", "QART"], "docs": ["SR"]}, {"id": "NPS", "sym": "NPS", "fam": "client", "en": "Net Promoter Score", "vi": "Chỉ số sẵn lòng giới thiệu", "jp": "ネットプロモータースコア", "ro": "netto puromōtā sukoa", "q": "Khách có sẵn lòng giới thiệu mình cho người khác không?", "f": "NPS = % chấm 9–10 (ủng hộ) − % chấm 0–6 (chê), với câu hỏi 'khả năng giới thiệu' thang 0–10", "unit": "từ −100 đến +100", "read": "Dương là có nhiều người ủng hộ hơn người chê. Người chấm 7–8 không được tính.", "bands": ["> +30", "0 – +30", "< 0"], "ex": "10 người: 6 chấm 9–10, 3 chấm 7–8, 1 chấm 5 → 60% − 10% = +50.", "src": "Khảo sát", "freq": "Hằng năm, nửa năm", "trap": "Dự án B2B có ít người trả lời, con số dao động mạnh; đọc kèm nhận xét.", "say": "Với khách B2B ít người, em dùng NPS kèm phỏng vấn ngắn, không chỉ nhìn con số.", "hook": "Ủng hộ trừ chê; người chấm 7–8 không tính.", "rel": ["CSAT"], "docs": ["SR"]}, {"id": "QART", "sym": "QART", "fam": "client", "en": "Q&A Response Time", "vi": "Thời gian trả lời Q&A", "jp": "QA回答日数", "ro": "kyū-ē kaitō nissū", "q": "Câu hỏi về spec phải chờ bao lâu mới có trả lời?", "f": "Số ngày trung bình từ lúc gửi câu hỏi tới lúc có trả lời (đo cả hai chiều)", "unit": "ngày", "read": "Câu hỏi chờ lâu là rủi ro tiến độ tiềm ẩn.", "bands": ["≤ 2 ngày", "3 – 5 ngày", "> 5 ngày hoặc có câu quá hạn chặn việc"], "ex": "20 câu, tổng 60 ngày chờ → 3 ngày/câu.", "src": "QA管理表", "freq": "Hằng tuần", "trap": "Không đo phía khách, nên khi trễ vì chờ khách thì không có căn cứ.", "say": "Câu hỏi quá hạn em đưa vào báo cáo tuần thành rủi ro tiến độ, kèm ngày cần trả lời.", "hook": "Mỗi ngày chờ câu trả lời là một ngày trễ tiềm ẩn.", "rel": ["IAGE", "SLIP"], "docs": ["QA", "SR"]}, {"id": "IAGE", "sym": "IAGE", "fam": "client", "en": "Issue Aging", "vi": "Số ngày vấn đề còn tồn", "jp": "課題滞留日数", "ro": "kadai tairyū nissū", "q": "Vấn đề nào để lâu nhất chưa xử lý?", "f": "Số ngày từ lúc mở issue tới hôm nay (với issue còn mở); theo dõi các issue tồn quá N ngày", "unit": "ngày", "read": "Issue để lâu thành rủi ro, rủi ro để lâu thành sự cố.", "bands": ["không có issue quá hạn", "1 – 2 issue quá hạn", "issue quá hạn chặn critical path"], "ex": "課題管理表 có 3 issue mở quá 10 ngày.", "src": "課題管理表", "freq": "Mỗi 定例会", "trap": "Đóng issue không có kết luận để giảm số.", "say": "Ở mỗi 定例会 em đọc các issue tồn lâu nhất trước, không đọc theo thứ tự số.", "hook": "Issue để lâu thành rủi ro, rủi ro để lâu thành sự cố.", "rel": ["QART", "CLM"], "docs": ["IL", "MOM"]}, {"id": "CLM", "sym": "CLM", "fam": "client", "en": "Complaints", "vi": "Số lần khách phàn nàn", "jp": "クレーム件数", "ro": "kurēmu kensū", "q": "Khách đã phàn nàn mấy lần, về chuyện gì?", "f": "Số lần khách phàn nàn trong kỳ, phân theo loại (chất lượng, tiến độ, giao tiếp)", "unit": "lần", "read": "Phàn nàn lặp lại cùng loại là tín hiệu nghiêm trọng.", "bands": ["0", "1, đã xử lý xong", "≥ 2 hoặc lặp lại cùng loại"], "ex": "Quý 3 có 1 lần khách phàn nàn về lỗi chính tả trong tài liệu.", "src": "議事録, email, IR", "freq": "Hằng tháng", "trap": "Chỉ đếm khiếu nại bằng văn bản; khách Nhật hay 'nhắc nhẹ' trong họp, cũng phải ghi.", "say": "Khách Nhật ít khi khiếu nại thẳng; em ghi cả những lần khách 'nhắc nhẹ' trong 議事録.", "hook": "Một lời nhắc nhẹ của khách Nhật bằng một lời khiếu nại.", "rel": ["CSAT", "DL"], "docs": ["IR", "MOM"]}, {"id": "AVL", "sym": "AVL", "fam": "ops", "en": "Availability", "vi": "Tỷ lệ sẵn sàng của hệ thống", "jp": "システム稼働率", "ro": "shisutemu kadō-ritsu", "q": "Hệ thống chạy được bao nhiêu phần trăm thời gian?", "f": "AVL = thời gian hoạt động ÷ tổng thời gian cam kết × 100%  ·  ≈ MTBF ÷ (MTBF + MTTR)", "unit": "%", "read": "99,9% mỗi tháng (30 ngày) cho phép khoảng 43 phút ngừng; 99% khoảng 7,2 giờ; 99,99% khoảng 4,3 phút.", "bands": ["≥ SLA", "sát SLA", "< SLA"], "ex": "Tháng 30 ngày = 43.200 phút; ngừng 20 phút → 99,95%.", "src": "Monitoring", "freq": "Hằng tháng", "trap": "Không nói rõ có loại trừ thời gian bảo trì kế hoạch hay không. Và 稼働率 còn nghĩa là utilization của người.", "say": "Mỗi 'số 9' thêm vào làm chi phí hạ tầng và vận hành tăng mạnh; em chốt mức cần thật với khách trong 非機能要件.", "hook": "99,9% ≈ 43 phút/tháng; 99,99% ≈ 4 phút/tháng.", "rel": ["SLO", "MTTR", "INC"], "docs": ["NFR"]}, {"id": "SLO", "sym": "SLO", "fam": "ops", "en": "SLI / SLO / SLA", "vi": "Chỉ số, mục tiêu và cam kết dịch vụ", "jp": "SLI・SLO・SLA", "ro": "esu-eru-ai, esu-eru-ō, esu-eru-ē", "q": "Đo gì, nhắm bao nhiêu, hứa với khách bao nhiêu?", "f": "SLI = số đo thực tế (vd % request < 400ms)  ·  SLO = mục tiêu nội bộ cho SLI  ·  SLA = cam kết hợp đồng, có phạt", "unit": "%", "read": "SLO nên chặt hơn SLA để có cảnh báo sớm trước khi vi phạm hợp đồng.", "bands": ["SLI ≥ SLO", "SLA ≤ SLI < SLO", "SLI < SLA"], "ex": "SLI tháng này 99,3% request < 400ms; SLO 99%; SLA 98%.", "src": "Monitoring, hợp đồng", "freq": "Hằng ngày (cảnh báo), hằng tháng (báo cáo)", "trap": "Đặt SLO bằng SLA, không còn vùng đệm để cảnh báo.", "say": "Em đặt SLO chặt hơn SLA để có cảnh báo trước khi vi phạm hợp đồng.", "hook": "I = đo · O = nhắm · A = hứa trên giấy (có phạt).", "rel": ["AVL", "P95"], "docs": ["NFR", "SOW"]}, {"id": "MTTR", "sym": "MTTR", "fam": "ops", "en": "Mean Time to Restore", "vi": "Thời gian khôi phục trung bình", "jp": "平均復旧時間", "ro": "heikin fukkyū jikan", "q": "Hỏng rồi thì bao lâu chạy lại được?", "f": "MTTR = tổng thời gian khôi phục ÷ số sự cố", "unit": "phút, giờ", "read": "Càng ngắn càng tốt. Nên tách thời gian phát hiện và thời gian sửa.", "bands": ["đạt SLA khôi phục", "sát SLA", "vượt SLA"], "ex": "3 sự cố: 30, 60, 90 phút → MTTR = 60 phút.", "src": "Ticket sự cố, monitoring", "freq": "Hằng tháng", "trap": "Đo từ lúc phát hiện thay vì từ lúc xảy ra, che mất việc phát hiện chậm.", "say": "Em tách MTTR thành thời gian phát hiện và thời gian sửa, vì cách cải tiến hai phần khác nhau.", "hook": "'Ngã rồi, bao lâu đứng dậy?'", "rel": ["MTBF", "INC", "AVL"], "docs": ["IR", "RLP"]}, {"id": "MTBF", "sym": "MTBF", "fam": "ops", "en": "Mean Time Between Failures", "vi": "Thời gian trung bình giữa hai sự cố", "jp": "平均故障間隔", "ro": "heikin koshō kankaku", "q": "Bao lâu thì hỏng một lần?", "f": "MTBF = tổng thời gian hoạt động ÷ số sự cố", "unit": "giờ", "read": "Càng dài càng tốt. Availability ≈ MTBF ÷ (MTBF + MTTR).", "bands": ["tăng hoặc ổn định", "giảm nhẹ", "giảm mạnh"], "ex": "720 giờ/tháng, 2 sự cố → MTBF = 360 giờ.", "src": "Ticket sự cố", "freq": "Hằng tháng, quý", "trap": "Gộp sự cố nhỏ và lớn, con số không phản ánh rủi ro thật.", "say": "Availability phụ thuộc cả hai: ít hỏng (MTBF) và sửa nhanh (MTTR).", "hook": "'Bao lâu thì ngã một lần?'", "rel": ["MTTR", "AVL", "INC"], "docs": ["IR"]}, {"id": "CFR", "sym": "CFR", "fam": "ops", "en": "Change Failure Rate", "vi": "Tỷ lệ deploy gây lỗi (DORA)", "jp": "変更失敗率", "ro": "henkō shippai-ritsu", "q": "Mỗi 10 lần lên production, mấy lần phải quay lại?", "f": "CFR = số lần deploy gây sự cố, rollback hoặc hotfix ÷ tổng số lần deploy × 100%", "unit": "%", "read": "Thấp là release an toàn.", "bands": ["≤ 15%", "15 – 30%", "> 30%"], "ex": "20 lần deploy, 2 lần phải rollback → 10%.", "src": "Lịch sử release, ticket sự cố", "freq": "Hằng tháng", "trap": "Không tính các hotfix vội sau release là 'thất bại'.", "say": "CFR cao em xem lại release gate và regression test trước khi tăng tần suất deploy.", "hook": "'Mười lần lên production, mấy lần quay xe?'", "rel": ["DF", "LTC", "MTTR"], "docs": ["RLP", "QR"]}, {"id": "DF", "sym": "DF", "fam": "ops", "en": "Deployment Frequency", "vi": "Tần suất deploy (DORA)", "jp": "デプロイ頻度", "ro": "depuroi hindo", "q": "Bao lâu đưa lên production một lần?", "f": "DF = số lần deploy production ÷ kỳ", "unit": "lần/tuần, lần/tháng", "read": "Cao kèm CFR thấp là dấu hiệu delivery tốt. Nhưng phải hợp với bối cảnh khách.", "bands": ["đúng nhịp đã thống nhất", "chậm hơn nhịp", "dồn release lớn, hiếm"], "ex": "8 lần/tháng.", "src": "CI/CD", "freq": "Hằng tháng", "trap": "Khách tài chính Nhật thường release theo lịch cố định (tháng/quý); không áp chỉ số DORA một cách máy móc.", "say": "Với khách ngân hàng, em tối ưu độ an toàn của release theo lịch, không chạy theo tần suất.", "hook": "'Bao lâu ship một lần?'", "rel": ["CFR", "LTC"], "docs": ["RLP"]}, {"id": "LTC", "sym": "LTC", "fam": "ops", "en": "Lead Time for Changes", "vi": "Thời gian từ commit tới production (DORA)", "jp": "変更のリードタイム", "ro": "henkō no rīdo taimu", "q": "Code xong bao lâu thì khách dùng được?", "f": "LTC = thời điểm chạy production − thời điểm commit", "unit": "giờ, ngày", "read": "Dài thường do chờ review, chờ môi trường, chờ duyệt.", "bands": ["ổn định hoặc giảm", "tăng nhẹ", "tăng mạnh"], "ex": "Commit thứ Hai, lên production thứ Năm → 3 ngày.", "src": "Git, CI/CD", "freq": "Hằng tháng", "trap": "Nhầm với lead time tính từ lúc khách yêu cầu (LT).", "say": "LTC dài thường do chờ; em đo từng đoạn chờ: review, môi trường, duyệt release.", "hook": "Từ code xong tới khách dùng được.", "rel": ["LT", "DF", "CFR"], "docs": ["RLP"]}, {"id": "P95", "sym": "p95", "fam": "ops", "en": "Latency p95", "vi": "Thời gian phản hồi phân vị 95", "jp": "95パーセンタイル応答時間", "ro": "kyūjūgo pāsentairu ōtō jikan", "q": "95% request nhanh hơn bao nhiêu mili giây?", "f": "p95 = giá trị mà 95% request nhanh hơn", "unit": "ms", "read": "p95 = 380ms nghĩa là 95% request dưới 380ms, 5% còn lại chậm hơn.", "bands": ["≤ mục tiêu NFR", "vượt ≤ 20%", "vượt > 20%"], "ex": "100 request: request chậm thứ 95 mất 380ms → p95 = 380ms.", "src": "APM, monitoring, load test", "freq": "Hằng ngày, mỗi đợt load test", "trap": "Báo trung bình (average) che đi nhóm request rất chậm.", "say": "NFR hiệu năng em chốt bằng percentile, không bằng trung bình.", "hook": "Trung bình dễ nói dối; percentile nói thật hơn.", "rel": ["SLO", "AVL"], "docs": ["NFR"]}, {"id": "INC", "sym": "INC", "fam": "ops", "en": "Incident Count", "vi": "Số sự cố production", "jp": "障害件数", "ro": "shōgai kensū", "q": "Có bao nhiêu sự cố, nặng cỡ nào, có lặp lại không?", "f": "Số sự cố production trong kỳ, theo mức độ (P1–P4) và theo nguyên nhân", "unit": "sự cố", "read": "Quan trọng nhất là sự cố lặp lại cùng nguyên nhân: đó là thước đo hiệu quả 再発防止.", "bands": ["0 P1", "có P2 đã xử lý xong", "có P1 hoặc lặp lại cùng nguyên nhân"], "ex": "Tháng 10: 0 P1, 1 P2 (batch chậm), 3 P3.", "src": "Ticket sự cố, 障害報告書", "freq": "Hằng tháng", "trap": "Chỉ đếm tổng; không thấy sự cố lặp lại. Khách Nhật rất nhạy với sự cố lặp lại.", "say": "Chỉ số em quan tâm nhất là 'sự cố lặp lại cùng nguyên nhân', vì nó đo hiệu quả 再発防止.", "hook": "Đếm theo mức độ và nguyên nhân, đừng đếm tổng.", "rel": ["MTTR", "MTBF", "CLM"], "docs": ["IR", "LL"]}, {"id": "GM", "sym": "GM", "fam": "biz", "en": "Gross Margin", "vi": "Biên lợi nhuận gộp", "jp": "粗利率", "ro": "arari-ritsu", "q": "Thu về 100 đồng thì giữ lại được bao nhiêu?", "f": "GM = (doanh thu − chi phí trực tiếp) ÷ doanh thu × 100%", "unit": "%", "read": "So với mục tiêu margin của công ty. CPI xấu sẽ hiện ra ở margin.", "bands": ["≥ mục tiêu công ty", "thấp hơn ≤ 5 điểm", "thấp hơn > 5 điểm hoặc lỗ"], "ex": "Doanh thu 1 tỷ, chi phí trực tiếp 0,7 tỷ → 30%.", "src": "Kế toán dự án", "freq": "Hằng tháng", "trap": "Không tính rework, CR chưa duyệt, BrSE, onsite vào chi phí, margin thành ảo.", "say": "Em theo dõi 粗利 dự án hằng tháng, vì CPI xấu sẽ hiện ra ở margin trước khi đóng dự án.", "hook": "'Thu về bao nhiêu thì giữ lại bao nhiêu?'", "rel": ["CPI", "BIL", "RPH"], "docs": ["CB", "EVM"]}, {"id": "RPH", "sym": "RPH", "fam": "biz", "en": "Revenue per Head", "vi": "Doanh thu bình quân đầu người", "jp": "一人当たり売上", "ro": "hitori atari uriage", "q": "Mỗi người mang về bao nhiêu doanh thu?", "f": "RPH = doanh thu ÷ số người bình quân trong kỳ", "unit": "tiền/người/kỳ", "read": "Tăng bền vững khi đơn giá tăng nhờ năng lực, không phải nhờ ép team.", "bands": ["tăng hoặc ổn định", "giảm nhẹ", "giảm mạnh"], "ex": "12 tỷ/năm ÷ 40 người = 0,3 tỷ/người/năm.", "src": "Kế toán, HR", "freq": "Hằng quý", "trap": "Tăng RPH bằng cách giảm người mà giữ nguyên phạm vi, team quá tải và chất lượng giảm.", "say": "RPH tăng bền vững khi đơn giá tăng nhờ năng lực, không phải nhờ ép team.", "hook": "'Mỗi người mang về bao nhiêu?'", "rel": ["GM", "BIL"], "docs": ["CB"]}, {"id": "BENCH", "sym": "BCH", "fam": "biz", "en": "Bench Rate", "vi": "Tỷ lệ người chờ dự án", "jp": "待機率", "ro": "taiki-ritsu", "q": "Bao nhiêu người đang chờ dự án?", "f": "BCH = số người không có dự án tính tiền ÷ tổng số người × 100%", "unit": "%", "read": "Một chút bench có chủ đích là quỹ người để ramp-up nhanh; quá nhiều thì lỗ.", "bands": ["≤ 5 – 10%", "10 – 15%", "> 15%"], "ex": "4 / 40 người chờ dự án → 10%.", "src": "Resource management", "freq": "Hằng tháng", "trap": "Bench bằng 0 nghe tốt, nhưng không còn người dự phòng khi khách cần ramp-up gấp.", "say": "Em dùng thời gian bench để người chờ học tiếng Nhật và domain, sẵn sàng ramp-up.", "hook": "Ghế chờ trống quá thì lỗ, đầy quá thì không có người dự phòng.", "rel": ["BIL", "UTL", "GM"], "docs": ["RP"]}], "pairs": [{"a": "SV", "b": "SPI", "diff": ["SV = EV − PV: chênh lệch, đơn vị tiền/人月", "SPI = EV ÷ PV: tỉ lệ, không đơn vị"], "tip": "Cả hai đều KHÔNG ra số ngày. Muốn nói 'trễ mấy ngày' thì xem lịch (SLIP)."}, {"a": "SPI", "b": "CPI", "diff": ["SPI so với kế hoạch tiến độ (PV)", "CPI so với chi phí thực tế (AC)"], "tip": "Chia 4 ô: SPI < 1 và CPI < 1 là xấu nhất; SPI > 1 mà CPI < 1 là đang đốt tiền để chạy nhanh; SPI < 1 mà CPI > 1 thường là thiếu người."}, {"a": "EAC", "b": "ETC · VAC", "diff": ["EAC: tổng chi phí dự báo khi xong", "ETC: phần còn phải tiêu (EAC − AC)", "VAC: hụt so với ngân sách (BAC − EAC)"], "tip": "Tổng – Còn lại – Hụt."}, {"a": "TCPI", "b": "CPI", "diff": ["CPI: hiệu suất ĐÃ đạt", "TCPI: hiệu suất CẦN đạt cho phần còn lại"], "tip": "TCPI cao hơn CPI nhiều thì ngân sách gốc không còn khả thi."}, {"a": "Lead time", "b": "Cycle time", "diff": ["Lead time: từ lúc khách yêu cầu tới lúc giao", "Cycle time: từ lúc team bắt tay tới lúc xong"], "tip": "Lead = góc khách; Cycle = góc team. Lead time = thời gian chờ + cycle time."}, {"a": "Velocity", "b": "Throughput", "diff": ["Velocity: tổng story point Done mỗi sprint", "Throughput: số item xong mỗi kỳ, không cần point"], "tip": "Team bảo trì, ticket đều cỡ: throughput dễ dùng hơn."}, {"a": "テスト消化率", "b": "テスト合格率", "diff": ["消化率: đã chạy bao nhiêu % case", "合格率: trong số đã chạy, bao nhiêu % đạt"], "tip": "Báo cả hai: chạy 100% mà đạt 70% thì chưa xong."}, {"a": "バグ密度", "b": "流出率", "diff": ["バグ密度: bug trên mỗi KLOC/FP, đo hiệu quả test", "流出率: phần trăm bug lọt ra tới khách"], "tip": "Mật độ cao trong test có thể tốt (bắt được nhiều); lọt ra khách thì lúc nào cũng xấu."}, {"a": "Defect leakage", "b": "DRE", "diff": ["Leakage: phần trăm lọt ra", "DRE: phần trăm bắt được trước khi giao"], "tip": "Leakage + DRE = 100%, nếu cùng mẫu số."}, {"a": "Utilization", "b": "Billable rate", "diff": ["Utilization: giờ làm dự án ÷ giờ có thể làm", "Billable: giờ khách trả tiền ÷ tổng giờ làm"], "tip": "Làm nhiều (utilization cao) chưa chắc được trả tiền nhiều (billable)."}, {"a": "稼働率 (người)", "b": "システム稼働率", "diff": ["稼働率 của người: utilization", "システム稼働率: availability của hệ thống"], "tip": "Cùng chữ 稼働率; nghe ngữ cảnh 'người' hay 'hệ thống'."}, {"a": "SLI · SLO", "b": "SLA", "diff": ["SLI: số đo thực tế", "SLO: mục tiêu nội bộ", "SLA: cam kết hợp đồng có phạt"], "tip": "SLO chặt hơn SLA để còn thời gian phản ứng."}, {"a": "MTTR", "b": "MTBF", "diff": ["MTTR: bao lâu sửa xong", "MTBF: bao lâu mới hỏng lại"], "tip": "Availability ≈ MTBF ÷ (MTBF + MTTR): muốn tăng thì hoặc ít hỏng, hoặc sửa nhanh."}, {"a": "CSAT", "b": "NPS", "diff": ["CSAT: hài lòng với lần giao này", "NPS: có sẵn lòng giới thiệu không"], "tip": "CSAT đo trải nghiệm gần; NPS đo lòng tin lâu dài."}, {"a": "Scope creep", "b": "Requirement volatility", "diff": ["Scope creep: phần thêm vào KHÔNG qua CR", "Volatility: mọi thay đổi yêu cầu, kể cả có CR"], "tip": "Volatility cao vẫn ổn nếu đi qua CR; scope creep thì lúc nào cũng xấu."}, {"a": "Lead time (LT)", "b": "Lead time for changes (LTC)", "diff": ["LT: từ yêu cầu của khách tới lúc giao", "LTC (DORA): từ commit tới production"], "tip": "LTC là một đoạn nằm trong LT."}], "weekly": [{"m": "SPI", "v": "0,93", "s": "a", "n": "Chậm 7% khối lượng; nguyên nhân: chờ khách trả lời Q&A"}, {"m": "CPI", "v": "0,98", "s": "g", "n": "Chi phí sát kế hoạch"}, {"m": "SLIP", "v": "+2 ngày", "s": "a", "n": "Mốc 基本設計 dời từ 15/11 sang 19/11; chưa ảnh hưởng 納期"}, {"m": "QART", "v": "4 câu quá hạn", "s": "r", "n": "Cần khách trả lời trước thứ Sáu để giữ mốc"}, {"m": "IAGE", "v": "1 issue > 10 ngày", "s": "a", "n": "Môi trường test phía khách"}, {"m": "BCV", "v": "đang hội tụ", "s": "g", "n": "Bug mới/ngày giảm từ 12 xuống 2"}, {"m": "DL", "v": "3%", "s": "g", "n": "Release tháng trước: 3 bug khách báo / 100 bug"}, {"m": "OT", "v": "11 giờ/người", "s": "g", "n": "Trong mức cho phép"}, {"m": "CSAT", "v": "8,2 / 10", "s": "g", "n": "Khảo sát sau milestone 2"}]};
+const DOCS = {"BC": {"sym": "BC", "en": "Business Case", "h": 28}, "PRP": {"sym": "PRP", "en": "Proposal", "h": 28}, "SOW": {"sym": "SOW", "en": "Statement of Work", "h": 28}, "CHT": {"sym": "CHT", "en": "Project Charter", "h": 28}, "BRD": {"sym": "BRD", "en": "Business Requirements Document", "h": 212}, "PRD": {"sym": "PRD", "en": "Product Requirements Document", "h": 212}, "FRD": {"sym": "FRD", "en": "Functional Requirements Document", "h": 212}, "SRS": {"sym": "SRS", "en": "Software Requirements Specification", "h": 212}, "NFR": {"sym": "NFR", "en": "Non-functional Requirements", "h": 212}, "US": {"sym": "US", "en": "User Story / Product Backlog", "h": 212}, "SS": {"sym": "SS", "en": "Scope Statement", "h": 212}, "WBS": {"sym": "WBS", "en": "Work Breakdown Structure", "h": 130}, "PBS": {"sym": "PBS", "en": "Product Breakdown Structure", "h": 130}, "ABS": {"sym": "ABS", "en": "Activity Breakdown Structure / Activity List", "h": 130}, "OBS": {"sym": "OBS", "en": "Organizational Breakdown Structure", "h": 130}, "RBSR": {"sym": "RBS · tài nguyên", "en": "Resource Breakdown Structure", "h": 130}, "RBSK": {"sym": "RBS · rủi ro", "en": "Risk Breakdown Structure", "h": 130}, "CBS": {"sym": "CBS", "en": "Cost Breakdown Structure", "h": 130}, "SHR": {"sym": "SHR", "en": "Stakeholder Register", "h": 270}, "RACI": {"sym": "RACI", "en": "RACI / Responsibility Assignment Matrix", "h": 270}, "RP": {"sym": "RP", "en": "Resource / Staffing Plan", "h": 270}, "ARC": {"sym": "ARC", "en": "Architecture / System Configuration", "h": 190}, "UC": {"sym": "UC", "en": "Use Case", "h": 190}, "DFD": {"sym": "DFD", "en": "Data Flow Diagram", "h": 190}, "ERD": {"sym": "ERD", "en": "Entity Relationship Diagram", "h": 190}, "SCR": {"sym": "SCR", "en": "Screen Design & Transition", "h": 190}, "API": {"sym": "API", "en": "Interface / API Specification", "h": 190}, "BD": {"sym": "BD", "en": "Basic Design (External Design)", "h": 190}, "DD": {"sym": "DD", "en": "Detailed Design (Internal Design)", "h": 190}, "PMP": {"sym": "PMP", "en": "Project Management Plan", "h": 240}, "NET": {"sym": "NET", "en": "Network Diagram / Critical Path", "h": 240}, "GNT": {"sym": "GNT", "en": "Gantt Chart / Schedule", "h": 240}, "MS": {"sym": "MS", "en": "Milestone Chart", "h": 240}, "RLP": {"sym": "RLP", "en": "Release / Cutover Plan", "h": 240}, "EST": {"sym": "EST", "en": "Estimate / Quotation", "h": 48}, "CB": {"sym": "CB", "en": "Cost Baseline / Budget", "h": 48}, "EVM": {"sym": "EVM", "en": "EVM / Budget vs Actual Report", "h": 48}, "RAID": {"sym": "RAID", "en": "RAID Log", "h": 355}, "RR": {"sym": "RR", "en": "Risk Register", "h": 355}, "IL": {"sym": "IL", "en": "Issue Log", "h": 355}, "CR": {"sym": "CR", "en": "Change Request", "h": 355}, "IR": {"sym": "IR", "en": "Incident Report", "h": 355}, "QMP": {"sym": "QMP", "en": "Quality Management Plan", "h": 315}, "RTM": {"sym": "RTM", "en": "Requirements Traceability Matrix", "h": 315}, "TP": {"sym": "TP", "en": "Test Plan", "h": 315}, "TS": {"sym": "TS", "en": "Test Specification / Test Cases", "h": 315}, "BUG": {"sym": "BUG", "en": "Bug List / Defect Log", "h": 315}, "QR": {"sym": "QR", "en": "Quality / Test Report", "h": 315}, "CMP": {"sym": "CMP", "en": "Communication Plan", "h": 85}, "SR": {"sym": "SR", "en": "Status Report", "h": 85}, "MOM": {"sym": "MoM", "en": "Minutes of Meeting", "h": 85}, "QA": {"sym": "QA", "en": "Q&A List", "h": 85}, "UAT": {"sym": "UAT", "en": "UAT & Acceptance Sign-off", "h": 160}, "LL": {"sym": "LL", "en": "Lessons Learned", "h": 160}, "CLR": {"sym": "CLR", "en": "Closure Report", "h": 160}};
+const DOCS_URL = "../03_tai-lieu-PM/bang-tuan-hoan-tai-lieu-PM.html";
+const FAM = Object.fromEntries(D.families.map(f => [f.id, f]));
+const M = Object.fromEntries(D.metrics.map((m, i) => [m.id, Object.assign(m, { no: i + 1 })]));
+const ORDER = D.metrics.map(m => m.id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fold = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase();
+const firstJp = j => j.split(/[・（(]/)[0].trim();
+const nf = (x, d = 2) => Number.isFinite(x) ? x.toLocaleString("vi-VN", { maximumFractionDigits: d, minimumFractionDigits: 0 }) : "–";
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+D.metrics.forEach(m => { m._f = fold([m.sym, m.en, m.vi, m.jp, m.ro, m.q, m.f].join(" ")); });
+
+/* ---------- 9 câu hỏi ---------- */
+document.getElementById("story").innerHTML = D.families.map(f => `<li><button style="--h:${f.h}" data-jump="${f.id}">${esc(f.q)}</button></li>`).join("");
+document.getElementById("story").addEventListener("click", e => { const b = e.target.closest("[data-jump]"); if (b) document.getElementById("fam-" + b.dataset.jump).scrollIntoView({ block: "center", behavior: "smooth" }); });
+
+/* ---------- bảng ---------- */
+document.getElementById("table").innerHTML = D.families.map(f => {
+  const ms = D.metrics.filter(m => m.fam === f.id);
+  return `<div class="fam" id="fam-${f.id}" style="--h:${f.h}">
+    <header><div><div class="en">${esc(f.en)}</div><h3>${esc(f.q)}</h3></div><span class="n">${ms.length}</span></header>
+    <div class="tiles">${ms.map(m => `<button class="tile" data-id="${m.id}" style="--h:${f.h}" aria-label="${esc(m.sym + ': ' + m.en)}">
+      <span class="no">${m.no}</span><span class="s">${esc(m.sym)}</span><span class="nm">${esc(m.en)}</span><span class="j">${esc(firstJp(m.jp))}</span></button>`).join("")}</div></div>`;
+}).join("");
+let tmr;
+document.getElementById("q").addEventListener("input", e => { clearTimeout(tmr); tmr = setTimeout(() => filter(e.target.value), 120); });
+function filter(text) {
+  const t = fold(text.trim()); let n = 0;
+  document.querySelectorAll("#table .tile").forEach(el => { const ok = !t || M[el.dataset.id]._f.includes(t); el.classList.toggle("dim", !ok); if (ok) n++; });
+  document.getElementById("count").textContent = t ? `${n} / ${D.metrics.length} chỉ số khớp` : `${D.metrics.length} chỉ số`;
+}
+filter("");
+
+/* ---------- ngăn kéo ---------- */
+const drawer = document.getElementById("drawer"), backdrop = document.getElementById("backdrop");
+let lastFocus = null, curId = null;
+function mchip(id) { const m = M[id]; return `<button class="mchip" data-open="${id}" style="--h:${FAM[m.fam].h}">${esc(m.sym)}</button>`; }
+function dchip(id) { const d = DOCS[id]; if (!d) return ""; return `<a class="dchip" href="${DOCS_URL}#doc-${id}" style="--h:${d.h}" title="${esc(d.en)}">${esc(d.sym)}</a>`; }
+function openM(id) {
+  const m = M[id]; if (!m) return;
+  const f = FAM[m.fam]; curId = id;
+  if (drawer.hidden) lastFocus = document.activeElement;
+  const i = ORDER.indexOf(id), prev = M[ORDER[(i - 1 + ORDER.length) % ORDER.length]], next = M[ORDER[(i + 1) % ORDER.length]];
+  const noBand = m.bands.every(b => b === "–");
+  drawer.style.setProperty("--h", f.h);
+  drawer.innerHTML = `
+    <div class="d-top">
+      <div class="d-badge"><div class="no">${m.no}</div><div class="s">${esc(m.sym)}</div></div>
+      <div class="d-names"><h2 id="dTitle">${esc(m.en)}</h2><p class="vi">${esc(m.vi)}</p><p class="jpn">${esc(m.jp)}<small>${esc(m.ro)}</small></p></div>
+      <button class="close" id="dClose" aria-label="Đóng">×</button>
+    </div>
+    <div class="chips"><span class="chip f">${esc(f.en)} · ${esc(f.q)}</span><span class="chip">Đơn vị: ${esc(m.unit)}</span></div>
+    <p class="d-q"><span>Trả lời câu hỏi</span>${esc(m.q)}</p>
+    <div class="formula"><small>Công thức</small>${esc(m.f)}</div>
+    <p style="margin:12px 0 0">${esc(m.read)}</p>
+    ${noBand ? "" : `<div class="bands"><div class="band g"><b>Tốt</b>${esc(m.bands[0])}</div><div class="band a"><b>Cần chú ý</b>${esc(m.bands[1])}</div><div class="band r"><b>Báo động</b>${esc(m.bands[2])}</div></div><p class="bandnote">Ngưỡng tham khảo; dự án thật theo ngưỡng đã thống nhất với khách.</p>`}
+    <dl class="d-rows">
+      <dt>Ví dụ</dt><dd>${esc(m.ex)}</dd>
+      <dt>Lấy số từ</dt><dd>${esc(m.src)}</dd>
+      <dt>Tần suất</dt><dd>${esc(m.freq)}</dd>
+      <dt>Bẫy hay gặp</dt><dd>${esc(m.trap)}</dd>
+      <dt>Nói khi phỏng vấn</dt><dd class="say">“${esc(m.say)}”</dd>
+      <dt>Mẹo nhớ</dt><dd><div class="hook">${esc(m.hook)}</div></dd>
+    </dl>
+    <div class="rel"><h3>Chỉ số liên quan</h3>${m.rel.map(mchip).join("")}
+      ${m.docs.length ? `<h3>Tài liệu chứa chỉ số này</h3>${m.docs.map(dchip).join("")}` : ""}</div>
+    <div class="d-nav"><button class="btn" data-open="${prev.id}">← ${esc(prev.sym)}</button><button class="btn" data-open="${next.id}">${esc(next.sym)} →</button></div>`;
+  drawer.hidden = false; backdrop.hidden = false; drawer.scrollTop = 0;
+  document.getElementById("dClose").focus();
+  try { history.replaceState(null, "", "#m-" + id); } catch (e) {}
+}
+function closeM() {
+  drawer.hidden = true; backdrop.hidden = true; curId = null;
+  try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+backdrop.addEventListener("click", closeM);
+document.addEventListener("keydown", e => {
+  if (drawer.hidden) return;
+  if (e.key === "Escape") closeM();
+  if (e.key === "ArrowRight" && !e.target.closest("input")) { const i = ORDER.indexOf(curId); openM(ORDER[(i + 1) % ORDER.length]); }
+  if (e.key === "ArrowLeft" && !e.target.closest("input")) { const i = ORDER.indexOf(curId); openM(ORDER[(i - 1 + ORDER.length) % ORDER.length]); }
+});
+document.addEventListener("click", e => {
+  const t = e.target.closest(".tile[data-id], [data-open], #dClose, .kpi[data-id]"); if (!t) return;
+  if (t.id === "dClose") return closeM();
+  openM(t.dataset.id || t.dataset.open);
+});
+function fromHash() { const m = location.hash.match(/^#m-([A-Za-z0-9]+)$/); if (m && M[m[1]]) openM(m[1]); }
+window.addEventListener("hashchange", fromHash);
+
+/* ---------- máy tính ---------- */
+const val = id => parseFloat(document.getElementById(id).value);
+const pill = (s, t) => `<span class="pill ${s}">${t || ({ g: "Tốt", a: "Chú ý", r: "Báo động", n: "–" })[s]}</span>`;
+const idx = x => !Number.isFinite(x) ? "n" : x >= 0.95 ? "g" : x >= 0.85 ? "a" : "r";
+function evm() {
+  const BAC = val("e-bac"), PV = val("e-pv"), EV = val("e-ev"), AC = val("e-ac");
+  const SV = EV - PV, CV = EV - AC, SPI = EV / PV, CPI = EV / AC;
+  const EAC1 = BAC / CPI, EAC2 = AC + (BAC - EV), EAC3 = AC + (BAC - EV) / (CPI * SPI);
+  const ETC = EAC1 - AC, VAC = BAC - EAC1, TCPI = (BAC - EV) / (BAC - AC);
+  const vs = (x, base) => !Number.isFinite(x) ? "n" : x >= 0 ? "g" : x >= -0.05 * base ? "a" : "r";
+  const rows = [
+    ["SV", SV, "EV − PV", vs(SV, PV)], ["CV", CV, "EV − AC", vs(CV, EV)],
+    ["SPI", SPI, "EV ÷ PV", idx(SPI)], ["CPI", CPI, "EV ÷ AC", idx(CPI)],
+    ["EAC", EAC1, "BAC ÷ CPI (hiệu suất hiện tại kéo dài)", EAC1 <= BAC ? "g" : EAC1 <= BAC * 1.05 ? "a" : "r"],
+    ["EAC", EAC2, "AC + (BAC − EV) (lệch chỉ là bất thường)", EAC2 <= BAC ? "g" : EAC2 <= BAC * 1.05 ? "a" : "r"],
+    ["EAC", EAC3, "AC + (BAC − EV) ÷ (CPI × SPI)", EAC3 <= BAC ? "g" : EAC3 <= BAC * 1.05 ? "a" : "r"],
+    ["ETC", ETC, "EAC − AC (theo BAC ÷ CPI)", "n"], ["VAC", VAC, "BAC − EAC", vs(VAC, BAC)],
+    ["TCPI", TCPI, "(BAC − EV) ÷ (BAC − AC)", !Number.isFinite(TCPI) ? "n" : TCPI <= CPI ? "g" : TCPI - CPI <= 0.1 ? "a" : "r"]
+  ];
+  document.getElementById("e-out").innerHTML = rows.map(r => `<tr><td><button class="mchip" data-open="${r[0]}" style="--h:${FAM[M[r[0]].fam].h};margin:0">${r[0]}</button></td><td class="f">${r[2]}</td><td class="v">${nf(r[1])}</td><td>${pill(r[3])}</td></tr>`).join("");
+  let v = [];
+  if (Number.isFinite(SPI)) v.push(SPI < 1 ? `Chậm: mới làm được ${nf(SPI * 100, 1)}% khối lượng lẽ ra phải xong.` : `Kịp hoặc nhanh hơn kế hoạch (${nf(SPI * 100, 1)}%).`);
+  if (Number.isFinite(CPI)) v.push(CPI < 1 ? `Lố: mỗi 1 đồng bỏ ra mới tạo ${nf(CPI)} đồng giá trị.` : `Tiết kiệm hoặc đúng chi phí (CPI ${nf(CPI)}).`);
+  if (Number.isFinite(EAC1)) v.push(`Nếu giữ hiệu suất hiện tại, cuối dự án tốn khoảng ${nf(EAC1, 1)} (dải ${nf(Math.min(EAC1, EAC2, EAC3), 1)}–${nf(Math.max(EAC1, EAC2, EAC3), 1)}).`);
+  if (Number.isFinite(TCPI) && TCPI > CPI + 0.1) v.push(`TCPI ${nf(TCPI)} cao hơn CPI nhiều: giữ ngân sách gốc gần như không khả thi, nên trình EAC mới.`);
+  document.getElementById("e-verdict").textContent = v.join(" ");
+  // góc phần tư SPI × CPI
+  const W = 400, H = 300, P = 40, lo = 0.6, hi = 1.4, X = s => P + (Math.min(hi, Math.max(lo, s)) - lo) / (hi - lo) * (W - 2 * P), Y = c => H - P - (Math.min(hi, Math.max(lo, c)) - lo) / (hi - lo) * (H - 2 * P);
+  const q = (x, y, t, s) => `<text x="${x}" y="${y}" text-anchor="middle" style="fill:var(--${s});font:600 11px var(--font-body)">${t}</text>`;
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Vị trí dự án trên lưới SPI × CPI">
+    <rect x="${P}" y="${P}" width="${W - 2 * P}" height="${H - 2 * P}" style="fill:var(--paper);stroke:var(--line)"/>
+    <line x1="${X(1)}" y1="${P}" x2="${X(1)}" y2="${H - P}" style="stroke:var(--muted);stroke-dasharray:4 4"/>
+    <line x1="${P}" y1="${Y(1)}" x2="${W - P}" y2="${Y(1)}" style="stroke:var(--muted);stroke-dasharray:4 4"/>
+    ${q((P + X(1)) / 2, P + 16, "Chậm nhưng tiết kiệm", "warn")}${q((X(1) + W - P) / 2, P + 16, "Nhanh và tiết kiệm", "good")}
+    ${q((P + X(1)) / 2, H - P - 8, "Chậm và lố (xấu nhất)", "bad")}${q((X(1) + W - P) / 2, H - P - 8, "Nhanh nhưng lố", "warn")}
+    <text x="${W / 2}" y="${H - 8}" text-anchor="middle" style="fill:var(--muted);font:600 11px var(--font-sym)">SPI →  (0,6 … 1,4)</text>
+    <text x="12" y="${H / 2}" transform="rotate(-90 12 ${H / 2})" text-anchor="middle" style="fill:var(--muted);font:600 11px var(--font-sym)">CPI →</text>`;
+  if (Number.isFinite(SPI) && Number.isFinite(CPI)) svg += `<circle cx="${X(SPI)}" cy="${Y(CPI)}" r="7" style="fill:var(--accent);stroke:var(--sheet);stroke-width:2"/><text x="${X(SPI) + 10}" y="${Y(CPI) - 8}" style="fill:var(--ink);font:600 11px var(--font-sym)">(${nf(SPI)}; ${nf(CPI)})</text>`;
+  document.getElementById("e-quad").innerHTML = svg + "</svg>";
+}
+function qual() {
+  const K = val("q-kloc"), TC = val("q-tc"), BI = val("q-bin"), BO = val("q-bout"), RC = val("q-rc"), PG = val("q-pg");
+  const TD = TC / K, BD = BI / K, DL = BO / (BI + BO) * 100, DRE = 100 - DL, RCD = RC / PG;
+  const rows = [["TD", TD, "case / KLOC", "n"], ["BD", BD, "bug / KLOC (trước giao)", "n"], ["DL", DL, "% lọt ra khách", !Number.isFinite(DL) ? "n" : DL < 5 ? "g" : DL <= 10 ? "a" : "r"], ["DRE", DRE, "% bắt được trước giao", !Number.isFinite(DRE) ? "n" : DRE >= 95 ? "g" : DRE >= 90 ? "a" : "r"], ["RCD", RCD, "指摘 / trang", "n"]];
+  document.getElementById("q-out").innerHTML = rows.map(r => `<tr><td><button class="mchip" data-open="${r[0]}" style="--h:${FAM[M[r[0]].fam].h};margin:0">${M[r[0]].sym}</button></td><td class="f">${r[2]}</td><td class="v">${nf(r[1], 2)}${r[0] === "DL" || r[0] === "DRE" ? "%" : ""}</td><td>${r[3] === "n" ? pill("n", "so ngưỡng dự án") : pill(r[3])}</td></tr>`).join("");
+  document.getElementById("q-verdict").textContent = Number.isFinite(DL) ? `Cứ 100 bug thì ${nf(DL, 1)} bug lọt tới khách. テスト密度 và バグ密度 không có ngưỡng chung: so với khoảng trên–dưới trong 品質計画書; バグ密度 thấp bất thường cũng phải giải thích.` : "";
+}
+function agile() {
+  const BL = val("a-bl"), vs = [val("a-v1"), val("a-v2"), val("a-v3")].filter(Number.isFinite);
+  const avg = vs.reduce((a, b) => a + b, 0) / vs.length, mn = Math.min(...vs), mx = Math.max(...vs);
+  const s = x => Math.ceil(BL / x);
+  document.getElementById("a-out").innerHTML = [["Velocity TB", nf(avg, 1) + " điểm"], ["Nhanh nhất", s(mx) + " sprint"], ["Nhiều khả năng", s(avg) + " sprint"], ["Chậm nhất", s(mn) + " sprint"]].map(r => `<tr><td>${r[0]}</td><td class="v">${r[1]}</td></tr>`).join("");
+  document.getElementById("a-verdict").textContent = Number.isFinite(avg) && avg > 0 ? `Báo khách theo khoảng: còn khoảng ${s(mx)}–${s(mn)} sprint, nhiều khả năng ${s(avg)} sprint, với điều kiện backlog không tăng.` : "";
+}
+function avl() {
+  const p = val("v-pct"), down = (1 - p / 100);
+  const rows = [["Mỗi tháng (30 ngày)", down * 30 * 24 * 60], ["Mỗi quý (91 ngày)", down * 91 * 24 * 60], ["Mỗi năm (365 ngày)", down * 365 * 24 * 60]];
+  document.getElementById("v-out").innerHTML = rows.map(r => `<tr><td>${r[0]}</td><td class="v">${r[1] >= 120 ? nf(r[1] / 60, 1) + " giờ" : nf(r[1], 1) + " phút"}</td></tr>`).join("");
+}
+["e-bac", "e-pv", "e-ev", "e-ac"].forEach(id => document.getElementById(id).addEventListener("input", evm));
+["q-kloc", "q-tc", "q-bin", "q-bout", "q-rc", "q-pg"].forEach(id => document.getElementById(id).addEventListener("input", qual));
+["a-bl", "a-v1", "a-v2", "a-v3"].forEach(id => document.getElementById(id).addEventListener("input", agile));
+document.getElementById("v-pct").addEventListener("input", avl);
+evm(); qual(); agile(); avl();
+
+/* ---------- báo cáo tuần ---------- */
+document.getElementById("kpis").innerHTML = D.weekly.map(w => { const m = M[w.m]; return `<button class="kpi ${w.s}" data-id="${w.m}"><span class="top"><b>${esc(m.sym)}</b>${pill(w.s, { g: "Xanh", a: "Vàng", r: "Đỏ" }[w.s])}</span><span class="val">${esc(w.v)}</span><span class="note">${esc(w.n)}</span></button>`; }).join("");
+
+/* ---------- đừng nhầm ---------- */
+document.getElementById("pairs").innerHTML = D.pairs.map(p => `<article class="pair"><h3>${esc(p.a)} <i>và</i> ${esc(p.b)}</h3><ul>${p.diff.map(x => `<li>${esc(x)}</li>`).join("")}</ul><p class="tip">${esc(p.tip)}</p></article>`).join("");
+
+/* ---------- luyện nhớ ---------- */
+const QK = "pm-metrics-quiz-best-v1";
+const Q = { mode: "calc", list: [], i: 0, score: 0, answered: false };
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const rnd = (a, b) => Math.round(a + Math.random() * (b - a));
+function optsFor(id) {
+  const c = M[id];
+  const same = shuffle(D.metrics.filter(m => m.fam === c.fam && m.id !== id)).slice(0, 2);
+  const rest = shuffle(D.metrics.filter(m => m.id !== id && !same.includes(m))).slice(0, 3 - same.length);
+  return shuffle([c, ...same, ...rest]).map(m => ({ k: m.id, b: m.sym, s: m.en }));
+}
+function calcItem() {
+  const BAC = 100, PV = rnd(30, 70), EV = Math.max(10, PV + rnd(-15, 10)), AC = Math.max(10, EV + rnd(-10, 15));
+  const kinds = ["SPI", "CPI", "SV", "CV", "EAC", "TCPI"], k = kinds[rnd(0, kinds.length - 1)];
+  const r2 = x => Math.round(x * 100) / 100;
+  const calc = { SPI: [EV / PV, PV / EV, EV / AC, AC / PV], CPI: [EV / AC, AC / EV, EV / PV, PV / AC], SV: [EV - PV, PV - EV, EV - AC, AC - PV], CV: [EV - AC, AC - EV, EV - PV, PV - AC], EAC: [BAC / (EV / AC), BAC * (EV / AC), AC + (BAC - EV), BAC / (EV / PV)], TCPI: [(BAC - EV) / (BAC - AC), (BAC - AC) / (BAC - EV), (BAC - EV) / (BAC - PV), EV / AC] }[k];
+  const dig = (k === "SV" || k === "CV") ? 0 : (k === "EAC" ? 1 : 2);
+  const seen = new Set(), opts = [];
+  calc.forEach((x, i) => { const s = nf(dig === 0 ? Math.round(x) : dig === 1 ? Math.round(x * 10) / 10 : r2(x), dig); if (!seen.has(s)) { seen.add(s); opts.push({ k: i === 0 ? "ok" : "x" + i, b: s, s: "" }); } });
+  while (opts.length < 4) { const s = nf(r2(calc[0] * (0.8 + Math.random() * 0.4)), dig); if (!seen.has(s)) { seen.add(s); opts.push({ k: "y" + opts.length, b: s, s: "" }); } }
+  const how = { SPI: "SPI = EV ÷ PV", CPI: "CPI = EV ÷ AC", SV: "SV = EV − PV", CV: "CV = EV − AC", EAC: "EAC = BAC ÷ CPI", TCPI: "TCPI = (BAC − EV) ÷ (BAC − AC)" }[k];
+  return { text: `BAC = ${BAC}, PV = ${PV}, EV = ${EV}, AC = ${AC}. Tính ${k}${k === "EAC" ? " (giả định hiệu suất chi phí hiện tại kéo dài)" : ""}.`, ans: "ok", opts: shuffle(opts), explain: `${how} = ${opts.find(o => o.k === "ok").b}.`, id: k };
+}
+function newRound() {
+  let list;
+  if (Q.mode === "calc") list = Array.from({ length: 10 }, calcItem);
+  else {
+    const pick = shuffle(D.metrics.filter(m => Q.mode !== "f" || !/^Vẽ|^Đếm|^Điểm|^Số /.test(m.f))).slice(0, 10);
+    list = pick.map(m => ({ text: Q.mode === "f" ? `Công thức này là của chỉ số nào?  ${m.f.replace(new RegExp("^" + m.sym.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*="), "? =")}` : Q.mode === "q" ? `Chỉ số nào trả lời câu hỏi: “${m.q}”` : `「${firstJp(m.jp)}」 là chỉ số nào?`, ans: m.id, opts: optsFor(m.id), id: m.id, explain: `${m.sym}: ${m.f}. ${m.hook}` }));
+  }
+  Q.list = list; Q.i = 0; Q.score = 0; Q.answered = false; renderQ();
+}
+function renderQ() {
+  const box = document.getElementById("qbody"), best = store.get(QK, {})[Q.mode];
+  if (Q.i >= Q.list.length) {
+    const all = store.get(QK, {}); if (!(all[Q.mode] >= Q.score)) { all[Q.mode] = Q.score; store.set(QK, all); }
+    box.innerHTML = `<div class="qdone"><div class="big">${Q.score}/10</div><p>${Q.score >= 9 ? "Thuộc rồi. Đổi kiểu luyện để chắc hơn." : Q.score >= 6 ? "Khá rồi. Xem lại các chỉ số sai rồi làm lượt mới." : "Đọc lại công thức và mẹo nhớ, rồi làm lượt mới."}</p><button class="btn solid" id="qAgain">Làm lượt mới</button></div>`;
+    return;
+  }
+  const it = Q.list[Q.i];
+  box.innerHTML = `<div class="qhead"><span>Câu ${Q.i + 1}/10</span><span>Đúng ${Q.score}${best != null ? ` · cao nhất ${best}/10` : ""}</span></div>
+    <p class="qtext">${esc(it.text)}</p>
+    <div class="qopts">${it.opts.map(o => `<button class="qopt" data-ans="${o.k}"><b>${esc(o.b)}</b><span>${esc(o.s)}</span></button>`).join("")}</div><div id="qfb"></div>`;
+}
+document.getElementById("qbody").addEventListener("click", e => {
+  if (e.target.closest("#qAgain")) return newRound();
+  if (e.target.closest("#qNext")) { Q.i++; Q.answered = false; return renderQ(); }
+  const b = e.target.closest(".qopt"); if (!b || Q.answered) return;
+  const it = Q.list[Q.i], ok = b.dataset.ans === it.ans; Q.answered = true; if (ok) Q.score++;
+  document.querySelectorAll(".qopt").forEach(x => { x.disabled = true; if (x.dataset.ans === it.ans) x.classList.add("ok"); else if (x === b) x.classList.add("no"); });
+  document.getElementById("qfb").innerHTML = `<div class="qfb"><b>${ok ? "Đúng." : "Chưa đúng."}</b> ${esc(it.explain)}</div>
+    <div class="qfoot"><button class="btn" data-open="${it.id}">Xem chi tiết ${esc(M[it.id].sym)}</button><button class="btn solid" id="qNext">${Q.i < 9 ? "Câu tiếp" : "Xem kết quả"}</button></div>`;
+});
+document.getElementById("qmodes").addEventListener("click", e => {
+  const b = e.target.closest("[data-m]"); if (!b) return;
+  Q.mode = b.dataset.m; document.querySelectorAll("#qmodes button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); newRound();
+});
+newRound();
+
+/* ---------- nav ---------- */
+const navLinks = [...document.querySelectorAll("#secnav a")];
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(ents => ents.forEach(en => { if (en.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); }), { rootMargin: "-40% 0px -55% 0px" });
+  document.querySelectorAll("section[id]").forEach(s => io.observe(s));
+}
+fromHash();
+</script>
+
+</html>
