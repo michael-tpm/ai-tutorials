@@ -1,0 +1,145 @@
+## Giao tiếp, văn hóa & kỳ vọng khách Nhật
+- 報連相 & 確認
+  - Báo cả khi không có gì mới
+    - im lặng = tin xấu
+    - 予定通り · 一次回答
+  - Kết luận trước, tách fact và nhận định
+    - 結論から
+    - 事実 / 意見
+    - con số thay "sắp xong"
+  - Báo sớm khi lệch, kèm kế hoạch phục hồi
+    - lệch > 1 ngày ở milestone (tham khảo)
+    - 中間報告 ở 30–50%
+  - Chủ động đi trước một bước
+    - 先手 vs 後手
+  - Xác nhận 3 lớp: nhắc lại, văn bản, ví dụ
+    - 復唱 · 念のため確認
+    - 認識合わせ ở điểm chuyển giai đoạn
+  - Đúng liều, đúng kênh
+    - 1 đầu mối gửi · nhãn 【至急】【共有】
+    - tin xấu: gọi trước, email sau
+- Ra quyết định kiểu Nhật
+  - Vận động trước họp chính thức
+    - 根回し
+    - tránh 「持ち帰ります」
+  - Trình ký nhiều cấp có lead time
+    - 稟議 · 稟議書
+    - đưa thời gian duyệt vào kế hoạch
+  - Giao tiếp theo cấp, giữ thể diện 担当
+    - 担当 / 課長 / 部長
+    - 決裁者
+  - Một đầu mối, chỉ PM cam kết
+    - 窓口 chính + dự phòng
+  - Giúp khách quyết: phương án, hạn, chi phí chờ
+    - 合意形成 · 期限
+    - 暫定案 · tài liệu 担当 dùng lại được
+- Họp & tài liệu giao tiếp
+  - Họp định kỳ có agenda trước 1 ngày
+    - 定例会議
+    - 決定事項 · 宿題
+  - Biên bản trong 24h, xin confirm
+    - 議事録 · vendor chủ động viết
+  - Tách câu hỏi và vấn đề, có owner + hạn
+    - QA管理表 · 課題管理表
+    - câu hỏi kèm phương án đề xuất
+  - Báo cáo tiến độ: tóm tắt trước, màu có tiêu chí
+    - 進捗報告書
+    - 青 / 黄 / 赤 · 対策
+  - Minh bạch theo lớp
+    - 見える化 · dashboard chung
+    - 用語集
+- Vai trò cầu nối BrSE, comtor, onsite
+  - BrSE lo hiểu đúng, comtor lo dịch
+    - BrSE · コミュニケーター · onsite coordinator
+  - PM giữ quyết định và cam kết
+    - tóm tắt song ngữ · chỉ PM xác nhận lịch/chi phí
+  - Chống BrSE thành nút cổ chai
+    - capacity dịch ≤ 70–80% (tham khảo)
+    - BrSE dự phòng · Q&A qua bảng
+  - Một giọng nói onsite–offshore
+    - sync hằng ngày · thống nhất tin xấu trước
+  - Dịch máy: rủi ro bảo mật và sai nghĩa
+    - NDA · công cụ được duyệt
+- Ngôn ngữ & ngầm ý
+  - Keigo: tôn kính khách, khiêm nhường mình
+    - 尊敬語 · 謙譲語 · 丁寧語
+    - 御社 (nói) / 貴社 (viết) / 弊社
+  - Email chuẩn: mở – kết luận – kết
+    - お世話になっております
+    - ご確認のほどよろしくお願いいたします
+    - 1 email 1 chủ đề
+  - Người Nhật nói "không" gián tiếp
+    - それはちょっと · 難しいです
+    - 検討します ≠ đồng ý
+  - Mơ hồ → hỏi đóng, ví dụ, chốt văn bản
+    - 曖昧 · よしなに · 前向きに検討
+  - Đọc để phát hiện, hỏi để xác nhận
+    - 空気を読む · 本音 / 建前
+    - 相槌 ≠ đồng ý
+- Báo tin xấu & xin lỗi
+  - Tin xấu báo sớm, kèm đối sách
+    - 事象 · 影響範囲
+    - 暫定対策 / 恒久対策
+  - Báo đầu tiên nhanh hơn đầy đủ
+    - 第一報 30–60 phút (tham khảo)
+    - 障害報告書 làm sau
+  - Xin lỗi = trách nhiệm + đối sách + phòng ngừa
+    - お詫び · 再発防止策 · 横展開
+  - Không đổ lỗi member hay khách
+    - 弊社の確認不足 · timeline fact
+  - Kênh xin lỗi tương xứng tác động
+    - email / gọi / gặp mặt
+    - lãnh đạo khi vượt quyền PM
+  - Tránh "dự án dưa hấu"
+    - tiêu chí màu đo được · chuyển 黄 sớm
+- Nói "không" & đàm phán mềm
+  - Không từ chối tại chỗ, hẹn phương án
+    - trả lời lại trong 1–2 ngày
+  - Luôn kèm phương án thay thế
+    - 代替案: CR · đổi chỗ · chia phase
+  - Từ chối lịch sự bằng keigo
+    - いたしかねます · あいにく
+    - tránh 無理です
+  - Làm miễn phí phải hiển thị giá trị
+    - サービス · danh sách hỗ trợ ngoại lệ
+  - Thỏa hiệp có đổi lại, giữ thể diện
+    - 落とし所 · không phản bác 部長 công khai
+  - Nói không dứt khoát khi phạm luật, bảo mật
+- Lịch & nhịp kinh doanh Nhật
+  - Năm tài chính phổ biến 4 → 3
+    - 年度 · 上期 / 下期
+  - Tháng 3 cao điểm, tháng 4 đổi người
+    - 年度末 · 人事異動
+  - Kỳ nghỉ dài, khách vắng
+    - Golden Week · お盆 · 年末年始
+  - Tết VN rơi đúng mùa bận của khách
+    - báo sớm · trực luân phiên
+  - Lệch 2 tiếng, chọn khung họp chung
+    - 10–12 / 15–17 giờ JP
+    - báo cáo ngày trước 15:00 giờ VN
+  - Tránh release sát kỳ nghỉ
+- Xây niềm tin & quản trị kỳ vọng
+  - Niềm tin = lời hứa nhỏ được giữ
+    - 信頼関係 · 約束を守る
+  - Cam kết thực tế, buffer minh bạch
+    - under-promise over-deliver · 10–15% (tham khảo)
+  - Không giữ được thì báo trước hạn
+    - 期限前の相談 · không trễ 2 lần
+  - Chỉnh cách làm theo loại khách
+    - khách mới vs 慣れ · 改善提案
+    - 情報システム部 vs business user
+  - Đo khoảng cách kỳ vọng sớm
+    - demo định kỳ · khảo sát mỗi phase
+    - lời khen có thể là 建前
+- Business etiquette & khác biệt thị trường
+  - Trao danh thiếp đúng nghi thức
+    - 名刺交換 · hai tay · 頂戴いたします
+  - Thăm khách: đúng giờ, đúng chỗ ngồi
+    - lễ tân 5 phút trước · 上座 / 下座
+  - Trang phục bảo thủ theo ngành
+    - vest tối màu · クールビズ
+  - Tiệc và quà theo compliance khách
+    - 飲み会 · 接待 · 無礼講
+    - お土産 個包装
+  - Nhật vs Hàn vs Singapore
+    - đồng thuận · tốc độ · hợp đồng/KPI

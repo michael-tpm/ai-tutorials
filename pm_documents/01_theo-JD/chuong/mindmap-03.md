@@ -1,0 +1,111 @@
+## Agile, Scrum, Waterfall & Hybrid
+- Waterfall & V-model kiểu Nhật
+  - Chuỗi 工程 tuần tự, mỗi bước có exit criteria
+    - 要件定義 → 基本設計 → 詳細設計 → 製造
+    - 単体 → 結合 → 総合 → 受入テスト
+    - 成果物 phê duyệt · 指摘 đóng
+  - V-model: mỗi mức thiết kế ứng một mức test
+    - test viewpoint lập ngay khi thiết kế
+  - 上流 vs 下流: muốn lên thượng nguồn phải giỏi hạ nguồn
+    - BrSE · domain · tiếng Nhật
+  - 手戻り phát hiện càng muộn càng đắt
+    - prototype · walkthrough · spike
+  - Chọn waterfall khi yêu cầu ổn định, đổi muộn đắt
+    - core tài chính · 請負 phạm vi chốt
+  - Bug lọt: chốt ranh giới trách nhiệm từng 工程
+    - 再発防止 · 横展開
+- Scrum framework
+  - 3 accountabilities · 5 events · 3 artifacts
+    - PO · SM · Developers
+  - Mỗi artifact có một commitment
+    - Product Goal · Sprint Goal · DoD
+  - Timebox theo sprint 1 tháng
+    - Planning 8h · Daily 15' · Review 4h · Retro 3h
+  - DoD là chuẩn chung, DoR chỉ là practice bổ sung
+    - DoD ≠ AC
+  - Bẫy PSM thường gặp
+    - chỉ PO hủy sprint · refinement không phải event · team ≤ 10
+  - Điểm mới Scrum Guide 2020
+    - self-managing · true leaders who serve · bỏ 3 câu hỏi Daily
+- Scrum Master, PM và PO trong mô hình outsourcing
+  - PM đứng tầng delivery, thương mại, ngoài Scrum Team
+  - PO phía khách chậm do 稟議, cần lịch cố định
+    - SLA Q&A · refinement nhẹ
+  - Proxy PO sở hữu sự rõ ràng, không sở hữu ưu tiên
+    - ma trận ủy quyền · log quyết định
+  - BrSE kiêm proxy PO được, kiêm SM nên hạn chế
+  - ラボ型 vs 請負 làm đổi cách phân vai
+- Kanban & flow
+  - Trực quan hóa, giới hạn WIP, quản lý flow
+    - stop starting, start finishing
+  - Lead time là khách thấy, cycle time là nội bộ
+  - Little's Law nối WIP, throughput, cycle time
+    - Cycle time = WIP / Throughput
+  - Đọc CFD: dải phình là bottleneck
+  - Kanban hợp 保守運用 với classes of service
+    - Expedite · Fixed date · Standard · Intangible
+  - Dự báo theo xác suất thay vì một ngày cứng
+    - Monte Carlo · work item age · SLA
+- Ước lượng & metrics Agile
+  - Story point tương đối, không quy đổi giờ từng story
+    - 人月 ở cấp release
+  - Planning poker để lộ khác biệt hiểu biết
+    - tránh anchoring · tách item ≥ 13
+  - Velocity chỉ để team tự lập kế hoạch
+    - không so team · định luật Goodhart
+  - Burnup lộ scope creep, dùng để đàm phán phạm vi
+  - Predictability ổn định quan trọng hơn tốc độ
+    - 80–100% (tham khảo)
+  - Team mới: dự báo từ capacity, thu hẹp sau 3 sprint
+    - cone of uncertainty
+- Hybrid: Water-Scrum-Fall & agile trong hợp đồng cố định
+  - Water-Scrum-Fall ổn khi có chủ đích và feedback giữa chừng
+  - Cố định giá và ngày, linh hoạt phạm vi
+    - MoSCoW · đổi item cùng kích thước
+  - 請負 vs 準委任 khi chạy agile
+    - mẫu hợp đồng agile của IPA theo 準委任
+  - Release nhỏ = nhiều lần tập nghiệm thu
+  - Tài liệu just-in-time, đi trước dev 1 sprint
+  - Hai track nhanh/chậm tách nhau qua contract
+    - API contract · mock/stub
+- Agile với khách hàng Nhật
+  - Hiểu nỗi lo trước khi thuyết phục
+    - 合意形成 · 稟議 · tài liệu
+  - Bán kết quả bằng pilot nhỏ và số liệu
+    - 反復型開発
+  - Sprint Review: gửi trước, demo theo nghiệp vụ, có biên bản
+    - 結論から · 完了/未完了 · 議事録
+  - Khách im lặng không có nghĩa là đồng ý
+    - feedback sau họp · câu hỏi A/B
+  - Duyệt thay đổi theo lô kèm SLA
+  - Giúp người phụ trách "dịch" agile cho cấp trên
+    - burnup ↔ WBS · 根回し · 見通し
+- Scaling nhiều team offshore
+  - Scrum of Scrums đủ cho 2–4 team
+  - SAFe đồng bộ nhiều team bằng ART và PI Planning
+    - 50–125 người · PI 8–12 tuần · RTE
+  - LeSS: một PO, một backlog, một sprint chung
+  - Scale nhẹ nhất, giảm dependency trước
+    - feature team · enabling team
+  - Nhiều site dùng chung khung tối thiểu
+    - DoD · nhịp sprint · báo cáo khách
+- Retrospective & cải tiến liên tục
+  - Khung 5 bước, mở đầu bằng review action cũ
+  - KPT là format nhìn lại phổ biến ở Nhật
+    - Keep · Problem · Try · 振り返り
+  - Action ít, cụ thể, có owner, vào Sprint Backlog
+  - An toàn tâm lý cho team ít nói
+    - Prime Directive · sticky ẩn danh · dot-voting
+  - Retro là vòng 改善, sự cố dùng なぜなぜ分析
+    - PDCA
+  - Đo retro bằng action xong và vấn đề lặp lại
+- Câu kiểu PMI-ACP & câu senior
+  - Manifesto: vế phải vẫn có giá trị
+  - Nhận diện fake agile, sửa 1–2 điểm hại nhất
+  - Đo value bằng chỉ số nghiệp vụ của khách
+    - WSJF · value–effort
+  - Servant leadership vẫn phải quyết khi cần
+    - true leaders who serve
+  - Mẹo ACP: chọn team cùng quyết và minh bạch
+  - Biết khi agile là sai, chuyển đổi có đường lui
+    - pilot · tiêu chí sau 3 sprint · 90 ngày

@@ -1,0 +1,148 @@
+## Chất lượng & quy trình kiểu Nhật
+- Tư duy chất lượng của khách Nhật
+  - Chất lượng là niềm tin: sản phẩm, quy trình, giải trình
+    - 品質 (hinshitsu) · 信頼 (shinrai)
+  - Zero defect nghĩa là không để lỗi lọt sang khách
+    - 流出 (ryuushutsu)
+    - Mục tiêu: 0 lỗi nghiêm trọng lọt ra
+  - Kế hoạch chất lượng là luật chơi chung, khách duyệt
+    - 品質計画書
+    - Mục tiêu định lượng + mức evidence
+  - Quality gate cuối mỗi công đoạn
+    - 工程完了判定 · tiêu chí vào/ra
+  - Đo 手戻り để thấy chi phí bị rò
+    - Giờ 手戻り / tổng giờ công
+    - Tách 手戻り do mình và do khách
+  - Minh bạch sớm tạo an tâm cho khách
+    - 安心感 · QCD
+    - 品質は工程で作り込む
+- 成果物 theo V-model & quản lý tài liệu
+  - Bộ deliverable chuẩn, phân vai tạo và duyệt
+    - 要件定義書 → 基本設計書 → 詳細設計書
+    - テスト仕様書 · テスト結果報告書 · 運用手順書
+  - Chốt mức chi tiết bằng mẫu một chức năng
+    - Tiêu chí: người khác đọc là code/test được
+  - Version rõ ràng, thay đổi được đánh dấu
+    - 改訂履歴
+    - Excel 方眼紙: khó diff, cần owner theo file
+  - Tài liệu trước, code sau
+    - Ma trận truy vết yêu cầu ↔ thiết kế ↔ test
+  - Ký duyệt là chuỗi trách nhiệm
+    - 作成 → 確認 → 承認
+    - Không 承認 khi thiếu biên bản review
+- Review & 指摘
+  - Review nhiều tầng, bắt lỗi ở tầng thấp nhất
+    - セルフ → ピア → 有識者 → 顧客レビュー
+    - Walkthrough · inspection
+  - Biên bản review vừa để đo vừa là evidence
+    - レビュー記録票
+  - Phân loại 指摘 để thấy lỗi bản chất
+    - 誤り · 漏れ · 曖昧 · 不整合 · 表記
+  - Mật độ chỉ ra so với baseline nội bộ
+    - 指摘密度 = 指摘 / trang hoặc KLOC
+    - Đọc kèm レビュー工数密度
+    - Lệch trên → 差し戻し
+  - 0 指摘 là tín hiệu nghi ngờ, không phải thành tích
+    - Review lấy mẫu bổ sung
+  - Review sản phẩm, không review người
+- Test, chỉ số & evidence
+  - Mỗi mức test bắt một loại lỗi riêng
+    - 単体 · 結合 · 総合 · 受入テスト
+    - Coverage C0/C1
+  - Bao phủ quan điểm quan trọng hơn số case
+    - テスト観点 · 観点の網羅
+  - Mật độ test và mật độ bug phải đọc cùng nhau
+    - テスト密度 = case / KLOC hoặc FP
+    - バグ密度 = bug / KLOC hoặc FP
+    - Ma trận 2×2 theo module
+  - Đường cong bug phải hội tụ trước release
+    - 信頼度成長曲線 · 収束 · Gompertz
+    - Đi ngang sớm → nghi test thiếu; bậc thang → デグレ
+  - Không evidence coi như chưa test
+    - エビデンス: screenshot, log, DB trước/sau
+    - Thỏa thuận mức evidence · masking dữ liệu cá nhân
+  - Tiêu chí bắt đầu/kết thúc thống nhất trước
+    - 開始基準 · 完了基準 · 消化率 100%
+- Quản lý bug
+  - Phiếu bug đủ trường phân tích mới được đóng
+    - 不具合管理票 · 起票
+  - Severity khác priority, định nghĩa có ví dụ
+    - 重要度 vs 優先度
+    - S1: dừng hệ thống, sai tiền/dữ liệu, bảo mật
+  - Phân loại nguyên nhân để biết sửa quy trình ở đâu
+    - 仕様漏れ · 設計ミス · 実装ミス · テスト漏れ
+    - Thêm loại "nguyên nhân phía khách"
+  - Ma trận công đoạn gây lỗi × công đoạn phát hiện
+    - 作り込み工程 × 摘出工程 · 見逃し
+    - 工程内摘出率
+  - Reopen cao là sửa chưa triệt để
+    - 影響調査 · 再テスト
+  - Bug khách tìm thấy được ưu tiên, thống kê riêng
+- Phân tích nguyên nhân gốc & phòng ngừa
+  - なぜなぜ dựa trên fact, dừng ở cơ chế
+    - Đọc ngược "vì vậy" để kiểm logic
+    - 三現主義: 現場 · 現物 · 現実
+  - Không lấy lỗi con người làm nguyên nhân gốc
+    - 注意不足 · 確認不足
+    - Biện pháp "気をつけます" bị trả lại
+  - Phân tích cả nguyên nhân phát sinh lẫn nguyên nhân lọt
+    - 発生原因 · 流出原因
+  - Biện pháp là cơ chế, có owner, đo được hiệu quả
+    - 再発防止策 · 仕組み · ポカヨケ
+  - Chặn thiệt hại trước, xử lý tận gốc sau
+    - 暫定対応 → 恒久対応
+  - Nhân rộng kiểm tra sang chỗ tương tự
+    - 横展開: kiểm N chỗ, sửa M chỗ, có evidence
+- Báo cáo chất lượng & quyết định release
+  - Báo cáo chất lượng gồm định lượng, định tính, đánh giá
+    - 品質報告書 · 定量 · 定性
+    - 評価: kết luận đạt/chưa đạt và vì sao
+  - Báo cáo sự cố đủ mục chuẩn
+    - 障害報告書: 発生日時 · 影響範囲 · 原因
+    - 暫定 · 恒久 · 再発防止 · 横展開
+  - Báo sự cố nhiều lần, lần đầu thật nhanh
+    - 第一報 → 続報 → 最終報
+  - Phạm vi ảnh hưởng phải có số và căn cứ
+  - Release dựa trên mức sẵn sàng toàn diện
+    - 出荷判定 / リリース判定 · 出荷判定会議
+    - 条件付き出荷: khách đồng ý bằng văn bản
+  - Tin xấu: sự thật → nguyên nhân → hành động → dự báo
+- Chuẩn & cải tiến liên tục
+  - ISO là tín hiệu quy trình, không thay chất lượng thật
+    - ISO 9001 (QMS) · 内部監査 · 是正処置
+    - ISO 27001 (ISMS): phân quyền, thiết bị, dữ liệu
+  - CMMI 5 mức, mức 4 quản lý bằng số liệu
+    - Initial → Managed → Defined → Quantitatively Managed → Optimizing
+  - PDCA: đừng bỏ chữ A
+  - Cải tiến nhỏ, liên tục, do người làm đề xuất
+    - 改善 · 改善提案
+    - 5S: 整理 · 整頓 · 清掃 · 清潔 · 躾
+  - Pareto, xương cá, phân tầng là công cụ chính
+    - QC七つ道具 · パレート図 · 特性要因図
+  - Tailoring quy trình để tránh "làm giấy tờ"
+- Chất lượng đặc thù offshore
+  - Lỗi offshore chủ yếu do hiểu sai spec
+    - Nhiều tầng truyền tin · giả định ngầm
+  - Hỏi đáp có sổ, câu hỏi kèm phương án
+    - Q&A管理表
+  - Xác nhận hiểu đúng trước khi code
+    - Giải thích ngược · 認識合わせ
+  - Checklist ngắn, sinh ra từ lỗi thật
+    - Kiểm tra lấy mẫu · tự động hóa mục kiểm được
+  - Self-check và kiểm chéo trước bàn giao
+    - 納品 · 納品物一覧 · build từ source sạch
+  - Tài liệu tiếng Nhật sạch lỗi, BrSE là cổng chất lượng
+    - 誤字脱字 · 表記ゆれ · glossary
+- Câu hỏi senior: trade-off & tình huống xám
+  - Chỉ số đẹp mà khách chê: đo theo góc nhìn khách
+  - Bug density thấp bất thường: kiểm tra trước khi khen
+    - Test thiếu? Không ghi phiếu? KLOC phình?
+  - Chất lượng – tiến độ – chi phí: trình phương án, khách quyết
+    - Thu hẹp phạm vi · release có điều kiện · lùi ngày
+    - Không thương lượng: tiền, dữ liệu, bảo mật
+  - Agile vẫn giữ tinh thần chất lượng Nhật
+    - DoD chặt · test hồi quy tự động
+  - Văn hóa chất lượng team mới: ít quy tắc mà chắc
+    - Template từ dự án thành công · baseline từ tuần đầu
+  - Chỉ số không dùng để chấm điểm người
+    - Tách phân tích nguyên nhân khỏi đàm phán chi phí

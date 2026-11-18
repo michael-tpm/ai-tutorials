@@ -1,0 +1,3711 @@
+# 1000 câu hỏi phỏng vấn Senior Project Manager · IT outsourcing thị trường Nhật
+
+> Bộ câu hỏi bám theo JD **Senior Project Manager – VTI Đà Nẵng**: lập kế hoạch, tiến độ, chất lượng, yêu cầu, rủi ro, chi phí; estimate và proposal bằng tiếng Nhật; làm trực tiếp với khách Nhật (tài chính, bảo hiểm, sản xuất); quản lý và phát triển đội ngũ; lợi thế khi từng setup chi nhánh Đà Nẵng.
+>
+> Ngày soạn: 17/11/2026 · Mindmap tổng hợp: [mindmap-tong-hop.md](mindmap-tong-hop.md) · Bản ôn tập tương tác (tìm kiếm, tự kiểm, đánh dấu đã thuộc): `on-tap-1000-cau.html` (tải về rồi mở bằng trình duyệt)
+
+## Cách dùng
+
+1. **Đọc lướt mindmap trước** để có khung, rồi mới vào từng chương.
+2. **Che câu trả lời, tự nói thành tiếng** trong 60–90 giây. Câu trả lời ở đây là bản *ngắn*; khi phỏng vấn thật hãy thêm **1 ví dụ của chính mình** (dự án, con số, kết quả).
+3. **Ưu tiên ôn**: Chương 8 (tình huống) → 5 (estimate/proposal) → 6 (chất lượng Nhật) → 7 (giao tiếp Nhật) → 1 (mở đầu) → còn lại.
+4. Thuật ngữ tiếng Nhật ghi kèm romaji ở lần xuất hiện đầu trong mỗi chương. Con số ngưỡng/tỉ lệ là **tham khảo**, tùy công ty và khách.
+
+## Ba khung trả lời dùng cho mọi chương
+
+| Loại câu | Khung | Ghi nhớ |
+| --- | --- | --- |
+| Behavioral ("kể lần…") | **STAR**: Situation → Task → Action → Result (+ bài học) | Action chiếm 50% thời lượng; Result có số |
+| Tình huống ("nếu… xử lý thế nào") | **① Xác nhận fact → ② Hành động ngay/khoanh vùng → ③ Báo khách theo 報連相 → ④ Giải pháp gốc + 再発防止/横展開** | Không đổ lỗi; bad news first kèm đối sách |
+| Kiến thức ("X là gì") | **Định nghĩa 1 câu → khi nào dùng → ví dụ dự án Nhật → bẫy hay gặp** | Nói như người đã làm, không như giáo trình |
+
+## Mục lục
+
+- **Chương 1 · Mở đầu, động lực & behavioral** (Q1–Q100)
+  - 1.1 Giới thiệu bản thân & hành trình PM — 10 câu
+  - 1.2 Động lực: vì sao VTI, Đà Nẵng, Senior PM, thị trường Nhật — 10 câu
+  - 1.3 Behavioral STAR: thành công, thất bại, bài học — 12 câu
+  - 1.4 Behavioral: áp lực, deadline, thiếu thông tin, bất đồng — 11 câu
+  - 1.5 Phong cách lãnh đạo & giá trị cá nhân — 10 câu
+  - 1.6 Phỏng vấn bằng tiếng Nhật — 12 câu
+  - 1.7 Chứng chỉ & học tập liên tục — 8 câu
+  - 1.8 Câu "bẫy" của HR/interviewer — 11 câu
+  - 1.9 Câu nên hỏi ngược interviewer — 8 câu
+  - 1.10 Đàm phán offer & kế hoạch 30-60-90 ngày — 8 câu
+- **Chương 2 · Nền tảng quản lý dự án (PMBOK · PRINCE2 · EVM)** (Q101–Q200)
+  - 2.1 Khung tổng: dự án, vòng đời, quy trình và tailoring — 9 câu
+  - 2.2 Tích hợp & kiểm soát thay đổi — 9 câu
+  - 2.3 Phạm vi & yêu cầu — 10 câu
+  - 2.4 Tiến độ: CPM, nén lịch, PERT, critical chain — 11 câu
+  - 2.5 Chi phí & EVM — 14 câu
+  - 2.6 Quản lý rủi ro — 11 câu
+  - 2.7 Stakeholder & giao tiếp — 10 câu
+  - 2.8 Procurement & loại hợp đồng (góc nhìn quốc tế) — 8 câu
+  - 2.9 Đóng dự án, lessons learned & đo thành công — 8 câu
+  - 2.10 PRINCE2 & câu hỏi kiểu đề PMP — 10 câu
+- **Chương 3 · Agile, Scrum, Waterfall & Hybrid trong dự án Nhật** (Q201–Q300)
+  - 3.1 Waterfall & V-model kiểu Nhật — 10 câu
+  - 3.2 Scrum framework — 12 câu
+  - 3.3 Scrum Master, PM và PO trong mô hình outsourcing — 9 câu
+  - 3.4 Kanban & flow — 9 câu
+  - 3.5 Ước lượng & metrics Agile — 11 câu
+  - 3.6 Hybrid: Water-Scrum-Fall & agile trong hợp đồng cố định — 11 câu
+  - 3.7 Agile với khách hàng Nhật — 11 câu
+  - 3.8 Scaling nhiều team offshore — 9 câu
+  - 3.9 Retrospective & cải tiến liên tục — 8 câu
+  - 3.10 Câu kiểu PMI-ACP & câu senior — 10 câu
+- **Chương 4 · Base kỹ thuật cho PM** (Q301–Q400)
+  - 4.1 Kiến trúc & thiết kế hệ thống — 12 câu
+  - 4.2 API & tích hợp hệ thống — 11 câu
+  - 4.3 Database & dữ liệu — 10 câu
+  - 4.4 Cloud — 10 câu
+  - 4.5 DevOps & release — 10 câu
+  - 4.6 Testing kỹ thuật & automation — 9 câu
+  - 4.7 Bảo mật — 11 câu
+  - 4.8 Legacy modernization — 9 câu
+  - 4.9 Code quality & nợ kỹ thuật — 9 câu
+  - 4.10 Vận hành, sự cố & công cụ — 9 câu
+- **Chương 5 · Estimation, proposal & hợp đồng với khách Nhật** (Q401–Q500)
+  - 5.1 Đơn vị effort & năng suất — 10 câu
+  - 5.2 Phương pháp estimate — 12 câu
+  - 5.3 Phân bổ effort theo 工程 & overhead — 9 câu
+  - 5.4 Buffer, rủi ro & 前提条件 — 11 câu
+  - 5.5 Bảo vệ estimate — 10 câu
+  - 5.6 Proposal 提案書 & 見積書 tiếng Nhật — 11 câu
+  - 5.7 RFP/RFI, コンペ & プレゼン — 8 câu
+  - 5.8 Hợp đồng kiểu Nhật — 13 câu
+  - 5.9 Đơn giá, đàm phán & 追加見積 — 8 câu
+  - 5.10 Tình huống senior & trade-off — 8 câu
+- **Chương 6 · Quản lý chất lượng & quy trình kiểu Nhật** (Q501–Q600)
+  - 6.1 Tư duy chất lượng của khách Nhật — 10 câu
+  - 6.2 成果物 theo V-model & quản lý tài liệu — 10 câu
+  - 6.3 Review & 指摘 — 10 câu
+  - 6.4 Test, chỉ số & evidence — 12 câu
+  - 6.5 Quản lý bug — 10 câu
+  - 6.6 Phân tích nguyên nhân gốc & phòng ngừa — 10 câu
+  - 6.7 Báo cáo chất lượng & quyết định release — 10 câu
+  - 6.8 Chuẩn & cải tiến liên tục — 8 câu
+  - 6.9 Chất lượng đặc thù offshore — 10 câu
+  - 6.10 Câu hỏi senior: trade-off & tình huống xám — 10 câu
+- **Chương 7 · Giao tiếp, văn hóa & quản trị kỳ vọng khách Nhật** (Q601–Q700)
+  - 7.1 報連相 & 確認 — 11 câu
+  - 7.2 Ra quyết định kiểu Nhật — 10 câu
+  - 7.3 Họp & tài liệu giao tiếp — 12 câu
+  - 7.4 Vai trò cầu nối BrSE, comtor, onsite — 10 câu
+  - 7.5 Ngôn ngữ & ngầm ý — 12 câu
+  - 7.6 Báo tin xấu & xin lỗi — 10 câu
+  - 7.7 Nói "không" & đàm phán mềm — 9 câu
+  - 7.8 Lịch & nhịp kinh doanh Nhật — 9 câu
+  - 7.9 Xây niềm tin & quản trị kỳ vọng — 9 câu
+  - 7.10 Business etiquette & khác biệt thị trường — 8 câu
+- **Chương 8 · Tình huống thực tế dự án với khách Nhật** (Q701–Q800)
+  - 8.1 Trễ tiến độ & 納期 cứng — 10 câu
+  - 8.2 Sự cố 本番 & 障害 — 10 câu
+  - 8.3 Yêu cầu mơ hồ & thay đổi — 10 câu
+  - 8.4 Khiếu nại chất lượng & mất niềm tin — 10 câu
+  - 8.5 Onsite–offshore & cầu nối — 10 câu
+  - 8.6 Nguồn lực — 10 câu
+  - 8.7 Chi phí & hợp đồng — 10 câu
+  - 8.8 Xung đột & stakeholder — 10 câu
+  - 8.9 Bảo mật & tuân thủ — 10 câu
+  - 8.10 Tình huống xám, đạo đức & tổng hợp — 10 câu
+- **Chương 9 · Quản lý nguồn lực & phát triển đội ngũ** (Q801–Q900)
+  - 9.1 Cơ cấu team offshore cho dự án Nhật — 11 câu
+  - 9.2 Team building & gắn kết — 10 câu
+  - 9.3 Tạo động lực & truyền lửa — 10 câu
+  - 9.4 Mentoring & coaching — 11 câu
+  - 9.5 Đánh giá hiệu suất (review 2 lần/năm) — 11 câu
+  - 9.6 Low performer & kỷ luật — 10 câu
+  - 9.7 Xung đột nội bộ — 9 câu
+  - 9.8 OT, burnout & sức khỏe team — 9 câu
+  - 9.9 Retention & quản lý tri thức — 9 câu
+  - 9.10 Tuyển, onboard cấp dự án & phong cách lãnh đạo — 10 câu
+- **Chương 10 · Chiến lược, kinh doanh, domain & phát triển chi nhánh Đà Nẵng** (Q901–Q1000)
+  - 10.1 Setup chi nhánh mới tại Đà Nẵng — 11 câu
+  - 10.2 Tuyển dụng & talent pool Đà Nẵng — 10 câu
+  - 10.3 Mô hình delivery center & chuyển giao dự án — 10 câu
+  - 10.4 Kinh tế dự án & chi nhánh — 11 câu
+  - 10.5 Account management & tăng trưởng — 10 câu
+  - 10.6 Domain tài chính – ngân hàng Nhật — 10 câu
+  - 10.7 Domain bảo hiểm — 9 câu
+  - 10.8 Domain sản xuất — 9 câu
+  - 10.9 Xu hướng thị trường Nhật & offshore — 10 câu
+  - 10.10 Tư duy chiến lược của Senior PM — 10 câu
+
+
+---
+
+# Chương 1 · Mở đầu, động lực & behavioral (Q1–Q100)
+
+## 1.1 Giới thiệu bản thân & hành trình PM
+
+**Q1. Hãy giới thiệu bản thân trong khoảng 60–90 giây.**
+Dùng khung **Hiện tại – Quá khứ – Tương lai**: ① hiện tại: vai trò, domain, quy mô đang quản lý; ② quá khứ: 2 mốc chuyển (dev → lead/BrSE → PM) kèm 1 kết quả đo được; ③ tương lai: vì sao Senior PM tại VTI Đà Nẵng là bước tiếp theo hợp lý. Ví dụ: "Em có X năm IT, Y năm làm PM offshore cho khách Nhật mảng tài chính, team lớn nhất 25 người…". Độ dài khi nói khoảng 150–220 chữ là vừa (tham khảo).
+> 💡 Kết bằng một câu nối sang JD để interviewer tự hỏi tiếp đúng vùng bạn mạnh nhất.
+
+**Q2. Kể ngắn hành trình từ kỹ thuật lên PM của bạn.**
+Kể theo mốc có lý do chuyển, không đọc lại CV: ① giai đoạn dev/tester cho em nền estimate và review; ② giai đoạn lead/BrSE là lúc bắt đầu chịu trách nhiệm người và khách; ③ PM là lúc chịu trách nhiệm tiến độ–chất lượng–chi phí. Mỗi mốc nêu 1 thói quen mang theo, ví dụ "từ thời dev, em luôn bóc WBS đến task ≤ 2 ngày để kiểm estimate của team". Nhấn rằng em *chủ động chọn* làm PM, không phải "sếp thiếu người nên đẩy lên".
+
+**Q3. Dự án nổi bật nhất bạn từng quản lý là gì?**
+Chọn dự án gần JD nhất (khách Nhật, domain tài chính/bảo hiểm/sản xuất nếu có) và kể theo STAR rút gọn: bối cảnh (quy mô, mô hình, team), thách thức chính, 2–3 hành động của chính em, kết quả đo được. Ví dụ: "hệ thống cho ngân hàng A, 18 người, 9 tháng, có chuyển đổi dữ liệu từ hệ thống cũ; em lập kế hoạch chạy thử migration 3 lần trước ngày chuyển đổi, go-live không phát sinh sự cố nghiêm trọng". Thuộc lòng 3 con số: team, man-month, kết quả.
+
+**Q4. Quy mô team và ngân sách lớn nhất bạn từng chịu trách nhiệm là bao nhiêu?**
+Trả lời bằng số và nói rõ phạm vi quyền hạn: team bao nhiêu người (offshore, onsite, BrSE), bao nhiêu man-month (MM), em chỉ theo dõi effort hay chịu cả lãi lỗ dự án. Nếu số tiền là bảo mật, quy ra MM và tỉ lệ: "khoảng 200 MM, em theo dõi effort hằng tuần, cuối dự án lệch so với kế hoạch dưới 5%".
+> 💡 Đừng thổi số; câu hỏi tiếp theo thường là "team đó chia mấy nhóm, mấy lead" — trả lời không khớp là mất điểm tin cậy.
+
+**Q5. Bạn đã làm với những mô hình dự án/hợp đồng nào?**
+Liệt kê ngắn các mô hình đã trải: ① trọn gói theo 請負 (ukeoi – hợp đồng nhận khoán, cam kết kết quả); ② 準委任 (jun-inin – hợp đồng theo công, cam kết nỗ lực) hoặc T&M; ③ ODC/Labo (team chuyên trách theo tháng). Mỗi loại nói 1 câu về cách quản trị khác nhau: trọn gói giữ chặt phạm vi và change request, Labo tập trung năng suất và giữ người. Mục tiêu là chứng minh em đã "sống" trong từng bối cảnh, không cần đọc điều khoản.
+
+**Q6. Domain nào bạn hiểu sâu nhất và điều đó giúp gì cho vai trò PM?**
+Nêu 1–2 domain kèm bằng chứng hiểu sâu: nghiệp vụ cụ thể (đối soát giao dịch, thẩm định hợp đồng bảo hiểm, quản lý dây chuyền), thuật ngữ khách dùng, ràng buộc đặc thù như audit, bảo mật, batch cuối ngày. Giá trị cho PM: hỏi đúng câu khi làm 要件定義 (youken teigi – định nghĩa yêu cầu), phát hiện sớm yêu cầu ngầm, estimate sát hơn. Domain chưa khớp JD thì nói cách em học domain mới trong 4–6 tuần đầu.
+
+**Q7. Một tuần làm việc điển hình của bạn ở vai trò hiện tại diễn ra thế nào?**
+Mô tả nhịp cố định: đầu tuần chốt kế hoạch tuần và top 5 rủi ro; hằng ngày daily 15 phút và xem issue mới; giữa tuần họp 定例会 (teireikai – họp định kỳ) với khách, gửi báo cáo tiến độ; cuối tuần so effort thực tế với kế hoạch, review chất lượng, 1:1 luân phiên. Nhắc thêm 1 công cụ em tự dựng (dashboard, template báo cáo) để chứng minh vận hành có hệ thống chứ không chỉ chữa cháy.
+
+**Q8. Điều gì khiến bạn xứng đáng với chữ "Senior" chứ không phải PM trung cấp?**
+Senior khác ở phạm vi ảnh hưởng: ① chịu trách nhiệm kết quả kinh doanh (biên lợi nhuận, khả năng gia hạn), không chỉ tiến độ; ② xử lý tình huống xám chưa có quy trình, như khách đổi chiến lược giữa dự án; ③ phát triển người — đào tạo được lead/PM kế cận; ④ đóng góp cho tổ chức: chuẩn hóa template, chia sẻ bài học sang dự án khác. Chuẩn bị 1 ví dụ cho mỗi ý.
+> 💡 Đừng định nghĩa Senior bằng số năm; hãy nói bằng mức độ tự chủ và phạm vi bạn tác động.
+
+**Q9. Nếu đồng nghiệp cũ mô tả bạn bằng 3 từ, họ sẽ nói gì?**
+Chọn 3 từ khớp vai trò, mỗi từ kèm 1 bằng chứng hành vi. Ví dụ "rõ ràng – bình tĩnh – giữ lời": rõ ràng vì mọi task có owner và deadline trên board; bình tĩnh vì khi có lỗi production em khoanh vùng trước rồi mới báo; giữ lời vì cam kết với khách luôn có buffer. Muốn tăng độ tin, thêm 1 nhận xét "chưa hay" em từng được góp ý và đang sửa.
+
+**Q10. Bạn đã làm việc trực tiếp với khách Nhật ở mức độ nào?**
+Nói rõ mức tiếp xúc thật: làm qua BrSE hay trực tiếp; có chủ trì họp, review, nghiệm thu không; có đi onsite không, bao lâu; đã tự xử lý escalation chưa. Ví dụ: "em chủ trì họp tuần với khách bảo hiểm B, trực tiếp báo cáo sự cố theo 報連相 (hou-ren-sou – báo cáo, liên lạc, thảo luận)". Nếu tiếng Nhật còn hạn chế, nêu cách em phối hợp với BrSE để thông tin không bị lệch.
+> 💡 Câu này phân loại ứng viên rất nhanh: chỉ làm qua BrSE thì nói thật, rồi chứng minh bạn kiểm soát chất lượng giao tiếp thế nào.
+
+## 1.2 Động lực: vì sao VTI, Đà Nẵng, Senior PM, thị trường Nhật
+
+**Q11. Vì sao bạn ứng tuyển vào VTI?**
+Trả lời bằng 3 lớp khớp JD: ① thị trường: thị trường chính là Nhật, đúng kinh nghiệm của em; ② khách hàng: tập đoàn Nhật trong tài chính, bảo hiểm, sản xuất — môi trường chuẩn chất lượng cao em muốn làm việc; ③ hướng phát triển: công ty có khách Hàn, Singapore và muốn có sản phẩm riêng, cho Senior PM không gian vượt khỏi một dự án. Kết bằng 1 điều cụ thể em sẽ đóng góp.
+> 💡 Chỉ dùng thông tin từ JD hoặc trang chính thức; nói sai fact về công ty còn tệ hơn không nói.
+
+**Q12. Vì sao bạn muốn làm việc tại Đà Nẵng?**
+Nêu lý do bền vững chứ không chỉ cảm tính: ① định hướng gắn bó lâu dài với thành phố (nói ở mức chung, không cần kể chuyện riêng); ② hứng thú xây đội ngũ ở một văn phòng đang phát triển, nơi PM có ảnh hưởng lớn tới cách làm việc; ③ nhân lực IT khu vực có tiềm năng và cần người dẫn dắt có kinh nghiệm khách Nhật. Thông điệp cốt lõi: em sẽ ở lại ít nhất 2–3 năm.
+> 💡 Nếu từng setup hoặc vận hành chi nhánh mới, nhắc ngay ở đây vì JD ghi rõ đó là lợi thế lớn.
+
+**Q13. Vì sao bạn muốn ở vị trí Senior PM?**
+Nói về phạm vi muốn chịu trách nhiệm: dự án lớn nhiều sub-team hoặc nhiều dự án cùng lúc, tham gia 見積もり (mitsumori – estimate) và 提案書 (teiansho – proposal) từ đầu, chịu trách nhiệm cao nhất về tiến độ, chất lượng với onsite và khách. Kèm bằng chứng đã làm một phần: từng viết proposal, từng hỗ trợ PM khác, từng mentor lead. Thông điệp: đây là bước tự nhiên, không phải vì chức danh.
+
+**Q14. Vì sao bạn chọn thị trường Nhật thay vì Âu–Mỹ?**
+Nêu lý do có giá trị: ① khách Nhật đòi hỏi chất lượng và quy trình rõ — môi trường rèn kỷ luật PM tốt; ② quan hệ dài hạn, giữ được niềm tin thì dự án nối tiếp; ③ em đã đầu tư tiếng Nhật và hiểu cách làm việc. Thừa nhận cái khó (tài liệu dày, ra quyết định qua nhiều cấp, yêu cầu chi tiết) và giải thích vì sao em coi đó là chuẩn để nâng mình lên. Tránh lý do "vì dự án Nhật nhiều tiền".
+
+**Q15. Mục tiêu 3–5 năm tới của bạn là gì?**
+Chia 2 mốc đo được và gắn với công ty: ① 1–2 năm: vận hành ổn định 1 dự án hoặc 1 khách lớn, đạt chỉ số đúng hạn và hài lòng khách, đào tạo 1–2 lead/PM kế cận; ② 3–5 năm: phụ trách một nhóm dự án hoặc một mảng khách (Delivery/Program Manager), góp phần mở rộng năng lực văn phòng Đà Nẵng. Thêm mục tiêu năng lực rõ: chứng chỉ PM, tiếng Nhật lên mức nào.
+> 💡 Không nhắc "mở công ty riêng" hay "sang Nhật làm" nếu không chắc — interviewer đang ước lượng rủi ro bạn rời đi.
+
+**Q16. Bạn biết gì về VTI và tìm hiểu từ đâu?**
+Trình bày phần chắc chắn và nói rõ nguồn: theo JD, VTI là công ty công nghệ Việt Nam khoảng 2000 người, thị trường chính Nhật, khách là tập đoàn tài chính, bảo hiểm, sản xuất, có thêm khách Hàn, Singapore, muốn phát triển sản phẩm riêng, có đào tạo tiếng Nhật và hỗ trợ thi chứng chỉ. Sau đó nêu nhận định của em ("công ty đầu tư dài hạn vào con người") và kết bằng "em muốn hỏi thêm về…" để biến câu kiểm tra thành trao đổi hai chiều.
+
+**Q17. Điều gì thúc đẩy bạn trong công việc PM hằng ngày?**
+Nêu động lực thật kèm ví dụ: nhìn một team rời rạc thành chạy nhịp đều; khách nghiệm thu không có lỗi nghiêm trọng; một thành viên mình kèm được lên lead. Gắn động lực với hành vi đo được: "vì thế em theo dõi tỉ lệ bug và tốc độ hoàn thành mỗi sprint để thấy team tiến bộ". Động lực chỉ dựa vào tiền hay chức danh sẽ khiến interviewer nghi ngờ độ gắn bó.
+
+**Q18. Bạn muốn nhận dự án mới từ đầu hay tiếp quản dự án đang chạy?**
+Có quan điểm nhưng linh hoạt: dự án mới cho phép đặt nền quy trình, estimate, team; dự án tiếp quản, nhất là đang gặp vấn đề, là nơi Senior PM tạo giá trị rõ nhất. Nêu cách em tiếp quản: 2 tuần đầu "nghe và đo" (tiến độ thật, chất lượng thật, quan hệ khách) trước khi thay đổi gì. Kết: "em ưu tiên nơi công ty đang cần nhất" — trả lời "chỉ muốn dự án mới" dễ bị hiểu là né việc khó.
+
+**Q19. Bạn nghĩ sao về định hướng phát triển sản phẩm riêng của công ty?**
+Thể hiện hiểu khác biệt: outsourcing đo bằng tiến độ, chất lượng, hợp đồng; sản phẩm đo bằng người dùng, doanh thu, tốc độ học từ thị trường. Senior PM có thể mang kỷ luật delivery sang team sản phẩm và mang tư duy sản phẩm (ưu tiên theo giá trị, MVP) vào dự án khách. Nói rõ ưu tiên trước mắt là vị trí đang tuyển, sản phẩm là hướng đóng góp thêm — đừng để interviewer nghĩ em coi outsourcing là bước đệm.
+
+**Q20. Cái khó nhất khi làm Senior PM outsourcing cho khách Nhật là gì, và vì sao bạn vẫn chọn?**
+Nêu 1–2 cái khó thật: cân bằng kỳ vọng chất lượng rất cao của khách với chi phí, tiến độ của công ty; giữ ngữ cảnh không bị rơi qua nhiều lớp (khách → onsite/BrSE → team). Nói cách em từng thu hẹp khoảng cách đó, ví dụ chuẩn hóa biên bản họp song ngữ và Q&A list có owner, hạn trả lời. Câu này đo độ trưởng thành: thừa nhận khó nhưng không than, và có cách làm.
+
+## 1.3 Behavioral STAR: thành công, thất bại, bài học
+
+**Q21. STAR là gì và bạn áp dụng thế nào khi trả lời câu behavioral?**
+STAR gồm Situation (bối cảnh) – Task (nhiệm vụ của bạn) – Action (hành động của chính bạn) – Result (kết quả đo được). Phân bổ thời gian khoảng S+T 20%, A 60%, R 20% (tham khảo); câu về thất bại thêm **L – Learning** (bài học). Phần Action dùng "em/tôi", không dùng "chúng tôi", để thấy vai trò cá nhân. Chuẩn bị sẵn 5–6 câu chuyện có thể xoay cho nhiều câu hỏi.
+> 💡 Result phải có số: "bug lọt UAT giảm từ 12 xuống 3", không phải "chất lượng tốt hơn".
+
+**Q22. Kể về thành công lớn nhất của bạn với vai trò PM.**
+Chọn thành công có độ khó cao và vai trò của em rõ. Ví dụ: S – dự án bảo trì cho khách bảo hiểm B, khách phàn nàn vì bug lọt sang UAT nhiều; T – em được giao lấy lại niềm tin trong 1 quý; A – em phân loại nguồn gốc bug, thêm review chéo test case với BrSE, đặt ngưỡng chất lượng bắt buộc trước khi giao; R – sau 3 tháng bug lọt UAT giảm khoảng 60%, khách mở rộng thêm người cho team.
+
+**Q23. Kể về một dự án thất bại hoặc không đạt mục tiêu.**
+Chọn thất bại thật nhưng không thảm họa, dành phần lớn thời gian cho bài học. Ví dụ: dự án trọn gói trễ 3 tuần vì em chấp nhận nhiều thay đổi nhỏ bằng lời nói, không qua change request, effort vượt khoảng 20%. Sau đó em đàm phán bù một phần chi phí và lập quy tắc: mọi thay đổi có ticket và estimate được khách đồng ý trước khi làm. Dự án tiếp theo lệch effort dưới 5%.
+> 💡 Đừng chọn thất bại mà lỗi hoàn toàn của người khác; interviewer chấm phần "em đã sai ở đâu".
+
+**Q24. Kể về một quyết định sai mà bạn từng đưa ra.**
+Nhấn vào cách nhận ra sai và sửa nhanh. Ví dụ: em đưa một dev rất giỏi kỹ thuật nhưng ít kinh nghiệm giao tiếp lên làm lead team 6 người; sau 1 tháng team chậm và bắt đầu căng thẳng. Em nhận ra mình chọn theo năng lực kỹ thuật thay vì năng lực dẫn dắt, nên trao đổi thẳng với bạn ấy, chuyển sang vai trò tech lead chuyên sâu, chọn lead khác và đặt tiêu chí chọn lead rõ ràng hơn.
+
+**Q25. Kể về lần bạn tiếp quản và vực dậy một dự án đang gặp nguy.**
+Ví dụ: S – em nhận dự án cho khách sản xuất C đang trễ khoảng 3 tuần, team mệt, khách mất kiên nhẫn; T – đưa dự án về một mốc mới khách chấp nhận được; A – tuần đầu đo lại tiến độ theo từng chức năng đã test xong, lập top rủi ro, thay 1 vị trí then chốt bằng người đã làm module tương tự, trình khách kế hoạch mới có số liệu; R – giao đúng mốc đã chốt lại, khách giữ team cho giai đoạn sau.
+
+**Q26. Kể về lần bạn vượt kỳ vọng của khách hàng.**
+Vượt kỳ vọng nên là giá trị khách cần nhưng chưa nói ra, không phải làm thêm miễn phí ngoài phạm vi. Ví dụ: khi làm module báo cáo cho khách bảo hiểm B, em thấy khách mất nhiều giờ đối chiếu dữ liệu thủ công mỗi tháng, nên đề xuất một công cụ kiểm tra nhỏ, estimate rõ và để khách quyết; khách duyệt như một change request nhỏ và giảm đáng kể thời gian đối chiếu. Thông điệp: chủ động nhưng vẫn kiểm soát phạm vi và chi phí.
+
+**Q27. Kể về lần lỗi của chính bạn ảnh hưởng đến khách.**
+Ví dụ: em gửi báo cáo tiến độ dựa trên số team tự khai, ghi "90% hoàn thành", nhưng đến test tích hợp mới lộ ra nhiều phần chưa chạy được, mốc lùi 1 tuần. Em nhận trách nhiệm trước, báo khách ngay số liệu thật và kế hoạch mới; sau đó đổi cách đo: chỉ tính "xong" khi qua review và test theo Definition of Done, báo cáo theo chức năng đã kiểm chứng. Bài học: đo bằng bằng chứng, không bằng cảm giác.
+
+**Q28. Bài học lớn nhất bạn rút ra trong sự nghiệp PM là gì?**
+Chọn 1 bài học đã thay đổi cách làm lâu dài, kèm câu chuyện ngắn và hành vi hiện tại. Ví dụ: "tin xấu báo càng sớm càng rẻ" — có lần em chần chừ 2 tuần mới báo một rủi ro thiếu người, khi xử lý thì tốn gấp nhiều lần; từ đó em có quy tắc: mốc quan trọng có dấu hiệu lệch quá 1 ngày là báo khách kèm phương án (ngưỡng tham khảo). Một bài học áp dụng nhất quán có giá trị hơn liệt kê nhiều bài học.
+
+**Q29. Kể về lần bạn thuyết phục team thay đổi cách làm việc.**
+Ví dụ: team quen code xong mới viết test case nên bug dồn cuối sprint. Em không áp đặt mà ① cho team xem số liệu bug theo tuần phát hiện, ② thử 1 sprint với 1 nhóm: viết test case trước, review chéo, ③ so kết quả trong buổi 振り返り (furikaeri – họp nhìn lại). Khi thấy làm lại ít hơn, cả team tự nhận cách mới. Nguyên tắc: thay đổi bằng thử nghiệm nhỏ có đo lường, không bằng mệnh lệnh.
+
+**Q30. Kể về lần bạn phải học rất nhanh một thứ mới để dự án chạy được.**
+Ví dụ: em nhận dự án trên nền tảng cloud mà mình chưa làm sâu, khách muốn PM nắm kiến trúc để trao đổi trực tiếp. Em lập kế hoạch 3 tuần: đọc tài liệu chính thức, nhờ tech lead giải thích kiến trúc 2 buổi, tự vẽ lại sơ đồ rồi nhờ team kiểm tra, lập glossary song ngữ. Kết quả: em chủ trì được buổi review kiến trúc với khách. Điểm cần thể hiện: có phương pháp học, không chỉ "chịu khó".
+
+**Q31. Ngoài dự án, bạn đã đóng góp gì cho tổ chức?**
+Senior PM được kỳ vọng nâng cả đơn vị, nhất là ở văn phòng đang phát triển. Ví dụ: chuẩn hóa template báo cáo tuần và Q&A list cho các dự án Nhật; tổ chức buổi chia sẻ bài học sau dự án; tham gia phỏng vấn, onboard người mới; hỗ trợ estimate cho proposal. Mỗi đóng góp nêu kết quả, như "template được 4 dự án dùng". Đây là tinh thần 横展開 (yokotenkai – nhân rộng cách làm tốt sang nơi khác).
+
+**Q32. Interviewer hỏi dồn "cụ thể bạn đã làm gì, hay đó là công của team?" — bạn trả lời sao?**
+Đây là câu kiểm tra độ thật. Tách rõ 3 phần: việc team làm, quyết định của em, và việc em tự tay làm. Ví dụ: "team thực hiện test, còn em là người quyết định dừng release đợt 1, trực tiếp đàm phán với khách để tách phạm vi và viết lại kế hoạch". Đưa chi tiết chỉ người trong cuộc mới biết (con số, tên tài liệu, thời điểm). Ghi công team nhưng không né vai trò của mình.
+> 💡 Câu chuyện "mượn" thường lộ ở lớp hỏi thứ ba; chỉ kể chuyện bạn trả lời được 3 lớp "vì sao".
+
+## 1.4 Behavioral: áp lực, deadline, thiếu thông tin, bất đồng
+
+**Q33. Kể về lần bạn làm việc dưới áp lực lớn nhất.**
+Chọn áp lực nhiều lớp (deadline + sự cố + khách căng) và kể cách em giữ bình tĩnh bằng hệ thống: ① liệt kê việc, xếp ưu tiên theo tác động tới khách; ② phân công owner rõ, cập nhật 2 lần/ngày; ③ chủ động báo khách tình hình để giảm câu hỏi dồn; ④ không để team quá tải kéo dài (luân phiên, bù nghỉ). Kết bằng kết quả và điều em làm khác lần sau.
+> 💡 Đừng khoe "cả team thức 3 đêm liền" như thành tích; với Senior, đó là dấu hiệu kế hoạch có vấn đề.
+
+**Q34. Khách đưa ra deadline mà bạn biết team không thể đạt, bạn từng xử lý thế nào?**
+Theo nhịp: ① xác nhận fact: estimate lại có căn cứ (WBS, năng suất thực), xác định thiếu bao nhiêu ngày công; ② chuẩn bị 2–3 phương án: giảm phạm vi theo ưu tiên, tăng người (kèm chi phí, rủi ro onboard), giao từng phần; ③ báo khách sớm theo 報連相 với số liệu và phương án, không chỉ nói "không kịp"; ④ chốt bằng văn bản, ghi lại giả định estimate để lần sau cảnh báo sớm hơn. Đồng ý cho qua rồi trễ là cách mất niềm tin nhanh nhất.
+
+**Q35. Khi nhiều việc gấp đến cùng lúc, bạn ưu tiên thế nào?**
+Dùng tiêu chí rõ: ① tác động tới khách và production trước; ② việc đang chặn người khác trước việc cá nhân; ③ việc có hạn cứng theo hợp đồng trước việc linh hoạt. Công cụ: ma trận khẩn cấp–quan trọng, top 3 việc mỗi sáng. Việc không kịp thì ủy quyền cho lead hoặc báo người liên quan kèm thời điểm mới. Ví dụ: production lỗi đúng hôm nộp proposal — em giao lead khoanh vùng, tự báo khách, rồi mới quay lại proposal.
+
+**Q36. Kể về lần bạn phải quyết định khi thiếu thông tin.**
+Khung: ① phân loại quyết định đảo ngược được hay không; ② xác định thông tin tối thiểu cần có và hạn chót phải quyết; ③ quyết với giả định ghi rõ, kèm điểm kiểm tra lại; ④ báo người liên quan đây là quyết định tạm. Ví dụ: spec API phía khách chưa chốt, em cho team code theo bản nháp với lớp adapter tách riêng, ghi giả định vào Q&A list; khi spec chốt chỉ sửa adapter trong 2 ngày.
+> 💡 Câu ghi điểm: "quyết định đảo ngược được thì quyết nhanh, không đảo ngược được thì chậm lại để lấy thêm dữ liệu".
+
+**Q37. Kể về lần bạn bất đồng với cấp trên.**
+Nhịp: ① hiểu mục tiêu của sếp trước khi phản biện; ② đưa dữ liệu và phương án thay thế; ③ trao đổi riêng trước, theo kiểu 根回し (nemawashi – trao đổi trước để thống nhất), không phản bác trước team hay khách; ④ nếu sếp vẫn quyết khác, thực hiện nghiêm túc và ghi lại rủi ro đã cảnh báo. Ví dụ: sếp muốn nhận thêm scope miễn phí để giữ khách; em trình bày effort, rủi ro trễ, đề xuất chỉ nhận phần nhỏ, còn lại thành change request — sếp đồng ý.
+
+**Q38. Kể về lần bạn bất đồng với khách hoặc phải nói "không" với khách.**
+Không nói "không" trần trụi; nói "được, nếu…". Ví dụ: khách bảo hiểm B muốn thêm chức năng sát ngày UAT; em xác nhận mục đích nghiệp vụ, estimate tác động, rồi đưa 2 lựa chọn: đưa vào release sau, hoặc làm ngay và dời UAT 1 tuần. Khách chọn release sau. Then chốt: tôn trọng quyền quyết định của khách, nhưng để họ quyết trên số liệu rõ ràng chứ không trên lời hứa.
+
+**Q39. Cấp trên yêu cầu bạn tạm chưa báo một lỗi nghiêm trọng cho khách, bạn làm gì?**
+Giữ nguyên tắc nhưng không chống đối: ① xác nhận lý do và mức ảnh hưởng thực tế của lỗi; ② giải thích rủi ro nếu khách tự phát hiện — mất niềm tin lớn hơn bản thân lỗi; ③ đề xuất cách báo có kiểm soát: báo ban đầu trong ngày gồm fact và phạm vi ảnh hưởng, nguyên nhân và đối sách gửi sau; ④ nếu vẫn bị yêu cầu giấu lỗi ảnh hưởng dữ liệu khách, escalate theo kênh chính thức. Với khách Nhật, che giấu lỗi là ranh giới không vượt.
+> 💡 Interviewer kiểm tra sự chính trực; "em làm theo sếp" hay "em báo khách ngay, kệ sếp" đều trượt.
+
+**Q40. Kể về lần bạn hòa giải xung đột giữa hai người chủ chốt trong dự án.**
+Nhịp ngắn: ① nghe riêng từng người, tách sự việc khỏi cảm xúc; ② tìm mục tiêu chung (mốc giao, chất lượng); ③ họp chung với dữ liệu, chốt quy tắc làm việc (ai quyết gì, review ra sao); ④ theo dõi 2–3 tuần. Ví dụ: tech lead và BrSE tranh cãi vì hiểu spec khác nhau; em lập quy tắc mọi điểm chưa rõ vào Q&A list, BrSE xác nhận với khách trước khi code. Xung đột giảm vì nguyên nhân gốc là quy trình, không phải tính cách.
+
+**Q41. Kể về lần bạn phải báo tin xấu cho khách.**
+Nhịp: ① xác nhận fact và mức ảnh hưởng trước khi liên lạc; ② báo sớm, trực tiếp (họp hoặc gọi), không chỉ email; ③ nói kết luận trước, xin lỗi đúng mức về ảnh hưởng, đưa hướng xử lý và mốc cập nhật tiếp theo; ④ sau đó gửi báo cáo nguyên nhân gốc kèm 再発防止 (saihatsu boushi – biện pháp phòng ngừa tái phát). Ví dụ: báo trễ mốc 1 tuần, kèm 2 phương án và thời điểm cập nhật lại.
+> 💡 Bẫy thường gặp: chờ "có đủ giải pháp mới báo" — với khách Nhật, báo fact sớm quan trọng hơn báo trọn vẹn.
+
+**Q42. Onsite hoặc BrSE đổ lỗi chậm tiến độ cho team offshore, bạn xử lý thế nào?**
+① Không phản ứng tức thì; thu thập dữ liệu: timeline, Q&A, thời điểm yêu cầu được truyền đạt; ② họp riêng với onsite cùng nhìn số liệu, tập trung "lỗ hổng ở đâu" thay vì "ai sai"; ③ thống nhất một tiếng nói khi báo khách; ④ vá điểm gãy quy trình, ví dụ yêu cầu phải vào ticket trước khi team bắt tay làm. Mục tiêu: khách thấy một team thống nhất, không phải hai bên đổ lỗi cho nhau.
+
+**Q43. Bạn tự quản lý stress và tránh kiệt sức thế nào khi dự án căng kéo dài?**
+Trả lời bằng thói quen cụ thể: ghi mọi việc vào danh sách để đầu óc không phải giữ hết; giới hạn số cuộc họp mỗi ngày; ủy quyền cho lead; giữ 1–2 hoạt động cố định ngoài công việc. Quan trọng hơn: nhận biết dấu hiệu quá tải của chính mình và của team, chủ động điều chỉnh kế hoạch thay vì chịu đựng. Interviewer muốn biết em bền bỉ được lâu dài, không phải chịu đựng vô hạn.
+
+## 1.5 Phong cách lãnh đạo & giá trị cá nhân
+
+**Q44. Phong cách lãnh đạo của bạn là gì?**
+Nêu một phong cách chính và khi nào em đổi: ví dụ servant leadership — gỡ vướng cho team, để team tự quyết phần kỹ thuật; nhưng chuyển sang chỉ đạo trực tiếp khi có sự cố hoặc với thành viên mới, theo tư duy situational leadership (mức chỉ đạo tùy năng lực và độ sẵn sàng của từng người). Kèm 1 hành vi chứng minh: "lead tự estimate, em chỉ review giả định và rủi ro". Một phong cách cho mọi tình huống nghe thiếu kinh nghiệm.
+
+**Q45. Điểm mạnh lớn nhất của bạn là gì?**
+Chọn 1–2 điểm mạnh khớp JD, mỗi điểm 1 bằng chứng. Ví dụ: ① quản lý rủi ro sớm — em duy trì risk register hằng tuần, từng phát hiện thiếu người cho module khó trước 1 tháng và bổ sung kịp; ② làm việc với khách Nhật — chủ trì họp, báo cáo sự cố, khách giữ team qua nhiều giai đoạn. Điểm mạnh không có bằng chứng chỉ là tự nhận.
+
+**Q46. Điểm yếu lớn nhất của bạn là gì?**
+Chọn điểm yếu thật, không chí mạng với vai trò, và đang có kế hoạch cải thiện đo được. Ví dụ: "em từng ôm việc, tự làm thay vì giao; em đặt quy tắc mỗi tuần giao ít nhất 1 việc quan trọng cho lead và chỉ review đầu ra; sau 6 tháng em nghỉ 1 tuần mà dự án vẫn chạy". Tránh điểm yếu giả (cầu toàn, làm việc quá chăm) và điểm yếu cốt lõi (giao tiếp kém, không chịu được áp lực).
+> 💡 Công thức: điểm yếu thật → hậu quả đã gặp → hành động sửa → bằng chứng tiến bộ.
+
+**Q47. Feedback tiêu cực gần nhất bạn nhận được là gì và bạn đã làm gì?**
+Kể feedback cụ thể, phản ứng ban đầu và hành động. Ví dụ: một thành viên góp ý trong 1:1 rằng em giao việc gấp, thiếu bối cảnh. Em cảm ơn, hỏi thêm ví dụ, rồi đổi cách giao: mỗi task có mục tiêu, tiêu chí xong, hạn và lý do ưu tiên; trừ sự cố, giao trước ít nhất nửa ngày. Sau đó em hỏi lại team ở buổi nhìn lại kế tiếp để kiểm tra đã cải thiện chưa — thể hiện em chủ động xin feedback, không chỉ nhận.
+
+**Q48. Giá trị nghề nghiệp nào bạn không thỏa hiệp?**
+Nêu 2–3 giá trị kèm hành vi: ① trung thực với khách và team — không báo cáo đẹp hơn sự thật; ② giữ lời — không hứa thứ chưa estimate; ③ tôn trọng con người — không phê bình thành viên trước đám đông. Thêm 1 ví dụ giá trị bị thử thách: từng từ chối "làm đẹp" số tiến độ trước một buổi họp lớn, thay vào đó báo đúng và kèm kế hoạch bắt kịp. Giá trị phải thấy được qua quyết định, không qua khẩu hiệu.
+
+**Q49. Khi nào bạn trao quyền và khi nào bạn kiểm soát chặt?**
+Dựa vào 2 biến: năng lực của người nhận và mức rủi ro của việc. Năng lực cao, rủi ro thấp: giao trọn, chỉ xem kết quả; năng lực còn thấp hoặc rủi ro cao (release production, migration dữ liệu): checkpoint dày, review trước khi đi tiếp. Ví dụ: lead mới được tự estimate module, nhưng 2 sprint đầu em cùng review giả định. Mục tiêu là giảm dần kiểm soát dựa trên bằng chứng.
+> 💡 Từ "micro-management" là bẫy; nói rõ bạn kiểm soát *điểm rủi ro*, không kiểm soát *con người*.
+
+**Q50. Bạn tự đánh giá hiệu quả của mình bằng những chỉ số nào?**
+Chia 4 nhóm: ① tiến độ: tỉ lệ mốc đúng hạn; ② chất lượng: bug lọt sang khách, bug production; ③ chi phí: effort thực tế so với kế hoạch; ④ con người và khách: mức hài lòng của khách, tỉ lệ nghỉ việc trong team, số người được phát triển lên vai trò mới. Kèm ngưỡng em tự đặt, ví dụ lệch effort ≤ 10% (tham khảo). Nói được chỉ số của chính mình cho thấy em quản trị bằng số.
+
+**Q51. Bạn tự cải thiện bản thân bằng cách nào?**
+Mô tả vòng lặp có nhịp: ① sau mỗi mốc dự án tự 振り返り cá nhân: điều gì giữ, điều gì đổi; ② xin feedback định kỳ từ sếp, team, khách bằng câu hỏi cụ thể như "điều gì em nên làm khác?"; ③ mỗi quý chọn 1 kỹ năng để luyện có đo lường, ví dụ thuyết trình bằng tiếng Nhật. Kết quả minh họa: sau 2 quý luyện, em tự chủ trì được buổi review mà không cần BrSE dịch.
+
+**Q52. Kiểu người hoặc kiểu cấp trên nào bạn thấy khó làm việc cùng nhất?**
+Trả lời trung tính, nói về hành vi chứ không về tính cách, và nêu cách em thích nghi. Ví dụ: người hay đổi quyết định mà không thông báo — em xử lý bằng cách xác nhận lại quyết định qua một tin nhắn hoặc biên bản ngắn sau mỗi buổi trao đổi. Kết bằng việc em vẫn làm việc hiệu quả được. Không dùng ví dụ kể xấu sếp hay khách cũ cụ thể — interviewer sẽ nghĩ em cũng sẽ nói về họ như vậy.
+
+**Q53. Theo bạn, một dự án thành công là thế nào?**
+Vượt khỏi tam giác phạm vi–thời gian–chi phí: ① giao đúng giá trị nghiệp vụ khách cần, đúng mốc đã thỏa thuận, đạt tiêu chí nghiệm thu; ② công ty có lãi theo kế hoạch; ③ khách muốn làm tiếp; ④ team không kiệt sức và có người trưởng thành hơn. Nếu phải đánh đổi, nói rõ thứ tự ưu tiên và lý do, ví dụ chất lượng của module tính toán tài chính không được đánh đổi lấy tiến độ.
+
+## 1.6 Phỏng vấn bằng tiếng Nhật
+
+**Q54. 自己紹介をお願いします (jiko shoukai wo onegai shimasu – Xin hãy giới thiệu bản thân).**
+Ý chính: tên → số năm IT/PM → kinh nghiệm với khách Nhật và domain → lời chào kết, khoảng 1 phút, dùng 敬語 (keigo – kính ngữ) dạng khiêm nhường. Câu mẫu: 「〇〇と申します。IT業界で〇年、そのうち〇年はプロジェクトマネージャーとして、日本のお客様向けのオフショア開発に携わってまいりました。本日はどうぞよろしくお願いいたします。」 (Tôi tên là…; có… năm trong ngành IT, trong đó… năm làm PM dự án offshore cho khách Nhật. Hôm nay rất mong được anh/chị chỉ giáo.) Nói chậm, đúng keigo ăn điểm hơn nói nhanh mà sai.
+
+**Q55. 志望動機を教えてください (shibou douki wo oshiete kudasai – Hãy cho biết động cơ ứng tuyển).**
+Ý chính: 結論から (ketsuron kara – nói kết luận trước) → lý do → đóng góp. Khi nói gọi công ty là 御社 (onsha – quý công ty), khi viết dùng 貴社 (kisha). Câu mẫu: 「御社は日本の金融・保険・製造業のお客様を中心に事業を展開されており、私のオフショア開発の経験を最も活かせると考え、志望いたしました。入社後は、品質と納期を守る体制づくりに貢献したいと考えております。」 (Quý công ty tập trung vào khách Nhật mảng tài chính, bảo hiểm, sản xuất — nơi tôi phát huy tốt nhất kinh nghiệm offshore; tôi muốn góp phần xây cơ chế giữ chất lượng và hạn giao.)
+> 💡 Nói 貴社 trong phỏng vấn trực tiếp là lỗi người Nhật để ý ngay — nói dùng 御社, viết dùng 貴社.
+
+**Q56. 長所と短所を教えてください (chousho to tansho wo oshiete kudasai – Hãy cho biết điểm mạnh và điểm yếu).**
+Ý chính: mỗi ý 1 câu + 1 ví dụ; điểm yếu luôn kèm cách đang cải thiện. Câu mẫu: 「長所は、問題が起きた際に事実を確認し、早めに報告・相談できることです。」 (Điểm mạnh là khi có vấn đề, tôi xác nhận sự thật và báo cáo, trao đổi sớm.) 「短所は細部にこだわりすぎるところですが、現在は優先順位と期限を先に決めてから取り組むようにしております。」 (Điểm yếu là quá chú trọng chi tiết; hiện tôi luôn chốt ưu tiên và hạn trước khi bắt tay làm.)
+
+**Q57. 日本語のレベルはどのくらいですか (nihongo no reberu wa dono kurai desu ka – Trình độ tiếng Nhật của bạn đến đâu?).**
+Ý chính: nêu JLPT nếu có, rồi mô tả năng lực thực tế bằng việc làm được (họp, email, đọc spec) và giới hạn một cách trung thực. Câu mẫu: 「日本語能力試験N〇を取得しております。会議やメールは日本語で対応しておりますが、重要な仕様は必ず文書で確認するようにしております。」 (Tôi có JLPT N…; họp và email bằng tiếng Nhật được, nhưng spec quan trọng tôi luôn xác nhận lại bằng văn bản.)
+> 💡 Phóng đại trình độ là bẫy tự đặt: interviewer có thể chuyển hẳn sang tiếng Nhật để kiểm tra ngay.
+
+**Q58. なぜ日本市場を選んだのですか (naze nihon shijou wo eranda no desu ka – Vì sao bạn chọn thị trường Nhật?).**
+Ý chính: nêu giá trị (chất lượng, quan hệ tin cậy dài hạn, cơ hội rèn kỷ luật), không nêu lý do tiền bạc; trả lời ngắn rồi dừng để interviewer hỏi tiếp. Câu mẫu: 「日本のお客様は品質と長期的な信頼関係を重視されるため、PMとして最も成長できる環境だと考えております。」 (Khách Nhật coi trọng chất lượng và quan hệ tin cậy lâu dài, nên tôi cho rằng đây là môi trường giúp PM trưởng thành nhất.)
+
+**Q59. これまでで一番大変だったプロジェクトについて教えてください (kore made de ichiban taihen datta purojekuto ni tsuite oshiete kudasai – Hãy kể về dự án vất vả nhất).**
+Ý chính: STAR ngắn, nhấn hành động của mình và kết quả. Câu mẫu: 「最も大変だったのは、リリースの1か月前に大きな仕様変更が発生したプロジェクトです。お客様と優先順位について相談させていただき、リリースを2回に分けることで、最初の納期を守ることができました。」 (Vất vả nhất là dự án có thay đổi spec lớn 1 tháng trước release; tôi trao đổi thứ tự ưu tiên với khách, chia release làm 2 đợt và giữ được hạn giao đầu tiên.)
+
+**Q60. 失敗した経験と、そこから学んだことを教えてください (shippai shita keiken to, soko kara mananda koto wo oshiete kudasai – Hãy kể một thất bại và bài học rút ra).**
+Ý chính: nhận trách nhiệm → nguyên nhân → thay đổi đã áp dụng; dùng 「〜ため」「それ以降」 để mạch nhân–quả rõ. Câu mẫu: 「テスト環境の準備を後回しにしたため、結合テストの開始が1週間遅れたことがあります。それ以降、環境準備を計画の初期にマイルストーンとして設定し、毎週確認するようにしております。」 (Tôi từng để việc chuẩn bị môi trường test lại sau, khiến test tích hợp trễ 1 tuần; từ đó tôi đặt việc này thành mốc ngay đầu kế hoạch và kiểm tra hằng tuần.)
+
+**Q61. 日本のお客様と仕事をする上で、大切にしていることは何ですか (nihon no okyakusama to shigoto wo suru ue de, taisetsu ni shite iru koto wa nan desu ka – Khi làm việc với khách Nhật, bạn coi trọng điều gì?).**
+Ý chính: chọn 1 nguyên tắc và chứng minh bằng hành vi — thường là 報連相 và giữ lời hứa. Câu mẫu: 「悪い情報ほど早くお伝えすることを大切にしております。問題が起きた場合は、まず事実と影響範囲をご報告し、対策は改めてご連絡いたします。」 (Tôi coi trọng việc báo tin xấu càng sớm càng tốt: báo trước sự thật và phạm vi ảnh hưởng, đối sách sẽ liên lạc sau.)
+
+**Q62. 5年後のキャリアプランを教えてください (gonen go no kyaria puran wo oshiete kudasai – Kế hoạch nghề nghiệp 5 năm tới của bạn?).**
+Ý chính: gắn mục tiêu với công ty và văn phòng Đà Nẵng, không nói kế hoạch rời đi. Câu mẫu: 「5年後には、複数のプロジェクトを統括する立場で、ダナン拠点の成長に貢献したいと考えております。」 (5 năm tới, tôi muốn ở vị trí phụ trách nhiều dự án và góp phần vào sự phát triển của văn phòng Đà Nẵng.) Có thể thêm 1 câu về mục tiêu tiếng Nhật hoặc chứng chỉ để kế hoạch có mốc đo được.
+
+**Q63. 入社後、どのように貢献できると思いますか (nyuusha go, dono you ni kouken dekiru to omoimasu ka – Sau khi vào công ty, bạn nghĩ mình đóng góp được gì?).**
+Ý chính: chia theo thời gian — ngắn hạn ổn định dự án, trung hạn phát triển người và nâng chất lượng estimate, proposal. Câu mẫu: 「まずは担当プロジェクトの品質と納期を安定させ、その後はメンバーの育成と、見積もり・提案の質の向上に貢献したいと考えております。」 (Trước hết tôi ổn định chất lượng và tiến độ dự án phụ trách, sau đó đóng góp vào đào tạo thành viên và nâng chất lượng estimate, proposal.)
+
+**Q64. 最後に何か質問はありますか (saigo ni nanika shitsumon wa arimasu ka – Cuối cùng bạn có câu hỏi gì không?).**
+Ý chính: luôn có 1–2 câu hỏi; mở đầu khiêm nhường, kết bằng lời cảm ơn. Câu mẫu: 「はい、ございます。入社後に担当させていただくプロジェクトの現状の課題について、伺ってもよろしいでしょうか。」 (Vâng, tôi có ạ. Tôi có thể hỏi về các vấn đề hiện tại của dự án mình sẽ phụ trách không ạ?) Kết: 「本日はお忙しいところ、お時間をいただき、誠にありがとうございました。」 (Cảm ơn anh/chị đã dành thời gian hôm nay.)
+> 💡 Trả lời 「特にありません」 (không có gì ạ) dễ bị hiểu là thiếu quan tâm — luôn chuẩn bị sẵn câu hỏi.
+
+**Q65. Không nghe rõ hoặc chưa hiểu câu hỏi tiếng Nhật thì nói thế nào cho lịch sự?**
+Đừng đoán rồi trả lời lệch; xin nhắc lại hoặc xác nhận lại ý. Câu mẫu: 「恐れ入りますが、もう一度おっしゃっていただけますでしょうか。」 (Xin lỗi, anh/chị có thể nói lại một lần nữa được không ạ?); 「〜という理解でよろしいでしょうか。」 (Tôi hiểu là…, như vậy có đúng không ạ?); 「少し考える時間をいただけますでしょうか。」 (Cho tôi xin chút thời gian suy nghĩ được không ạ?).
+> 💡 Xác nhận lại bằng 「〜という理解でよろしいでしょうか」 vừa cứu bạn khi chưa chắc, vừa cho thấy thói quen xác nhận yêu cầu mà khách Nhật đánh giá cao.
+
+## 1.7 Chứng chỉ & học tập liên tục
+
+**Q66. Bạn đang có chứng chỉ quản lý dự án nào và nó giúp gì trong thực tế?**
+Nêu tên chứng chỉ, năm đạt, và quan trọng hơn là 1–2 thứ em áp dụng thật. Ví dụ với PMP: dùng cách quản lý rủi ro và stakeholder có hệ thống để lập risk register, stakeholder map ngay tuần đầu dự án; với PSM: tổ chức các sự kiện Scrum đúng mục đích, không biến daily thành họp báo cáo cho PM. Chứng chỉ là ngôn ngữ chung với khách và công ty, giá trị nằm ở cách dùng.
+> 💡 Đừng đọc định nghĩa trong sách; interviewer muốn nghe "em đã dùng nó để làm gì khác đi".
+
+**Q67. Bạn chưa có PMP hay chứng chỉ PM nào, bạn trả lời thế nào?**
+Thành thật, rồi chứng minh bằng kinh nghiệm và kế hoạch: ① "em chưa có chứng chỉ, nhưng đã áp dụng các thực hành tương đương" kèm ví dụ (risk register, change control, báo cáo theo mốc); ② đưa kế hoạch cụ thể: chứng chỉ nào, mốc thi trong 6–12 tháng; ③ nhắc chính sách hỗ trợ thi PMP của công ty như một lý do thêm để gắn bó. Không xin lỗi, cũng không xem nhẹ giá trị của chứng chỉ.
+
+**Q68. Giữa PMP, PMI-ACP, PSM/CSM và PRINCE2, chứng chỉ nào phù hợp nhất với vị trí này?**
+Trả lời theo bối cảnh, không xếp hạng tuyệt đối: dự án khách Nhật thường cần kế hoạch, kiểm soát thay đổi và tài liệu chặt — PMP hoặc PRINCE2 cho nền quản trị dự án; nhiều dự án chạy Scrum hoặc hybrid — PSM, CSM hoặc PMI-ACP bổ trợ phần agile. Kết luận: một chứng chỉ nền tảng + một chứng chỉ agile là bộ đôi hợp lý. Chọn theo nhu cầu dự án, không theo độ khó của kỳ thi.
+
+**Q69. Trình độ JLPT hiện tại và kế hoạch nâng tiếng Nhật của bạn?**
+Nói rõ level đang có, năng lực dùng thực tế, và kế hoạch đo được: level kế tiếp, thời điểm thi, cách luyện (đọc spec thật, tự viết biên bản họp, luyện keigo qua email). JLPT chủ yếu đo đọc–nghe, nên bổ sung bằng chứng nói: chủ trì họp, thuyết trình. Chưa có JLPT thì nêu cách đang dùng tiếng Nhật trong công việc và lộ trình thi. Nhắc chương trình đào tạo tiếng Nhật của công ty là thứ em muốn tận dụng.
+
+**Q70. Theo bạn, kinh nghiệm hay chứng chỉ quan trọng hơn?**
+Câu bẫy, tránh trả lời một chiều. Kinh nghiệm quyết định cách xử lý tình huống thật; chứng chỉ chuẩn hóa ngôn ngữ, giúp làm việc với khách và tổ chức lớn, và là bằng chứng học có hệ thống. Ví dụ: kiến thức quản trị rủi ro bài bản giúp em ít bỏ sót khi lập kế hoạch, còn cách nói chuyện với khách khi rủi ro xảy ra thì đến từ kinh nghiệm. Kết: hai thứ bổ trợ nhau và em đầu tư cả hai.
+
+**Q71. PM có cần học Cloud/AWS không?**
+Cần, ở mức đủ để ra quyết định và trao đổi: hiểu kiến trúc cơ bản, mô hình chi phí theo mức sử dụng, phân chia trách nhiệm bảo mật giữa nhà cung cấp và khách (shared responsibility), rủi ro về môi trường và quyền truy cập. Lợi ích: estimate sát hơn phần hạ tầng, hỏi đúng câu khi khách muốn chuyển lên cloud. Với PM, chứng chỉ mức nền tảng như AWS Certified Cloud Practitioner là hợp lý; chuyên sâu là việc của kiến trúc sư.
+
+**Q72. Gần đây bạn học được điều gì mới cho công việc?**
+Chọn điều mới có ứng dụng thật. Ví dụ: dùng công cụ AI để tóm tắt biên bản họp và soạn nháp email tiếng Nhật, nhưng đặt quy tắc tự rà toàn bộ trước khi gửi và không đưa dữ liệu bảo mật của khách vào công cụ chưa được công ty cho phép. Kết quả: rút ngắn thời gian soạn tài liệu mà vẫn giữ an toàn thông tin. Thể hiện em cập nhật xu hướng nhưng kiểm soát được rủi ro.
+> 💡 Nhắc bảo mật dữ liệu khách khi nói về AI — với khách tài chính, bảo hiểm, đó là điểm cộng lớn.
+
+**Q73. Kế hoạch học tập 12 tháng tới của bạn là gì?**
+Đưa kế hoạch có mốc: ① 6 tháng đầu: hiểu sâu domain của khách đang phụ trách; ② trong năm: thi 1 chứng chỉ (PMP hoặc agile) và nâng 1 level tiếng Nhật; ③ liên tục: đọc case study, tham gia cộng đồng PM, chia sẻ lại cho team. Nối với chính sách công ty: đào tạo tiếng Nhật, hỗ trợ thi Cloud/AWS/PMP — "em muốn dùng đúng các chương trình này". Kế hoạch có mốc cho thấy em tự quản lý được sự phát triển của mình.
+
+## 1.8 Câu "bẫy" của HR/interviewer
+
+**Q74. Vì sao bạn nghỉ hoặc muốn rời công ty hiện tại?**
+Hướng về phía trước, không chê công ty cũ: "em đã học được nhiều ở môi trường hiện tại, nhưng muốn chịu trách nhiệm ở quy mô lớn hơn với khách Nhật mảng tài chính, bảo hiểm" hoặc "muốn gắn bó lâu dài ở Đà Nẵng". Nếu có lý do khách quan (dự án kết thúc, tái cấu trúc), nói ngắn, trung tính, rồi chuyển sang điều em đang tìm kiếm.
+> 💡 Lý do nghỉ và lý do ứng tuyển phải là hai mặt của cùng một câu chuyện; mâu thuẫn là interviewer nhận ra ngay.
+
+**Q75. CV của bạn có nhiều lần chuyển việc ngắn hạn, bạn giải thích thế nào?**
+Không phủ nhận; giải thích theo mạch và cho thấy cam kết hiện tại: ① nêu lý do khách quan của từng lần nếu có; ② chỉ ra mỗi lần chuyển đều tăng trách nhiệm; ③ nhấn rằng em luôn ở lại đến khi bàn giao xong dự án — điều khách Nhật rất coi trọng; ④ nêu vì sao lần này em tin sẽ gắn bó (đúng thị trường, đúng địa điểm, đúng vai trò). Lần chuyển nào sai thì thừa nhận và nêu bài học.
+
+**Q76. Trong CV có khoảng trống vài tháng, đó là thời gian gì?**
+Nói ngắn, thật, không cần chi tiết riêng tư: nghỉ vì lý do cá nhân, học chứng chỉ, chuyển nơi ở… Sau đó nói em đã giữ nhịp nghề nghiệp ra sao (tự học, làm dự án nhỏ, cập nhật kiến thức) và hiện đã sẵn sàng làm việc toàn thời gian. Interviewer chủ yếu kiểm tra hai điều: em có trung thực không, và có vấn đề nào còn ảnh hưởng đến công việc sắp tới không.
+
+**Q77. Mức lương kỳ vọng của bạn là bao nhiêu?**
+Chuẩn bị trước một khoảng dựa trên mặt bằng thị trường cho vị trí và khu vực, cùng tổng thu nhập hiện tại. Cách trả lời: ① nếu phù hợp, hỏi lại khung của vị trí trước; ② đưa một khoảng, với mức thấp là mức em thật sự chấp nhận; ③ nói rõ em nhìn tổng gói: lương, thưởng dự án/doanh thu, review performance 2 lần/năm, đào tạo. Lý do đưa ra là giá trị em mang lại, không phải nhu cầu cá nhân.
+> 💡 Khoảng quá rộng bị coi là chưa chuẩn bị; chênh 10–15% giữa hai đầu là hợp lý (tham khảo).
+
+**Q78. Lương hiện tại của bạn là bao nhiêu?**
+Câu này thường dùng để neo offer. Có thể lịch sự chuyển trọng tâm: "em muốn trao đổi dựa trên phạm vi công việc của vị trí này và mặt bằng thị trường; kỳ vọng của em là khoảng…". Nếu buộc phải nói, nói đúng tổng thu nhập (gồm thưởng, phụ cấp) — không thổi số vì có thể bị kiểm tra khi xác minh. Trung thực nhưng giữ quyền đàm phán theo giá trị vị trí mới.
+
+**Q79. Bạn có sẵn sàng OT hoặc làm cuối tuần không?**
+Trả lời cân bằng: sẵn sàng khi có sự cố hoặc mốc quan trọng — đó là trách nhiệm của PM; nhưng OT kéo dài là dấu hiệu kế hoạch có vấn đề và em sẽ xử lý gốc (phạm vi, estimate, nguồn lực). Ví dụ: "dự án gần nhất, OT chỉ dồn vào 2 tuần trước go-live, các giai đoạn khác em giữ nhịp ổn định". Thể hiện trách nhiệm mà không hứa hy sinh vô hạn.
+> 💡 "Em sẵn sàng OT mọi lúc" nghe tận tụy, nhưng với Senior lại là tín hiệu không biết lập kế hoạch.
+
+**Q80. Bạn chuyển từ Hà Nội/TP.HCM về Đà Nẵng — có lo thu nhập hoặc cơ hội ít hơn không, và có ở lâu không?**
+Interviewer lo 2 điều: em sẽ quay lại thành phố cũ, và kỳ vọng thu nhập không khớp. Trả lời: ① việc chuyển là quyết định dài hạn đã cân nhắc (nói ở mức chung); ② em hiểu mặt bằng mỗi khu vực khác nhau và nhìn tổng gói cùng cơ hội phát triển; ③ điểm cộng: mang cách làm, kinh nghiệm với khách lớn từ thành phố lớn về để góp phần xây đội ở Đà Nẵng.
+> 💡 Nếu đã có bằng chứng cụ thể (đã chuyển nơi ở, đã ổn định cuộc sống ở Đà Nẵng), nói ngắn một câu — đó là tín hiệu ổn định mạnh nhất.
+
+**Q81. Khi nào bạn có thể bắt đầu làm việc?**
+Nói ngày cụ thể dựa trên thời hạn báo trước trong hợp đồng hiện tại cộng thời gian bàn giao: "em cần khoảng 30–45 ngày để bàn giao dự án cho người kế nhiệm với tài liệu đầy đủ" (tham khảo, tùy hợp đồng). Nếu linh hoạt được thì nêu phương án. Công ty mới sẽ đánh giá cao việc em không bỏ dở trách nhiệm ở nơi cũ — vì đó cũng là cách em sẽ làm với họ sau này.
+
+**Q82. Bạn có đang phỏng vấn hoặc có offer nơi khác không?**
+Trung thực, ngắn, không dùng để gây sức ép: "em đang trong một vài quy trình khác, nhưng VTI là lựa chọn ưu tiên vì… (đúng thị trường, đúng domain, đúng địa điểm)". Nếu có offer kèm hạn phản hồi, nói rõ thời điểm cần quyết để công ty sắp xếp. Không bịa offer để ép giá — dễ lộ và mất thiện cảm. Điều interviewer cần nghe là "vì sao ưu tiên", không phải có bao nhiêu offer.
+
+**Q83. Với kinh nghiệm của bạn, vì sao không ứng tuyển vị trí cao hơn như Delivery Manager?**
+Cho thấy em hiểu lộ trình và tôn trọng việc chứng minh năng lực ở môi trường mới: "em cần hiểu khách, quy trình và đội ngũ của công ty qua thực tế dự án; Senior PM là vị trí để em tạo kết quả rõ nhất trong 1–2 năm đầu". Nói kỳ vọng phát triển lên vai trò rộng hơn dựa trên kết quả, gắn với chu kỳ review performance 2 lần/năm. Tránh để lộ suy nghĩ coi vị trí này là "tạm".
+
+**Q84. Vì sao chúng tôi nên chọn bạn thay vì ứng viên khác?**
+Tóm tắt 3 điểm khớp JD nhất, mỗi điểm có bằng chứng: ① kinh nghiệm PM outsourcing với khách Nhật, có kết quả đo được; ② năng lực estimate, proposal và quản trị rủi ro, thay đổi; ③ yếu tố riêng: gắn bó Đà Nẵng, tiếng Nhật, kinh nghiệm xây team hoặc chi nhánh (nếu có). Không so sánh hay hạ thấp người khác; kết bằng một cam kết cụ thể cho 6 tháng đầu.
+> 💡 Đây là "closing pitch" — luyện trước để nói trọn trong 45–60 giây.
+
+## 1.9 Câu nên hỏi ngược interviewer
+
+**Q85. Nên hỏi gì về dự án và khách hàng mình sẽ phụ trách?**
+Câu mẫu: "Dự án em dự kiến phụ trách đang ở giai đoạn nào, mô hình hợp đồng ra sao, và thách thức lớn nhất hiện nay là gì?"; hỏi thêm: "Phía khách, ai là người ra quyết định cuối và họ quan tâm nhất điều gì?". Vì sao ghi điểm: cho thấy em nghĩ ngay đến việc nhận dự án; câu trả lời giúp em đánh giá độ khó thật (dự án mới hay đang có vấn đề) và chuẩn bị cho 30 ngày đầu.
+
+**Q86. Nên hỏi gì về kỳ vọng với vị trí?**
+Câu mẫu: "Sau 6 tháng, anh/chị đánh giá Senior PM ở vị trí này thành công dựa trên những chỉ số nào?". Vì sao ghi điểm: thể hiện tư duy đo lường kết quả; giúp em biết trước tiêu chí sẽ dùng trong kỳ review; nếu interviewer chưa có câu trả lời rõ, đó cũng là thông tin quan trọng để em chủ động đề xuất KPI khi vào làm.
+> 💡 Ghi lại câu trả lời — nó là nguyên liệu cho kế hoạch 30-60-90 ngày và buổi thống nhất mục tiêu tuần đầu.
+
+**Q87. Nên hỏi gì về tổ chức và đội ngũ tại Đà Nẵng?**
+Câu mẫu: "Team ở Đà Nẵng hiện có cơ cấu dev, QA, BrSE thế nào, và phối hợp với onsite ra sao?". Vì sao ghi điểm: cho thấy em hiểu Senior PM chịu trách nhiệm cả nguồn lực lẫn vai trò đầu mối với onsite; câu trả lời cho biết em cần xây thêm gì (tuyển, đào tạo BrSE, quy trình) — đặc biệt hữu ích để nêu kinh nghiệm build-up chi nhánh nếu có.
+
+**Q88. Nên hỏi gì về quy trình chất lượng và công cụ?**
+Câu mẫu: "Các dự án hiện theo quy trình chất lượng chung của công ty hay theo yêu cầu riêng của từng khách? Những chỉ số chất lượng nào đang được theo dõi?". Vì sao ghi điểm: khách tài chính, bảo hiểm Nhật rất chú trọng chất lượng; câu hỏi cho thấy em quan tâm hệ thống chứ không chỉ kinh nghiệm cá nhân, và giúp em biết mức độ chuẩn hóa để định cách làm ngay từ đầu.
+
+**Q89. Nên hỏi gì về đánh giá và lộ trình thăng tiến?**
+Câu mẫu: "Kỳ review performance 2 lần/năm dựa trên tiêu chí nào, và lộ trình từ Senior PM lên vai trò quản lý rộng hơn thường như thế nào?". Vì sao ghi điểm: thể hiện tham vọng dài hạn gắn với công ty; hỏi về tiêu chí thay vì "bao lâu được tăng lương" cho thấy em tập trung vào kết quả.
+> 💡 Ở vòng chuyên môn, tránh hỏi về lương, thưởng, ngày nghỉ; để dành cho vòng HR hoặc khi đã có offer.
+
+**Q90. Nên hỏi gì về đào tạo và phát triển?**
+Câu mẫu: "Chương trình đào tạo tiếng Nhật và hỗ trợ thi PMP/AWS áp dụng cho Senior PM thế nào — có điều kiện hay cam kết thời gian làm việc sau khi được hỗ trợ không?". Vì sao ghi điểm: cho thấy em đọc kỹ JD và có kế hoạch học tập; đồng thời làm rõ điều kiện ràng buộc để quyết định chính xác, tránh bất ngờ sau này.
+
+**Q91. Nên hỏi gì về chiến lược công ty?**
+Câu mẫu: "Với định hướng phát triển sản phẩm riêng và các thị trường như Hàn, Singapore, văn phòng Đà Nẵng dự kiến đóng vai trò gì trong vài năm tới?". Vì sao ghi điểm: thể hiện tư duy chiến lược — một yêu cầu trong JD — và cho thấy em nghĩ xa hơn dự án đầu tiên; câu trả lời giúp em định vị đóng góp dài hạn của mình.
+
+**Q92. Nên hỏi gì ở cuối buổi để chốt, và câu nào không nên hỏi?**
+Câu mẫu: "Qua buổi hôm nay, anh/chị còn băn khoăn gì về kinh nghiệm của em không ạ?" và "Bước tiếp theo của quy trình là gì ạ?". Vì sao ghi điểm: cho em cơ hội giải tỏa nghi ngờ ngay tại chỗ và thể hiện sự tự tin. Không nên hỏi điều đã có trong JD, hỏi chuyện nghỉ phép/OT ở vòng chuyên môn, hoặc hỏi "em có đậu không".
+> 💡 Nếu interviewer nêu băn khoăn, đừng tranh luận — trả lời bằng 1 ví dụ cụ thể rồi cảm ơn.
+
+## 1.10 Đàm phán offer & kế hoạch 30-60-90 ngày
+
+**Q93. Nguyên tắc của bạn khi đàm phán offer là gì?**
+① Chuẩn bị dữ liệu: mặt bằng thị trường, tổng thu nhập hiện tại, mức tối thiểu chấp nhận; ② đàm phán dựa trên giá trị em mang lại cho vị trí, không dựa trên nhu cầu cá nhân; ③ nhìn tổng gói, không chỉ lương cứng; ④ giữ thiện chí — người đàm phán với em hôm nay sẽ là đồng nghiệp ngày mai. Luôn cảm ơn và khẳng định hứng thú trước khi đề nghị điều chỉnh. Cách em đàm phán offer cũng là bản xem trước cách em sẽ đàm phán với khách.
+
+**Q94. Ngoài lương cứng, bạn có thể đàm phán những gì?**
+Các yếu tố thường linh hoạt hơn lương cứng: ① cơ chế thưởng dự án/doanh thu và cách tính; ② thời điểm review đầu tiên, ví dụ xét lại sau thử việc nếu lương khởi điểm chưa như kỳ vọng; ③ ngày bắt đầu; ④ hỗ trợ đào tạo tiếng Nhật, thi PMP/AWS; ⑤ chức danh và phạm vi trách nhiệm ghi rõ. Chọn 2–3 điều quan trọng nhất với em, đừng đòi tất cả cùng lúc.
+
+**Q95. Offer thấp hơn kỳ vọng, bạn xử lý thế nào?**
+① Cảm ơn và hỏi rõ cách công ty xác định mức này (khung của vị trí, đánh giá năng lực); ② đưa lại mức đề nghị có căn cứ (mặt bằng thị trường, kinh nghiệm cụ thể khớp JD); ③ đề xuất phương án trung gian: review lương sau thử việc với KPI rõ, điều chỉnh cơ chế thưởng, hỗ trợ khác; ④ quyết theo mức tối thiểu đã đặt trước, không quyết vì cảm xúc. Mọi thỏa thuận thêm phải nằm trong offer letter bằng văn bản.
+> 💡 "Xét lại lương sau thử việc" chỉ có giá trị khi ghi rõ tiêu chí và thời điểm trong văn bản.
+
+**Q96. Nhận offer nhưng cần thời gian suy nghĩ, bạn nói thế nào?**
+Cảm ơn, thể hiện hứng thú, và xin thời gian có hạn cụ thể: "em rất cảm ơn và rất quan tâm; em xin phép phản hồi chính thức trước ngày X" (thường vài ngày làm việc, tham khảo). Trong thời gian đó, hỏi rõ mọi điểm còn mơ hồ: thử việc, cơ chế thưởng, ngày bắt đầu. Phản hồi đúng hạn đã hẹn — công ty sẽ nhìn thấy sự giữ lời của em ngay từ trước ngày đầu đi làm.
+
+**Q97. Kế hoạch 30 ngày đầu của bạn là gì?**
+Mục tiêu: **học và xây quan hệ**. ① Gặp 1:1 sếp trực tiếp, onsite, BrSE, lead và các phòng ban liên quan; ② đọc hợp đồng, kế hoạch, Q&A list, báo cáo gần nhất, sổ rủi ro; ③ dự họp với khách để hiểu kỳ vọng và cách giao tiếp; ④ đo hiện trạng: tiến độ thật, chất lượng, effort. Đầu ra: bản đánh giá hiện trạng + top rủi ro, thống nhất với sếp. Chưa thay đổi lớn, trừ rủi ro khẩn cấp.
+> 💡 "30 ngày đầu em lắng nghe" chỉ thuyết phục khi kèm đầu ra cụ thể; không có đầu ra sẽ bị hiểu là thụ động.
+
+**Q98. 60 ngày tiếp theo bạn làm gì?**
+Mục tiêu: **ổn định và cải thiện nhanh**. ① Chọn 2–3 cải tiến có tác động lớn từ bản đánh giá hiện trạng (ví dụ chuẩn hóa báo cáo tiến độ, change control, checklist review); ② thiết lập nhịp vận hành: họp định kỳ, KPI dự án, kênh escalation với onsite; ③ đánh giá năng lực từng thành viên, bắt đầu kế hoạch phát triển cho lead. Đầu ra: KPI dự án đo được hằng tuần và khách nhận báo cáo nhất quán.
+
+**Q99. Đến ngày thứ 90, bạn muốn đạt được gì?**
+Mục tiêu: **tự chủ và tạo kết quả**. ① Dự án chạy theo nhịp, các chỉ số tiến độ, chất lượng, effort nằm trong ngưỡng đã thống nhất; ② có ít nhất một kết quả cụ thể để báo cáo, như giảm bug lọt UAT hoặc đóng một rủi ro lớn; ③ tham gia estimate hoặc proposal cho cơ hội mới; ④ có kế hoạch phát triển cho team và đề xuất cải tiến cho văn phòng. Đây là nền cho kỳ review performance đầu tiên.
+
+**Q100. Làm sao bạn và công ty biết bạn đã thành công sau giai đoạn thử việc?**
+Đề xuất ngay tuần đầu thống nhất 3–5 tiêu chí đo được với sếp: ① mốc dự án đúng hạn, hoặc lệch nhưng báo trước và được khách chấp nhận; ② chất lượng: bug lọt sang khách trong ngưỡng; ③ phản hồi của khách và onsite qua họp định kỳ; ④ sự ổn định của team; ⑤ đóng góp ngoài dự án. Gặp sếp giữa kỳ để điều chỉnh. Tự đề xuất thước đo cho thấy em quản trị bản thân như quản trị dự án.
+> 💡 Kết buổi phỏng vấn bằng ý này là cách thể hiện tư duy Senior: tự đặt thước đo trước khi được giao.
+
+---
+
+# Chương 2 · Nền tảng quản lý dự án (PMBOK · PRINCE2 · EVM) (Q101–Q200)
+
+## 2.1 Khung tổng: dự án, vòng đời, quy trình và tailoring
+
+**Q101. Dự án khác vận hành (operation) ở điểm nào, và vì sao PM outsourcing cần phân biệt rõ?**
+Dự án là nỗ lực **tạm thời** tạo ra kết quả **duy nhất**, có điểm đầu–cuối; vận hành là công việc **lặp lại, liên tục** để duy trì kết quả đó. Trong outsourcing, ranh giới này quyết định hợp đồng và cách đo: dự án đo theo phạm vi–tiến độ–nghiệm thu, còn 運用保守 (unyou hoshu – vận hành & bảo trì) đo theo SLA, số ticket, thời gian phản hồi. Không tách rõ thì khách dễ đẩy việc vận hành vô hạn vào ngân sách dự án.
+> 💡 Ví dụ ghi điểm: sửa lỗi trong thời gian bảo hành thuộc dự án, còn yêu cầu mới phát sinh hằng tháng sau go-live phải chuyển sang hợp đồng vận hành.
+
+**Q102. Vòng đời dự án (project life cycle) khác vòng đời phát triển (development life cycle) thế nào?**
+Project life cycle là chuỗi pha từ khởi động đến đóng dự án; development life cycle là cách tạo ra sản phẩm bên trong: predictive (waterfall), iterative, incremental, adaptive hoặc hybrid. Dự án với khách Nhật thường theo pha 要件定義 (youken teigi – định nghĩa yêu cầu) → 基本設計 (kihon sekkei – thiết kế cơ bản) → 詳細設計 (shousai sekkei – thiết kế chi tiết) → lập trình → test, mỗi pha kết thúc bằng tài liệu được duyệt. Chọn development life cycle theo độ chắc của yêu cầu, không theo sở thích của team.
+
+**Q103. Năm nhóm quy trình (process groups) của PMBOK là gì? Chúng có phải các pha tuần tự không?**
+Gồm Initiating, Planning, Executing, Monitoring & Controlling, Closing. Chúng **không phải** pha tuần tự mà lặp lại trong từng pha và chồng lấn nhau; riêng Monitoring & Controlling chạy suốt dự án. Ví dụ pha 基本設計 vẫn có lập kế hoạch pha, thực hiện, theo dõi và đóng pha bằng 検収 (kenshuu – nghiệm thu) tài liệu thiết kế.
+> 💡 Bẫy kinh điển là đồng nhất process group với phase; nói "process group lặp lại trong mỗi phase" là điểm cộng.
+
+**Q104. PMBOK chuyển từ cách tiếp cận theo quy trình sang theo nguyên tắc và performance domains — điều đó thay đổi gì trong cách làm PM?**
+Bản 6 mô tả 5 process group, 10 knowledge area theo input–tool–output; bản 7 (2021) chuyển sang 12 principles (stewardship, value, systems thinking, tailoring…) và 8 performance domains (stakeholders, team, development approach & life cycle, planning, project work, delivery, measurement, uncertainty). Hệ quả: PM không "chạy đủ process" mà chọn cách làm tạo ra **outcome và giá trị**, đo bằng kết quả chứ không bằng số tài liệu. Công cụ cũ (WBS, EVM, risk register) vẫn dùng, nhưng được tailor theo bối cảnh.
+
+**Q105. Project charter gồm những gì, ai ký, và trong outsourcing thì charter thực tế nằm ở đâu?**
+Charter chính thức khởi động dự án và **trao quyền cho PM**: mục tiêu đo được, phạm vi cấp cao, milestone chính, ngân sách tổng, rủi ro cấp cao, stakeholder chính, tiêu chí thành công, sponsor. Sponsor ký, không phải PM. Trong outsourcing, nội dung này rải ở hợp đồng, proposal và tài liệu kickoff; em gom thành 1 trang tổng quan có 前提条件 (zentei jouken – điều kiện tiền đề) và 対象外 (taishougai – ngoài phạm vi) để hai bên xác nhận ngay buổi kickoff.
+> 💡 Nhấn mạnh charter trao quyền: không có người ký thì PM không có thẩm quyền điều phối nguồn lực.
+
+**Q106. Tailoring là gì? Cho ví dụ tailor quy trình cho dự án 3 tháng và dự án 18 tháng.**
+Tailoring là điều chỉnh quy trình, tài liệu, mức kiểm soát cho vừa quy mô, rủi ro, loại hợp đồng và văn hóa khách. Dự án 3 tháng, 5 người: kế hoạch 1 file, báo cáo tuần, risk register gọn, CR duyệt qua email. Dự án 18 tháng, 40 người: chia stage có gate, CCB họp định kỳ, EVM hằng tuần, configuration audit trước mỗi lần giao, báo cáo nhiều tầng. Nguyên tắc: mức kiểm soát tương xứng với rủi ro, không áp nguyên bộ quy trình "cho đủ".
+
+**Q107. Phân biệt project, program và portfolio. Senior PM ở công ty outsourcing liên quan thế nào với hai cấp sau?**
+Project tạo một kết quả cụ thể; program là nhóm dự án liên quan được quản lý phối hợp để đạt lợi ích chung; portfolio là tập dự án/program được chọn và ưu tiên theo chiến lược tổ chức. Senior PM thường phụ trách nhiều dự án cho cùng một khách, gần với program: chia sẻ nguồn lực, đồng bộ milestone, quản lý rủi ro chéo. Ở cấp portfolio, PM cung cấp dữ liệu tiến độ, margin, rủi ro để lãnh đạo quyết định ưu tiên.
+
+**Q108. PMO là gì, có những loại nào và PM nên tận dụng PMO ra sao?**
+PMO chuẩn hóa quản trị dự án, thường ở 3 mức: supportive (cung cấp template, dữ liệu), controlling (yêu cầu tuân thủ, audit), directive (trực tiếp quản lý dự án). PM tận dụng PMO để lấy dữ liệu dự án cũ cho estimate, template báo cáo, checklist audit, và làm kênh escalation khi thiếu nguồn lực. Đổi lại, PM nộp số liệu đúng hạn để PMO thấy sớm dự án có nguy cơ "đỏ".
+
+**Q109. Cơ cấu tổ chức functional, matrix, projectized ảnh hưởng đến quyền của PM thế nào? Công ty outsourcing thường ở dạng nào?**
+Functional: PM ít quyền, nhân sự thuộc trưởng bộ phận; projectized: PM nắm toàn quyền nguồn lực; matrix (weak/balanced/strong) nằm giữa. Công ty outsourcing thường là matrix: kỹ sư thuộc line manager, PM điều phối theo dự án, nên tranh chấp người giữa các dự án là chuyện thường ngày. Cách làm: chốt resource plan với line manager từ đầu, ghi rõ % allocation và thời gian; khi bị rút người thì escalate kèm tác động tiến độ cụ thể.
+> 💡 Câu này hay đi kèm "PM có quyền gì khi bị rút người?" — trả lời bằng resource plan đã thống nhất và số liệu tác động, không than phiền.
+
+## 2.2 Tích hợp & kiểm soát thay đổi
+
+**Q110. "Integration management" nghĩa là gì trong công việc hằng ngày của PM?**
+Integration là ra quyết định trade-off giữa các ràng buộc (phạm vi, tiến độ, chi phí, chất lượng, rủi ro) để dự án vận hành như một thể thống nhất, thay vì tối ưu từng mảng riêng lẻ. Hằng ngày: gộp kế hoạch con thành project management plan, quyết định nhận CR dựa trên tác động tổng thể, cân nguồn lực giữa sửa bug và làm tính năng mới. PM là người duy nhất nhìn toàn cục nên không thể giao integration cho ai khác.
+
+**Q111. Baseline là gì? Dự án có những baseline nào và khi nào được phép thay đổi?**
+Baseline là phiên bản kế hoạch **đã được phê duyệt**, dùng làm mốc đo hiệu suất: scope baseline (scope statement + WBS + WBS dictionary), schedule baseline và cost baseline; ba cái gộp lại là performance measurement baseline (PMB). Baseline chỉ đổi khi có CR được duyệt qua change control, không đổi chỉ vì đang chậm. Mỗi lần re-baseline phải lưu version cũ để còn đo được độ lệch lịch sử.
+> 💡 Đừng nói "trễ thì re-baseline" — câu đúng là re-baseline khi có thay đổi được duyệt, hoặc baseline cũ mất ý nghĩa và sponsor đồng ý.
+
+**Q112. Mô tả quy trình xử lý change request (CR) chuẩn từ lúc khách đưa yêu cầu đến khi đóng.**
+① Ghi nhận CR vào change log (người yêu cầu, nội dung, lý do, ngày); ② phân tích tác động tới phạm vi, 工数 (kousuu – công số/effort), tiến độ, chất lượng, rủi ro, hợp đồng; ③ trình phương án (làm ngay / gộp đợt sau / không làm) kèm chi phí; ④ người có thẩm quyền hoặc CCB duyệt/từ chối; ⑤ cập nhật baseline, tài liệu, thông báo team; ⑥ theo dõi đến khi nghiệm thu rồi đóng. CR bị từ chối cũng được lưu.
+> 💡 Với khách Nhật, tính cả thời gian 稟議 (ringi – trình duyệt nội bộ) của khách vào lịch CR, có khi mất 1–2 tuần (tham khảo).
+
+**Q113. Change Control Board (CCB) gồm ai, và khi nào PM được tự duyệt thay đổi?**
+CCB thường gồm sponsor/đại diện khách, PM hai bên, BA hoặc tech lead, có thể thêm QA và bộ phận hợp đồng. Change management plan nên định ngưỡng thẩm quyền, ví dụ tham khảo: thay đổi không ảnh hưởng milestone và nằm trong 2–3 man-day buffer thì PM tự duyệt và ghi log; vượt ngưỡng hoặc đụng hợp đồng thì lên CCB. Ngưỡng rõ giúp vừa không nghẽn CCB vừa không lọt thay đổi lớn.
+> 💡 Nêu được ngưỡng phân quyền cụ thể cho thấy bạn đã vận hành change control thật, không chỉ thuộc lý thuyết.
+
+**Q114. Khách yêu cầu thay đổi qua chat trực tiếp với dev, không qua PM. Bạn xử lý thế nào?**
+① Xác nhận nội dung với dev, tạm chưa code; ② liên hệ khách theo 報連相 (hourensou – báo cáo, liên lạc, thảo luận): cảm ơn yêu cầu, xin đưa vào CR để đánh giá tác động; ③ gửi đánh giá trong thời hạn cam kết (vd 1–2 ngày làm việc); ④ phòng ngừa: thống nhất lại kênh nhận yêu cầu trong communication plan, nhắc team quy tắc "yêu cầu mới → báo PM/BrSE (Bridge SE – kỹ sư cầu nối)". Không từ chối khách mà đưa yêu cầu về đúng quy trình.
+
+**Q115. Configuration management khác change control ở điểm nào?**
+Change control quyết định **có thay đổi hay không**; 構成管理 (kousei kanri – quản lý cấu hình) đảm bảo **mọi thành phần được nhận diện, đánh version và nhất quán** sau thay đổi: tài liệu, source, môi trường, dữ liệu test. Bốn hoạt động chính: identification, status accounting, kiểm soát thay đổi trên configuration item, verification & audit. Lỗi kinh điển: CR đã duyệt nhưng tài liệu 基本設計 không lên version, dev và tester làm theo hai bản khác nhau.
+
+**Q116. Trong dự án phần mềm outsourcing, bạn đưa những gì vào danh sách configuration item (CI) và kiểm soát ra sao?**
+Danh sách CI lập từ đầu: tài liệu yêu cầu/thiết kế, source code, script DB, cấu hình môi trường, test case và test data, tài liệu bàn giao, cả bản estimate. Mỗi CI có owner, nơi lưu (Git, kho tài liệu), quy tắc đặt tên version và trạng thái draft/review/approved/baselined. Trước mỗi lần 納品 (nouhin – giao hàng), em chạy configuration audit: version tài liệu khớp bản release, release note khớp danh sách CR đã duyệt.
+
+**Q117. Khi nào nên gộp nhiều CR nhỏ thành một gói thay vì xử lý từng cái?**
+Gộp khi các CR cùng module, không gấp, và chi phí xử lý (phân tích, duyệt, test hồi quy) lớn hơn bản thân thay đổi. Gói CR theo đợt (vd 2 tuần/lần hoặc theo release) giúp khách duyệt một lần, team test hồi quy một lần và estimate chính xác hơn. Ngoại lệ: CR liên quan bảo mật, pháp lý hoặc chặn go-live thì xử lý riêng, ngay.
+
+**Q118. Sponsor phía khách nói: "Thay đổi nhỏ thôi, làm luôn, không cần CR". Bạn phản hồi thế nào mà không làm mất lòng?**
+Em đồng ý về tinh thần nhưng vẫn ghi nhận: "Vâng, để hai bên cùng nắm, em ghi vào change log, tác động khoảng X giờ, không ảnh hưởng milestone". Nếu dưới ngưỡng PM tự duyệt thì làm luôn nhưng có dấu vết; khi nhiều "thay đổi nhỏ" cộng dồn vượt buffer, em trình tổng lũy kế để khách thấy và quyết định. Mục tiêu là minh bạch, không phải tính tiền từng việc nhỏ.
+> 💡 Ý senior: phân biệt "linh hoạt" với "mất kiểm soát" — linh hoạt vẫn có log, tổng lũy kế có ngưỡng cảnh báo.
+
+## 2.3 Phạm vi & yêu cầu
+
+**Q119. Quản lý phạm vi gồm những quy trình nào, và trong dự án với khách Nhật chúng nằm ở đâu?**
+Plan scope management → collect requirements → define scope → create WBS → validate scope → control scope. Yêu cầu, scope statement và WBS hình thành scope baseline; validate và control chạy suốt dự án. Với khách Nhật, collect và define nằm chủ yếu trong pha 要件定義, kết quả là tài liệu 要件定義書 được khách duyệt; WBS do vendor lập trong kế hoạch dự án, làm cơ sở estimate và theo dõi.
+
+**Q120. WBS là gì? Quy tắc 100% (100% rule) nghĩa là gì?**
+WBS phân rã toàn bộ deliverable và công việc của dự án thành các cấp nhỏ dần đến work package. Quy tắc 100%: tổng công việc ở các nút con bằng đúng 100% nút cha — không thiếu, không thừa — và toàn bộ WBS bao trùm 100% phạm vi, kể cả quản lý dự án, review, test, tài liệu, bàn giao. Đây là chỗ estimate hay hụt nhất: chỉ liệt kê tính năng mà quên các việc "ẩn".
+> 💡 Kể tên việc ẩn hay bị quên (PM, review, setup môi trường, data migration, hỗ trợ UAT, sửa lỗi bảo hành) là cách nhanh nhất chứng minh kinh nghiệm.
+
+**Q121. Work package nên nhỏ cỡ nào? Khi nào bạn dừng phân rã WBS?**
+Thông lệ tham khảo là 8–80 giờ công, hoặc không dài quá một chu kỳ báo cáo (1–2 tuần) để theo dõi được tiến độ thật. Em dừng phân rã khi work package: ① estimate được với độ tin cậy chấp nhận được; ② giao được cho một người/nhóm chịu trách nhiệm; ③ có tiêu chí "xong" rõ (vd code + unit test + review đạt). Chia quá nhỏ chỉ tăng chi phí quản lý mà không thêm thông tin.
+
+**Q122. WBS dictionary dùng để làm gì? Dự án nhỏ có cần không?**
+WBS dictionary mô tả chi tiết từng work package: nội dung, deliverable, tiêu chí chấp nhận, owner, estimate, phụ thuộc, tài liệu tham chiếu. Nó tránh việc team offshore, onsite và khách hiểu khác nhau về chữ "xong". Dự án nhỏ có thể tailor thành vài cột thêm trong file WBS Excel (mô tả, tiêu chí xong, owner) thay vì tài liệu riêng.
+
+**Q123. Scope statement khác requirement document ở điểm nào? Nên ghi gì để tránh tranh cãi về sau?**
+Requirement document mô tả **cần gì** (chức năng, phi chức năng, nghiệp vụ); scope statement mô tả **dự án sẽ giao gì**: deliverable, tiêu chí chấp nhận, ràng buộc, giả định và phần **loại trừ**. Để tránh tranh cãi, em ghi rõ danh sách 対象外, các 前提条件 (vd khách cấp môi trường, dữ liệu test, trả lời Q&A trong 2 ngày làm việc) và số vòng chỉnh sửa tài liệu được tính trong giá.
+> 💡 Danh sách out-of-scope và giả định là thứ cứu dự án Fixed Price khỏi tranh chấp — nhắc điều này kèm một ví dụ thật của bạn.
+
+**Q124. Requirement Traceability Matrix (RTM) là gì và bạn dùng nó thế nào?**
+RTM liên kết mỗi yêu cầu với nguồn gốc, thiết kế, module, test case, kết quả test và CR liên quan. Em dùng để: ① kiểm tra không yêu cầu nào bị bỏ sót khi test; ② phân tích tác động khi có CR (đổi yêu cầu X ảnh hưởng màn hình, API, test case nào); ③ chứng minh độ phủ khi nghiệm thu. Tiêu chí tham khảo trước UAT: 100% yêu cầu trong phạm vi có test case và kết quả pass hoặc được khách chấp nhận.
+
+**Q125. Scope creep khác gold plating thế nào? Phòng ngừa từng loại ra sao?**
+Scope creep là phạm vi phình ra **không qua kiểm soát**, thường từ khách hoặc do BA nhận thêm "tiện thể"; gold plating là **team tự làm thêm** ngoài yêu cầu để khách vui. Cả hai đều tốn effort không được trả tiền, tăng lỗi và khó nghiệm thu. Phòng ngừa: creep → mọi yêu cầu mới qua CR, đối chiếu RTM; gold plating → review và test bám spec, tiêu chí xong rõ, ý tưởng cải tiến đưa qua PM để khách chọn.
+> 💡 Bẫy: khen gold plating là "tận tâm". Cách đúng là đề xuất cải tiến cho khách quyết định, không tự ý làm.
+
+**Q126. Validate scope khác control scope và khác quality control thế nào?**
+Validate scope là **khách/sponsor chính thức chấp nhận** deliverable (kết quả là accepted deliverables, vd biên bản 検収); control scope là PM **theo dõi phạm vi so với baseline** và quản lý thay đổi. Quality control là team nội bộ kiểm tra deliverable **có đúng không**, thường làm trước validate scope. Thứ tự: QC nội bộ đạt → giao → khách validate → nghiệm thu.
+
+**Q127. Khách đưa yêu cầu mơ hồ như "màn hình dễ dùng, xử lý nhanh". Bạn biến chúng thành yêu cầu kiểm chứng được thế nào?**
+Đặt câu hỏi để chuyển thành tiêu chí đo được: "nhanh" → ví dụ "tìm kiếm trả kết quả dưới 3 giây với 100.000 bản ghi, 50 user đồng thời"; "dễ dùng" → số bước tối đa cho thao tác chính, tuân thủ guideline UI của khách. Mỗi yêu cầu phi chức năng ghi vào 要件定義書 kèm cách đo và môi trường đo. Khách chưa chốt được thì em ghi thành giả định có số cụ thể để khách xác nhận hoặc sửa.
+
+**Q128. Product scope và project scope khác nhau thế nào? Cho ví dụ.**
+Product scope là đặc tính, chức năng của sản phẩm (vd hệ thống quản lý hợp đồng cho khách bảo hiểm B gồm 30 màn hình, 5 batch), đo theo yêu cầu. Project scope là toàn bộ công việc để tạo ra sản phẩm đó (thiết kế, code, test, chuyển đổi dữ liệu, đào tạo, quản lý dự án), đo theo kế hoạch dự án. Nhiều tranh chấp xảy ra vì khách mặc định data migration, đào tạo user nằm trong project scope dù proposal không ghi.
+
+## 2.4 Tiến độ: CPM, nén lịch, PERT, critical chain
+
+**Q129. Các bước xây dựng schedule từ WBS là gì? Sai lầm hay gặp?**
+Define activities từ work package → sequence (phụ thuộc, lead/lag) → estimate durations theo effort và nguồn lực thật → develop schedule (CPM, cân bằng nguồn lực, buffer) → baseline → control. Sai lầm hay gặp: lấy effort chia số người ra duration, bỏ qua % allocation, quên ngày lễ của cả hai nước (Tết, Golden Week, Obon) và thời gian khách review tài liệu.
+> 💡 Nhắc lịch lễ hai nước và thời gian review của khách là chi tiết "người làm thật" mà interviewer đánh giá cao.
+
+**Q130. Giải thích bốn loại quan hệ phụ thuộc FS, SS, FF, SF và lead/lag bằng ví dụ phần mềm.**
+FS (finish-to-start): xong thiết kế API mới code tích hợp — loại phổ biến nhất. SS: bắt đầu viết test case sau khi bắt đầu thiết kế chi tiết vài ngày (SS + lag). FF: tài liệu hướng dẫn chỉ xong khi code xong. SF hiếm: hệ thống cũ chỉ được tắt khi hệ thống mới bắt đầu chạy. Lead cho việc sau bắt đầu sớm hơn (vd FS − 3 ngày); lag là thời gian chờ bắt buộc (vd chờ khách review 5 ngày).
+
+**Q131. Mini bài toán CPM: A(3 ngày) → B(2) → E(2) → D(2) và A → C(6) → D. Tìm critical path, total float và free float của B và E.**
+Hai đường: A-B-E-D = 3+2+2+2 = 9 ngày; A-C-D = 3+6+2 = 11 ngày → critical path A-C-D, dự án 11 ngày. Forward pass: B (ES 3, EF 5), E (ES 5, EF 7), D bắt đầu sớm nhất ngày 9; backward pass: E (LS 7, LF 9), B (LS 5, LF 7). Total float B = E = 2 ngày; free float B = 0 (E bắt đầu ngay khi B xong), free float E = 9 − 7 = 2.
+> 💡 Ý cần nói ra: B có total float 2 nhưng free float 0 — B trễ không làm trễ dự án nhưng ăn vào float của E.
+
+**Q132. Float âm nghĩa là gì? Và float nên "thuộc về" ai — có nên công khai float của từng task cho team?**
+Float âm xuất hiện khi mốc ràng buộc (vd go-live cố định) sớm hơn ngày kết thúc tính được: kế hoạch hiện tại **không khả thi**, phải crash, fast-track, giảm phạm vi hoặc đàm phán lại mốc. Về float, em coi đó là tài sản của dự án do PM quản lý, không chia sẵn cho từng người, vì theo luật Parkinson và "student syndrome", việc có float thường được làm muộn và tiêu hết float. Team vẫn thấy critical path, nhưng tiến độ đo theo ngày cam kết của từng task.
+
+**Q133. Critical path có thể thay đổi trong dự án không? Bạn theo dõi nó thế nào?**
+Có: khi việc ngoài critical path trễ quá float, khi crash làm đường khác dài hơn, hoặc khi thêm CR. Dự án cũng có thể có nhiều critical path song song, rủi ro cao hơn vì trễ đường nào cũng trễ dự án. Em cập nhật schedule hằng tuần, theo dõi thêm các đường near-critical (float ≤ 2–3 ngày, tham khảo) như thể chúng là critical path.
+
+**Q134. Crashing và fast-tracking khác nhau thế nào? Rủi ro của mỗi cách trong dự án phần mềm?**
+Crashing: thêm nguồn lực (người, OT) vào việc trên critical path để rút ngắn → **tăng chi phí**; rủi ro là thêm người vào dự án đang trễ có thể làm chậm hơn (luật Brooks) do onboarding và giao tiếp. Fast-tracking: làm song song các việc vốn tuần tự (vd code khi thiết kế chưa chốt hết) → **tăng rủi ro làm lại**. Chọn cách nào tùy: việc có chia nhỏ được không, người thêm vào có domain không, đầu vào đã chắc đến đâu.
+> 💡 Nhắc luật Brooks và điều kiện "chỉ crash khi việc tách được và người thêm vào có sẵn context" cho thấy hiểu bản chất, không chỉ thuộc định nghĩa.
+
+**Q135. Mini bài toán crashing: hai việc trên critical path — X: normal 10 ngày/50 triệu, crash 7 ngày/65 triệu; Y: normal 8 ngày/40 triệu, crash 6 ngày/54 triệu. Cần rút 2 ngày, crash việc nào?**
+Chi phí crash mỗi ngày: X = (65 − 50)/(10 − 7) = 5 triệu/ngày; Y = (54 − 40)/(8 − 6) = 7 triệu/ngày. Chọn X: rút 2 ngày tốn thêm khoảng 10 triệu (giả định chi phí tuyến tính). Nguyên tắc: chỉ crash việc trên critical path, chọn việc có chi phí/ngày thấp nhất, rút từng ngày và tính lại critical path sau mỗi bước vì đường khác có thể trở thành critical.
+> 💡 Câu hỏi chéo hay gặp: "crash việc ngoài critical path có rút ngắn dự án không?" — không, chỉ tốn thêm tiền.
+
+**Q136. PERT ba điểm: O = 4, M = 6, P = 14 ngày. Tính expected duration, độ lệch chuẩn và giải thích ý nghĩa.**
+Beta/PERT: E = (O + 4M + P)/6 = (4 + 24 + 14)/6 = 7 ngày; σ = (P − O)/6 = 10/6 ≈ 1,67 ngày. Khoảng ±1σ (≈ 68%) là 5,3–8,7 ngày, ±2σ (≈ 95%) là 3,7–10,3 ngày; nếu dùng phân phối tam giác: (4 + 6 + 14)/3 = 8 ngày. Ý nghĩa: estimate là một khoảng, nên em cam kết với khách theo mức tin cậy (vd 85–90%), không theo giá trị most likely.
+> 💡 Chỉ ra rằng P lệch xa (14 so với 6) kéo E lên trên M — và vì sao estimate phần mềm thường lệch về phía trễ — là điểm cộng.
+
+**Q137. Critical chain method khác CPM ở điểm nào?**
+CPM tính theo phụ thuộc công việc, ngầm giả định nguồn lực không giới hạn; critical chain tính cả **ràng buộc nguồn lực** (vd chỉ có 1 tech lead review). Critical chain cắt phần đệm an toàn trong từng task (estimate ở mức ~50% tin cậy), gom thành **project buffer** cuối chuỗi và **feeding buffer** tại chỗ nhánh phụ nhập vào chuỗi chính. PM theo dõi tốc độ tiêu buffer so với % hoàn thành (fever chart): buffer tiêu nhanh hơn tiến độ thì hành động.
+
+**Q138. Resource leveling và resource smoothing khác nhau thế nào?**
+Leveling điều chỉnh lịch để không ai bị phân bổ quá công suất, **có thể làm đổi critical path và kéo dài ngày kết thúc**. Smoothing chỉ dời việc **trong phạm vi float**, không đổi ngày kết thúc, nên có thể không xử lý hết quá tải. Ví dụ: tech lead vừa review code vừa thiết kế module mới, tải 150% → smoothing dời việc còn float; nếu không đủ, leveling dời thiết kế 1 tuần (dự án trễ) hoặc phải thêm người review.
+
+**Q139. Milestone là gì? Bạn đặt milestone thế nào cho dự án outsourcing với khách Nhật?**
+Milestone là mốc không có duration, đánh dấu sự kiện quan trọng (xong pha, giao hàng, nghiệm thu). Em đặt milestone gắn với **deliverable kiểm chứng được** và lịch nghiệm thu/thanh toán: chốt 要件定義, duyệt thiết kế, code complete, xong integration test, bắt đầu UAT, go-live. Milestone đưa vào báo cáo tuần dạng kế hoạch–thực tế, và báo khách ngay khi dự báo lệch mốc đã cam kết, vd lệch > 1 ngày (tham khảo).
+
+## 2.5 Chi phí & EVM
+
+**Q140. Quản lý chi phí của PM outsourcing gồm những gì?**
+Plan cost management → estimate costs → determine budget (cost baseline) → control costs. Trong outsourcing, chi phí chủ yếu là 工数 nhân sự (theo 人月 (ningetsu – man-month) và đơn giá nội bộ từng level), cộng chi phí onsite, license, hạ tầng, đi lại. PM làm 予実管理 (yojitsu kanri – quản lý kế hoạch so với thực tế) hằng tuần: so effort thực tế với kế hoạch theo từng work package để thấy sớm phần nào đang "đốt" ngân sách.
+
+**Q141. Cost baseline, contingency reserve và management reserve khác nhau thế nào?**
+Cost baseline = tổng estimate các work package + **contingency reserve** (dự phòng cho rủi ro đã nhận diện — known-unknowns), phân bổ theo thời gian, PM dùng theo risk plan. **Management reserve** dành cho unknown-unknowns, **không nằm trong cost baseline** nhưng nằm trong tổng ngân sách (project budget = cost baseline + MR); dùng phải được sponsor/lãnh đạo duyệt, khi dùng thì cost baseline được cập nhật. EVM đo theo cost baseline, không tính MR.
+> 💡 Bẫy kinh điển trong đề PMP: MR không thuộc cost baseline và PM không được tự ý dùng.
+
+**Q142. Giải thích PV, EV, AC bằng ngôn ngữ đơn giản cho người không làm PM.**
+PV (planned value): **lẽ ra** đến hôm nay phải làm xong bao nhiêu việc, quy theo ngân sách kế hoạch. EV (earned value): **thực tế** đã làm xong bao nhiêu việc, cũng quy theo ngân sách kế hoạch. AC (actual cost): **thực tế** đã tiêu bao nhiêu. So EV với PV biết nhanh hay chậm; so EV với AC biết tiết kiệm hay lố. EV là chìa khóa vì nó đo giá trị đã tạo ra, không phải số tiền đã tiêu.
+
+**Q143. Nêu công thức CV, SV, CPI, SPI và cách đọc dấu/giá trị.**
+CV = EV − AC, SV = EV − PV: âm là xấu (lố chi phí/chậm tiến độ), dương là tốt. CPI = EV/AC, SPI = EV/PV: < 1 là xấu, > 1 là tốt; vd CPI 0,8 nghĩa là mỗi 1 đồng bỏ ra chỉ tạo được 0,8 đồng giá trị. Mẹo nhớ: luôn bắt đầu bằng EV; "C" (cost) đi với AC, "S" (schedule) đi với PV.
+
+**Q144. Mini bài toán: BAC = 100.000 USD, kế hoạch 10 tuần chia đều. Cuối tuần 4 hoàn thành 35% công việc, đã chi 42.000 USD. Tính PV, EV, AC, CV, SV, CPI, SPI.**
+PV = 40% × 100.000 = 40.000; EV = 35% × 100.000 = 35.000; AC = 42.000. CV = 35.000 − 42.000 = −7.000; SV = 35.000 − 40.000 = −5.000. CPI = 35/42 ≈ 0,83; SPI = 35/40 = 0,875. Kết luận: dự án vừa **lố chi phí** vừa **chậm tiến độ**; mỗi 1 USD bỏ ra chỉ tạo ra khoảng 0,83 USD giá trị.
+
+**Q145. Tiếp bài Q144: tính EAC, ETC, VAC với giả định hiệu suất chi phí hiện tại tiếp diễn.**
+EAC = BAC/CPI = 100.000/(35/42) = 120.000; ETC = EAC − AC = 120.000 − 42.000 = 78.000; VAC = BAC − EAC = −20.000. Nghĩa là nếu không thay đổi gì, dự án sẽ vượt 20% ngân sách. Khi báo cáo, em đưa kèm nguyên nhân (vd estimate module X thiếu, rework do yêu cầu đổi) và phương án kéo CPI lên, thay vì chỉ báo con số.
+
+**Q146. Có những công thức EAC nào và khi nào dùng từng công thức?**
+① EAC = AC + bottom-up ETC: khi estimate ban đầu sai căn bản, phải ước lại phần còn lại. ② EAC = AC + (BAC − EV): khi độ lệch là **bất thường**, phần còn lại sẽ chạy đúng kế hoạch. ③ EAC = BAC/CPI: khi hiệu suất chi phí hiện tại sẽ **tiếp diễn**. ④ EAC = AC + (BAC − EV)/(CPI × SPI): khi cả chi phí lẫn tiến độ cùng tác động (vd phải đuổi deadline cố định). Với số Q144: ② = 107.000, ③ = 120.000, ④ ≈ 131.100 USD.
+> 💡 Trình bày một dải EAC (lạc quan–bi quan) cho sponsor thay vì một con số duy nhất giúp ra quyết định tốt hơn và thể hiện tư duy senior.
+
+**Q147. TCPI là gì? Tính TCPI cho bài Q144 và diễn giải.**
+TCPI (to-complete performance index) là hiệu suất chi phí **cần đạt** cho phần việc còn lại để về đích đúng mục tiêu: TCPI = (BAC − EV)/(BAC − AC) nếu giữ BAC, hoặc (BAC − EV)/(EAC − AC) nếu theo EAC mới. Bài Q144: (100.000 − 35.000)/(100.000 − 42.000) = 65/58 ≈ 1,12. CPI hiện tại chỉ 0,83 mà phải nhảy lên 1,12 là rất khó; kinh nghiệm tham khảo: TCPI cao hơn CPI quá ~0,1 thì coi BAC không còn khả thi và trình EAC mới.
+
+**Q148. Mini bài toán theo 人月: BAC = 50 MM. Sau 3 tháng: PV = 30 MM, EV = 24 MM, AC = 32 MM. Đánh giá và đề xuất.**
+CPI = 24/32 = 0,75; SPI = 24/30 = 0,8; EAC = 50/0,75 ≈ 66,7 MM (vượt ~16,7 MM); TCPI = (50 − 24)/(50 − 32) = 26/18 ≈ 1,44 — gần như không thể đạt. Đề xuất: ① phân tích nguyên nhân (estimate thiếu, rework, năng suất người mới); ② phần thay đổi chưa tính tiền thì đưa vào CR với khách; ③ trình lãnh đạo EAC mới và phương án giảm lỗ (đổi cơ cấu team, dừng gold plating); ④ ghi bài học để hiệu chỉnh hệ số estimate cho dự án sau.
+
+**Q149. Đo EV cho task phần mềm thế nào để tránh "hội chứng 90%"?**
+"Hội chứng 90%" là task báo 90% rất lâu vì % do người làm tự ước. Em dùng quy tắc đo khách quan: 0/100 (chỉ ghi nhận khi xong hẳn, cho task ngắn hơn một chu kỳ báo cáo), 50/50 hoặc 20/80 (ghi một phần khi bắt đầu, phần còn lại khi xong), hoặc weighted milestone (thiết kế 20% – code 50% – review/test 30%). Ví dụ: A 10 MM đã xong, B 20 MM đang làm (50/50), C 10 MM chưa bắt đầu → EV = 10 + 10 = 20 MM.
+
+**Q150. CPI > 1 nhưng SPI < 1 nói lên điều gì? Và trường hợp ngược lại?**
+CPI > 1, SPI < 1: tiêu ít hơn giá trị làm được nhưng chậm hơn kế hoạch — thường do **nguồn lực chưa vào đủ** như kế hoạch; còn dư địa chi phí để bổ sung người. CPI < 1, SPI > 1: nhanh nhưng tốn — thường do **OT, đổ thêm người** để kịp; cần xem có bền vững không và OT có ăn vào margin không. Luôn soi thêm chất lượng: chỉ số đẹp mà bug tăng là tín hiệu giả.
+> 💡 Câu này kiểm tra khả năng đọc chỉ số kết hợp — nêu giả thuyết nguyên nhân kèm cách kiểm chứng là đủ ghi điểm.
+
+**Q151. Hạn chế của SPI ở giai đoạn cuối dự án là gì?**
+Khi dự án xong, EV = BAC = tổng PV nên SPI luôn tiến về 1 (SV về 0) dù thực tế dự án trễ nhiều tuần. Ngoài ra SPI đo theo giá trị, không theo critical path: làm nhiều việc không quan trọng vẫn có SPI đẹp trong khi critical path đang trễ. Khắc phục: theo dõi song song critical path và milestone, có thể dùng Earned Schedule để đo tiến độ theo đơn vị thời gian.
+
+**Q152. Với dự án Fixed Price cho khách Nhật, EVM còn ý nghĩa gì khi khách không quan tâm chi phí nội bộ của mình?**
+Với FP, khách trả giá cố định nên chi phí vượt là **lỗ của chính công ty mình**; EVM nội bộ là công cụ bảo vệ margin. Em theo dõi 原価 (genka – chi phí gốc) theo effort thực tế × đơn giá nội bộ, dùng CPI để dự báo lợi nhuận, SPI và milestone để báo khách. Báo cáo cho khách chỉ gồm tiến độ, chất lượng; báo cáo nội bộ thêm EAC, margin dự kiến và các CR chưa thu tiền.
+
+**Q153. Cost baseline phân bổ theo thời gian có dạng "S-curve". Bạn dùng S-curve để làm gì?**
+S-curve là đường PV lũy kế theo thời gian, thường dốc nhất ở giữa dự án khi nhân sự đông nhất. Vẽ chung PV, EV, AC trên một biểu đồ là cách 見える化 (mieruka – trực quan hóa) xu hướng: EV dưới PV là chậm, AC trên EV là lố. Em dùng nó trong báo cáo nội bộ hằng tháng và review dự án với lãnh đạo; nó cũng giúp lập kế hoạch dòng tiền và kế hoạch điều phối nhân sự.
+
+## 2.6 Quản lý rủi ro
+
+**Q154. Risk khác issue thế nào? Cho ví dụ cùng một chủ đề.**
+Risk là sự kiện **chưa xảy ra, không chắc chắn**, tác động tích cực hoặc tiêu cực; issue là sự việc **đã xảy ra**, phải xử lý. Ví dụ: "Tech lead có thể nghỉ việc giữa dự án" là risk (theo dõi trong risk register, có kế hoạch giảm thiểu); "Tech lead đã nộp đơn nghỉ" là issue (vào 課題管理表 (kadai kanrihyou – bảng quản lý vấn đề), có người xử lý và hạn xử lý). Risk xảy ra thì chuyển thành issue và kích hoạt kế hoạch ứng phó đã chuẩn bị.
+
+**Q155. Risk register gồm những cột gì?**
+Tối thiểu: ID, mô tả theo cấu trúc **nguyên nhân – sự kiện – tác động** ("Do khách chưa chốt API của ngân hàng A, tích hợp có thể trễ, dẫn tới UAT trễ 2 tuần"), category, probability, impact, điểm ưu tiên, trigger, chiến lược ứng phó, hành động cụ thể + hạn, risk owner, trạng thái, residual risk. Em review register hằng tuần trong họp nội bộ và đưa top rủi ro vào 進捗報告 (shinchoku houkoku – báo cáo tiến độ) gửi khách.
+> 💡 Viết rủi ro theo mẫu "nguyên nhân – sự kiện – tác động" giúp phân biệt với lo lắng chung chung kiểu "rủi ro về tiến độ".
+
+**Q156. Đánh giá rủi ro định tính và định lượng khác nhau thế nào? Khi nào cần định lượng?**
+Định tính: chấm probability × impact theo thang (vd 1–5) trên ma trận để xếp ưu tiên — nhanh, dùng cho mọi dự án. Định lượng: quy ra số tiền/ngày cụ thể bằng EMV, decision tree, mô phỏng Monte Carlo cho tiến độ — dùng cho dự án lớn, FP rủi ro cao hoặc khi phải quyết định dự phòng bao nhiêu. Thực tế em đánh giá định tính toàn bộ, định lượng cho top 5–10 rủi ro chạm tới hợp đồng hoặc milestone.
+
+**Q157. Tính EMV: rủi ro A xác suất 30%, tác động −50 triệu; rủi ro B xác suất 10%, tác động −200 triệu; cơ hội C xác suất 20%, tác động +40 triệu. Dùng kết quả thế nào?**
+EMV = xác suất × tác động: A = −15 triệu, B = −20 triệu, C = +8 triệu; tổng = −27 triệu. Con số này là cơ sở đặt contingency reserve cho các rủi ro đã nhận diện (khoảng 27 triệu, cộng biên an toàn tùy chính sách). B xác suất thấp nhưng EMV lớn nhất — đáng đầu tư giảm thiểu nếu chi phí giảm thiểu nhỏ hơn phần EMV giảm được.
+
+**Q158. Decision tree: tự phát triển module (200 triệu, 40% khả năng phát sinh thêm 100 triệu) hay mua package (230 triệu, 10% khả năng tốn thêm 50 triệu tùy biến)?**
+Tự làm: 200 + 0,4 × 100 = 240 triệu. Mua: 230 + 0,1 × 50 = 235 triệu. Theo EMV, mua rẻ hơn 5 triệu, nhưng chênh lệch nhỏ nên phải xét thêm yếu tố phi tiền tệ: phụ thuộc nhà cung cấp, license dài hạn, mức tùy biến, yêu cầu bảo mật của khách tài chính. Decision tree giúp định lượng, không thay thế phán đoán.
+
+**Q159. Năm chiến lược ứng phó rủi ro tiêu cực là gì? Cho ví dụ trong dự án phần mềm.**
+**Avoid**: loại bỏ nguyên nhân, vd không dùng thư viện chưa ổn định. **Transfer**: chuyển tác động cho bên thứ ba, vd thuê nhà cung cấp hạ tầng có cam kết SLA và điều khoản bồi thường. **Mitigate**: giảm xác suất/tác động, vd làm PoC tích hợp sớm, cho 2 người cùng nắm module chủ chốt. **Accept**: chấp nhận chủ động (có contingency) hoặc bị động. **Escalate**: rủi ro vượt thẩm quyền/phạm vi dự án thì chuyển lên cấp phù hợp, vd chính sách nhân sự toàn công ty.
+
+**Q160. Chiến lược cho cơ hội (positive risk): exploit, enhance, share khác nhau thế nào?**
+**Exploit**: làm cho cơ hội chắc chắn xảy ra, vd giao người giỏi nhất để xong sớm và nhận thưởng giao sớm. **Enhance**: tăng xác suất/tác động, vd tái sử dụng framework nội bộ để giảm effort. **Share**: chia cơ hội với bên nắm bắt tốt hơn, vd liên kết với đối tác cloud. Ngoài ra còn escalate và accept. Trong outsourcing, cơ hội hay bị bỏ quên trong register; em luôn ghi vài dòng như mở rộng phạm vi giai đoạn sau, tái sử dụng component.
+> 💡 Có cơ hội trong risk register cho thấy tư duy tạo giá trị và doanh thu — đúng điều công ty outsourcing cần ở Senior PM.
+
+**Q161. Trigger và risk owner là gì? Vì sao risk owner không nên luôn là PM?**
+Trigger là dấu hiệu cảnh báo rủi ro sắp hoặc đã xảy ra, vd "khách trả lời Q&A trễ quá 3 ngày" là trigger của rủi ro trễ thiết kế. Risk owner theo dõi trigger và thực thi kế hoạch ứng phó. PM chịu trách nhiệm cả quy trình, nhưng owner nên là người gần nguồn rủi ro nhất: rủi ro kỹ thuật → tech lead, rủi ro môi trường phía khách → onsite/BrSE, rủi ro nhân sự → line manager. Như vậy phản ứng nhanh hơn và PM không thành điểm nghẽn.
+
+**Q162. Secondary risk và residual risk khác nhau thế nào?**
+Residual risk là phần rủi ro **còn lại** sau khi đã ứng phó (vd làm PoC rồi vẫn còn khả năng API của khách thay đổi) — cần contingency hoặc chấp nhận. Secondary risk là rủi ro **mới sinh ra** từ chính biện pháp ứng phó (vd thêm 3 người mới để giảm rủi ro trễ → phát sinh rủi ro chất lượng vì người mới chưa nắm nghiệp vụ). Cả hai đều phải ghi vào register, không coi rủi ro "đã xử lý" là hết.
+
+**Q163. Contingency plan, fallback plan và workaround khác nhau thế nào?**
+Contingency plan là kế hoạch **chuẩn bị trước**, kích hoạt khi trigger xảy ra; fallback plan là phương án **dự phòng thứ hai** khi contingency không hiệu quả. Workaround là cách xử lý **không có kế hoạch trước**, cho rủi ro chưa nhận diện hoặc đã chấp nhận bị động. Ví dụ go-live: contingency = rollback theo kịch bản đã diễn tập; fallback = chạy song song hệ thống cũ thêm 1 tuần; workaround = nhập liệu tay tạm thời cho một batch lỗi không lường trước.
+
+**Q164. Làm sao nhận diện rủi ro hiệu quả ở đầu dự án outsourcing cho khách tài chính Nhật?**
+Kết hợp: ① checklist từ lessons learned dự án cũ (khách mới, công nghệ mới, team mới, yêu cầu chưa chốt, phụ thuộc bên thứ ba); ② workshop với tech lead, BrSE, QA; ③ phân tích giả định và ràng buộc trong proposal — giả định nào có thể sai thì thành rủi ro; ④ hỏi khách rủi ro phía họ (lịch release hệ thống lõi, quy định bảo mật, audit). Với khách tài chính, chú ý thêm bảo mật dữ liệu, phê duyệt nhiều tầng và môi trường test bị giới hạn truy cập.
+> 💡 Nói được "giả định sai chính là rủi ro" (assumption analysis) là cầu nối đẹp giữa proposal và quản lý rủi ro.
+
+## 2.7 Stakeholder & giao tiếp
+
+**Q165. Bạn nhận diện và phân tích stakeholder thế nào? Power/interest grid dùng ra sao?**
+Nguồn đầu tiên là 体制図 (taiseizu – sơ đồ tổ chức dự án) của hai bên; liệt kê cả phía khách (sponsor, IT, người dùng nghiệp vụ, bảo mật/audit), phía mình (lãnh đạo, line manager, onsite, team, QA) và bên thứ ba. Xếp vào lưới: power cao–interest cao → **manage closely**; power cao–interest thấp → **keep satisfied**; power thấp–interest cao → **keep informed**; thấp–thấp → **monitor**. Kết quả là stakeholder register có chiến lược riêng cho từng nhóm.
+
+**Q166. Stakeholder engagement assessment matrix là gì?**
+Ma trận so sánh mức tham gia **hiện tại (C)** và **mong muốn (D)** của từng stakeholder theo 5 mức: unaware, resistant, neutral, supportive, leading. Khoảng cách C–D chỉ ra hành động cần làm: vd trưởng phòng nghiệp vụ của khách đang resistant vì sợ hệ thống mới tăng việc, mong muốn supportive → demo sớm, mời review màn hình, chỉ ra lợi ích cụ thể cho bộ phận họ. Em cập nhật ma trận ở mỗi milestone.
+
+**Q167. RACI là gì? Lỗi phổ biến khi lập RACI?**
+RACI xác định cho mỗi hoạt động/deliverable: Responsible (người làm), Accountable (chịu trách nhiệm cuối, duyệt), Consulted (được hỏi ý kiến), Informed (được thông báo). Lỗi phổ biến: nhiều A cho một việc (rốt cuộc không ai chịu trách nhiệm), không có R, quá nhiều C làm chậm quyết định, lập xong không ai dùng. Ví dụ tài liệu 要件定義書: R = BrSE/BA, A = PM, C = người dùng nghiệp vụ của khách, I = team dev.
+> 💡 Quy tắc hay bị hỏi lại: mỗi việc có đúng một A.
+
+**Q168. Số kênh giao tiếp tính thế nào? Team đang 10 người, thêm 5 người thì tăng bao nhiêu kênh?**
+Công thức n(n − 1)/2. 10 người: 10 × 9/2 = 45 kênh; 15 người: 15 × 14/2 = 105 kênh; tăng 60 kênh. Ý nghĩa thực tế: số kênh tăng gần theo bình phương, nên team lớn phải chia nhóm nhỏ có lead, chuẩn hóa ai báo ai qua công cụ gì, và hạn chế họp toàn đội. Đây cũng là lý do thêm người không làm năng suất tăng tuyến tính.
+> 💡 Đề PMP hay hỏi "tăng thêm bao nhiêu kênh" — phải lấy hai kết quả trừ nhau, đừng dừng ở một con số.
+
+**Q169. Communication management plan gồm những gì?**
+Trả lời: ai cần thông tin gì, khi nào, qua kênh nào, định dạng và ngôn ngữ nào, ai gửi, mức chi tiết. Ví dụ: báo cáo tuần bằng tiếng Nhật gửi khách thứ Sáu; họp định kỳ 30 phút/tuần có 議事録 (gijiroku – biên bản họp) gửi trong 24 giờ; báo cáo tháng nội bộ cho lãnh đạo; quy tắc escalation theo mức nghiêm trọng (vd sự cố nghiêm trọng báo khách trong 1 giờ — tham khảo). Plan gắn với stakeholder register để mỗi nhóm nhận đúng mức thông tin.
+
+**Q170. Push, pull và interactive communication khác nhau thế nào? Khi nào dùng từng loại?**
+Interactive (họp, gọi) hiệu quả nhất cho vấn đề phức tạp, cần quyết định hoặc nhạy cảm như thông báo trễ tiến độ. Push (email, báo cáo gửi đi) cho thông tin cần đến đúng người nhưng không cần phản hồi ngay. Pull (wiki, dashboard, công cụ quản lý ticket) cho thông tin nhiều người tự tra cứu khi cần. Với khách Nhật, tin xấu nên báo bằng interactive trước, rồi gửi email xác nhận bằng văn bản để lưu vết.
+
+**Q171. Một status report tốt gửi khách gồm những gì?**
+Trạng thái tổng (xanh/vàng/đỏ có tiêu chí rõ), tiến độ theo milestone và % hoàn thành có cơ sở đo, chỉ số chất lượng (số bug, mật độ bug), top rủi ro và issue cần khách hỗ trợ kèm hạn trả lời, CR, kế hoạch tuần tới. Nguyên tắc: kết luận trước, chi tiết sau; số liệu thay tính từ; luôn có mục "cần khách quyết định gì". Báo cáo đỏ không bao giờ là bất ngờ — khách đã được báo miệng trước.
+> 💡 Định nghĩa tiêu chí màu (vd vàng: dự báo trễ milestone ≤ 3 ngày, còn kiểm soát được; đỏ: trễ hơn hoặc cần khách quyết định) để tránh báo cáo "dưa hấu" — ngoài xanh trong đỏ.
+
+**Q172. Làm thế nào quản lý stakeholder quyền lực cao nhưng ít quan tâm (nhóm keep satisfied)?**
+Họ ít đọc báo cáo chi tiết nhưng có thể can thiệp bất ngờ, vd giám đốc khối của khách dừng dự án ngay tại buổi review. Cách làm: gửi tóm tắt 1 trang theo tháng/milestone, tập trung vào lợi ích và quyết định cần họ; mời vào các buổi demo quan trọng; qua sponsor trao đổi trước các quyết định lớn theo kiểu 根回し (nemawashi – vận động, thống nhất trước) thay vì đưa thẳng vào cuộc họp lớn. Mục tiêu: họ không bao giờ bị bất ngờ.
+
+**Q173. Một stakeholder phía khách liên tục phản đối thiết kế đã được duyệt. Bạn tiếp cận thế nào?**
+① Tìm nguyên nhân thật qua trao đổi riêng (sợ mất quyền, bị bỏ qua lúc lấy yêu cầu, hay có nhu cầu nghiệp vụ chưa được hiểu); ② cập nhật engagement matrix và trao đổi với sponsor; ③ điểm nào hợp lý thì đưa vào CR có đánh giá tác động, điểm nào không thì để sponsor phía khách quyết định dựa trên dữ liệu; ④ phòng ngừa: mời họ vào review sớm ở các pha sau. PM không tranh luận đúng sai với khách mà tạo cơ chế để khách tự quyết.
+
+**Q174. Dự án có onsite ở Nhật và offshore ở Đà Nẵng: bạn tổ chức luồng giao tiếp ra sao?**
+Thiết kế luồng một cửa: khách ↔ onsite/BrSE ↔ PM/team offshore, kèm quy tắc khi nào được trao đổi trực tiếp (vd dev giải thích kỹ thuật thì cc BrSE). Có một nơi duy nhất lưu Q&A表 (Q&A hyou – bảng hỏi đáp), quyết định và tài liệu; họp ngắn onsite–offshore hằng ngày, tận dụng chênh lệch 2 giờ (Nhật sớm hơn Việt Nam). PM theo dõi số Q&A quá hạn và thời gian trả lời trung bình để phát hiện nghẽn.
+
+## 2.8 Procurement & loại hợp đồng (góc nhìn quốc tế)
+
+**Q175. So sánh hợp đồng Fixed Price (FP) và Time & Material (T&M) từ góc độ rủi ro.**
+FP: giá cố định cho phạm vi xác định — rủi ro chi phí **nằm ở bên cung cấp**, khách dễ dự toán; hợp khi yêu cầu rõ và ổn định. T&M: khách trả theo effort thực tế × đơn giá — rủi ro chi phí **nằm ở bên mua**, linh hoạt khi yêu cầu chưa rõ. Với vendor, FP có thể lãi cao nếu estimate tốt nhưng lỗ nặng nếu phạm vi trôi; T&M margin ổn định hơn nhưng khách đòi minh bạch effort và năng suất.
+
+**Q176. Hợp đồng cost-reimbursable (CPFF, CPIF, CPAF) là gì? Có gặp trong outsourcing phần mềm không?**
+Bên mua trả chi phí thực tế hợp lệ cộng phí: CPFF (cost plus fixed fee) — phí cố định; CPIF (cost plus incentive fee) — phí thưởng theo mục tiêu, phần tiết kiệm/vượt chia theo tỷ lệ; CPAF (cost plus award fee) — thưởng theo đánh giá của bên mua. Dạng thuần túy hiếm gặp trong outsourcing phần mềm thương mại, nhưng tinh thần "chia sẻ rủi ro, thưởng theo mục tiêu" xuất hiện trong T&M có trần hoặc thưởng khi giao sớm, đạt chất lượng.
+
+**Q177. Hợp đồng FPIF (fixed price incentive fee) tính thế nào? Cho mini ví dụ.**
+FPIF có target cost, target profit, tỷ lệ chia (share ratio) và ceiling price. Ví dụ: target cost 100, target profit 10, share 80/20 (bên mua/bên bán), ceiling 120. Actual cost 90: tiết kiệm 10, bên bán hưởng 20% = 2 → profit 12, giá 102. Actual cost 110: vượt 10, bên bán chịu 2 → profit 8, giá 118 (dưới ceiling). Chi phí đẩy giá vượt ceiling thì bên bán tự chịu toàn bộ phần vượt.
+
+**Q178. Make-or-buy analysis là gì? Ngoài chi phí, bạn cân nhắc những yếu tố nào?**
+Make-or-buy quyết định tự làm hay mua/thuê ngoài một phần dự án (module, dịch vụ, nhân sự). Ngoài tổng chi phí sở hữu, em xét: năng lực cốt lõi (phần tạo lợi thế thì giữ), thời gian, kiểm soát chất lượng và IP, bảo mật dữ liệu, tải nguồn lực hiện có, rủi ro phụ thuộc. Hợp đồng với khách Nhật thường yêu cầu xin phép trước khi 再委託 (saiitaku – giao lại cho bên thứ ba), nên phải xử lý điều này trước khi chọn "buy".
+
+**Q179. Quy trình procurement gồm những bước chính nào, và vì sao PM phía vendor cũng cần hiểu?**
+Plan procurement (mua gì, loại hợp đồng, tiêu chí chọn) → conduct procurement (gửi RFI/RFQ/RFP, chấm đề xuất theo tiêu chí có trọng số, đàm phán, ký) → control procurement (theo dõi hiệu suất nhà cung cấp, thanh toán theo nghiệm thu, xử lý claim, đóng hợp đồng). PM ở công ty outsourcing thường đứng ở phía "được mua": hiểu quy trình này giúp viết proposal bám tiêu chí chấm và đoán trước những gì khách sẽ kiểm soát.
+
+**Q180. RFI, RFQ, RFP khác nhau thế nào? Khi nhận RFP, bạn đọc gì đầu tiên?**
+RFI: hỏi thông tin năng lực để sàng lọc; RFQ: xin báo giá khi yêu cầu đã rõ, chủ yếu so giá; RFP: xin đề xuất giải pháp kèm giá cho bài toán phức tạp. Khi nhận RFP, tiếng Nhật là 提案依頼書 (teian iraisho – thư yêu cầu đề xuất), em đọc trước tiêu chí đánh giá và trọng số, phạm vi, ràng buộc (deadline, công nghệ, bảo mật), hình thức hợp đồng, rồi lập danh sách câu hỏi làm rõ gửi khách trong hạn hỏi đáp.
+> 💡 Nhiều proposal thua vì trình bày theo ý mình thay vì bám tiêu chí chấm của RFP — nói ra điều này cho thấy kinh nghiệm presales.
+
+**Q181. Khi nào nên chọn T&M có trần (not-to-exceed) hoặc mô hình lai thay vì FP thuần?**
+Khi yêu cầu chưa rõ hoàn toàn nhưng khách cần kiểm soát ngân sách: T&M có trần cho phép linh hoạt mà khách vẫn có giới hạn chi. Mô hình lai phổ biến: giai đoạn đầu (làm rõ yêu cầu, PoC) theo T&M, khi yêu cầu đã chốt thì chuyển phần phát triển sang FP. Cách này giảm rủi ro estimate sai cho vendor và giảm rủi ro "trả tiền không giới hạn" cho khách.
+
+**Q182. Bạn quản lý một đối tác phụ (subcontractor) cung cấp nhân sự hoặc module cho dự án như thế nào?**
+Hợp đồng với đối tác phải phản ánh cam kết với khách theo kiểu back-to-back: phạm vi, tiêu chuẩn chất lượng, bảo mật, NDA, mốc giao. Khi thực hiện: đưa đối tác vào cùng quy trình (coding convention, review, báo cáo tuần), đo bằng chỉ số rõ (đúng hạn, mật độ bug, tỷ lệ review không đạt), nghiệm thu từng phần trước khi tích hợp. Với khách, mình vẫn chịu trách nhiệm cuối cùng — không thể nói "lỗi do đối tác".
+> 💡 Từ khóa "back-to-back" và "trách nhiệm cuối cùng vẫn là của mình" thể hiện đúng tinh thần chịu trách nhiệm cao nhất mà JD yêu cầu.
+
+## 2.9 Đóng dự án, lessons learned & đo thành công
+
+**Q183. Các hoạt động chính khi đóng dự án (hoặc đóng một pha) là gì?**
+① Xác nhận nghiệm thu chính thức tất cả deliverable (biên bản 検収 có chữ ký); ② bàn giao tài liệu, source, tài khoản, kiến thức cho khách/team vận hành; ③ đóng hợp đồng: đối chiếu CR, thanh toán, nghĩa vụ bảo hành; ④ giải phóng nguồn lực kèm đánh giá thành viên; ⑤ lessons learned và 完了報告書 (kanryou houkokusho – báo cáo hoàn thành); ⑥ lưu trữ hồ sơ. Dự án bị hủy giữa chừng cũng phải đóng theo quy trình này.
+> 💡 Nhắc "dự án hủy cũng phải đóng chính thức" — đề PMP hay bẫy đúng điểm này.
+
+**Q184. Lessons learned nên thu thập khi nào và làm sao để chúng thực sự được dùng lại?**
+Thu thập **suốt dự án** (cuối mỗi pha/milestone, ngay sau sự cố), không đợi cuối dự án khi người đã quên hoặc đã rời đi. Mỗi bài học ghi theo dạng: bối cảnh – chuyện gì xảy ra – nguyên nhân gốc – hành động đề xuất – áp dụng cho ai. Để dùng lại: đưa vào kho lessons learned của tổ chức, cập nhật checklist rủi ro, hệ số estimate, template và 横展開 (yokotenkai – nhân rộng sang dự án khác); khi mở dự án mới, bắt buộc đọc bài học của dự án tương tự.
+
+**Q185. Ngoài tam giác sắt (phạm vi–thời gian–chi phí), bạn đo thành công dự án bằng gì?**
+Thêm: chất lượng (mật độ bug sau release, số sự cố production trong thời gian bảo hành), sự hài lòng của khách (khảo sát, khách có gia hạn hoặc mở rộng hợp đồng không), margin thực tế so với kế hoạch, sức khỏe team (nghỉ việc, OT, mức hài lòng) và lợi ích kinh doanh khách đạt được khi dùng hệ thống. Dự án đúng hạn, đúng ngân sách nhưng khách không ký tiếp hoặc team kiệt sức thì chưa thể gọi là thành công.
+> 💡 Câu trả lời senior nhấn vào "khách ký tiếp hợp đồng" — chỉ số kinh doanh mà công ty outsourcing thực sự quan tâm.
+
+**Q186. Benefits realization là gì? PM phía vendor có trách nhiệm gì với lợi ích sau dự án?**
+Benefits realization là đảm bảo lợi ích kinh doanh dự kiến trong business case (vd minh họa: giảm 30% thời gian xử lý hồ sơ bảo hiểm) thực sự đạt được, thường đo sau khi dự án đóng. Trách nhiệm chính thuộc sponsor/khách, nhưng PM vendor nên hiểu mục tiêu kinh doanh từ đầu để ưu tiên đúng, đề xuất chỉ số đo, và sau go-live hỏi lại khách về kết quả. Đây cũng là cơ sở tự nhiên để đề xuất giai đoạn tiếp theo.
+
+**Q187. Business case và benefits management plan khác project charter thế nào?**
+Business case trả lời "**vì sao** đáng đầu tư": vấn đề, các phương án, chi phí–lợi ích, rủi ro; benefits management plan mô tả **lợi ích nào, đo thế nào, khi nào, ai chịu trách nhiệm**. Hai tài liệu này thường có trước dự án và là đầu vào của charter; charter thì chính thức khởi động dự án và trao quyền cho PM. Khi bối cảnh đổi khiến business case không còn hợp lý, dự án nên được xem xét dừng.
+
+**Q188. NPV, IRR, payback period dùng thế nào khi chọn dự án? Nếu chúng mâu thuẫn thì sao?**
+NPV: giá trị hiện tại ròng của dòng tiền — dương mới đáng làm, càng lớn càng tốt. IRR: lãi suất làm NPV = 0 — càng cao càng tốt. Payback: thời gian hoàn vốn — càng ngắn càng ít rủi ro. Khi mâu thuẫn, ưu tiên NPV vì phản ánh trực tiếp giá trị tạo thêm. Hai khái niệm đi kèm: opportunity cost là giá trị của phương án tốt nhất bị bỏ qua; sunk cost (chi phí đã bỏ ra) không được dùng để quyết định.
+> 💡 Bẫy kinh điển: lấy sunk cost biện minh tiếp tục dự án ("đã tốn 2 tỷ rồi") — PM chỉ nhìn chi phí và lợi ích phía trước.
+
+**Q189. Bạn tổ chức buổi lessons learned cuối dự án với khách Nhật thế nào để không thành buổi đổ lỗi?**
+Chuẩn bị dữ liệu trước (timeline sự kiện, chỉ số tiến độ, bug, CR) để thảo luận theo fact; đặt quy tắc "bàn về quy trình, không bàn về cá nhân"; dùng khung KPT (Keep–Problem–Try) quen thuộc ở Nhật. Làm nội bộ trước để team nói thẳng, sau đó làm với khách dưới dạng 振り返り (furikaeri – nhìn lại) có danh sách hành động cụ thể cho giai đoạn sau. Sự cố lớn thì gửi kèm biện pháp 再発防止 (saihatsu boushi – phòng ngừa tái phát).
+
+**Q190. Dự án bị dừng giữa chừng vì khách cắt ngân sách. PM cần làm gì?**
+① Xin xác nhận quyết định dừng và ngày hiệu lực bằng văn bản; ② dừng phát sinh chi phí mới, chốt trạng thái thực tế: deliverable nào xong, cái nào dở dang ở mức nào; ③ thống nhất với khách phần được nghiệm thu, thanh toán theo hợp đồng, bàn giao tài liệu và source; ④ bố trí lại nhân sự với line manager, làm lessons learned nội bộ. Giữ quan hệ tốt, vì khách cắt ngân sách năm nay có thể quay lại năm sau.
+
+## 2.10 PRINCE2 & câu hỏi kiểu đề PMP
+
+**Q191. PRINCE2 có 7 principles nào? Nguyên tắc nào bạn thấy hữu ích nhất trong outsourcing?**
+Continued business justification, learn from experience, defined roles and responsibilities, manage by stages, manage by exception, focus on products, tailor to suit the project. Hữu ích nhất với em là **manage by stages** (chia giai đoạn, cuối mỗi giai đoạn quyết định có đi tiếp không) và **focus on products** (định nghĩa sản phẩm và tiêu chí chất lượng trước khi làm), vì khớp với cách khách Nhật nghiệm thu theo pha và theo tài liệu.
+
+**Q192. Kể tên 7 themes và 7 processes của PRINCE2.**
+Themes (theo bản 2017; bản cập nhật sau đổi tên gọi một số mục): Business Case, Organization, Quality, Plans, Risk, Change, Progress. Processes: Starting up a Project, Directing a Project, Initiating a Project, Controlling a Stage, Managing Product Delivery, Managing a Stage Boundary, Closing a Project. Themes là các khía cạnh phải quản lý liên tục; processes mô tả ai làm gì theo trình tự, từ trước khi khởi động đến khi đóng dự án.
+
+**Q193. Management by exception và tolerances trong PRINCE2 vận hành thế nào?**
+Project Board đặt tolerance (dung sai cho phép) cho PM theo các khía cạnh time, cost, scope, quality, risk, benefits — vd stage này ±10% chi phí, ±1 tuần (tham khảo). Trong dung sai, PM tự quyết và chỉ báo cáo định kỳ (Highlight Report); khi **dự báo** vượt dung sai, PM lập Exception Report trình Board, Board quyết định chấp nhận, yêu cầu Exception Plan hay dừng dự án. Cơ chế này giúp lãnh đạo không phải quản lý vi mô mà vẫn kiểm soát được.
+> 💡 Chữ quan trọng là "dự báo vượt" — escalate khi thấy xu hướng, không đợi vượt rồi mới báo.
+
+**Q194. Tổ chức dự án PRINCE2 gồm những vai trò nào? Ánh xạ sang dự án outsourcing với khách Nhật ra sao?**
+Project Board gồm Executive (chịu trách nhiệm business case, quyết định cuối), Senior User (đại diện người dùng), Senior Supplier (đại diện bên cung cấp); bên dưới là Project Manager, Team Manager, Project Assurance, Project Support. Ánh xạ tham khảo: Executive = sponsor phía khách; Senior User = trưởng bộ phận nghiệp vụ của khách; Senior Supplier = lãnh đạo delivery phía vendor; Team Manager = team leader offshore; Assurance = QA độc lập hoặc PMO.
+
+**Q195. PRINCE2 khác PMBOK ở điểm cơ bản nào? Có dùng chung được không?**
+PMBOK là **bộ hướng dẫn kiến thức**: mô tả cần quản lý gì và kỹ thuật nào (EVM, CPM, quản lý stakeholder), không áp đặt vai trò cụ thể. PRINCE2 là **phương pháp có quy định** rõ vai trò, quy trình, tài liệu quản lý và cơ chế stage/tolerance. Dùng chung rất tốt: PRINCE2 cho khung quản trị (ai quyết, khi nào), PMBOK cho kỹ thuật (lập lịch, chi phí, rủi ro) — em thường lấy stage gate + tolerance của PRINCE2 và EVM/CPM của PMBOK.
+
+**Q196. Câu kiểu đề PMP: Một thành viên báo rằng khách nhờ thêm một tính năng nhỏ và bạn ấy đã làm xong. PM nên làm gì đầu tiên?**
+Không phạt thành viên, cũng chưa đưa thẳng lên CCB; trước hết **đánh giá tác động** của thay đổi đã làm (phạm vi, tiến độ, chất lượng, hợp đồng). Sau đó đưa vào change control để được duyệt hoặc gỡ ra, cập nhật tài liệu và nhắc lại quy trình với team. Logic đề PMP: phát hiện thay đổi → phân tích tác động → quy trình chính thức → cập nhật kế hoạch → truyền thông.
+> 💡 Trong đề PMP, đáp án "phân tích tác động trước" gần như luôn thắng các đáp án hành động ngay khi chưa có thông tin.
+
+**Q197. Câu kiểu đề PMP: Giữa dự án, một rủi ro chưa có trong register đã xảy ra. PM làm gì trước tiên?**
+Rủi ro chưa nhận diện mà đã xảy ra thì là issue: PM áp dụng **workaround** để khống chế tác động, ghi vào issue log, sau đó phân tích nguyên nhân, cập nhật risk register (rủi ro tương tự có thể còn) và xem lại cách nhận diện rủi ro. Tác động vượt thẩm quyền thì escalate. Khác với rủi ro đã nhận diện: khi đó bước đầu tiên là kích hoạt kế hoạch ứng phó đã chuẩn bị.
+
+**Q198. Câu kiểu đề PMP: Giữa dự án, khách cử một trưởng phòng mới làm người duyệt nghiệm thu. PM nên làm gì trước tiên?**
+Trước tiên **cập nhật stakeholder register** và phân tích người này: quyền hạn, kỳ vọng, mức quan tâm, yêu cầu riêng. Sau đó gặp trực tiếp để giới thiệu dự án, xác nhận lại tiêu chí nghiệm thu và các quyết định đã chốt, rồi cập nhật communication plan. Đừng mặc định người mới chấp nhận mọi thỏa thuận cũ — khả năng họ mở lại yêu cầu đã chốt phải đưa vào risk register.
+> 💡 Trong đề PMP, stakeholder mới xuất hiện → đáp án thường là "cập nhật stakeholder register và phân tích" trước mọi hành động khác.
+
+**Q199. Câu kiểu đề PMP: Sponsor yêu cầu rút ngắn 2 tuần nhưng không tăng ngân sách, không giảm phạm vi. PM xử lý thế nào?**
+Xét fast-tracking trên critical path trước (không tốn thêm tiền nhưng tăng rủi ro làm lại) và phân bổ lại nguồn lực trong team, rồi trình sponsor phân tích: rút được bao nhiêu ngày, kèm rủi ro gì. Nếu không đủ 2 tuần, đưa các phương án trade-off: crash với chi phí X, hoãn phạm vi Y sang release sau, hoặc chấp nhận rủi ro Z. PM không tự ý cắt test hay nhận bừa — sponsor quyết định dựa trên dữ liệu, mọi lựa chọn được ghi lại.
+> 💡 Đề PMP ưu tiên "phân tích và đưa phương án cho sponsor", không phải "từ chối" hay "đồng ý rồi bắt team OT".
+
+**Q200. PMP, PRINCE2, PMI-ACP, PSM/CSM khác nhau thế nào và có giá trị gì với Senior PM outsourcing?**
+PMP (PMI) bao quát quản lý dự án cả predictive, agile và hybrid; PRINCE2 là phương pháp quản trị theo stage, phổ biến ở Anh và châu Âu; PMI-ACP tập trung vào agile; PSM (Scrum.org) và CSM (Scrum Alliance) chuyên về vai trò Scrum Master. Giá trị thực tế: tạo ngôn ngữ chung với khách và đồng nghiệp, tăng độ tin cậy trong proposal, nhưng không thay được kinh nghiệm xử lý tình huống thật. Lộ trình hợp lý: PMP làm nền, thêm PSM hoặc PMI-ACP nếu làm nhiều dự án agile.
+> 💡 JD ghi ưu tiên các chứng chỉ này và công ty hỗ trợ thi PMP — nếu chưa có, hãy nêu kế hoạch học và thi cụ thể thay vì né câu hỏi.
+
+---
+
+# Chương 3 · Agile, Scrum, Waterfall & Hybrid trong dự án Nhật (Q201–Q300)
+
+## 3.1 Waterfall & V-model kiểu Nhật
+
+**Q201. Hãy mô tả chuỗi 工程 của một dự án waterfall kiểu Nhật từ đầu đến cuối.**
+Chuỗi 工程 (koutei – công đoạn) chuẩn: 要件定義 (youken teigi – định nghĩa yêu cầu) → 基本設計 (kihon sekkei – thiết kế cơ bản) → 詳細設計 (shousai sekkei – thiết kế chi tiết) → 製造 (seizou – lập trình) → 単体テスト (tantai tesuto – unit test) → 結合テスト (ketsugou tesuto – integration test) → 総合テスト (sougou tesuto – system test) → 受入テスト (ukeire tesuto – acceptance test). Mỗi 工程 kết thúc bằng review và phê duyệt 成果物 (seikabutsu – sản phẩm bàn giao) rồi mới sang bước sau. Tên gọi tùy công ty nên em chốt bảng 工程 với khách ngay kickoff.
+
+**Q202. V-model ánh xạ các 工程 thiết kế với các mức test như thế nào?**
+Nhánh trái là thiết kế, nhánh phải là test kiểm chứng tương ứng: 要件定義 ↔ 受入テスト, 基本設計 ↔ 総合テスト, 詳細設計 ↔ 結合テスト, 製造 ↔ 単体テスト. Ý nghĩa thực tế: test case mức nào viết dựa trên tài liệu thiết kế mức đó, và test viewpoint nên lập ngay khi thiết kế xong chứ không đợi code. Một số công ty ghép khác (vd 基本設計 ↔ 結合テスト), nên em xác nhận mapping trong kế hoạch test từ đầu.
+> 💡 Bẫy: nói "unit test viết từ tài liệu yêu cầu" là sai tầng — interviewer quen V-model sẽ bắt ngay.
+
+**Q203. 上流工程 và 下流工程 khác nhau thế nào, offshore Việt Nam thường nhận phần nào?**
+`上流工程` (jouryuu koutei – công đoạn thượng nguồn) gồm 要件定義, 基本設計: xác định "làm gì", cần hiểu nghiệp vụ và làm trực tiếp với khách. `下流工程` (karyuu koutei – hạ nguồn) gồm 詳細設計 → 製造 → test: "làm thế nào". Offshore truyền thống nhận từ 詳細設計 đến 結合テスト, onsite và BrSE (Bridge System Engineer – kỹ sư cầu nối) giữ 基本設計. Muốn lên thượng nguồn để tăng giá trị, Senior PM cần lộ trình năng lực: domain, tiếng Nhật, BrSE.
+> 💡 Nói được "muốn nhận 上流 thì phải chứng minh bằng chất lượng 下流 trước" thể hiện tư duy chiến lược.
+
+**Q204. 手戻り là gì và vì sao trong waterfall nó đắt?**
+`手戻り` (temodori – làm lại do lỗi từ công đoạn trước) xảy ra khi lỗi yêu cầu/thiết kế đến lúc test mới lộ ra, buộc quay lại sửa tài liệu, code, test case rồi test lại. Phát hiện càng muộn càng đắt vì phải đi ngược qua nhiều 工程 và nhiều 成果物 đã phê duyệt. Cách giảm: review chéo tài liệu, Q&A sớm với khách, prototype màn hình quan trọng và exit criteria rõ cho mỗi 工程.
+
+**Q205. Khi nào waterfall vẫn là lựa chọn đúng?**
+Waterfall hợp khi ① yêu cầu ổn định, có quy định rõ (hệ thống lõi ngân hàng, bảo hiểm, kế toán), ② chi phí sai cao và cần audit trail tài liệu, ③ hợp đồng 請負 (ukeoi – khoán theo kết quả) giá cố định với phạm vi chốt, ④ tích hợp nhiều hệ thống cần lịch test liên kết cố định, ⑤ thay thế hệ thống cũ với spec "như hiện trạng". Tiêu chí em dùng: độ bất định yêu cầu thấp và chi phí thay đổi muộn cao → waterfall; ngược lại → agile hoặc hybrid.
+> 💡 Đừng chê waterfall — nhiều khách tài chính Nhật vẫn chạy waterfall; trả lời "chọn theo bối cảnh, có tiêu chí" chín chắn hơn.
+
+**Q206. Exit criteria của một 工程 thường gồm những gì?**
+Tối thiểu: ① 成果物 hoàn thành theo danh sách đã thống nhất, ② review xong và mọi 指摘 (shiteki – điểm bị chỉ ra khi review) đã đóng hoặc có kế hoạch xử lý, ③ Q&A với khách không còn câu mở ảnh hưởng 工程 sau, ④ chỉ số chất lượng đạt ngưỡng thỏa thuận, ⑤ khách phê duyệt. Em đặt checklist này thành gate trong kế hoạch, không "trượt" sang 工程 sau khi chưa đạt, trừ khi rủi ro được chấp nhận bằng văn bản.
+
+**Q207. Waterfall có thể chạy chồng lấn các 工程 không? Rủi ro gì?**
+Có, thường gọi là overlapping: bắt đầu 詳細設計 module A khi 基本設計 module B chưa xong, hoặc chia phase theo module. Lợi ích là rút ngắn lịch; rủi ro là thay đổi thượng nguồn lan xuống và 手戻り nhân lên. Em chỉ cho chồng lấn khi phần thượng nguồn của chính module đó đã được phê duyệt, ghi giả định vào risk register và giữ khoảng 5–10% effort dự phòng cho 手戻り (tham khảo).
+
+**Q208. Trong waterfall, làm sao phát hiện sớm lỗi yêu cầu trước khi code?**
+① Prototype/mock màn hình và luồng chính ngay trong 基本設計 để khách "thấy" thay vì chỉ đọc tài liệu, ② walkthrough tài liệu với khách theo checklist, ③ viết test viewpoint của 総合テスト song song 基本設計 — không viết được test nghĩa là yêu cầu chưa rõ, ④ làm spike kỹ thuật cho phần rủi ro như tích hợp, hiệu năng. Đây là cách đưa vòng phản hồi ngắn vào waterfall mà không phá cấu trúc 工程.
+
+**Q209. Waterfall và V-model khác nhau thế nào? Có phải hai mô hình riêng?**
+V-model là biến thể của waterfall, nhấn mạnh mỗi mức thiết kế có một mức test kiểm chứng tương ứng. Waterfall thuần chỉ nói thứ tự tuần tự; V-model nói thêm "test được lập kế hoạch từ lúc thiết kế" và phân biệt verification với validation. Ở dự án Nhật, khi khách nói ウォーターフォール (waterfall) gần như luôn ngầm hiểu theo V-model với đủ 単体, 結合, 総合, 受入.
+
+**Q210. Offshore làm đến 結合テスト, khách tự làm 総合テスト nhưng lại tính bug lọt cho offshore. PM xử lý ranh giới trách nhiệm thế nào?**
+① Chốt bằng văn bản phạm vi từng 工程 và định nghĩa "bug lọt"; ② thống nhất tiêu chí bàn giao 結合テスト (số case, độ phủ viewpoint, bug còn mở) mà khách đồng ý; ③ khi bug phát sinh ở 総合テスト, phân loại nguồn gốc — lỗi spec/thiết kế phía khách hay lỗi chế tạo offshore — chứ không nhận hết; ④ với bug của mình: phân tích nguyên nhân, 再発防止 (saihatsu boushi – phòng ngừa tái phát) và 横展開 (yokotenkai – áp dụng sang chỗ tương tự).
+> 💡 Nhận nhanh và rõ phần lỗi của mình — khách Nhật đánh giá thái độ này cao hơn việc tranh luận đúng sai.
+
+## 3.2 Scrum framework
+
+**Q211. Scrum có những thành phần nào theo Scrum Guide 2020?**
+Cấu trúc "3-5-3": ① 3 accountabilities: Product Owner, Scrum Master, Developers; ② 5 events: Sprint (chứa các event khác), Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective; ③ 3 artifacts kèm commitment: Product Backlog → Product Goal, Sprint Backlog → Sprint Goal, Increment → Definition of Done. Nền tảng là empiricism (transparency, inspection, adaptation) và lean thinking.
+> 💡 Dùng đúng từ "accountabilities", "Developers" (không phải "roles", "Development Team") cho thấy bạn cập nhật bản 2020.
+
+**Q212. Ba commitment Product Goal, Sprint Goal, DoD có tác dụng gì?**
+Mỗi commitment cho artifact một thước đo tiến độ: Product Goal là mục tiêu dài hạn mà Product Backlog hướng tới; Sprint Goal là lý do tồn tại của sprint, giúp team linh hoạt đổi item mà vẫn giữ cam kết; DoD định nghĩa khi nào item đủ chất lượng để thành Increment. Ở dự án outsource em hay gặp sprint thiếu Sprint Goal — sprint thành "danh sách ticket" và khách chỉ đếm số ticket xong.
+
+**Q213. Timebox của các event Scrum là bao nhiêu?**
+Với sprint 1 tháng: Sprint ≤ 1 tháng, Sprint Planning tối đa 8 giờ, Daily Scrum 15 phút, Sprint Review tối đa 4 giờ, Sprint Retrospective tối đa 3 giờ; sprint ngắn hơn thì các event thường ngắn hơn. Refinement không phải event; Scrum Guide bản cũ gợi ý không quá 10% capacity. Với khách Nhật, em đặt lịch review cố định cùng thứ, cùng giờ để khách dễ xếp lịch nội bộ.
+> 💡 Bẫy PSM: "refinement là event" — sai, đó là hoạt động liên tục.
+
+**Q214. Sprint Planning trả lời những câu hỏi nào?**
+Ba chủ đề: ① Why – sprint này mang lại giá trị gì, team cùng PO chốt Sprint Goal; ② What – chọn item từ Product Backlog đủ để đạt goal, dựa trên capacity và hiệu suất quá khứ; ③ How – Developers tách item thành việc nhỏ, thường ≤ 1 ngày. Output là Sprint Backlog gồm Sprint Goal, item đã chọn và kế hoạch thực hiện. Ở offshore, em yêu cầu PO hoặc proxy PO có mặt ít nhất phần Why–What.
+
+**Q215. Daily Scrum đúng nghĩa khác gì một buổi báo cáo tiến độ?**
+Daily Scrum là buổi Developers tự inspect tiến độ hướng tới Sprint Goal và điều chỉnh kế hoạch cho 24 giờ tới, không phải báo cáo cho PM hay khách. Scrum Guide 2020 bỏ bắt buộc 3 câu hỏi; team tự chọn cấu trúc, miễn 15 phút và xoay quanh goal. Dấu hiệu sai: mọi người nhìn PM khi nói, hoặc thảo luận kỹ thuật kéo dài — em tách phần đó ra buổi ngắn ngay sau daily.
+
+**Q216. Sprint Review có phải buổi khách nghiệm thu không?**
+Không. Sprint Review là buổi làm việc để inspect Increment và điều chỉnh Product Backlog cùng stakeholder, không phải gate phê duyệt; release có thể diễn ra bất cứ lúc nào trong sprint. Tuy vậy với khách Nhật, em vẫn ghi 議事録 (gijiroku – biên bản họp): feedback, item được chấp nhận theo DoD/AC, item quay về backlog — làm bằng chứng tiến độ cho 検収 (kenshuu – nghiệm thu) theo hợp đồng khi cần.
+
+**Q217. Ai có quyền hủy sprint và khi nào nên hủy?**
+Chỉ Product Owner có quyền hủy sprint, khi Sprint Goal trở nên lỗi thời — vd khách đổi chiến lược hay dừng tính năng. Hủy sprint tốn kém: item đã Done được review, phần còn lại quay về Product Backlog và lên kế hoạch lại. Thực tế em ưu tiên cùng PO đàm phán lại phạm vi trong sprint, giữ Sprint Goal nếu còn ý nghĩa; hủy là lựa chọn cuối.
+> 💡 Bẫy PSM: Scrum Master hoặc stakeholder "hủy sprint" — sai, chỉ PO có quyền này.
+
+**Q218. Definition of Ready (DoR) có trong Scrum Guide không? Có nên dùng?**
+DoR không có trong Scrum Guide, đó là practice bổ sung. Nó hữu ích ở outsourcing vì chênh lệch ngôn ngữ: item chỉ vào sprint khi có user story rõ, AC đo được, mockup/API spec, dependency đã xử lý, Q&A với khách đã đóng và đã estimate. Rủi ro: DoR quá cứng biến thành mini-waterfall và chặn dòng chảy; em giữ DoR 5–7 mục, PO có thể nhận item chưa đủ nếu ghi rõ giả định.
+
+**Q219. DoD nên có gì trong dự án outsource cho khách Nhật?**
+DoD là tiêu chuẩn chất lượng áp cho mọi item: code review xong, unit test pass và đạt coverage thỏa thuận, không còn bug mức cao, test đủ theo AC, merge vào nhánh chính và deploy được lên staging, tài liệu liên quan đã cập nhật. Với khách Nhật, em thêm mục "đã cập nhật 設計書 (sekkeisho – tài liệu thiết kế) tiếng Nhật" nếu hợp đồng yêu cầu, vì đây là thứ hay bị bỏ quên nhất.
+> 💡 Phân biệt rõ DoD (chung cho mọi item) với AC (riêng từng story) — câu PSM rất hay gặp.
+
+**Q220. Product Backlog refinement diễn ra thế nào khi PO ở Nhật, team ở Đà Nẵng?**
+Em làm 2 lớp: ① BA/BrSE phía offshore chuẩn bị trước — tách story, viết AC, liệt kê câu hỏi tiếng Nhật trong bảng Q&A; ② buổi refinement online 45–60 phút mỗi tuần với PO để chốt câu hỏi và ưu tiên, team estimate ngay sau đó. Mục tiêu là luôn có backlog "ready" cho 1–2 sprint tới. Câu hỏi chưa được trả lời quá 2 ngày làm việc thì em escalate vì sẽ chặn sprint sau.
+
+**Q221. Scrum Team nên có bao nhiêu người? Team offshore 15 người có nên là một Scrum Team?**
+Scrum Guide 2020 khuyến nghị Scrum Team thường từ 10 người trở xuống. Với 15 người, Daily khó giữ 15 phút và kênh giao tiếp tăng mạnh; em tách 2 team theo feature/domain (không tách theo FE/BE), dùng chung một Product Backlog và một PO, đồng bộ qua refinement chung và Scrum of Scrums. Mỗi team phải đủ kỹ năng để tự làm ra Increment.
+
+**Q222. Scrum Guide 2020 thay đổi gì so với bản trước mà PM nên biết?**
+Những điểm chính: ① bỏ "Development Team", chỉ còn Developers trong một Scrum Team; ② thêm Product Goal; ③ mỗi artifact có commitment; ④ dùng "accountabilities" thay "roles", "self-managing" thay "self-organizing"; ⑤ bỏ 3 câu hỏi Daily, Sprint Planning thêm chủ đề Why; ⑥ Scrum Master là "true leaders who serve" thay "servant leader"; ⑦ ngôn ngữ bớt IT, dùng được ngoài phần mềm. Câu hỏi bẫy khi thi PSM hay xoáy vào ①②⑤.
+
+## 3.3 Scrum Master, PM và PO trong mô hình outsourcing
+
+**Q223. Scrum không có vai trò PM. Vậy Senior PM ở công ty outsourcing làm gì khi dự án chạy Scrum?**
+Scrum Team không có PM, nhưng hợp đồng outsource vẫn cần người chịu trách nhiệm thương mại: ngân sách, hợp đồng, nhân sự, rủi ro cấp dự án, báo cáo cho khách và ban lãnh đạo. Em đứng ngoài Scrum Team ở tầng delivery: bảo vệ team khỏi yêu cầu ngoài luồng, quản lý capacity, quản lý thay đổi hợp đồng, đảm bảo SM và proxy PO làm được việc. Dự án nhỏ em có thể kiêm SM nhưng phải tách bạch lúc nào đang ở vai SM.
+> 💡 Đừng nói "PM chính là Scrum Master" — interviewer muốn thấy bạn hiểu khác biệt nhưng vẫn thực dụng.
+
+**Q224. Khách Nhật làm PO được không? Thực tế thường gặp vấn đề gì?**
+Được, và là lý tưởng vì khách nắm nghiệp vụ và ưu tiên. Vấn đề hay gặp: ① PO là người kiêm nhiệm, ít thời gian; ② quyết định cần 稟議 (ringi – trình duyệt nội bộ) nên chậm; ③ rào cản ngôn ngữ; ④ PO quen viết spec chi tiết hơn là sắp ưu tiên theo giá trị. Cách làm: lịch refinement/review cố định, SLA trả lời Q&A, proxy PO phía offshore chuẩn bị backlog, và thống nhất quyết định nào PO tự chốt, quyết định nào phải trình cấp trên.
+
+**Q225. Proxy PO phía offshore là gì, rủi ro và cách kiểm soát?**
+Proxy PO là người phía offshore (thường BrSE hoặc BA) đại diện PO hằng ngày: làm rõ yêu cầu, viết story/AC, trả lời câu hỏi của team trong phạm vi được ủy quyền. Rủi ro: tự quyết thay khách, đoán nghiệp vụ, thành điểm nghẽn. Kiểm soát: ① ma trận ủy quyền bằng văn bản (được quyết gì, phải hỏi gì), ② mọi quyết định ghi log để khách xem lại hằng tuần, ③ ưu tiên và chấp nhận cuối cùng vẫn thuộc PO thật.
+> 💡 Câu "proxy PO không sở hữu ưu tiên, chỉ sở hữu sự rõ ràng của yêu cầu" rất đáng nói.
+
+**Q226. BrSE có nên kiêm proxy PO hay Scrum Master không?**
+BrSE kiêm proxy PO là hợp lý vì đã nắm nghiệp vụ, ngôn ngữ và là đầu mối với khách; nhưng phải giới hạn tải để không thành nút thắt, vd một BrSE phục vụ tốt khoảng một team 5–8 người (tham khảo). BrSE kiêm Scrum Master thì em hạn chế vì xung đột vai: BrSE đại diện yêu cầu, SM bảo vệ quy trình và team; khi áp lực, BrSE thường nghiêng về khách. Bắt buộc kiêm thì em nói rõ ở kickoff và theo dõi qua retro.
+
+**Q227. Scrum Master khác PM truyền thống ở điểm cốt lõi nào?**
+PM truyền thống lập kế hoạch, giao việc và điều phối; Scrum Master không giao việc mà phục vụ: coaching team tự quản, gỡ impediment, giúp PO quản backlog hiệu quả, giúp tổ chức hiểu và áp dụng Scrum. Thước đo của SM là team tự vận hành tốt hơn, không phải SM bận hơn. Khi chuyển từ PM sang SM, điều khó nhất là im lặng để team tự ra quyết định trong daily thay vì chỉ đạo.
+
+**Q228. Mô hình ラボ型 và mô hình 請負 phân vai PO/SM/PM khác nhau ra sao?**
+`ラボ型開発` (rabo-gata kaihatsu – team chuyên trách thuê theo tháng): khách thường giữ PO, offshore cung cấp team và SM, PM offshore lo capacity, chất lượng, nhân sự; phạm vi linh hoạt nên Scrum chạy tự nhiên. 請負 theo dự án: offshore chịu trách nhiệm kết quả nên PM offshore phải nắm chặt phạm vi, thay đổi và nghiệm thu; PO phía khách vẫn sắp ưu tiên nhưng trong khung phạm vi hợp đồng. Điều khoản hợp đồng chi tiết thuộc phần hợp đồng, ở đây chỉ là phân vai.
+
+**Q229. Khách dự Sprint Review nhưng không bao giờ tham gia refinement. Bạn làm gì?**
+① Xác nhận nguyên nhân: thiếu thời gian, chưa hiểu mục đích, hay nghĩ đó là việc của vendor; ② đề xuất định dạng nhẹ: 30 phút, gửi trước câu hỏi tiếng Nhật, PO chỉ chốt ưu tiên và trả lời câu đóng/mở; ③ cho khách thấy chi phí của việc vắng mặt bằng dữ liệu (số item bị chặn, số 手戻り sau review); ④ nếu vẫn không được, thỏa thuận proxy PO chuẩn bị và khách duyệt bất đồng bộ trong 2 ngày làm việc.
+> 💡 Số liệu của chính dự án ("3 item bị đẩy sang sprint sau vì chưa có trả lời") thuyết phục khách Nhật hơn lý thuyết agile.
+
+**Q230. Ai chịu trách nhiệm chất lượng trong Scrum Team — SM, PM hay QA?**
+Theo Scrum, Developers chịu trách nhiệm chất lượng Increment theo DoD, cả team cùng sở hữu; QA là một kỹ năng trong team chứ không phải trạm kiểm cuối dây chuyền. Về hợp đồng, PM phía offshore vẫn chịu trách nhiệm cuối cùng với khách về chất lượng bàn giao. Em kết hợp hai lớp: team sở hữu chất lượng hằng ngày qua DoD, PM sở hữu quy trình QA và chỉ số chất lượng ở cấp dự án.
+
+**Q231. Senior PM phụ trách 3 dự án Scrum cùng lúc thì nên tham gia event nào?**
+Em không dự mọi event của 3 team. Ưu tiên: ① Sprint Review — thấy kết quả thật và gặp khách; ② phần Why–What của Sprint Planning khi có rủi ro phạm vi; ③ đọc kết quả và action retro thay vì ngồi dự, để team nói thật. Daily để SM lo; em theo dõi qua board, burndown và chỉ can thiệp khi chỉ báo lệch ngưỡng, vd Sprint Goal có nguy cơ trượt từ giữa sprint. Thời gian còn lại dành cho khách, nhân sự và rủi ro cấp dự án.
+
+## 3.4 Kanban & flow
+
+**Q232. Kanban khác Scrum ở những điểm chính nào?**
+Kanban không có sprint, vai trò hay event bắt buộc; nó tập trung vào dòng chảy liên tục: trực quan hóa workflow, giới hạn WIP, quản lý và cải tiến flow bằng số liệu. Scrum cam kết theo sprint với Sprint Goal; Kanban kéo việc mới khi có chỗ trống. Scrum hay đo velocity, Kanban đo WIP, cycle time, throughput, work item age. Hai cách kết hợp được, vd Scrum dùng board có WIP limit.
+
+**Q233. WIP limit là gì và đặt bao nhiêu là hợp lý?**
+WIP limit là số việc tối đa được nằm trong một cột/trạng thái cùng lúc; chạm giới hạn thì phải hoàn thành việc đang dở trước khi kéo việc mới ("stop starting, start finishing"). Điểm khởi đầu tham khảo: bằng hoặc ít hơn số người làm cột đó, rồi điều chỉnh theo dữ liệu — vd nghẽn ở review thì hạ WIP cột dev. Mục đích là làm lộ bottleneck và giảm chuyển đổi ngữ cảnh.
+> 💡 Nói "WIP limit làm lộ vấn đề chứ không tự giải quyết vấn đề" cho thấy bạn hiểu bản chất.
+
+**Q234. Phân biệt lead time và cycle time.**
+Lead time: từ khi yêu cầu được tạo hoặc cam kết đến khi giao cho khách — là thời gian khách cảm nhận. Cycle time: từ khi bắt đầu làm đến khi xong — phản ánh hiệu năng nội bộ team. Hai số chênh lớn nghĩa là việc nằm chờ lâu trong hàng đợi. Điểm bắt đầu/kết thúc phải thống nhất trước khi đo, nhất là với ticket 障害 (shougai – sự cố) có cam kết SLA với khách.
+
+**Q235. Định luật Little nói gì và PM dùng nó thế nào?**
+Little's Law (với hệ ổn định): cycle time trung bình = WIP trung bình / throughput trung bình. Ví dụ team có 20 việc dở, mỗi tuần xong 10 việc → mỗi việc trung bình mất khoảng 2 tuần. Muốn giảm cycle time mà không thêm người thì phải giảm WIP. Em dùng nó để giải thích với khách vì sao liên tục chèn việc gấp vào hàng làm mọi việc khác chậm lại.
+> 💡 Minh họa bằng con số đơn giản giúp khách chưa quen agile hiểu ngay — đừng chỉ đọc công thức.
+
+**Q236. Cumulative Flow Diagram (CFD) đọc như thế nào?**
+CFD xếp chồng số lượng việc theo từng trạng thái theo thời gian. Khoảng cách dọc giữa các dải ≈ WIP tại thời điểm đó; khoảng cách ngang ≈ thời gian việc đi qua các trạng thái; độ dốc dải Done ≈ throughput. Dấu hiệu xấu: một dải phình to (bottleneck ở trạng thái đó), dải Done đi ngang (không giao được gì), tất cả dải cùng đi ngang (team bị chặn).
+
+**Q237. Khi nào nên chọn Kanban thay Scrum trong dự án Nhật?**
+Kanban hợp với 保守運用 (hoshu unyou – bảo trì, vận hành): việc đến không đoán trước (sự cố, yêu cầu nhỏ, câu hỏi), ưu tiên đổi hằng ngày, có SLA phản hồi. Scrum hợp với phát triển tính năng mới cần mục tiêu theo chu kỳ. Nhiều team em chọn kết hợp: Scrum cho phát triển, cộng một làn expedite kiểu Kanban riêng cho 障害 với WIP 1–2 để không phá sprint.
+
+**Q238. Thiết kế classes of service cho team 保守 của khách sản xuất C như thế nào?**
+Em chia 3–4 lớp theo chi phí của sự chậm trễ: ① Expedite – sự cố ảnh hưởng dây chuyền sản xuất, vượt hàng chờ, WIP 1; ② Fixed date – thay đổi theo hạn pháp lý/kế toán, ưu tiên theo hạn; ③ Standard – cải tiến thông thường, vào trước làm trước; ④ Intangible – nợ kỹ thuật, nâng version thư viện, giữ tỉ lệ cố định khoảng 10–20% capacity (tham khảo). Mỗi lớp có SLA phản hồi/xử lý thống nhất với khách và đo hằng tháng.
+> 💡 Nhắc "phân bổ cố định cho intangible" cho thấy bạn nghĩ đến sức khỏe hệ thống dài hạn, không chỉ chạy theo ticket.
+
+**Q239. Throughput và work item age dùng để dự báo như thế nào?**
+Throughput (số việc xong mỗi tuần) cho phép dự báo "khi nào xong N việc" theo xác suất thay vì một ngày cứng, vd lấy dữ liệu 8–12 tuần gần nhất chạy Monte Carlo ra "85% khả năng xong trước ngày X". Work item age (việc đang làm đã bao lâu) là chỉ báo sớm: việc nào có tuổi vượt mốc cycle time phân vị 85% trong lịch sử thì SM/PM xem ngay. Dự báo kèm xác suất rất hợp với khách cần minh bạch.
+
+**Q240. Team chuyển sang Kanban, khách lo lắng vì "không còn deadline". Bạn xử lý sao?**
+① Xác nhận lo lắng cụ thể: khách cần ngày cho release hay cho báo cáo nội bộ; ② bổ sung nhịp: replenishment hằng tuần để khách chọn ưu tiên, demo 2 tuần/lần, báo cáo tháng; ③ cam kết bằng SLA theo class of service và dự báo xác suất từ throughput; ④ việc có hạn cố định đưa vào lớp fixed date. Kanban không bỏ cam kết — nó chuyển cam kết từ "danh sách việc" sang "mức dịch vụ đo được".
+
+## 3.5 Ước lượng & metrics Agile
+
+**Q241. Story point là gì và vì sao không nên quy đổi thẳng ra giờ?**
+Story point là đơn vị tương đối đo độ lớn của item — gộp khối lượng, độ phức tạp và độ không chắc chắn — so với một story chuẩn của team. Quy đổi cứng "1 point = 8 giờ" làm mất lợi ích ước lượng tương đối và sinh áp lực "thực tế vượt giờ". Nhưng khách Nhật thường cần 人月 (ningetsu – người-tháng) cho ngân sách; em quy đổi ở cấp release bằng số sprint × chi phí team, không quy đổi từng story.
+> 💡 Chuẩn bị sẵn cách nói chuyện point ↔ 人月 với khách — đây là câu hỏi thực tế, không chỉ lý thuyết.
+
+**Q242. Planning poker diễn ra thế nào và hay sai ở đâu?**
+Mỗi người chọn lá bài theo dãy kiểu Fibonacci (1, 2, 3, 5, 8, 13…), lật cùng lúc; người chọn cao nhất và thấp nhất giải thích, rồi chọn lại đến khi hội tụ. Mục tiêu là làm lộ những cách hiểu khác nhau, không phải ra con số. Lỗi hay gặp: lead/BrSE nói số trước gây neo (anchoring), PM ép số, item quá lớn (≥ 13) không tách, thành viên trẻ ngại phản biện — em để người ít kinh nghiệm giải thích trước.
+
+**Q243. Velocity dùng để làm gì và không được dùng để làm gì?**
+Velocity là tổng point Done mỗi sprint, dùng để ① team tự lên kế hoạch sprint, ② PO dự báo release theo khoảng, vd trung bình 3–5 sprint gần nhất kèm min/max. Không dùng để so sánh giữa các team (point mỗi team một thang), đánh giá năng suất cá nhân hay làm KPI ép tăng. Velocity bị biến thành KPI sẽ dẫn đến lạm phát point — số tăng nhưng giá trị giao không đổi.
+> 💡 Nhắc định luật Goodhart (chỉ số thành mục tiêu thì mất giá trị đo) là điểm cộng ở câu này.
+
+**Q244. Ban lãnh đạo muốn so sánh velocity giữa 3 team offshore để đánh giá. Bạn phản hồi thế nào?**
+Em giải thích velocity là thước đo nội bộ: point của team A không cùng đơn vị với team B, so sánh sẽ kéo theo lạm phát point và hành vi đối phó. Em đề xuất bộ chỉ số so sánh được: ① tỉ lệ đạt Sprint Goal, ② lead time cho cùng loại việc, ③ chất lượng — bug lọt sau release, 手戻り, ④ mức hài lòng khách qua khảo sát định kỳ. Lãnh đạo cần quản lý; việc của PM là đưa đúng thước đo, không chỉ nói "không".
+
+**Q245. Burndown và burnup khác nhau thế nào? Khi nào nên dùng burnup?**
+Burndown cho thấy công việc còn lại giảm dần về 0; đơn giản nhưng khi phạm vi tăng, đường đi ngang và khó biết là team chậm hay việc tăng. Burnup có hai đường: tổng phạm vi và phần đã xong — thấy rõ scope creep. Với khách hay thêm yêu cầu, em dùng burnup cấp release để thảo luận đánh đổi: "phạm vi tăng 20%, ngày dự báo lùi 2 sprint; muốn giữ ngày thì bỏ item nào?".
+> 💡 Burnup là công cụ đàm phán phạm vi rất mạnh — kể một lần bạn đã dùng nó với khách.
+
+**Q246. Predictability (độ tin cậy dự báo) đo như thế nào?**
+Cách đơn giản: tỉ lệ point hoặc item Done so với cam kết đầu sprint, và tỉ lệ sprint đạt Sprint Goal. Ngưỡng tham khảo em dùng: ổn định 80–100% là tốt; dưới 70% liên tục là kế hoạch quá lạc quan hoặc bị gián đoạn nhiều; thường xuyên trên 100% là team đang để dự phòng quá dày. Điều quan trọng là xu hướng ổn định, vì khách Nhật đánh giá vendor qua độ tin cậy của lời hứa hơn là tốc độ.
+
+**Q247. Khách yêu cầu "tăng velocity 20% từ sprint tới". Bạn trả lời thế nào?**
+① Hỏi lại mục tiêu thật: giao tính năng X sớm hơn hay giảm chi phí; ② giải thích velocity tăng theo mệnh lệnh thường chỉ là đổi cách ước lượng hoặc hy sinh chất lượng, sau đó quay lại thành 手戻り; ③ đưa phương án thật: thu hẹp phạm vi theo ưu tiên, gỡ trở ngại (chờ Q&A, môi trường test), thêm người kèm thời gian ramp-up, hoặc tách release; ④ cùng khách theo dõi lead time và tỉ lệ đạt goal thay cho velocity.
+
+**Q248. #NoEstimates là gì? Có áp dụng được cho dự án Nhật không?**
+Cách tiếp cận #NoEstimates giảm hoặc bỏ ước lượng từng item, thay bằng tách item về kích thước tương đương rồi đếm số item và dùng throughput để dự báo. Ưu điểm: tiết kiệm thời gian, ít tranh cãi. Với khách Nhật cần 見積 (mitsumori – báo giá/ước lượng) cho ngân sách và 稟議, em không bỏ ước lượng ở cấp hợp đồng; bên trong team có thể dùng đếm item cho 保守 hoặc khi item đã đều cỡ.
+
+**Q249. Làm sao dự báo release khi chưa có velocity (team mới)?**
+① Ước velocity ban đầu từ capacity: số người × ngày khả dụng × hệ số tập trung khoảng 60–70% (tham khảo), rồi thử lên kế hoạch sprint đầu xem team nhận được bao nhiêu point; ② tham chiếu dữ liệu team tương tự nếu có; ③ báo khách dự báo dạng khoảng rộng và cam kết thu hẹp sau 3 sprint khi có velocity thật. Em ghi rõ giả định trong kế hoạch để con số đầu tiên không bị coi là lời hứa.
+> 💡 "Cone of uncertainty — cam kết thu hẹp khoảng dự báo sau 3 sprint" vừa trung thực vừa giữ được niềm tin khách.
+
+**Q250. Có nên gán story point cho bug và việc kỹ thuật không?**
+Có hai trường phái: ① gán point cho mọi việc để velocity phản ánh tổng capacity; ② không gán cho bug để velocity chỉ phản ánh giá trị mới — bug làm velocity giảm chính là tín hiệu chất lượng. Em chọn theo mục đích dự báo: bug phát sinh đều thì không gán point và dành khoảng 10–15% capacity (tham khảo); việc lớn do khách đổi yêu cầu thì estimate như story để minh bạch chi phí. Quan trọng là nhất quán trong một team.
+
+**Q251. Báo cáo agile hằng tuần cho khách Nhật nên có gì?**
+Một trang, tiếng Nhật: ① Sprint Goal và trạng thái 達成 (tassei – đạt)/未達 (mitatsu – chưa đạt) kèm lý do, ② burnup release với ngày dự báo dạng khoảng, ③ chất lượng: bug mới/đóng, bug lọt sau release, ④ rủi ro và việc cần khách quyết, có hạn trả lời, ⑤ thay đổi phạm vi trong tuần. Tránh đưa velocity thô vì khách dễ hiểu thành năng suất. Màu xanh/vàng/đỏ có tiêu chí rõ, vd đỏ khi ngày dự báo lệch quá 1 sprint (tham khảo).
+
+## 3.6 Hybrid: Water-Scrum-Fall & agile trong hợp đồng cố định
+
+**Q252. Water-Scrum-Fall là gì? Tốt hay xấu?**
+Đây là mô hình rất phổ biến: phần đầu kiểu waterfall (要件定義, ngân sách, phê duyệt), phần giữa phát triển theo sprint, phần cuối kiểu waterfall (総合テスト, 受入テスト, release lớn). Nó không xấu nếu có chủ đích, vì hợp với tổ chức cần ngân sách năm và kiểm soát release. Nó xấu khi phần giữa không có feedback của khách và test dồn cuối — chỉ là waterfall đổi tên. Câu em dùng để kiểm: khách có thấy phần mềm chạy được trước 総合テスト không?
+> 💡 Nói thẳng "phần lớn dự án Nhật thực tế là hybrid" cho thấy bạn hiểu thực tiễn, không lý tưởng hóa agile.
+
+**Q253. Làm agile trong hợp đồng 請負 giá cố định như thế nào?**
+請負 cố định phạm vi, giá và 納期 (nouki – hạn giao hàng), mâu thuẫn với phạm vi linh hoạt của agile. Cách làm: ① cố định giá và ngày, linh hoạt phạm vi trong khung ưu tiên MoSCoW, Must chiếm khoảng ≤ 60% effort (tham khảo); ② cơ chế đổi item cùng kích thước không tính phát sinh; ③ chia hợp đồng theo release/phase nhỏ; ④ vẫn chạy sprint nội bộ để minh bạch tiến độ dù hợp đồng tính theo 成果物. Điều khoản chi tiết thuộc phần hợp đồng.
+
+**Q254. Khách muốn agile nhưng cần ngân sách và 納期 cố định. Bạn đề xuất mô hình nào?**
+Em đề xuất "cố định thời gian và chi phí, linh hoạt phạm vi": ① workshop đầu dựng product backlog thô và estimate theo khoảng; ② ngân sách = số sprint × chi phí team, ngày release cố định; ③ nhóm Must được cam kết, Should/Could làm theo khả năng; ④ review 2 tuần/lần để khách đánh đổi phạm vi dựa trên burnup; ⑤ điểm hiệu chỉnh sau 2–3 sprint đầu để cả hai cập nhật dự báo. Khách giữ được ngân sách, team giữ được chất lượng.
+
+**Q255. Hợp đồng 準委任 khác 請負 thế nào khi chạy agile?**
+準委任契約 (jun-inin keiyaku – hợp đồng ủy thác, trả theo công sức) không buộc hoàn thành một 成果物 cố định nên hợp tự nhiên với agile và ラボ型; mẫu hợp đồng phát triển agile do IPA Nhật công bố cũng theo hướng 準委任. Rủi ro là khách trả theo tháng nhưng kỳ vọng kết quả như khoán. Em làm rõ bằng văn bản: vendor chịu trách nhiệm thực thi đúng quy trình và chất lượng theo DoD, còn ưu tiên và phạm vi do PO phía khách quyết.
+
+**Q256. Chia release trong dự án hybrid như thế nào để giảm rủi ro?**
+① Release 1 là khung xương chạy end-to-end cho luồng nghiệp vụ chính, vd tra cứu hợp đồng của khách bảo hiểm B; ② mỗi release 2–3 tháng, có 総合テスト rút gọn và 受入テスト riêng thay vì dồn cuối; ③ phần rủi ro kỹ thuật (tích hợp hệ thống cũ, hiệu năng) đưa vào release sớm; ④ mỗi release là một mốc nghiệm thu nhỏ. Cách này biến dự án 12 tháng thành 4–5 lần "tập dượt" nghiệm thu.
+
+**Q257. Trong hybrid, tài liệu 基本設計 nên viết trước toàn bộ hay theo sprint?**
+Em chia hai lớp: ① viết trước phần khung ổn định — kiến trúc, mô hình dữ liệu cốt lõi, danh sách màn hình/chức năng, interface với hệ thống ngoài — vì nhiều team và hệ thống phụ thuộc vào nó; ② chi tiết màn hình/logic viết theo kiểu just-in-time, đi trước phát triển 1 sprint, cập nhật sau review. Thỏa thuận với khách: tài liệu được chốt phiên bản theo release, không phải chốt trước khi code.
+> 💡 "Tài liệu just-in-time, đi trước dev 1 sprint" là câu trả lời cân bằng mà khách Nhật chấp nhận được.
+
+**Q258. Đưa 総合テスト và 受入テスト kiểu Nhật vào nhịp sprint như thế nào?**
+① Trong sprint: DoD gồm unit test, integration test và test theo AC trên staging; ② cuối mỗi release: một giai đoạn 総合テスト ngắn cho regression, hiệu năng, liên kết hệ thống — Scrum thuần coi "hardening sprint" là dấu hiệu DoD chưa đủ, nên em coi đây là tạm thời và thu ngắn dần bằng automation regression; ③ 受入テスト do khách làm theo release, offshore hỗ trợ dữ liệu và kịch bản. Độ dài giai đoạn hardening là chỉ số em theo dõi qua từng release.
+
+**Q259. Quản lý thay đổi trong hybrid khác waterfall thế nào?**
+Waterfall: mọi thay đổi sau phê duyệt đi qua 変更管理 (henkou kanri – quản lý thay đổi) chính thức, đánh giá ảnh hưởng, có thể tính phát sinh. Hybrid chia 2 loại: ① thay đổi trong backlog chưa bắt đầu — PO tự sắp xếp, đổi item cùng kích thước, không cần CR; ② thay đổi vượt khung — thêm epic, đổi kiến trúc, đổi ngày release, sửa thứ đã nghiệm thu — đi CR chính thức. Ngưỡng phân loại thống nhất từ kickoff để không tranh cãi từng lần.
+
+**Q260. Khách liên tục đổi ưu tiên giữa sprint trong hợp đồng giá cố định. Bạn xử lý thế nào?**
+① Đo fact: bao nhiêu lần đổi, ảnh hưởng bao nhiêu point và ngày; ② ngay lập tức bảo vệ Sprint Goal — việc mới vào backlog sprint sau, trừ việc khẩn thì đổi item cùng kích thước và ghi lại; ③ báo khách theo 報連相 (hourensou – báo cáo, liên lạc, thảo luận) kèm burnup cho thấy ngày dự báo dịch chuyển; ④ giải pháp gốc: rút sprint xuống 1 tuần nếu ưu tiên thật sự biến động, hoặc mở làn Kanban riêng cho việc khẩn có WIP giới hạn.
+> 💡 Đề xuất rút ngắn sprint thay vì cấm khách đổi ý — cho thấy bạn thích ứng chứ không cứng nhắc.
+
+**Q261. Hybrid dễ "lấy cái tệ của cả hai". Đó là gì và tránh thế nào?**
+Rủi ro: ① tài liệu dày như waterfall nhưng phạm vi trôi như agile thiếu kiểm soát; ② sprint không ra Increment chạy được, test dồn cuối; ③ khách vừa đòi CR chính thức vừa muốn đổi ý tự do; ④ team vừa làm báo cáo waterfall vừa dự đủ event Scrum, quá tải họp. Cách tránh: viết một "operating model" 1 trang ngay kickoff — phần nào cố định, phần nào linh hoạt, ai quyết, tài liệu nào bắt buộc — và xem lại sau release đầu.
+
+**Q262. Dự án ngân hàng A bắt buộc waterfall ở core, nhưng app mobile muốn agile. Bạn phối hợp hai track thế nào?**
+① Thiết kế sớm interface (API contract) giữa core và mobile, chốt theo version, có mock/stub để mobile chạy sprint không phải chờ core; ② lịch tích hợp cố định theo milestone của core, mobile lập kế hoạch release bám các mốc đó; ③ một bảng rủi ro/dependency chung, họp đồng bộ hằng tuần giữa hai lead; ④ 結合テスト và 総合テスト liên kết chạy chung theo lịch waterfall. Nguyên tắc: track nhanh không phụ thuộc trực tiếp vào track chậm, chỉ qua contract.
+> 💡 Từ khóa "tách phụ thuộc qua contract + mock" là điều interviewer có nền kỹ thuật muốn nghe.
+
+## 3.7 Agile với khách hàng Nhật
+
+**Q263. Vì sao khách Nhật truyền thống thường e ngại agile?**
+Thường vì: ① văn hóa tài liệu và 合意形成 (goui keisei – tạo đồng thuận), mọi thứ cần duyệt trước; ② ngân sách và 稟議 theo năm, cần con số cố định; ③ hiểu "agile = không kế hoạch, không tài liệu"; ④ trách nhiệm chất lượng phải rõ theo hợp đồng; ⑤ từng gặp vendor "agile" giao sản phẩm thiếu ổn định. Hiểu đúng từng nỗi lo thì mới thuyết phục được: trả lời mỗi nỗi lo bằng một cơ chế kiểm soát cụ thể.
+
+**Q264. Bạn thuyết phục khách bảo hiểm B vốn quen waterfall chuyển sang agile như thế nào?**
+Em không bán chữ "agile" mà bán kết quả: ① bắt đầu bằng pilot nhỏ, rủi ro thấp (1 module, 2–3 tháng); ② giữ những gì khách cần — ngân sách cố định, báo cáo tiến độ, tài liệu bàn giao — và cho thấy phần thêm vào: demo phần mềm chạy được mỗi 2 tuần, phát hiện hiểu sai sớm; ③ đo trước/sau: số 手戻り, thời gian phản hồi thay đổi; ④ mở rộng khi có số liệu. Dùng từ 反復型開発 (hanpuku-gata kaihatsu – phát triển lặp) đôi khi dễ được chấp nhận hơn.
+> 💡 Pilot nhỏ + số liệu của chính khách là cách thuyết phục bền vững nhất với tổ chức Nhật.
+
+**Q265. Sprint Review với khách Nhật nên tổ chức thế nào để hiệu quả?**
+① Gửi trước 1–2 ngày bằng tiếng Nhật: agenda, Sprint Goal, item sẽ demo, điểm cần khách quyết; ② demo trên staging với dữ liệu gần thật, theo kịch bản nghiệp vụ chứ không theo từng ticket; ③ hỏi câu cụ thể ("thứ tự thao tác này đúng với bộ phận nghiệp vụ chưa?") vì khách Nhật ít phản đối trực tiếp tại họp; ④ gửi 議事録 trong 24 giờ, liệt kê feedback → item backlog để khách xác nhận.
+> 💡 Khách im lặng trong review không có nghĩa là đồng ý — luôn chừa kênh phản hồi sau họp.
+
+**Q266. Khách hiếm khi góp ý tại Sprint Review, sau đó lại gửi email rất nhiều feedback. Làm sao thu feedback sớm hơn?**
+① Cho khách xem sớm, không đợi review: link staging và video ngắn cho item xong giữa sprint; ② trong review, hỏi dạng có/không hoặc chọn A/B thay vì "có ý kiến gì không?"; ③ mời người dùng nghiệp vụ thật, không chỉ bộ phận IT của khách; ④ dùng bảng feedback tiếng Nhật có hạn 2–3 ngày; ⑤ coi feedback sau họp là bình thường do 合意形成 nội bộ của khách, chừa sẵn capacity xử lý thay vì phàn nàn.
+
+**Q267. Trình bày Sprint Review bằng tiếng Nhật cần lưu ý gì về ngôn ngữ?**
+① Nói kết luận trước theo kiểu 結論から (ketsuron kara – bắt đầu từ kết luận); ② nói rõ item nào 完了 (kanryou – hoàn thành) theo DoD, item nào 未完了 (mikanryou – chưa xong) kèm lý do và kế hoạch, không dùng "gần xong"; ③ dùng thuật ngữ nghiệp vụ của khách thay vì thuật ngữ Scrum; ④ không hứa miệng tại họp — nói 持ち帰って検討します (mochikaette kentou shimasu – xin mang về xem xét) rồi trả lời bằng văn bản; ⑤ BrSE chuẩn bị script và glossary trước cho người demo.
+
+**Q268. Khách yêu cầu tài liệu thiết kế đầy đủ như waterfall dù dự án chạy Scrum. Bạn phản ứng thế nào?**
+① Hỏi mục đích thật của tài liệu: phục vụ 保守 sau này, audit nội bộ hay 稟議; ② đề xuất tài liệu "đủ và sống": giữ tài liệu có giá trị lâu dài (kiến trúc, dữ liệu, API, đặc tả màn hình), cập nhật theo sprint và đưa vào DoD; bỏ tài liệu trung gian chỉ để duyệt; ③ ước lượng effort tài liệu minh bạch trong backlog; ④ thống nhất mẫu tài liệu từ đầu. Tài liệu là yêu cầu chính đáng, không phải "phản agile".
+> 💡 Agile Manifesto nói phần mềm chạy được được coi trọng HƠN tài liệu, không phải "không cần tài liệu" — trích đúng là điểm cộng.
+
+**Q269. Khách sản xuất C muốn mọi thay đổi phải được duyệt bằng văn bản, kể cả trong sprint. Làm sao giữ tốc độ?**
+① Tôn trọng vì đó là kiểm soát nội bộ của khách; ② phân loại theo mức ảnh hưởng: thay đổi nhỏ (câu chữ UI, sắp lại item chưa làm) gom duyệt theo lô hằng tuần, thay đổi lớn duyệt riêng; ③ dùng trạng thái "khách xác nhận" ngay trên ticket thay vì công văn; ④ thống nhất SLA duyệt 2 ngày làm việc, quá hạn thì item chuyển sang sprint sau. Tốc độ đến từ duyệt theo lô, không phải từ bỏ bước duyệt.
+
+**Q270. Người phụ trách phía khách đồng ý agile, nhưng cấp trên của họ vẫn đánh giá theo WBS và % tiến độ. Bạn làm gì?**
+Em giúp người phụ trách "dịch" agile sang ngôn ngữ cấp trên: ① lập bản đồ epic ↔ hạng mục WBS/chức năng trong hợp đồng; ② báo % hoàn thành theo phạm vi Done trên burnup thay vì % công sức đã bỏ ra; ③ mốc release ánh xạ vào mốc kế hoạch tổng; ④ chuẩn bị tài liệu để họ dùng khi 根回し (nemawashi – vận động, thống nhất trước) trong nội bộ. Giúp người phụ trách thành công trong tổ chức của họ là cách bền nhất để giữ agile.
+
+**Q271. Có nên dùng tiếng Nhật cho toàn bộ backlog khi team offshore không giỏi tiếng Nhật?**
+Em phân theo người đọc: ① thứ khách đọc và quyết — tiêu đề story, AC, Q&A, báo cáo — viết tiếng Nhật, có BrSE kiểm; ② thảo luận kỹ thuật nội bộ, sub-task có thể dùng tiếng Anh/Việt; ③ duy trì glossary nghiệp vụ Nhật–Anh–Việt chung. Dịch máy hỗ trợ được, nhưng AC phải được người biết tiếng Nhật xác nhận. Mục tiêu: không tồn tại "hai sự thật" giữa bản tiếng Nhật và cách team hiểu.
+
+**Q272. Làm thế nào để khách Nhật tin vào ước lượng dạng khoảng thay vì một con số?**
+① Giải thích bằng lịch sử của chính dự án họ — các lần ước lượng trước lệch bao nhiêu; ② đưa con số kèm mức tin cậy ("85% xong trước ngày X, 50% trước ngày Y") thay vì khoảng mơ hồ; ③ cam kết cập nhật dự báo mỗi sprint và báo ngay khi lệch quá ngưỡng, vd quá 1 sprint; ④ giữ đều các lời hứa nhỏ để tích lũy uy tín. Khách Nhật không ghét con số dạng khoảng, họ ghét bất ngờ; cái họ cần là 見通し (mitooshi – triển vọng dự báo) đáng tin.
+
+**Q273. Khách muốn tham gia daily scrum mỗi ngày qua video call. Có nên đồng ý?**
+Có thể đồng ý nhưng thiết kế lại: ① khách tham gia với vai quan sát, hoặc với vai PO trả lời nhanh câu hỏi đang chặn, không phải người nhận báo cáo; ② giữ 15 phút, nói tiếng Nhật đơn giản hoặc có BrSE tóm tắt; ③ nếu daily biến thành buổi khách giao việc, kiểm tra từng người, em đề xuất buổi sync 15 phút 2–3 lần/tuần riêng với PO và trả daily lại cho team. Lý do cần nói rõ: team phải được nêu vấn đề thẳng thắn mà không sợ mất mặt trước khách.
+
+## 3.8 Scaling nhiều team offshore
+
+**Q274. Scrum of Scrums vận hành thế nào và khi nào là đủ?**
+Mỗi team cử đại diện — thường là người nắm dependency kỹ thuật, không nhất thiết là SM — họp 2–3 lần/tuần, 15–30 phút: việc vừa làm ảnh hưởng team khác, việc sắp làm, vướng mắc, chỗ sắp "đụng" nhau. Đủ dùng khi có 2–4 team chung một sản phẩm, dependency vừa phải, kèm board dependency chung và refinement liên team. Khi cần đồng bộ kế hoạch quý, ngân sách và nhiều PO thì phải lên khung lớn hơn.
+
+**Q275. SAFe là gì và PI Planning diễn ra thế nào?**
+SAFe (Scaled Agile Framework) gom nhiều team thành Agile Release Train (ART), thường khoảng 50–125 người, đồng bộ theo PI — Program Increment, bản mới gọi là Planning Interval — thường 8–12 tuần. PI Planning là sự kiện khoảng 2 ngày cho toàn ART: phía business trình bày tầm nhìn và ưu tiên; các team lập kế hoạch, ước lượng, đánh dấu dependency trên program board, cam kết PI Objectives và bỏ phiếu mức tự tin. Người điều phối train là RTE (Release Train Engineer).
+
+**Q276. Tổ chức PI Planning khi team ở Đà Nẵng và khách ở Tokyo có gì khó?**
+Khó ở: ① Nhật đi trước Việt Nam 2 giờ, khung giờ làm việc trùng nhau chỉ khoảng 6 giờ/ngày nếu trừ giờ nghỉ trưa lệch nhau; ② ngôn ngữ, cần BrSE thông dịch song song; ③ khách ngại cam kết trực tiếp tại chỗ. Cách làm: chuẩn bị trước 2 tuần (feature đã refine, dependency sơ bộ), chia thành 2–3 ngày ngắn hơn, dùng board online, bỏ phiếu tự tin ẩn danh. Nếu ngân sách cho phép, PI đầu tiên nên gặp trực tiếp.
+
+**Q277. LeSS khác SAFe thế nào?**
+LeSS (Large-Scale Scrum) giữ Scrum gần nguyên bản: một Product Owner, một Product Backlog, một DoD, một Sprint chung cho nhiều team (bản cơ bản khoảng 2–8 team), Sprint Review chung và retro tổng thể; team là feature team. SAFe thêm nhiều lớp vai trò, cấp độ và sự kiện (ART, PI, RTE, portfolio). LeSS đòi tổ chức thay đổi cấu trúc mạnh; SAFe dễ gắn vào tổ chức lớn có phân cấp sẵn nhưng nặng và dễ thành thủ tục hành chính.
+
+**Q278. Chi nhánh Đà Nẵng có 4 team cùng làm cho một khách tài chính. Bạn chọn mô hình scale nào?**
+Em bắt đầu nhẹ nhất có thể: một Product Backlog, một PO phía khách cộng proxy PO, sprint đồng bộ cùng ngày bắt đầu/kết thúc, refinement liên team, Scrum of Scrums 2–3 lần/tuần, Sprint Review chung — gần tinh thần LeSS/Nexus. Chỉ lên SAFe khi khách đã dùng SAFe nội bộ hoặc cần đồng bộ nhiều train và ngân sách theo quý. Tiêu chí để nâng cấp: số dependency chặn liên team mỗi sprint và tỉ lệ item trễ vì phụ thuộc.
+> 💡 "Scale nhẹ nhất có thể, chỉ thêm khung khi số liệu chứng minh cần" là tư duy senior mà interviewer muốn nghe.
+
+**Q279. Khi nào KHÔNG nên áp dụng SAFe?**
+① Quy mô nhỏ, vài team — chi phí vai trò và sự kiện lớn hơn lợi ích; ② sản phẩm tách được thành nhiều phần độc lập ít dependency — tách kiến trúc tốt hơn scale quy trình; ③ lãnh đạo chỉ muốn đổi tên quy trình cũ mà không trao quyền cho team; ④ khách không tham gia PI Planning — kế hoạch thành kế hoạch nội bộ của vendor. Scale quy trình là bước sau cùng; trước hết giảm dependency bằng feature team và kiến trúc module rõ ràng.
+
+**Q280. Feature team hay component team — chọn thế nào khi có nhiều team offshore?**
+Component team (team FE, team BE, team DB) dễ lập từ cơ cấu kỹ năng sẵn có, nhưng mỗi tính năng phải đi qua nhiều team → chờ nhau, không team nào tự giao được Increment trọn vẹn. Feature team đa kỹ năng giao tính năng end-to-end, giảm phối hợp nhưng đòi kiến thức rộng và kiến trúc rõ. Em ưu tiên feature team, giữ một nhóm chuyên gia nhỏ (hạ tầng, bảo mật) hỗ trợ nhiều team theo kiểu enabling team.
+
+**Q281. Quản lý dependency giữa các team offshore với team onsite và khách như thế nào?**
+① Trực quan hóa: board dependency ghi ai cần gì, khi nào, trạng thái; ② phát hiện sớm ở refinement liên team — item có dependency chưa giải quyết không được vào sprint; ③ giảm dependency từ gốc bằng API contract, mock và tách module; ④ dependency với khách (dữ liệu test, môi trường, quyết định) quản lý như rủi ro có owner và hạn, báo cáo hằng tuần. Chỉ số em theo dõi: số item bị chặn quá 2 ngày vì phụ thuộc bên ngoài.
+
+**Q282. Team ở Đà Nẵng và team ở một site khác cùng làm một sản phẩm nhưng "văn hóa Scrum" khác nhau. Bạn đồng bộ thế nào?**
+Em chốt "khung tối thiểu bắt buộc" và để phần còn lại tự do. Bắt buộc chung: DoD, nhịp sprint, cách estimate cho release, công cụ, định dạng báo cáo khách. Tự do: cách chạy daily, format retro, kỹ thuật nội bộ. Bổ sung: luân chuyển người giữa hai site 1–2 tuần, retro liên site mỗi quý, community of practice cho SM. Mục tiêu là khách nhìn thấy một vendor thống nhất, không phải hai công ty.
+
+## 3.9 Retrospective & cải tiến liên tục
+
+**Q283. Sprint Retrospective nên có cấu trúc thế nào để không nhàm chán?**
+Khung 5 bước phổ biến: ① set the stage (check-in), ② gather data (sự kiện, số liệu sprint), ③ generate insights (tìm nguyên nhân), ④ decide what to do (chọn 1–3 action), ⑤ close. Đổi format sau vài sprint: KPT, Start/Stop/Continue, 4Ls, Sailboat, Mad/Sad/Glad, timeline. Luôn mở đầu bằng việc xem lại action của retro trước — retro không có follow-up là lý do lớn nhất khiến team chán retro.
+> 💡 Nói "mở đầu bằng review action cũ" cho thấy bạn quan tâm kết quả, không chỉ hình thức.
+
+**Q284. KPT là gì và vì sao phổ biến ở Nhật?**
+KPT (Keep – Problem – Try) là format 振り返り (furikaeri – nhìn lại) rất phổ biến ở công ty Nhật: Keep là điều làm tốt cần giữ, Problem là vấn đề gặp phải, Try là điều thử ở lần sau để giải quyết Problem hoặc phát huy Keep. Nó đơn giản, dễ cho người mới và gần tư duy 改善 (kaizen – cải tiến liên tục). Bẫy hay gặp: Try chung chung kiểu "cẩn thận hơn"; em yêu cầu mỗi Try có owner, hạn và cách kiểm đã làm hay chưa.
+
+**Q285. Làm sao biến kết quả retro thành hành động thật?**
+① Chọn tối đa 1–3 action, viết cụ thể, có owner, có hạn, đo được — vd "từ sprint 12, PR trên 400 dòng phải tách; SM thống kê cuối sprint"; ② đưa action vào Sprint Backlog như một item, không để trong trang ghi chú; ③ đầu retro sau kiểm lại: làm chưa, có hiệu quả không, giữ hay bỏ; ④ action vượt quyền team (môi trường, phía khách) thì SM/PM nhận và báo lại tiến độ. Tỉ lệ action hoàn thành là chỉ số em dùng để đo chính retro.
+
+**Q286. Team offshore ít nói trong retro, chỉ bảo "không có vấn đề gì". Bạn làm gì?**
+① Tạo an toàn tâm lý: PM/lead vắng mặt hoặc nói sau cùng, nhắc Prime Directive — ai cũng đã làm tốt nhất có thể với thông tin lúc đó; ② cho viết sticky ẩn danh trước khi nói, rồi dot-voting; ③ mở đầu bằng dữ liệu (bug lọt, item trượt, giờ OT) để bàn về sự kiện chứ không về cá nhân; ④ chia nhóm 2–3 người; ⑤ xử lý ngay ý kiến đầu tiên để team thấy nói ra là có thay đổi.
+> 💡 Team im lặng thường vì lần trước nói ra mà không có gì thay đổi — sửa nguyên nhân đó trước khi đổi format.
+
+**Q287. Retrospective liên hệ với Kaizen và PDCA như thế nào?**
+Retro là vòng 改善 ở quy mô sprint: cải tiến nhỏ, liên tục, do chính người làm đề xuất. Mỗi action retro là một vòng PDCA: Plan (thử gì, kỳ vọng gì), Do (áp dụng trong sprint), Check (retro sau đo kết quả), Act (chuẩn hóa nếu hiệu quả, bỏ nếu không). Khi báo cáo với khách Nhật, em trình bày retro như hoạt động 振り返り và 改善 của team kèm vài action tiêu biểu — dễ được đánh giá cao vì khớp văn hóa cải tiến họ quen.
+
+**Q288. Khi nào nên mời khách tham gia retrospective?**
+Sprint retro là của Scrum Team; nếu PO là người phía khách thì PO đã là thành viên. Với stakeholder khác của khách, em tổ chức retro chung theo release hoặc theo quý, tập trung vào cách phối hợp: tốc độ trả lời Q&A, chất lượng yêu cầu, quy trình review. Điều kiện: đã có đủ tin cậy và có người điều phối trung lập; kết quả luôn hai chiều — việc vendor cải tiến và việc khách cải tiến.
+
+**Q289. Phân biệt retrospective với なぜなぜ分析 sau sự cố.**
+Retro là cải tiến định kỳ về cách làm việc, phạm vi rộng, không cần chờ có vấn đề. なぜなぜ分析 (nazenaze bunseki – hỏi "tại sao" lặp lại, thường 5 lần) là phân tích sâu một sự cố cụ thể để tìm nguyên nhân gốc, dẫn tới 再発防止 và 横展開, thường có báo cáo gửi khách. Sự cố nghiêm trọng thì phân tích ngay, không đợi retro; retro dùng để kiểm lại biện pháp đã áp dụng có hiệu quả không.
+> 💡 Dừng phân tích ở nguyên nhân quy trình/hệ thống, đừng dừng ở "do A bất cẩn" — khách Nhật sẽ hỏi tiếp "vì sao quy trình để lọt".
+
+**Q290. Làm sao đo được retro có hiệu quả hay không?**
+Em theo dõi 3 nhóm: ① đầu ra — tỉ lệ action hoàn thành đúng hạn, mục tiêu tham khảo ≥ 70%; ② tác động — chỉ số mà action nhắm tới có cải thiện không, vd thời gian review PR, bug lọt; ③ sức khỏe — vấn đề cũ có lặp lại không và mức hài lòng của team qua khảo sát ngắn. Một Problem lặp lại 3 sprint liên tiếp là dấu hiệu action quá yếu hoặc vấn đề nằm ngoài quyền team — lúc đó PM phải escalate.
+
+## 3.10 Câu kiểu PMI-ACP & câu senior
+
+**Q291. Agile Manifesto có 4 giá trị nào? Hiểu sai phổ biến nhất là gì?**
+Bốn giá trị: con người và tương tác hơn quy trình và công cụ; phần mềm chạy được hơn tài liệu toàn diện; cộng tác với khách hàng hơn đàm phán hợp đồng; phản hồi thay đổi hơn bám theo kế hoạch. Câu kết: các mục bên phải vẫn có giá trị, nhưng mục bên trái được coi trọng hơn. Hiểu sai phổ biến nhất: "agile = không tài liệu, không kế hoạch, không hợp đồng". Với khách Nhật, nhấn mạnh câu kết này giúp gỡ nỗi lo ngay.
+> 💡 Nhắc được câu "các mục bên phải vẫn có giá trị" cho thấy bạn đọc Manifesto thật, không học qua slide.
+
+**Q292. "Fake agile" (agile hình thức) có những dấu hiệu nào?**
+① Có đủ event nhưng không sprint nào ra Increment chạy được; ② Sprint Review là buổi đọc slide báo cáo; ③ PO không có quyền ưu tiên, mọi thứ đã chốt trong spec từ đầu; ④ velocity là KPI để ép team; ⑤ retro lặp lại cùng vấn đề không ai xử lý; ⑥ "agile" được dùng làm lý do để không viết tài liệu, không kiểm soát phạm vi. Khi tiếp quản dự án như vậy, em không tuyên bố "làm lại Scrum" mà chọn 1–2 dấu hiệu gây hại nhất để sửa trước.
+
+**Q293. Đo giá trị (value) thay vì output trong dự án outsource như thế nào?**
+Output là số story/point; value là thay đổi trong nghiệp vụ của khách. Cách đo: ① mỗi epic có giả thuyết giá trị và chỉ số nghiệp vụ thống nhất với PO, vd giảm thời gian xử lý hồ sơ của khách bảo hiểm B, giảm lỗi nhập liệu ở nhà máy của khách sản xuất C; ② đo sau release bằng dữ liệu khách cung cấp; ③ ưu tiên backlog theo giá trị/chi phí, vd WSJF hoặc ma trận value–effort. Vendor thường không có dữ liệu nghiệp vụ, nên phải thỏa thuận chia sẻ từ đầu.
+> 💡 Câu này kiểm tra bạn nghĩ như "đối tác" hay "nhà thầu" — trả lời bằng chỉ số nghiệp vụ của khách.
+
+**Q294. Servant leadership trong agile có nghĩa gì với một Senior PM?**
+Là lãnh đạo bằng cách phục vụ: gỡ trở ngại, tạo môi trường để team tự quản và tự quyết, phát triển năng lực từng người, che chắn team khỏi áp lực không cần thiết — thay vì ra lệnh và kiểm soát chi tiết. Nó không có nghĩa là chiều mọi người hay né quyết định: khi team bế tắc hoặc rủi ro vượt quyền team, Senior PM vẫn phải quyết và chịu trách nhiệm. Scrum Guide 2020 dùng cụm "true leaders who serve" chính để nhấn mạnh điều này.
+
+**Q295. Câu kiểu PMI-ACP: Giữa sprint, một developer báo item sẽ không kịp. Hành động ĐẦU TIÊN của Scrum Master là gì?**
+Đáp án thường đúng theo tinh thần agile: để Developers cùng thảo luận tại Daily hoặc ngay sau đó, đánh giá tác động lên Sprint Goal và tự đề xuất cách xử lý — hỗ trợ nhau, tách item, hoặc cùng PO đàm phán lại phạm vi. Đáp án sai thường gặp: SM tự gán thêm người, báo ngay lên quản lý/khách, kéo dài sprint. Nguyên tắc chọn đáp án ACP: ưu tiên tự quản, minh bạch, cộng tác; tránh hành động mệnh lệnh khi team chưa được tham gia.
+> 💡 Mẹo thi ACP: phân vân thì chọn đáp án "team cùng quyết + minh bạch với PO" thay vì đáp án PM/SM tự xử lý.
+
+**Q296. Dự án Scrum chạy 6 tháng, velocity tăng đều nhưng khách phàn nàn chất lượng giảm. Bạn phân tích thế nào?**
+① Xác nhận fact: bug lọt theo sprint, bug do sửa hỏng chỗ cũ (regression), độ phủ test, nợ kỹ thuật; ② giả thuyết thường gặp: DoD lỏng hoặc không được tuân thủ, point bị lạm phát, regression chưa tự động hóa; ③ hành động ngay: siết DoD, dành 1 sprint ưu tiên sửa bug mức cao, báo khách theo 報連相 kèm kế hoạch; ④ phòng ngừa: dành capacity cố định cho nợ kỹ thuật và automation, báo cáo chất lượng song song velocity. Velocity tăng mà chất lượng giảm nghĩa là team đang vay nợ.
+
+**Q297. Trade-off: sprint 1 tuần hay 2 tuần cho team offshore làm với khách Nhật?**
+Sprint 1 tuần: feedback nhanh, hợp khi yêu cầu biến động, nhưng chi phí event chiếm tỉ lệ cao, khách khó sắp lịch review hằng tuần và thiếu thời gian 合意形成. Sprint 2 tuần: cân bằng phổ biến, đủ thời gian cho Q&A qua lại. Sprint 3–4 tuần: hợp tổ chức ra quyết định chậm nhưng phát hiện vấn đề muộn. Em thường chọn 2 tuần, rút về 1 tuần ở giai đoạn đầu hoặc khi ưu tiên đổi mạnh, và giữ độ dài cố định để có số liệu ổn định.
+
+**Q298. Khi nào agile là lựa chọn SAI, dù khách muốn?**
+① Khách không thể cử PO hoặc người ra quyết định tham gia định kỳ — agile thiếu feedback chỉ là waterfall không tài liệu; ② hợp đồng 請負 phạm vi cứng và khách từ chối đánh đổi phạm vi; ③ hệ thống không thể test/release từng phần, vd phụ thuộc phần cứng hoặc môi trường test chỉ mở theo lịch; ④ team chưa có nền tảng kỹ thuật (CI, test tự động) để giao Increment mỗi sprint. Khi đó em đề xuất hybrid hoặc waterfall có vòng lặp, nêu lý do bằng văn bản thay vì chiều khách.
+> 💡 Dám nói "không" có lý do với khách là phẩm chất Senior PM — interviewer đang kiểm tra đúng điều này.
+
+**Q299. Làm sao chuyển một dự án đang chạy waterfall sang agile mà không làm khách mất niềm tin?**
+① Không chuyển giữa một 工程 đang dở; chọn điểm chuyển tự nhiên như đầu phase hoặc release mới; ② thay đổi từng phần: trước tiên thêm demo định kỳ và backlog có ưu tiên, giữ nguyên báo cáo và tài liệu khách quen; ③ thống nhất bằng văn bản cái gì đổi, cái gì giữ, ai quyết; ④ đặt tiêu chí đánh giá sau 3 sprint (hài lòng, 手戻り, đúng hạn) và sẵn sàng quay lại nếu không đạt. Khách Nhật chấp nhận thay đổi khi nó có kế hoạch và có đường lui.
+
+**Q300. Nếu được giao xây dựng cách làm agile cho một chi nhánh mới ở Đà Nẵng, bạn làm gì trong 90 ngày đầu?**
+① Ngày 1–30: khảo sát dự án và khách hiện có, chọn 1–2 dự án pilot, thống nhất khung tối thiểu (DoD mẫu, nhịp sprint, công cụ, mẫu báo cáo tiếng Nhật); ② ngày 31–60: chạy pilot, đào tạo SM/BrSE, lập community of practice, đo baseline (đúng hạn, bug lọt, hài lòng khách); ③ ngày 61–90: review kết quả với lãnh đạo và khách, chuẩn hóa thành playbook, lập kế hoạch nhân rộng. Nguyên tắc: bắt đầu nhỏ, đo được, không áp một khuôn cho mọi khách.
+> 💡 Gắn câu trả lời với lợi thế "setup chi nhánh mới ở Đà Nẵng" trong JD — biến câu hỏi chung thành điểm mạnh riêng.
+
+---
+
+# Chương 4 · Base kỹ thuật cho PM (Q301–Q400)
+
+## 4.1 Kiến trúc & thiết kế hệ thống
+
+**Q301. Là PM, anh/chị cần hiểu kiến trúc hệ thống đến mức nào?**
+Đủ để ra quyết định trade-off và hỏi đúng câu, không cần tự thiết kế. Tôi phải đọc được tài liệu 方式設計 (houshiki sekkei – thiết kế kiến trúc), biết mỗi thành phần kéo theo chi phí, tiến độ, rủi ro gì, và nhận ra khi công nghệ được chọn vì "team thích" chứ không vì yêu cầu. Thước đo của tôi: giải thích lại được cho khách bằng ngôn ngữ nghiệp vụ và nêu được 3 rủi ro kỹ thuật lớn nhất của dự án.
+> 💡 Đừng nói "kỹ thuật để tech lead lo" — interviewer muốn thấy PM chủ động phản biện kỹ thuật bằng câu hỏi về rủi ro và chi phí.
+
+**Q302. Khi nào nên chọn monolith, khi nào chọn microservices?**
+Mặc định tôi nghiêng về **modular monolith** khi team nhỏ (vd dưới 15 người), domain chưa ổn định, deadline gấp: deploy một lần, debug dễ, hạ tầng rẻ. Microservices chỉ đáng khi có lý do thật: các module cần scale rất khác nhau, nhiều team phải release độc lập, hoặc vòng đời công nghệ khác nhau. Cái giá là distributed transaction, monitoring, CI/CD cho từng service và kỹ năng DevOps — effort hạ tầng tăng rõ, nên tôi yêu cầu tech lead ghi lý do vào ADR.
+
+**Q303. Kiến trúc phân tầng (layered) giúp gì cho PM khi quản lý dự án offshore?**
+Tách presentation – business logic – data access giúp chia việc theo tầng, estimate theo đơn vị rõ, và khoanh vùng 影響調査 (eikyou chousa – phân tích ảnh hưởng) khi có 仕様変更 (shiyou henkou – thay đổi đặc tả). Ví dụ đổi công thức tính phí chỉ chạm tầng business, tôi báo khách mức ảnh hưởng nhỏ và test hồi quy tập trung. Rủi ro là dev "xuyên tầng" (controller gọi thẳng DB) làm vỡ ranh giới — tôi đưa quy tắc này vào checklist review.
+
+**Q304. Event-driven architecture là gì và kéo theo rủi ro dự án nào?**
+Các thành phần giao tiếp qua sự kiện (vd "đơn hàng đã tạo") thay vì gọi trực tiếp, nên tách rời và mở rộng dễ. Rủi ro với PM: ① khó trace luồng khi lỗi; ② dữ liệu chỉ nhất quán sau một khoảng trễ (eventual consistency) — người dùng phía khách dễ coi là bug; ③ test E2E phức tạp hơn. Tôi chốt sớm với khách độ trễ chấp nhận được (vd ≤ 5 giây, tham khảo) và yêu cầu correlation ID trong log ngay từ sprint đầu.
+
+**Q305. Batch và online khác nhau thế nào, vì sao khách Nhật vẫn rất chuộng 夜間バッチ?**
+Online xử lý từng giao dịch tức thời; batch gom xử lý theo lô, thường chạy đêm — 夜間バッチ (yakan bacchi – batch ban đêm) — để tính lãi, đối soát, tạo file gửi đối tác mà không ảnh hưởng giờ nghiệp vụ. Khách tài chính, sản xuất Nhật chuộng vì quy trình nghiệp vụ đã xây quanh chu kỳ ngày/tháng và dễ kiểm soát. PM phải quản lý **batch window**: mọi job phải xong trước giờ mở online, kèm phương án rerun khi job lỗi lúc 3 giờ sáng.
+> 💡 Hỏi ngay "batch window mấy giờ, dữ liệu tăng bao nhiêu mỗi năm" là dấu hiệu PM từng làm batch thật.
+
+**Q306. Hệ thống có hàng trăm job batch phụ thuộc nhau, PM cần kiểm soát gì?**
+Ba thứ: ① ジョブネット (jobu netto – chuỗi job có phụ thuộc) được vẽ thành sơ đồ, biết job nào nằm trên đường găng của batch window; ② thiết kế restart/rerun để chạy lại không sinh dữ liệu trùng; ③ công cụ scheduler phía khách (ở Nhật hay gặp JP1 của Hitachi) và ai được thao tác trên 本番 (honban – môi trường production). Trước go-live, tôi yêu cầu đo thời gian chạy với khối lượng dữ liệu gần thực tế và chừa dư ≥ 30% batch window (tham khảo).
+
+**Q307. Scale up và scale out khác nhau thế nào, PM quan tâm điểm nào?**
+Scale up là tăng cấu hình một máy — đơn giản nhưng có trần và thường phải dừng hệ thống; scale out là thêm máy — linh hoạt nhưng đòi ứng dụng stateless, session/cache dùng chung. PM quan tâm: chi phí theo tải, phản hồi khi tải tăng đột biến (vd cao điểm cuối tháng), và kiến trúc có cho phép scale out không — sửa sau rất đắt. Tôi xin khách con số tải dự kiến 3–5 năm để thiết kế vừa đủ, không over-engineer.
+
+**Q308. ADR là gì, vì sao PM nên đòi tech lead viết?**
+ADR (Architecture Decision Record) ghi mỗi quyết định kiến trúc: bối cảnh, các phương án, lựa chọn, hệ quả. Dự án offshore hay xoay vòng nhân sự, và khách Nhật thường hỏi lại "vì sao chọn thế này" sau vài tháng — ADR trả lời trong một phút thay vì tranh luận lại. Tôi yêu cầu mỗi ADR một trang, có mục chi phí và rủi ro, link từ tài liệu 基本設計 (kihon sekkei – thiết kế cơ bản), và gửi khách xác nhận những ADR ảnh hưởng phạm vi hoặc chi phí.
+
+**Q309. 非機能要件 gồm những gì, vì sao hay thành nguồn tranh chấp?**
+非機能要件 (hikinou youken – yêu cầu phi chức năng) gồm hiệu năng, availability, bảo mật, vận hành, khả năng mở rộng, di chuyển dữ liệu. Tranh chấp xảy ra vì khách hiếm khi nói ra ("đương nhiên phải nhanh") nhưng lúc nghiệm thu lại đòi, trong khi effort giữa các mức chênh rất lớn. Tôi dùng 非機能要求グレード (hikinou youkyuu gureedo – bộ phân cấp yêu cầu phi chức năng) của IPA làm checklist để khách chọn mức cụ thể từng hạng mục ngay giai đoạn 要件定義 (youken teigi – định nghĩa yêu cầu).
+> 💡 Nhắc 非機能要求グレード của IPA là điểm cộng lớn — cho thấy bạn quen cách khách Nhật chốt NFR.
+
+**Q310. Làm sao chốt NFR với khách bằng con số đo được?**
+① Đổi câu mơ hồ thành chỉ số: "nhanh" → 95% request màn tra cứu ≤ 2 giây với 500 user đồng thời; "luôn chạy" → 稼働率 (kadouritsu – tỉ lệ hoạt động) 99.9% trong giờ nghiệp vụ. ② Ghi điều kiện đo: khối lượng dữ liệu, môi trường, công cụ. ③ Báo chi phí của từng mức để khách tự chọn. ④ Đưa vào tài liệu yêu cầu và kịch bản 性能試験 (seinou shiken – kiểm thử hiệu năng) để nghiệm thu không phải tranh cãi.
+
+**Q311. Khách yêu cầu availability 99.99% cho một hệ thống nội bộ, anh/chị phản hồi thế nào?**
+Tôi không từ chối mà quy ra hệ quả: 99.99% nghĩa là chỉ được dừng khoảng 52 phút/năm kể cả bảo trì, cần 冗長化 (jouchouka – dự phòng) mọi tầng, multi-AZ, deploy không downtime, trực 24/7 — chi phí cao hơn nhiều so với 99.9% (khoảng 8,8 giờ/năm). Sau đó hỏi ngược: nghiệp vụ mất gì nếu dừng 1 giờ? Thường khách chọn 99.9% trong giờ hành chính kèm thời gian khôi phục rõ ràng. Kết luận ghi vào biên bản và ADR.
+> 💡 Biến tranh luận kỹ thuật thành lựa chọn chi phí – rủi ro để khách tự quyết; PM không đứng ra "từ chối".
+
+**Q312. Tech lead bên mình và kỹ sư phía khách bất đồng về giải pháp kỹ thuật, PM làm gì?**
+① Tách cảm xúc khỏi dữ kiện: yêu cầu mỗi bên trình bày phương án theo cùng một khung — mục tiêu, trade-off, chi phí, rủi ro, ảnh hưởng NFR và tiến độ. ② Nếu còn tranh cãi, làm PoC nhỏ với tiêu chí đo chốt trước (vd 2–3 ngày công). ③ Trình bày như lựa chọn có căn cứ, không phải "bên tôi đúng"; quyết định cuối thuộc chủ hệ thống. ④ Ghi ADR để không mở lại. Tôi không để tech lead một mình tranh luận với khách — PM đứng giữa giữ quan hệ.
+
+## 4.2 API & tích hợp hệ thống
+
+**Q313. REST và GraphQL khác nhau ra sao, khi nào PM đồng ý dùng GraphQL?**
+REST tổ chức theo resource với endpoint cố định, dễ cache, dễ hiểu với kỹ sư phía khách; GraphQL cho client tự chọn trường cần lấy qua một endpoint, hợp với app mobile/web có nhiều màn hiển thị dữ liệu đa dạng. Tôi đồng ý GraphQL khi có nhiều loại client và team đã có kinh nghiệm; ngược lại REST an toàn hơn vì với GraphQL, phân quyền theo trường, giới hạn độ phức tạp query và giám sát hiệu năng đều khó hơn. Quyết định ghi vào ADR.
+
+**Q314. Contract API (OpenAPI) giúp gì cho quản lý dự án nhiều bên?**
+OpenAPI là "hợp đồng" giữa front-end, back-end và hệ thống của khách: chốt sớm thì các bên làm song song bằng mock server, không chờ nhau. Tôi coi file contract là baseline — đổi field là thay đổi có kiểm soát, có version, báo bên phụ thuộc trước. Ví dụ với khách bảo hiểm B, chốt contract trước sprint 1 làm lộ ra chuyện hai bên hiểu khác định dạng ngày ngay từ đầu, thay vì đến 結合テスト (ketsugou tesuto – kiểm thử tích hợp) mới phát hiện.
+
+**Q315. OAuth2, OIDC và SSO — PM cần hiểu ở mức nào?**
+OAuth2 là chuẩn **ủy quyền** (cấp token để ứng dụng gọi API thay user); OIDC thêm lớp **xác thực** trên OAuth2 (biết user là ai qua ID token); SSO là trải nghiệm đăng nhập một lần cho nhiều hệ thống, thường dựng bằng OIDC hoặc SAML. PM cần hiểu để hỏi đúng: IdP của khách là gì (Entra ID, Okta…), ai cấp tài khoản test, quy trình đăng ký redirect URL và client secret — những việc phụ thuộc phía khách rất hay làm trễ tiến độ.
+> 💡 Bẫy: gọi OAuth2 là chuẩn xác thực — phân biệt rõ authorization và authentication là ghi điểm ngay.
+
+**Q316. Tích hợp với hệ thống cũ của khách thường gặp rủi ro gì, kiểm soát thế nào?**
+Rủi ro lớn nhất: tài liệu interface không khớp thực tế, không có môi trường test của hệ thống đối tác, người nắm hệ thống đã nghỉ. Tôi kiểm soát bằng: ① xin dữ liệu mẫu thật (đã mask) ngay tuần đầu; ② lập danh sách interface có owner, định dạng, tần suất, ngày có môi trường kết nối; ③ đưa ngày "có môi trường đối tác" vào kế hoạch như mốc phụ thuộc, lệch là báo ngay theo 報連相 (hou-ren-sou – báo cáo, liên lạc, thảo luận).
+
+**Q317. File interface CSV và 固定長 có những bẫy gì với hệ thống Nhật?**
+Với 固定長 (koteichou – bản ghi độ dài cố định), field tính theo byte nên bảng mã quyết định tất cả: ký tự 全角 (zenkaku – toàn độ rộng) chiếm 2 byte trong Shift_JIS nhưng thường 3 byte trong UTF-8, mainframe có thể dùng EBCDIC. Bẫy khác: 半角カナ (hankaku kana – katakana nửa độ rộng), 外字 (gaiji – ký tự ngoài bảng mã chuẩn) trong tên người, CRLF/LF, ngày 和暦 (wareki – lịch niên hiệu), padding bằng 0 hay space. Tôi yêu cầu bảng định nghĩa layout file và test bằng file thật từ sớm.
+> 💡 Kể một lỗi encoding cụ thể (vd tên khách hàng bị cắt mất nửa ký tự 全角) cho thấy bạn đã làm thật.
+
+**Q318. Message queue dùng để làm gì, ảnh hưởng gì đến thiết kế và test?**
+Queue (SQS, RabbitMQ, Kafka…) tách bên gửi và bên nhận: hấp thụ tải đột biến, xử lý bất đồng bộ, bên nhận chết thì message vẫn chờ. Đổi lại phải thiết kế cho message trùng, sai thứ tự, message lỗi lặp vô hạn (cần dead-letter queue) và giám sát độ dài hàng đợi. Với PM, điều này nghĩa là thêm test case cho tình huống lỗi và thêm việc vận hành — tôi yêu cầu tech lead liệt kê các phần này trước khi estimate, tránh chỉ tính happy path.
+
+**Q319. Idempotency là gì, vì sao PM phải quan tâm?**
+Idempotent nghĩa là gọi một thao tác nhiều lần cho cùng kết quả như gọi một lần. Retry do timeout mạng là chuyện thường; nếu API chuyển tiền hay tạo đơn không idempotent, khách hàng cuối có thể bị trừ tiền hai lần — sự cố nghiêm trọng với khách tài chính. Tôi yêu cầu API ghi dữ liệu nhận idempotency key, batch rerun không tạo bản ghi trùng, và có test case "gửi hai lần" trong kịch bản nghiệm thu.
+> 💡 Ví dụ "trừ tiền hai lần" là cách giải thích idempotency dễ hiểu nhất cho interviewer không thuần kỹ thuật.
+
+**Q320. Đối tác của khách đổi định dạng API không báo trước làm production lỗi. Anh/chị xử lý thế nào?**
+① Xác nhận fact: log cho thấy field nào đổi, từ lúc nào, bao nhiêu giao dịch bị ảnh hưởng. ② Khoanh vùng: tạm dừng nhận hoặc đưa vào hàng chờ để dữ liệu sai không lan, chuẩn bị xử lý lại. ③ Báo khách theo 報連相 càng sớm càng tốt kèm phạm vi ảnh hưởng — đầu mối với đối tác là khách. ④ 再発防止 (saihatsu boushi – phòng tái phát): validate schema đầu vào, contract test, thỏa thuận báo trước khi đổi; 横展開 (yokotenkai – áp dụng ngang) rà các interface còn lại.
+
+**Q321. Dự án có nhiều interface với hệ thống ngoài, PM lập kế hoạch kiểm thử tích hợp thế nào?**
+Tôi lập ma trận interface: hệ thống đối tác, chiều dữ liệu, giao thức, môi trường test đã có hay chưa, owner phía khách. Interface chưa có môi trường thì dùng stub/mock để dev không chờ, nhưng vẫn giữ một đợt test với hệ thống thật trước 総合テスト (sougou tesuto – kiểm thử hệ thống tổng thể). Lịch test liên kết phải chốt sớm vì các bên có lịch riêng; mỗi interface có tiêu chí hoàn thành rõ, vd 100% case bình thường và các case lỗi timeout, sai định dạng.
+
+**Q322. Timeout, retry, rate limit — PM có cần quan tâm không?**
+Có, vì đây là nguồn sự cố production và chi phí. Gọi API bên ngoài phải có timeout rõ, retry có giới hạn và backoff; nếu không, một đối tác chậm có thể kéo sập cả hệ thống (cascading failure). Rate limit của API bên thứ ba ảnh hưởng thiết kế batch và có thể buộc mua gói cao hơn. Tôi yêu cầu bảng **external dependency** ghi giới hạn, SLA, chi phí, đầu mối hỗ trợ của từng dịch vụ và rà lại trước go-live.
+
+**Q323. Dev estimate tích hợp API thanh toán của đối tác chỉ 3 ngày. Anh/chị kiểm tra con số đó thế nào?**
+Tôi không bác con số mà đặt câu hỏi để lộ phần bị bỏ sót: ① đã có tài liệu API, sandbox, tài khoản test chưa; ② xác thực, ký request, lưu key ở đâu; ③ xử lý timeout, retry, idempotency, đối soát giao dịch lệch; ④ test case lỗi và test chung với đối tác mất bao lâu; ⑤ log và mask dữ liệu thẻ. Thường 3 ngày chỉ là happy path. Tôi để dev tự estimate lại theo danh sách này — vừa sát hơn vừa để dev giữ quyền sở hữu con số.
+> 💡 Challenge estimate bằng checklist câu hỏi kỹ thuật, không bằng câu "anh thấy lâu/nhanh quá".
+
+## 4.3 Database & dữ liệu
+
+**Q324. RDBMS và NoSQL — khi nào chọn loại nào?**
+RDBMS (Oracle, PostgreSQL, MySQL, SQL Server) mạnh ở transaction ACID, ràng buộc toàn vẹn, truy vấn phức tạp — gần như mặc định cho dữ liệu tiền, hợp đồng, kế toán. NoSQL (DynamoDB, MongoDB, Redis…) hợp với dữ liệu lớn, schema linh hoạt, truy cập theo key độ trễ thấp như session, log, catalog. Nhiều hệ thống dùng cả hai. Câu hỏi PM đặt ra: team đã vận hành công nghệ này chưa, khách có chuẩn DB nội bộ hay license sẵn không — khách lớn thường đã chuẩn hóa.
+
+**Q325. Index giúp gì và có cái giá gì?**
+Index như mục lục, giúp truy vấn tìm nhanh thay vì quét toàn bảng — có thể giảm từ vài giây xuống mili giây. Cái giá: tốn dung lượng, làm chậm insert/update, và index đặt sai thì vô ích. Khi màn hình chậm, tôi hỏi tech lead đã xem execution plan chưa trước khi đồng ý nâng cấp server — nguyên nhân thường là thiếu index hoặc truy vấn N+1 chứ không phải phần cứng.
+
+**Q326. Transaction và lock ảnh hưởng thế nào đến hệ thống?**
+Transaction đảm bảo một nhóm thao tác hoặc thành công hết hoặc không gì cả (ACID) — vd chuyển khoản trừ bên A thì phải cộng bên B. Lock ngăn dữ liệu bị sửa đồng thời; lock giữ lâu hoặc sai thứ tự sinh chờ đợi và deadlock, thường lộ ra khi batch đêm chạy chồng giờ online. PM cần đảm bảo kế hoạch 性能試験 có kịch bản chạy đồng thời online + batch, và chốt với khách quy tắc khi hai người cùng sửa một bản ghi (khóa lạc quan hay bi quan).
+
+**Q327. データ移行 thường thất bại vì đâu?**
+データ移行 (deeta ikou – di chuyển dữ liệu) hay thất bại vì: ① dữ liệu cũ kém chất lượng (trùng, thiếu, giá trị ngoài quy ước) mà không ai biết đến lúc chạy thật; ② mapping thiếu trường hợp đặc biệt; ③ thời gian chạy vượt cửa sổ chuyển đổi; ④ không có tiêu chí đối soát rõ. Tôi coi migration là một dự án con có WBS, owner, test riêng — không phải "việc của tuần cuối" — và bắt đầu profiling dữ liệu ngay từ giai đoạn thiết kế.
+> 💡 Câu ăn điểm: "migration là dự án con, bắt đầu từ ngày đầu, không phải tuần cuối".
+
+**Q328. 移行リハーサル nên tổ chức thế nào?**
+移行リハーサル (ikou rihaasaru – diễn tập di chuyển) chạy toàn bộ quy trình như ngày thật: cùng khối lượng dữ liệu, cùng 手順書 (tejunsho – tài liệu thủ tục), cùng người, đo thời gian từng bước. Tôi làm tối thiểu 2–3 lần (tham khảo): lần đầu tìm lỗi, lần sau tối ưu thời gian, lần cuối "y như thật" kèm diễn tập rollback. Tiêu chí qua: đối soát khớp 100%, tổng thời gian ≤ 70–80% cửa sổ chuyển đổi, không có thao tác ngoài thủ tục.
+
+**Q329. Đối soát số liệu sau migration thế nào để khách tin?**
+Đối soát nhiều tầng: ① số bản ghi từng bảng trước/sau; ② tổng kiểm (tổng số dư, tổng số tiền theo kỳ, checksum); ③ so từng bản ghi với mẫu dữ liệu đặc biệt; ④ chạy cùng báo cáo nghiệp vụ trên hệ thống cũ và mới rồi so kết quả. Tiêu chí và script đối soát được khách duyệt trước, kết quả có log làm bằng chứng — với khách tài chính, lệch một yên cũng phải giải thích được.
+> 💡 Mời khách tự chọn mẫu bản ghi để đối soát — tạo niềm tin hơn mọi báo cáo do vendor tự làm.
+
+**Q330. Kế hoạch rollback cho migration gồm những gì?**
+Gồm: ① điểm Go/No-Go có giờ cố định (vd 4:00 sáng) và người có quyền quyết; ② điều kiện kích hoạt rollback đo được (đối soát lệch, vượt giờ); ③ backup đầy đủ hệ thống cũ và thủ tục 切り戻し (kirimodoshi – quay về trạng thái cũ) đã diễn tập; ④ cách xử lý dữ liệu phát sinh sau thời điểm chuyển. Rollback chưa diễn tập thì coi như không có — tôi luôn đưa nó vào ít nhất một lần rehearsal.
+
+**Q331. Schema thay đổi giữa dự án, làm sao không phá dữ liệu và tiến độ?**
+Dùng migration script có version (Flyway, Liquibase…) chạy giống nhau ở mọi môi trường, không sửa tay DB. Với hệ thống đang chạy, áp dụng expand–contract: thêm cột mới song song, chuyển dữ liệu, chuyển code, cuối cùng mới xóa cột cũ — lúc nào cũng rollback được. Về PM, mỗi thay đổi schema phải qua 影響調査: màn hình, batch, file interface, báo cáo nào bị chạm, và cập nhật tài liệu thiết kế DB — thứ khách Nhật thường kiểm rất kỹ.
+
+**Q332. Khách muốn đưa dữ liệu production thật cho team offshore test, anh/chị xử lý thế nào?**
+Tôi không nhận dữ liệu thật về offshore khi chưa có thỏa thuận và biện pháp bảo vệ. Đề xuất theo thứ tự: ① dữ liệu giả lập theo quy tắc nghiệp vụ; ② dữ liệu thật đã mask/ẩn danh (tên, điện thoại, số tài khoản) do phía khách làm; ③ bắt buộc dùng dữ liệu thật thì test trên môi trường của khách, truy cập remote có log. Lý do: trách nhiệm bảo vệ 個人情報 (kojin jouhou – thông tin cá nhân) và rủi ro uy tín cho cả hai bên.
+> 💡 Từ chối bằng phương án thay thế chứ không bằng chữ "không" — cách khách Nhật dễ chấp nhận nhất.
+
+**Q333. Dữ liệu tăng nhanh làm hệ thống chậm dần, PM xử lý ra sao?**
+① Đo trước: tốc độ tăng dữ liệu mỗi tháng, truy vấn nào chậm nhất. ② Chọn giải pháp theo chi phí tăng dần: tối ưu index/truy vấn, partition bảng theo tháng, archive dữ liệu cũ sang lưu trữ rẻ, cuối cùng mới nâng phần cứng. ③ Đưa vào backlog có ưu tiên kèm dự báo, vd "không làm thì 6 tháng nữa màn tra cứu vượt NFR". Chính sách lưu giữ và xóa dữ liệu phải do khách quyết vì có thể liên quan quy định pháp lý và kiểm toán.
+
+## 4.4 Cloud
+
+**Q334. Phân biệt IaaS, PaaS, SaaS theo góc nhìn trách nhiệm và chi phí.**
+IaaS (vd EC2) cho thuê máy ảo — mình lo OS, patch, middleware; PaaS (vd RDS, Elastic Beanstalk) nhà cung cấp lo nền tảng, mình lo ứng dụng và dữ liệu; SaaS (vd Microsoft 365, Salesforce) dùng sẵn, chỉ cấu hình. Càng lên cao càng ít việc vận hành nhưng càng phụ thuộc nhà cung cấp, ít tùy biến. Với PM, lựa chọn này quyết định phạm vi 運用保守 (unyou hoshu – vận hành bảo trì) và phải ghi rõ trong hợp đồng ai chịu phần nào.
+
+**Q335. Mô hình trách nhiệm chung (shared responsibility) của AWS ảnh hưởng gì đến dự án?**
+AWS chịu trách nhiệm bảo mật "của" cloud (data center, phần cứng, hạ tầng ảo hóa); khách hàng chịu trách nhiệm bảo mật "trong" cloud (IAM, network, mã hóa dữ liệu, patch OS nếu dùng EC2). Nhiều sự cố lộ dữ liệu trên cloud đến từ cấu hình sai như bucket S3 để public. PM phải chốt trong hợp đồng phần nào do vendor, khách hay đơn vị vận hành chịu, và đưa review cấu hình bảo mật vào checklist trước go-live.
+
+**Q336. Giải thích nhanh EC2, S3, RDS, Lambda, VPC, IAM và khi nào dùng.**
+Máy ảo **EC2** dùng khi cần kiểm soát OS hoặc chuyển nguyên trạng ứng dụng cũ; **S3** lưu trữ object (file, ảnh, backup, file interface); **RDS** là database được quản lý sẵn, có backup tự động và Multi-AZ; **Lambda** chạy code theo sự kiện, trả tiền theo lần chạy, giới hạn 15 phút/lần nên không hợp batch dài; **VPC** là mạng riêng ảo chia subnet public/private; **IAM** quản lý user, role, quyền. PM cần nắm để đọc sơ đồ hạ tầng và biết dòng chi phí nào từ đâu ra.
+
+**Q337. Kiểm soát chi phí cloud (FinOps) trong dự án thế nào?**
+① Ước tính bằng AWS Pricing Calculator ngay từ proposal, tách theo môi trường. ② Gắn tag (dự án, môi trường, owner) cho mọi resource để báo cáo được. ③ Đặt budget alert, vd cảnh báo ở 80% ngân sách tháng (tham khảo). ④ Tắt dev/staging ngoài giờ, chọn đúng size, dùng Savings Plans/Reserved Instances cho tải ổn định. ⑤ Review chi phí hằng tháng với tech lead, báo khách khi có xu hướng vượt. Thủ phạm hay gặp: NAT Gateway, data transfer, log lưu vô thời hạn.
+> 💡 Nêu được "thủ phạm chi phí ẩn" như NAT Gateway hay log không đặt thời hạn lưu cho thấy kinh nghiệm thật.
+
+**Q338. Multi-AZ, multi-region và DR khác nhau thế nào? RPO, RTO là gì?**
+Multi-AZ chạy dự phòng ở nhiều data center trong cùng region (vd Tokyo) — chống sự cố một trung tâm; multi-region (vd Tokyo + Osaka) chống thảm họa cả vùng — khách Nhật rất quan tâm vì rủi ro động đất. RPO là lượng dữ liệu tối đa chấp nhận mất (vd 15 phút), RTO là thời gian tối đa để khôi phục (vd 4 giờ). RPO/RTO càng nhỏ chi phí càng tăng mạnh, nên tôi để khách chọn mức theo độ quan trọng của từng hệ thống và yêu cầu diễn tập DR thật.
+
+**Q339. Vì sao khách tài chính Nhật vẫn chuộng on-premise hoặc private cloud?**
+Lý do thường gặp: ① quy định, chuẩn ngành, kiểm toán nội bộ và cơ quan giám sát đòi hỏi giải trình kỹ; ② lo dữ liệu khách hàng ra ngoài tầm kiểm soát hoặc ra nước ngoài; ③ hệ thống lõi gắn với mainframe và 閉域網 (heiikimou – mạng khép kín) sẵn có; ④ văn hóa ưu tiên ổn định, quy trình phê duyệt dài; ⑤ đã đầu tư lớn vào data center và đội vận hành. Hiểu đúng lý do giúp tôi không "bán cloud" mà giải quyết đúng mối lo của khách.
+
+**Q340. Làm sao thuyết phục khách tài chính Nhật đưa một phần hệ thống lên cloud?**
+Không thuyết phục bằng "cloud rẻ hơn" mà bằng lộ trình giảm rủi ro: ① bắt đầu từ hệ thống không lõi (dev/test, công cụ nội bộ) để chứng minh; ② trả lời từng mối lo bằng bằng chứng — dữ liệu nằm ở region Tokyo/Osaka, kết nối riêng (Direct Connect), mã hóa bằng key do khách quản lý, tài liệu đối chiếu chuẩn ngành của nhà cung cấp; ③ so TCO 5 năm kể cả chi phí thay phần cứng. Quyết định thuộc về khách, tôi cung cấp dữ liệu để họ quyết.
+> 💡 Nhắc "dữ liệu nằm tại region Tokyo/Osaka" đánh trúng mối lo chủ quyền dữ liệu của khách Nhật.
+
+**Q341. Hybrid cloud mang thêm rủi ro gì cho dự án?**
+Hybrid giữ dữ liệu lõi tại chỗ và đưa phần linh hoạt lên cloud, nhưng thêm rủi ro: kết nối mạng giữa hai bên (độ trễ, băng thông, đường dự phòng), hai bộ quy trình vận hành và bảo mật, đồng bộ dữ liệu, và sự cố nằm ở "khe giữa" không ai nhận. Tôi lập sơ đồ ranh giới trách nhiệm, đo độ trễ thật sớm, và đưa thời gian xin mở firewall/đường truyền phía khách vào kế hoạch — ở tổ chức lớn việc này có thể mất vài tuần (tham khảo).
+
+**Q342. Vendor lock-in với cloud có đáng lo không?**
+Có, nhưng ở mức hợp lý. Né lock-in hoàn toàn thì tốn chi phí và bỏ mất lợi ích của dịch vụ managed. Tôi phân loại: dữ liệu và logic nghiệp vụ lõi giữ ở dạng dễ chuyển (SQL chuẩn, container, Terraform); tiện ích phụ trợ (queue, notification, serverless) chấp nhận dùng dịch vụ riêng của nhà cung cấp. Quan trọng là ADR ghi rõ chi phí ước tính nếu phải chuyển đi, để khách quyết định có ý thức chứ không bị khóa mà không biết.
+
+**Q343. Hóa đơn cloud tháng này vượt 40% so với dự toán, anh/chị xử lý thế nào?**
+① Xác nhận fact bằng Cost Explorer: dịch vụ, môi trường, tag nào tăng, từ ngày nào. ② Hành động ngay: tắt resource thừa, giới hạn log, chặn nguyên nhân rõ (môi trường test quên tắt, vòng lặp gọi API). ③ Báo khách theo 報連相: nguyên nhân, số tiền, phần nào do thay đổi yêu cầu, phần nào do lỗi bên mình. ④ 再発防止: budget alert theo ngày, bắt buộc tag, review chi phí trong họp tuần; 横展開 sang các dự án cloud khác của công ty.
+
+## 4.5 DevOps & release
+
+**Q344. Chiến lược branching Git nào hợp với dự án outsourcing?**
+GitFlow (develop, feature, release, hotfix) hợp dự án release theo đợt, có UAT dài như nhiều dự án Nhật; trunk-based (nhánh ngắn, merge vào main hằng ngày, dùng feature flag) hợp CI/CD liên tục. Tôi chọn theo nhịp release của khách, nhưng quy tắc quan trọng hơn mô hình: không push thẳng main, mọi merge qua pull request có review, nhánh release đóng băng, hotfix phải merge ngược về các nhánh để tránh デグレ (degure – lỗi hồi quy, tính năng cũ hỏng lại).
+> 💡 デグレ do quên merge hotfix ngược là bẫy kinh điển — và khách Nhật đặc biệt khó chịu với デグレ.
+
+**Q345. CI/CD mang lại gì cho PM, khi nào đáng đầu tư?**
+CI tự build, chạy test, phân tích tĩnh ở mỗi commit — lỗi lộ ra sau vài phút thay vì vài ngày; CD tự đóng gói và deploy lên môi trường, giảm lỗi thao tác tay. Lợi ích đo được: thời gian từ commit đến môi trường test giảm, lỗi do deploy sai giảm, mọi bản build tái lập và truy vết được. Dự án dài hơn vài tháng gần như luôn đáng; chi phí dựng ban đầu thường vài ngày công (tham khảo) và tôi đưa vào WBS ngay sprint 0.
+
+**Q346. Infrastructure as Code (IaC) là gì, lợi ích gì khi làm với khách Nhật?**
+IaC (Terraform, CloudFormation…) mô tả hạ tầng bằng code, được review và quản lý version như code ứng dụng. Lợi ích: dựng môi trường giống hệt nhau nhanh, biết ai đổi gì lúc nào, giảm sai sót thao tác tay. Với khách Nhật, IaC là "tài liệu sống" phục vụ 構成管理 (kousei kanri – quản lý cấu hình) và kiểm toán. Tôi quy định mọi thay đổi hạ tầng production đi qua IaC + review; sửa tay chỉ khi khẩn cấp, phải ghi lại và đồng bộ về code.
+
+**Q347. Container và Kubernetes — PM cần hiểu gì để quyết định?**
+Container (Docker) đóng gói ứng dụng cùng môi trường chạy, hết cảnh "máy tôi chạy được"; Kubernetes điều phối nhiều container: tự khởi động lại, scale, rolling update. Kubernetes mạnh nhưng phức tạp và tốn người vận hành — hệ thống vài service thì dịch vụ managed đơn giản hơn (vd ECS) thường đủ. Tôi hỏi: ai vận hành sau go-live, khách có đội platform không, chi phí vận hành mỗi tháng bao nhiêu — chưa trả lời được thì chưa nên chọn Kubernetes.
+> 💡 Bẫy: chọn Kubernetes vì "đẹp CV" của team — PM phải hỏi "ai trực nó lúc 2 giờ sáng".
+
+**Q348. Dự án nên có những môi trường nào, quản lý ra sao?**
+Tối thiểu: dev cho team phát triển; staging/検証環境 (kenshou kankyou – môi trường kiểm chứng) giống production nhất có thể cho UAT và test hiệu năng; và 本番. Dự án lớn thêm môi trường test liên kết với hệ thống đối tác. Nguyên tắc: các môi trường chỉ khác nhau ở biến cấu hình, quyền vào 本番 tối thiểu và có log, dữ liệu 本番 không chảy ngược xuống dev. Lịch dùng staging phải lên kế hoạch vì nhiều team, nhiều đợt test tranh nhau.
+
+**Q349. Blue-green và canary deployment khác nhau thế nào, chọn khi nào?**
+Blue-green dựng song song môi trường mới (green) giống hệt môi trường cũ (blue) rồi chuyển toàn bộ traffic một lần — rollback nhanh bằng cách chuyển lại, nhưng tốn gấp đôi hạ tầng trong lúc chuyển. Canary đẩy phiên bản mới cho một phần nhỏ người dùng (vd 5%), theo dõi chỉ số rồi tăng dần — lỗi chỉ ảnh hưởng nhóm nhỏ nhưng đòi monitoring tốt. Cả hai vướng khi thay đổi schema DB không tương thích ngược, nên tôi luôn hỏi "DB có quay lại được không" trước khi chọn.
+
+**Q350. 本番リリース手順書 cần có những gì?**
+本番リリース手順書 (honban ririisu tejunsho – tài liệu thủ tục release production) gồm: điều kiện tiên quyết và checklist trước release; từng bước có người làm, người xác nhận, lệnh cụ thể, thời gian dự kiến, kết quả mong đợi; điểm Go/No-Go; bước kiểm tra sau release (smoke test); thủ tục 切り戻し và điều kiện kích hoạt; danh sách liên lạc khẩn cấp. Khách Nhật thường review từng dòng và yêu cầu diễn tập trên staging — tôi tính effort riêng cho việc này trong kế hoạch.
+> 💡 Nhắc cách làm "một người thao tác, một người đọc và tick từng bước" — chuẩn mực mà khách Nhật rất coi trọng.
+
+**Q351. Release lỗi giữa chừng lúc nửa đêm, anh/chị quyết định rollback hay fix-forward thế nào?**
+① Xác nhận fact: lỗi ở bước nào, ảnh hưởng người dùng và dữ liệu ra sao. ② Áp tiêu chí đã chốt sẵn trong 手順書: không sửa được trong khung quy định (vd 30 phút) hoặc có nguy cơ hỏng dữ liệu thì rollback, không "cố thêm chút nữa". ③ Báo khách theo 報連相 ngay khi kích hoạt rollback. ④ Sau đó RCA, sửa 手順書, diễn tập lại trước lần release sau. Fix-forward chỉ chọn khi lỗi nhỏ, rõ nguyên nhân và rollback còn rủi ro hơn.
+> 💡 Mấu chốt: tiêu chí rollback được chốt TRƯỚC release, không quyết bằng cảm xúc lúc 2 giờ sáng.
+
+**Q352. Feature flag giúp gì cho quản lý release?**
+Feature flag cho phép deploy code nhưng chưa bật tính năng — tách "deploy" khỏi "release". Lợi ích: merge sớm tránh nhánh sống dài, bật dần cho từng nhóm user, tắt ngay khi lỗi mà không phải deploy lại, và vẫn giữ lịch deploy khi khách chưa duyệt xong UAT một tính năng. Cái giá: code thêm nhánh điều kiện, phải test cả hai trạng thái bật/tắt, và phải dọn flag cũ định kỳ để không thành nợ kỹ thuật.
+
+**Q353. Đo hiệu quả DevOps của team bằng chỉ số nào?**
+Tôi dùng 4 chỉ số DORA: tần suất deploy, lead time từ commit đến production, tỉ lệ thay đổi gây sự cố, thời gian khôi phục. Với dự án Nhật release theo đợt, tần suất deploy production thấp là bình thường, nên tôi đo thêm ở staging để thấy sức khỏe pipeline. Chỉ số dùng để cải tiến quy trình theo xu hướng, không dùng để so sánh hay chấm điểm cá nhân — dùng sai sẽ khiến team "làm đẹp số".
+
+## 4.6 Testing kỹ thuật & automation
+
+**Q354. Test pyramid là gì, tương ứng thế nào với các mức test trong dự án Nhật?**
+Test pyramid: đáy là nhiều unit test (nhanh, rẻ), giữa là integration test, đỉnh là ít E2E test (chậm, dễ vỡ). Dự án Nhật thường chia 単体テスト (tantai tesuto – unit test, UT), 結合テスト (IT), 総合テスト (ST), 受入テスト (ukeire tesuto – kiểm thử nghiệm thu, UAT) — gần tương ứng các tầng nhưng nặng tài liệu và test tay. Tôi đề xuất tự động hóa phần đáy (UT, API test) để giảm effort hồi quy, giữ test tay cho nghiệp vụ và trải nghiệm ở ST/UAT.
+
+**Q355. Vì sao test pyramid bị đảo ngược là dấu hiệu rủi ro?**
+Khi phần lớn test là test tay/E2E qua giao diện còn unit test rất ít ("ice-cream cone"), mỗi đợt hồi quy tốn nhiều ngày, test chậm và vỡ mỗi khi UI đổi, lỗi lộ muộn nên sửa đắt. Dấu hiệu: mỗi release phải test tay lại toàn bộ, dev ngại refactor vì sợ デグレ. Tôi đảo dần: code mới bắt buộc có unit test, ưu tiên tự động hóa API test cho luồng chính, E2E chỉ giữ cho golden path quan trọng nhất.
+
+**Q356. Code coverage 80% có nghĩa là chất lượng tốt không?**
+Chưa chắc. Coverage chỉ cho biết bao nhiêu dòng/nhánh được chạy qua khi test, không cho biết test có kiểm tra đúng kết quả — có thể đạt 100% mà không có assertion nào. Khách Nhật hay đặt mục tiêu C0 (statement coverage) hoặc C1 (branch coverage). Tôi dùng coverage như cờ báo vùng chưa test, kết hợp review chất lượng test case, và ưu tiên coverage cao ở logic quan trọng (tính tiền, phân quyền) thay vì ép đều mọi nơi.
+> 💡 Bẫy: biến coverage thành KPI của dev — sẽ sinh ra test "cho có", chạy qua code mà không kiểm gì.
+
+**Q357. Performance test, load test, stress test khác nhau thế nào, lập kế hoạch ra sao?**
+Performance test đo thời gian phản hồi, throughput ở tải mục tiêu; load test đẩy đến tải cao nhất dự kiến; stress test vượt ngưỡng để tìm điểm gãy và xem hệ thống phục hồi thế nào. Kế hoạch gồm: kịch bản theo nghiệp vụ thật (vd cao điểm cuối tháng), khối lượng dữ liệu gần production, môi trường gần giống 本番, công cụ (JMeter, k6, Gatling), tiêu chí pass theo NFR đã chốt. Tôi xếp test hiệu năng sớm, không để tuần cuối vì sửa kiến trúc rất tốn.
+
+**Q358. Kết quả load test không đạt NFR khi chỉ còn 2 tuần đến go-live, anh/chị làm gì?**
+① Xác nhận fact: điều kiện test có đúng thỏa thuận không (dữ liệu, cấu hình, kịch bản), nút cổ chai nằm ở DB, ứng dụng hay mạng. ② Khoanh vùng: tách phần sửa nhanh được (index, cache, connection pool, cấu hình) với phần phải sửa thiết kế. ③ Báo khách theo 報連相 ngay, kèm phương án: tạm nâng hạ tầng để go-live đúng hạn rồi tối ưu sau, hoặc dời ngày — khách chọn. ④ 再発防止: đưa performance test vào từ giữa dự án; 横展開 sang các dự án đang chạy.
+> 💡 Luôn đưa khách ít nhất hai phương án có chi phí và rủi ro rõ ràng, đừng chỉ báo "không đạt".
+
+**Q359. Test automation có đáng đầu tư không, tính ROI thế nào?**
+ROI ≈ (effort test tay tiết kiệm qua các lần chạy − chi phí viết và bảo trì script) / chi phí đầu tư. Minh họa: hồi quy tay 10 ngày công/lần, 12 lần/năm = 120 ngày; tự động hóa tốn 30 ngày + bảo trì 1 ngày/lần = 42 ngày → tiết kiệm khoảng 78 ngày công/năm. Đáng làm khi hệ thống sống lâu, release thường xuyên, UI/API ổn định; không đáng khi dự án ngắn hoặc giao diện còn đổi liên tục. Chi phí bảo trì script thường bị đánh giá thấp.
+> 💡 Đưa ra phép tính cụ thể thay vì nói "automation giúp tiết kiệm" — interviewer chấm điểm đúng chỗ này.
+
+**Q360. Có thay đổi nhỏ trong một hệ thống lớn, phạm vi regression test xác định thế nào?**
+Dựa trên 影響調査: xác định module, màn hình, batch, interface bị chạm, rồi chọn phạm vi hồi quy theo rủi ro thay vì test lại toàn bộ. Bộ test tự động cốt lõi (smoke + luồng chính) luôn chạy; vùng bị ảnh hưởng thì test sâu; vùng không liên quan test mẫu. Với khách Nhật, tôi ghi rõ phạm vi hồi quy và căn cứ chọn trong tài liệu để khách duyệt — họ cần thấy lý do, không chỉ kết quả "đã test OK".
+
+**Q361. Test data và môi trường test hay làm trễ tiến độ thế nào, phòng ra sao?**
+Hay gặp: dữ liệu test không đủ đa dạng nên sót case biên, môi trường dùng chung bị team khác ghi đè, hệ thống đối tác chưa sẵn sàng, dữ liệu phải chờ khách cung cấp. Tôi biến "chuẩn bị test data" thành task có owner trong WBS, dùng script sinh dữ liệu chạy lại được, lập lịch dùng môi trường, và theo dõi ngày khách giao dữ liệu như một dependency — trễ một ngày là báo khách kèm ảnh hưởng đến lịch test.
+
+**Q362. Có nên giao test cho chính dev, hay cần QA độc lập?**
+Cả hai, ở các tầng khác nhau. Dev chịu trách nhiệm unit test và test tích hợp phần mình làm — hiểu code nhất, sửa nhanh nhất. QA độc lập cần cho test hệ thống, nghiệp vụ, hồi quy vì người viết code có "điểm mù" với giả định của chính mình. Với tài chính, bảo hiểm, tôi nghiêng về đội QA mạnh hơn và cho QA tham gia từ lúc đọc yêu cầu, vì chi phí lỗi lọt ra production cao hơn nhiều so với chi phí test.
+
+## 4.7 Bảo mật
+
+**Q363. OWASP Top 10 — PM cần nắm ở mức nào?**
+Đủ để biết các nhóm lỗ hổng phổ biến và đưa vào quy trình: Broken Access Control (đứng đầu bản 2021 — user xem được dữ liệu người khác), Injection như SQL injection, Cryptographic Failures, Security Misconfiguration, thành phần lỗi thời, lỗi xác thực… PM không cần tự khai thác lỗ hổng, nhưng phải đảm bảo có checklist secure coding trong review, công cụ quét (SAST, dependency scan) trong CI, và pentest trước go-live với hệ thống quan trọng.
+> 💡 Cho ví dụ "đổi ID trên URL là xem được hợp đồng người khác" — interviewer hiểu ngay bạn nắm Broken Access Control.
+
+**Q364. Đưa secure coding vào dự án thế nào để không chỉ là khẩu hiệu?**
+① コーディング規約 (koodingu kiyaku – quy ước code) có mục bảo mật cụ thể: dùng prepared statement, escape output, validate input phía server, không log thông tin nhạy cảm. ② Công cụ tự động: SAST và quét thư viện có lỗ hổng trong CI, chặn merge khi có lỗi mức cao. ③ Checklist review có mục bảo mật. ④ Đào tạo ngắn đầu dự án bằng ví dụ lỗi thật. Chỉ số theo dõi: lỗi bảo mật mức cao không được mở quá 7 ngày (tham khảo).
+
+**Q365. Quản lý secret (password, API key) trong dự án thế nào?**
+Nguyên tắc: secret không bao giờ nằm trong source code, Excel, chat hay email. Dùng secret manager (AWS Secrets Manager, Parameter Store, Vault), phân quyền theo môi trường, xoay vòng định kỳ, quét secret ở pre-commit hook và CI. Nếu lỡ commit key lên Git, xóa commit là chưa đủ — phải thu hồi và cấp key mới ngay vì lịch sử có thể đã bị sao chép. Tôi đưa các mục này vào checklist onboarding và review.
+> 💡 Bẫy: trả lời "xóa commit là xong" — câu đúng là "revoke key ngay, coi như đã lộ".
+
+**Q366. Phân quyền truy cập cho team offshore vào hệ thống của khách thế nào?**
+Áp dụng least privilege: mỗi người chỉ có quyền đúng việc, đúng thời hạn. Dev không có quyền thường trực vào 本番; ai cần thao tác production thì xin quyền tạm thời có phê duyệt, đi qua bastion/VPN, mọi thao tác được log. Tài khoản cá nhân, không dùng chung; thành viên rời dự án bị thu hồi quyền trong ngày. Tôi giữ bảng quản lý quyền (ai, hệ thống nào, quyền gì, đến ngày nào) và rà soát hằng tháng cùng khách.
+
+**Q367. 個人情報保護法 (APPI) ảnh hưởng gì đến dự án offshore?**
+個人情報保護法 (kojin jouhou hogo hou – luật bảo vệ thông tin cá nhân, APPI) yêu cầu doanh nghiệp quản lý an toàn dữ liệu cá nhân và giám sát bên nhận ủy thác — tức vendor offshore nằm trong phạm vi khách phải kiểm soát. Bản sửa đổi hiệu lực từ 2022 siết nghĩa vụ báo cáo rò rỉ và việc chuyển dữ liệu ra nước ngoài. Hệ quả cho PM: hạn chế dữ liệu cá nhân thật về Việt Nam, có thỏa thuận xử lý dữ liệu, log truy cập, quy trình báo rò rỉ rõ ràng.
+> 💡 Không cần thuộc điều luật — nói được "vendor là bên nhận ủy thác, khách có nghĩa vụ giám sát mình" là đủ ghi điểm.
+
+**Q368. Khách tài chính thường có yêu cầu bảo mật gì cao hơn, FISC liên quan thế nào?**
+Khách tài chính Nhật thường tham chiếu 安全対策基準 (anzen taisaku kijun – chuẩn biện pháp an toàn) do FISC (Trung tâm Hệ thống Thông tin Tài chính) ban hành, cùng chính sách nội bộ và yêu cầu kiểm toán. Thực tế dự án hay gặp: checklist bảo mật dài phải trả lời từng mục, audit nơi phát triển, log truy cập lưu dài hạn, phân tách nhiệm vụ, kiểm soát chặt việc giao lại cho bên thứ ba. Tôi chuẩn bị sẵn bằng chứng (chính sách, log, chứng nhận ISMS) để không làm chậm onboarding.
+
+**Q369. ISMS/ISO 27001 ở môi trường offshore thể hiện cụ thể thế nào?**
+Thể hiện ở mặt bằng và thao tác hằng ngày: phòng dev riêng cho dự án có thẻ ra vào, camera; cấm USB, điện thoại có camera hoặc thiết bị cá nhân vào khu vực tùy mức khách yêu cầu; máy dự án khóa cổng USB, chặn upload lên dịch vụ cá nhân, khóa màn hình tự động; tài liệu in phải hủy theo quy trình. Đi kèm là cam kết bảo mật từng thành viên, đào tạo định kỳ, audit nội bộ — và khách Nhật có thể đến kiểm tra trực tiếp.
+
+**Q370. Một thành viên lỡ đẩy source code của khách lên repo public. Anh/chị xử lý thế nào?**
+① Xác nhận fact: repo nào, nội dung gì (có secret, dữ liệu cá nhân không), public từ lúc nào. ② Hành động ngay: chuyển private/xóa repo, thu hồi mọi key/password trong code, kiểm tra log truy cập nếu có. ③ Báo khách theo 報連相 trong ngày, trung thực về phạm vi — chưa đủ thông tin vẫn báo trước, cập nhật sau. ④ 再発防止: chặn tài khoản Git cá nhân trên máy dự án, quét secret, đào tạo lại; 横展開 rà tất cả dự án khác trong công ty.
+> 💡 Khách Nhật có thể bỏ qua một lỗi, nhưng rất khó bỏ qua việc báo chậm hay che giấu.
+
+**Q371. Pentest nên làm khi nào, ai làm, ảnh hưởng kế hoạch ra sao?**
+Với hệ thống public hoặc dữ liệu nhạy cảm: quét tự động liên tục trong CI, và pentest bởi bên thứ ba độc lập trước go-live, sau thay đổi lớn hoặc định kỳ (vd hằng năm, tham khảo). Cần chốt sớm với khách ai thuê bên pentest, phạm vi, môi trường, thời gian. Kết quả gần như luôn có lỗi phải sửa, nên tôi chừa 1–2 tuần sửa và test lại trước go-live, không đặt pentest sát ngày release.
+
+**Q372. Audit trail với khách tài chính cần đáp ứng những gì?**
+Audit trail ghi ai, làm gì, lúc nào, trên dữ liệu nào, từ đâu, kết quả ra sao — nhất là thao tác đổi dữ liệu quan trọng, đăng nhập, cấp quyền, xuất dữ liệu. Yêu cầu thường gặp: không ai sửa/xóa được log kể cả admin, lưu theo thời hạn khách quy định, đồng bộ giờ giữa các server, tra cứu được khi kiểm toán, đồng thời mask dữ liệu cá nhân. Đây là NFR phải chốt từ 要件定義 — bổ sung sau rất tốn vì chạm hầu hết chức năng.
+
+**Q373. Cân bằng giữa bảo mật và tốc độ phát triển thế nào?**
+Siết quá thì team chậm (chờ quyền, môi trường bị khóa), lỏng quá thì rủi ro mất khách. Tôi phân mức theo độ nhạy cảm: dữ liệu cá nhân và 本番 kiểm soát chặt nhất; môi trường dev chỉ chứa dữ liệu giả lập thì nới để team làm nhanh. Tự động hóa kiểm tra (quét secret, SAST) thay cho kiểm tay để không thêm bước chờ. Yêu cầu bảo mật làm tăng effort được estimate thành dòng riêng cho khách duyệt — không để team âm thầm gánh.
+
+## 4.8 Legacy modernization
+
+**Q374. 2025年の崖 là gì, liên quan gì đến cơ hội của vendor offshore?**
+2025年の崖 (nisen nijuugo nen no gake – "vách đá 2025") là cảnh báo trong DX Report của METI năm 2018: nếu doanh nghiệp Nhật không thay các hệ thống cũ phức tạp, phụ thuộc vài người, thì từ 2025 có thể chịu thiệt hại kinh tế rất lớn (thường được trích tới 12 nghìn tỷ yên/năm) và tụt lại trong DX. Đến nay đó vẫn là động lực của nhiều dự án modernization, migration và nhu cầu bù thiếu kỹ sư — cơ hội lớn cho vendor offshore.
+> 💡 Trích đúng nguồn (DX Report của METI, 2018) cho thấy bạn hiểu bối cảnh thị trường Nhật, không chỉ kỹ thuật.
+
+**Q375. Nhận dự án liên quan ホスト系 / COBOL, PM offshore cần lưu ý gì?**
+ホスト系 (hosuto-kei – hệ thống chạy trên mainframe) thường là hệ thống lõi tài chính, bảo hiểm chạy hàng chục năm bằng COBOL, PL/I, JCL, với batch lớn và dữ liệu EBCDIC. Rủi ro chính: tài liệu thiết kế lệch so với code thật, logic nghiệp vụ ẩn trong code, người hiểu hệ thống đã nghỉ, kỹ sư COBOL tại Việt Nam rất ít. Tôi yêu cầu giai đoạn phân tích hiện trạng có effort riêng, dùng công cụ phân tích source, và có người phía khách xác nhận nghiệp vụ.
+
+**Q376. Rehost, replatform, refactor, rebuild — chọn chiến lược modernization thế nào?**
+Bốn mức: **rehost** (lift-and-shift) chuyển nguyên trạng sang hạ tầng mới — nhanh, rủi ro thấp, ít lợi ích dài hạn; **replatform** đổi nền tảng, sửa code ít (vd DB sang managed service); **refactor** tái cấu trúc code để tận dụng kiến trúc mới — tốn hơn nhưng giảm nợ kỹ thuật; **rebuild** viết lại từ đầu — linh hoạt nhất, rủi ro và chi phí cao nhất. Tôi chọn theo từng hệ thống (giá trị nghiệp vụ, tần suất thay đổi, hạn hết hỗ trợ, ngân sách) — một chương trình thường kết hợp nhiều chiến lược.
+
+**Q377. Khách yêu cầu 現行踏襲 khi chuyển đổi hệ thống — rủi ro là gì?**
+現行踏襲 (genkou toushuu – giữ nguyên hành vi hệ thống hiện tại) nghe đơn giản nhưng là bẫy: "hiện tại" thường không có tài liệu đầy đủ, nên phạm vi thật là toàn bộ hành vi ẩn của hệ thống cũ, kể cả lỗi người dùng đã quen. Tôi xử lý: ① chốt cách xác định "giống" — cùng đầu vào thì so đầu ra; ② lập danh sách khác biệt chấp nhận được để khách duyệt; ③ estimate có phần phân tích hiện trạng riêng, không coi 現行踏襲 là "không cần yêu cầu".
+> 💡 Nhận "現行踏襲" mà không chốt tiêu chí so sánh là con đường ngắn nhất dẫn đến phát sinh không giới hạn.
+
+**Q378. 並行稼働 nên tổ chức thế nào?**
+並行稼働 (heikou kadou – vận hành song song) là chạy hệ thống cũ và mới cùng lúc với cùng đầu vào, so đầu ra trước khi dừng hẳn hệ thống cũ. Cần chốt: thời gian song song (vd 1–3 chu kỳ nghiệp vụ như kỳ chốt tháng, tham khảo), cách so sánh tự động, quy trình khi lệch, và hệ thống nào là "chính thức" trong giai đoạn đó. Cái giá là người dùng nhập liệu hai lần hoặc cần cơ chế đồng bộ, nên phải thống nhất nguồn lực phía khách từ sớm.
+
+**Q379. Big-bang và chuyển dần (strangler) khác nhau ra sao?**
+Big-bang cắt toàn bộ sang hệ thống mới trong một lần — quản lý dữ liệu đơn giản nhưng rủi ro dồn vào một ngày. Strangler fig thay từng phần: đặt lớp định tuyến phía trước, chuyển dần chức năng sang hệ thống mới đến khi hệ thống cũ hết vai trò — rủi ro chia nhỏ, có giá trị sớm, nhưng phải duy trì đồng bộ hai hệ thống lâu hơn. Với hệ thống lõi lớn, tôi nghiêng về chuyển dần theo nhóm nghiệp vụ, trừ khi dữ liệu dùng chung quá chặt để tách.
+
+**Q380. Làm sao giảm rủi ro "không ai còn hiểu hệ thống cũ"?**
+① Reverse engineering có hệ thống: công cụ phân tích source vẽ call graph và CRUD matrix (chương trình nào đọc/ghi bảng nào). ② Phỏng vấn người dùng, người vận hành; lấy kết quả batch thật làm "chân lý". ③ Viết lại tài liệu thiết kế từ code và nhờ khách xác nhận từng phần. ④ Dùng GenAI hỗ trợ giải thích code cũ nếu khách cho phép, luôn có người kiểm chứng. Effort phân tích này tôi tách riêng, báo giá theo giai đoạn thay vì gộp vào phát triển.
+
+**Q381. Khách muốn rebuild toàn bộ hệ thống lõi 20 năm tuổi trong 18 tháng. Anh/chị phản hồi thế nào?**
+Tôi không nói "được" ngay. ① Xin một giai đoạn assessment ngắn (vd 4–8 tuần, tham khảo) để đo quy mô thật: số chương trình, job batch, interface, bảng dữ liệu. ② Trình bày phương án: rebuild toàn bộ, chuyển dần theo nhóm nghiệp vụ, hoặc rehost trước rồi refactor dần — mỗi phương án có chi phí, thời gian, rủi ro. ③ Nêu rõ rủi ro đã biết của rebuild lớn: phạm vi ẩn, 現行踏襲, データ移行. Mục tiêu là khách chọn với đủ thông tin, không phải vendor hứa để có hợp đồng.
+> 💡 "Assessment trước, cam kết sau" thể hiện tư duy chiến lược và bảo vệ cả công ty lẫn khách.
+
+**Q382. Làm sao chứng minh hệ thống mới tương đương hệ thống cũ trước cutover?**
+Bằng bằng chứng so sánh định lượng: ① bộ test so đầu ra (cùng input → so output) cho batch và báo cáo, tự động hóa để chạy lặp; ② kết quả 並行稼働 với tỉ lệ khớp và danh sách khác biệt đã được khách phân loại "chấp nhận/phải sửa"; ③ kết quả 移行リハーサル và đối soát dữ liệu; ④ hiệu năng so với hệ thống cũ. Tiêu chí Go cutover được khách ký trước, vd khớp 100% ở nghiệp vụ tiền tệ, mọi khác biệt còn lại đều đã có quyết định.
+
+## 4.9 Code quality & nợ kỹ thuật
+
+**Q383. Tổ chức code review trong dự án offshore thế nào để hiệu quả?**
+① Mọi thay đổi qua pull request, tối thiểu một reviewer có kinh nghiệm, PR nhỏ (vd dưới 400 dòng, tham khảo) để review được kỹ. ② Checklist: đúng yêu cầu, xử lý lỗi, bảo mật, hiệu năng, có test. ③ Linter/formatter lo phần hình thức để người review tập trung vào logic. ④ Đo thời gian chờ review — PR treo quá 1 ngày là nút thắt. Một số khách muốn tham gia ソースレビュー (soosu rebyuu – review mã nguồn); tôi thống nhất phạm vi, công cụ và cách phản hồi ngay từ đầu.
+
+**Q384. Static analysis (SonarQube) giúp PM ra quyết định thế nào?**
+SonarQube phân tích tĩnh mã nguồn: bug tiềm ẩn, lỗ hổng bảo mật, code smell, trùng lặp, coverage, và ước lượng nợ kỹ thuật theo thời gian cần sửa. Với PM, đó là dữ liệu khách quan thay cảm tính: đặt Quality Gate (vd code mới không có bug/lỗ hổng mức cao, coverage code mới ≥ ngưỡng đã thỏa thuận) để chặn merge, theo dõi xu hướng qua từng sprint, và dùng số liệu khi đàm phán với khách về thời gian dọn nợ.
+> 💡 Nhấn mạnh "Quality Gate áp cho code mới" — cách thực tế để không bị nhấn chìm bởi nợ cũ.
+
+**Q385. Coding convention quan trọng thế nào, ai quyết định?**
+Rất quan trọng với dự án đông người, nhiều đợt nhân sự: code đồng nhất thì review nhanh, người mới hiểu nhanh, bảo trì rẻ. Khách Nhật thường có コーディング規約 riêng và yêu cầu tuân thủ nghiêm — tôi cho team đọc kỹ từ đầu, chuyển thành cấu hình linter/formatter để máy kiểm thay người nhớ. Nếu khách không có, tech lead đề xuất dựa trên chuẩn phổ biến của ngôn ngữ và gửi khách xác nhận trước khi bắt đầu code.
+
+**Q386. Technical debt là gì, đo bằng cách nào?**
+Nợ kỹ thuật — 技術的負債 (gijutsuteki fusai) — là các "đường tắt" trong thiết kế/code giúp nhanh hôm nay nhưng khiến mỗi thay đổi sau này chậm và rủi ro hơn, như trả lãi. Đo bằng: ① chỉ số công cụ (nợ ước lượng của SonarQube, độ phức tạp, trùng lặp); ② chỉ số dự án (thời gian làm một thay đổi nhỏ tăng dần, số lần デグレ, thời gian onboard người mới); ③ danh sách nợ trong backlog có mô tả tác động. Không đo được thì không thể xin khách thời gian trả.
+
+**Q387. Làm sao xin khách thời gian và ngân sách để trả nợ kỹ thuật?**
+Nói bằng ngôn ngữ chi phí – rủi ro của khách, không bằng "code xấu". ① Dữ liệu: "mỗi thay đổi ở module tính phí mất 5 ngày thay vì 2, có 3 lần デグレ trong 6 tháng". ② Phương án: dành 10–20% capacity mỗi sprint (tham khảo), hoặc gói refactor gắn với tính năng sắp làm ở cùng module. ③ Cam kết kết quả đo được sau khi trả: thời gian thay đổi, số lỗi. Phần nợ do vendor làm ẩu thì vendor tự chịu — minh bạch điều này giúp khách tin phần còn lại.
+> 💡 Tách bạch nợ "do vendor làm ẩu" (mình chịu) và nợ "do quyết định chung" (thương lượng) — rất được đánh giá cao.
+
+**Q388. Dev muốn refactor lớn giữa dự án, anh/chị quyết định thế nào?**
+Tôi hỏi bốn câu: ① vấn đề cụ thể là gì, có số đo không; ② không refactor thì rủi ro gì cho tiến độ/chất lượng trong 3 tháng tới; ③ phạm vi và effort, chia nhỏ được không; ④ test hiện có đủ bảo vệ khỏi デグレ không. Lợi ích rõ và rủi ro kiểm soát được thì đưa vào kế hoạch theo từng bước nhỏ gắn với tính năng; nếu ảnh hưởng mốc giao hàng thì phải báo và được khách đồng ý — không refactor "lén".
+
+**Q389. Tiếp nhận dự án maintenance từ vendor khác với code chất lượng kém, 30 ngày đầu làm gì?**
+① Đánh giá hiện trạng: chạy static analysis, đo coverage, đối chiếu tài liệu với code, kiểm tra build được từ source và dựng lại được môi trường không. ② Lập báo cáo rủi ro có số liệu, gửi khách sớm — để "nợ cũ" không bị tính lên đầu mình sau này. ③ Ổn định trước: dựng CI, bổ sung test cho vùng hay phải sửa nhất. ④ Đề xuất lộ trình cải thiện theo ưu tiên. Không chỉ trích vendor cũ trước mặt khách — chỉ trình bày fact.
+> 💡 Báo cáo hiện trạng có số liệu trong tháng đầu là "bảo hiểm" quan trọng nhất khi tiếp quản dự án.
+
+**Q390. Framework, thư viện, OS sắp hết hỗ trợ (EOL) — PM quản lý thế nào?**
+EOL nghĩa là hết bản vá bảo mật — với khách tài chính thường là vi phạm chính sách. Tôi giữ danh sách thành phần (ngôn ngữ, framework, DB, OS, thư viện chính) kèm ngày EOL, rà mỗi quý, và đề xuất nâng cấp trước hạn ít nhất 6–12 tháng (tham khảo) vì khách cần thời gian xin ngân sách — nhiều công ty Nhật lập ngân sách theo năm tài chính bắt đầu tháng 4. Nâng cấp lớn được lập kế hoạch như dự án nhỏ: 影響調査, test hồi quy, release có rollback.
+
+**Q391. Cân bằng "làm nhanh cho kịp deadline" và chất lượng code thế nào?**
+Tôi chấp nhận nợ kỹ thuật có chủ đích, không chấp nhận nợ vô ý. Khi buộc phải đi tắt để kịp mốc: ghi rõ vào backlog đi tắt chỗ nào, rủi ro gì, khi nào trả, và báo khách nếu ảnh hưởng vận hành. Những thứ không đánh đổi: bảo mật, tính đúng của dữ liệu, test cho logic tiền tệ. Sau mốc, sprint kế tiếp phải có slot trả nợ đã hứa — nếu không, lần sau team sẽ không còn tin vào "đi tắt tạm thời".
+
+## 4.10 Vận hành, sự cố & công cụ
+
+**Q392. Trước go-live cần tối thiểu những gì về logging và monitoring?**
+① Log tập trung, có cấu trúc, có correlation ID để trace một giao dịch qua nhiều thành phần, đã mask dữ liệu cá nhân. ② Monitoring hạ tầng (CPU, bộ nhớ, đĩa) và ứng dụng (tỉ lệ lỗi, thời gian phản hồi, độ dài queue, batch đã xong chưa). ③ Alert có ngưỡng, có người nhận và quy trình xử lý — alert không ai xem còn tệ hơn không có. ④ Dashboard chung cho team và khách. Tất cả nằm trong checklist go-live, không đợi sau sự cố mới bổ sung.
+
+**Q393. SLA, SLO, SLI khác nhau thế nào?**
+SLI là chỉ số đo thực tế (vd tỉ lệ request thành công, thời gian phản hồi p95); SLO là mục tiêu nội bộ cho SLI (vd 99.9% request thành công mỗi tháng); SLA là cam kết hợp đồng với khách, thường kèm chế tài, nên đặt lỏng hơn SLO để có vùng an toàn. Phần chênh giữa 100% và SLO là error budget: còn nhiều thì được release mạnh tay, sắp cạn thì ưu tiên ổn định. PM dùng nó để quyết định release hay hoãn bằng số.
+
+**Q394. Thực hiện RCA kỹ thuật sau sự cố thế nào?**
+① Dựng timeline chính xác từ log, alert, thao tác: lỗi bắt đầu, được phát hiện, được khôi phục lúc nào. ② Tìm nguyên nhân trực tiếp (vd deploy sai cấu hình) rồi hỏi "tại sao" nhiều lần đến nguyên nhân gốc trong quy trình (không review cấu hình, không có môi trường test tương đương). ③ Tách 暫定対応 (zantei taiou – xử lý tạm thời) và 恒久対応 (koukyuu taiou – xử lý triệt để), mỗi việc có owner và hạn. ④ Không đổ lỗi cá nhân — sửa hệ thống để người khác không lặp lại.
+> 💡 Bẫy: kết luận RCA là "dev bất cẩn" — khách Nhật sẽ hỏi tiếp "vì sao quy trình để lọt".
+
+**Q395. Hệ thống chậm bất thường sau release, anh/chị điều phối điều tra thế nào?**
+① Xác nhận fact: chậm ở chức năng nào, từ lúc nào, bao nhiêu người dùng bị ảnh hưởng, có trùng thời điểm release, batch hay tải tăng không. ② Khoanh vùng: nếu trùng release và ảnh hưởng nghiệp vụ thì cân nhắc rollback theo tiêu chí đã chốt; song song dùng APM/log tìm điểm nghẽn (DB, API ngoài, bộ nhớ). ③ Báo khách theo 報連相 kèm giờ cập nhật tiếp theo (vd mỗi 30 phút). ④ Sau khi ổn: RCA, bổ sung performance test cho chức năng liên quan vào pipeline.
+
+**Q396. Làm với khách Nhật hay gặp công cụ quản lý nào, PM dùng ra sao?**
+Ticket: Jira, Redmine (rất phổ biến ở Nhật), Backlog (của Nulab, công ty Nhật); tài liệu: Confluence, nhưng Excel vẫn là "ngôn ngữ chung" cho WBS, 課題管理表 (kadai kanrihyou – bảng quản lý vấn đề), bảng Q&A; giao tiếp: Teams, Slack, Chatwork; source: Git (GitHub, GitLab, Bitbucket). Nguyên tắc: dùng công cụ khách chọn, mỗi loại thông tin chỉ có một nguồn sự thật; nội bộ dùng Jira còn khách dùng Redmine thì đồng bộ bằng API hoặc theo nhịp cố định, không để khách phải đọc hai nơi.
+> 💡 Đừng chê Excel — làm tốt Excel WBS và bảng Q&A chuẩn là kỹ năng khách Nhật đánh giá cao.
+
+**Q397. GenAI (Copilot, LLM) giúp tăng năng suất phát triển thế nào, đo ra sao?**
+GenAI hỗ trợ tốt ở sinh code lặp lại, viết unit test, giải thích code cũ, tạo dữ liệu test, dịch và rà tài liệu Nhật–Việt. Tôi không dựa vào con số quảng cáo mà đo trong dự án: so lead time, số lỗi phát hiện ở review và デグレ trước và sau khi dùng qua vài sprint. Rủi ro chất lượng: code "trông đúng" nhưng sai nghiệp vụ, gợi ý thư viện không tồn tại, vấn đề license — nên review và test không giảm, effort chỉ dịch từ viết sang kiểm chứng.
+
+**Q398. Dùng GenAI có rủi ro lộ code, dữ liệu khách thế nào, xin phép khách Nhật ra sao?**
+Rủi ro: code, đặc tả, dữ liệu khách bị gửi ra dịch vụ ngoài, có thể bị lưu hoặc dùng huấn luyện — vi phạm hợp đồng bảo mật dù không cố ý. Cách làm: ① chưa có đồng ý bằng văn bản thì không dùng; ② đề xuất cụ thể: công cụ nào, gói doanh nghiệp cam kết không dùng dữ liệu để huấn luyện (kiểm điều khoản hiện hành), dữ liệu nào được nhập; ③ guideline nội bộ, chặn công cụ chưa được phép, log sử dụng; ④ thử phạm vi nhỏ, báo kết quả.
+> 💡 Khách Nhật cần thời gian xin phép nội bộ — gửi đề xuất bằng văn bản sớm, đừng hỏi miệng trong họp.
+
+**Q399. Phát hiện dev dán đặc tả của khách vào chatbot AI bằng tài khoản cá nhân. Anh/chị xử lý thế nào?**
+① Xác nhận fact: nội dung gì, có dữ liệu cá nhân hay bí mật không, công cụ, loại tài khoản, thời điểm. ② Hành động ngay: dừng sử dụng, xóa lịch sử hội thoại nếu được, báo bộ phận bảo mật công ty. ③ Báo khách theo 報連相 và quy trình sự cố trong hợp đồng — dù nhỏ, che giấu mới là nghiêm trọng. ④ 再発防止: guideline GenAI rõ ràng, chặn công cụ chưa được phép, cung cấp công cụ được phép thay thế; 横展開 rà các dự án khác.
+
+**Q400. Làm PM nhiều năm, anh/chị giữ "base kỹ thuật" bằng cách nào?**
+Bằng thói quen có lịch: ① mỗi tuần đọc các PR và ADR quan trọng, hỏi tech lead điều mình chưa hiểu; ② tự làm lab nhỏ với công nghệ dự án dùng (vd dựng thử hạ tầng trên AWS); ③ học chứng chỉ có cấu trúc như AWS hoặc PMP để kiến thức không rời rạc; ④ dự buổi tech sharing của team mỗi tháng. Mục tiêu không phải code thay dev, mà đủ hiểu để đặt câu hỏi đúng và nhận ra estimate bất hợp lý.
+> 💡 Nhắc việc tận dụng chính sách hỗ trợ thi Cloud/AWS/PMP của VTI cho thấy bạn đã đọc kỹ JD.
+
+---
+
+# Chương 5 · Estimation, proposal & hợp đồng với khách Nhật (Q401–Q500)
+
+## 5.1 Đơn vị effort & năng suất
+
+**Q401. 人月 và 人日 là gì, quy đổi sang giờ thế nào khi làm việc với khách Nhật?**
+`人月` (ningetsu – người-tháng) là effort 1 người làm 1 tháng, `人日` (ninnichi – người-ngày) là 1 người làm 1 ngày. Quy ước phổ biến (tham khảo): 1人日 = 8h, 1人月 = 20人日 = 160h; nhưng có khách tính 7.5h/ngày hoặc 1人月 = 21 ngày. Em luôn ghi quy ước quy đổi vào phần điều kiện của báo giá để lúc quyết toán hai bên không hiểu khác nhau.
+> 💡 Hỏi ngay từ đầu "1人月は何時間換算でしょうか" (1 người-tháng quy đổi bao nhiêu giờ) — lệch quy đổi 5–10% là có thể mất gần hết margin.
+
+**Q402. Vì sao "người × tháng" là ảo tưởng? Giải thích Brooks's law.**
+Effort và thời gian không hoán đổi tuyến tính: thêm người thì kênh giao tiếp tăng theo n(n−1)/2, cần thời gian onboarding, và nhiều việc phụ thuộc tuần tự không chia nhỏ được. **Brooks's law** (Fred Brooks, *The Mythical Man-Month*): thêm người vào dự án đang trễ làm nó trễ thêm. Vì vậy 12人月 không có nghĩa 12 người × 1 tháng; em estimate effort trước, rồi tính lịch theo critical path và số người tối đa hợp lý cho từng 工程 (koutei – công đoạn).
+> 💡 Bẫy: "khách muốn rút từ 6 tháng còn 3 tháng, nhân đôi người được không?" — trả lời bằng kênh giao tiếp và ramp-up, đừng nói "được".
+
+**Q403. Khi khách hỏi "dự án này bao nhiêu 人月", câu trả lời của bạn gồm những thành phần nào?**
+Em tách ① effort phát triển theo công đoạn, ② overhead quản lý và cầu nối: PM, QA, BrSE, comtor, ③ effort tài liệu và dịch tiếng Nhật, ④ contingency cho rủi ro đã nhận diện. Mỗi phần có `根拠` (konkyo – căn cứ) riêng, và nếu yêu cầu còn mơ hồ thì đưa range (vd 40–55人月) chứ không đưa 1 con số trơn. Kèm theo là phạm vi tính và những gì không bao gồm, để con số không bị hiểu là "trọn gói mọi thứ".
+
+**Q404. Năng suất offshore khác onsite thế nào, đưa vào estimate ra sao?**
+Offshore có chi phí đơn vị thấp hơn nhưng phát sinh overhead: truyền đạt qua BrSE, độ trễ hỏi–đáp do lệch ngôn ngữ, dịch tài liệu, review chéo. Em không nhân "năng suất thô" mà cộng riêng dòng overhead cầu nối, và dùng dữ liệu lịch sử của chính team cho loại dự án tương tự. Việc cần ngồi cùng khách như `要件定義` (youken teigi – định nghĩa yêu cầu), UAT, go-live thì để onsite; build và test để offshore — chia theo tính chất việc, không theo cảm tính.
+
+**Q405. Đo quy mô bằng ステップ数, Function Point hay "giờ/màn hình"? Ưu nhược điểm?**
+Ở Nhật, quy mô truyền thống hay đo bằng `ステップ数` (suteppu-suu – số dòng lệnh): dễ đếm sau khi có code, nhưng phụ thuộc ngôn ngữ và không đo được lúc báo giá. FP đo theo chức năng người dùng thấy, độc lập ngôn ngữ, dùng được từ giai đoạn thiết kế, nhưng cần người đếm có kỹ năng. "Giờ/màn hình", "giờ/batch" thực dụng khi team đã có dữ liệu cùng loại hệ thống. Em estimate bằng FP hoặc đơn vị chức năng, LOC chỉ dùng để đối chiếu sau dự án.
+
+**Q406. Lịch nghỉ lễ VN và Nhật khác nhau ảnh hưởng estimate thế nào?**
+Effort không đổi nhưng lịch thì đổi: VN nghỉ Tết Nguyên đán dài ngày vào khoảng tháng 1–2, Nhật nghỉ ゴールデンウィーク (Golden Week, cuối tháng 4–đầu tháng 5), お盆 (obon, giữa tháng 8) và 年末年始 (nenmatsu nenshi – nghỉ cuối năm, đầu năm). Em lập lịch chung hai nước, không đặt mốc giao hay `検収` (kenshuu – nghiệm thu) sát Tết, và tính thêm việc nhiều công ty Nhật kết thúc năm tài chính vào tháng 3 nên hay dồn release/検収 vào thời điểm này.
+> 💡 Ghi lịch nghỉ hai nước ngay trong slide スケジュール của proposal — khách Nhật đánh giá cao vendor tính trước điều này.
+
+**Q407. Thành viên mới vào dự án giữa chừng thì tính năng suất và chi phí onboarding thế nào?**
+Em không dùng năng suất trung bình của người đã quen hệ thống cho người mới. Thực tế em tính hiệu suất tháng đầu thấp hơn (vd 50–70%, tham khảo) nếu domain hoặc hệ thống lạ, cộng thời gian mentor của senior (thường mất 10–20% quỹ thời gian, tham khảo) và effort đọc tài liệu tiếng Nhật. Sau 2–4 tuần em đo output thật để hiệu chỉnh kế hoạch; nếu lệch ảnh hưởng mốc thì báo khách sớm, không đợi đến hạn.
+
+**Q408. Phân biệt effort, duration và cost trong một bản estimate?**
+Effort (`工数` kousuu – công số) là lượng công sức tính bằng 人時 (ninji – người-giờ), 人日 hoặc 人月; duration là thời gian lịch từ lúc bắt đầu đến lúc xong, phụ thuộc số người, phụ thuộc giữa các task và lịch nghỉ; cost = effort × đơn giá theo vai trò + chi phí khác (license, môi trường, đi lại onsite). Một estimate tốt trình bày cả ba và nêu giả định nối chúng, ví dụ "8 người chạy song song từ giai đoạn thiết kế chi tiết".
+
+**Q409. Vì sao estimate nên tách theo vai trò (PM, BrSE, dev, QA, comtor) thay vì gộp một đơn giá?**
+Vì đơn giá từng vai trò khác nhau, và khách Nhật thường muốn thấy `体制` (taisei – cơ cấu nhân sự dự án) để đánh giá tính hợp lý. Tách vai trò giúp ① khách thấy ai làm gì, ② khi đàm phán có thể chỉnh tỷ lệ (vd giảm comtor nếu khách đọc được tiếng Anh) thay vì cắt đều mọi thứ, ③ nội bộ kiểm soát margin theo vai trò. Dự án nhỏ có thể báo blended rate, nhưng bảng tách vẫn giữ ở nội bộ.
+
+**Q410. "The Mythical Man-Month" còn đúng với team dùng AI coding assistant không?**
+Công cụ AI có thể giảm effort ở phần code và test lặp lại, nhưng không xóa chi phí giao tiếp, làm rõ yêu cầu, review và tích hợp — chính là phần Brooks nói tới. Em chỉ đưa mức giảm vào estimate khi có số đo nội bộ trên loại task tương tự (trước/sau khi dùng), và ghi nó thành giả định có thể hiệu chỉnh. Với khách tài chính/bảo hiểm, còn phải nêu rõ chính sách dùng AI, quy trình review code sinh ra và việc có được phép đưa tài liệu khách vào công cụ hay không.
+> 💡 Đừng hứa "AI giảm 30–50% chi phí" khi chưa có số đo của chính team — khách sẽ đòi giảm giá ngay trong hợp đồng.
+
+## 5.2 Phương pháp estimate
+
+**Q411. Bạn dùng những phương pháp estimate nào và khi nào dùng cái nào?**
+① Analogous khi giai đoạn sớm, chỉ có mô tả cấp cao và có dự án cũ tương tự; ② parametric (FP, use case point, đơn vị màn hình × năng suất) khi đã có danh sách chức năng; ③ WBS bottom-up khi yêu cầu đủ rõ để lập kế hoạch chi tiết; ④ 3-point/PERT cho task bất định cao; ⑤ expert judgment hoặc Wideband Delphi cho phần mới lạ. Thực tế em dùng ít nhất 2 cách độc lập; lệch nhau > 20% (tham khảo) thì tìm nguyên nhân trước khi nộp.
+> 💡 Câu "em triangulate bằng 2 phương pháp độc lập rồi giải thích chênh lệch" cho thấy độ senior hơn nhiều so với kể tên phương pháp.
+
+**Q412. Làm WBS bottom-up estimate thế nào cho đúng?**
+Chia việc đến work package khoảng 8–80 giờ (quy tắc tham khảo), mỗi gói có đầu ra rõ: tài liệu, màn hình, batch, test spec. Người sẽ làm hoặc người có kinh nghiệm estimate từng gói, sau đó em cộng các việc hay bị quên: review và sửa sau review, họp, Q&A, dựng môi trường, chuẩn bị dữ liệu test, tài liệu bàn giao. Cuối cùng đối chiếu tổng với kết quả top-down — bottom-up thường thiếu vì bỏ sót các việc "keo dán" giữa các gói.
+
+**Q413. Analogous estimate có rủi ro gì, giảm thế nào?**
+Rủi ro là "giống bề ngoài, khác bản chất": cùng là hệ thống bảo hiểm nhưng khác số tích hợp, khác yêu cầu phi chức năng, khác độ chín của team. Em giảm bằng cách so theo yếu tố định lượng (số màn hình, batch, interface, bảng dữ liệu), điều chỉnh hệ số cho phần khác biệt và ghi rõ dự án tham chiếu. Analogous chỉ dùng cho `概算` (gaisan – ước tính sơ bộ), không dùng làm con số cam kết của hợp đồng `請負` (ukeoi – hợp đồng trọn gói theo kết quả).
+
+**Q414. Function Point là gì? Các thành phần chính theo IFPUG?**
+FP đo quy mô phần mềm theo chức năng người dùng nhìn thấy, không phụ thuộc ngôn ngữ lập trình. Theo IFPUG có 5 loại: data function gồm ILF (dữ liệu hệ thống tự quản lý) và EIF (dữ liệu tham chiếu từ hệ thống khác); transaction function gồm EI (nhập), EO (xuất có xử lý/tính toán), EQ (truy vấn). Mỗi loại xếp độ phức tạp thấp/trung bình/cao theo số DET, RET, FTR rồi nhân trọng số ra unadjusted FP; effort = FP × năng suất (giờ/FP) lấy từ dữ liệu lịch sử.
+
+**Q415. Ở Nhật FP được dùng thế nào? Đếm nhanh ra sao khi chưa có thiết kế?**
+Nhiều khách Nhật, nhất là khối tài chính và khu vực công, dùng FP để đánh giá quy mô và kiểm tra tính hợp lý của báo giá vendor; IPA cũng công bố dữ liệu thống kê năng suất theo FP để ngành tham khảo. Khi chưa có thiết kế, có thể đếm ước lượng kiểu NESMA (chủ yếu dựa vào số data function), sai số lớn hơn nhưng nhanh. Em dùng FP ước lượng cho báo giá sơ bộ, rồi đếm lại chi tiết sau khi có thiết kế cơ bản để ra số cam kết.
+> 💡 Với khách tài chính/bảo hiểm, chủ động hỏi "御社では FP で規模を評価されていますか" (quý công ty có đánh giá quy mô bằng FP không) và chuẩn bị sẵn bảng đếm FP.
+
+**Q416. 3-point estimate và PERT tính thế nào? Cho ví dụ.**
+Lấy 3 giá trị: lạc quan O, khả dĩ nhất M, bi quan P; PERT: E = (O + 4M + P)/6, độ lệch chuẩn σ ≈ (P − O)/6. Ví dụ task tích hợp API ngân hàng: O = 5, M = 8, P = 17 ngày → E = 9 ngày, σ = 2 ngày; muốn độ tin cậy khoảng 84% thì lấy E + 1σ = 11 ngày. Giá trị lớn nhất của 3-point là lộ ra độ bất định: task nào P/O lớn là ứng viên cho POC hoặc cần ghi giả định.
+
+**Q417. Expert judgment khác Wideband Delphi thế nào? Khi nào dùng Delphi?**
+Expert judgment là 1 hoặc vài chuyên gia đưa số — nhanh nhưng dễ dính bias của người nói to nhất. Wideband Delphi: nhiều người estimate độc lập, ẩn danh, thảo luận các giả định khác nhau rồi estimate lại 2–3 vòng đến khi hội tụ. Em dùng Delphi cho phần mới lạ, rủi ro cao hoặc bid lớn; giá trị chính là lộ ra giả định ngầm khác nhau, ví dụ người A hiểu có migration dữ liệu còn người B thì không.
+
+**Q418. Use Case Point là gì, có hợp với dự án outsourcing Nhật không?**
+UCP tính quy mô từ số actor và use case theo độ phức tạp (UUCP), nhân hệ số kỹ thuật TCF và hệ số môi trường ECF; Karner gợi ý khoảng 20 giờ/UCP (tham khảo, phải hiệu chỉnh). Hợp khi yêu cầu viết dạng use case; nhưng tài liệu khách Nhật thường mô tả theo màn hình, `帳票` (chouhyou – biểu mẫu/báo cáo in), batch, interface, nên em hay quy về đơn vị đó hoặc FP thay vì UCP.
+
+**Q419. Parametric estimate theo "đơn vị chức năng × năng suất" làm thế nào?**
+Phân loại từng đơn vị theo độ khó (vd màn hình S/M/L theo số item, độ phức tạp logic, số bảng truy cập), gán effort chuẩn mỗi loại từ dữ liệu lịch sử, đếm số lượng rồi nhân. Ví dụ phần thiết kế chi tiết đến unit test: 20 màn hình M × 6人日 + 10 batch L × 8人日. Ưu điểm: nhanh, minh bạch, khách dễ kiểm và dễ tính `追加見積` (tsuika mitsumori – báo giá bổ sung) khi thêm màn hình. Điều kiện: định nghĩa S/M/L phải viết ra và thống nhất với khách.
+
+**Q420. COCOMO II có dùng được trong thực tế không?**
+COCOMO II (Boehm) tính effort = A × Size^E × các hệ số điều chỉnh; điểm hay là thể hiện tính phi tuyến: quy mô gấp đôi thì effort hơn gấp đôi do chi phí phối hợp. Nhưng hệ số mặc định phải hiệu chỉnh bằng dữ liệu nội bộ, nếu không sai số rất lớn. Em dùng nó để kiểm chéo cho dự án lớn và để giải thích với khách vì sao gộp hai hệ thống thành một dự án không thể báo giá bằng tổng hai báo giá lẻ, chứ không dùng làm số chính.
+
+**Q421. Làm sao xây dữ liệu lịch sử để estimate ngày càng chính xác?**
+Sau mỗi dự án hoặc milestone, em ghi actual effort theo đúng cấu trúc của estimate: công đoạn, đơn vị chức năng (màn hình/batch/FP), độ khó, công nghệ, domain, thành phần team, kèm % lệch và nguyên nhân. Dữ liệu chỉ có giá trị khi cùng định nghĩa đơn vị và timesheet ghi đúng mã task. Sau 3–5 dự án đã có năng suất chuẩn theo loại để làm parametric và bảo vệ estimate bằng số thật thay vì cảm tính.
+> 💡 Nói được "em lưu cả % lệch và nguyên nhân" cho thấy bạn có vòng học, không estimate xong là quên.
+
+**Q422. Yêu cầu phi chức năng estimate thế nào để không bị bỏ sót?**
+`非機能要件` (hi-kinou youken – yêu cầu phi chức năng) hay bị quên vì không hiện thành màn hình. Em dùng checklist — có thể tham khảo `非機能要求グレード` (hi-kinou youkyuu gureedo – bộ phân cấp yêu cầu phi chức năng) của IPA — gồm hiệu năng, availability, bảo mật, backup, vận hành; mỗi mục ghi mức yêu cầu và việc phải làm (tuning, load test, monitoring). Mục nào khách chưa chốt thì ghi vào `前提条件` (zentei jouken – điều kiện tiền đề) với giả định cụ thể, vd "phản hồi ≤ 3 giây với 100 user đồng thời".
+
+## 5.3 Phân bổ effort theo 工程 & overhead
+
+**Q423. Tỷ lệ effort tham khảo giữa các 工程 trong dự án waterfall kiểu Nhật là bao nhiêu?**
+Tỷ lệ em dùng để kiểm tra tính hợp lý (tham khảo, tùy dự án): 要件定義 ~10–15%, `基本設計` (kihon sekkei – thiết kế cơ bản) ~15%, `詳細設計` (shousai sekkei – thiết kế chi tiết) ~10–15%, `製造・単体テスト` (seizou/tantai tesuto – lập trình và unit test) ~25–35%, `結合テスト` (ketsugou tesuto – test tích hợp) ~15%, `総合テスト` (sougou tesuto – test hệ thống) ~10–15%. Đây là bộ lọc: nếu bottom-up ra phần test chỉ 10% tổng thì gần như chắc đang thiếu. Dự án migration, package hay AI có tỷ lệ khác hẳn.
+> 💡 Luôn nói kèm "tham khảo, tùy loại dự án" — đọc tỷ lệ như chân lý là bẫy interviewer hay giăng.
+
+**Q424. Offshore thường nhận những 工程 nào, và estimate phần ranh giới với khách ra sao?**
+Mô hình phổ biến: khách hoặc onsite làm 要件定義 và 基本設計, offshore nhận 詳細設計 đến 結合テスト, còn 総合テスト và `受入テスト` (ukeire tesuto – test nghiệm thu của khách) có khi khách làm hoặc làm chung. Ranh giới là nơi estimate hay hụt: đọc hiểu 基本設計 tiếng Nhật, Q&A, sửa theo thay đổi thiết kế, hỗ trợ khách test. Em ghi rõ vendor làm từ công đoạn nào đến công đoạn nào, đầu vào bắt buộc là gì, và effort hỗ trợ công đoạn khách làm tính thành dòng riêng.
+
+**Q425. Overhead PM, QA, BrSE, comtor thường chiếm bao nhiêu và bạn tính thế nào?**
+Tham khảo, tùy quy mô: PM khoảng 10–15% effort phát triển, QA độc lập 10–20%, BrSE 10–20% với dự án nhiều tài liệu tiếng Nhật, comtor tính theo khối lượng dịch thực tế. Em không cộng % máy móc: dự án nhỏ vẫn cần tối thiểu khoảng 0.5 PM, dự án lớn thì tỷ lệ giảm dần. Em tính bottom-up từ số cuộc họp, số trang tài liệu phải dịch, số Q&A dự kiến mỗi tuần, rồi so với % tham khảo để kiểm.
+
+**Q426. Effort cho tài liệu tiếng Nhật và dịch thuật tính thế nào?**
+Em tách 3 loại: ① đọc hiểu tài liệu khách (spec, biên bản) — dịch sang tiếng Việt hoặc BrSE giải thích; ② viết deliverable bằng tiếng Nhật như `設計書` (sekkeisho – tài liệu thiết kế), `テスト仕様書` (tesuto shiyousho – đặc tả test), báo cáo; ③ dịch qua lại hằng ngày: mail, `QA表` (QA-hyou – bảng hỏi đáp), biên bản họp. Mỗi loại estimate theo số trang × năng suất của team, cộng vòng review ngôn ngữ. Dịch máy cho nháp nhanh nhưng vẫn phải tính effort hiệu đính, vì thuật ngữ tài chính/bảo hiểm dễ sai nghĩa.
+
+**Q427. Có nên tính effort cho Q&A với khách không? Tính thế nào?**
+Có, vì Q&A là khoản tiêu tốn lớn ở offshore: viết câu hỏi tiếng Nhật, chờ trả lời, xử lý những câu trả lời làm đổi thiết kế. Em estimate theo số câu hỏi dự kiến (dựa trên độ chín của spec và tỷ lệ câu hỏi/màn hình ở dự án cũ) × thời gian xử lý mỗi câu, và ghi giả định thời hạn trả lời của khách (vd ≤ 2 ngày làm việc) vào 前提条件. Khách trả lời chậm hơn thì đó là căn cứ để điều chỉnh lịch.
+
+**Q428. Những chi phí ngoài nhân công nào hay bị quên khi estimate?**
+License phần mềm và công cụ, môi trường cloud cho dev/test/staging, thiết bị test thật, đường truyền hoặc VPN riêng theo yêu cầu bảo mật của khách tài chính, chi phí onsite (vé máy bay, visa, khách sạn, phụ cấp), đánh giá bảo mật bởi bên thứ ba, dịch thuật thuê ngoài. Em có checklist chi phí ngoài nhân công và ghi rõ khoản nào vendor chịu, khoản nào là `支給` (shikyuu – khách cung cấp) để tránh tranh cãi khi chạy dự án.
+
+**Q429. Giai đoạn bảo trì vận hành được estimate thế nào?**
+`保守運用` (hoshu un'you – bảo trì vận hành) không estimate theo chức năng mà theo khối lượng dịch vụ: số ticket/tháng dự kiến, khung giờ phản hồi (giờ hành chính JST hay 24/7), SLA, số người trực tối thiểu để phủ ca. Em dùng dữ liệu sự cố quá khứ nếu khách có, đặt mức nền (vd X人月/tháng cho tối đa Y ticket) và đơn giá cho phần vượt. Phải ghi rõ bảo trì có bao gồm cải tiến nhỏ hay không, để không biến thành phát triển miễn phí.
+
+**Q430. Effort 結合テスト và 総合テスト hay bị underestimate — làm sao estimate sát hơn?**
+Em estimate test theo số test case dự kiến chứ không chỉ theo %: số case/đơn vị chức năng × thời gian thiết kế case, thực thi, lấy `エビデンス` (ebidensu – bằng chứng test, thường là screenshot từng bước), cộng 1–2 vòng retest sau khi sửa bug. Khách Nhật thường yêu cầu evidence chi tiết nên effort lấy evidence có thể rất đáng kể — phải hỏi format trước khi báo giá. Thêm effort chuẩn bị dữ liệu test và môi trường tích hợp với hệ thống ngoài.
+> 💡 Hỏi sớm "エビデンスの粒度はどの程度必要でしょうか" (cần evidence chi tiết đến mức nào) — chụp từng bước hay chỉ log kết quả có thể làm effort test chênh nhau rất xa.
+
+**Q431. Dự án có nhiều interface với hệ thống cũ của khách thì phân bổ effort khác gì?**
+Tích hợp kéo effort về phía phân tích và 結合テスト: phải đọc tài liệu interface cũ (thường thiếu hoặc lỗi thời), làm stub/mock, xin lịch dùng môi trường test của hệ thống đối tác, và xử lý dữ liệu không đúng như spec. Em tăng tỷ trọng phân tích và test tích hợp, đếm interface theo độ khó (định dạng file, online hay batch, số hệ thống liên quan) và ghi 前提条件 về môi trường kết nối do khách chuẩn bị và lịch đối tác hỗ trợ.
+
+## 5.4 Buffer, rủi ro & 前提条件
+
+**Q432. Contingency reserve và management reserve khác nhau thế nào? Nên đặt bao nhiêu?**
+Contingency reserve dành cho rủi ro đã nhận diện (known unknowns), nằm trong baseline do PM quản lý; management reserve cho rủi ro chưa biết (unknown unknowns), cấp trên giữ, không nằm trong baseline. Mức tham khảo: 10–15% khi yêu cầu tương đối rõ, 20–30% khi yêu cầu mơ hồ hoặc công nghệ mới. Nhưng em ưu tiên tính contingency từ danh sách rủi ro (xác suất × tác động) hơn là cộng một % chung cho cả dự án.
+
+**Q433. Có nên để buffer lộ ra trong báo giá gửi khách Nhật không?**
+Em không ghi dòng "buffer 15%" vì khách rất dễ yêu cầu cắt ngay. Thay vào đó, em gắn contingency vào từng hạng mục có rủi ro cụ thể (vd thêm effort cho interface chưa có tài liệu) và giải thích bằng chính rủi ro đó; rủi ro ngoài kiểm soát của vendor thì chuyển thành 前提条件. Tức là minh bạch về rủi ro, nhưng không trình bày như một khoản "dự phòng" vô danh có thể bị gạch.
+> 💡 Bẫy: giấu buffer bằng cách thổi phồng đều mọi task — khách so effort/màn hình hay effort/FP sẽ thấy bất thường ngay; hãy gắn buffer vào rủi ro có tên.
+
+**Q434. 前提条件 là gì và vì sao nó là công cụ quan trọng nhất để bảo vệ estimate?**
+前提条件 là các giả định mà con số estimate dựa vào: phạm vi, đầu vào khách cung cấp, thời hạn phản hồi, môi trường, công nghệ, số vòng review, ngôn ngữ tài liệu. Khi giả định thay đổi, estimate được phép thay đổi theo — đây là căn cứ hợp đồng để đưa ra 追加見積. Estimate không có 前提条件 rõ thì mọi rủi ro mặc định thuộc về vendor, đặc biệt với hợp đồng 請負.
+
+**Q435. Cho ví dụ các 前提条件 điển hình bạn ghi trong báo giá dự án web cho ngân hàng.**
+① Phạm vi theo danh sách chức năng đính kèm (bản ngày X); ② 基本設計書 do khách cung cấp và đã chốt trước khi bắt đầu 詳細設計; ③ Q&A được trả lời trong ≤ 2 ngày làm việc; ④ môi trường test và dữ liệu test khách cung cấp trước ngày Y; ⑤ trình duyệt/thiết bị hỗ trợ theo danh sách cụ thể; ⑥ deliverable tiếng Nhật theo template khách, review tối đa 2 vòng; ⑦ không bao gồm migration dữ liệu và load test quy mô production.
+> 💡 Mỗi 前提条件 phải kiểm chứng được (có ngày, số, phiên bản tài liệu) — "khách hợp tác tích cực" là giả định vô dụng.
+
+**Q436. 対象外 nên ghi những gì?**
+`対象外` (taishougai – ngoài phạm vi) liệt kê rõ những việc khách dễ mặc định là "có trong giá": migration dữ liệu, test hiệu năng/bảo mật bởi bên thứ ba, 総合テスト hoặc UAT, đào tạo người dùng, vận hành sau go-live, sửa lỗi của hệ thống hiện có, hỗ trợ ngoài giờ, mua license/hạ tầng. Em viết thành danh sách cụ thể, không chỉ "ngoài những gì ghi trên"; mục quan trọng thì thêm câu "nếu cần sẽ báo giá riêng" để mở sẵn đường cho 追加見積.
+
+**Q437. 概算見積 và 詳細見積 khác nhau thế nào? Trình bày 概算 ra sao để khách không coi là con số cam kết?**
+`概算見積` (gaisan mitsumori – báo giá sơ bộ) làm khi yêu cầu còn ở mức ý tưởng hoặc RFI, sai số lớn, khách dùng để xin ngân sách; `詳細見積` (shousai mitsumori – báo giá chi tiết) làm khi đã có 要件定義/基本設計, dùng để ký hợp đồng. Với 概算, em ghi range (vd 40–60人月), độ chính xác, căn cứ, hạn hiệu lực và câu "本見積は概算であり、要件確定後に再見積いたします" (đây là báo giá sơ bộ, sẽ báo giá lại sau khi chốt yêu cầu).
+> 💡 Khách Nhật thường dùng 概算 để xin `予算` (yosan – ngân sách) nội bộ; đưa số quá thấp để "lấy lòng" sẽ tự khóa mình vào ngân sách đó.
+
+**Q438. 多段階見積 là gì và vì sao nên đề xuất cho khách?**
+`多段階見積` (tadankai mitsumori – báo giá nhiều giai đoạn) là chia dự án thành các giai đoạn, mỗi giai đoạn báo giá và ký riêng khi đã đủ thông tin, thay vì báo một giá cho toàn bộ từ lúc yêu cầu còn mơ hồ. Mẫu hợp đồng tham khảo do METI/IPA công bố cũng khuyến nghị cách tiếp cận theo giai đoạn. Lợi ích: estimate từng bước chính xác hơn, rủi ro chia công bằng hơn, khách có điểm quyết định dừng hay đi tiếp, và vendor không phải độn buffer lớn.
+
+**Q439. Rủi ro nào nên chuyển thành điều khoản thay vì cộng buffer?**
+Rủi ro nằm ngoài kiểm soát của vendor: khách chậm cung cấp đầu vào, thay đổi spec, hệ thống ngoài chưa sẵn sàng, thay đổi luật/quy định, biến động tỷ giá với hợp đồng dài. Cộng buffer cho những thứ này vừa làm giá kém cạnh tranh, vừa không đủ nếu rủi ro xảy ra lớn. Em đưa chúng vào 前提条件 kèm cơ chế `変更管理` (henkou kanri – quản lý thay đổi): khi xảy ra thì phân tích ảnh hưởng và báo giá bổ sung. Buffer chỉ dành cho rủi ro nội bộ như năng suất, kỹ thuật, nhân sự.
+
+**Q440. Estimate ra range 80–110人月 — khi nộp giá thì chọn điểm nào?**
+Tùy loại hợp đồng và mức rủi ro chấp nhận: với 請負, em đề xuất mức có xác suất hoàn thành cao (vd P80, tham khảo) vì vendor gánh phần vượt; với `準委任` (jun-inin – hợp đồng theo công sức) có thể trình bày range, lập kế hoạch theo điểm giữa và cập nhật định kỳ. Giá cuối cùng là quyết định kinh doanh của sales/BOD (khách chiến lược có thể chấp nhận margin thấp), nhưng PM phải ghi rõ xác suất và rủi ro của điểm đã chọn vào hồ sơ duyệt giá nội bộ.
+> 💡 Tách bạch "estimate" (PM nói sự thật) và "price" (quyết định kinh doanh) — trộn hai thứ này là dấu hiệu thiếu độ chín.
+
+**Q441. Hạn hiệu lực của báo giá có ý nghĩa gì với dự án Nhật?**
+`有効期限` (yuukou kigen – thời hạn hiệu lực), thường 30–90 ngày (tham khảo), bảo vệ vendor khỏi việc khách ký sau nhiều tháng khi đơn giá, tỷ giá, nhân sự đã đổi. Khách Nhật có quy trình `稟議` (ringi – trình duyệt nội bộ nhiều cấp) khá dài, nên em hỏi lịch duyệt dự kiến để đặt hạn hợp lý và ghi thêm "nếu bắt đầu sau ngày X thì cần xác nhận lại nhân sự và lịch". Hết hạn thì báo giá lại hoặc xác nhận bằng văn bản là giá vẫn giữ.
+
+**Q442. Rủi ro key person và rủi ro nhân sự phản ánh vào estimate thế nào?**
+Em xác định các vị trí khó thay: BrSE giỏi tiếng Nhật và hiểu domain, tech lead công nghệ hiếm. Với các vị trí này, em tính effort chồng lấn để bàn giao (shadow) và chi phí đào tạo người dự phòng vào contingency; dự án dài thì cộng thêm giả định tỷ lệ nghỉ việc và thời gian tuyển thay thế. Đồng thời proposal phải thể hiện cơ chế backup (vị trí phó cho PM/BrSE) — đây là câu khách Nhật rất hay hỏi khi review đề xuất.
+
+## 5.5 Bảo vệ estimate
+
+**Q443. Sales hoặc khách yêu cầu giảm estimate 30% để kịp chào giá. Bạn làm gì?**
+Em không cắt effort trên giấy mà đưa ra các phương án đổi lấy: ① giảm phạm vi (bỏ hoặc hoãn chức năng ưu tiên thấp), ② đổi điều kiện (khách tự làm 総合テスト, dùng template có sẵn, giảm số vòng review tài liệu), ③ đổi loại hợp đồng cho phần bất định sang 準委任, ④ giãn lịch để dùng team nhỏ hơn. Mỗi phương án có con số mới và rủi ro kèm theo. Nếu công ty vẫn quyết giảm giá vì chiến lược, em đề nghị ghi nhận đó là chiết khấu kinh doanh, không phải estimate sai.
+> 💡 Câu chốt: "Giảm giá thì được, giảm effort thì phải giảm việc" — và lưu lại bằng văn bản ai duyệt khoản giảm.
+
+**Q444. Cone of uncertainty là gì, bạn dùng nó để nói chuyện với khách thế nào?**
+Mô hình (Boehm, được McConnell phổ biến) cho thấy sai số estimate ở giai đoạn ý tưởng rất lớn — khoảng 0.25x–4x — và thu hẹp dần khi yêu cầu, thiết kế được chốt (khoảng 0.67x–1.5x khi yêu cầu hoàn tất, theo McConnell). Em dùng nó để giải thích vì sao 概算 phải là range và vì sao nên đi 多段階見積: muốn con số chắc thì phải đầu tư làm rõ yêu cầu trước. Lưu ý: cone chỉ thu hẹp khi dự án thật sự ra quyết định, không tự thu hẹp theo thời gian.
+
+**Q445. Dev estimate quá thấp (lạc quan) hoặc quá cao (độn) — làm sao phát hiện và xử lý?**
+Phát hiện bằng cách so với dữ liệu lịch sử cùng loại, so hai người estimate độc lập, và hỏi "số này đã gồm review, unit test, sửa bug, tài liệu chưa?" — estimate thấp thường thiếu đúng các việc này. Estimate cao thì hỏi rủi ro nào khiến cao, tách rủi ro đó ra xử lý riêng (spike, POC, giả định) thay vì giữ nguyên phần độn. Em không ép dev giảm số; em làm rõ phạm vi và giả định rồi để họ estimate lại.
+
+**Q446. Estimate, target và commitment khác nhau thế nào?**
+Theo cách phân biệt của McConnell: estimate là dự đoán dựa trên dữ liệu và có xác suất; target là mong muốn kinh doanh (khách muốn go-live tháng 4); commitment là lời hứa giao một phạm vi vào một ngày với chất lượng xác định. Lỗi phổ biến là coi target như estimate. Khi khách đưa deadline cứng, em estimate độc lập trước, rồi trình bày khoảng cách và cách đóng khoảng cách (phạm vi, nguồn lực, release theo đợt) để hai bên cùng chọn commitment.
+
+**Q447. Khách nói "vendor khác báo thấp hơn bạn 25%". Bạn phản hồi thế nào?**
+Em không vội giảm mà đề nghị so trên cùng phạm vi: vendor kia có cùng 対象外, cùng 前提条件, cùng công đoạn, cùng mức test và tài liệu không — chênh lệch thường nằm ở đây. Em chuẩn bị bảng "chúng tôi đã bao gồm X, Y, Z" và rủi ro nếu bỏ những mục đó. Nếu so xong vẫn chênh thật, em đề xuất phương án tối ưu (giảm phạm vi, đổi cơ cấu nhân sự) thay vì giảm đơn phương.
+> 💡 Khách Nhật tin vendor giải thích được 根拠 hơn vendor giảm giá ngay — giảm ngay khiến họ nghi estimate ban đầu bị độn.
+
+**Q448. Dùng dữ liệu lịch sử để bảo vệ estimate thế nào cho thuyết phục?**
+Em trình bày ngắn và so sánh được: "dự án tương tự cho khách bảo hiểm B (35 màn hình, 12 batch) có actual 48人月; dự án này 40 màn hình và thêm 2 interface nên estimate 52–58人月". Dữ liệu phải cùng định nghĩa đơn vị và nêu rõ các điểm khác biệt đã điều chỉnh. Nếu chưa có dữ liệu nội bộ, có thể dẫn số liệu thống kê ngành công khai (vd của IPA) làm đối chiếu, nhưng nói rõ chỉ là tham khảo.
+
+**Q449. Bị yêu cầu estimate gấp trong 1 ngày — làm sao vẫn an toàn?**
+Em trả lời bằng 概算 có range và ghi rõ độ chính xác, dùng analogous + parametric nhanh, kèm danh sách giả định và câu hỏi mở. Trong mail nộp em ghi "estimate trong 1 ngày, độ tin cậy thấp, sẽ cập nhật sau khi có thông tin A, B, C vào ngày X". Không đưa một con số tròn không kèm điều kiện, vì con số đầu tiên sẽ thành "mỏ neo" trong đầu khách suốt dự án.
+
+**Q450. Những bias nào hay làm estimate sai và bạn chống thế nào?**
+① Anchoring — bị neo bởi con số sales hoặc khách nói trước; chống bằng cách estimate trước khi nghe ngân sách. ② Planning fallacy — lạc quan, quên rủi ro; chống bằng 3-point và dữ liệu lịch sử. ③ Bias người có thâm niên — người nói to nhất quyết định; chống bằng Delphi ẩn danh. ④ Bỏ sót việc phụ (họp, review, môi trường); chống bằng checklist. Em biến các điểm này thành checklist estimate cố định cho cả team.
+
+**Q451. Estimate của bạn bị cấp trên sửa giảm trước khi gửi khách mà không hỏi bạn. Xử lý?**
+Em gặp riêng cấp trên, trình bày phần bị cắt tương ứng với việc gì và rủi ro cụ thể (vd thiếu effort 結合テスト → bug sau go-live). Đề xuất hai hướng: giữ giá đã giảm nhưng chỉnh phạm vi/前提条件 trong báo giá cho khớp, hoặc ghi nhận khoản giảm là chiết khấu và lập kế hoạch xử lý rủi ro. Quyết định cuối cùng được ghi lại bằng mail. Mục tiêu là cấp trên quyết định khi có đủ thông tin, không phải thắng tranh luận.
+
+**Q452. Khách Nhật yêu cầu giải thích căn cứ báo giá đến từng 人日. Bạn chuẩn bị gì?**
+Em chuẩn bị bảng `見積根拠` (mitsumori konkyo – căn cứ báo giá): danh sách chức năng với phân loại độ khó, effort chuẩn mỗi loại, phân bổ theo công đoạn, overhead theo vai trò, cùng 前提条件 và 対象外. Bảng viết bằng tiếng Nhật, thuật ngữ khớp tài liệu của khách. Mức chi tiết đủ để khách kiểm tra tính hợp lý nhưng không lộ cơ cấu lương nội bộ; câu nào chưa trả lời được thì ghi lại và hồi đáp bằng văn bản sau.
+> 💡 Khách hỏi chi tiết là tín hiệu tốt — họ đang cần tài liệu để thuyết phục nội bộ qua 稟議; hãy giúp họ, đừng phòng thủ.
+
+## 5.6 Proposal 提案書 & 見積書 tiếng Nhật
+
+**Q453. Cấu trúc một 提案書 chuẩn cho khách Nhật gồm những phần nào?**
+`提案書` (teiansho – hồ sơ đề xuất) em dùng khung: `背景・課題` (haikei/kadai – bối cảnh, vấn đề) → `提案概要` (teian gaiyou – tóm tắt đề xuất) → `対応範囲` (taiou han'i – phạm vi) → `実現方式` (jitsugen houshiki – cách thực hiện, kiến trúc) → `体制図` (taisei-zu – sơ đồ tổ chức) → スケジュール → `品質管理` (hinshitsu kanri – quản lý chất lượng) → 見積 và 前提条件 → `実績` (jisseki – dự án đã làm). Thứ tự đi từ vấn đề của khách đến giải pháp, không mở đầu bằng phần giới thiệu công ty dài.
+> 💡 Mở bằng 背景・課題 viết đúng ngôn ngữ của khách chứng minh bạn đã hiểu họ — nhiều vendor mở bằng 10 slide giới thiệu công ty.
+
+**Q454. Viết phần 背景・課題 thế nào cho thuyết phục?**
+Em lấy nội dung từ RFP và buổi `ヒアリング` (hiaringu – buổi phỏng vấn lấy thông tin khách), diễn đạt lại theo 3 lớp: hiện trạng (hệ thống cũ, quy trình), vấn đề cụ thể có số nếu khách đã cung cấp (thời gian xử lý hồ sơ, chi phí vận hành), và mục tiêu khách muốn đạt. Dùng đúng thuật ngữ khách dùng, không suy diễn quá mức. Mỗi 課題 phải nối được tới một phần giải pháp phía sau — nếu không, hoặc 課題 đó thừa, hoặc đề xuất đang thiếu.
+
+**Q455. Nguyên tắc "1 slide 1 message" áp dụng thế nào trong 提案書 tiếng Nhật?**
+Mỗi slide có một câu thông điệp (メッセージライン – message line) ở đầu trang nói kết luận, phần thân là bằng chứng hoặc hình minh họa cho câu đó. Câu thông điệp ngắn 1–2 dòng, thống nhất văn phong, thường dùng `体言止め` (taigen-dome – kết câu bằng danh từ) cho gọn. Em kiểm tra bằng cách chỉ đọc liên tiếp các メッセージライン: nếu đọc xong đã hiểu toàn bộ đề xuất như một câu chuyện thì cấu trúc đạt.
+
+**Q456. Lỗi ngôn ngữ nào hay gặp khi team VN làm proposal tiếng Nhật?**
+① `表記ゆれ` (hyouki yure – cách viết không thống nhất) như サーバー/サーバ, ログイン/サインイン; ② dịch máy sai nghĩa thuật ngữ nghiệp vụ tài chính/bảo hiểm; ③ dùng font chữ Hán kiểu Trung Quốc thay vì font tiếng Nhật; ④ kính ngữ lẫn lộn, câu quá dài; ⑤ trộn thể です・ます và である trong cùng tài liệu. Em dùng `用語集` (yougoshuu – bảng thuật ngữ) chung, template font chuẩn, và bắt buộc người tiếng Nhật trình độ cao review trước khi gửi.
+> 💡 Font chữ Hán kiểu Trung Quốc là lỗi người Nhật nhận ra ngay và bị coi là "thiếu chuyên nghiệp" — kiểm tra font trước mọi lần gửi.
+
+**Q457. 体制図 trong proposal cần thể hiện những gì?**
+Sơ đồ các bên (khách, onsite, offshore), vai trò, người chịu trách nhiệm từng phần, kênh liên lạc và mức phân bổ (vd PM 1.0, BrSE 1.0 onsite + 1.0 offshore). Khách Nhật cần thấy rõ `窓口` (madoguchi – đầu mối liên lạc), người có quyền quyết định phía vendor, đường escalation và người backup cho vị trí chủ chốt. Nếu khách yêu cầu, kèm tóm tắt kinh nghiệm của các vị trí chủ chốt (số năm, domain, trình độ tiếng Nhật).
+
+**Q458. Phần スケジュール trong proposal nên trình bày thế nào?**
+Em vẽ tổng quan theo 工程 và các mốc chính (マイルストーン – milestone): bắt đầu, chốt 基本設計, các đợt giao, 受入テスト, go-live, kèm các điểm khách phải tham gia như review, cung cấp dữ liệu, 検収. Mức chi tiết theo tuần hoặc tháng, không xuống task. Ghi rõ lịch nghỉ lễ đã tính và giả định lịch (ngày bắt đầu phụ thuộc ngày ký). Đánh dấu mốc phụ thuộc khách để sau này có căn cứ khi đầu vào bị trễ.
+
+**Q459. Phần 品質管理 trong proposal viết gì để khách Nhật tin?**
+Không viết chung chung "chúng tôi coi trọng chất lượng", mà nêu cách kiểm soát cụ thể: review cho từng loại deliverable, tiêu chí kết thúc mỗi công đoạn, chỉ số sẽ theo dõi và báo cáo định kỳ, chứng nhận liên quan nếu công ty có. Kèm mẫu báo cáo chất lượng hoặc mẫu evidence test để khách hình dung. Proposal chỉ cần cho thấy cơ chế kiểm soát; ngưỡng chi tiết sẽ nằm trong kế hoạch chất lượng sau khi ký hợp đồng.
+
+**Q460. Trình bày 実績 thế nào khi bị ràng buộc NDA?**
+Em ẩn danh khách theo dạng "大手保険会社様" (công ty bảo hiểm lớn) hoặc theo ngành và quy mô, chỉ nêu thông tin đã được phép: lĩnh vực, loại hệ thống, công nghệ, quy mô (人月, thời gian), vai trò của vendor, kết quả. Chọn 3–5 実績 gần nhất với bài toán của khách, không liệt kê tất cả. Nếu NDA cấm cả việc nêu ngành, em hỏi bộ phận pháp chế trước khi đưa vào.
+
+**Q461. 見積書 tiếng Nhật có format thế nào?**
+`見積書` (mitsumorisho – bảng báo giá chính thức) thường gồm: tên khách kèm 御中 (onchuu – kính gửi tổ chức), tiêu đề, số báo giá, ngày phát hành, 有効期限, bảng hạng mục – số lượng – đơn vị (人月) – `単価` (tanka – đơn giá) – thành tiền, tổng phụ, thuế, tổng cộng, `納期` (nouki – hạn giao), `支払条件` (shiharai jouken – điều kiện thanh toán), `備考` (bikou – ghi chú, dẫn tới 前提条件). Cách tính thuế phụ thuộc pháp nhân ký hợp đồng — hỏi kế toán/pháp chế, không tự đặt.
+> 💡 Số tiền trên 見積書 và trong 提案書 phải khớp từng yên — lệch một dòng là mất uy tín ngay tại buổi review.
+
+**Q462. Nếu PM chưa giỏi tiếng Nhật thì tổ chức làm proposal tiếng Nhật thế nào?**
+Em viết khung và nội dung lõi (giải pháp, estimate, rủi ro) bằng tiếng Việt/Anh trên template slide tiếng Nhật đã chuẩn hóa, BrSE chuyển sang tiếng Nhật, sau đó người có tiếng Nhật tốt nhất (đồng nghiệp người Nhật hoặc onsite) review văn phong. Lịch làm proposal phải chừa 1–2 ngày cho vòng dịch và review. Em tự kiểm bản cuối về số liệu, tên chức năng và câu thông điệp — PM chịu trách nhiệm nội dung dù không tự dịch.
+
+**Q463. Proposal tốt khác proposal trung bình ở điểm nào?**
+Proposal trung bình nói "chúng tôi làm được"; proposal tốt chứng minh "chúng tôi hiểu vấn đề của anh và đã nghĩ trước rủi ro". Cụ thể: ① phản ánh đúng 課題 riêng của khách, ② có phương án lựa chọn (tối thiểu / khuyến nghị / mở rộng) để khách dễ quyết, ③ nêu rủi ro và cách xử lý thay vì giấu, ④ con số có căn cứ, ⑤ thân ngắn, chi tiết dồn sang phụ lục. Khách Nhật đánh giá sự cẩn thận và nhất quán cao hơn sự hào nhoáng.
+> 💡 Đưa 3 phương án kiểu `松竹梅` (shou-chiku-bai – 3 mức cao/vừa/thấp) giúp người phụ trách bên khách trình 稟議 dễ hơn và tránh bị so giá trần trụi.
+
+## 5.7 RFP/RFI, コンペ & プレゼン
+
+**Q464. RFI và RFP khác nhau thế nào, vendor nên phản hồi ra sao?**
+RFI (`情報提供依頼書` jouhou teikyou iraisho – yêu cầu cung cấp thông tin) khách dùng để tìm hiểu vendor, giải pháp và khoảng giá sơ bộ; RFP (`提案依頼書` teian iraisho – yêu cầu đề xuất) là yêu cầu chính thức có phạm vi, tiêu chí đánh giá, hạn nộp. Với RFI, em trả lời đủ để vào vòng sau, gợi ý cách tiếp cận (vd chia giai đoạn) và đưa giá dạng range. Với RFP, trả lời đúng từng mục, đúng format, đúng hạn — thiếu mục là bị trừ điểm hoặc loại.
+
+**Q465. Đọc RFP xong, bạn phân tích gì để quyết định Go/No-Go?**
+Em chấm nhanh 6 điểm: ① độ khớp năng lực (domain, công nghệ, ngôn ngữ), ② độ rõ yêu cầu so với loại hợp đồng (請負 mà spec mơ hồ là cờ đỏ), ③ ngân sách và lịch có khả thi, ④ khả năng thắng (quan hệ, số đối thủ, vendor đương nhiệm), ⑤ giá trị chiến lược (khách mới, ngành mới), ⑥ nguồn lực làm proposal. Kết quả trình sales/BOD bằng 1 trang có khuyến nghị. No-Go đúng lúc tiết kiệm hơn thắng một dự án lỗ.
+> 💡 Interviewer rất thích ứng viên dám nói "có những RFP nên từ chối" và nêu được tiêu chí cụ thể.
+
+**Q466. Giai đoạn Q&A trước khi nộp proposal nên tận dụng thế nào?**
+Đây là cơ hội chính để giảm bất định và cho khách thấy mình hiểu sâu. Em gom câu hỏi theo nhóm (phạm vi, phi chức năng, môi trường, hợp đồng, lịch), viết tiếng Nhật ngắn, mỗi câu kèm giả định đề xuất: "〜と想定していますが、よろしいでしょうか" (chúng tôi giả định là…, như vậy có được không). Câu nào khách chưa trả lời kịp thì đưa giả định đó vào 前提条件. Lưu ý trả lời Q&A thường được chia sẻ cho mọi vendor, nên không hỏi câu làm lộ chiến lược của mình.
+> 💡 Câu hỏi kèm giả định giúp khách trả lời nhanh "はい", và câu trả lời đó trở thành căn cứ hợp đồng.
+
+**Q467. Trong コンペ nhiều vendor, làm sao proposal nổi bật mà không phá giá?**
+`コンペ` (konpe – đấu thầu cạnh tranh) thường chấm nhiều tiêu chí, giá chỉ là một phần. Em tập trung ① hiểu 課題 sâu hơn đối thủ nhờ hearing, ② giảm rủi ro cho khách: POC, kế hoạch chuyển giao, backup nhân sự, ③ 実績 cùng ngành, ④ phương án giá linh hoạt (chia giai đoạn, nhiều mức). Nếu được, em hỏi trước `評価基準` (hyouka kijun – tiêu chí đánh giá) và phân bổ dung lượng proposal theo trọng số của từng tiêu chí.
+
+**Q468. Chuẩn bị buổi プレゼン proposal với khách Nhật thế nào?**
+`プレゼン` (purezen – buổi thuyết trình) em chuẩn bị: ① kịch bản theo đúng thời lượng khách cho, chừa ít nhất 1/3 cho Q&A; ② phân vai trước: người trình bày tiếng Nhật chính, PM trả lời phần kế hoạch và kỹ thuật; ③ tập dượt ít nhất 2 lần, có người đóng vai khách hỏi khó; ④ danh sách câu hỏi dự đoán kèm câu trả lời ngắn; ⑤ gửi tài liệu trước nếu khách yêu cầu. Đúng giờ và đúng thời lượng — vượt giờ là điểm trừ lớn.
+
+**Q469. Trong プレゼン, khách hỏi một câu bạn chưa thể trả lời chắc (vd "giảm 20% được không?"). Bạn phản hồi thế nào?**
+Em không cam kết tại chỗ. Em ghi nhận câu hỏi, nêu hướng sẽ xem xét và hẹn thời hạn: "持ち帰って検討し、◯日までにご回答いたします" (xin mang về xem xét và trả lời trước ngày ◯). Sau buổi, em cùng sales phân tích phương án (giảm phạm vi, đổi điều kiện) rồi trả lời bằng văn bản đúng hạn. Cam kết miệng trong プレゼン thường được khách ghi vào biên bản và trở thành điều kiện.
+> 💡 "持ち帰って検討" rất tự nhiên với người Nhật — nhưng trễ hạn trả lời đã hẹn còn mất điểm hơn cả việc từ chối.
+
+**Q470. Khi nào nên đề xuất POC trước khi báo giá phát triển, và POC nên miễn phí hay tính phí?**
+Đề xuất POC (`概念実証` gainen jisshou – kiểm chứng khái niệm) khi có rủi ro kỹ thuật lớn chưa kiểm chứng: công nghệ mới, AI/OCR trên dữ liệu thật của khách, hiệu năng với khối lượng lớn, tích hợp hệ thống cũ khó. POC phải có mục tiêu đo được, thời hạn ngắn, tiêu chí thành công/thất bại ghi trước. Chỉ miễn phí khi phạm vi rất nhỏ và là khoản đầu tư bán hàng đã duyệt; còn lại em đề xuất POC tính phí theo 準委任 — nghiêm túc hơn và tránh "POC không hồi kết".
+
+**Q471. Thua コンペ — bạn làm gì tiếp theo?**
+Em xin khách phản hồi `失注理由` (shicchuu riyuu – lý do không trúng thầu) một cách lịch sự: giá, giải pháp, 体制 hay 実績. Sau đó tổ chức review nội bộ ngắn: estimate có cao bất thường không, proposal thiếu gì, Q&A đã hỏi đủ chưa, rồi cập nhật template và dữ liệu estimate. Em vẫn giữ liên lạc với khách, vì dự án của vendor khác có thể gặp vấn đề và khách quay lại ở giai đoạn sau hoặc dự án khác.
+
+## 5.8 Hợp đồng kiểu Nhật
+
+**Q472. 請負契約 và 準委任契約 khác nhau thế nào?**
+請負 cam kết hoàn thành `成果物` (seikabutsu – sản phẩm bàn giao): vendor có nghĩa vụ hoàn thành theo spec, chi phí vượt do vendor gánh, thanh toán sau 検収. 準委任 cam kết thực hiện công việc với `善管注意義務` (zenkan chuui gimu – nghĩa vụ chú ý của người quản lý cẩn trọng), không bắt buộc hoàn thành kết quả, thanh toán theo công sức/thời gian. 請負 hợp với phạm vi đã rõ; 準委任 hợp với 要件定義, hỗ trợ test, bảo trì và việc bất định cao.
+> 💡 Trả lời bằng "bên nào chịu rủi ro gì" (rủi ro hoàn thành, rủi ro vượt chi phí) thay vì đọc định nghĩa.
+
+**Q473. 準委任 có hai loại 履行割合型 và 成果完成型 — khác nhau thế nào?**
+Luật Dân sự Nhật sửa đổi (hiệu lực từ 1/4/2020) phân biệt rõ hai cách trả thù lao trong 準委任: `履行割合型` (rikou wariai-gata – trả theo phần công việc đã thực hiện) và `成果完成型` (seika kansei-gata – trả khi có kết quả). Ở loại thứ hai, tiền gắn với kết quả nhưng vendor vẫn không mang nghĩa vụ hoàn thành như 請負. Vì loại này dễ bị nhầm với 請負, em đọc kỹ điều khoản thanh toán và nghĩa vụ để biết chính xác mình đang gánh rủi ro nào.
+
+**Q474. 派遣 là gì và vì sao phát triển offshore không phải là 派遣?**
+`派遣` (haken – phái cử lao động) là cho khách "mượn" người, khách trực tiếp `指揮命令` (shiki meirei – chỉ huy, ra lệnh) người lao động; ở Nhật, kinh doanh phái cử phải có giấy phép theo luật phái cử lao động. Offshore development ký 請負 hoặc 準委任: vendor tự phân công, chỉ đạo và quản lý nhân sự của mình tại VN, khách chỉ giao yêu cầu và nhận kết quả qua đầu mối (PM/BrSE). Vì vậy quyền chỉ huy phải luôn nằm ở vendor — trong vận hành thực tế, không chỉ trên giấy.
+
+**Q475. 偽装請負 là gì? Dấu hiệu nguy cơ trong dự án offshore/onsite?**
+`偽装請負` (gisou ukeoi – hợp đồng ukeoi trá hình) là hợp đồng ghi 請負/準委任 nhưng thực tế khách chỉ huy trực tiếp từng nhân sự như 派遣 — vi phạm quy định lao động của Nhật. Dấu hiệu: khách giao task thẳng cho từng dev, quản lý giờ vào/ra, đánh giá cá nhân, chỉ định đổi người cụ thể, BrSE onsite làm theo lệnh trưởng nhóm của khách. Em phòng bằng cách: mọi yêu cầu đi qua 窓口 của vendor, vendor tự phân task và quản lý giờ, vai trò ghi rõ trong 体制図.
+> 💡 Nêu được "quyền 指揮命令 phải nằm ở vendor" là ghi điểm phần hiểu biết pháp lý — nhiều PM kỹ thuật bỏ qua điểm này.
+
+**Q476. ラボ型開発 là gì, phù hợp khi nào và có rủi ro gì?**
+`ラボ型開発` (rabo-gata kaihatsu – mô hình lab/ODC) là khách đặt một team cố định trong thời gian dài (thường ≥ 6 tháng, tham khảo), trả theo 人月, thường ký 準委任. Hợp khi khách có lượng việc liên tục, yêu cầu thay đổi thường xuyên và muốn giữ tri thức trong team. Rủi ro: thiếu việc gây lãng phí cho khách, khách chỉ đạo trực tiếp dễ thành 偽装請負, thành viên chán nếu việc lặp lại. PM cần backlog rõ, báo cáo output định kỳ và lộ trình phát triển cho từng thành viên.
+
+**Q477. SES là gì, khác ラボ型 thế nào?**
+SES (System Engineering Service) là dạng 準委任 phổ biến ở Nhật: cung cấp kỹ sư (thường làm tại site khách) theo đơn giá 人月 kèm `精算幅` (seisan haba – khoảng giờ quyết toán, vd 140–180h/tháng, tham khảo): làm dưới mức thì trừ tiền, vượt mức thì tính thêm. ラボ型 là một team offshore do vendor quản lý và chịu trách nhiệm tổ chức; SES thường là từng kỹ sư riêng lẻ. Cả hai đều phải tránh để khách chỉ huy trực tiếp.
+
+**Q478. 検収 là gì? Bạn quản lý rủi ro 検収 thế nào?**
+検収 là bước khách kiểm tra deliverable và xác nhận chính thức bằng `検収書` (kenshuusho – biên bản nghiệm thu), thường là điều kiện xuất hóa đơn với 請負. Rủi ro: khách kéo dài, tiêu chí không rõ, đòi sửa ngoài spec rồi mới ký. Em ghi vào hợp đồng: tiêu chí 検収 cụ thể (kết quả 受入テスト theo test spec đã duyệt), thời hạn 検収 (vd 10–14 ngày làm việc, tham khảo), và điều khoản `みなし検収` (minashi kenshuu – nghiệm thu mặc nhiên) nếu khách không phản hồi trong hạn.
+> 💡 Bẫy: bắt đầu giai đoạn sau khi giai đoạn trước chưa 検収 — yêu cầu sửa của khách sẽ dồn sang và không ai trả tiền cho phần đó.
+
+**Q479. 契約不適合責任 khác 瑕疵担保責任 trước đây thế nào?**
+Luật Dân sự Nhật sửa đổi (hiệu lực 1/4/2020) thay `瑕疵担保責任` (kashi tanpo sekinin – trách nhiệm bảo hành khuyết tật) bằng `契約不適合責任` (keiyaku futekigou sekinin – trách nhiệm khi không phù hợp hợp đồng). Bên đặt hàng có thể yêu cầu `追完` (tsuikan – sửa/bổ sung cho đúng), giảm giá, bồi thường, hủy hợp đồng. Với 請負, hạn thông báo 1 năm tính từ khi bên đặt hàng *biết* lỗi thay vì từ lúc giao, nên trách nhiệm có thể kéo dài — vendor cần thỏa thuận thời hạn cụ thể, vd 1 năm từ 検収.
+
+**Q480. Khi review điều khoản 契約不適合責任 trong hợp đồng 請負, PM cần chú ý gì?**
+① Thời hạn chịu trách nhiệm tính từ mốc nào (từ 検収 là rõ nhất) và kéo dài bao lâu; ② "không phù hợp" phải được đối chiếu với spec đã duyệt, không phải mong muốn mới của khách; ③ giới hạn mức bồi thường (thường đề xuất không vượt giá trị hợp đồng cá biệt, tham khảo) và loại trừ thiệt hại gián tiếp; ④ effort sửa lỗi trong thời gian bảo hành đã có trong estimate chưa. PM không thay pháp chế, nhưng phải đưa ra rủi ro vận hành để pháp chế đàm phán.
+
+**Q481. Mô hình 基本契約 + 個別契約 hoạt động thế nào?**
+`基本契約` (kihon keiyaku – hợp đồng khung) quy định điều khoản chung dài hạn: bảo mật, sở hữu trí tuệ, trách nhiệm, thanh toán, giải quyết tranh chấp. Mỗi dự án hoặc giai đoạn ký `個別契約` (kobetsu keiyaku – hợp đồng cá biệt) hoặc cặp `注文書・注文請書` (chuumonsho/chuumon ukesho – đơn đặt hàng và xác nhận nhận đặt hàng) ghi phạm vi, giá, thời hạn, loại hợp đồng. Lợi ích là không phải đàm phán lại từ đầu mỗi lần; PM cần nắm điều khoản nào của 個別契約 được ưu tiên hơn 基本契約.
+
+**Q482. Quyền sở hữu trí tuệ trong hợp đồng phát triển với khách Nhật — PM cần lưu ý gì?**
+Khách thường yêu cầu chuyển `著作権` (chosakuken – quyền tác giả) của deliverable khi 検収 hoặc thanh toán. Lưu ý: ① vendor nên giữ quyền với thư viện, framework, công cụ đã có từ trước (`汎用部分` han'you bubun – phần dùng chung) để tái sử dụng; ② kiểm license OSS và code do công cụ AI sinh ra, có danh sách OSS đính kèm; ③ điều khoản không thực thi quyền nhân thân tác giả thường có trong hợp đồng. PM đảm bảo team không mang code của khách này sang dự án khách khác.
+
+**Q483. NDA với khách Nhật ảnh hưởng tới cách vận hành team thế nào?**
+NDA (`秘密保持契約` himitsu hoji keiyaku – hợp đồng bảo mật) quy định thông tin mật, ai được tiếp cận, cách lưu giữ, hủy khi kết thúc và thời hạn bảo mật kéo dài sau hợp đồng. Khách tài chính/bảo hiểm có thể thêm: khu làm việc riêng, cấm thiết bị cá nhân, quy định xử lý dữ liệu cá nhân thật, hạn chế dùng dịch vụ dịch máy/AI công cộng với tài liệu khách. PM chuyển NDA thành quy định vận hành cụ thể, cho thành viên ký cam kết và kiểm tra định kỳ.
+> 💡 Hỏi rõ trước khi dùng dịch máy/AI cho tài liệu khách — dán spec vào dịch vụ công cộng có thể là vi phạm NDA.
+
+**Q484. Điều kiện thanh toán của 請負 và 準委任 khác nhau thế nào, PM cần quan tâm gì?**
+準委任 thường thanh toán hằng tháng theo 人月 hoặc giờ thực tế trong 精算幅, căn cứ `作業報告書` (sagyou houkokusho – báo cáo công việc). 請負 thanh toán sau 検収, có thể chia đợt theo milestone (`分割検収` bunkatsu kenshuu – nghiệm thu từng phần) hoặc có tạm ứng. Ở Nhật hay gặp điều kiện "月末締め翌月末払い" (chốt cuối tháng, trả cuối tháng sau). PM phải bảo đảm mốc giao/検収 khớp kế hoạch dòng tiền của công ty và báo sớm khi mốc có nguy cơ trễ.
+
+## 5.9 Đơn giá, đàm phán & 追加見積
+
+**Q485. Bạn xây đơn giá 人月 như thế nào (không cần số cụ thể)?**
+Đơn giá = chi phí thực của 1人月 chia cho tỷ lệ billable, cộng rủi ro và margin. Chi phí gồm lương, bảo hiểm, phúc lợi, thưởng; văn phòng, thiết bị, license; chi phí gián tiếp (HR, admin, sales); đào tạo (vd tiếng Nhật); và thời gian bench. Chia cho utilization dự kiến, cộng dự phòng tỷ giá và margin mục tiêu do công ty đặt. Đơn giá khác nhau theo vai trò và cấp bậc; BrSE, PM cao hơn dev.
+> 💡 Nhắc tới "utilization" và "bench cost" cho thấy bạn hiểu kinh tế của outsourcing, không chỉ quản lý task.
+
+**Q486. Khách đề nghị discount vì cam kết khối lượng lớn hoặc dài hạn. Bạn đánh giá thế nào?**
+Discount theo volume hợp lý khi nó thật sự giảm chi phí cho vendor: ít bench, nhân sự ổn định, giảm chi phí bán hàng. Em đề xuất discount theo bậc, gắn điều kiện cụ thể (vd ≥ X人月/tháng trong ≥ 12 tháng, tham khảo) và có điều khoản xem lại nếu khối lượng thực tế thấp hơn cam kết. Tránh discount vô điều kiện đổi lấy lời hứa miệng kiểu "sau này sẽ có nhiều dự án".
+
+**Q487. Khách ép giảm đơn giá vì đồng yên yếu. Bạn đàm phán thế nào?**
+Em thừa nhận áp lực của khách nhưng không chỉ có lựa chọn giảm giá: ① đổi cơ cấu nhân sự (tăng tỷ lệ offshore, giao việc đúng cấp độ), ② tăng năng suất bằng tự động hóa, tái sử dụng và chia sẻ lợi ích với khách, ③ cam kết dài hạn đổi lấy giá tốt hơn, ④ với hợp đồng dài, thêm điều khoản điều chỉnh giá theo tỷ giá trong biên độ thỏa thuận. Mọi phương án đều được tính lại margin trước khi đưa ra và không xuống dưới margin sàn của công ty.
+> 💡 Cho thấy bạn hiểu yên yếu là áp lực của cả hai bên (doanh thu quy đổi của vendor cũng giảm) — đề xuất chia sẻ rủi ro thay vì đối đầu.
+
+**Q488. 仕様変更 phát sinh trong dự án 請負 — quy trình 追加見積 bạn làm thế nào?**
+① Xác nhận đây là `仕様変更` (shiyou henkou – thay đổi đặc tả) bằng cách so với baseline tài liệu đã chốt; ② phân tích ảnh hưởng: effort, lịch, chất lượng, chức năng liên quan; ③ gửi phân tích ảnh hưởng kèm 追加見積 bằng tiếng Nhật; ④ chỉ bắt tay làm khi khách đồng ý bằng văn bản hoặc biên bản họp có xác nhận. Thay đổi nhỏ có thể gom theo đợt hoặc trừ vào quỹ thay đổi thỏa thuận trước trong hợp đồng.
+
+**Q489. Khách nói "đây là bug, không phải 仕様変更". Làm sao phân định?**
+Căn cứ là tài liệu thiết kế đã duyệt và biên bản Q&A: hành vi lệch so với tài liệu là bug, vendor sửa miễn phí; hành vi đúng tài liệu nhưng khách muốn khác là 仕様変更. Vùng xám là chỗ tài liệu không nói rõ — em xem hợp đồng quy định bên nào chịu trách nhiệm làm rõ, rồi xử lý theo hướng chia sẻ: nếu nhỏ thì sửa trước để giữ quan hệ, nhưng ghi lại. Bài học là chốt phạm vi càng rõ ở thiết kế thì càng ít tranh cãi.
+> 💡 Đừng tranh cãi từng ticket nhỏ — ghi lại các phần đã làm thêm và dùng nó làm căn cứ khi đàm phán thay đổi lớn hơn.
+
+**Q490. Khách muốn chuyển sang 準委任 "để rẻ hơn" nhưng vẫn yêu cầu vendor cam kết deadline. Bạn trả lời thế nào?**
+Em nói rõ bản chất: 準委任 không có nghĩa vụ hoàn thành, nên không thể vừa trả theo công sức vừa để vendor gánh rủi ro hoàn thành như 請負. Em đề xuất: 準委任 với mục tiêu và kế hoạch rõ, báo cáo tiến độ minh bạch, cơ chế điều chỉnh phạm vi khi chậm; hoặc giữ 請負 cho phần đã rõ, 準委任 cho phần bất định. Nếu khách vẫn cần cam kết cứng, giá phải phản ánh rủi ro đó. Quan trọng nhất là văn bản hợp đồng khớp với cách vận hành thật.
+
+**Q491. Margin dự kiến và margin thực tế của dự án — PM kiểm soát thế nào?**
+Em theo dõi margin từ lúc báo giá đến khi chạy: mỗi tháng dự báo margin cuối dự án = doanh thu dự kiến − (chi phí đã phát sinh + chi phí còn lại). Đòn bẩy chính của PM: giữ đúng phạm vi (không làm miễn phí), cơ cấu nhân sự đúng cấp, giảm làm lại, đưa 追加見積 kịp thời. Khi dự báo margin xuống dưới ngưỡng cảnh báo công ty đặt, em báo cấp trên ngay kèm phương án, không đợi đến cuối dự án mới lộ.
+
+**Q492. Báo giá trọn gói và báo giá theo đơn giá × số lượng — khi nào dùng cách nào?**
+`一括請負` (ikkatsu ukeoi – trọn gói một giá) hợp khi phạm vi rõ và khách muốn chắc ngân sách; vendor có thể đạt margin tốt nếu làm hiệu quả nhưng gánh rủi ro vượt. Đơn giá × số lượng (theo 人月 hoặc theo màn hình/chức năng) hợp khi phạm vi còn thay đổi; khách dễ thêm bớt, vendor ít rủi ro hơn nhưng margin không vượt kỳ vọng. Mô hình lai hay dùng: trọn gói cho phần lõi + bảng đơn giá theo đơn vị cho phần phát sinh, ghi sẵn trong hợp đồng.
+
+## 5.10 Tình huống senior & trade-off
+
+**Q493. Estimate dự án migration hệ thống cũ (vd COBOL hoặc VB sang web) thế nào?**
+Bắt đầu bằng `棚卸し` (tanaoroshi – kiểm kê tài sản): số chương trình, LOC, màn hình, 帳票, batch, bảng/file dữ liệu, interface, và tỷ lệ tài liệu còn đúng thực tế. Chia theo cách xử lý: chuyển bằng tool, viết lại, loại bỏ. Test thường chiếm tỷ trọng lớn vì phải `現新比較` (genshin hikaku – so sánh kết quả hệ thống cũ và mới) trên dữ liệu thật. Em đề xuất giai đoạn đánh giá hiện trạng theo 準委任 trước, vì hệ thống cũ luôn có "chức năng ẩn" không ai còn nhớ.
+> 💡 Bẫy: báo giá migration chỉ theo LOC × tỷ lệ chuyển đổi — chi phí thật nằm ở test so sánh và dữ liệu.
+
+**Q494. Estimate dự án AI (vd OCR hồ sơ, chatbot cho khách bảo hiểm) khác dự án truyền thống ở đâu?**
+Kết quả phụ thuộc dữ liệu và độ chính xác không biết trước, nên không thể cam kết "độ chính xác 95%" như một chức năng 請負. Em chia: ① PoC đánh giá dữ liệu theo 準委任, có timebox; ② phần hệ thống bao quanh mô hình (màn hình, workflow, tích hợp) estimate như phần mềm thường; ③ cải thiện độ chính xác lặp lại theo 準委任. Chỉ số độ chính xác ghi là `努力目標` (doryoku mokuhyou – mục tiêu nỗ lực), không phải điều kiện 検収; estimate cả chi phí API/hạ tầng và đánh giá định kỳ.
+> 💡 Câu chốt: "phần phần mềm có thể 請負, độ chính xác của mô hình thì không".
+
+**Q495. Khách muốn báo giá 請負 nhưng chưa có spec, chỉ có vài trang ý tưởng. Bạn xử lý thế nào?**
+Em không từ chối thẳng mà đưa hai lựa chọn: ① làm 要件定義 trước theo 準委任 (vài tuần, phí rõ), sau đó báo giá 請負 chính xác; ② nếu khách cần con số ngay, đưa 概算 range kèm 前提条件 rất chi tiết và danh sách chức năng do vendor định nghĩa làm baseline, ghi điều kiện "báo giá lại sau 要件定義 nếu phạm vi thay đổi quá X%". Tuyệt đối không ký 請負 trọn gói chỉ dựa trên ý tưởng khi danh sách chức năng chưa được khách xác nhận.
+
+**Q496. Dự án đang chạy 準委任 ổn, khách muốn chuyển giai đoạn tiếp sang 請負. Bạn đánh giá gì trước khi đồng ý?**
+Em kiểm tra: ① spec giai đoạn tới đã ổn định chưa (tỷ lệ thay đổi gần đây), ② đã có năng suất thực đo được trên chính hệ thống này chưa, ③ trách nhiệm phía khách (review, quyết định, môi trường) đã rõ chưa, ④ ranh giới bảo hành với phần code làm theo 準委任 trước đó. Đủ điều kiện thì estimate từ năng suất thực + contingency cho phần rủi ro chuyển sang vendor, đồng thời đổi cách vận hành: baseline phạm vi, change control chặt hơn.
+> 💡 Bẫy: đã ký 請負 mà vẫn làm việc "kiểu 準委任" (khách đổi gì làm nấy) — đó là con đường ngắn nhất tới dự án lỗ.
+
+**Q497. Dự án 請負 đang lỗ vì chính bạn estimate sai (không phải do khách thay đổi). Bạn xử lý thế nào?**
+① Xác nhận fact: lỗ bao nhiêu, sai ở hạng mục nào, dự báo chi phí đến hết; ② báo cấp trên ngay theo `報連相` (hou-ren-sou – báo cáo, liên lạc, bàn bạc), không giấu; ③ khoanh vùng: tối ưu nguồn lực, ưu tiên mốc quan trọng, rà lại phần nào thật ra là 仕様変更 chưa được 追加見積; ④ không giảm chất lượng cam kết với khách vì lỗi estimate thuộc về vendor; sau dự án làm `再発防止` (saihatsu boushi – phòng ngừa tái diễn) cho quy trình estimate và `横展開` (yokotenkai – nhân rộng bài học) sang team khác.
+> 💡 Interviewer muốn nghe: bạn nhận trách nhiệm, không đổ cho khách, và sửa quy trình estimate chứ không chỉ "tăng ca bù".
+
+**Q498. Sales đã báo giá cho khách trước khi PM estimate, con số thấp hơn nhiều so với effort thật. Bạn làm gì?**
+Em estimate độc lập, trình bày khoảng chênh cho sales và cấp trên kèm rủi ro cụ thể, rồi cùng tìm cách chỉnh trước khi ký: thu hẹp phạm vi trong báo giá cho khớp số, bổ sung 前提条件 và 対象外, đề xuất chia giai đoạn. Nếu hợp đồng đã ký, tập trung kiểm soát phạm vi thật chặt và chuẩn bị 追加見積 cho mọi thay đổi. Sau đó em đề xuất quy tắc: không phát hành báo giá chính thức khi chưa có PM hoặc tech lead review estimate.
+
+**Q499. Chi nhánh/team mới ở Đà Nẵng nhận dự án đầu tiên — estimate có rủi ro gì và bạn làm thế nào?**
+Rủi ro: chưa có dữ liệu năng suất của chính team, thiếu người nắm domain và tiếng Nhật, quy trình chưa ổn định. Em ① dùng dữ liệu của team đã chín ở nơi khác nhưng áp hệ số ramp-up, ② đặt senior/BrSE có kinh nghiệm làm nòng cốt giai đoạn đầu, ③ ưu tiên dự án đầu có phạm vi vừa phải, ký 準委任 hoặc chạy pilot, ④ đo năng suất thực sau 1–2 tháng để hiệu chỉnh các estimate sau. Chi phí ramp-up ghi rõ là đầu tư nội bộ hay tính vào giá.
+> 💡 Với vị trí có lợi thế "build-up chi nhánh Đà Nẵng", nêu được cách biến dự án đầu thành nguồn dữ liệu estimate cho cả chi nhánh sẽ rất ghi điểm.
+
+**Q500. Nếu chỉ chọn một nguyên tắc quan trọng nhất về estimate và hợp đồng với khách Nhật, bạn chọn gì?**
+Em chọn: "mọi con số phải đi kèm căn cứ và điều kiện". Estimate không có 前提条件 thì rủi ro mặc định về vendor; hợp đồng không khớp vận hành thực tế (請負 mà làm như 準委任, 準委任 mà khách chỉ huy như 派遣) thì sớm muộn thành tranh chấp. Với khách Nhật, căn cứ minh bạch còn giúp họ duyệt nội bộ nhanh hơn — nên đây vừa là cách vendor tự bảo vệ, vừa là cách phục vụ khách.
+> 💡 Câu tổng kết nên nối được ba mảng: estimate có căn cứ – proposal rõ ràng – hợp đồng khớp cách vận hành.
+
+---
+
+# Chương 6 · Quản lý chất lượng & quy trình kiểu Nhật (Q501–Q600)
+
+## 6.1 Tư duy chất lượng của khách Nhật
+
+**Q501. Với khách Nhật, 品質 (hinshitsu – chất lượng) có nghĩa gì rộng hơn "phần mềm ít bug"?**
+Với khách Nhật, chất lượng gắn với **niềm tin (信頼 – shinrai)**: sản phẩm chạy đúng, tài liệu khớp code, mọi thay đổi có lý do, và khi có lỗi thì giải thích được vì sao xảy ra, đã chặn tái phát thế nào. Một bug nhỏ kèm báo cáo rõ ràng vẫn giữ được niềm tin; một bug nhỏ bị giấu hoặc giải thích mơ hồ có thể làm mất hợp đồng tiếp theo. Vì vậy PM quản lý đồng thời **chất lượng sản phẩm**, **chất lượng quy trình** và **chất lượng giải trình**.
+> 💡 Trả lời bằng ba lớp "sản phẩm – quy trình – giải trình" cho interviewer thấy bạn hiểu khách Nhật chứ không chỉ thuộc định nghĩa.
+
+**Q502. Vì sao khách Nhật kỳ vọng gần "zero defect", và PM nên hiểu kỳ vọng đó thế nào cho thực tế?**
+"Zero defect" thực chất là **không để lỗi lọt sang phía khách** (流出 – ryuushutsu – lỗi lọt ra ngoài), không phải dự án không có bug. Bug tìm và sửa trong nội bộ là bằng chứng quy trình hoạt động; bug khách tìm thấy ở 受入テスト (ukeire tesuto – kiểm thử nghiệm thu) hay production mới bị coi là thất bại. PM cần thỏa thuận từ đầu mục tiêu bug lọt theo mức độ, ví dụ 0 lỗi nghiêm trọng, lỗi nhẹ dưới ngưỡng đã thống nhất (tham khảo), và cách đo.
+> 💡 Đừng hứa "zero bug" tuyệt đối; nói "zero bug nghiêm trọng lọt ra" kèm cơ chế đo vừa đúng tinh thần vừa khả thi.
+
+**Q503. 品質計画書 (hinshitsu keikakusho – kế hoạch chất lượng) của một dự án offshore gồm những nội dung chính nào?**
+Gồm: ① mục tiêu chất lượng định lượng (mật độ review, mật độ test, mật độ bug, số bug lọt ra khách); ② quality gate cho từng 工程 (koutei – công đoạn) với tiêu chí vào/ra; ③ loại review và người review cho từng 成果物 (seikabutsu – sản phẩm bàn giao); ④ chiến lược test và mức evidence; ⑤ quy trình quản lý bug, thay đổi, cấu hình; ⑥ báo cáo chất lượng gửi khách và tần suất. Kế hoạch được khách duyệt trước khi vào thiết kế, làm "luật chơi" chung cho hai bên.
+
+**Q504. Quality gate theo 工程 vận hành thế nào trong một dự án waterfall cho khách Nhật?**
+Cuối mỗi công đoạn (yêu cầu, thiết kế, lập trình, từng mức test) có một buổi 工程完了判定 (koutei kanryou hantei – đánh giá hoàn thành công đoạn): deliverable đủ, review xong, chỉ số trong ngưỡng, các 指摘 (shiteki – điểm bị chỉ ra) đã đóng. Không đạt thì không sang công đoạn sau, hoặc sang có điều kiện kèm danh sách tồn đọng và hạn đóng. PM chủ trì, có người QA độc lập tham gia, biên bản gửi khách khi hợp đồng yêu cầu.
+
+**Q505. 手戻り (temodori – làm lại) được đo thế nào để trở thành một chỉ số chất lượng nội bộ?**
+Em đo **tỉ lệ effort 手戻り** = giờ công sửa lại sản phẩm của công đoạn trước / tổng giờ công, ghi bằng mã task riêng trong timesheet hoặc ticket. Tách theo công đoạn gây ra và nguyên nhân (hiểu sai spec, lỗi thiết kế, khách đổi yêu cầu) để biết chi phí đang "rò" ở đâu. Tỉ lệ này tăng ở một module là cảnh báo sớm hơn cả mật độ bug, và cũng là dữ liệu khi đàm phán phần 手戻り do khách đổi yêu cầu.
+> 💡 Tách được "手戻り do mình" và "手戻り do khách đổi yêu cầu" cho thấy bạn vừa quản chất lượng vừa giữ được chi phí.
+
+**Q506. Câu "品質は工程で作り込む" (hinshitsu wa koutei de tsukurikomu – chất lượng được tạo ra trong từng công đoạn) áp dụng vào phần mềm thế nào?**
+Nghĩa là chất lượng không đến từ việc test thật nhiều ở cuối, mà được "xây" ở từng bước: yêu cầu rõ, thiết kế được review, code theo chuẩn có self-check, unit test đủ quan điểm. Cụ thể em gắn mỗi công đoạn với checklist, review bắt buộc và tiêu chí ra; test cuối để xác nhận chứ không phải để "vớt" lỗi. Khi test hệ thống phát hiện nhiều lỗi thiết kế, đó là tín hiệu quy trình thượng nguồn hỏng, phải sửa quy trình chứ không chỉ sửa bug.
+
+**Q507. Khách Nhật khác khách Âu/Mỹ thế nào trong cách nhìn chất lượng, và PM điều chỉnh ra sao?**
+Khái quát (không phải khách nào cũng vậy): khách Nhật thường coi trọng **hoàn chỉnh trước khi giao**, tài liệu chi tiết, quy trình giải trình được; khách Âu/Mỹ thường chấp nhận giao sớm rồi sửa nhanh qua nhiều vòng, ưu tiên tốc độ và giá trị kinh doanh. Với khách Nhật, em tăng review nội bộ, evidence và báo cáo định kỳ; với khách Âu/Mỹ, em tập trung demo, test tự động và thời gian phản hồi lỗi. Quan trọng nhất là hỏi rõ tiêu chí nghiệm thu của từng khách thay vì áp khuôn.
+> 💡 Luôn thêm ý "tùy từng khách" để không bị đánh giá là định kiến văn hóa.
+
+**Q508. 安心感 (anshinkan – cảm giác an tâm) của khách liên quan gì đến quản lý chất lượng?**
+Khách Nhật đánh giá vendor không chỉ qua sản phẩm mà qua việc họ có **an tâm** khi giao việc không: biết trước rủi ro, nhận báo cáo đúng hạn, không bị bất ngờ. PM tạo an tâm bằng chỉ số chất lượng minh bạch hằng tuần, báo tin xấu sớm (ví dụ mật độ bug vượt ngưỡng là báo ngay kèm phân tích), và giữ đúng cả những lời hứa nhỏ. Vendor ít lỗi nhưng hay im lặng thường bị đánh giá thấp hơn vendor có lỗi nhưng chủ động minh bạch.
+
+**Q509. QCD (Quality – Cost – Delivery) là gì và chữ Q thường đứng ở đâu trong ưu tiên của khách Nhật?**
+QCD là ba trục khách Nhật dùng để đánh giá vendor. Ở nhiều dự án tài chính, bảo hiểm, Q thường được đặt ngang hoặc trên D: trễ vài ngày còn đàm phán được, nhưng lỗi lọt ra production làm khách mất uy tín với khách hàng cuối thì rất khó cứu. Tuy vậy PM không mặc định "Q luôn thắng"; em hỏi khách thứ tự ưu tiên cho từng giai đoạn, ghi vào kế hoạch, và khi phải đánh đổi thì trình phương án có số liệu để khách quyết.
+
+**Q510. Khi mới nhận một dự án đang chạy, làm sao đánh giá nhanh "sức khỏe chất lượng" trong một tuần?**
+Em xem năm thứ: ① 品質計画書 có tồn tại và còn được theo dõi không; ② xu hướng 指摘 review và bug theo tuần so với mục tiêu; ③ số bug mở, tuổi bug, tỉ lệ reopen; ④ các bug khách phát hiện gần đây và báo cáo nguyên nhân; ⑤ trao đổi ngắn với BrSE (Bridge SE – kỹ sư cầu nối), tester, onsite về điều khách phàn nàn. Kết quả gom thành một trang đỏ–vàng–xanh kèm 3 hành động ưu tiên để báo cấp trên và onsite.
+> 💡 Luôn hỏi "khách đã phàn nàn gì trong 3 tháng qua" — đó là chỉ số chất lượng thật nhất và không nằm trong dashboard.
+
+## 6.2 成果物 theo V-model & quản lý tài liệu
+
+**Q511. Liệt kê các 成果物 chính theo công đoạn V-model và ai thường tạo, ai duyệt trong mô hình offshore.**
+Yêu cầu: 要件定義書 (youken teigisho – tài liệu định nghĩa yêu cầu), khách hoặc onsite tạo. Thiết kế: 基本設計書 (kihon sekkeisho – thiết kế cơ bản) thường onsite/BrSE tạo, khách duyệt; 詳細設計書 (shousai sekkeisho – thiết kế chi tiết) team offshore tạo, leader/BrSE duyệt. Lập trình: ソースコード kèm kết quả review code. Mỗi mức test: テスト仕様書 (tesuto shiyousho – test spec) và テスト結果報告書 (tesuto kekka houkokusho – báo cáo kết quả test) kèm evidence. Bàn giao: 運用手順書 (unyou tejunsho – hướng dẫn vận hành), release note. Phân vai cụ thể ghi trong 品質計画書.
+
+**Q512. 基本設計書 và 詳細設計書 khác nhau thế nào về người đọc và mức chi tiết?**
+基本設計書 (còn gọi 外部設計 – gaibu sekkei – thiết kế ngoài) mô tả hệ thống nhìn từ phía người dùng: màn hình, item, chức năng, báo cáo, interface ngoài, data model logic; khách đọc và duyệt. 詳細設計書 (内部設計 – naibu sekkei – thiết kế trong) mô tả bên trong: module, class, xử lý từng bước, SQL, xử lý lỗi; chủ yếu cho dev, đủ chi tiết để người khác code ra cùng kết quả. Ở offshore, phần chi tiết thường do team Việt Nam viết và được review chéo trước khi code.
+
+**Q513. Khách Nhật mong đợi tài liệu chi tiết đến mức nào, và làm sao biết đã "đủ"?**
+Thường rất cao: 詳細設計書 có thể mô tả đến từng item màn hình, điều kiện validate, message ID, nhánh xử lý. Cách biết "đủ": ① lấy tài liệu khách đã chấp nhận ở dự án trước làm chuẩn; ② làm mẫu cho 1 chức năng đầu, gửi khách review sớm để chốt mức chi tiết; ③ dùng tiêu chí "người khác đọc có code và test được mà không phải hỏi". Sau khi chốt, đưa mẫu vào template và checklist cho cả team.
+> 💡 "Làm mẫu 1 chức năng cho khách duyệt trước khi nhân rộng" là điểm cộng lớn vì nó chặn 手戻り hàng loạt.
+
+**Q514. テスト仕様書 chuẩn kiểu Nhật cần có những cột thông tin nào?**
+Thường gồm: ID case, chức năng/màn hình, テスト観点 (tesuto kanten – quan điểm test), điều kiện tiền đề, dữ liệu test, thao tác, kết quả mong đợi, kết quả thực tế, ngày test, người test, người xác nhận, link evidence, ID bug nếu fail. Phần đầu file có phạm vi, môi trường, danh sách quan điểm và thống kê số case. Kết quả mong đợi phải cụ thể đến giá trị hoặc message, không viết chung chung.
+> 💡 Kết quả mong đợi kiểu "正常に表示される" (seijou ni hyouji sareru – hiển thị bình thường) là lỗi bị khách Nhật chỉ ra nhiều nhất.
+
+**Q515. テスト仕様書 và テスト結果報告書 khác nhau ở điểm nào?**
+テスト仕様書 trả lời "sẽ test gì, thế nào, kỳ vọng gì" và được review **trước** khi test. テスト結果報告書 trả lời "đã test được gì, kết quả ra sao, đủ để sang bước sau chưa" và được viết **sau** mỗi mức test: số case đạt/không đạt, bug phát hiện, phần chưa test được và lý do, kèm kết luận của người phụ trách test. Báo cáo kết quả là đầu vào cho quyết định chuyển công đoạn và cho báo cáo chất lượng gửi khách.
+
+**Q516. 運用手順書 cần được chuẩn bị và kiểm tra thế nào trước bàn giao?**
+運用手順書 mô tả cách khởi động/dừng hệ thống, chạy batch, backup/restore, xử lý khi lỗi, đầu mối liên hệ khi sự cố, kèm lệnh và màn hình cụ thể. Em yêu cầu viết sớm, song song với test hệ thống, và **chạy thử đúng theo tài liệu** bởi người không viết ra nó, có evidence từng bước. Lỗi tài liệu vận hành thường chỉ lộ ra khi đã đi vào vận hành, nên đây là deliverable hay bị xem nhẹ nhưng rủi ro cao.
+
+**Q517. Quản lý version tài liệu cho khách Nhật thế nào cho đúng chuẩn?**
+Mỗi tài liệu có bìa ghi số phiên bản, ngày, người tạo, người duyệt và bảng 改訂履歴 (kaitei rireki – lịch sử sửa đổi) gồm version, ngày, nội dung sửa, vị trí sửa, người sửa. Phần thay đổi được đánh dấu (chữ đỏ hoặc gạch chân) để người review chỉ cần xem phần khác biệt. File lưu trên repo hoặc kho tài liệu chung với quy tắc đặt tên thống nhất, chỉ một bản chính thức, bản cũ được lưu trữ chứ không ghi đè.
+> 💡 Khách để ý 改訂履歴 trống hoặc chỉ ghi "修正" (shuusei – sửa); ghi rõ "sửa mục 3.2 theo Q&A số 15" tạo ấn tượng chuyên nghiệp.
+
+**Q518. Tài liệu thiết kế dạng Excel 方眼紙 (hougan-shi – Excel kẻ ô vuông) có ưu nhược điểm gì và PM xử lý ra sao?**
+Ưu: khách Nhật quen dùng, dễ trình bày layout màn hình, dễ in và đóng dấu. Nhược: khó so sánh phiên bản, khó merge khi nhiều người sửa, khó tìm kiếm, dễ lệch giữa các sheet. Em xử lý bằng cách phân owner theo file, khóa sheet template, dùng công cụ so sánh Excel trước mỗi lần gửi và ghi đủ 改訂履歴. Nếu khách cởi mở, có thể dùng wiki/Markdown cho tài liệu nội bộ, còn deliverable chính thức vẫn giữ đúng định dạng khách yêu cầu.
+
+**Q519. Làm sao giữ tài liệu và code luôn nhất quán, nhất là khi có thay đổi giữa chừng?**
+Em áp quy tắc **"tài liệu trước, code sau"**: mọi thay đổi phải cập nhật thiết kế và 改訂履歴 rồi mới sửa code, trong cùng một ticket. Có ma trận truy vết yêu cầu ↔ thiết kế ↔ code ↔ test case, checklist review code có mục "đã khớp thiết kế chưa", và trước mỗi lần bàn giao lấy mẫu đối chiếu tài liệu với code. Lệch tài liệu–code được ghi nhận như một bug, có phân loại, để team không coi nhẹ.
+
+**Q520. Luồng 作成 → 確認 → 承認 (sakusei – kakunin – shounin: tạo, kiểm tra, phê duyệt) trên tài liệu có ý nghĩa gì với PM?**
+Đó là chuỗi trách nhiệm: người tạo chịu trách nhiệm nội dung, người kiểm tra (thường leader/BrSE) xác nhận đã review theo checklist, người phê duyệt (PM hoặc khách) chịu trách nhiệm cho phép phát hành. Ô ký duyệt không phải hình thức: khi có lỗi, khách sẽ hỏi "ai đã 確認, theo tiêu chí nào". Vì vậy PM chỉ 承認 khi có レビュー記録票 (rebyuu kirokuhyou – biên bản review) đi kèm.
+> 💡 Không bao giờ ký duyệt "cho kịp" khi chưa có biên bản review — đó là bẫy trách nhiệm kinh điển.
+
+## 6.3 Review & 指摘
+
+**Q521. Các loại review thường gặp trong dự án cho khách Nhật là gì, mỗi loại dùng khi nào?**
+① セルフレビュー (self review) theo checklist trước khi giao; ② ピアレビュー (peer review) giữa đồng nghiệp cùng cấp, bắt lỗi logic và vi phạm chuẩn; ③ review của 有識者 (yuushikisha – người có chuyên môn) cho phần khó hoặc rủi ro cao; ④ 顧客レビュー (kokyaku rebyuu – review của khách) cho deliverable chính thức. Về hình thức có ウォークスルー (walkthrough – tác giả dẫn dắt giải thích) và インスペクション (inspection – review chính thức có vai trò, checklist, số đo). Nguyên tắc: lỗi phải bị bắt ở tầng thấp nhất trước khi đến tay khách.
+
+**Q522. 設計レビュー (sekkei rebyuu – review thiết kế) nên tập trung vào những điểm nào?**
+Tập trung vào: ① đúng và đủ so với yêu cầu, truy vết được; ② nhất quán giữa các màn hình/module, với data model và interface; ③ xử lý ngoại lệ, lỗi, giá trị biên; ④ yêu cầu phi chức năng như hiệu năng, bảo mật, log; ⑤ khả năng test được. Lỗi chính tả, format là phụ, nên để self-check xử lý trước. Mỗi buổi review giới hạn phạm vi (ví dụ khoảng 30–40 trang – tham khảo) để giữ độ sâu.
+
+**Q523. コードレビュー (koodo rebyuu – review code) trong dự án offshore cho khách Nhật nên tổ chức thế nào?**
+Ba tầng: công cụ tự động (lint, static analysis, coding convention) chặn lỗi hình thức trước; peer review qua pull request theo checklist (logic, xử lý lỗi, bảo mật, hiệu năng, khớp thiết kế); leader review phần rủi ro cao. Mỗi 指摘 được ghi lại có phân loại chứ không chỉ comment rồi quên, để cuối giai đoạn tính được mật độ và xu hướng. Pull request quá lớn (ví dụ trên 400 dòng – tham khảo) bị yêu cầu tách để review có chất lượng.
+
+**Q524. レビュー記録票 cần ghi những gì?**
+Gồm: tên tài liệu/module và version, ngày, thời lượng review, người tham gia, phạm vi (số trang hoặc LOC), danh sách 指摘 (vị trí, nội dung, phân loại, mức độ, người sửa, ngày sửa, người xác nhận đã sửa) và kết luận (đạt hoặc review lại). Từ đó tính được 指摘密度 (shiteki mitsudo – mật độ chỉ ra) và レビュー工数密度 (rebyuu kousuu mitsudo – giờ review trên quy mô). Biên bản này là evidence chất lượng thượng nguồn khi khách audit hoặc khi phân tích lỗi về sau.
+
+**Q525. 指摘 thường được phân loại thế nào và vì sao phải phân loại?**
+Theo nội dung: 誤り (ayamari – sai), 漏れ (more – thiếu), 曖昧 (aimai – mơ hồ), 不整合 (fuseigou – không nhất quán), 表記 (hyouki – cách viết, chính tả), 改善提案 (kaizen teian – đề xuất cải tiến); theo mức độ: lớn, vừa, nhỏ. Phân loại để biết **lỗi bản chất nằm ở đâu**: nhiều 漏れ → hiểu yêu cầu chưa đủ; nhiều 不整合 → thiếu thiết kế chung; toàn 表記 → review chưa đủ sâu. Không phân loại thì chỉ có con số đếm, không rút ra hành động.
+> 💡 Khi kể "review ra 200 指摘", hãy nói ngay tỉ lệ 指摘 bản chất (logic, thiếu sót) — interviewer đánh giá cao tư duy phân tích đó.
+
+**Q526. 指摘密度 được tính thế nào và dùng để làm gì?**
+指摘密度 = số 指摘 / quy mô được review, ví dụ 指摘 trên mỗi trang thiết kế hoặc trên mỗi KLOC code. Khi so với baseline của tổ chức hoặc dự án tương tự, nó cho biết review đã "đào" đủ sâu chưa và tài liệu có ổn không. Phải đọc kèm レビュー工数密度: mật độ chỉ ra thấp và giờ review cũng thấp thì nghi review hời hợt; giờ review đủ mà mật độ thấp thì nhiều khả năng tài liệu tốt.
+
+**Q527. Ngưỡng tham khảo cho 指摘密度 lấy từ đâu, và xử lý thế nào khi lệch trên hoặc dưới?**
+Ngưỡng nên lấy từ **baseline nội bộ** của công ty hoặc dự án tương tự; nếu chưa có, em đặt tạm một khoảng (ví dụ thiết kế khoảng 0,5–1,5 指摘/trang – tham khảo) rồi hiệu chỉnh sau 1–2 module. Lệch trên: tài liệu còn non, có thể 差し戻し (sashimodoshi – trả lại) cho tác giả làm lại trước khi review tiếp. Lệch dưới: kiểm tra giờ review, năng lực người review, cân nhắc cho người khác review bổ sung. Điều quan trọng là **giải thích** được mọi điểm lệch.
+> 💡 Đừng đọc một con số "chuẩn ngành"; nói rõ là baseline nội bộ và cách hiệu chỉnh sẽ an toàn và thuyết phục hơn.
+
+**Q528. Một buổi review kết thúc với 0 指摘. PM nên vui hay lo?**
+Nên nghi ngờ trước. 0 指摘 có thể vì tài liệu thật sự tốt, nhưng thường gặp hơn là review hời hợt, người review thiếu kiến thức nghiệp vụ, thời gian quá ngắn hoặc ngại "chê" đồng nghiệp. Em kiểm tra giờ review và checklist đã dùng, rồi cho một người khác review lấy mẫu một phần; nếu mẫu đó tìm ra lỗi bản chất thì cả buổi review phải làm lại. Với khách Nhật, báo cáo "0 指摘" không kèm giải thích thường bị hỏi ngược.
+
+**Q529. Làm sao để review không thành buổi "bắt lỗi người" khiến dev ngại đưa tài liệu ra review?**
+Nguyên tắc: **review sản phẩm, không review người**. 指摘 viết theo sự kiện ("mục 3.2 thiếu xử lý khi số tiền âm"), không viết nhận xét ("viết ẩu"); số 指摘 không dùng trực tiếp để chấm điểm cá nhân. Em khuyến khích review sớm từng phần nhỏ thay vì một lần cuối, ghi nhận người tìm ra lỗi quan trọng, và leader, PM cũng đưa tài liệu của chính mình ra review. Khi mật độ 指摘 của ai đó cao, ta bàn cách hỗ trợ chứ không phạt.
+
+**Q530. Khách trả về tài liệu với rất nhiều 指摘 từ 顧客レビュー. PM xử lý thế nào?**
+① Xác nhận fact: tổng số, phân loại, bao nhiêu lỗi bản chất, bao nhiêu do yêu cầu đổi. ② Lập kế hoạch sửa có ngày và báo khách theo 報連相 (hou-ren-sou – báo cáo, liên lạc, bàn bạc). ③ Tìm vì sao review nội bộ để lọt: so 指摘 của khách với biên bản review nội bộ, xác định quan điểm còn thiếu. ④ Bổ sung quan điểm đó vào checklist, 横展開 (yokotenkai – nhân rộng kiểm tra) sang tài liệu chưa gửi, và gửi khách phân tích cùng bản sửa.
+> 💡 Khách đánh giá cao việc bạn tự phân tích "vì sao nội bộ để lọt" hơn là chỉ sửa đúng những điểm khách chỉ ra.
+
+## 6.4 Test, chỉ số & evidence
+
+**Q531. Mỗi mức 単体/結合/総合/受入テスト nhằm bắt loại lỗi nào, và PM theo dõi chỉ số gì ở từng mức?**
+単体テスト (tantai tesuto – unit test) bắt lỗi logic trong module: theo dõi coverage C0/C1 (statement/branch). 結合テスト (ketsugou tesuto – integration test) bắt lỗi giao tiếp giữa module, dữ liệu, hệ thống ngoài: theo dõi mật độ test và bug theo interface. 総合テスト (sougou tesuto – system test) bắt lỗi so với yêu cầu và phi chức năng: theo dõi độ phủ yêu cầu, đường cong hội tụ. 受入テスト do khách làm: chỉ số chính là số bug khách tìm thấy. Mức sau toàn lỗi lẽ ra mức trước phải bắt là dấu hiệu mức trước yếu.
+
+**Q532. テスト観点 là gì và vì sao khách Nhật hay hỏi "観点は網羅されていますか"?**
+テスト観点 là các góc nhìn cần kiểm tra cho một chức năng: giá trị biên, giá trị bất thường, quyền hạn, xử lý đồng thời, ngày đặc biệt (cuối tháng, năm nhuận), message lỗi. Câu 観点は網羅されていますか (kanten wa moura sarete imasu ka – quan điểm đã bao phủ hết chưa) cho thấy khách đánh giá test qua **độ phủ quan điểm** chứ không chỉ số case. Em duy trì danh sách quan điểm chuẩn theo loại chức năng, review nó trước khi viết case, và bổ sung mỗi khi có bug lọt do thiếu quan điểm.
+> 💡 Nêu được 1–2 quan điểm đặc thù nghiệp vụ (làm tròn số tiền, ngày nghỉ lễ Nhật) cho thấy bạn hiểu domain tài chính, bảo hiểm.
+
+**Q533. テスト密度 (tesuto mitsudo – mật độ test) là gì và tính thế nào?**
+テスト密度 = số test case / quy mô, thường là case/KLOC (theo dòng code) hoặc case/FP (theo function point). Nó cho biết test đã đủ "dày" so với độ lớn sản phẩm chưa, khi so với baseline cùng loại hệ thống và cùng mức test. Lưu ý KLOC phụ thuộc ngôn ngữ và cách đếm (có tính comment, code tự sinh hay không), nên phải thống nhất cách đếm trong 品質計画書 trước khi so sánh giữa các module hay dự án.
+
+**Q534. バグ密度 (bagu mitsudo – mật độ bug) đọc thế nào cho đúng?**
+バグ密度 = số bug phát hiện / quy mô (bug/KLOC hoặc bug/FP), tính riêng cho từng mức test. Phải đọc **cùng** テスト密度: bug thấp có thể do sản phẩm tốt hoặc do test chưa đủ; bug cao có thể do code kém hoặc do test rất kỹ. Em đặt khoảng mục tiêu trên–dưới theo baseline, và module nào nằm ngoài khoảng đều phải có phân tích định tính, không chỉ báo con số.
+
+**Q535. Phân tích hai trục テスト密度 × バグ密度 giúp gì khi đánh giá chất lượng từng module?**
+Đặt mỗi module lên ma trận 2×2: ① test đủ, bug trong ngưỡng → tương đối ổn; ② test đủ, bug cao → chất lượng build kém, cần review lại thiết kế/code và test bổ sung; ③ test thiếu, bug thấp → chưa đủ căn cứ đánh giá, phải bổ sung test; ④ test thiếu, bug cao → rủi ro cao nhất, ưu tiên xử lý. Ma trận giúp PM phân bổ effort test và giải thích cho khách vì sao module nào cần thêm thời gian.
+> 💡 Vẽ ma trận 2×2 này lên bảng trong buổi phỏng vấn là cách nhanh nhất chứng minh bạn quản chất lượng bằng dữ liệu.
+
+**Q536. 信頼度成長曲線 (shinraido seichou kyokusen – đường cong tăng trưởng độ tin cậy) đọc thế nào?**
+Trục ngang là thời gian hoặc số case đã chạy, trục dọc là số bug tích lũy. Đường lý tưởng có dạng chữ S (thường mô hình hóa bằng đường Gompertz hoặc logistic): đầu tăng nhanh, sau chậm dần và **đi ngang** (収束 – shuusoku – hội tụ) khi gần hết test. Nếu đến cuối vẫn dốc lên gần như tuyến tính, sản phẩm chưa ổn định, chưa nên release. Em cập nhật theo ngày và so với đường dự báo để thấy lệch sớm thay vì đợi cuối kỳ.
+
+**Q537. Đường cong đi ngang rất sớm khi mới chạy khoảng 40% số case. Đó là tín hiệu tốt hay xấu?**
+Phải nghi ngờ trước. Có thể chất lượng tốt, nhưng thường gặp hơn: đang chạy các case dễ trước, tester bị chặn môi trường nên ít case thực chất, bug đã thấy nhưng chưa ghi phiếu, hoặc case thiếu quan điểm. Em kiểm tra tốc độ chạy case, phân bổ case theo quan điểm và module, hỏi tester về bug "chưa kịp ghi". Chỉ khi các yếu tố này bình thường mới kết luận chất lượng tốt.
+
+**Q538. Đường cong có các "bậc thang" tăng vọt giữa chừng nói lên điều gì?**
+Bậc thang thường xuất hiện khi một module mới được đưa vào test, môi trường hoặc dữ liệu thay đổi, hoặc có bản build chứa thay đổi lớn hay bản sửa gây デグレ (degure – lỗi hồi quy). Em đối chiếu thời điểm bậc thang với lịch build và nhật ký thay đổi để xác định nguyên nhân. Nếu do デグレ, phải mở rộng phạm vi test hồi quy hoặc tự động hóa cho vùng đó; nếu do module mới, nên vẽ đường riêng theo module để đọc đúng.
+
+**Q539. エビデンス (ebidensu – bằng chứng test) gồm những gì và vì sao khách Nhật coi trọng?**
+Evidence là chứng cứ cho thấy case đã chạy và cho kết quả như đã ghi: screenshot, log, kết quả SQL trước/sau, file output, kết quả so sánh. Với khách Nhật, "đã test" mà không có evidence coi như chưa test; evidence còn dùng khi có sự cố sau release để chứng minh phạm vi đã kiểm tra. Mỗi evidence gắn ID case, ngày, người test và được lưu theo cấu trúc thư mục, quy tắc đặt tên thống nhất.
+
+**Q540. Làm sao cân bằng chi phí làm evidence với tiến độ?**
+Thỏa thuận **mức evidence** với khách ngay trong 品質計画書: ví dụ màn hình chỉ cần screenshot kết quả cuối, batch cần log và dữ liệu trước/sau, case hồi quy tự động dùng report của tool thay screenshot. Dùng công cụ chụp/ghi tự động, template đặt tên file, và tính effort evidence vào ước lượng test dựa trên số đo thực tế của dự án trước. Tránh để cuối kỳ mới "bổ sung evidence", vì vừa tốn công vừa dễ thành làm giả.
+> 💡 Nói rõ "evidence tạo bù sau khi test xong là rủi ro về tính trung thực" cho thấy bạn hiểu điểm khách Nhật nhạy cảm nhất.
+
+**Q541. Làm evidence cho khách tài chính, bảo hiểm cần lưu ý gì về dữ liệu?**
+Evidence thường chứa dữ liệu màn hình, nên phải dùng dữ liệu test giả lập, không dùng dữ liệu khách hàng thật; nếu bắt buộc dùng dữ liệu thật và được khách cho phép thì phải che (masking) thông tin cá nhân như tên, số tài khoản, số hợp đồng. Evidence lưu ở vùng có phân quyền, không gửi qua kênh cá nhân, và xóa theo quy định khi kết thúc dự án. Vi phạm ở điểm này là sự cố bảo mật, không còn là chuyện chất lượng.
+
+**Q542. Tiêu chí bắt đầu (開始基準 – kaishi kijun) và kết thúc (完了基準 – kanryou kijun) của một mức test nên đặt thế nào?**
+Bắt đầu: mức test trước đã đạt, test spec đã review và duyệt, môi trường và dữ liệu sẵn sàng, bản build qua smoke test; thiếu điều kiện thì không bắt đầu để tránh test "nửa vời" rồi phải chạy lại. Kết thúc: 消化率 (shoukaritsu – tỉ lệ case đã thực hiện) 100% có evidence, mật độ test/bug trong khoảng hoặc có giải thích, không còn bug nghiêm trọng mở, các bug đã sửa đã test hồi quy. Cả hai được thống nhất với khách trước khi test, không đặt lại lúc cuối.
+
+## 6.5 Quản lý bug
+
+**Q543. 不具合管理票 (fuguai kanrihyou – bảng quản lý lỗi) cần có những trường nào?**
+Tối thiểu: ID, ngày 起票 (kihyou – tạo phiếu), người tạo, chức năng, môi trường, hiện tượng, bước tái hiện, kết quả mong đợi, mức nghiêm trọng, độ ưu tiên, 摘出工程 (tekishutsu koutei – công đoạn phát hiện), 作り込み工程 (tsukurikomi koutei – công đoạn gây ra lỗi), phân loại nguyên nhân, nội dung sửa, phạm vi ảnh hưởng, người sửa, người xác nhận, trạng thái, ngày đóng. Các trường phân tích phải bắt buộc khi đóng phiếu, nếu không cuối kỳ sẽ không làm được báo cáo chất lượng.
+
+**Q544. Phân biệt severity và priority bằng ví dụ.**
+Severity (重要度 – juuyoudo) là mức ảnh hưởng của lỗi đến hệ thống và nghiệp vụ; priority (優先度 – yuusendo) là thứ tự cần sửa. Ví dụ: sai logo trên màn hình đăng nhập có severity thấp nhưng priority cao nếu ngày mai demo cho ban lãnh đạo khách; lỗi tính sai ở một sản phẩm chưa mở bán có severity cao nhưng có thể xếp sau lỗi đang chặn cả nhóm test. Severity do người phát hiện đề xuất theo định nghĩa chung; priority do PM/leader cùng khách quyết.
+
+**Q545. Nên định nghĩa các mức severity thế nào để tránh tranh cãi với khách?**
+Viết định nghĩa có ví dụ cụ thể và thống nhất trong 品質計画書, ví dụ: S1 – dừng hệ thống, mất hoặc sai dữ liệu, tính sai tiền, lỗ hổng bảo mật; S2 – chức năng chính không dùng được nhưng có cách làm thay; S3 – lỗi chức năng phụ, hiển thị sai nhưng không sai dữ liệu; S4 – chính tả, layout nhỏ. Kèm thời hạn phản hồi và sửa cho từng mức. Khi bất đồng, đối chiếu định nghĩa và ví dụ chứ không thương lượng theo cảm giác.
+
+**Q546. Phân loại nguyên nhân bug theo 仕様漏れ, 設計ミス, 実装ミス, テスト漏れ có ý nghĩa gì?**
+仕様漏れ (shiyou more – thiếu sót spec): yêu cầu chưa được định nghĩa; 設計ミス (sekkei misu – lỗi thiết kế); 実装ミス (jissou misu – lỗi code); テスト漏れ (tesuto more – test bỏ sót). Phân loại cho biết **phải sửa quy trình ở đâu**: 仕様漏れ nhiều → cải thiện Q&A và review yêu cầu; 実装ミス nhiều → coding checklist, unit test; テスト漏れ nhiều → bổ sung quan điểm test. Nên thêm loại "nguyên nhân phía khách" (spec khách đổi hoặc sai) để phân định minh bạch.
+> 💡 Luôn tách loại "nguyên nhân phía khách" — vừa công bằng vừa là dữ liệu quan trọng khi đàm phán phát sinh.
+
+**Q547. 摘出工程 và 作り込み工程 khác nhau thế nào, phân tích chúng để làm gì?**
+作り込み工程 là công đoạn tạo ra lỗi (ví dụ thiết kế chi tiết), 摘出工程 là công đoạn phát hiện lỗi (ví dụ test hệ thống). Lập ma trận hai chiều này cho thấy lỗi đã "trôi" qua bao nhiêu công đoạn: lỗi thiết kế đến test hệ thống mới thấy nghĩa là review thiết kế, unit test và test tích hợp đều 見逃し (minogashi – bỏ sót). Mục tiêu là tăng tỉ lệ phát hiện ngay tại công đoạn gây ra lỗi, và biết cần tăng cường kiểm tra ở công đoạn nào.
+
+**Q548. 工程内摘出率 (kouteinai tekishutsuritsu – tỉ lệ phát hiện trong công đoạn) là gì và PM dùng nó thế nào?**
+工程内摘出率 = số lỗi phát hiện ngay trong công đoạn gây ra / tổng số lỗi do công đoạn đó gây ra (tính đến thời điểm phân tích). Tỉ lệ thấp ở thiết kế nghĩa là review thiết kế yếu và chi phí 手戻り sẽ dồn về sau. Em theo dõi chỉ số này theo từng công đoạn, đặt mục tiêu tăng dần qua các release, và dùng nó làm căn cứ khi xin thêm effort review thượng nguồn.
+
+**Q549. Tỉ lệ reopen bug cao (ví dụ trên 10% – tham khảo) cho thấy gì và xử lý thế nào?**
+Reopen cao cho thấy sửa chưa triệt để: dev sửa triệu chứng chứ không sửa nguyên nhân, thiếu 影響調査 (eikyou chousa – điều tra phạm vi ảnh hưởng), không tự test lại trước khi chuyển trạng thái, hoặc phiếu bug mô tả không rõ. Em yêu cầu mỗi bản sửa ghi nguyên nhân, phạm vi ảnh hưởng, case đã tự test lại; leader review bản sửa của bug nghiêm trọng; và phân tích các phiếu reopen theo module, theo loại lỗi để tìm điểm yếu cụ thể.
+
+**Q550. Vòng đời một bug từ lúc phát hiện đến khi đóng nên thế nào?**
+起票 → phân loại và gán (PM/leader đặt priority, chỉ định người) → phân tích nguyên nhân và 影響調査 → sửa kèm unit test → review bản sửa → tester 再テスト (sai tesuto – test lại) và test hồi quy vùng ảnh hưởng → đóng, điền đủ trường phân tích. Bug liên quan cách hiểu spec phải qua Q&A với khách trước khi sửa. Mỗi trạng thái có thời hạn theo severity; bug quá hạn hiện đỏ trong báo cáo tuần.
+
+**Q551. Bug do khách phát hiện trong 受入テスト cần xử lý khác bug nội bộ thế nào?**
+Đây là **lỗi lọt ra**, nên xử lý ưu tiên và minh bạch hơn: ① xác nhận hiện tượng, tái hiện, kiểm tra có phải khác biệt cách hiểu spec không; ② phản hồi khách sớm (ví dụ trong ngày – tham khảo) kèm kế hoạch sửa; ③ báo tiến độ theo 報連相 đến khi đóng; ④ với lỗi nghiêm trọng, phân tích cả nguyên nhân phát sinh lẫn nguyên nhân lọt và 横展開. Thống kê riêng số bug khách tìm thấy, vì đó là chỉ số khách dùng để chấm vendor.
+> 💡 Trả lời khách "chúng tôi đang xác nhận, sẽ báo lại trước X giờ" luôn tốt hơn im lặng hoặc vội phủ nhận.
+
+**Q552. Khi số bug mở tăng nhanh hơn tốc độ sửa, PM xử lý thế nào?**
+① Xem dữ liệu: bug mới tập trung ở module hay nguyên nhân nào, bao nhiêu là trùng hoặc không phải bug. ② Ưu tiên sửa theo severity và theo bug chặn test; tạm dừng test vùng quá nhiều lỗi, trả về dev kiểm tra lại nội bộ thay vì tiếp tục ghi phiếu; tăng người sửa có thời hạn. ③ Báo khách xu hướng kèm dự báo ngày hội tụ. ④ Nếu gốc là chất lượng build kém, làm lại review và unit test cho module đó trước khi test tiếp.
+
+## 6.6 Phân tích nguyên nhân gốc & phòng ngừa
+
+**Q553. なぜなぜ分析 (naze naze bunseki – phân tích "vì sao" lặp lại, 5 Whys) làm đúng cách như thế nào?**
+Bắt đầu từ **hiện tượng cụ thể** đã xác nhận; mỗi tầng hỏi "vì sao" dựa trên sự kiện kiểm chứng được, không dựa trên phỏng đoán. Dừng khi chạm tới nguyên nhân thuộc **cơ chế, quy trình** mà ta kiểm soát và sửa được, không nhất thiết đúng 5 lần; mỗi tầng có thể rẽ nhiều nhánh. Kiểm tra lại bằng cách đọc ngược từ dưới lên với "vì vậy…" xem chuỗi có logic không. Nên làm theo nhóm, có người trong cuộc và người ngoài để tránh tự bào chữa.
+> 💡 Bước "đọc ngược bằng 'vì vậy' để kiểm logic" ít ứng viên nhắc tới, rất ghi điểm với interviewer người Nhật.
+
+**Q554. Vì sao "do dev không cẩn thận" không được chấp nhận làm nguyên nhân gốc?**
+Vì nguyên nhân kiểu 注意不足 (chuui busoku – thiếu chú ý) hay 確認不足 (kakunin busoku – kiểm tra chưa đủ) chỉ dẫn đến biện pháp "sẽ chú ý hơn", không đo được, không nhân rộng được. Cần hỏi tiếp: vì sao quy trình cho phép một người sơ suất mà lỗi vẫn lọt — checklist thiếu mục, review thiếu quan điểm đó, không có test tự động? Báo cáo có biện pháp kiểu 気をつけます (ki wo tsukemasu – sẽ cẩn thận) gần như chắc chắn bị khách trả lại.
+
+**Q555. 発生原因 (hassei gen'in – nguyên nhân phát sinh) và 流出原因 (ryuushutsu gen'in – nguyên nhân lọt) khác nhau thế nào?**
+発生原因 trả lời "vì sao lỗi được tạo ra", ví dụ thiết kế không xét tháng 2 năm nhuận. 流出原因 trả lời "vì sao lỗi không bị chặn mà lọt ra", ví dụ test spec thiếu quan điểm ngày đặc biệt, checklist review thiết kế không có mục về ngày. Báo cáo cho khách Nhật phải phân tích **cả hai nhánh**, mỗi nhánh có biện pháp phòng ngừa riêng. Thiếu nhánh 流出 là lỗi phổ biến nhất trong báo cáo của vendor offshore.
+> 💡 Câu này gần như chắc chắn được hỏi khi phỏng vấn PM thị trường Nhật — nhớ cặp 発生/流出.
+
+**Q556. 再発防止策 (saihatsu boushisaku – biện pháp chống tái phát) thế nào thì được coi là tốt?**
+Tốt khi: ① trỏ thẳng tới nguyên nhân gốc đã xác định; ② là **cơ chế** (仕組み – shikumi) chứ không phải lời hứa: thêm mục checklist, quan điểm review, test tự động, ràng buộc trong công cụ, ポカヨケ (poka-yoke – cơ chế chống thao tác sai); ③ có người chịu trách nhiệm và ngày áp dụng; ④ có cách kiểm chứng hiệu quả, ví dụ 1–2 sprint không tái phát lỗi cùng loại. Biện pháp quá nặng như thêm ba tầng duyệt cũng là biện pháp xấu, vì team sẽ tìm cách bỏ qua.
+
+**Q557. 横展開 là gì và làm thế nào cho thực chất?**
+横展開 là sau khi tìm ra một lỗi và nguyên nhân, **kiểm tra những chỗ tương tự xem có cùng vấn đề không** và áp biện pháp sang đó: module khác dùng cùng logic, màn hình cùng pattern, dự án khác cùng team hoặc cùng framework. Thực chất nghĩa là có danh sách đối tượng cụ thể, cách tìm (tìm theo pattern code, rà thiết kế), kết quả từng đối tượng và evidence. Báo cáo cho khách nêu rõ "đã kiểm tra N chỗ, phát hiện M chỗ, đã sửa xong".
+
+**Q558. 暫定対応 (zantei taiou – xử lý tạm thời) và 恒久対応 (koukyuu taiou – xử lý triệt để) khác nhau thế nào?**
+暫定対応 là chặn thiệt hại ngay, ví dụ batch tính phí sai thì tạm dừng batch, chạy tay có kiểm tra chéo và sửa dữ liệu sai. 恒久対応 là xử lý tận gốc: sửa logic, test hồi quy, release bản vá, kèm 再発防止策. Hai bước có lịch riêng và đều báo khách; không để 暫定対応 kéo dài thành "vĩnh viễn", vì nó thường dựa vào thao tác tay và dễ sai ở lần sau.
+> 💡 Khi kể tình huống, nói rõ "暫定 trong X giờ, 恒久 trong Y ngày" — khách Nhật đánh giá tốc độ chặn thiệt hại trước, độ triệt để sau.
+
+**Q559. 三現主義 (sangen shugi – nguyên tắc "ba thực") áp dụng khi phân tích lỗi phần mềm thế nào?**
+Ba thực gồm 現場 (genba – hiện trường), 現物 (genbutsu – hiện vật), 現実 (genjitsu – thực tế). Trong phần mềm: xem trực tiếp log, dữ liệu, môi trường nơi lỗi xảy ra; tái hiện lỗi trên đúng phiên bản build; kết luận dựa trên sự kiện đã xác minh chứ không dựa trên báo cáo gián tiếp hay trí nhớ. Em yêu cầu dev tái hiện được lỗi và đưa log trước khi đề xuất nguyên nhân; điều chưa tái hiện được ghi rõ là giả thuyết trong báo cáo.
+
+**Q560. Tổ chức buổi phân tích nguyên nhân thế nào để không biến thành truy tìm người có lỗi?**
+Thống nhất ngay đầu buổi: mục tiêu là sửa **cơ chế**, không ai bị phạt vì lỗi được báo trung thực. Dựng timeline sự kiện theo bước và vai trò ("bước review ngày X không có quan điểm Y") thay vì tên người. PM điều phối bằng câu hỏi "quy trình nào đã cho phép điều này" và tự nhận phần trách nhiệm quản lý nếu có. Báo cáo gửi khách nói về vai trò và quy trình, không nêu tên cá nhân.
+
+**Q561. Sau khi đưa ra 再発防止策, PM theo dõi hiệu quả thế nào?**
+Đưa từng biện pháp vào danh sách theo dõi có owner, ngày áp dụng và chỉ số kiểm chứng, ví dụ "0 bug loại làm tròn tiền ở test tích hợp các module sau", "100% pull request có mục checklist X". Review danh sách trong họp chất lượng hằng tuần hoặc mỗi sprint; sau 1–2 chu kỳ, biện pháp không hiệu quả thì sửa, biện pháp tốn công mà không bắt được lỗi thì đề xuất bỏ. Báo kết quả cho khách để khép vòng.
+
+**Q562. Khách yêu cầu làm なぜなぜ分析 cho cả một bug hiển thị nhỏ. Có nên làm đầy đủ không?**
+Em tôn trọng yêu cầu nhưng điều chỉnh độ sâu theo mức độ: bug nhỏ làm bản ngắn một trang gồm hiện tượng, 発生/流出 tóm tắt, biện pháp, 横展開. Nếu có nhiều bug nhỏ cùng loại, em gộp phân tích theo **nhóm nguyên nhân** (ví dụ 15 lỗi hiển thị cùng do thiếu checklist UI) thay vì từng phiếu, vừa đỡ công vừa ra biện pháp có tác dụng hơn. Đồng thời thỏa thuận với khách từ mức severity nào thì bắt buộc phân tích đầy đủ.
+
+## 6.7 Báo cáo chất lượng & quyết định release
+
+**Q563. 品質報告書 (hinshitsu houkokusho – báo cáo chất lượng) gửi khách thường có cấu trúc thế nào?**
+Thường gồm: ① tóm tắt và kết luận đánh giá ở đầu; ② phạm vi và quy mô (KLOC/FP, số chức năng); ③ phần **định lượng** (定量 – teiryou): mật độ review, test, bug so với mục tiêu, đường cong hội tụ; ④ phần **định tính** (定性 – teisei): bug theo nguyên nhân, module, công đoạn gây lỗi; ⑤ bug còn mở và cách xử lý; ⑥ rủi ro và hành động tiếp theo. Định lượng chỉ ra "lệch ở đâu", định tính giải thích "vì sao và đã xử lý chưa".
+
+**Q564. Vì sao báo cáo chất lượng chỉ có số liệu mà thiếu phân tích định tính thường bị khách Nhật trả lại?**
+Vì con số tự nó không nói chất lượng tốt hay xấu: cùng một mật độ bug có thể là tốt ở module này, xấu ở module khác. Khách cần nghe vendor **đánh giá** (評価 – hyouka), ví dụ: "module X vượt ngưỡng do 実装ミス tập trung ở xử lý ngày, đã bổ sung 30 case, đường cong đã hội tụ, nên đánh giá đạt". Thiếu phần này, khách phải tự phân tích, và họ sẽ coi như vendor chưa làm xong việc.
+
+**Q565. 障害報告書 (shougai houkokusho – báo cáo sự cố) cần những mục gì?**
+Chuẩn thường gặp: tiêu đề và mức độ; 発生日時 (hassei nichiji – thời điểm phát sinh) và thời điểm phát hiện; 影響範囲 (eikyou han'i – phạm vi ảnh hưởng: người dùng, dữ liệu, giao dịch, thời gian); hiện tượng; 原因 (gen'in – nguyên nhân, gồm phát sinh và lọt); 暫定対応; 恒久対応 và lịch; 再発防止策; 横展開; timeline chi tiết. Mở đầu bằng lời xin lỗi ngắn và hiện trạng (đã khôi phục hay chưa) để lãnh đạo khách nắm ngay.
+
+**Q566. Khi có sự cố production, báo cáo nên chia thành mấy lần và tốc độ ra sao?**
+Thường chia ba: 第一報 (dai-ippou – báo cáo đầu tiên) gửi rất sớm, kể cả khi chưa rõ nguyên nhân, nêu hiện tượng, ảnh hưởng đã biết, việc đang làm và giờ báo tiếp; 続報 (zokuhou – báo cáo tiếp theo) cập nhật đúng mốc đã hẹn; 最終報 (saishuuhou – báo cáo cuối) là 障害報告書 hoàn chỉnh. Mốc cụ thể (ví dụ 第一報 trong 30–60 phút – tham khảo) theo thỏa thuận với khách. Tốc độ của 第一報 quan trọng hơn độ hoàn chỉnh.
+> 💡 Nói "em không chờ có nguyên nhân mới báo" — đó đúng là điều khách Nhật muốn nghe nhất ở PM.
+
+**Q567. Mô tả 影響範囲 trong báo cáo sự cố thế nào để khách tin?**
+Phải **định lượng và có căn cứ**: bao nhiêu bản ghi, giao dịch, người dùng bị ảnh hưởng, trong khoảng thời gian nào, chức năng nào; xác định bằng cách nào (câu truy vấn, log đã kiểm tra). Tách rõ ba nhóm "đã xác nhận có ảnh hưởng", "đã xác nhận không ảnh hưởng", "đang điều tra". Tránh viết "ảnh hưởng nhỏ" hay "có lẽ không ảnh hưởng" khi chưa kiểm tra; khách tài chính cần con số để báo tiếp cho cấp trên hoặc cơ quan quản lý của họ.
+
+**Q568. 出荷判定 (shukka hantei – đánh giá cho phép xuất xưởng) hay リリース判定 (ririisu hantei – quyết định release) dựa trên tiêu chí nào?**
+Tiêu chí thống nhất trước và nhìn **toàn bộ mức sẵn sàng**, không chỉ test: ① các mức test đạt tiêu chí kết thúc, đường cong hội tụ; ② bug còn mở đều có workaround và được khách đồng ý; ③ deliverable, release note, 運用手順書 đã review; ④ kế hoạch triển khai, rollback, giám sát, người trực sẵn sàng; ⑤ rủi ro còn lại được nêu rõ. Buổi 出荷判定会議 (shukka hantei kaigi – họp quyết định) có PM, QA, onsite/khách; biên bản ghi kết luận: release, release có điều kiện, hoặc chưa release.
+
+**Q569. 条件付き出荷 (jouken tsuki shukka – release có điều kiện) là gì và khi nào nên dùng?**
+Là release dù còn một số điểm chưa đạt tiêu chí, kèm **điều kiện** được khách đồng ý bằng văn bản: danh sách bug còn mở và workaround, hạn sửa, giới hạn phạm vi sử dụng, giám sát tăng cường sau release. Chỉ nên dùng khi các điểm chưa đạt không ảnh hưởng dữ liệu, tiền, bảo mật, và lợi ích của việc release đúng hạn rõ ràng lớn hơn rủi ro. PM không tự quyết điều kiện thay khách và phải theo dõi đến khi mọi điều kiện được đóng.
+> 💡 Nhấn mạnh "khách đồng ý bằng văn bản" — release có điều kiện chỉ thỏa thuận miệng là rủi ro trách nhiệm.
+
+**Q570. Báo cáo chất lượng hằng tuần khác báo cáo cuối công đoạn thế nào?**
+Báo cáo tuần ngắn (1–2 trang), tập trung **xu hướng và cảnh báo sớm**: tiến độ chạy case, bug mới/đóng/còn mở, đường cong, các điểm vượt ngưỡng và hành động. Báo cáo cuối công đoạn đầy đủ phân tích định lượng, định tính, kết luận đánh giá chất lượng và là căn cứ để chuyển công đoạn hoặc release. Báo cáo tuần làm tốt thì báo cáo cuối không có "bất ngờ": khách không nên đọc thấy một vấn đề lần đầu ở báo cáo cuối.
+
+**Q571. Trình bày chỉ số xấu trong báo cáo thế nào để không làm khách mất niềm tin?**
+Theo nhịp **sự thật → nguyên nhân → hành động → dự báo**. Ví dụ: "Mật độ bug module thanh toán vượt mục tiêu 40%; nguyên nhân tập trung ở 実装ミス khi làm tròn số tiền; đã review lại toàn bộ hàm tính tiền và bổ sung 25 case; dự kiến hội tụ ngày X, sẽ báo lại." Không giấu, không làm đẹp số, không dùng từ mơ hồ. Khách Nhật mất niềm tin vì bị bất ngờ, không phải vì một chỉ số xấu được báo sớm kèm kế hoạch.
+
+**Q572. Ai viết và ai duyệt báo cáo chất lượng trước khi gửi khách?**
+Số liệu do QA hoặc test lead tổng hợp trực tiếp từ công cụ quản lý bug và test (không nhập tay để tránh sai lệch); phân tích định tính do leader từng module viết; PM viết phần đánh giá, kết luận và chịu trách nhiệm cuối cùng. Bản tiếng Nhật được BrSE kiểm tra thuật ngữ trước khi PM duyệt; dự án lớn có thể qua bộ phận QA độc lập của công ty nếu có. Gửi onsite xem trước để họ không bị bất ngờ khi khách hỏi.
+
+## 6.8 Chuẩn & cải tiến liên tục
+
+**Q573. ISO 9001 giúp gì cho một công ty outsourcing làm với khách Nhật?**
+ISO 9001 là chuẩn về hệ thống quản lý chất lượng (QMS): quy trình được định nghĩa, có hồ sơ, có 内部監査 (naibu kansa – đánh giá nội bộ), 是正処置 (zesei shochi – hành động khắc phục) và cải tiến liên tục. Với khách Nhật, nó là tín hiệu ban đầu rằng vendor có quy trình, thường được hỏi khi đánh giá nhà cung cấp. Nhưng chứng chỉ không thay được chất lượng thực tế; PM cần biết quy trình dự án đáp ứng QMS ở điểm nào để trả lời khi khách audit.
+> 💡 Đừng khẳng định công ty đang có chứng chỉ nào khi chưa xác minh; nói "nếu công ty áp dụng ISO 9001 thì em sẽ…" là an toàn.
+
+**Q574. ISO 27001 (ISMS) ảnh hưởng thế nào đến cách vận hành dự án cho khách tài chính, bảo hiểm?**
+ISO 27001 là chuẩn hệ thống quản lý an toàn thông tin (ISMS – Information Security Management System). Trong dự án, nó thể hiện qua: phân quyền truy cập theo nhu cầu, cấp và thu hồi tài khoản khi người vào/ra dự án, kiểm soát thiết bị và USB, không đưa dữ liệu khách ra ngoài vùng cho phép, đào tạo bảo mật định kỳ, quy trình báo sự cố bảo mật. Khách tài chính thường có checklist bảo mật riêng hoặc audit; PM phải có hồ sơ chứng minh từng mục.
+
+**Q575. CMMI là gì và các mức trưởng thành nói lên điều gì với PM?**
+CMMI là mô hình đánh giá mức trưởng thành quy trình, gồm 5 mức: 1 Initial (phụ thuộc cá nhân), 2 Managed (dự án có kế hoạch, theo dõi), 3 Defined (quy trình chuẩn cấp tổ chức), 4 Quantitatively Managed (quản lý bằng số liệu thống kê), 5 Optimizing (cải tiến liên tục dựa trên dữ liệu). Với PM, câu hỏi thực tế là dự án có dùng quy trình chuẩn của tổ chức và có baseline để so sánh không; bộ chỉ số mật độ kiểu Nhật là nền tảng để tiến tới quản lý định lượng.
+
+**Q576. Áp dụng PDCA vào quản lý chất lượng dự án cụ thể ra sao?**
+Plan: đặt mục tiêu chất lượng và kế hoạch review/test trong 品質計画書. Do: thực hiện, ghi nhận 指摘, bug, số liệu. Check: so số liệu với mục tiêu theo tuần hoặc công đoạn, phân tích nguyên nhân các điểm lệch. Act: điều chỉnh checklist, quan điểm test, phân công, và đưa bài học vào kế hoạch giai đoạn sau. Chữ "A" hay bị bỏ nhất: nhiều dự án đo rất nhiều nhưng không thay đổi gì, nên em luôn kết thúc họp chất lượng bằng danh sách hành động có owner.
+
+**Q577. 改善 (kaizen – cải tiến liên tục) khác gì một dự án cải tiến lớn?**
+Kaizen là cải tiến **nhỏ, liên tục, do chính người làm đề xuất**: rút ngắn một bước build, thêm một mục checklist, tự động hóa một bước tạo evidence. Nó không cần ngân sách lớn và hiệu quả tích lũy theo thời gian. Em duy trì bằng cách mỗi retrospective chọn 1–2 cải tiến cụ thể, đo trước/sau, chia sẻ kết quả và ghi nhận người đề xuất. Khách Nhật thường trông đợi 改善提案 từ vendor, nên đây cũng là điểm cộng trong quan hệ khách hàng.
+
+**Q578. 5S áp dụng vào môi trường phát triển phần mềm như thế nào?**
+5S gồm 整理 (seiri – sàng lọc), 整頓 (seiton – sắp xếp), 清掃 (seisou – sạch sẽ), 清潔 (seiketsu – săn sóc, duy trì), 躾 (shitsuke – kỷ luật, sẵn sàng). Trong phần mềm: xóa branch, file, code chết không dùng; cấu trúc thư mục tài liệu và evidence thống nhất; dọn warning và TODO quá hạn; chuẩn hóa thành quy tắc, template; duy trì bằng kiểm tra định kỳ cho thành thói quen. Lợi ích thực tế là tìm tài liệu nhanh và giảm nhầm phiên bản khi bàn giao.
+
+**Q579. Kể tên QC七つ道具 và công cụ nào hữu ích nhất cho PM phần mềm?**
+QC七つ道具 (QC nanatsu dougu – 7 công cụ QC): Pareto (パレート図 – pareeto zu), biểu đồ xương cá (特性要因図 – tokusei youin zu), check sheet, histogram, biểu đồ phân tán (散布図 – sanpu zu), biểu đồ kiểm soát (管理図 – kanri zu) và phân tầng (層別 – soubetsu; có tài liệu thay bằng graph). Với PM phần mềm, hữu ích nhất là **Pareto** để chọn vài nguyên nhân gây phần lớn bug, **xương cá** để phân tích nguyên nhân theo nhóm, và **phân tầng** để chia bug theo module, công đoạn, nguyên nhân.
+> 💡 Kể một lần thật đã dùng Pareto để chọn 2–3 nguyên nhân ưu tiên sẽ hơn hẳn việc liệt kê đủ 7 công cụ.
+
+**Q580. Làm sao áp dụng quy trình chuẩn (ISO, CMMI) mà không biến dự án thành "làm giấy tờ"?**
+Nguyên tắc **tailoring**: điều chỉnh quy trình theo quy mô và rủi ro của dự án, có ghi lại và được duyệt, thay vì áp nguyên khối. Mỗi biểu mẫu phải trả lời được "ai dùng nó để ra quyết định gì"; không trả lời được thì gộp hoặc bỏ. Số liệu sinh tự động từ công cụ (hệ thống ticket, Git, CI) thay vì nhập tay. Định kỳ hỏi team bước nào tốn công mà không bắt được lỗi để đề xuất bỏ qua kênh cải tiến chính thức.
+
+## 6.9 Chất lượng đặc thù offshore
+
+**Q581. Những nguồn lỗi đặc thù của mô hình offshore Việt Nam – Nhật Bản là gì?**
+Phổ biến nhất: ① hiểu sai spec do khác ngôn ngữ, do dịch, hoặc do bối cảnh nghiệp vụ Nhật (thuế, lịch, cách ghi tên và địa chỉ); ② thông tin rơi rớt qua nhiều tầng khách – onsite – BrSE – dev; ③ giả định ngầm khi spec không ghi mà dev ngại hỏi; ④ khác biệt giữa môi trường offshore và môi trường khách; ⑤ tài liệu tiếng Nhật diễn đạt chưa chuẩn. Vì vậy quản lý chất lượng offshore phải đầu tư nhiều vào **xác nhận hiểu đúng** trước khi code.
+
+**Q582. Q&A管理表 (Q&A kanrihyou – bảng quản lý hỏi đáp) giúp kiểm soát chất lượng thế nào?**
+Mọi câu hỏi về spec được ghi một nơi: ID, ngày hỏi, tài liệu và mục liên quan, câu hỏi kèm **phương án đề xuất** của team, người trả lời, câu trả lời, ngày, trạng thái, và đã cập nhật vào tài liệu chưa. Nó ngăn dev tự giả định, giữ bằng chứng khi có tranh cãi trách nhiệm, và là nguồn để cập nhật spec. Em theo dõi số câu còn mở và tuổi câu hỏi; câu chặn tiến độ quá hạn (ví dụ quá 2 ngày – tham khảo) được escalate qua onsite.
+> 💡 Câu hỏi gửi khách luôn kèm phương án ("A hay B, chúng tôi đề xuất A vì…") — khách Nhật trả lời nhanh hơn hẳn.
+
+**Q583. Làm sao kiểm tra team offshore đã hiểu đúng spec trước khi code?**
+Dùng kỹ thuật **giải thích ngược**: dev trình bày lại spec bằng lời của mình, hoặc viết tóm tắt luồng và các test case chính, cho BrSE/onsite nghe; sai lệch lộ ra ngay. Kết hợp viết test case song song với thiết kế chi tiết để buộc phải hiểu điều kiện biên; điểm mơ hồ đẩy vào Q&A. Với chức năng phức tạp, tổ chức 認識合わせ (ninshiki awase – buổi thống nhất cách hiểu) với khách trên một bộ dữ liệu ví dụ cụ thể.
+
+**Q584. Văn hóa checklist trong offshore nên xây thế nào để không thành "tick cho có"?**
+Checklist phải **ngắn, cụ thể, sinh ra từ lỗi thật**: mỗi mục trỏ được tới một loại bug đã từng lọt; mục lâu không bắt được gì thì xem xét bỏ. Tách checklist theo loại sản phẩm (màn hình, batch, API, tài liệu) thay vì một danh sách chung dài. Leader kiểm tra lấy mẫu vài mục đã tick; tick mà không làm thì xử lý như lỗi quy trình. Mục nào kiểm được bằng máy thì đưa vào công cụ thay vì để người tick.
+> 💡 Câu "checklist là trí nhớ của dự án về các lỗi đã gặp" giúp bạn giải thích giá trị của nó rất gọn.
+
+**Q585. Self-check trước 納品 (nouhin – bàn giao) gồm những bước gì?**
+① Dev self-check theo checklist và chạy lại unit test; ② build từ source sạch theo đúng hướng dẫn, bảo đảm không phụ thuộc máy cá nhân; ③ chạy smoke test và bộ test hồi quy chính; ④ kiểm tra tài liệu khớp code, 改訂履歴 đã cập nhật; ⑤ đối chiếu danh sách deliverable; ⑥ người không trực tiếp làm (QA nội bộ hoặc leader) kiểm tra chéo. Kết quả self-check được ghi lại và gửi kèm khi khách yêu cầu.
+
+**Q586. Vai trò của BrSE trong kiểm soát chất lượng là gì, ngoài việc dịch?**
+BrSE là "cổng chất lượng" về hiểu biết: kiểm tra spec đã được hiểu đúng, review thiết kế chi tiết và test spec từ góc nhìn của khách, kiểm tra deliverable tiếng Nhật trước khi gửi, phát hiện sớm khác biệt về nghiệp vụ và cách làm. BrSE cũng là người nhận phản hồi của khách, nên cần biến 指摘 của khách thành mục checklist cho team. PM phải chừa effort review cho BrSE trong kế hoạch, không để BrSE chỉ làm phiên dịch.
+
+**Q587. Tài liệu tiếng Nhật hay mắc lỗi gì và kiểm soát thế nào?**
+Lỗi thường gặp: 誤字脱字 (goji datsuji – sai chữ, thiếu chữ), 表記ゆれ (hyouki yure – một khái niệm viết nhiều kiểu, ví dụ lẫn katakana/kanji hoặc ký tự full-width/half-width), câu dịch máy cứng hoặc sai nghĩa, kính ngữ không phù hợp. Kiểm soát bằng glossary thuật ngữ thống nhất, quy tắc trình bày (dấu câu, số, ngày), công cụ kiểm tra chính tả và 表記ゆれ, rồi BrSE review trước khi gửi. Dịch máy chỉ dùng làm bản nháp, luôn có người đọc lại.
+> 💡 Khách dễ suy từ lỗi chính tả ra "làm ẩu" ở cả code — sửa lỗi chính tả là việc rẻ nhất mà giữ ấn tượng tốt nhất.
+
+**Q588. Một bộ 納品 package chuẩn gồm những gì?**
+Thường gồm: 納品物一覧 (nouhinbutsu ichiran – danh sách sản phẩm bàn giao) có version; source code (tag hoặc commit cụ thể) và hướng dẫn build, deploy; tài liệu thiết kế đã cập nhật; test spec, kết quả test và evidence; báo cáo chất lượng; release note gồm thay đổi, bug đã sửa, lỗi còn tồn đọng kèm workaround; 運用手順書 nếu có. Người thứ hai kiểm tra đủ danh mục trước khi gửi qua kênh truyền file được khách chấp thuận.
+
+**Q589. Làm sao giảm khác biệt giữa môi trường test offshore và môi trường của khách?**
+Thống nhất từ đầu danh sách phiên bản (OS, middleware, DB, browser, framework) và ghi vào 品質計画書; dùng container hoặc hạ tầng dạng code để tái tạo môi trường; dùng dữ liệu test có cấu trúc giống thật nhưng đã ẩn danh. Phần không tái tạo được (hệ thống ngoài, mạng nội bộ khách) liệt kê rõ là ngoài phạm vi test offshore và lập kế hoạch test tại môi trường khách cùng onsite. Bug do môi trường được phân loại riêng để cải thiện.
+
+**Q590. Onsite liên tục phàn nàn chất lượng bàn giao của offshore. PM xử lý thế nào?**
+① Lấy fact: danh sách lỗi onsite tìm thấy, phân loại theo nguyên nhân và công đoạn. ② Ngắn hạn: thêm một vòng kiểm tra chéo trước bàn giao cho vùng hay lỗi, thống nhất lại định nghĩa "xong" với onsite. ③ Báo onsite và khách kế hoạch theo 報連相, không đổ lỗi qua lại. ④ Xử lý gốc: thường là thiếu hiểu spec hoặc thiếu quan điểm test, nên cập nhật checklist, Q&A và 横展開 sang các module đang làm; theo dõi số lỗi onsite tìm thấy theo tuần để chứng minh cải thiện.
+
+## 6.10 Câu hỏi senior: trade-off & tình huống xám
+
+**Q591. Mọi chỉ số chất lượng đều trong ngưỡng, nhưng khách vẫn chê chất lượng. Anh/chị xử lý thế nào?**
+Chỉ số đo **cái ta chọn đo**, còn khách cảm nhận qua trải nghiệm: lỗi lặp lại, giao diện không như kỳ vọng, phản hồi chậm, tài liệu sai chính tả, sửa lỗi này sinh lỗi khác. Em cùng onsite gặp khách để lấy ví dụ cụ thể, phân loại xem khoảng cách nằm ở kỳ vọng chưa được viết thành yêu cầu hay ở khía cạnh chưa đo. Sau đó bổ sung chỉ số theo góc nhìn khách (bug khách tìm thấy, thời gian phản hồi, 指摘 trong 顧客レビュー) và thống nhất lại tiêu chí.
+> 💡 Chốt bằng ý "chất lượng là cái khách cảm nhận, chỉ số chỉ là công cụ" — đừng bảo vệ con số trước mặt khách.
+
+**Q592. Mật độ bug của dự án thấp bất thường so với baseline. Anh/chị có tự hào không?**
+Chưa. Trước tiên kiểm tra các giả thuyết: test thiếu (mật độ test thấp, thiếu quan điểm), tester không ghi phiếu các bug dev sửa ngay, nhiều lỗi bị gộp vào một phiếu, quy mô KLOC bị đội lên do code tự sinh, hoặc chức năng đơn giản hơn dự án baseline. Em lấy mẫu: cho người ngoài team test thăm dò một module, đối chiếu commit "fix" với phiếu bug. Chỉ khi loại trừ được các khả năng này mới báo khách "chất lượng tốt", kèm giải thích vì sao.
+> 💡 Câu này kiểm tra bạn có hoài nghi con số đẹp hay không — "tốt bất thường thì phải kiểm tra" là hướng trả lời đúng.
+
+**Q593. Khi phải chọn giữa giữ chất lượng và giữ deadline, anh/chị quyết định thế nào?**
+Em không tự chọn ngầm. Em lượng hóa các phương án: ① giữ ngày, thu hẹp phạm vi release (tách chức năng chưa đạt sang bản sau); ② giữ ngày, release có điều kiện với các bug không ảnh hưởng dữ liệu, tiền; ③ lùi ngày, giữ đủ phạm vi và chất lượng; ④ tăng nguồn lực, nêu rõ chi phí và rủi ro. Mỗi phương án kèm rủi ro chất lượng cụ thể, rồi trình khách và cấp trên quyết. Điểm không thương lượng là lỗi liên quan tiền, dữ liệu, bảo mật.
+
+**Q594. Giảm effort review/test để cắt chi phí có bao giờ là quyết định đúng không?**
+Có, nếu dựa trên dữ liệu và rủi ro: module đơn giản, tái sử dụng với lịch sử ít lỗi, có test tự động tốt thì có thể hạ từ inspection xuống peer review hoặc giảm mức evidence. Nhưng quyết định phải được ghi lại, có đánh giá rủi ro, được khách đồng ý nếu đã cam kết trong 品質計画書, và có chỉ số theo dõi để quay lại khi lỗi tăng. Cắt đồng loạt mọi module chỉ vì thiếu ngân sách thực chất là đẩy chi phí sang 手戻り về sau.
+
+**Q595. Khách đòi "chất lượng kiểu Nhật" nhưng muốn làm Agile, ít tài liệu, release hai tuần một lần. Anh/chị dung hòa thế nào?**
+Giữ **tinh thần**, đổi **hình thức**: Definition of Done chặt (review, test, evidence tự động), test hồi quy tự động thay cho phần lớn evidence screenshot, tài liệu "vừa đủ" nhưng luôn đồng bộ với code, mỗi sprint có báo cáo chất lượng ngắn với chỉ số xu hướng. Thống nhất từ đầu tài liệu nào bắt buộc (interface, vận hành) và tài liệu nào thay bằng code, test. Lỗi nhỏ xử lý qua retrospective; lỗi lọt ra khách vẫn làm 再発防止 đầy đủ.
+
+**Q596. Xây văn hóa chất lượng cho một team mới thành lập, ví dụ ở chi nhánh mới, bắt đầu từ đâu?**
+Bắt đầu từ ít mà chắc: ① 3–5 quy tắc không thương lượng (bàn giao phải qua self-check, sửa code phải cập nhật tài liệu, bug phải có phiếu, test phải có evidence); ② template và checklist lấy từ dự án đã thành công; ③ người có kinh nghiệm thị trường Nhật review, kèm cặp các deliverable đầu tiên; ④ chia sẻ 指摘 của khách như bài học chung; ⑤ đo vài chỉ số cốt lõi từ tuần đầu để có baseline. Mục tiêu đầu tiên là **sự nhất quán**.
+> 💡 Liên hệ kinh nghiệm build-up team mới của chính bạn (nếu có) — JD coi kinh nghiệm setup chi nhánh Đà Nẵng là lợi thế lớn.
+
+**Q597. Team "làm đẹp" chỉ số (tách nhỏ phiếu bug, không ghi bug tự sửa, chia nhỏ review) để đạt target. Anh/chị xử lý thế nào?**
+Đây là dấu hiệu chỉ số đang bị dùng sai mục đích: khi con số thành target để đánh giá người, người ta sẽ tối ưu con số thay vì chất lượng. Em tách chỉ số chất lượng khỏi đánh giá cá nhân trực tiếp và nói rõ mục đích là tìm điểm yếu của quy trình. Kết hợp kiểm tra chéo (đối chiếu commit "fix" với phiếu bug, lấy mẫu review) và đọc nhiều chỉ số cùng lúc để khó "lách". Công khai ghi nhận người báo lỗi trung thực, kể cả lỗi của chính mình.
+
+**Q598. Bug nghiêm trọng bắt nguồn từ spec sai của khách, nhưng team cũng không phát hiện khi review. Anh/chị phân định trách nhiệm trong báo cáo thế nào?**
+Trình bày theo fact, không né cũng không đổ: nguyên nhân phát sinh là spec (dẫn tài liệu, lịch sử Q&A); nguyên nhân lọt là review và test của team chưa có quan điểm kiểm tra tính hợp lý của spec. Báo cáo nêu cả hai, mỗi bên có biện pháp: team bổ sung quan điểm "nghi ngờ spec" vào checklist; đề xuất với khách bước xác nhận spec cho các vùng tương tự. Chi phí sửa do ai chịu thì thảo luận riêng theo hợp đồng, không trộn vào báo cáo kỹ thuật.
+> 💡 Tách "phân tích nguyên nhân" khỏi "đàm phán chi phí" là dấu hiệu senior — trộn hai việc làm khách thấy vendor đang tự bào chữa.
+
+**Q599. Làm sao chứng minh với khách rằng đầu tư thêm vào chất lượng (review, test tự động) là đáng tiền?**
+Dùng số liệu của chính dự án: chi phí trung bình sửa một bug theo công đoạn phát hiện (giờ công), số bug lọt ra khách trước và sau khi áp dụng, thời gian test hồi quy tiết kiệm mỗi release, số sự cố production. Trình bày dạng "đầu tư X giờ mỗi tháng, giảm Y giờ 手戻り và Z sự cố" thay vì nói chung "chất lượng tốt hơn". Đề xuất thử có thời hạn trên một module, đo kết quả, rồi mới mở rộng.
+
+**Q600. Nếu chịu trách nhiệm chất lượng cao nhất cho nhiều dự án cùng lúc, anh/chị đo và duy trì chất lượng thế nào?**
+Em xây ba lớp: ① **chuẩn chung** — template 品質計画書, định nghĩa chỉ số và severity, checklist dùng chung, mỗi dự án tailoring có duyệt; ② **dữ liệu chung** — dashboard tổng hợp chỉ số từ công cụ, baseline theo loại dự án, cảnh báo khi dự án lệch ngưỡng; ③ **học chung** — lỗi lọt ra khách ở dự án này được 横展開 sang dự án khác, họp chất lượng định kỳ giữa các PM. Chỉ số cuối cùng em bám là số lỗi khách phát hiện và mức hài lòng của khách sau mỗi release.
+
+---
+
+# Chương 7 · Giao tiếp, văn hóa & quản trị kỳ vọng khách Nhật (Q601–Q700)
+
+## 7.1 報連相 & 確認
+
+**Q601. 報連相 là gì và vì sao khách Nhật coi trọng nó đến vậy trong dự án outsourcing?**
+報連相 (hou-ren-sou) gồm 報告 (houkoku – báo cáo kết quả/tiến độ cho người giao việc), 連絡 (renraku – chia sẻ fact cho người liên quan) và 相談 (soudan – xin ý kiến trước khi tự quyết). Khách Nhật chịu trách nhiệm trước nội bộ nên cần biết sớm để không bị bất ngờ; 報連相 chính là công cụ kiểm soát rủi ro của họ. Với vendor offshore khác ngôn ngữ, lệch 2 giờ, 報連相 tốt là bằng chứng hằng ngày rằng dự án "đang trong tầm kiểm soát".
+> 💡 Phân biệt được 報告–連絡–相談 bằng ví dụ dự án thật sẽ ghi điểm hơn đọc định nghĩa.
+
+**Q602. Tần suất và độ chi tiết của 報連相 với khách nên thiết lập thế nào?**
+Em chốt từ kickoff một communication plan: daily report 3–5 dòng (đã xong, đang làm, vướng gì) gửi trước 17:00 giờ Nhật; báo cáo tiến độ tuần trong buổi họp định kỳ; báo ngay trong ngày khi có sự cố, lệch > 1 ngày ở milestone hoặc rủi ro mới mức cao (ngưỡng tham khảo). Độ chi tiết theo người nhận: người phụ trách cần chi tiết task, cấp quản lý chỉ cần kết luận, tín hiệu màu và quyết định cần xin. Sau 2–3 tuần, em hỏi lại khách để chỉnh.
+
+**Q603. "Không có tin tức là tin xấu" — vì sao với khách Nhật, vendor im lặng lại nguy hiểm?**
+Với khách Nhật, im lặng nghĩa là vendor "không nắm được" hoặc "đang giấu vấn đề", nên họ bắt đầu hỏi dồn, micro-manage và mất niềm tin dù dự án thực ra ổn. Vì vậy em báo cả khi không có gì mới: 「予定通り進んでおります」 (yotei doori susunde orimasu – đang tiến triển đúng kế hoạch) kèm % hoàn thành. Quy tắc team: mọi câu hỏi của khách có phản hồi trong ngày, ít nhất là 一次回答 (ichiji kaitou – trả lời sơ bộ) "đã nhận, sẽ trả lời trước 15:00 ngày mai".
+> 💡 一次回答 gần như không tốn công nhưng giữ niềm tin cực hiệu quả — nên nêu như một quy tắc của team.
+
+**Q604. 中間報告 (chuukan houkoku – báo cáo giữa chừng) là gì, nên làm vào thời điểm nào?**
+Là báo cáo trước khi việc hoàn thành để khách kiểm tra hướng đi sớm, tránh làm xong mới phát hiện sai. Em đặt mốc ở khoảng 30–50% khối lượng, hoặc ngay khi có output đầu tiên xem được: màn hình mẫu, bản nháp thiết kế, 10–20% test case. Nội dung gồm đã làm gì, hướng đang đi, điểm cần khách xác nhận, dự báo ngày xong. Với task từ 2 tuần trở lên (tham khảo), bỏ qua 中間報告 thì rủi ro làm lại rất cao.
+
+**Q605. 先手 (sente – đi trước một bước) trong giao tiếp với khách nghĩa là gì? Cho ví dụ.**
+Là chủ động đưa thông tin, cảnh báo rủi ro và đề xuất trước khi khách phải hỏi. Ví dụ: thấy spec màn hình B mâu thuẫn với batch C, em gửi câu hỏi kèm 2 phương án ngay khi phát hiện thay vì đợi đến lúc code; hoặc 2 tuần trước UAT, em gửi checklist khách cần chuẩn bị (data test, account, người tham gia). Ngược lại là 後手 (gote – bị động chạy theo), khiến khách thấy vendor chỉ "làm theo bảo".
+
+**Q606. Khi báo cáo cho người Nhật, cấu trúc nội dung nên thế nào để họ nắm nhanh?**
+Em theo 結論から (ketsuron kara – nói kết luận trước): ① trạng thái/kết luận một câu → ② lý do, số liệu → ③ việc cần khách làm hoặc quyết, kèm hạn. Tách rõ 事実 (jijitsu – sự thật) và 意見 (iken – nhận định), dùng con số thay cho "sắp xong", "hơi trễ". Ví dụ: "Chức năng X trễ 2 ngày do API phía khách cấp chậm; đề xuất dời mốc test sang 20/11, cần khách duyệt trước 15/11."
+> 💡 "Sắp xong" là bẫy kinh điển — người Nhật sẽ hỏi lại ngay "bao nhiêu %, ngày nào?".
+
+**Q607. Tiến độ đang lệch nhưng PM nghĩ có thể đuổi kịp bằng OT — có nên báo khách ngay không?**
+Có, nhưng báo theo kiểu 相談 chứ không phải báo động. Khi dự báo lệch ở mốc cam kết (tham khảo: > 1 ngày ở milestone hoặc buffer đã dùng > 50%), em báo kèm kế hoạch phục hồi: OT có giới hạn, bổ sung người, đổi thứ tự việc, và ngày kiểm tra lại. Âm thầm OT rồi vẫn trễ là lỗi kép: vừa trễ vừa giấu. Khách Nhật đánh giá vendor báo sớm cao hơn vendor chỉ "cố gắng".
+
+**Q608. Làm sao 確認 (kakunin – xác nhận) để tránh hiểu lầm yêu cầu khi giao tiếp bằng ngôn ngữ thứ hai?**
+Em dùng 3 lớp: ① 復唱 (fukushou – nhắc lại bằng lời của mình) ngay trong họp: 「念のため確認させてください。〜という理解でよろしいでしょうか」 (cho phép xác nhận lại: hiểu là… có đúng không ạ); ② ghi thành văn bản (biên bản, bảng Q&A) và xin khách confirm; ③ minh họa bằng ví dụ, mockup, bảng input/output thay vì chỉ mô tả chữ. Điểm nào ảnh hưởng scope, chi phí, lịch thì bắt buộc chốt bằng văn bản.
+
+**Q609. 認識合わせ (ninshiki awase – thống nhất cách hiểu) khác gì với việc gửi tài liệu cho khách đọc?**
+Gửi tài liệu là một chiều, khách có thể đọc lướt rồi nói "OK"; 認識合わせ là hai bên cùng đi qua từng điểm dễ hiểu khác nhau và chốt lại. Em làm ở các điểm chuyển giai đoạn: sau 要件定義 (youken teigi – định nghĩa yêu cầu), trước test, trước release, với danh sách chuẩn bị sẵn 5–10 điểm "dễ hiểu sai" kèm ví dụ. Kết quả ghi biên bản; điểm còn khác biệt thành mục Q&A có hạn trả lời.
+
+**Q610. 報連相 quá dày có phản tác dụng không? PM cân bằng thế nào?**
+Có: khách nhận 10 email/ngày từ nhiều member sẽ bỏ sót tin quan trọng và thấy vendor thiếu tự chủ. Em cân bằng: ① một đầu mối gửi, gom theo lịch cố định; ② việc trong quyền của team thì tự quyết rồi 報告, chỉ 相談 khi ảnh hưởng scope/lịch/chất lượng; ③ tiêu đề có nhãn 【至急】(shikyuu – gấp), 【ご確認依頼】(go-kakunin irai – nhờ xác nhận), 【共有】(kyouyuu – để biết). Định kỳ hỏi khách lượng thông tin đã vừa chưa.
+> 💡 Senior PM thể hiện 報連相 "đúng liều", không phải "càng nhiều càng tốt".
+
+**Q611. Khi nào dùng email, chat, điện thoại hay họp để 報連相 với khách Nhật?**
+Em chia kênh theo mức độ và nhu cầu lưu vết: email cho nội dung cần bằng chứng (quyết định, thay đổi, báo cáo chính thức); chat (Teams, Slack, Chatwork… theo khách) cho trao đổi nhanh, nhưng kết luận quan trọng phải tóm vào email hoặc bảng quản lý; điện thoại/họp cho tin xấu, sự cố nghiêm trọng và việc cần bàn nhiều chiều. Nguyên tắc: tin xấu không gửi chỉ bằng chat — gọi trước, email xác nhận sau.
+
+## 7.2 Ra quyết định kiểu Nhật
+
+**Q612. 根回し (nemawashi – vận động, thống nhất trước) là gì và PM vendor làm 根回し thế nào?**
+Là trao đổi riêng với từng người liên quan trước cuộc họp chính thức, để cuộc họp chỉ còn là nơi xác nhận. Trước buổi họp xin đổi scope hay lịch, em gửi tài liệu trước và gọi 15–30 phút với 担当 (tantou – người phụ trách) phía khách để nghe phản ứng, chỉnh phương án, hỏi cấp trên họ đang lo điều gì. Đưa đề xuất "bất ngờ" vào họp có quản lý khách thường chỉ nhận về 「持ち帰ります」 (mochikaerimasu – xin mang về xem xét).
+> 💡 Nói rõ 根回し không phải "chính trị ngầm" mà là tôn trọng cách ra quyết định của khách.
+
+**Q613. 稟議 (ringi – trình ký tập thể) ảnh hưởng thế nào đến lịch dự án?**
+稟議 là đề xuất bằng văn bản (稟議書 – ringisho) đi qua nhiều cấp đóng dấu phê duyệt, nên mọi việc cần ngân sách hay thay đổi lớn (CR, gia hạn, thêm người) đều có lead time từ vài ngày đến vài tuần tùy cấp. PM phải hỏi 担当 "quy trình duyệt mất bao lâu, qua những ai" và đưa thời gian đó vào kế hoạch, gửi đề xuất sớm tương ứng. Quên tính 稟議 là lý do phổ biến khiến CR duyệt xong thì đã trễ.
+
+**Q614. Hierarchy phía khách Nhật (部長/課長/担当) — PM giao tiếp với từng cấp ra sao?**
+担当 làm việc hằng ngày, cần chi tiết và trả lời nhanh; 課長 (kachou – trưởng phòng/nhóm) quản lý tiến độ, cần tóm tắt rủi ro và việc cần quyết; 部長 (buchou – trưởng bộ phận) quan tâm kết quả kinh doanh, ngân sách, rủi ro lớn, chỉ cần báo cáo 1 trang ở mốc quan trọng. Em giữ kênh chính qua 担当 và luôn để 担当 có mặt khi trao đổi với cấp trên của họ. Gặp 部長 định kỳ (mỗi phase hoặc mỗi quý) cùng lãnh đạo phía mình.
+
+**Q615. 窓口 (madoguchi – đầu mối liên lạc) là gì? Vì sao phải thống nhất 窓口 hai bên?**
+窓口 là người được giao nhận thông tin chính thức giữa hai bên. Thiếu 窓口 rõ ràng thì mỗi member trả lời khách một kiểu, yêu cầu đi thẳng xuống dev mà không qua kiểm soát scope, quyết định mâu thuẫn nhau. Em chốt trong kickoff: 窓口 chính và dự phòng mỗi bên, kênh nào cho loại việc nào, ai được cam kết lịch/chi phí (chỉ PM). Member vẫn trao đổi kỹ thuật được, nhưng kết luận phải về 窓口 và vào bảng quản lý.
+
+**Q616. Vì sao khách Nhật thường ra quyết định chậm? PM nên phản ứng thế nào?**
+Thường do cần 合意形成 (goui keisei – tạo đồng thuận) giữa nhiều bộ phận, văn hóa tránh rủi ro và 稟議 nhiều cấp. PM không nên ép "phải quyết ngay", mà: ① cung cấp đủ thông tin để quyết (phương án, ưu nhược, chi phí, rủi ro); ② nói rõ 期限 (kigen – hạn) và tác động nếu quá hạn; ③ đề xuất phương án mặc định; ④ đưa việc chờ quyết định vào kế hoạch như một dependency có owner và ngày.
+
+**Q617. Làm sao để tài liệu của PM giúp 担当 khách dễ trình 稟議 nội bộ?**
+Em coi 担当 là người phải "bán" đề xuất cho cấp trên của họ, nên viết theo dạng họ dùng lại được: 1 trang tiếng Nhật nêu 背景 (haikei – bối cảnh), 目的 (mokuteki – mục đích), 2–3 phương án so sánh, chi phí, rủi ro nếu không làm, khuyến nghị và lịch. Em hỏi trước mẫu 稟議書 hoặc những điểm sếp họ hay hỏi. Tài liệu tốt giúp 担当 ghi điểm trong nội bộ, và họ trở thành đồng minh của dự án.
+> 💡 Ý "giúp 担当 thắng trong nội bộ của họ" thể hiện tư duy senior rõ nhất ở nhóm câu này.
+
+**Q618. 部長 khách yêu cầu trực tiếp PM một việc mà 担当 không biết — xử lý sao?**
+Em tiếp nhận lịch sự, không từ chối tại chỗ nhưng cũng không cam kết ngay: 「承知いたしました。担当の〇〇様とも認識を合わせた上で、ご回答いたします」 (shouchi itashimashita… – tôi đã rõ, sẽ thống nhất với anh/chị 〇〇 phụ trách rồi trả lời). Sau đó báo ngay cho 担当 để họ không bị gạt ra ngoài, cùng đánh giá tác động rồi trả lời 部長 qua đúng kênh, có 担当 trong CC. Đi vòng qua 担当 làm họ mất mặt và mất luôn người hỗ trợ hằng ngày quan trọng nhất.
+
+**Q619. Trong họp khách gật đầu đồng ý nhưng sau đó lại đổi ý — vì sao, và phòng ngừa thế nào?**
+Thường vì người dự họp không phải người quyết, hoặc bộ phận khác (vận hành, kiểm toán, business) chưa được hỏi; cái gật đầu có thể chỉ là "tôi đã nghe". Phòng ngừa: ① xác định 決裁者 (kessaisha – người có quyền phê duyệt) cho từng loại quyết định từ đầu; ② hỏi rõ 「この内容で確定としてよろしいでしょうか」 (chốt nội dung này được chưa ạ) và ghi vào 決定事項 (kettei jikou – điều đã quyết) trong biên bản; ③ hỏi "còn bộ phận nào cần xác nhận không" trước khi chốt.
+
+**Q620. Có phải lúc nào cũng nên chờ khách đồng thuận? Khi nào PM nên đẩy khách quyết nhanh hơn?**
+Không. Khi chi phí chờ vượt rủi ro quyết sai — ví dụ team 10 người chờ spec, mỗi tuần chờ là 50 man-day bị treo — em làm rõ chi phí đó bằng con số, đưa 暫定案 (zanteian – phương án tạm) để team chạy tiếp phần không phụ thuộc, và xin khách "quyết định có điều kiện" có thể đảo ngược. Đẩy nhanh bằng dữ liệu và lựa chọn, không bằng áp lực; nếu vẫn tắc thì escalate qua lãnh đạo hai bên, có 根回し trước.
+> 💡 "Biến chi phí chờ thành con số" là điểm phân biệt senior với mid-level.
+
+**Q621. Các stakeholder phía khách (IT, business, vận hành) có ý kiến mâu thuẫn — PM xử lý ra sao?**
+Em không tự chọn bên, vì quyết định nội bộ khách không thuộc quyền vendor. Em: ① gom các yêu cầu mâu thuẫn vào bảng so sánh, nêu tác động của từng phương án; ② đưa về 窓口 hoặc 決裁者 để họ tự 合意形成 nội bộ; ③ ghi thành vấn đề có hạn trong bảng quản lý. Trong lúc chờ, team làm phần không bị ảnh hưởng. Tránh trả lời riêng từng bên kiểu "vâng ạ", vì sẽ thành các cam kết chồng chéo.
+
+## 7.3 Họp & tài liệu giao tiếp
+
+**Q622. Một buổi 定例会議 (teirei kaigi – họp định kỳ) với khách Nhật nên chuẩn bị và vận hành thế nào?**
+Trước 1 ngày làm việc, em gửi agenda và tài liệu (báo cáo tiến độ, Q&A còn mở, vấn đề cần quyết) để khách đọc trước. Họp đúng giờ, thường 30–60 phút, theo thứ tự: tiến độ (tín hiệu màu) → vấn đề, rủi ro → Q&A → quyết định cần xin → việc tuần tới. Cuối họp đọc lại 決定事項 và 宿題 (shukudai – việc mang về, có người phụ trách và hạn). Biên bản gửi trong 24 giờ.
+
+**Q623. 議事録 (gijiroku – biên bản họp) chuẩn gồm những gì và vì sao phải xin khách confirm?**
+Gồm thời gian, người tham dự, mục tiêu, nội dung chính, 決定事項, 宿題 (việc – người – hạn), vấn đề còn mở, lịch họp tiếp. Em gửi trong 24 giờ, kèm câu 「内容に相違がございましたら、〇日までにご指摘いただけますと幸いです」 (nếu có điểm sai khác, mong anh/chị chỉ ra trước ngày…). Biên bản đã confirm là bằng chứng khi sau này có tranh cãi về scope hay cam kết, nên các điểm liên quan scope, chi phí phải viết rõ, không mơ hồ.
+> 💡 Biên bản gửi trễ 3 ngày gần như mất giá trị — người Nhật đánh giá vendor qua chính những việc nhỏ này.
+
+**Q624. Biên bản nên do vendor hay khách viết? Nếu khách sửa biên bản theo hướng có lợi cho họ thì sao?**
+Em chủ động nhận viết, vì người viết kiểm soát cách ghi nhận. Nếu khách sửa, em đối chiếu với ghi chép hoặc recording (nếu đã xin phép ghi); điểm sửa không đúng thực tế thì không phản bác bằng email lạnh lùng mà gọi 担当 để 認識合わせ, rồi gửi bản thống nhất. Nếu khác biệt về scope/chi phí chưa giải quyết được, ghi thành vấn đề mở và đưa vào họp định kỳ — không để "im lặng là đồng ý".
+
+**Q625. QA管理表 (QA kanrihyou – bảng quản lý hỏi đáp) dùng để làm gì và nên có những cột nào?**
+Là nơi duy nhất ghi mọi câu hỏi về spec giữa hai bên, tránh hỏi qua chat rồi thất lạc. Cột tối thiểu: số thứ tự, ngày tạo, người hỏi, chức năng/màn hình, câu hỏi kèm phương án đề xuất, người trả lời, câu trả lời, hạn, trạng thái, ảnh hưởng (spec/lịch/chi phí), cần cập nhật tài liệu không. Em review bảng trong mỗi buổi 定例; câu quá hạn thì nêu đích danh tác động lên lịch.
+> 💡 Mỗi câu hỏi kèm "phương án em đề xuất" để khách chỉ cần chọn — tốc độ trả lời nhanh hơn hẳn.
+
+**Q626. 課題管理表 (kadai kanrihyou – bảng quản lý vấn đề) khác gì QA管理表?**
+QA管理表 xử lý câu hỏi cần làm rõ (thông tin còn thiếu), còn 課題管理表 quản lý vấn đề cần hành động để gỡ: chậm cấp môi trường, mâu thuẫn spec giữa hai hệ thống, thiếu người tham gia UAT… Mỗi 課題 có owner, hạn, ưu tiên, tác động, hành động tiếp theo và trạng thái. Câu Q&A quá hạn mà ảnh hưởng lịch thì em nâng thành 課題 để có owner và được theo dõi ở cấp cao hơn.
+
+**Q627. 進捗報告書 (shinchoku houkokusho – báo cáo tiến độ) gửi khách nên trình bày ra sao?**
+Trang đầu là tóm tắt cho cấp quản lý: trạng thái tổng thể theo tín hiệu 青/黄/赤 (ao/ki/aka – xanh/vàng/đỏ), kế hoạch so với thực tế ở các mốc, top 3 rủi ro/vấn đề và quyết định cần khách. Phần sau mới là chi tiết: tiến độ theo chức năng, việc tuần này/tuần tới, Q&A và 課題 tồn. Mọi mục 黄/赤 phải kèm nguyên nhân, 対策 (taisaku – biện pháp xử lý) và ngày dự kiến về xanh.
+> 💡 Người Nhật gọi đèn xanh là 青 (ao) — dùng đúng từ này trong báo cáo cho tự nhiên.
+
+**Q628. 見える化 (mieruka – minh bạch hóa, trực quan hóa) trong dự án offshore nghĩa là gì?**
+Là làm cho tình trạng thật của dự án hiển thị để ai cũng thấy mà không cần hỏi: tiến độ, backlog, bug, Q&A, rủi ro. Cách làm: dashboard chung trên công cụ khách quen (Backlog, Redmine, Jira…), biểu đồ kế hoạch–thực tế hoặc burn-down, bảng Q&A và 課題 khách xem được bất cứ lúc nào. Với khách Nhật, 見える化 giảm báo cáo thủ công và giảm lo lắng, vì "không nhìn thấy" chính là gốc của mất niềm tin.
+
+**Q629. Có nên cho khách xem toàn bộ dashboard nội bộ, kể cả số bug và task trễ?**
+Em cho khách xem dữ liệu thật nhưng thiết kế theo lớp: tiến độ, bug theo mức độ, Q&A, 課題 là chung; năng suất từng người, đánh giá nội bộ, chi phí nội bộ thì không. Che số xấu rủi ro hơn nhiều, vì khách phát hiện là mất niềm tin vào toàn bộ báo cáo. Điều quan trọng là số liệu luôn đi kèm diễn giải và 対策, để khách thấy vấn đề "đang được kiểm soát" chứ không chỉ thấy số đỏ.
+> 💡 "Minh bạch nhưng có thiết kế lớp thông tin" là câu trả lời cân bằng mà interviewer chờ ở senior.
+
+**Q630. Họp online với khách Nhật cần lưu ý gì để chuyên nghiệp?**
+Gửi lời mời qua calendar kèm link và agenda; vào trước 3–5 phút kiểm tra âm thanh, màn hình chia sẻ; tên hiển thị theo quy ước (công ty + họ tên). Khi có BrSE hoặc phiên dịch, nói câu ngắn, chờ dịch xong mới nói tiếp, chia sẻ màn hình tài liệu để giảm hiểu lầm. Chỉ ghi âm khi đã xin phép. Cuối họp tóm tắt quyết định và kết thúc đúng giờ, vì người Nhật thường có lịch họp nối tiếp.
+
+**Q631. Khách hỏi một câu trong họp mà PM chưa chắc câu trả lời — nên xử lý thế nào?**
+Không đoán, vì câu trả lời trong họp được coi là cam kết. Em nói 「確認の上、明日中にご回答いたします」 (kakunin no ue, ashita-juu ni go-kaitou itashimasu – xác nhận xong sẽ trả lời trong ngày mai), ghi ngay thành 宿題 có hạn trong biên bản, rồi trả lời đúng hoặc sớm hơn hạn. Nếu đến hạn chưa có kết luận, gửi 中間報告 cho biết đang ở đâu và hạn mới. Trả lời sai rồi đính chính tốn niềm tin hơn nhiều so với hẹn lại.
+
+**Q632. Tài liệu giao tiếp viết bằng tiếng Nhật hay tiếng Anh, và ai chịu trách nhiệm chất lượng nội dung?**
+Theo thỏa thuận với khách; phần lớn khách Nhật cần tiếng Nhật cho tài liệu chính thức (báo cáo, biên bản, Q&A). Team viết nội dung, BrSE hoặc comtor dịch và rà soát, nhưng PM chịu trách nhiệm nội dung cam kết: con số, ngày, phạm vi phải được PM đối chiếu bản gốc trước khi gửi. Em duy trì 用語集 (yougoshuu – bảng thuật ngữ) để thống nhất cách dịch, tránh một khái niệm có ba cách gọi.
+
+**Q633. Khách liên tục gửi yêu cầu qua chat, không ghi vào bảng Q&A — PM chuẩn hóa thế nào mà không làm khách khó chịu?**
+Em không từ chối kênh chat mà "chuyển kênh" thay khách: nhận yêu cầu, trả lời 「承知いたしました。QA管理表No.〇〇として登録いたしました」 (đã rõ, đã ghi thành mục số… trong bảng Q&A) kèm link, cuối ngày gom các mục mới vào email tóm tắt. Trong 定例, em cho khách thấy lợi ích: mục nào cũng có số, hạn, trạng thái, không thất lạc. Sau vài tuần, phần lớn khách tự ghi vào bảng vì thấy tiện hơn.
+> 💡 Đổi thói quen khách bằng cách làm thay họ trước, đừng bằng quy định.
+
+## 7.4 Vai trò cầu nối BrSE, comtor, onsite
+
+**Q634. BrSE (Bridge SE) khác comtor (コミュニケーター – phiên dịch IT) và onsite coordinator thế nào?**
+BrSE là kỹ sư hiểu cả kỹ thuật lẫn tiếng Nhật: phân tích yêu cầu, làm rõ spec, viết/dịch tài liệu thiết kế, chịu trách nhiệm phần "hiểu đúng" giữa khách và team. Comtor chủ yếu phiên dịch họp và biên dịch tài liệu, không chịu trách nhiệm quyết định kỹ thuật. Onsite coordinator (hoặc BrSE onsite) làm tại văn phòng khách, nắm thông tin nhanh và xử lý vấn đề tại chỗ. PM phải phân vai rõ để không ai "tưởng người kia làm".
+
+**Q635. PM không giỏi tiếng Nhật thì làm việc với khách và BrSE thế nào để vẫn là người chịu trách nhiệm cao nhất?**
+Em tách vai: BrSE lo ngôn ngữ và làm rõ yêu cầu, PM lo quyết định và cam kết (lịch, chi phí, scope, chất lượng). Cụ thể: PM dự mọi buổi họp quan trọng và chuẩn bị nội dung trước với BrSE; email có cam kết phải có bản tóm tắt tiếng Việt/Anh để PM duyệt; phần 決定事項 của biên bản viết song ngữ. Song song, PM học tiếng Nhật đủ đọc tiêu đề, thuật ngữ, nghe được ý chính để không bị "mù" thông tin.
+> 💡 Thành thật về trình độ tiếng Nhật, nhưng nêu kế hoạch học có mục tiêu và mốc thời gian — JD có hỗ trợ đào tạo tiếng Nhật.
+
+**Q636. Rủi ro "BrSE thành nút cổ chai" biểu hiện ra sao và phòng ngừa thế nào?**
+Biểu hiện: Q&A tồn vì chờ BrSE dịch, BrSE kín lịch họp không còn thời gian review, team không dám hỏi khách trực tiếp, BrSE nghỉ là dự án đứng. Phòng ngừa: ① lập kế hoạch capacity cho BrSE (tham khảo: không để quá 70–80% thời gian cho dịch); ② có BrSE/comtor dự phòng và member chủ chốt đọc được spec tiếng Nhật; ③ Q&A đi qua bảng, không qua tin nhắn riêng với BrSE; ④ công cụ dịch được công ty duyệt cùng 用語集 để member tự đọc tài liệu.
+
+**Q637. BrSE tự ý hứa với khách một deadline mà team không kịp — PM xử lý thế nào?**
+① Xác nhận fact: BrSE đã nói gì, khách hiểu thế nào, đã có văn bản chưa. ② Đánh giá nhanh: ưu tiên lại thì có kịp không, kịp được phần nào. ③ Nếu không kịp, PM báo khách ngay trong ngày: xin lỗi, đưa ngày thực tế và phương án giao phần quan trọng trước. ④ Phòng ngừa: quy định chỉ PM xác nhận lịch/chi phí, BrSE trả lời 「確認して回答します」 (sẽ xác nhận rồi trả lời), và chia sẻ bài học cho các dự án khác.
+
+**Q638. Làm sao biết BrSE truyền đạt đúng ý, không "lọc" tin xấu hay làm mềm quá mức?**
+Em kiểm bằng nhiều nguồn: đọc email gửi đi qua công cụ dịch được phép để đối chiếu ý chính; quan sát phản ứng của khách trong họp; định kỳ hỏi trực tiếp khách 「何かご懸念はございますか」 (nani ka go-kenen wa gozaimasu ka – anh/chị có lo ngại gì không ạ). Tin xấu phải theo mẫu cố định (sự việc, tác động, 対策, ngày) để không còn chỗ làm mềm. Không phải vì nghi ngờ BrSE, mà vì PM chịu trách nhiệm cuối cùng.
+
+**Q639. Khi nào nên đưa BrSE sang onsite, khi nào nên giữ offshore?**
+Onsite hợp lý khi giai đoạn 要件定義 và 設計 (sekkei – thiết kế) cần trao đổi nhiều; khách mới cần xây quan hệ; hệ thống khách không truy cập được từ xa (thường gặp ở khách tài chính do quy định bảo mật); hoặc giai đoạn UAT, go-live cần xử lý tại chỗ. Offshore hợp lý khi spec đã ổn định và kênh từ xa vận hành tốt. Em cân chi phí onsite với chi phí hiểu lầm, và luôn có người đối ứng ở offshore để onsite không thành ốc đảo thông tin.
+
+**Q640. Onsite coordinator và PM offshore phối hợp thế nào để khách không nhận hai thông điệp khác nhau?**
+Nguyên tắc "một giọng nói": sync 15 phút mỗi ngày giữa onsite và PM trước giờ làm của khách; cùng dùng một bảng Q&A/課題; phân quyền rõ onsite được trả lời gì tại chỗ, việc gì phải mang về PM. Tin quan trọng (trễ, sự cố, thay đổi) thì PM và onsite thống nhất nội dung trước rồi mới báo khách. Onsite còn là "tai" của PM: ghi nhận không khí và những lo ngại khách chưa nói ra, báo về hằng ngày.
+
+**Q641. Member offshore có nên giao tiếp trực tiếp với khách Nhật, hay mọi thứ qua BrSE?**
+Em cho phép có kiểm soát: member chủ chốt được trao đổi kỹ thuật trực tiếp (tiếng Nhật, hoặc tiếng Anh nếu khách đồng ý) để bớt tầng truyền đạt, với điều kiện kết luận ghi vào bảng Q&A, không cam kết lịch/scope, có BrSE hoặc PM trong kênh. Lợi ích là phản hồi nhanh và member trưởng thành; rủi ro là sai ngôn ngữ, cam kết lẻ tẻ. Với khách mới, em giữ qua BrSE 1–2 tháng đầu rồi mở dần khi đã có tin cậy.
+
+**Q642. Dùng dịch máy cho tài liệu của khách Nhật có rủi ro gì?**
+Hai rủi ro chính: ① bảo mật — đưa spec, dữ liệu khách lên công cụ dịch công cộng có thể vi phạm NDA, nhất là với khách tài chính, bảo hiểm; chỉ dùng công cụ công ty đã cho phép và đúng quy định của khách; ② sai nghĩa — tiếng Nhật hay lược chủ ngữ, phủ định nằm cuối câu, thuật ngữ nghiệp vụ dễ dịch sai. Em dùng dịch máy để đọc hiểu nội bộ; tài liệu gửi khách phải qua người rà soát và đối chiếu 用語集.
+> 💡 Nhắc đến NDA và bảo mật khi nói về dịch máy cho thấy hiểu đặc thù khách tài chính Nhật.
+
+**Q643. Đã có BrSE giỏi, vì sao PM vẫn cần học tiếng Nhật?**
+Vì nếu mọi thông tin đi qua một người, PM bị phụ thuộc và bỏ lỡ sắc thái: một câu 「ちょっと厳しいですね」 (chotto kibishii desu ne – hơi căng đấy) có thể là cảnh báo nghiêm trọng. Biết tiếng Nhật giúp PM tự kiểm chứng thông tin, nói trực tiếp lời chào, cảm ơn, xin lỗi trong tình huống quan trọng và xây quan hệ với cấp quản lý khách. Mục tiêu thực tế không phải thay BrSE, mà là đủ để kiểm chứng và tạo niềm tin.
+
+## 7.5 Ngôn ngữ & ngầm ý
+
+**Q644. Keigo gồm những loại nào? PM cần dùng thế nào với khách?**
+敬語 (keigo – kính ngữ) gồm 尊敬語 (sonkeigo – tôn kính, nâng hành động của người khác: いらっしゃる, ご覧になる), 謙譲語 (kenjougo – khiêm nhường, hạ hành động của mình: 伺う, 拝見する) và 丁寧語 (teineigo – lịch sự, です/ます). Với khách, dùng 尊敬語 cho khách và 謙譲語 cho phía mình, kể cả khi nhắc đến sếp mình (không thêm さん, xưng 弊社 – heisha – công ty chúng tôi). Người Nhật thường bỏ qua lỗi keigo nhỏ của người nước ngoài; quan trọng là lịch sự nhất quán.
+
+**Q645. Mở đầu và kết thúc email business với khách Nhật thế nào cho chuẩn?**
+Mở: tên công ty, bộ phận, họ + 様 (sama – kính ngữ gọi người), rồi 「お世話になっております。〇〇社の〇〇です。」 (osewa ni natte orimasu – cảm ơn sự quan tâm thường ngày). Thân: kết luận trước, đoạn ngắn, đánh số các điểm cần xác nhận, nêu hạn. Kết: 「ご確認のほど、よろしくお願いいたします。」 (go-kakunin no hodo… – kính nhờ anh/chị xác nhận) và chữ ký đầy đủ. Tiêu đề rõ, có nhãn và hạn, ví dụ 【ご確認依頼】要件定義書v1.2(11/20まで).
+> 💡 Một email một chủ đề — khách Nhật thường chuyển tiếp email cho người khác xử lý theo từng chủ đề.
+
+**Q646. 御社, 貴社 và 弊社 khác nhau thế nào?**
+御社 (onsha) và 貴社 (kisha) đều là "quý công ty": 御社 dùng khi nói, 貴社 dùng khi viết (email, văn bản). 弊社 là "công ty chúng tôi" dạng khiêm nhường, dùng cả nói lẫn viết. Trong văn bản, gọi người bên khách bằng họ + 様; với chức danh thì viết 〇〇部長 hoặc 部長の〇〇様, tránh 部長様 vì thường bị coi là thừa kính ngữ. Đây là lỗi nhỏ nhưng lộ ra ngay từ email đầu tiên.
+
+**Q647. Người Nhật thường nói "không" bằng những cách nào?**
+Họ hiếm khi nói thẳng 「できません」 với đối tác. Tín hiệu hay gặp: 「それはちょっと…」 (sore wa chotto – cái đó thì hơi…), 「難しいですね」 (muzukashii desu ne – khó đấy), 「検討します」 (kentou shimasu – sẽ xem xét), 「考えておきます」 (kangaete okimasu – để tôi suy nghĩ), im lặng lâu hoặc chuyển chủ đề. Trong kinh doanh, 「難しい」 thường gần với "không" hơn là "khó nhưng làm được". PM nên coi đó là từ chối mềm và hỏi lại điều kiện, thay vì cố thuyết phục ngay.
+> 💡 Bẫy: hiểu 「難しいです」 là "khó nhưng vẫn làm" rồi báo team chuẩn bị triển khai.
+
+**Q648. 「検討します」 và 「前向きに検討します」 khác gì nhau, PM nên phản ứng thế nào?**
+「検討します」 có thể là xem xét thật hoặc từ chối lịch sự; 「前向きに検討します」 (maemuki ni kentou shimasu – xem xét theo hướng tích cực) cho thấy thiện chí nhưng vẫn chưa phải cam kết. Em hỏi tiếp 「いつ頃ご判断いただけそうでしょうか」 (khoảng khi nào có thể quyết ạ) và 「追加で必要な情報はございますか」 (có cần thêm thông tin gì không ạ). Sau đó ghi vào 課題管理表 với ngày dự kiến, và không lập kế hoạch dựa trên giả định "khách đã đồng ý".
+
+**Q649. 曖昧 (aimai – mơ hồ) trong yêu cầu của khách Nhật xử lý thế nào?**
+Em coi làm rõ là việc của mình, không phải lỗi của khách. Cách làm: ① hỏi câu đóng hoặc đưa lựa chọn A/B thay vì hỏi mở; ② đưa ví dụ, mockup, dữ liệu mẫu để khách "chỉ vào" cái đúng; ③ hỏi giới hạn: số lượng, trường hợp ngoại lệ, ai dùng; ④ ghi phần đã chốt vào tài liệu và xin confirm. Những từ như 「いい感じに」 (ii kanji ni – làm sao cho hay), 「よしなに」 (yoshinani – tùy bên anh liệu) là tín hiệu phải hỏi lại ngay.
+
+**Q650. 空気を読む (kuuki wo yomu – đọc bầu không khí) có ý nghĩa gì với PM vendor, có nên dựa vào nó?**
+Là nhận ra điều không được nói ra: khách bỗng trả lời ngắn, cấp trên khách dự họp bất thường, một rủi ro bị hỏi đi hỏi lại — đều là tín hiệu lo ngại cần hành động sớm. Nhưng không nên chỉ dựa vào nó, vì khác biệt ngôn ngữ và văn hóa khiến đoán sai rất dễ. Em dùng "đọc không khí" để phát hiện, rồi xác nhận bằng câu hỏi trực tiếp, lịch sự và chốt bằng văn bản.
+> 💡 Công thức dễ nhớ: "đọc để phát hiện, hỏi để xác nhận, viết để chốt".
+
+**Q651. 本音 (honne – ý thật) và 建前 (tatemae – lời xã giao) ảnh hưởng gì đến việc thu thập phản hồi của khách?**
+Trong họp chính thức, khách thường nói 建前: "không có vấn đề gì", "cảm ơn các bạn đã cố gắng". 本音 hay xuất hiện ở trao đổi 1-1, sau giờ họp hoặc qua người trung gian thân thiết. PM nên tạo kênh nghe 本音: gọi riêng 担当 sau mỗi mốc quan trọng, hỏi cụ thể "điểm nào cải thiện thì anh/chị làm việc dễ hơn", khảo sát định kỳ nếu khách đồng ý. Điểm đánh giá thấp bất ngờ cuối phase thường do đã bỏ qua 本音.
+
+**Q652. Khách nói 「はい」 hoặc 「なるほど」 liên tục trong họp — có nghĩa là họ đồng ý?**
+Không nhất thiết. 相槌 (aizuchi – tiếng đệm phản hồi) như はい, ええ, なるほど thường chỉ có nghĩa "tôi đang nghe", không phải "tôi đồng ý". Ngược lại, người Việt im lặng nghe có thể bị khách hiểu là chưa theo kịp. PM nên chốt bằng câu hỏi xác nhận rõ ràng như 「この方針で進めてよろしいでしょうか」 (tiến hành theo hướng này được không ạ), và khi nghe khách nói thì cũng đáp 相槌 để khách thấy được lắng nghe.
+
+**Q653. Nhắc khách trả lời Q&A quá hạn thế nào để không gây áp lực?**
+Dùng クッション言葉 (kusshon kotoba – từ đệm làm mềm) và nói tác động thay vì trách: 「お忙しいところ恐れ入りますが、QA管理表No.12について、11/20までにご回答いただけますと幸いです。ご回答が遅れる場合、結合テストの開始が遅れる可能性がございます。」 Nghĩa: xin lỗi làm phiền lúc bận, mong nhận trả lời trước 20/11; nếu chậm, 結合テスト (ketsugou tesuto – test tích hợp) có thể bắt đầu muộn. Kèm phương án đề xuất để khách chỉ cần trả lời "OK".
+
+**Q654. 「承知しました」, 「了解しました」, 「かしこまりました」 dùng thế nào với khách?**
+Với khách và cấp trên, an toàn nhất là 「承知いたしました」 hoặc 「かしこまりました」 (kashikomarimashita – xin vâng, tôi đã rõ; rất trang trọng). 「了解しました」 (ryoukai shimashita – đã hiểu) về nghĩa không sai, nhưng nhiều người Nhật coi là kém trang trọng khi nói với người trên, nên tránh dùng với khách. Trong chat ngắn với khách vẫn ưu tiên 「承知しました」. Những câu đáp nhỏ như vậy tạo ấn tượng chuyên nghiệp rất nhanh.
+
+**Q655. Khi khách Nhật chọn giao tiếp bằng tiếng Anh, PM cần lưu ý gì?**
+Dùng câu ngắn, từ đơn giản, tránh idiom, tiếng lóng; tránh câu hỏi phủ định ("Isn't it ready?") vì người Nhật trả lời Yes/No theo logic khác. Sau mỗi cuộc gọi, viết lại kết luận bằng văn bản, dùng số và ngày thay vì "soon", "ASAP". Nhiều người Nhật đọc tiếng Anh tốt hơn nghe, nên gửi tài liệu trước và chia sẻ màn hình khi họp.
+> 💡 Với "Isn't it ready?", câu trả lời "Yes" của người Nhật có thể nghĩa là "đúng vậy, chưa xong".
+
+## 7.6 Báo tin xấu & xin lỗi
+
+**Q656. Nguyên tắc "bad news first" với khách Nhật là gì? Báo tin xấu theo cấu trúc nào?**
+Tin xấu báo trước, báo sớm, kèm 対策 — không đợi có giải pháp hoàn hảo mới báo. Cấu trúc em dùng: ① sự việc (事象 – jishou) và thời điểm; ② phạm vi ảnh hưởng (影響範囲 – eikyou han'i); ③ nguyên nhân (đã xác định hay đang điều tra); ④ 暫定対策 (zantei taisaku – biện pháp tạm thời) đã/đang làm; ⑤ 恒久対策 (koukyuu taisaku – biện pháp lâu dài) dự kiến; ⑥ thời điểm báo cáo tiếp theo.
+> 💡 Chưa rõ nguyên nhân thì nói "đang điều tra, sẽ báo lại lúc X giờ", tuyệt đối không phỏng đoán.
+
+**Q657. Sự cố production xảy ra ngoài giờ — 第一報 (daiippou – báo cáo đầu tiên) gửi trong bao lâu và gồm gì?**
+Theo SLA trong hợp đồng; nếu chưa quy định, em đặt chuẩn nội bộ khoảng 30–60 phút (tham khảo) từ lúc xác nhận sự cố mức cao, gọi điện cho đầu mối khẩn cấp rồi gửi email. Nội dung ngắn: hiện tượng, thời điểm phát hiện, phạm vi ảnh hưởng đã biết, việc đang làm, giờ báo tiếp (ví dụ mỗi 1–2 giờ). 第一報 cần nhanh hơn cần đầy đủ; 障害報告書 (shougai houkokusho – báo cáo sự cố) chi tiết làm sau.
+
+**Q658. Cấu trúc một lời xin lỗi (お詫び – owabi) chuẩn với khách Nhật gồm những phần nào?**
+① Xin lỗi rõ ràng ngay đầu: 「この度は多大なるご迷惑をおかけし、誠に申し訳ございません」 (lần này đã gây phiền hà lớn, thành thật xin lỗi); ② trình bày sự việc khách quan; ③ nguyên nhân, nhận trách nhiệm phía vendor; ④ 対策 đã làm và sẽ làm; ⑤ 再発防止策 (saihatsu boushi saku – biện pháp ngăn tái diễn) cụ thể, có người và ngày; ⑥ xin lỗi lại và mong tiếp tục được hợp tác. Thiếu ④⑤ thì lời xin lỗi bị xem là nói suông.
+
+**Q659. Lỗi thực chất do một member bất cẩn — khi xin lỗi khách có nên nói rõ điều đó?**
+Không. Với khách, đó là lỗi của công ty và của PM quản lý: em nói 「弊社の確認不足により」 (do phía chúng tôi kiểm tra chưa đủ), không nêu tên hay đổ cho cá nhân, càng không đổ cho khách. Đổ lỗi member khiến khách nghĩ vendor không kiểm soát được team và thiếu quy trình. Nguyên nhân gốc và bài học xử lý nội bộ; với khách chỉ trình bày lỗ hổng quy trình và 再発防止.
+> 💡 Nói "tôi chịu trách nhiệm" trước, phân tích nguyên nhân sau — đó là điều interviewer muốn nghe.
+
+**Q660. Lỗi một phần do khách (spec sai, duyệt chậm) — khi báo sự cố, PM nói thế nào để không đổ lỗi mà vẫn bảo vệ team?**
+Em trình bày theo timeline fact, không phán xét: "ngày X nhận spec bản Y, ngày Z có thay đổi…", để sự thật tự nói. Phần lỗi của vendor (ví dụ không phát hiện mâu thuẫn sớm) thì nhận rõ. 再発防止 đề xuất cho cả hai bên dưới dạng "cùng cải thiện": chốt spec bằng văn bản, thêm bước 認識合わせ. Tác động chi phí/lịch nếu có thì xử lý qua kênh CR riêng sau khi sự cố ổn định, không trộn vào lời xin lỗi.
+
+**Q661. Khi nào cần xin lỗi trực tiếp (gặp mặt, gọi điện), khi nào chỉ cần email?**
+Lỗi nhỏ, không ảnh hưởng nghiệp vụ (sai sót tài liệu, trễ vài giờ có báo trước): email hoặc nói trong 定例. Lỗi ảnh hưởng nghiệp vụ, lịch release, hoặc lặp lại lần hai: gọi điện trước, email xác nhận sau, giải thích trong họp riêng. Sự cố nghiêm trọng (production dừng, dữ liệu sai, rò rỉ thông tin): xin lỗi trực tiếp, có thể đến văn phòng khách, kèm báo cáo bằng văn bản. Nguyên tắc: kênh xin lỗi phải "nặng" tương xứng với tác động.
+
+**Q662. Khi nào lãnh đạo công ty vendor cần cùng xin lỗi khách?**
+Khi tác động vượt quyền hạn của PM: sự cố gây thiệt hại kinh doanh hoặc ảnh hưởng người dùng cuối của khách, rò rỉ dữ liệu, cùng loại lỗi lặp lại, hoặc khách đã escalate lên 部長/役員 (yakuin – ban điều hành). Lãnh đạo tham gia thể hiện cam kết của tổ chức và bảo đảm nguồn lực cho 再発防止. PM chuẩn bị đủ fact, báo cáo, 対策 để lãnh đạo không phải xin lỗi suông, và chủ động đề xuất việc này thay vì đợi khách yêu cầu.
+
+**Q663. 横展開 (yokotenkai – nhân rộng biện pháp sang chỗ tương tự) là gì, vì sao khách Nhật luôn hỏi?**
+Sau khi sửa lỗi, khách sẽ hỏi: "chỗ khác có lỗi tương tự không?". 横展開 là rà các module, dự án có cùng nguyên nhân hoặc cùng pattern để sửa và áp dụng biện pháp phòng ngừa. Ví dụ: lỗi format ngày ở màn A thì kiểm mọi màn có xử lý ngày và bổ sung vào checklist review. Báo cáo sự cố thiếu 横展開 gần như chắc chắn bị khách trả lại yêu cầu bổ sung.
+> 💡 Chủ động nêu 横展開 trước khi khách hỏi là cách nhanh nhất lấy lại niềm tin sau sự cố.
+
+**Q664. Xin lỗi quá nhiều có phản tác dụng không? Có lúc nào không nên xin lỗi ngay?**
+Có. Xin lỗi liên tục mà không có 対策 làm khách thấy vendor yếu; xin lỗi về nguyên nhân khi chưa rõ fact có thể bị hiểu là nhận trách nhiệm hợp đồng, trong khi lỗi có thể đến từ hệ thống bên thứ ba. Em tách hai việc: xin lỗi vì đã để khách lo lắng (「ご心配をおかけし申し訳ございません」) thì nói ngay; nhận trách nhiệm nguyên nhân thì sau khi xác nhận fact. Vấn đề có rủi ro bồi thường thì trao đổi với lãnh đạo và bộ phận pháp chế trước.
+
+**Q665. Báo cáo "xanh" suốt 2 tháng rồi đột ngột chuyển "đỏ" — khách Nhật phản ứng thế nào, và tránh ra sao?**
+Khách sẽ nghi ngờ toàn bộ báo cáo trước đó (「今まで何を報告していたのか」 – vậy trước giờ đã báo cáo cái gì), thường yêu cầu báo cáo hằng ngày và họp với lãnh đạo vendor. Tránh bằng cách định nghĩa tiêu chí màu đo được ngay từ đầu (tham khảo: 黄 khi lệch > 3 ngày hoặc dùng > 50% buffer) và dám chuyển 黄 sớm. 黄 sớm kèm 対策 là bình thường; nhảy thẳng 青 sang 赤 là dấu hiệu PM che giấu hoặc không đo.
+> 💡 "Dự án dưa hấu" (ngoài xanh trong đỏ) là cụm hay gặp — gọi tên và nói cách phòng sẽ ghi điểm.
+
+## 7.7 Nói "không" & đàm phán mềm
+
+**Q666. Khách yêu cầu chức năng ngoài phạm vi ngay trong họp — PM từ chối thế nào mà vẫn giữ quan hệ?**
+Không từ chối thẳng tại chỗ; em ghi nhận nhu cầu và nói 「貴重なご要望ありがとうございます。影響を確認の上、対応案をご提示させてください」 (cảm ơn đề xuất, xin phép đánh giá tác động rồi đưa phương án). Trong 1–2 ngày, em gửi lại: căn cứ phạm vi (tài liệu yêu cầu đã chốt), tác động nếu làm, và 2–3 代替案 (daitaian – phương án thay thế). Khách Nhật dễ chấp nhận "chưa làm được theo cách này nhưng có cách khác" hơn một chữ "không".
+
+**Q667. 代替案 nên gồm những loại nào khi từ chối yêu cầu?**
+Em thường đưa 3 loại: ① làm như yêu cầu nhưng dưới dạng thay đổi có báo giá và lịch riêng (CR); ② đổi chỗ — làm cái mới, lùi hoặc bỏ một hạng mục ưu tiên thấp hơn có quy mô tương đương; ③ chia giai đoạn — bản đơn giản trước, đầy đủ ở phase sau, hoặc workaround vận hành tạm. Mỗi phương án nêu rõ đánh đổi về lịch, chi phí, chất lượng, rủi ro; em nói khuyến nghị nhưng để khách chọn.
+> 💡 Để khách "chọn" giữa các phương án giữ thể diện cho họ hơn là để họ "bị từ chối".
+
+**Q668. Những mẫu câu tiếng Nhật lịch sự để báo không thể đáp ứng?**
+「大変恐縮ですが、今回のスケジュールでは対応いたしかねます」 (rất ngại nhưng với lịch hiện tại chúng tôi khó đáp ứng); đuôi 「〜いたしかねます」 (itashikanemasu – khó có thể làm) là cách từ chối trang trọng; 「あいにく〜」 (ainiku – thật không may) để mở câu. Luôn nối bằng 「その代わりに、〜という方法はいかがでしょうか」 (thay vào đó, cách… thì sao ạ). Tránh 「できません」 trơn và 「無理です」 (muri desu – không thể) với khách vì quá thẳng.
+
+**Q669. Khách đề nghị "làm thêm chút thôi, coi như サービス (saabisu – làm miễn phí)" — PM xử lý thế nào?**
+Em đánh giá quy mô thật trước khi trả lời. Nếu rất nhỏ và có lợi cho quan hệ thì có thể nhận, nhưng phải 見える化: ghi vào danh sách hỗ trợ miễn phí kèm công sức và nói rõ đây là ngoại lệ. Nếu không nhỏ hoặc lặp lại, đưa về quy trình CR. Bẫy là nhận im lặng nhiều lần: khách coi đó là chuẩn, team quá tải, và đến lúc từ chối thì khách thấy vendor "đổi thái độ".
+> 💡 "Miễn phí nhưng hiển thị giá trị" tạo cơ sở cho các lần đàm phán sau.
+
+**Q670. 部長 khách đưa ra yêu cầu vô lý trước mặt nhiều người trong họp — PM nên phản ứng thế nào?**
+Không phản bác công khai, vì làm 部長 mất mặt trước cấp dưới là sai lầm khó sửa. Em ghi nhận, hỏi làm rõ mục tiêu thật (「〜という目的でよろしいでしょうか」 – mục đích là… có đúng không ạ) và hẹn trả lời sau. Sau họp, em hỏi 担当 để hiểu bối cảnh, chuẩn bị phương án kèm dữ liệu tác động, 根回し với 担当 trước khi trình lại. Nhiều khi mục tiêu thật đạt được bằng cách đơn giản hơn yêu cầu ban đầu.
+
+**Q671. Đàm phán với khách Nhật khác gì đàm phán "thắng–thua"? Tìm 落とし所 (otoshidokoro – điểm thỏa hiệp) thế nào?**
+Khách Nhật coi trọng quan hệ dài hạn hơn thắng một ván, nên mục tiêu là 落とし所 mà hai bên đều giữ thể diện và giải thích được với nội bộ. Em chuẩn bị trước: mục tiêu, giới hạn tối thiểu, các "biến" có thể nhượng (thứ tự giao, phạm vi phase, mức hỗ trợ) và biến không nhượng (chất lượng, an toàn dữ liệu). Nhượng phải có đổi lại, không nhượng một chiều, và mọi thỏa thuận được ghi bằng văn bản.
+
+**Q672. Khách yêu cầu rút ngắn deadline 2 tuần mà không thay đổi gì khác — PM trả lời ra sao?**
+Em không nói "được" hay "không" ngay, mà xin thời gian đánh giá rồi đưa trade-off rõ: ① giữ phạm vi, thêm người — chi phí tăng, rủi ro onboarding; ② giữ đội, giảm phạm vi — liệt kê chức năng lùi sang đợt sau; ③ release từng phần, chức năng quan trọng nhất trước. Đồng thời hỏi lý do thật của việc rút ngắn (sự kiện kinh doanh, 年度末 – nendomatsu – cuối năm tài chính…), vì đó thường là chìa khóa tìm phương án.
+
+**Q673. Khi nào PM phải nói "không" dứt khoát với khách Nhật, kể cả có thể làm khách phật ý?**
+Khi yêu cầu vi phạm pháp luật, hợp đồng, bảo mật (ví dụ đưa dữ liệu thật của khách tài chính ra môi trường test không được phép), an toàn hệ thống, hoặc buộc team cam kết điều chắc chắn không làm được. Lúc đó em vẫn nói lịch sự nhưng rõ ràng, tránh cách nói mập mờ dễ bị hiểu là "sẽ xem xét", nêu lý do và đề xuất cách hợp lệ thay thế. Một lần "không" rõ ràng tốt hơn nhiều so với "vâng" rồi thất hứa.
+> 💡 Ví dụ về dữ liệu thật và bảo mật rất thuyết phục với khách tài chính, bảo hiểm.
+
+**Q674. Sau khi từ chối một yêu cầu, làm sao biết quan hệ với khách không bị ảnh hưởng?**
+Em theo dõi tín hiệu: tốc độ trả lời email, giọng điệu trong họp, khách có còn chia sẻ kế hoạch sắp tới không. Chủ động gọi 担当 sau 1–2 ngày, hỏi phương án thay thế có phù hợp với nội bộ họ không, cần hỗ trợ gì để giải thích với cấp trên. Đồng thời làm thật tốt phần đã cam kết, để khách thấy việc từ chối là vì chất lượng, không phải vì thiếu thiện chí.
+
+## 7.8 Lịch & nhịp kinh doanh Nhật
+
+**Q675. 年度 (nendo – năm tài chính) của doanh nghiệp Nhật thường bắt đầu khi nào và ảnh hưởng gì đến dự án?**
+Cơ quan nhà nước và nhiều doanh nghiệp Nhật dùng năm tài chính từ 1/4 đến 31/3 năm sau, chia thành 上期 (kamiki – nửa đầu, tháng 4–9) và 下期 (shimoki – nửa sau, tháng 10–3). Ngân sách IT thường được lên trong năm tài chính trước, nên dự án mới hay bắt đầu tháng 4 hoặc tháng 10, đề xuất phải đến trước khi khách chốt ngân sách, và cuối năm dồn việc nghiệm thu. Một số công ty dùng năm tài chính khác, nên em luôn hỏi lại từng khách.
+
+**Q676. Vì sao tháng 3 (年度末) thường là giai đoạn căng nhất với khách Nhật?**
+Vì khách cần hoàn tất nghiệm thu, dùng ngân sách năm, và nhiều hệ thống, quy định, nghiệp vụ mới áp dụng từ 1/4. Hệ quả: release dồn, thay đổi phút chót, khách bận nên trả lời chậm. Em lập kế hoạch ngược từ tháng 3: chốt spec sớm, đặt code freeze trước vài tuần, chuẩn bị người hỗ trợ UAT, và đẩy các việc không bắt buộc ra khỏi cuối tháng 3.
+> 💡 Hỏi khách ngay từ kickoff "có mốc 年度末 nào cố định không?" — đó thường là deadline thật.
+
+**Q677. Tháng 4 có rủi ro giao tiếp nào PM cần chuẩn bị?**
+Tháng 4 là mùa 人事異動 (jinji idou – điều chuyển nhân sự) và nhân viên mới vào ở nhiều công ty Nhật, nên 担当 hoặc quản lý phía khách có thể đổi người. Người mới không biết bối cảnh và các thỏa thuận cũ. Em chuẩn bị: tài liệu tóm tắt cho người mới (lịch sử quyết định, thỏa thuận về scope, Q&A quan trọng), đề xuất buổi chào hỏi và giới thiệu dự án, xác nhận lại 窓口 và 決裁者.
+
+**Q678. Golden Week, お盆 (obon) và 年末年始 (nenmatsu nenshi) ảnh hưởng thế nào đến kế hoạch dự án offshore?**
+Golden Week rơi khoảng cuối tháng 4 đầu tháng 5, お盆 (dịp lễ về quê) khoảng giữa tháng 8, 年末年始 (nghỉ cuối năm–đầu năm) khoảng cuối tháng 12 đến đầu tháng 1; ngày nghỉ cụ thể tùy công ty. Trong các dịp này khách gần như không duyệt, không trả lời Q&A, không làm UAT. Em đưa lịch nghỉ của khách vào kế hoạch từ đầu, tránh đặt release hay mốc cần khách duyệt sát kỳ nghỉ, và thống nhất ai trực khi có sự cố.
+
+**Q679. Lịch nghỉ Việt Nam và lịch Nhật lệch nhau — PM xử lý thế nào?**
+Tết Nguyên Đán thường rơi vào tháng 1–2, lúc khách Nhật làm việc bình thường và đang chuẩn bị cho 年度末, nên đây là rủi ro lớn nhất. Em gửi lịch nghỉ cho khách từ đầu năm, hoàn thành các mốc quan trọng trước Tết, bố trí trực luân phiên cho bảo trì/sự cố, và xác nhận bằng văn bản phạm vi hỗ trợ trong dịp nghỉ. Nghỉ 30/4–1/5 và 2/9 của Việt Nam không trùng hẳn với ngày nghỉ của khách, cần đối chiếu từng năm.
+> 💡 Báo lịch nghỉ Tết sớm 2–3 tháng (tham khảo) kèm kế hoạch trực cho thấy PM hiểu rủi ro của khách.
+
+**Q680. Lệch múi giờ VN–JP 2 tiếng ảnh hưởng thế nào đến nhịp làm việc?**
+Giờ Nhật nhanh hơn Việt Nam 2 tiếng (Nhật không dùng giờ mùa hè): 9:00 Nhật là 7:00 Việt Nam, và khi team VN làm đến 17:00 thì bên Nhật đã 19:00. Em đặt họp ở khung chung, ví dụ 10:00–12:00 hoặc 15:00–17:00 giờ Nhật (8:00–10:00 hoặc 13:00–15:00 giờ VN); báo cáo ngày gửi trước 15:00 giờ VN để khách đọc trong giờ làm; câu hỏi cần trả lời trong ngày gửi từ buổi sáng.
+> 💡 Giờ nghỉ trưa Nhật 12:00–13:00 là 10:00–11:00 giờ VN — tránh hẹn họp vào khung đó.
+
+**Q681. Kế hoạch nguồn lực của PM nên điều chỉnh theo nhịp năm của khách Nhật thế nào?**
+Em vẽ "bản đồ nhịp năm" của khách: tháng 1–3 cao điểm (年度末, nghiệm thu, Tết VN chen giữa), tháng 4 đổi người và dự án mới khởi động, Golden Week, お盆, 年末年始 là các khoảng khách vắng. Từ đó: giữ buffer người cho quý 1 dương lịch, xếp đào tạo và nghỉ phép của team vào lúc khách nghỉ, chuẩn bị nhân sự cho dự án mới từ tháng 2–3 để khởi động được ngay tháng 4.
+
+**Q682. 年末年始 có nghi thức giao tiếp nào PM nên biết?**
+Cuối năm, email chào 「本年も大変お世話になりました。来年もどうぞよろしくお願いいたします」 (cảm ơn sự giúp đỡ năm nay, mong năm sau tiếp tục hợp tác), kèm lịch nghỉ và đầu mối khẩn cấp. Ngày làm việc đầu năm, gửi lời chúc 「新年あけましておめでとうございます。本年もよろしくお願いいたします」 (chúc mừng năm mới, năm nay mong tiếp tục được giúp đỡ). Một số công ty còn gửi 年賀状 (nengajou – thiệp chúc năm mới), tùy mức độ quan hệ với khách.
+
+**Q683. Có nên release ngay trước kỳ nghỉ dài của Nhật để "kịp" deadline?**
+Em hạn chế tối đa. Nếu có sự cố sau release, người duyệt và người vận hành phía khách vắng mặt, xử lý chậm, rủi ro bị đẩy lên rất cao. Nếu buộc phải release, em thống nhất trước bằng văn bản: danh sách người trực hai bên, kênh liên lạc khẩn, tiêu chí rollback, thời gian theo dõi; tốt nhất để ít nhất 2–3 ngày làm việc giữa release và kỳ nghỉ (tham khảo).
+
+## 7.9 Xây niềm tin & quản trị kỳ vọng
+
+**Q684. 信頼関係 (shinrai kankei – quan hệ tin cậy) với khách Nhật được xây dựng như thế nào?**
+Bằng tích lũy nhất quán những lời hứa nhỏ được giữ: biên bản gửi đúng 24 giờ, câu trả lời đúng hạn hẹn, con số trong mọi báo cáo khớp nhau, vấn đề báo sớm. Người Nhật đánh giá đối tác qua thời gian dài và không dễ cho "cơ hội thứ hai". Em coi 約束を守る (yakusoku wo mamoru – giữ lời hứa) là KPI: theo dõi tỉ lệ cam kết đúng hạn (trả lời Q&A, giao hàng) và không để trễ nào xảy ra mà không báo trước.
+> 💡 "Niềm tin = số lời hứa nhỏ được giữ" ngắn gọn, dễ nhớ với interviewer.
+
+**Q685. Under-promise, over-deliver áp dụng với khách Nhật thế nào? Có rủi ro gì?**
+Cam kết ở mức team chắc chắn đạt (buffer hợp lý, ví dụ 10–15% — tham khảo), rồi giao đúng hoặc sớm hơn, chất lượng tốt hơn kỳ vọng. Rủi ro: buffer quá dày, khách thấy "lúc nào cũng xong sớm" thì mất tin vào estimate hoặc cho rằng vendor thiếu tham vọng. Em giữ buffer minh bạch ở mức dự án, không giấu trong từng task; xong sớm thì dùng thời gian dư cho chất lượng hoặc đề xuất cải tiến.
+
+**Q686. Biết chắc không giữ được lời hứa, PM nên báo khách khi nào?**
+Ngay khi biết, trước hạn — không bao giờ đợi đến đúng ngày hạn mới báo. Em báo kèm ngày mới chắc chắn hơn, lý do, và phần nào có thể giao trước. Với người Nhật, 期限前の相談 (kigen mae no soudan – bàn trước khi đến hạn) thể hiện trách nhiệm, còn trễ hạn không báo là vi phạm 約束. Ngày mới phải là ngày giữ được chắc chắn, vì trễ hai lần liên tiếp gây mất niềm tin nặng hơn nhiều so với một lần.
+
+**Q687. Khách mới và khách lâu năm — quản trị kỳ vọng khác nhau thế nào?**
+Khách mới chưa có niềm tin: em tăng tần suất báo cáo, giao từng phần nhỏ sớm (prototype, pilot), giải thích quy trình và tiêu chuẩn của vendor, chốt định nghĩa "xong" từ đầu. Khách lâu năm có sẵn niềm tin, nhưng rủi ro là 慣れ (nare – quen nên lơ là): chất lượng giảm dần, báo cáo sơ sài, kỳ vọng ngầm tăng lên. Với họ, em giữ tiêu chuẩn như ngày đầu và chủ động đưa 改善提案 (kaizen teian – đề xuất cải tiến) định kỳ.
+
+**Q688. Khách là bộ phận IT và khách là business user — giao tiếp khác nhau thế nào?**
+情報システム部 (jouhou shisutemu bu – phòng hệ thống thông tin) quan tâm kiến trúc, chuẩn kỹ thuật, bảo mật, tài liệu và vận hành sau go-live; có thể nói bằng thuật ngữ kỹ thuật. Business user quan tâm nghiệp vụ, thao tác, ngày áp dụng, ảnh hưởng đến công việc hằng ngày; cần ngôn ngữ nghiệp vụ, demo trực quan, tránh jargon. Khi cả hai cùng dự họp, em chia phần báo cáo theo người nghe và kiểm tra kỳ vọng của từng nhóm riêng.
+
+**Q689. Kỳ vọng "chất lượng không lỗi" của khách Nhật — PM quản trị thế nào cho thực tế?**
+Em không hứa "zero bug" chung chung mà thống nhất từ đầu tiêu chí đo được: mức lỗi nào chấp nhận ở từng giai đoạn, tiêu chí nghiệm thu, phạm vi test. Đồng thời cho khách thấy quy trình đảm bảo chất lượng qua 見える化, vì với người Nhật, quy trình đáng tin quan trọng không kém kết quả. Khi có lỗi, cách xử lý nhanh, minh bạch và có 再発防止 chính là thứ giữ được kỳ vọng.
+
+**Q690. Làm sao phát hiện sớm khoảng cách kỳ vọng trước khi thành bất mãn?**
+Em dùng 3 nguồn: ① demo sớm và định kỳ (ví dụ cuối mỗi sprint hoặc 2 tuần/lần) để khách thấy sản phẩm thật, không chỉ đọc báo cáo; ② sau mỗi mốc hỏi thẳng 「ご期待と違う点はございますか」 (có điểm nào khác với mong đợi không ạ); ③ khảo sát hài lòng ngắn mỗi phase (3–5 câu, có điểm số) nếu khách đồng ý. Khoảng cách nào lộ ra thì ghi thành 課題 có hành động cụ thể, không "chờ xem".
+
+**Q691. Khách mất niềm tin sau một chuỗi sự cố — PM khôi phục thế nào?**
+① Thừa nhận thẳng thắn, không biện hộ, có lãnh đạo vendor tham gia; ② đưa kế hoạch khôi phục có mốc (ví dụ 4–8 tuần): tăng cường review, bổ sung người chủ chốt, báo cáo dày hơn; ③ 見える化 toàn bộ để khách tự kiểm chứng thay vì yêu cầu khách "tin lại"; ④ giao liên tục các kết quả nhỏ đúng hẹn. Khi chỉ số ổn định, chủ động đề xuất giảm dần tần suất báo cáo. Niềm tin quay lại bằng hành vi lặp lại, không bằng lời hứa.
+
+**Q692. Khách Nhật khen 「よくやってくれています」 — PM có nên yên tâm?**
+Không hẳn. Lời khen (các bạn làm tốt lắm) trong họp có thể là 建前; khách Nhật hiếm khi phàn nàn trực tiếp mà thể hiện bằng hành động như không gia hạn hợp đồng hoặc giao việc mới cho vendor khác. Em kiểm chứng bằng tín hiệu khách quan: khách có giao thêm việc, chia sẻ kế hoạch năm sau, mời tham gia sớm dự án mới không; và hỏi riêng 担当 điểm cần cải thiện. Không có góp ý không có nghĩa là không có vấn đề.
+> 💡 Bẫy: coi lời khen xã giao là đánh giá thật rồi ngừng cải tiến.
+
+## 7.10 Business etiquette & khác biệt thị trường
+
+**Q693. 名刺交換 (meishi koukan – trao danh thiếp) đúng cách gồm những bước nào?**
+Đứng dậy, đưa danh thiếp bằng hai tay, mặt chữ hướng về người nhận, vừa đưa vừa nói tên công ty và họ tên; bên đến thăm hoặc người vị trí thấp hơn đưa trước. Nhận bằng hai tay, đọc tên và nói 「頂戴いたします」 (choudai itashimasu – xin nhận ạ). Trong họp, đặt danh thiếp trên bàn theo thứ tự chỗ ngồi, danh thiếp người cấp cao nhất đặt trên hộp danh thiếp. Không viết lên, không nhét túi quần, không để quên trên bàn.
+
+**Q694. Khi đến thăm văn phòng khách Nhật, cần lưu ý gì về giờ giấc và chỗ ngồi?**
+Có mặt ở tòa nhà sớm khoảng 10 phút nhưng chỉ báo lễ tân khoảng 5 phút trước giờ hẹn, vì đến quá sớm cũng làm khách bận. Mùa lạnh, cởi áo khoác trước khi vào tòa nhà. Trong phòng họp, chờ được mời mới ngồi; nếu không được chỉ chỗ, ngồi phía gần cửa (下座 – shimoza) và để 上座 (kamiza – chỗ danh dự, xa cửa) cho người cấp cao. Đồ uống được mời thì chờ chủ nhà mời mới dùng. Sau buổi gặp, gửi email cảm ơn trong ngày.
+
+**Q695. Dress code khi làm việc với khách Nhật cần lưu ý gì?**
+Mặc định là trang phục công sở chỉnh tề, màu trung tính (vest tối màu, sơ mi trắng hoặc sáng, giày sạch), đặc biệt với khách tài chính, bảo hiểm vốn bảo thủ. Mùa hè nhiều công ty áp dụng クールビズ (kuuru bizu – không cà vạt, trang phục mát), em hỏi trước hoặc theo cách khách mặc. Buổi gặp đầu tiên, buổi xin lỗi hay buổi có lãnh đạo thì luôn chọn trang trọng hơn. Họp online cũng giữ chuẩn tối thiểu: áo sơ mi, nền gọn gàng.
+
+**Q696. 飲み会 (nomikai – tiệc rượu) và 接待 (settai – tiếp khách) với khách Nhật cần biết gì?**
+Chờ 乾杯 (kanpai – nâng ly chung) rồi mới uống; để ý ly của người khác, rót cho khách và cấp trên. Dù không khí thoải mái, không nói xấu ai, không cam kết công việc khi đã uống. Không uống được thì từ chối lịch sự, dùng đồ uống không cồn. Với khách tài chính, bảo hiểm, nhiều nơi có quy định compliance về tiếp khách và quà tặng — em hỏi trước để không đặt khách vào thế khó.
+> 💡 Bẫy 無礼講 (bureikou – "hôm nay bỏ qua lễ nghi"): câu này không có nghĩa được thất lễ thật.
+
+**Q697. お土産 (omiyage – quà mang theo) khi sang Nhật thăm khách nên chọn thế nào?**
+Chọn đặc sản Việt Nam hoặc Đà Nẵng (cà phê, bánh kẹo đặc sản…), đóng gói từng phần nhỏ (個包装 – kohousou) để khách chia cho cả phòng, giá trị vừa phải để không gây áp lực. Đưa sau phần chào hỏi, kèm câu 「ささやかなものですが、皆様で召し上がってください」 (chút quà nhỏ, mời mọi người cùng dùng). Kiểm tra trước khách có quy định từ chối quà không, nhất là ngành tài chính.
+
+**Q698. Đúng giờ với khách Nhật quan trọng thế nào? Nếu sắp trễ phải làm gì?**
+Rất quan trọng: đúng giờ được xem là thước đo đầu tiên của sự tin cậy, kể cả với họp online. Nếu biết có thể trễ, em liên lạc trước giờ hẹn (gọi điện hoặc nhắn), xin lỗi, báo thời gian đến dự kiến và đề nghị khách bắt đầu trước nếu phù hợp. Đến nơi thì xin lỗi ngắn gọn rồi vào việc ngay, không giải thích dài dòng. Hạn gửi tài liệu cũng vậy: nếu sẽ trễ dù chỉ 1 giờ, phải báo trước khi đến hạn.
+
+**Q699. Khách Nhật, Hàn, Singapore khác nhau thế nào trong giao tiếp dự án (nói ngắn)?**
+Đây là xu hướng thường gặp, không đúng với mọi khách. Nhật: quyết định qua đồng thuận, coi trọng quy trình, tài liệu, chất lượng và báo cáo sớm, nói gián tiếp. Hàn: ưu tiên tốc độ, quyết định thường từ cấp trên và nhanh hơn, yêu cầu thay đổi nhiều, phản hồi thẳng. Singapore: giao tiếp bằng tiếng Anh, thẳng và thực dụng, tập trung hợp đồng, KPI, chi phí, ít nặng thứ bậc. PM giữ một bộ quy trình lõi, chỉnh tần suất, kênh và cách nói theo từng khách.
+> 💡 Nói "xu hướng" và kết bằng "em quan sát từng khách cụ thể" để tránh bị đánh giá là rập khuôn.
+
+**Q700. Khách Nhật sang thăm văn phòng Đà Nẵng — PM chuẩn bị đón tiếp thế nào?**
+Em chuẩn bị như một mốc dự án: agenda gửi trước (giới thiệu công ty, demo, gặp team, họp các vấn đề chính), slide tiếng Nhật, đưa đón nếu phù hợp, phòng họp có bảng tên, đủ danh thiếp, sắp chỗ theo 上座. Cho khách gặp trực tiếp member chủ chốt, xem môi trường làm việc và biện pháp bảo mật — mối quan tâm lớn của khách tài chính. Sau chuyến thăm, gửi email cảm ơn, biên bản và danh sách việc tiếp theo trong 1–2 ngày.
+> 💡 Chuyến thăm là cơ hội tốt để 根回し trực tiếp các quyết định lớn với cấp quản lý khách.
+
+---
+
+# Chương 8 · Tình huống thực tế dự án với khách Nhật (Q701–Q800)
+
+## 8.1 Trễ tiến độ & 納期 cứng
+
+**Q701. Dự án hệ thống nội bộ cho khách bảo hiểm B, team 12 người, còn 3 tuần nữa vào 結合テスト thì em phát hiện module tính phí trễ khoảng 2 tuần so với WBS. Anh/chị xử lý thế nào?**
+① Xác nhận fact trong 1 ngày: đối chiếu WBS với task done thực tế, hỏi tech lead nguyên nhân (estimate sai, blocker hay thiếu người), tính lại ngày hoàn thành dự kiến. ② Khoanh vùng: chuyển 1–2 member từ module đã ổn sang, ưu tiên phần 結合テスト (ketsugou tesuto – kiểm thử tích hợp) cần sớm nhất, OT có giới hạn. ③ 報連相 (hou-ren-sou – báo cáo, liên lạc, thảo luận): báo khách ngay trong 定例会 (teireikai – họp định kỳ) tuần đó, không đợi cạn buffer, kèm 2 phương án đổi thứ tự test. ④ 再発防止 (saihatsu boushi – phòng ngừa tái phát): theo dõi burndown/EVM hằng ngày, lệch > 2 ngày (tham khảo) là phải escalate.
+> 💡 Khách Nhật ghét bất ngờ hơn ghét tin xấu: báo sớm kèm phương án luôn ghi điểm hơn âm thầm tự cứu rồi vẫn trễ.
+
+**Q702. Khách sản xuất C nói 納期 ngày 31/3 không thể dời vì gắn với ngày vận hành dây chuyền mới, nhưng team ước tính cần thêm 3 tuần. Anh/chị xử lý thế nào?**
+① Fact: cùng khách tách chức năng bắt buộc phải có để dây chuyền chạy ngày 31/3 với phần làm sau được; kiểm lại estimate 3 tuần với tech lead. ② Hành động: đề xuất 段階リリース (dankai ririisu – release theo đợt): đợt 1 đúng 納期 (nouki – hạn bàn giao) với chức năng vận hành tối thiểu, đợt 2 sau 3–4 tuần; xin thêm người cho phần độc lập. ③ Báo khách bảng 3 phương án (cắt scope / thêm người kèm chi phí / giữ nguyên và chấp nhận rủi ro), xin quyết định, ghi 議事録 (gijiroku – biên bản họp). ④ Phòng ngừa: các mốc "không dời" phải chốt từ 要件定義 (youken teigi – định nghĩa yêu cầu) để lập kế hoạch ngược từ 納期.
+
+**Q703. Dự án ngân hàng A chia 2 vendor: vendor khác làm 基本設計, bên mình nhận từ 詳細設計; tài liệu 基本設計 bàn giao trễ 3 tuần và thiếu nhiều chỗ. Anh/chị xử lý thế nào?**
+① Fact: lập danh sách điểm thiếu/mâu thuẫn trong 基本設計 (kihon sekkei – thiết kế cơ bản), đo tác động lên lịch 詳細設計 (shousai sekkei – thiết kế chi tiết). ② Hành động: không ngồi chờ — làm trước phần đủ thông tin; phần thiếu ghi 前提条件 (zentei jouken – giả định tiền đề) để làm tiếp, gom câu hỏi vào QA表 (bảng hỏi đáp) gửi khách hằng ngày. ③ Báo khách bằng fact: "đầu vào trễ 3 tuần → mốc của chúng tôi dịch tương ứng", đề nghị khách (bên quản lý cả 2 vendor) chốt lại lịch tổng. ④ Gốc: đề xuất tiêu chí bàn giao giữa các 工程 (koutei – công đoạn), ghi rủi ro phụ thuộc vendor vào risk register.
+> 💡 Hợp đồng của mình là với khách, không phải với vendor kia: mọi điều chỉnh đi qua khách, có văn bản, và tuyệt đối không chê vendor kia trước mặt khách.
+
+**Q704. Khách bảo hiểm B hứa gửi data mẫu và spec giao tiếp hệ thống ngoài trước ngày 1/6, đến 10/6 vẫn chưa có, 8 người trong team đang bị chặn. Anh/chị xử lý thế nào?**
+① Fact: ghi rõ ngày khách cam kết, task bị chặn, effort đang chờ. ② Hành động: dùng mock interface và data giả lập theo format dự đoán, kéo task phase sau lên làm trước (前倒し maedaoshi – làm sớm) để không ai ngồi không. ③ Báo khách: đưa vào 課題管理表 (kadai kanrihyou – bảng quản lý vấn đề) có hạn trả lời, email lịch sự nêu ảnh hưởng định lượng: "mỗi tuần trễ đầu vào → 納期 dịch khoảng 1 tuần hoặc phát sinh chi phí chờ". ④ Phòng ngừa: kế hoạch dự án liệt kê rõ お客様作業 (okyakusama sagyou – việc phía khách phải làm) với hạn, và điều khoản xử lý khi trễ.
+
+**Q705. Đang 総合テスト, PM phía khách hỏi: "Báo cáo tuần trước còn xanh, sao tuần này đỏ ngay?". Anh/chị xử lý thế nào?**
+① Fact: nhận trách nhiệm trước, rồi rà số liệu tuần trước — thường do báo theo % task tự khai thay vì số case thực hiện/pass, bug tồn. ② Hành động: trong ngày gửi lại tiến độ 総合テスト (sougou tesuto – kiểm thử hệ thống) theo chỉ số khách quan và kế hoạch phục hồi theo ngày. ③ Báo khách: xin lỗi ngắn gọn vì báo cáo chưa phản ánh đúng rủi ro, giải thích nguyên nhân, cam kết đổi cách báo. ④ 再発防止: thêm trạng thái "vàng" có tiêu chí định lượng (vd lệch > 3% kế hoạch hoặc blocker > 2 ngày — tham khảo), báo cả xu hướng chứ không chỉ màu.
+> 💡 Báo cáo "dưa hấu" (xanh ngoài đỏ trong) làm mất niềm tin nặng nhất — thừa nhận rồi sửa hệ thống báo cáo, đừng bào chữa.
+
+**Q706. Còn 5 ngày đến 納期, team báo "chắc kịp" nhưng 20% case regression chưa chạy. Anh/chị xử lý thế nào?**
+① Fact: xác định 20% case chưa chạy thuộc chức năng nào, mức rủi ro (tiền, dữ liệu hay chỉ giao diện). ② Hành động: chạy ngay case rủi ro cao, huy động BA/dev cùng test, dùng automation nếu có; đặt tiêu chí go/no-go rõ trước ngày giao 2 ngày. ③ Báo khách sớm: "đã chạy 80%, phần còn lại thuộc X, dự kiến xong ngày Y"; nếu không kịp, đề xuất giao đúng hạn kèm danh sách case 未実施 (mijisshi – chưa thực hiện) và lịch hoàn tất, để khách quyết. ④ Gốc: kế hoạch test có buffer, tự động hóa dần bộ regression.
+
+**Q707. Khách ngân hàng A muốn kéo 納期 sớm lên 1 tháng vì ban lãnh đạo muốn công bố dịch vụ sớm, dự án đang đúng kế hoạch. Anh/chị xử lý thế nào?**
+① Fact: hỏi rõ thứ thật sự cần vào ngày mới: demo, release toàn bộ hay chỉ chức năng công bố. ② Hành động: trong 2–3 ngày tính 3 phương án: (a) release sớm phần cốt lõi, phần còn lại giữ lịch cũ; (b) thêm người kèm chi phí và rủi ro (thêm người muộn không tăng tốc tuyến tính); (c) giữ nguyên. ③ Báo khách bằng văn bản, mỗi phương án có chi phí, rủi ro chất lượng, xin quyết định chính thức. ④ Sau khi chốt: làm CR/phụ lục hợp đồng, cập nhật kế hoạch, theo dõi rủi ro hằng ngày.
+
+**Q708. Dự án migrate hệ thống lõi cho khách sản xuất C có ngày cut-over cố định trong kỳ nghỉ Golden Week, 2 tuần trước đó buổi rehearsal 移行 chạy quá thời gian cho phép 6 tiếng. Anh/chị xử lý thế nào?**
+① Fact: phân tích log rehearsal 移行 (ikou – chuyển đổi dữ liệu/hệ thống), tìm bước ngốn thời gian (load data, build index, verify). ② Hành động: tối ưu song song (chia lô, tắt index rồi build lại, chuyển trước data tĩnh), chạy rehearsal lần 2 trong 1 tuần với data quy mô thật; chuẩn bị kế hoạch 切り戻し (kirimodoshi – quay lui/rollback) và điểm dừng giữa chừng. ③ Báo khách ngay sau rehearsal kèm số đo và kế hoạch rút ngắn, đề nghị chốt go/no-go trước cut-over 3 ngày. ④ Phòng ngừa: rehearsal sớm hơn, ít nhất 2 lần, có tiêu chí thời gian cho từng bước.
+
+**Q709. Làm Scrum cho khách Nhật, sprint 2 tuần, team chỉ hoàn thành khoảng 60% story đã nhận lần thứ 3 liên tiếp. Anh/chị xử lý thế nào?**
+① Fact: xem velocity thực 3 sprint, phân loại story dở do estimate, do yêu cầu chưa rõ hay do bị chen việc. ② Hành động: sprint tới nhận việc theo velocity trung bình thực tế; tăng refinement để story đạt Definition of Ready trước planning; việc chen ngang phải qua PO. ③ Báo PO/khách bằng số liệu, điều chỉnh release plan theo velocity thật thay vì theo mong muốn. ④ Gốc: retro chọn 1–2 action đo được; với khách quen waterfall, giải thích sprint goal là dự báo, nhưng phải là dự báo tin được.
+
+**Q710. Sau khi dự án ngân hàng A trễ mốc 単体テスト, khách yêu cầu từ mai báo cáo tiến độ hằng ngày bằng tiếng Nhật, team đang rất căng. Anh/chị xử lý thế nào?**
+① Fact: hiểu đây là tín hiệu khách mất an tâm, không phải "phạt"; hỏi khách muốn thấy chỉ số gì. ② Hành động: nhận ngay; thiết kế báo cáo 1 trang (kế hoạch/thực tế 単体テスト (tantai tesuto – kiểm thử đơn vị) theo ngày, blocker, việc ngày mai), số lấy tự động từ tool, PM/BrSE viết để dev không mất giờ. ③ Gửi đúng giờ cố định mỗi ngày (vd 17:00 giờ Nhật), tin xấu ở dòng đầu. ④ Khi tiến độ ổn định 2–3 tuần, chủ động đề xuất quay lại tần suất tuần, dựa trên số liệu.
+
+## 8.2 Sự cố 本番 & 障害
+
+**Q711. Hệ thống ngân hàng A đang chạy 本番, khách phát hiện tiền lãi tính sai cho một nhóm tài khoản sau bản release sửa lỗi tuần trước. Anh/chị xử lý thế nào?**
+① Fact trong 1–2 giờ: tái hiện lỗi trên 本番 (honban – môi trường production) bằng log/dữ liệu, xác định điều kiện, số tài khoản, khoảng thời gian — tức 影響範囲 (eikyou han'i – phạm vi ảnh hưởng). ② 暫定対応 (zantei taiou – xử lý tạm): cùng khách quyết định dừng job tính lãi hoặc 切り戻し về bản trước; script tính lại chỉ chạy khi khách duyệt. ③ 報連相: gửi 第一報 (daiippou – báo cáo đầu tiên) ngay dù chưa rõ nguyên nhân, cập nhật theo mốc giờ cố định, sau đó nộp 障害報告書 (shougai houkokusho – báo cáo sự cố). ④ 恒久対応 (koukyuu taiou – xử lý triệt để): sửa code, bổ sung test biên, 横展開 (yokotenkai – nhân rộng kiểm tra) sang các công thức tính tương tự.
+> 💡 Lỗi liên quan đến tiền: không tự ý sửa dữ liệu production — mọi thao tác data phải có khách duyệt và lưu log.
+
+**Q712. Batch đêm của khách sản xuất C chết lúc 3h sáng giờ Nhật, 7h sáng nhà máy cần dữ liệu để chạy ca sản xuất. Anh/chị xử lý thế nào?**
+① Fact: người trực xem log, xác định bước lỗi và dữ liệu đã xử lý đến đâu, ước tính thời gian chạy lại. ② Hành động: lỗi do data/hạ tầng tạm thời → rerun từ checkpoint theo runbook; nếu không kịp trước 7h → chuẩn bị phương án thay thế (dùng dữ liệu hôm trước, xuất tay phần thiết yếu) để khách chọn. ③ Báo: gọi đầu mối trực của khách theo danh sách liên lạc khẩn ngay khi xác nhận có ảnh hưởng, cập nhật mỗi 30 phút. ④ Sau sự cố: なぜなぜ分析 (naze naze bunseki – hỏi "tại sao" lặp lại đến gốc), thêm alert sớm, retry tự động, cập nhật runbook.
+
+**Q713. Lúc 2h sáng giờ Nhật (0h Việt Nam), monitoring báo hệ thống web của khách bảo hiểm B không truy cập được, đầu mối trực phía khách không nghe máy. Anh/chị xử lý thế nào?**
+① Fact: kiểm tra phạm vi (toàn bộ hay một phần), nguyên nhân sơ bộ (deploy mới, hạ tầng, bị tấn công). ② Hành động: làm các bước runbook đã được khách duyệt (restart, failover, rollback); việc ngoài thẩm quyền đã thỏa thuận thì không tự làm. ③ Báo: gọi lần lượt danh sách escalation (người thứ 2, thứ 3), đồng thời gửi email/chat để lưu dấu thời gian và hiện trạng, cập nhật định kỳ. ④ Sau sự cố: cùng khách rà lại danh sách liên lạc khẩn và phạm vi quyền xử lý ban đêm, ghi vào tài liệu vận hành.
+
+**Q714. Release bản cập nhật cho khách bảo hiểm B vào ngày 31/3 (年度末), sau 1 giờ phát hiện lỗi ở màn hình báo cáo quyết toán. Anh/chị xử lý thế nào?**
+① Fact: lỗi chặn nghiệp vụ quyết toán hay chỉ sai hiển thị; có workaround không. ② Hành động: chặn nghiệp vụ → đề xuất rollback ngay theo kế hoạch 切り戻し; có workaround → hướng dẫn người dùng, làm hotfix có test và duyệt trong ngày. ③ Báo khách trong 30 phút với 4 ý: hiện tượng, ảnh hưởng, việc đang làm, giờ báo tiếp theo. ④ Phòng ngừa: đưa quy tắc "đóng băng release" quanh 年度末 (nendomatsu – cuối năm tài chính, thường là cuối tháng 3) vào kế hoạch năm, chỉ cho phép release sửa lỗi khẩn.
+
+**Q715. Hai tuần sau khi chuyển đổi dữ liệu, khách phát hiện tên khách hàng hiển thị sai ở khoảng 1% bản ghi. Anh/chị xử lý thế nào?**
+① Fact: so với dữ liệu nguồn, tìm pattern — thường là 外字 (gaiji – chữ Kanji ngoài bảng mã chuẩn) hoặc chuyển đổi Shift_JIS ↔ UTF-8. ② Hành động: viết script đối chiếu toàn bộ, xác định chính xác bản ghi lỗi và dữ liệu phát sinh sau đó có bị lan không. ③ Báo khách bản đầu trong ngày, kèm danh sách bản ghi lỗi và kế hoạch sửa; script sửa chỉ chạy khi khách duyệt. ④ Gốc: thêm bước verify sau chuyển đổi (so khớp 100% trường quan trọng), 横展開 kiểm các bảng có trường tên/địa chỉ tương tự.
+> 💡 外字 và Shift_JIS là bẫy kinh điển khi migrate hệ thống Nhật — nêu ra được cho thấy bạn đã làm thật.
+
+**Q716. Sự cố production vừa xử lý xong, khách bảo hiểm B yêu cầu nộp 障害報告書 trong 2 ngày làm việc. Anh/chị xử lý thế nào?**
+① Fact: dựng timeline chính xác (phát hiện, báo, xử lý tạm, khôi phục) từ log và lịch sử chat, không viết theo trí nhớ. ② Hành động: viết theo cấu trúc chuẩn: 現象 (genshou – hiện tượng) · 影響範囲 · 原因 (gen'in – nguyên nhân trực tiếp và gốc) · 暫定対応 · 恒久対応 · 再発防止 · 横展開. ③ Báo: BrSE kiểm tiếng Nhật, cấp trên/QA duyệt trước khi gửi; xin 30 phút giải thích trực tiếp với khách. ④ Mỗi biện pháp phòng ngừa có người phụ trách + hạn, báo trạng thái trong 定例会 đến khi đóng.
+
+**Q717. Cần hotfix khẩn cho khách ngân hàng A trong 4 giờ, nhưng quy trình release chuẩn của khách yêu cầu review và test 2 ngày. Anh/chị xử lý thế nào?**
+① Fact: mức nghiêm trọng thật sự, có workaround tạm (tắt chức năng, xử lý tay) để giảm áp lực thời gian không. ② Hành động: có workaround → áp dụng, hotfix đi quy trình đầy đủ; không có → xin áp dụng quy trình 緊急リリース (kinkyuu ririisu – release khẩn cấp) nếu khách có, review chéo 2 người, test phần thay đổi + smoke test. ③ Báo khách: không tự ý bỏ bước, xin phê duyệt ngoại lệ bằng văn bản từ người có thẩm quyền. ④ Sau release: bổ sung test đầy đủ và hồ sơ release trong 1–2 ngày.
+
+**Q718. Cùng một lỗi production lặp lại lần thứ 3 trong 2 tháng dù team đã nộp 障害報告書 hai lần. Anh/chị xử lý thế nào?**
+① Fact: đọc lại 2 báo cáo cũ — thường 再発防止 chỉ dừng ở "nhắc nhở cẩn thận", nguyên nhân gốc chưa chạm tới quy trình. ② Hành động: xử lý sự cố lần 3, rồi tổ chức なぜなぜ分析 mới có người ngoài team (QA/PMO), đi đến nguyên nhân ở mức cơ chế. ③ Báo khách: thừa nhận biện pháp trước chưa hiệu quả, xin lỗi chính thức cùng cấp trên của mình, trình biện pháp cơ chế (check tự động trong CI, checklist bắt buộc có người ký). ④ Theo dõi chỉ số tái phát 3 tháng, báo trong 定例会.
+> 💡 "Đào tạo lại / nhắc nhở" không được khách Nhật chấp nhận là 再発防止 — phải là cơ chế khiến lỗi không thể lặp lại.
+
+**Q719. Sau release, người dùng phía khách sản xuất C báo hệ thống chậm gấp 3 lần, nhưng môi trường test của team không tái hiện được. Anh/chị xử lý thế nào?**
+① Fact: xin log/metric production (response time, slow query, số user đồng thời), so volume dữ liệu thật với môi trường test. ② Hành động: khoanh vùng các thay đổi trong release; nếu ảnh hưởng nặng → rollback hoặc tắt tính năng mới rồi phân tích offline. ③ Báo khách: xác nhận đã nhận, nêu các bước điều tra và mốc cập nhật; không bao giờ trả lời "bên em không thấy lỗi". ④ Gốc: bổ sung performance test với dữ liệu cỡ production và monitoring APM.
+
+**Q720. Member offshore lỡ chạy lệnh xóa dữ liệu trên staging của khách, môi trường dùng chung với vendor khác đang làm 受入テスト. Anh/chị xử lý thế nào?**
+① Fact: dữ liệu nào bị xóa, có backup không, ai đang bị ảnh hưởng. ② Hành động: dừng mọi thao tác, nhờ khách/bên vận hành restore từ backup, hỗ trợ dựng lại data test. ③ Báo khách trong 30 phút, nói thật nguyên nhân là thao tác của bên mình; gửi lời xin lỗi tới vendor bị ảnh hưởng qua khách để họ điều chỉnh lịch 受入テスト (ukeire tesuto – kiểm thử nghiệm thu). ④ 再発防止: tách quyền (member không có quyền xóa trên môi trường chung), lệnh nguy hiểm phải ダブルチェック (daburu chekku – 2 người xác nhận), 横展開 rà quyền ở các môi trường khác.
+
+## 8.3 Yêu cầu mơ hồ & thay đổi
+
+**Q721. Khách bảo hiểm B đã duyệt 基本設計 được 2 tuần, nay muốn đổi luồng phê duyệt hợp đồng từ 2 cấp thành 3 cấp, team đang ở 詳細設計. Anh/chị xử lý thế nào?**
+① Fact: xác nhận đây là 仕様変更 (shiyou henkou – thay đổi đặc tả) so với bản đã duyệt; phân tích ảnh hưởng tới màn hình, DB, phân quyền, test, tài liệu. ② Hành động: trong 2–3 ngày làm impact analysis + estimate effort/lịch; trong lúc chờ, team không làm theo spec mới. ③ Báo khách: gửi CR có effort, chi phí, ảnh hưởng 納期 và 2 lựa chọn thời điểm áp dụng (ngay hoặc phase sau). ④ Khách duyệt xong mới cập nhật tài liệu thiết kế, traceability; ghi số CR để báo cáo xu hướng thay đổi.
+
+**Q722. Đang 総合テスト, khách nói "chức năng xuất CSV thì 当然 phải có" dù không có trong 要件定義. Anh/chị xử lý thế nào?**
+① Fact: rà tài liệu yêu cầu, 議事録, QA表; nếu từng được nhắc mà bên mình bỏ sót → nhận lỗi và lên kế hoạch làm. ② Nếu không có: ghi nhận nhu cầu, estimate nhanh. ③ Báo khách khéo, không cãi đúng sai trong họp: "Theo tài liệu đã chốt, chức năng này chưa nằm trong phạm vi; chúng tôi đề xuất xử lý như CR, effort X ngày" — việc nhỏ, quan hệ quan trọng thì có thể làm miễn phí, ghi rõ là ngoại lệ. ④ Gốc: checklist các yêu cầu kiểu 当然 (touzen – "đương nhiên", khách không nói ra) như export, in, log, phân quyền để hỏi ngay ở 要件定義.
+
+**Q723. Dự án 請負 cho khách sản xuất C, sau mỗi buổi demo khách lại "nhờ chỉnh nhỏ một chút", tích lại đã khoảng 15% effort ngoài scope. Anh/chị xử lý thế nào?**
+① Fact: liệt kê toàn bộ chỉnh sửa ngoài yêu cầu kèm effort thực tế đã tiêu. ② Hành động: từ hôm nay, mọi yêu cầu mới vào bảng CR và phân loại: lỗi/bỏ sót (mình chịu) hay thay đổi (CR). ③ Báo khách: gặp riêng người quyết định, trình số liệu 15% và ảnh hưởng tới 納期/chất lượng; đề xuất 3 hướng: tính phí phần vượt, đổi lấy cắt phần khác, hoặc gom vào phase 2. ④ Phòng ngừa: định nghĩa "chỉnh nhỏ" đo được (vd < 0,5 ngày công/yêu cầu, tổng mỗi tháng có trần) trong quy trình CR của hợp đồng 請負 (ukeoi – hợp đồng trọn gói, cam kết kết quả).
+> 💡 Trong 請負, scope creep là tiền công ty mất trực tiếp — mở số liệu sớm, đừng đợi cuối dự án mới đòi.
+
+**Q724. Người phụ trách phía khách nhắn qua Teams lúc 21h: "Sửa luôn màn hình này nhé, gấp", không có email hay CR. Anh/chị xử lý thế nào?**
+① Fact: đọc kỹ, phân biệt đây là sửa lỗi hay thay đổi, ảnh hưởng tới đâu. ② Hành động: trả lời ngay trong chat là đã nhận và sẽ báo đánh giá ảnh hưởng trong N giờ; việc nhỏ và gấp thật thì có thể bắt đầu, nhưng sau khi xác nhận lại bằng văn bản. ③ Báo: chuyển thành ticket/CR, gửi email "chúng tôi hiểu yêu cầu như sau…, effort…, ảnh hưởng…, xin xác nhận", cc 窓口 (madoguchi – đầu mối chính thức) phía khách. ④ Gốc: chốt lại trong 定例会 kênh tiếp nhận yêu cầu chính thức; chat chỉ để liên lạc nhanh.
+
+**Q725. Khách gửi spec màn hình chỉ là ảnh chụp Excel, không mô tả logic, còn 2 tuần là hết hạn 詳細設計. Anh/chị xử lý thế nào?**
+① Fact: liệt kê các điểm thiếu: validate, xử lý lỗi, phân quyền, điều kiện hiển thị, giá trị mặc định. ② Hành động: BA/BrSE tự đề xuất spec theo 前提 hợp lý nhất (dựa trên màn tương tự, nghiệp vụ chung), viết QA表 dạng câu hỏi đóng "Chúng tôi hiểu là A, đúng không?". ③ Báo khách: gửi QA表 theo đợt hằng ngày có hạn trả lời; thống nhất trước quy tắc câu quá hạn sẽ làm theo 前提 và ghi rủi ro làm lại. ④ Gốc: đề xuất template spec màn hình cho các module sau.
+
+**Q726. Khách ngân hàng A trả lời "検討します" cho 12 câu hỏi quan trọng trong QA表 suốt 3 tuần, team bắt đầu bị chặn. Anh/chị xử lý thế nào?**
+① Fact: phân loại 12 câu theo ảnh hưởng: câu nào chặn công việc 2 tuần tới, câu nào chờ được. ② Hành động: với câu chặn, đưa đề xuất mặc định kèm hạn quyết định, tạm làm theo 前提 và ghi rủi ro làm lại. ③ Báo: hỏi nhẹ ai là người quyết định thật, xin 30 phút họp có người đó; nêu ngày quyết định muộn nhất và hệ quả nếu trễ (ảnh hưởng 納期, chi phí). ④ Gốc: thêm cột "hạn quyết định" vào 課題管理表, báo số issue quá hạn trong 定例会 có cấp trên phía khách dự.
+> 💡 "検討します" (kentou shimasu – sẽ xem xét) kéo dài thường nghĩa là người đối diện không có thẩm quyền hoặc chưa muốn quyết — tìm người quyết định thay vì hỏi lại cùng một người.
+
+**Q727. Đang 結合テスト, team phát hiện hai tài liệu 基本設計 của khách mâu thuẫn về cách làm tròn số tiền phí bảo hiểm. Anh/chị xử lý thế nào?**
+① Fact: ghi rõ 2 chỗ mâu thuẫn kèm ví dụ số cho thấy kết quả khác nhau (切り上げ kiriage – làm tròn lên, so với 切り捨て kirisute – bỏ phần lẻ). ② Hành động: tạm dừng các test case liên quan, test phần khác. ③ Báo khách ngay trong ngày, mức ưu tiên cao vì liên quan tiền; hỏi dạng chọn "A hay B", kèm ảnh hưởng và đề xuất của team. ④ Sau khi chốt: sửa cả hai tài liệu, 横展開 rà toàn bộ chỗ có làm tròn, thuế, phân bổ tiền trong hệ thống.
+
+**Q728. Khách sản xuất C muốn bỏ qua 要件定義 vì "cứ làm giống hệ thống cũ" (現行踏襲), nhưng hệ thống cũ không có tài liệu. Anh/chị xử lý thế nào?**
+① Fact: đánh giá hệ cũ: số màn hình, batch, logic ẩn; còn source không, ai còn hiểu nghiệp vụ. ② Hành động: đề xuất giai đoạn ngắn phân tích ngược (reverse engineering, vd 2–4 tuần) để lập tài liệu hiện trạng — là deliverable có phí, nên tính theo công sức. ③ Báo khách: "giống hệ cũ" không đo được thì không nghiệm thu được; xin khách xác nhận tài liệu hiện trạng làm đầu vào. ④ Gốc: ghi phạm vi 現行踏襲 (genkou toushuu – kế thừa nguyên hiện trạng) và 前提条件 vào hợp đồng; khác biệt phát hiện sau xử lý như CR.
+> 💡 "Giống hệ cũ" là câu nguy hiểm nhất của dự án migrate: phải biến nó thành tài liệu kiểm chứng được trước khi báo giá cố định.
+
+**Q729. Sau 受入テスト, khách yêu cầu đổi toàn bộ wording giao diện theo thuật ngữ mới của phòng kinh doanh và release trong 1 tuần. Anh/chị xử lý thế nào?**
+① Fact: đếm số chuỗi, màn hình, tài liệu, message lỗi bị ảnh hưởng; kiểm text đã tách thành resource file chưa. ② Hành động: có resource file → effort nhỏ, sửa nhanh + regression giao diện; nếu hardcode → effort lớn, đề xuất làm trước màn hình người dùng ngoài. ③ Báo khách: đây là CR, nêu effort và rủi ro release gấp; xin 用語集 (yougoshuu – bảng thuật ngữ) chính thức một lần duy nhất để không sửa nhiều vòng. ④ Gốc: từ đầu dự án quản lý text bằng resource file và bảng thuật ngữ có người duyệt.
+
+**Q730. Ngay trước 総合テスト, khách bảo hiểm B gửi 30 yêu cầu thay đổi cùng lúc, tất cả đều ghi "ưu tiên cao". Anh/chị xử lý thế nào?**
+① Fact: estimate sơ bộ từng CR, đánh dấu CR gắn với luật/quy định hay go-live và CR chỉ là mong muốn. ② Hành động: tổ chức workshop 1–2 giờ, dùng MoSCoW hoặc so sánh từng cặp để xếp hạng; chỉ nhận số CR vừa năng lực còn lại, phần còn lại vào release sau. ③ Báo: gửi bảng xếp hạng + ảnh hưởng 納期/chi phí cho người có thẩm quyền ký duyệt. ④ Gốc: đưa "giai đoạn đóng băng thay đổi" (vd 2 tuần trước mỗi vòng test — tham khảo) vào kế hoạch và hợp đồng.
+
+## 8.4 Khiếu nại chất lượng & mất niềm tin
+
+**Q731. Khách ngân hàng A trả lại tài liệu 詳細設計 với 40 指摘, phần lớn là lỗi chính tả tiếng Nhật và định dạng không thống nhất. Anh/chị xử lý thế nào?**
+① Fact: phân loại 40 指摘 (shiteki – điểm bị chỉ ra) theo nội dung/chính tả/định dạng; xác định lỗi do người viết hay do bỏ bước review. ② Hành động: sửa toàn bộ trong 2–3 ngày, gửi bảng đối chiếu từng 指摘 → nội dung đã sửa. ③ Báo khách: xin lỗi vì làm tốn thời gian review của họ, nêu biện pháp: người giỏi tiếng Nhật review trước khi gửi, checklist định dạng. ④ 再発防止: tool kiểm chính tả/định dạng, đo số 指摘 trên mỗi trang làm chỉ số chất lượng tài liệu, 横展開 cho các tài liệu còn lại.
+> 💡 Với khách Nhật, lỗi chính tả là dấu hiệu thiếu cẩn thận và kéo theo nghi ngờ cả chất lượng code — đừng coi là chuyện nhỏ.
+
+**Q732. Sau một sự cố, khách bảo hiểm B yêu cầu bản なぜなぜ分析 khoảng 10 trang, team cho rằng chỉ tốn thời gian. Anh/chị xử lý thế nào?**
+① Fact: hiểu khách cần tài liệu này để giải trình nội bộ với cấp trên của họ — làm tốt là giúp 担当者 (tantousha – người phụ trách phía khách). ② Hành động: PM chủ trì một buổi 2 giờ với người liên quan, đi tới nguyên nhân gốc ở mức quy trình/cơ chế; viết theo format khách quen, có sơ đồ cây nguyên nhân. ③ Báo: gửi bản nháp để 担当者 góp ý trước, chỉnh rồi mới nộp chính thức. ④ Với team: giải thích giá trị, chia việc để không ảnh hưởng tiến độ; dùng kết quả làm bài học 横展開 cho dự án khác.
+
+**Q733. 受入テスト của khách sản xuất C ra 50 bug trong tuần đầu, khách gửi email bày tỏ lo ngại về chất lượng. Anh/chị xử lý thế nào?**
+① Fact: phân loại 50 bug: lỗi thật / không phải lỗi / trùng / do spec chưa rõ; theo mức độ và module để tìm điểm tập trung. ② Hành động: lập đội xử lý bug chặn nghiệp vụ trong 48 giờ; rà lại test case nội bộ để biết vì sao lọt. ③ Báo khách trong 1–2 ngày: nhận trách nhiệm trước rồi mới làm rõ các mục "không phải lỗi"; kế hoạch sửa theo ngày, cập nhật số bug mở/đóng hằng ngày. ④ 再発防止: bổ sung test case theo góc nhìn nghiệp vụ người dùng, 横展開 rà module tương tự trước khi khách test tiếp.
+
+**Q734. Sau 2 lần release lỗi, khách yêu cầu được review từng dòng code trước mỗi lần release. Anh/chị xử lý thế nào?**
+① Fact: hiểu khách cần cảm giác kiểm soát; tính xem việc khách review làm chậm mỗi release bao lâu. ② Hành động: nhận ngay ở giai đoạn đầu; chuẩn bị diff gọn, mô tả thay đổi, kết quả test và review nội bộ đi kèm. ③ Đồng thời minh bạch chỉ số chất lượng (coverage, static analysis, checklist review) để khách thấy cơ chế, không chỉ thấy code. ④ Sau 3–4 release ổn định, đề xuất bằng số liệu chuyển sang review theo rủi ro (chỉ logic tính tiền, bảo mật), giảm gánh cho cả hai bên.
+
+**Q735. Trong 定例会, khách nói: "Nếu chất lượng không cải thiện, tháng sau chúng tôi sẽ cân nhắc chuyển vendor". Anh/chị xử lý thế nào?**
+① Fact: ghi nhận nghiêm túc, hỏi rõ khách muốn thấy "cải thiện" ở chỉ số nào (số bug, thời gian phản hồi, chất lượng tài liệu). ② Hành động: trong 1 tuần lập 品質改善計画 (hinshitsu kaizen keikaku – kế hoạch cải thiện chất lượng) với chỉ số đo được và mốc 30/60 ngày; bổ sung người kinh nghiệm/QA. ③ Báo: escalate nội bộ ngay tới cấp trên/account manager, cùng gặp khách để thể hiện cam kết cấp công ty. ④ Báo cáo tiến triển hằng tuần theo đúng chỉ số đã thống nhất đến khi khách xác nhận ổn.
+> 💡 Câu "chuyển vendor" là tín hiệu cần cấp quản lý cao hơn vào cuộc — PM tự xử lý một mình là sai.
+
+**Q736. Khách phàn nàn email hỏi đáp của team thường trả lời chậm 2–3 ngày, còn team cho rằng câu hỏi phức tạp nên cần thời gian điều tra. Anh/chị xử lý thế nào?**
+① Fact: đo thời gian phản hồi thực tế 1 tháng qua theo loại câu hỏi. ② Hành động: tách "xác nhận đã nhận" và "trả lời nội dung": xác nhận trong vài giờ làm việc kèm thời điểm sẽ trả lời; câu cần điều tra lâu thì gửi cập nhật giữa chừng. ③ Báo khách quy tắc phản hồi mới và cam kết thời gian theo mức ưu tiên. ④ Phân công người trực inbox theo ca, theo dõi chỉ số phản hồi trong báo cáo tuần.
+
+**Q737. Khách bảo hiểm B phát hiện một số test case được ghi "OK" nhưng không có screenshot hay log làm bằng chứng. Anh/chị xử lý thế nào?**
+① Fact: kiểm toàn bộ: bao nhiêu case thiếu bằng chứng, có case nào thực chất chưa test không. ② Hành động: test lại mọi case thiếu bằng chứng, lưu エビデンス (ebidensu – bằng chứng kiểm thử) đầy đủ theo format khách. ③ Báo khách trung thực: số lượng, nguyên nhân (hiểu sai quy định hay bỏ bước), kế hoạch test lại; không che giấu. ④ 再発防止: định nghĩa evidence bắt buộc cho từng loại case, QA kiểm ngẫu nhiên khoảng 10% (tham khảo) trước khi nộp, 横展開 cho các đợt test khác.
+> 💡 Khách Nhật coi evidence test như chứng từ kế toán: không có bằng chứng nghĩa là chưa test.
+
+**Q738. Khách sản xuất C nói trong họp: "Vendor làm module bên cạnh rất ít bug, sao bên anh nhiều vậy?". Anh/chị xử lý thế nào?**
+① Fact: không phản bác tại chỗ; cảm ơn và xin dữ liệu so sánh (độ phức tạp, quy mô, cách đếm bug), đồng thời rà số liệu của mình. ② Hành động: phân tích bug theo nguyên nhân (thiết kế, code, hiểu sai yêu cầu) và giai đoạn phát hiện, chọn 2–3 điểm cải thiện ngay. ③ Báo khách bằng số liệu: thừa nhận phần đúng, nêu nhẹ nhàng khác biệt khách quan nếu có, trình kế hoạch cải thiện. ④ Cùng khách thống nhất cách đo chung (bug/KLOC hoặc bug/test case), theo dõi xu hướng theo tuần.
+
+**Q739. Khách đòi xem kết quả 単体テスト theo từng hàm dạng bảng Excel, trong khi team chỉ có unit test tự động trên CI. Anh/chị xử lý thế nào?**
+① Fact: xem hợp đồng/quy định chất lượng của khách có yêu cầu deliverable 単体テスト仕様書 (tantai tesuto shiyousho – tài liệu test case đơn vị) không. ② Hành động: nếu bắt buộc → bổ sung, nhưng sinh tự động từ code test (tên test, điều kiện, kết quả mong đợi) + báo cáo coverage, tránh viết tay. ③ Báo khách: demo cách làm tự động, đề xuất format thay thế; khách vẫn cần Excel thì xuất đúng format khách. ④ Gốc: lần sau chốt danh sách deliverable và format ngay từ kickoff.
+
+**Q740. Sau 1 năm hợp tác suôn sẻ, khách bảo hiểm B bất ngờ giảm 50% khối lượng order cho phase tiếp theo mà không nói rõ lý do. Anh/chị xử lý thế nào?**
+① Fact: hỏi qua kênh tin cậy (BrSE, account manager) nguyên nhân thật: ngân sách, chất lượng, giá hay chính sách nội bộ. ② Hành động: xin một buổi 振り返り (furikaeri – nhìn lại) với khách, nghe phản hồi thẳng thắn, không phòng thủ. ③ Báo nội bộ để sales/account cùng xử lý; nếu nguyên nhân là chất lượng/giá → đưa kế hoạch cải thiện cụ thể. ④ Giữ chất lượng phần việc còn lại ở mức tốt nhất, chuẩn bị đề xuất giá trị (tự động hóa, cải tiến vận hành) để giành lại phần đã mất.
+
+## 8.5 Onsite–offshore & cầu nối
+
+**Q741. BrSE onsite nói team offshore Đà Nẵng code sai spec, team offshore nói BrSE truyền đạt sai, khách đang chờ bản sửa. Anh/chị xử lý thế nào?**
+① Fact: sửa cho khách trước, truy sự thật sau — đối chiếu email/ticket gốc của khách → bản BrSE truyền đạt → code. ② Hành động: giao 1 người chịu trách nhiệm sửa ngay; BrSE xác nhận lại spec trực tiếp với khách trong ngày. ③ Báo khách với tư cách 1 team: xin lỗi, hẹn giờ giao bản sửa; không để khách thấy nội bộ đổ lỗi. ④ Gốc: họp 3 bên không truy lỗi cá nhân, đặt quy tắc spec truyền đạt phải bằng văn bản và offshore gửi bản 認識合わせ (ninshiki awase – đồng bộ cách hiểu) trước khi code.
+> 💡 Với khách, onsite và offshore là một công ty — PM phải dập việc đổ lỗi trước khi nó lọt ra ngoài.
+
+**Q742. BrSE duy nhất của dự án ngân hàng A xin nghỉ việc, còn 2 tuần bàn giao, dự án đang giữa 詳細設計. Anh/chị xử lý thế nào?**
+① Fact: liệt kê những gì chỉ BrSE nắm: quan hệ với khách, spec chưa ghi lại, issue đang mở, cam kết miệng. ② Hành động: ngay hôm đó lập kế hoạch 引継ぎ (hikitsugi – bàn giao công việc) 2 tuần; người thay (BrSE khác hoặc member giỏi tiếng Nhật) dự mọi cuộc họp, tài liệu hóa mọi thứ. ③ Báo khách sau khi đã có người thay: giới thiệu người mới, lịch bàn giao, cam kết mốc; nếu được, BrSE cũ cùng dự buổi chào khách. ④ Gốc: mọi vai trò cầu nối đều có backup nắm thông tin khách, giảm phụ thuộc 1 người.
+
+**Q743. Comtor dịch "以上" thành "lớn hơn" (đúng ra là "lớn hơn hoặc bằng") trong spec điều kiện giảm phí, team code sai giá trị biên, khách phát hiện khi 総合テスト. Anh/chị xử lý thế nào?**
+① Fact: xác nhận lỗi phát sinh ở khâu dịch, kiểm các điều kiện biên khác trong tài liệu đã dịch. ② Hành động: sửa code + test biên ngay; rà toàn bộ spec có 以上/以下/未満/超 (≥, ≤, <, >). ③ Báo khách: nhận lỗi của bên mình (không đẩy cho cá nhân comtor), kèm số chỗ đã rà và kết quả. ④ 再発防止: glossary dịch bắt buộc cho từ khóa điều kiện, test case biên viết trực tiếp từ bản tiếng Nhật gốc, spec tính tiền phải có BrSE review bản dịch.
+> 💡 Cặp 以上/超 và 以下/未満 là bẫy dịch kinh điển — kể ví dụ này cho thấy bạn hiểu rủi ro ngôn ngữ thật.
+
+**Q744. Phát hiện BrSE onsite đã nhận 5 yêu cầu từ khách trong 2 tuần nhưng không báo offshore, đến khi khách hỏi tiến độ mới lộ ra. Anh/chị xử lý thế nào?**
+① Fact: thu thập 5 yêu cầu: ngày nhận, nội dung, BrSE đã hứa gì với khách. ② Hành động: estimate và xếp lịch ngay, xác định yêu cầu nào là CR cần xử lý hợp đồng. ③ Báo khách lịch xử lý thực tế, xin lỗi vì chậm; với CR vẫn đi đúng quy trình dù BrSE đã "hứa". ④ Gốc: yêu cầu nhận ở onsite phải vào ticket trong 24 giờ, PM xem backlog hằng ngày; nói chuyện riêng với BrSE để hiểu nguyên nhân (quá tải, ngại từ chối khách) và gỡ.
+
+**Q745. Team offshore than BrSE chỉ chuyển tiếp nguyên email khách mà không phân tích, mỗi câu hỏi mất 1–2 ngày mới có câu trả lời. Anh/chị xử lý thế nào?**
+① Fact: đo số câu hỏi/tuần và thời gian chờ trung bình; xem khối lượng việc của BrSE. ② Hành động: họp ngắn onsite–offshore 15 phút đầu ngày để gom câu hỏi; định nghĩa BrSE chịu trách nhiệm "làm rõ + phân tích", không chỉ chuyển tiếp. ③ Đề xuất với khách một khung giờ Q&A cố định hoặc cho tech lead offshore dự họp kỹ thuật trực tiếp (BrSE hỗ trợ). ④ Gốc: ghi rõ vai trò BrSE trong 体制図 (taiseizu – sơ đồ tổ chức dự án) và ma trận RACI, theo dõi chỉ số thời gian trả lời.
+
+**Q746. Khách muốn làm việc trực tiếp với dev offshore qua chat cho nhanh, bỏ qua BrSE và PM. Anh/chị xử lý thế nào?**
+① Fact: hỏi lý do — thường là kênh hiện tại chậm, tức là tín hiệu cần sửa phía mình. ② Hành động: đồng ý có khung: mở kênh trực tiếp cho Q&A kỹ thuật, nhưng mọi yêu cầu thay đổi/giao việc vẫn qua ticket; PM/BrSE ở trong channel. ③ Báo khách quy tắc kênh và lợi ích (kiểm soát scope, chất lượng, lưu vết). ④ Định kỳ rà chat để phát hiện CR ngầm; cải thiện tốc độ phản hồi của BrSE/PM để kênh chính không bị bỏ qua.
+
+**Q747. Dự án có comtor nhưng không có BrSE, các buổi họp spec 2 giờ với khách chỉ ra 議事録 sơ sài, team hiểu sai nhiều chỗ. Anh/chị xử lý thế nào?**
+① Fact: xem 議事録 các buổi trước, đếm số lần làm lại do hiểu sai. ② Hành động: gửi agenda và câu hỏi trước bằng tiếng Nhật; tech lead cùng dự; ghi âm nếu khách đồng ý; trong 24 giờ sau họp gửi 議事録 có danh sách quyết định + action để khách xác nhận. ③ Báo khách: đề nghị coi 議事録 đã xác nhận là văn bản chốt. ④ Gốc: đề xuất công ty bổ sung BrSE hoặc đào tạo comtor về domain; xây glossary dự án.
+
+**Q748. Khách phàn nàn: mỗi lần giao việc, offshore đều trả lời "はい、わかりました" nhưng sau đó vẫn làm sai. Anh/chị xử lý thế nào?**
+① Fact: nhận diện vấn đề văn hóa — member nói "đã hiểu" vì ngại hỏi lại. ② Hành động: áp dụng 復唱 (fukushou – nhắc lại để xác nhận): sau mỗi yêu cầu, member viết lại bằng lời mình kèm ví dụ input/output và gửi khách xác nhận trước khi làm. ③ Báo khách biện pháp mới, mời khách chỉ ra ngay nếu bản xác nhận sai. ④ Nội bộ: tạo môi trường hỏi an toàn, khen câu hỏi tốt; đo số lần làm lại do hiểu sai mỗi tháng.
+> 💡 "わかりました" của người không nói tiếng mẹ đẻ thường chỉ có nghĩa "tôi đã nghe" — PM phải thiết kế bước xác nhận, không tin câu trả lời.
+
+**Q749. Member onsite làm tại văn phòng khách ở Nhật bị phàn nàn về thái độ: đi muộn, dùng điện thoại trong họp. Anh/chị xử lý thế nào?**
+① Fact: hỏi khách sự việc cụ thể, nghe cả phía member. ② Hành động: nói chuyện riêng với member trong ngày, nhắc quy tắc ứng xử tại văn phòng khách (có mặt trước giờ, điện thoại im lặng, báo trước khi vắng), đặt kỳ vọng rõ; tái diễn thì thay người. ③ Báo khách: cảm ơn phản hồi, xin lỗi, nêu biện pháp và theo dõi. ④ Phòng ngừa: đào tạo ビジネスマナー (bijinesu manaa – phép lịch sự công sở Nhật) bắt buộc trước khi cử onsite, hỏi phản hồi khách sau tháng đầu.
+
+**Q750. Đội onsite 3 người và offshore 15 người dùng hai phiên bản tài liệu khác nhau, khách phát hiện deliverable bị lẫn bản cũ. Anh/chị xử lý thế nào?**
+① Fact: xác định deliverable nào sai phiên bản, đã ảnh hưởng tới đâu (code, test, khách đã dùng chưa). ② Hành động: thu hồi và gửi lại bản đúng; rà toàn bộ deliverable đã gửi trong tháng. ③ Báo khách: xin lỗi, liệt kê tài liệu đã gửi lại và phạm vi đã rà. ④ Gốc: một kho tài liệu duy nhất có quản lý version, mọi tài liệu có 改訂履歴 (kaitei rireki – lịch sử sửa đổi), gửi deliverable qua checklist (tên file, version, người duyệt).
+
+## 8.6 Nguồn lực
+
+**Q751. Tech lead của dự án bảo hiểm B (team 15 người) báo nghỉ việc với 30 ngày báo trước, đúng lúc chuẩn bị 結合テスト. Anh/chị xử lý thế nào?**
+① Fact: đánh giá phần chỉ tech lead nắm (kiến trúc, module phức tạp, môi trường, deploy), chọn ứng viên kế nhiệm trong team. ② Hành động: tuần đầu lập kế hoạch 引継ぎ có checklist, pair-working hằng ngày; xin công ty 1 senior từ dự án khác làm backup giai đoạn test. ③ Báo khách khi đã có phương án: người kế nhiệm, lịch bàn giao, mốc giữ nguyên hay ảnh hưởng ra sao. ④ Gốc: nguyên tắc mỗi module ít nhất 2 người hiểu sâu, tài liệu kiến trúc cập nhật theo sprint.
+> 💡 Báo khách khi đã có phương án — khách Nhật lo về 体制 (taisei – đội hình dự án) hơn là lo một cá nhân.
+
+**Q752. Khách sản xuất C ký thêm phase lớn, cần ramp-up team từ 5 lên 20 người trong 1 tháng. Anh/chị xử lý thế nào?**
+① Fact: xác định skill cần (ngôn ngữ, domain, tiếng Nhật), nhu cầu người theo tuần; kiểm năng lực tuyển/điều chuyển của công ty. ② Hành động: tăng theo đợt (vd tuần 1–2 thêm 5, tuần 3–4 thêm 10) thay vì một lần; 5 người cũ làm sub-leader, mỗi người kèm 3 người mới; chuẩn bị bộ onboarding (domain, coding convention, môi trường) để rút ngắn thời gian vào việc. ③ Báo khách kế hoạch 体制, năng suất kỳ vọng theo tháng và rủi ro giai đoạn đầu. ④ Kiểm soát chất lượng: review 100% code người mới trong tháng đầu, theo dõi bug theo người.
+
+**Q753. Khách bảo hiểm B yêu cầu thay một developer vì "chậm và hay sai", nhưng em đánh giá bạn ấy đang tiến bộ. Anh/chị xử lý thế nào?**
+① Fact: xin khách ví dụ cụ thể, đối chiếu dữ liệu bug/tiến độ của member trong 1–2 tháng. ② Hành động: nếu khách đúng → chuyển member sang phần ít tiếp xúc khách hoặc dự án khác, bố trí người thay có thời gian chồng lấn bàn giao; nếu khách chưa thấy tiến bộ → trình số liệu, xin theo dõi 2–4 tuần với tiêu chí rõ. ③ Báo khách quyết định và kế hoạch, không tranh luận cảm tính. ④ Với member: phản hồi riêng, giữ thể diện, có kế hoạch phát triển cụ thể.
+
+**Q754. Sắp vào 要件定義, dự án cần 4 người giao tiếp trực tiếp với khách bằng tiếng Nhật mức N2 nhưng team chỉ có 1 người. Anh/chị xử lý thế nào?**
+① Fact: xác định vai trò nào thật sự cần tiếng Nhật (họp, viết tài liệu, Q&A) và vai trò nào làm qua tài liệu được. ② Hành động: người N2 làm cầu nối chính; xin thêm BrSE/comtor từ pool công ty cho giai đoạn 要件定義; member khác làm qua tài liệu đã dịch, dịch máy chỉ dùng tool công ty cho phép, không đưa dữ liệu khách vào tool công cộng. ③ Báo khách 体制 giao tiếp rõ: ai là đầu mối, ai viết 議事録. ④ Dài hạn: lộ trình học tiếng Nhật cho member, tận dụng chương trình đào tạo tiếng Nhật của công ty.
+
+**Q755. Tết Nguyên đán rơi vào tháng 2, trùng giai đoạn 総合テスト trước 年度末 của khách bảo hiểm B, khách muốn team làm xuyên Tết. Anh/chị xử lý thế nào?**
+① Fact: lập lịch nghỉ thực tế từng người, tính effort mất. ② Hành động: đưa lịch Tết vào WBS (nếu chưa, làm ngay), kéo việc lên trước Tết, bố trí ca trực luân phiên tự nguyện có phụ cấp cho hỗ trợ khẩn, dồn lực ngay sau Tết. ③ Báo khách sớm (tham khảo ≥ 2–3 tháng trước) lịch nghỉ và phương án đảm bảo mốc, giải thích Tết với người Việt tương tự お正月 (oshougatsu – Tết của Nhật). ④ Lưu lịch nghỉ hai nước (Tết, Golden Week, お盆 obon) vào template kế hoạch cho mọi dự án.
+> 💡 So sánh Tết với お正月 giúp khách Nhật hiểu ngay vì sao không thể làm như bình thường.
+
+**Q756. Hai dự án trong cùng bộ phận cần chung một senior DB, PM dự án kia đang giữ người trong khi dự án của em sắp vào giai đoạn tối ưu performance cho khách. Anh/chị xử lý thế nào?**
+① Fact: tính chính xác số ngày công cần, thời điểm, rủi ro với khách nếu thiếu. ② Hành động: gặp trực tiếp PM kia, đề xuất chia lịch (vd 3 ngày/tuần) hoặc pair để chuyển giao kiến thức cho người thứ hai. ③ Không thống nhất được → escalate lên quản lý chung bằng dữ liệu (ảnh hưởng tới khách, doanh thu, cam kết hợp đồng) để quyết theo ưu tiên công ty; báo khách nếu mốc bị ảnh hưởng. ④ Lâu dài: đề xuất kế hoạch nguồn lực cấp bộ phận nhìn trước 1–2 tháng.
+
+**Q757. Khách sản xuất C yêu cầu xem CV và phỏng vấn từng member trước khi họ vào dự án. Anh/chị xử lý thế nào?**
+① Fact: hiểu mục đích (lo năng lực, từng gặp member yếu) và xem hợp đồng quy định gì về 体制. ② Hành động: chuẩn bị スキルシート (sukiru shiito – bảng kỹ năng) chuẩn, chỉ gồm thông tin nghề nghiệp, có sự đồng ý của nhân viên khi gửi ra ngoài. ③ Đề xuất với khách: phỏng vấn các vị trí key (PM, tech lead, BrSE); các vị trí khác vendor chịu trách nhiệm tuyển chọn theo tiêu chí kỹ năng đã thống nhất. ④ Theo dõi đánh giá của khách sau tháng đầu để điều chỉnh tiêu chí chọn người.
+
+**Q758. Khách bảo hiểm B cắt ngân sách, yêu cầu giảm team từ 12 xuống 8 người từ tháng sau nhưng giữ nguyên scope và 納期. Anh/chị xử lý thế nào?**
+① Fact: tính lại capacity: 8 người làm được bao nhiêu % scope trong thời hạn. ② Hành động: đưa 3 phương án: giữ scope và kéo dài thời gian; giữ 納期 và cắt scope theo ưu tiên; hoặc giảm dần người trong 2 tháng. Chọn 8 người ở lại sao cho không mất key person. ③ Báo khách bằng bảng số liệu, nói rõ giữ nguyên cả scope lẫn thời gian khi giảm 1/3 người là không khả thi nếu không hy sinh chất lượng. ④ Nội bộ: 4 người rời dự án được bàn giao đầy đủ và bố trí sang dự án khác.
+
+**Q759. Khách ngân hàng A muốn ghi vào hợp đồng cam kết không thay đổi thành viên key trong suốt 18 tháng dự án. Anh/chị xử lý thế nào?**
+① Fact: xác định danh sách "key" khách muốn (PM, tech lead, BrSE) và rủi ro nghỉ việc thực tế. ② Hành động: không cam kết tuyệt đối điều mình không kiểm soát; đề xuất điều khoản thay thế: báo trước tối thiểu X tuần, người thay có kỹ năng tương đương, thời gian chồng lấn bàn giao Y tuần, khách được phỏng vấn người thay. ③ Báo khách thẳng thắn lý do và cơ chế đảm bảo. ④ Nội bộ: kế hoạch giữ chân key member (lộ trình, thưởng gắn dự án) và backup cho từng vai trò.
+> 💡 Hứa điều không kiểm soát được rồi vi phạm còn tệ hơn từ chối có giải thích kèm phương án thay thế.
+
+**Q760. Khách yêu cầu 2 kỹ sư có chứng chỉ AWS cho phần hạ tầng theo quy định nội bộ của họ, công ty chưa có người rảnh đáp ứng. Anh/chị xử lý thế nào?**
+① Fact: hỏi khách yêu cầu là bắt buộc chứng chỉ hay chấp nhận kinh nghiệm tương đương, mốc cần người. ② Hành động: ngắn hạn điều chuyển/mượn người có chứng chỉ từ dự án khác hoặc tuyển; song song chọn 2 member tiềm năng ôn thi, tận dụng chính sách hỗ trợ thi Cloud/AWS của công ty. ③ Báo khách 体制 tạm thời và lộ trình đạt chứng chỉ có ngày cụ thể. ④ Lần sau đưa yêu cầu chứng chỉ vào checklist giai đoạn proposal để chuẩn bị người sớm.
+
+## 8.7 Chi phí & hợp đồng
+
+**Q761. Dự án 請負 cho khách bảo hiểm B, đến giữa giai đoạn 製造 đã tiêu vượt 30% effort so với 見積. Anh/chị xử lý thế nào?**
+① Fact: phân tích nguồn vượt — estimate sai, CR không thu phí, năng suất thấp hay rework do chất lượng; dự báo tổng chi phí khi hoàn thành (EAC). ② Hành động: tách phần vượt do phía khách (CR, trễ đầu vào) có bằng chứng; tối ưu phần còn lại (tái sử dụng, giảm rework). ③ Báo nội bộ ngay cho cấp trên/tài chính, không giấu; với khách chỉ đề nghị chi phí cho phần có căn cứ hợp đồng. ④ Gốc: cập nhật dữ liệu năng suất cho 見積 (mitsumori – báo giá/ước tính) lần sau, review chi phí theo tháng với ngưỡng cảnh báo (tham khảo lệch > 10%) ngay từ đầu 製造 (seizou – giai đoạn lập trình).
+> 💡 Phần vượt do mình estimate sai thì công ty chịu — đừng "hợp thức hóa" bằng CR không có thật.
+
+**Q762. Khách ngân hàng A từ chối trả phí 5 CR đã làm xong, cho rằng đó là "do vendor hiểu sai yêu cầu ban đầu". Anh/chị xử lý thế nào?**
+① Fact: với từng CR, gom bằng chứng: tài liệu đã duyệt, 議事録, email yêu cầu, ngày khách xác nhận. ② Hành động: phân loại CR có bằng chứng rõ là thay đổi và CR "vùng xám" (tài liệu gốc mơ hồ). ③ Báo: họp với người có thẩm quyền, trình từng CR kèm bằng chứng; vùng xám có thể nhượng bộ (chia sẻ chi phí) để đổi lấy quy trình CR chặt hơn; số tiền lớn thì sales/ban giám đốc cùng vào. ④ Gốc: không bắt đầu làm CR khi chưa có xác nhận phí bằng văn bản.
+
+**Q763. Sếp yêu cầu nhận dự án mới với giá thấp hơn giá vốn khoảng 15% để vào được một tập đoàn tài chính lớn. Anh/chị xử lý thế nào?**
+① Fact: tính rõ giá vốn, mức lỗ dự kiến và rủi ro vượt thêm (khách tài chính yêu cầu chất lượng, bảo mật cao). ② Hành động: không từ chối cảm tính; trình sếp phân tích và điều kiện để nhận: coi là khoản đầu tư có ngân sách lỗ rõ, scope khóa chặt, phase sau giá hợp lý, không cắt bước chất lượng. ③ Nếu công ty quyết nhận: ghi lại quyết định và mức lỗ chấp nhận, không để team phải bù bằng OT. ④ Theo dõi chi phí sát, báo định kỳ, đề xuất ngưỡng dừng/đàm phán lại nếu lỗ vượt mức.
+> 💡 Quyết định chiến lược là của công ty, nhưng PM phải đưa đủ số liệu và không để "giá rẻ" biến thành "chất lượng rẻ".
+
+**Q764. Khách sản xuất C đang ký 準委任 theo tháng, giữa chừng muốn chuyển sang 請負 giá cố định cho phần còn lại để chủ động ngân sách. Anh/chị xử lý thế nào?**
+① Fact: đánh giá độ rõ của phần còn lại: yêu cầu đã chốt chưa, rủi ro kỹ thuật. ② Hành động: chỉ chuyển sang 請負 phần đã đủ rõ (vd đã xong 基本設計); phần chưa rõ giữ 準委任 (jun-inin – hợp đồng theo công sức, không cam kết kết quả) hoặc chia hợp đồng nhiều giai đoạn; báo giá có risk buffer (tham khảo 10–20% tùy độ rõ). ③ Báo khách: giải thích khác biệt trách nhiệm — 請負 có nghĩa vụ hoàn thành và 契約不適合責任 (keiyaku futekigou sekinin – trách nhiệm khi sản phẩm không đúng hợp đồng), nên giá phản ánh rủi ro. ④ Trước khi ký, chốt tiêu chí 検収 (kenshuu – nghiệm thu) và quy trình CR.
+
+**Q765. Khách yêu cầu báo giá bằng tiếng Nhật cho một hệ thống mới trong 3 ngày, tài liệu chỉ có 5 trang mô tả. Anh/chị xử lý thế nào?**
+① Fact: liệt kê chức năng đọc được và điểm chưa rõ. ② Hành động: estimate bằng 2 cách để đối chiếu (WBS sơ bộ + so sánh dự án tương tự), ghi rõ 前提条件 và スコープ外 (sukoopu gai – ngoài phạm vi); đưa khoảng giá hoặc đề xuất 2 bước: 要件定義 theo 準委任 rồi mới báo giá cố định. ③ Gửi đúng hạn theo format khách quen, kèm danh sách câu hỏi và mức tin cậy của con số. ④ Lưu 見積 để so với thực tế khi dự án chạy, cải thiện dữ liệu estimate.
+> 💡 Báo giá ghi kỹ 前提条件 là "lá chắn" của vendor khi phạm vi thay đổi — khách Nhật cũng đánh giá cao sự rõ ràng này.
+
+**Q766. Cuối dự án 請負, khách chậm 検収 2 tháng vì "vẫn còn vài bug nhỏ", ảnh hưởng dòng tiền của công ty. Anh/chị xử lý thế nào?**
+① Fact: đối chiếu tiêu chí nghiệm thu trong hợp đồng với danh sách bug còn lại và mức độ. ② Hành động: sửa nhanh các bug thuộc trách nhiệm trong 1–2 tuần; bug nhỏ không chặn vận hành → đề xuất 検収 kèm danh sách 残課題 (zankadai – việc còn tồn) và lịch sửa trong thời gian bảo hành. ③ Báo khách bằng văn bản có dẫn điều khoản; nhờ sales/account làm việc với bộ phận mua hàng phía khách. ④ Gốc: hợp đồng sau định nghĩa tiêu chí nghiệm thu đo được (vd 0 bug nghiêm trọng, bug nhỏ ≤ N và có kế hoạch sửa).
+
+**Q767. Dự án 準委任 tính theo người-tháng, khách muốn thêm 1 tester nhưng không muốn tăng tổng chi phí. Anh/chị xử lý thế nào?**
+① Fact: khách thực sự cần thêm năng lực test hay cần yên tâm về chất lượng; team hiện có ai chưa dùng hết công suất. ② Hành động: đưa phương án: thay 1 dev bằng tester trong giai đoạn test, tự động hóa regression để tăng năng lực, hoặc tester bán thời gian; nêu đánh đổi tiến độ của từng phương án. ③ Báo khách bảng phương án với chi phí không đổi và ảnh hưởng tương ứng, xin quyết định. ④ Ghi thay đổi 体制 vào biên bản hoặc phụ lục hợp đồng.
+
+**Q768. Sau khi ký 請負, team phát hiện 見積 đã bỏ sót hẳn hạng mục batch đối soát, chiếm khoảng 15% effort, khách chưa biết. Anh/chị xử lý thế nào?**
+① Fact: kiểm hạng mục có trong tài liệu yêu cầu khách đưa lúc báo giá không — có thì lỗi estimate là của mình. ② Hành động: lỗi của mình → vẫn làm đủ, công ty chịu chi phí, tìm cách tối ưu (tái sử dụng, thiết kế đơn giản trong phạm vi yêu cầu); nếu yêu cầu gốc không có → xử lý như CR. ③ Báo nội bộ ngay để điều chỉnh dự báo lợi nhuận; với khách, trung thực về ảnh hưởng lịch nếu có, không đòi phí phần lỗi của mình. ④ Gốc: checklist estimate (batch, migration, phi chức năng, vận hành) và review chéo trước khi gửi báo giá.
+
+**Q769. Đồng Yên mất giá làm biên lợi nhuận dự án 準委任 dài hạn với khách bảo hiểm B giảm rõ, công ty muốn đàm phán tăng đơn giá ở kỳ gia hạn. Anh/chị xử lý thế nào?**
+① Fact: chuẩn bị dữ liệu: năng suất, chất lượng, các cải tiến team đã mang lại, đơn giá hiện tại và chi phí tăng. ② Hành động: cùng sales chuẩn bị đề xuất từ 2–3 tháng trước kỳ gia hạn, kèm giá trị gia tăng (tự động hóa, nâng kỹ năng, giảm sự cố) để khách có lý do trình nội bộ. ③ PM không tự đàm phán giá một mình — cung cấp dữ liệu và nói về giá trị; có thể đề xuất tăng theo lộ trình. ④ Song song tối ưu chi phí nội bộ (tỉ lệ senior/junior) để giảm rủi ro nếu tăng giá không được như kỳ vọng.
+> 💡 Khách Nhật cần lý do để giải trình với cấp trên (説明責任 setsumei sekinin – trách nhiệm giải trình): đưa họ tài liệu để họ tự trình nội bộ.
+
+**Q770. Khách đòi vendor chịu chi phí sửa một lỗi phát hiện sau 8 tháng go-live, trong khi thời hạn bảo hành trong hợp đồng là 6 tháng. Anh/chị xử lý thế nào?**
+① Fact: xác định đây là lỗi không đúng spec của mình hay do thay đổi môi trường/cách dùng; đọc điều khoản bảo hành và 契約不適合責任. ② Hành động: lỗi nhỏ, rõ do mình → cân nhắc sửa miễn phí như thiện chí, ghi rõ là ngoại lệ; lỗi lớn → đề xuất tính phí hoặc chia sẻ chi phí. ③ Báo khách khéo: ưu tiên giải quyết vấn đề vận hành trước, chi phí thảo luận song song qua sales. ④ Đề xuất hợp đồng 保守 (hoshu – bảo trì) dài hạn để những tình huống sau có khung rõ ràng.
+
+## 8.8 Xung đột & stakeholder
+
+**Q771. Phòng kế toán và phòng kinh doanh của khách sản xuất C đưa ra yêu cầu mâu thuẫn về cách tính và hiển thị đơn hàng, bên nào cũng muốn theo ý mình. Anh/chị xử lý thế nào?**
+① Fact: viết 2 yêu cầu dạng bảng so sánh, nêu tác động mỗi phương án (effort, nghiệp vụ, rủi ro). ② Hành động: không tự chọn bên; đề xuất phương án dung hòa nếu có (vd cấu hình theo vai trò) kèm chi phí. ③ Báo 窓口/chủ dự án phía khách quyết định, đề nghị họp 3 bên có người quyết định; ghi kết quả vào 議事録. ④ Gốc: đề nghị khách xác định người có quyền quyết định cuối cho từng loại yêu cầu (RACI phía khách).
+> 💡 Vendor đứng ra phân xử nội bộ khách là tự biến mình thành "người bị ghét" — chuẩn bị dữ liệu và để người của khách quyết.
+
+**Q772. Trong 受入テスト, người dùng cuối phía khách phản đối luồng nghiệp vụ mà 窓口 đã chốt ở 要件定義: "Thế này không ai dùng được". Anh/chị xử lý thế nào?**
+① Fact: thu thập phản hồi cụ thể (bước nào, vì sao khó), đối chiếu tài liệu đã chốt. ② Hành động: lập danh sách điểm cần đổi + estimate, phân loại bắt buộc cho go-live hay cải tiến sau. ③ Báo 窓口 trước, không vượt mặt; giúp 窓口 giữ thể diện bằng cách trình là "phản hồi thực tế từ người dùng" kèm đề xuất CR có ưu tiên. ④ Gốc: lần sau mời người dùng cuối review prototype sớm ở 要件定義/基本設計.
+
+**Q773. Trong họp, trưởng phòng phía khách nổi giận, nói to và chỉ trích team trước nhiều người vì một lỗi production. Anh/chị xử lý thế nào?**
+① Fact: lắng nghe hết, không ngắt lời, không giải thích ngay; ghi lại các điểm khách nêu. ② Hành động: xin lỗi chân thành về ảnh hưởng gây ra (chưa cần kết luận nguyên nhân khi chưa rõ), nói rõ việc đang làm và giờ báo cáo tiếp. ③ Sau họp trong ngày: email tóm tắt, báo cấp trên, xin gặp riêng trưởng phòng cùng cấp trên của mình với báo cáo sự cố sơ bộ. ④ Giữ đúng mọi mốc đã hứa để lấy lại niềm tin; bảo vệ team, không trút áp lực xuống member.
+> 💡 Trong cuộc họp nóng chỉ cần ① tiếp nhận ② xin lỗi về ảnh hưởng ③ hẹn mốc — tranh luận nguyên nhân để buổi sau, có dữ liệu.
+
+**Q774. 担当者 phía khách đổi người giữa dự án, người mới không đồng ý nhiều quyết định người cũ đã chốt và muốn xem lại spec từ đầu. Anh/chị xử lý thế nào?**
+① Fact: chuẩn bị hồ sơ: tài liệu đã duyệt, 議事録, các quyết định và lý do. ② Hành động: tổ chức buổi 引継ぎ cho người mới (mời cả người cũ nếu được), giải thích bối cảnh từng quyết định. ③ Báo: điểm nào người mới muốn đổi thì xử lý như CR với ảnh hưởng chi phí/lịch; thay đổi lớn thì trình cấp trên phía khách. ④ Xây quan hệ: họp 1–1 tìm hiểu mục tiêu của người mới, chọn 1–2 cải tiến nhỏ giúp họ có kết quả sớm — người mới thường muốn để lại dấu ấn, hãy giúp họ thành công trong phạm vi có kiểm soát.
+
+**Q775. Cấp trên của 窓口 gửi email trực tiếp cho em, yêu cầu thêm một tính năng mà 窓口 không biết. Anh/chị xử lý thế nào?**
+① Fact: ghi nhận yêu cầu, đánh giá ảnh hưởng sơ bộ. ② Hành động: trả lời lịch sự xác nhận đã nhận, nói sẽ phối hợp với 窓口 để đánh giá và trả lời; báo ngay cho 窓口 (cc hoặc báo riêng). ③ Cùng 窓口 đưa estimate và trình lại; không làm ngay chỉ vì người yêu cầu có chức vụ cao. ④ Gốc: nhắc lại quy trình tiếp nhận yêu cầu trong 定例会, giữ 窓口 ở vị trí trung tâm để không ai mất mặt.
+
+**Q776. Khách muốn team bổ sung miễn phí 2 người trong tháng cao điểm, trong khi ban giám đốc yêu cầu dự án phải tăng biên lợi nhuận quý này. Anh/chị xử lý thế nào?**
+① Fact: nhu cầu thật của khách (khối lượng, thời gian), chi phí 2 người × 1 tháng, giá trị quan hệ (phase tiếp, tiềm năng mở rộng). ② Hành động: tìm phương án giữa: hỗ trợ miễn phí 1 người trong 2 tuần đỉnh điểm, phần còn lại tính phí; hoặc đổi lấy cam kết phase tiếp. ③ Báo ban giám đốc phân tích chi phí–lợi ích, xin quyết định; báo khách phương án cụ thể. ④ Ghi rõ thỏa thuận là ngoại lệ có thời hạn để không thành tiền lệ "miễn phí" lặp lại.
+
+**Q777. Khách sản xuất C ra quyết định rất chậm vì mỗi CR phải qua 稟議 nhiều cấp, mất 3–4 tuần, dự án bị đình trệ. Anh/chị xử lý thế nào?**
+① Fact: vẽ lại quy trình 稟議 (ringi – xin phê duyệt nội bộ qua nhiều cấp) của khách: ai duyệt, mất bao lâu, cần tài liệu gì. ② Hành động: soạn tài liệu CR đúng format khách cần để trình (lý do, chi phí, rủi ro nếu không làm); đẩy sớm các quyết định dự đoán được; gom CR thành đợt. ③ Báo: thống nhất với 窓口 lịch quyết định, đưa vào kế hoạch dự án như một ràng buộc có mốc. ④ Đề xuất cơ chế ngân sách dự phòng cho CR nhỏ (dưới ngưỡng thì 窓口 tự duyệt).
+> 💡 Soạn sẵn tài liệu trình 稟議 giúp 担当者 là cách nhanh nhất để rút ngắn thời gian quyết định.
+
+**Q778. Khách gửi email lúc 22h giờ Nhật yêu cầu trả lời trước 9h sáng hôm sau về nguyên nhân một lỗi hiển thị nhỏ, team đã hết giờ làm. Anh/chị xử lý thế nào?**
+① Fact: xác định mức độ: lỗi nhỏ, không ảnh hưởng vận hành. ② Hành động: PM trả lời ngắn ngay tối đó: đã nhận, sẽ điều tra đầu giờ, hẹn mốc cụ thể (vd 11h giờ Nhật, tức 9h Việt Nam); sáng hôm sau giao người điều tra ngay. ③ Báo khách đúng mốc đã hẹn, kèm nguyên nhân và kế hoạch sửa. ④ Gốc: thống nhất với khách SLA phản hồi theo mức độ sự cố (lỗi nghiêm trọng 24/7, lỗi nhỏ trong giờ làm việc) và ghi vào tài liệu vận hành.
+
+**Q779. Khách ngân hàng A thêm một vendor khác làm song song các module khác và giao PM bên mình điều phối cả vendor kia. Anh/chị xử lý thế nào?**
+① Fact: làm rõ vai trò — điều phối lịch/kỹ thuật hay chịu trách nhiệm kết quả của vendor kia; hợp đồng nói gì. ② Hành động: đề xuất thỏa thuận bằng văn bản về phạm vi điều phối, quyền hạn, trách nhiệm (không chịu trách nhiệm chất lượng của bên không ký hợp đồng với mình); dựng interface spec, lịch tích hợp, 課題管理表 chung. ③ Báo khách cơ chế điều phối và mẫu báo cáo chung. ④ Bảo vệ thông tin nội bộ (giá, nguồn lực, tài sản trí tuệ) khi làm việc chung.
+> 💡 "Điều phối" mà không có quyền hạn rõ là cái bẫy: nhận trách nhiệm nhưng không có quyền.
+
+**Q780. Sales của công ty đã hứa miệng với khách bảo hiểm B sẽ làm thêm module báo cáo trong cùng ngân sách để chốt hợp đồng, team delivery không được báo. Anh/chị xử lý thế nào?**
+① Fact: xác nhận với sales nội dung đã hứa, có văn bản không; estimate module. ② Hành động: họp nội bộ với sales + cấp trên, đưa số liệu ảnh hưởng (lợi nhuận, lịch); thống nhất một tiếng nói trước khi trao đổi với khách. ③ Báo khách: nếu công ty giữ lời → lên kế hoạch thực hiện; nếu không → sales và PM cùng gặp khách giải thích, đưa phương án (phase sau, giá ưu đãi). ④ Gốc: quy trình bàn giao sales → delivery có danh sách cam kết, PM review proposal trước khi gửi.
+
+## 8.9 Bảo mật & tuân thủ
+
+**Q781. Phát hiện một developer đã dán source code và dữ liệu mẫu của khách ngân hàng A vào ChatGPT bản cá nhân để debug. Anh/chị xử lý thế nào?**
+① Fact: hỏi riêng member ngay: dán gì, khi nào, bao nhiêu lần, có dữ liệu cá nhân hay secret không; lưu lại bằng chứng. ② Hành động: dừng ngay; secret bị lộ thì rotate trong ngày; báo bộ phận bảo mật nội bộ để đánh giá theo quy trình sự cố (lưu ý không đảm bảo xóa được dữ liệu đã gửi ra ngoài). ③ Báo khách: đây có thể là sự cố rò rỉ thông tin theo NDA — cùng pháp lý/ban giám đốc báo khách trung thực, đúng hạn hợp đồng yêu cầu. ④ 再発防止: chính sách dùng AI rõ (tool được phép, dữ liệu cấm), chặn kỹ thuật, đào tạo, 横展開 toàn công ty.
+> 💡 Giấu sự cố rò rỉ là lỗi lớn hơn chính sự cố — với khách tài chính Nhật, báo sớm là điều kiện để còn giữ được hợp đồng.
+
+**Q782. Member báo mất laptop công ty chứa source code dự án khách bảo hiểm B trên taxi tối qua. Anh/chị xử lý thế nào?**
+① Fact: thời điểm, nơi mất, ổ đĩa có mã hóa không, có dữ liệu cá nhân của khách không, những tài khoản nào đang đăng nhập. ② Hành động trong vài giờ đầu: IT khóa/xóa từ xa nếu có MDM, đổi mật khẩu, thu hồi token/VPN/SSH key; liên hệ hãng taxi và báo cơ quan chức năng. ③ Báo bộ phận bảo mật, và gửi khách 第一報 trong thời hạn hợp đồng quy định, kèm đánh giá rủi ro. ④ 再発防止: bắt buộc mã hóa ổ đĩa, không lưu dữ liệu khách trên máy local, quy định mang thiết bị ra ngoài; 横展開 kiểm toàn bộ máy trong dự án.
+
+**Q783. Member gửi nhầm email đính kèm tài liệu 基本設計 của khách sản xuất C cho một khách hàng khác của công ty. Anh/chị xử lý thế nào?**
+① Fact: ai gửi, lúc nào, cho ai, đính kèm gì, mức mật của tài liệu. ② Hành động: liên hệ ngay người nhận nhầm, đề nghị xóa, không chuyển tiếp và xác nhận đã xóa bằng văn bản; thử thu hồi email nếu hệ thống hỗ trợ. ③ Báo bộ phận bảo mật và báo khách C trung thực, sớm, kèm xác nhận xóa của bên nhận. ④ 再発防止: cảnh báo khi gửi ra ngoài domain, gửi file qua link có phân quyền thay vì đính kèm, ダブルチェック địa chỉ với tài liệu mật.
+> 💡 Văn bản xác nhận đã xóa từ người nhận nhầm là bằng chứng quan trọng nhất trong báo cáo sự cố gửi khách.
+
+**Q784. Phát hiện một member đăng ảnh chụp màn hình giao diện hệ thống khách lên mạng xã hội để khoe dự án. Anh/chị xử lý thế nào?**
+① Fact: chụp lại bài đăng làm bằng chứng, xác định thông tin bị lộ (tên khách, dữ liệu, URL nội bộ), mức lan truyền nếu biết. ② Hành động: yêu cầu gỡ ngay, kiểm tra các bài đăng khác; báo bộ phận bảo mật. ③ Báo khách nếu có thông tin khách bị lộ, theo đúng NDA, kèm bằng chứng đã gỡ. ④ Nhắc lại quy định NDA cho cả team, xử lý theo quy chế công ty; đưa tình huống thật (ẩn danh) vào đào tạo onboarding.
+
+**Q785. Audit ISMS nội bộ phát hiện dự án ngân hàng A có 6 điểm không phù hợp: dùng tài khoản chung, không review quyền truy cập định kỳ, log không lưu đủ thời hạn. Anh/chị xử lý thế nào?**
+① Fact: xác nhận từng điểm, mức độ, nguyên nhân (thiếu quy trình hay không tuân thủ). ② Hành động: lập kế hoạch 是正処置 (zesei shochi – hành động khắc phục) có người phụ trách + hạn: xóa tài khoản chung trong 1 tuần, review quyền hằng tháng, cấu hình lưu log đúng yêu cầu. ③ Báo cấp trên; nếu hợp đồng yêu cầu báo khách về kết quả audit/vi phạm thì báo kèm kế hoạch khắc phục. ④ 横展開 sang các dự án khác, đưa các điểm này vào checklist kickoff dự án.
+
+**Q786. Khách bảo hiểm B yêu cầu dữ liệu test phải được ẩn danh, nhưng team đang dùng bản copy dữ liệu production thật trên môi trường dev. Anh/chị xử lý thế nào?**
+① Fact: dữ liệu được copy từ khi nào, theo chỉ thị của ai, ai có quyền truy cập, có lưu ở nơi nào ngoài môi trường được phép. ② Hành động: dừng dùng ngay, xóa dữ liệu thật theo quy trình có biên bản xác nhận, thay bằng dữ liệu đã masking. ③ Báo khách qua bộ phận bảo mật: đây có thể vi phạm điều khoản xử lý dữ liệu — báo trung thực kèm biện pháp đã làm. ④ Phòng ngừa: tool masking tự động, phân quyền môi trường, checklist dữ liệu test trước mỗi giai đoạn.
+
+**Q787. Khách yêu cầu điền checklist bảo mật khoảng 200 mục trong 1 tuần trước khi cấp VPN vào môi trường của họ. Anh/chị xử lý thế nào?**
+① Fact: phân loại câu hỏi: mục thuộc chính sách công ty (bộ phận bảo mật trả lời) và mục thuộc dự án (PM trả lời). ② Hành động: phối hợp bộ phận ISMS dùng câu trả lời chuẩn đã có, trả lời trung thực; mục chưa đáp ứng → ghi rõ kế hoạch và ngày đáp ứng. ③ Nộp đúng hạn, kèm danh sách mục đang khắc phục. ④ Lưu bộ câu trả lời làm tài sản dùng lại cho khách sau.
+> 💡 Không bao giờ ghi "có" cho mục chưa làm — checklist bảo mật thường bị khách audit lại sau này.
+
+**Q788. Member muốn dùng một thư viện mã nguồn mở license GPL trong sản phẩm giao cho khách sản xuất C để kịp tiến độ. Anh/chị xử lý thế nào?**
+① Fact: kiểm license — GPL có thể buộc công bố mã nguồn khi phân phối sản phẩm phái sinh, tùy cách dùng; xem quy định OSS của khách. ② Hành động: tạm chưa dùng đến khi có kết luận; tìm thư viện thay thế license dễ dãi hơn (MIT, Apache 2.0). ③ Báo khách: nếu buộc phải dùng, xin phê duyệt bằng văn bản theo quy định OSS của khách. ④ Phòng ngừa: danh sách license được phép, tool scan license trong CI, nộp danh sách OSS khi bàn giao.
+
+**Q789. Khách yêu cầu team làm trong phòng riêng có kiểm soát ra vào, cấm điện thoại, nhưng văn phòng Đà Nẵng chưa có phòng như vậy. Anh/chị xử lý thế nào?**
+① Fact: đọc chi tiết yêu cầu (thẻ ra vào, camera, cấm thiết bị cá nhân, máy khóa USB) và hạn phải đáp ứng. ② Hành động: phối hợp admin/IT ước tính chi phí, thời gian thiết lập; trong lúc chờ đề xuất phương án tạm khách chấp nhận được (khu vực ngăn riêng, máy khóa USB, làm qua VDI). ③ Báo khách lịch đáp ứng và phương án tạm, mời khách kiểm tra online hoặc trực tiếp. ④ Đưa chi phí bảo mật vật lý vào 見積 cho các dự án tài chính sau.
+
+**Q790. Phát hiện một member đã nghỉ việc 2 tuần nhưng tài khoản Git và VPN vào môi trường khách vẫn còn hoạt động. Anh/chị xử lý thế nào?**
+① Fact: kiểm log truy cập từ ngày nghỉ đến nay có hoạt động không. ② Hành động: khóa ngay mọi tài khoản, rotate các secret dùng chung người đó từng biết. ③ Báo bộ phận bảo mật; nếu log có truy cập bất thường hoặc hợp đồng yêu cầu thì báo khách. ④ 再発防止: checklist offboarding gắn với HR (khóa quyền ngay trong ngày nghỉ), review quyền định kỳ hằng tháng, 横展開 rà toàn bộ tài khoản dự án.
+
+## 8.10 Tình huống xám, đạo đức & tổng hợp
+
+**Q791. 担当者 phía khách gợi ý: "Báo cáo chất lượng gửi lên cấp trên nên ghi số bug ít đi, không thì tôi khó giải thích". Anh/chị xử lý thế nào?**
+① Fact: hiểu áp lực của 担当者, nhưng sửa số là làm sai lệch hồ sơ, người chịu trách nhiệm cuối cùng là vendor. ② Hành động: từ chối khéo, không đổi số; đề xuất cách trình bày giúp họ: phân loại theo mức độ, xu hướng giảm, tỉ lệ đã sửa, nguyên nhân chính đã xử lý. ③ Báo cấp trên của mình biết sự việc, không làm to chuyện phía khách để giữ thể diện 担当者. ④ Nguyên tắc: số liệu đúng + diễn giải có lợi cho khách thì được; ngụy tạo thì không, vì khi lộ ra cả hai bên mất uy tín.
+> 💡 Câu xám: nói rõ nguyên tắc "không sửa số, nhưng giúp diễn giải" — interviewer muốn thấy bạn có giới hạn đạo đức nhưng vẫn mềm dẻo.
+
+**Q792. Dự án trễ 2 tuần, sếp bảo cứ báo khách "đúng tiến độ" đến sau buổi review nội bộ tuần sau vì sợ ảnh hưởng đánh giá. Anh/chị xử lý thế nào?**
+① Fact: kiểm lại mức trễ và tính khả thi của kế hoạch phục hồi. ② Hành động: gặp riêng sếp, trình rủi ro: khách tự phát hiện thì mất niềm tin, giấu thêm 1 tuần là mất 1 tuần xử lý; đề xuất báo khách ngay kèm kế hoạch phục hồi — thành câu chuyện "phát hiện sớm, chủ động xử lý", có lợi cả cho buổi review. ③ Nếu sếp vẫn yêu cầu giấu: không gửi báo cáo sai, escalate theo kênh phù hợp (PMO/cấp cao hơn). ④ Nguyên tắc: trung thực với khách là giới hạn không đánh đổi; thời điểm và cách nói thì thương lượng được.
+
+**Q793. Còn 3 ngày đến 納期, còn 8 bug mức trung bình chưa sửa, khách nói "giao đúng ngày là quan trọng nhất" còn team muốn xin thêm 1 tuần. Anh/chị xử lý thế nào?**
+① Fact: phân tích 8 bug: ảnh hưởng nghiệp vụ, có workaround không, có rủi ro dữ liệu/tiền/bảo mật không. ② Hành động: sửa trước bug ảnh hưởng dữ liệu/tiền; bug có workaround thì giao đúng ngày kèm 既知不具合一覧 (kichi fuguai ichiran – danh sách lỗi đã biết) và lịch sửa. ③ Báo khách trước 2 ngày, để khách quyết với đủ thông tin. ④ Nguyên tắc chọn: lỗi gây sai dữ liệu, tiền hoặc bảo mật thì không giao dù trễ; lỗi hiển thị có workaround thì ưu tiên 納期 — người quyết cuối cùng là khách.
+> 💡 Câu "chọn A hay B" không có đáp án đúng — điểm nằm ở tiêu chí chọn rõ ràng và việc khách được quyết với đủ thông tin.
+
+**Q794. Anh/chị quản lý 2 dự án cùng lúc, cùng một tuần cả hai chuyển đỏ: dự án ngân hàng A trễ mốc, dự án sản xuất C có sự cố production. Anh/chị xử lý thế nào?**
+① Fact: xếp ưu tiên theo nguyên tắc an toàn dữ liệu/vận hành của khách > cam kết hợp đồng > tiến độ nội bộ → sự cố C là số 1. ② Hành động: PM trực tiếp chỉ huy sự cố ở C; dự án A giao tech lead/sub-PM chạy kế hoạch phục hồi, PM duyệt 15 phút mỗi ngày. ③ Báo cả 2 khách trung thực trong phạm vi từng bên; xin cấp trên thêm người hoặc PM hỗ trợ tạm thời. ④ Sau khủng hoảng: đánh giá lại khả năng ôm 2 dự án, đề xuất deputy PM cho mỗi dự án.
+
+**Q795. Anh/chị tiếp nhận một dự án 炎上 từ PM khác vừa nghỉ: trễ 6 tuần, khách mất niềm tin, team kiệt sức. Anh/chị xử lý thế nào trong 2 tuần đầu?**
+① Fact (tuần 1): gặp khách nghe trực tiếp, 1–1 với từng member, tự rà tiến độ thật, chất lượng, hợp đồng, issue mở — không tin báo cáo cũ. ② Hành động: ổn định ngay: tạm đóng băng thay đổi mới, dồn lực cho issue chặn, cắt OT vô ích, xin công ty thêm senior. ③ Báo khách cuối tuần 2: hiện trạng trung thực + 再計画 (saikeikaku – lập lại kế hoạch) có mốc thực tế, tần suất báo cáo dày hơn. ④ Phân tích vì sao dự án 炎上 (enjou – "cháy", khủng hoảng) — estimate, scope hay đội hình — và tạo vài kết quả nhanh để lấy lại niềm tin.
+> 💡 Đừng hứa ngày mới trước khi tự kiểm hết thực trạng — kế hoạch phục hồi lần 2 mà lại trễ thì gần như hết đường.
+
+**Q796. Khách bảo hiểm B hỏi bóng gió về hệ thống công ty đang làm cho một công ty bảo hiểm khác, muốn "tham khảo cách họ làm". Anh/chị xử lý thế nào?**
+① Fact: đây là thông tin mật của khách khác theo NDA, dù khách hỏi với thiện ý. ② Hành động: từ chối lịch sự, rõ ràng: "Chúng tôi không thể chia sẻ thông tin của khách hàng khác, cũng như chúng tôi bảo vệ thông tin của quý công ty". ③ Đề xuất thay thế: chia sẻ kiến thức chung của ngành, best practice công khai, hoặc giải pháp dựa trên kinh nghiệm tổng quát không lộ chi tiết. ④ Nhắc team không trao đổi chéo thông tin giữa các dự án cùng ngành; lời từ chối này thường làm khách tin mình hơn.
+
+**Q797. Team tự phát hiện một lỗi tiềm ẩn trong phần đã bàn giao và khách đã 検収 từ 3 tháng trước, khách chưa biết, sửa mất khoảng 5 ngày công không ai trả. Anh/chị xử lý thế nào?**
+① Fact: đánh giá mức độ, điều kiện xảy ra, đã ảnh hưởng dữ liệu thật chưa. ② Hành động: chuẩn bị bản sửa và test ngay. ③ Báo khách chủ động: lỗi gì, điều kiện, ảnh hưởng, đề xuất bản sửa và thời điểm release; chi phí công ty chịu nếu là lỗi của mình. ④ Phân tích vì sao lọt test, 横展開 sang phần tương tự. Nguyên tắc: báo trước khi khách gặp sự cố — 5 ngày công rẻ hơn rất nhiều so với mất niềm tin khi lỗi nổ trên production.
+
+**Q798. Để kịp 納期, khách muốn cắt 結合テスト từ 4 tuần xuống 2 tuần và nói sẽ tự chịu rủi ro. Anh/chị xử lý thế nào?**
+① Fact: xác định test case rủi ro cao (tiền, interface ngoài, dữ liệu, bảo mật). ② Hành động: đề xuất test theo rủi ro: 2 tuần cho case ưu tiên cao + regression tự động, phần còn lại chạy song song sau đó hoặc gộp vào 受入テスト. ③ Báo khách bằng văn bản: phạm vi test bị cắt, rủi ro cụ thể, xin khách xác nhận chấp nhận rủi ro bằng văn bản. ④ Nguyên tắc: khách có quyền chọn rủi ro, PM có nghĩa vụ làm rõ và lưu bằng chứng; phần test liên quan tiền/pháp lý thì kiên quyết giữ.
+
+**Q799. Khách sản xuất C ngỏ ý muốn tuyển 2 member giỏi nhất của team về làm cho công ty con của họ với lương cao hơn. Anh/chị xử lý thế nào?**
+① Fact: xác nhận đề nghị là chính thức hay xã giao; hợp đồng có điều khoản không lôi kéo nhân sự không. ② Hành động: báo cấp trên/sales ngay; nói chuyện với 2 member để hiểu nguyện vọng, không đe dọa. ③ Phản hồi khách qua cấp quản lý, khéo léo nhắc điều khoản hợp đồng và đề xuất phương án khác (bố trí team dedicated, cử member onsite). ④ Nội bộ: rà lại đãi ngộ, lộ trình cho key member; giảm phụ thuộc vào 2 người bằng chia sẻ kiến thức.
+
+**Q800. Tình huống tổng hợp: dự án ngân hàng A đang 総合テスト, cùng tuần BrSE nghỉ ốm 2 tuần, khách đổi 担当者, và phát hiện một lỗi tính phí trên production từ release trước. Anh/chị xử lý thế nào?**
+① Fact (ngày 1): xếp ưu tiên — lỗi production liên quan tiền là số 1; hai việc còn lại là rủi ro vận hành dự án. ② Hành động: PM trực tiếp chỉ huy sự cố (khoanh vùng, 暫定対応); người giỏi tiếng Nhật nhất tạm thay BrSE, xin công ty hỗ trợ BrSE; 総合テスト tiếp tục dưới test lead. ③ 報連相: gửi 第一報 sự cố cho khách ngay; giới thiệu người thay BrSE; gặp 担当者 mới với hồ sơ bàn giao. ④ Trong 1–2 tuần: 障害報告書 + 再発防止, cập nhật kế hoạch test, thiết lập backup cố định cho vai trò cầu nối.
+> 💡 Câu tổng hợp kiểm tra khả năng xếp ưu tiên: nói thứ tự và lý do trước, rồi mới kể hành động.
+
+---
+
+# Chương 9 · Quản lý nguồn lực & phát triển đội ngũ (Q801–Q900)
+
+## 9.1 Cơ cấu team offshore cho dự án Nhật
+
+**Q801. Trong team offshore làm cho khách Nhật, vai trò PM, BrSE, Tech Lead, Dev, QA/QC và Comtor khác nhau thế nào?**
+PM chịu trách nhiệm cuối về **QCD** (chất lượng–chi phí–tiến độ), nguồn lực, rủi ro; BrSE (ブリッジSE, burijji SE – kỹ sư cầu nối) làm rõ yêu cầu với khách và chuyển thành task; Tech Lead quyết giải pháp kỹ thuật, review code; Dev hiện thực theo 詳細設計書 (shousai sekkeisho – tài liệu thiết kế chi tiết); QA/QC kiểm độc lập; Comtor dịch tài liệu và họp. Em chốt ranh giới bằng RACI ngay kick-off, vì lỗi hay gặp là BrSE bị coi như "PM thứ hai".
+> 💡 Nói được điểm chồng lấn PM–BrSE và cách tách sẽ ăn điểm hơn đọc định nghĩa.
+
+**Q802. Tỉ lệ BrSE:Dev và QA:Dev bạn thường dùng là bao nhiêu, khi nào cần điều chỉnh?**
+Tham khảo: BrSE:Dev khoảng 1:5–8, QA:Dev 1:3–5, Tech Lead 1 cho 5–8 dev. Em tăng BrSE khi yêu cầu còn biến động hoặc Q&A tồn nhiều (vd > 20 câu chưa đóng quá 3 ngày); tăng QA khi domain tài chính/bảo hiểm nhiều rule tính toán hoặc bug lọt sang khách vượt ngưỡng cam kết. Tỉ lệ chỉ là điểm xuất phát, số liệu thực tế của dự án mới là căn cứ.
+> 💡 Luôn kèm chữ "tham khảo" và tiêu chí điều chỉnh — nêu một con số cứng dễ bị hỏi vặn.
+
+**Q803. Bạn xây RACI nội bộ thế nào để tránh tình trạng "ai cũng tưởng người khác làm"?**
+Em liệt kê 15–25 hoạt động chính (xác nhận yêu cầu, estimate, review thiết kế, release, báo cáo tuần, trả lời Q&A khách…), gán R/A/C/I, mỗi hoạt động **đúng 1 A**. Sau đó soát 3 lỗi: hàng không có A, một người ôm quá nhiều R, người chỉ toàn I nhưng vẫn bị mời họp. RACI để trên wiki, xem lại mỗi khi đổi người hoặc đổi phase.
+
+**Q804. Span of control của PM nên là bao nhiêu người, và khi team vượt ngưỡng thì tổ chức lại thế nào?**
+Quản lý trực tiếp hiệu quả khoảng 6–8 người (tham khảo). Team 20–30 người thì em chia sub-team theo module hoặc theo luồng dev–test, mỗi sub-team có leader điều hành hằng ngày; em 1-on-1 trực tiếp với leader và key member. Dấu hiệu phải chia: PM không còn thời gian 1-on-1 hằng tháng, quyết định nhỏ dồn hết về PM, daily kéo dài quá 15 phút.
+
+**Q805. Khi quản lý 2–3 dự án song song, bạn phân bổ thời gian và sự chú ý thế nào?**
+Em phân bổ theo rủi ro, không chia đều: dự án đỏ hoặc đang ở mốc quan trọng nhận 50–60% thời gian; dự án ổn định giao leader vận hành, em giữ điểm chạm cố định (họp định kỳ tuần, duyệt báo cáo, gate release). Một dashboard chung (tiến độ, bug, effort, top 3 rủi ro) giúp em quét cả 3 dự án trong 15 phút mỗi sáng.
+> 💡 Bẫy: trả lời "chia đều thời gian" — Senior PM phải phân bổ theo rủi ro.
+
+**Q806. Có nên để một member làm đồng thời cho 2 dự án không?**
+Hạn chế; nếu bắt buộc (QA, BrSE, chuyên gia hạ tầng) thì tối đa 2 dự án và chia theo ngày cố định (vd thứ 2–4 cho dự án A) thay vì theo giờ, vì context switching ăn mất năng suất. Em ghi rõ % allocation trong kế hoạch nguồn lực, thống nhất trước ai được ưu tiên khi hai deadline đụng nhau, và theo dõi effort thực tế hằng tuần để phát hiện người bị kéo quá 100%.
+
+**Q807. Comtor và BrSE khác nhau thế nào, khi nào dự án chỉ cần Comtor?**
+Comtor chủ yếu chuyển ngữ; BrSE hiểu cả kỹ thuật lẫn nghiệp vụ nên phân tích, đề xuất và chịu trách nhiệm độ đúng của yêu cầu. Dự án maintain nhỏ, yêu cầu rõ, Tech Lead vững và khách chấp nhận trao đổi văn bản thì Comtor + Tech Lead có thể đủ. Dự án có 要件定義 (youken teigi – định nghĩa yêu cầu) hoặc domain phức tạp thì cần BrSE, vì Comtor dễ dịch đúng chữ nhưng sai ý nghiệp vụ.
+
+**Q808. Bạn phân biệt vai trò QA và QC trong team dự án Nhật thế nào?**
+QC kiểm sản phẩm: viết test case, chạy test, log bug. QA kiểm quy trình: review, checklist, metric chất lượng có được làm đúng và đủ không, phân tích xu hướng bug để cải tiến. Khách Nhật thường muốn báo cáo chất lượng có số (mật độ bug, tỉ lệ review), nên em giao người giữ vai QA theo dõi metric và đề xuất 改善 (kaizen – cải tiến liên tục), không chỉ đếm bug.
+
+**Q809. Tech Lead và PM nên phân quyền quyết định thế nào để không giẫm chân nhau?**
+Nguyên tắc: Tech Lead quyết "làm thế nào" (kiến trúc, công nghệ, chuẩn code, chia task kỹ thuật); PM quyết "làm gì, khi nào, tốn bao nhiêu" (phạm vi, ưu tiên, nguồn lực, cam kết với khách). Quyết định kỹ thuật làm đổi chi phí/tiến độ vượt ngưỡng (vd > 2 ngày công hoặc chạm mốc) thì Tech Lead đề xuất, PM duyệt. Em viết thành ma trận quyền ngay từ đầu dự án.
+
+**Q810. Dự án mới khởi động, bạn dựng team đủ người ngay hay ramp-up dần?**
+Ramp-up theo phase: giai đoạn yêu cầu/thiết kế chỉ cần BrSE, Tech Lead và 1–2 dev chủ chốt; thiết kế ổn định mới thêm dev; QA vào trước giai đoạn test 2–3 tuần để viết test viewpoint. Đổ người sớm khi yêu cầu chưa rõ chỉ sinh chi phí ngồi chờ và làm lại. Em lập resource histogram theo tuần và chốt với phòng ban liên quan trước 4–6 tuần (tham khảo) cho mỗi đợt tăng người.
+
+**Q811. Team thiếu Tech Lead đủ mạnh trong khi chờ tuyển, bạn xử lý thế nào?**
+① Xác định khoảng trống cụ thể: kiến trúc, review code hay hỗ trợ dev. ② Lấp tạm: mượn senior dự án khác 20–30% thời gian để review thiết kế và code lõi. ③ Giảm rủi ro: checklist review, pair programming cho phần quan trọng. ④ Chọn một senior dev trong team làm Tech Lead kế cận với lộ trình 3–6 tháng. Em không tự ôm vai Tech Lead nếu điều đó làm bỏ bê việc PM.
+
+## 9.2 Team building & gắn kết
+
+**Q812. Mô hình Tuckman gồm những giai đoạn nào, PM làm gì ở mỗi giai đoạn?**
+**Forming** – làm rõ mục tiêu, vai trò, luật chơi; **Storming** – chủ động đưa va chạm lên bàn, phân xử theo nguyên tắc; **Norming** – chốt working agreement, giao dần quyền; **Performing** – PM lùi lại, gỡ cản trở và phát triển người; **Adjourning** – tổng kết, ghi nhận, bàn giao tri thức. Phong cách lãnh đạo đi dần từ chỉ dẫn sang ủy quyền.
+> 💡 Nói thêm: thay người hoặc đổi phase lớn có thể kéo team quay lại Storming — PM phải nhận ra sớm.
+
+**Q813. Ngày đầu tiên của một team dự án mới, bạn làm những gì?**
+Chuẩn bị trước: máy, tài khoản, quyền repo, tài liệu. Trong ngày: kick-off nội bộ 60–90 phút gồm bối cảnh khách và giá trị nghiệp vụ, mục tiêu QCD, vai trò–RACI, lịch họp, kênh liên lạc, quy định bảo mật; mỗi người chia sẻ thế mạnh và điều muốn học. Cuối ngày ai cũng có một việc nhỏ hoàn thành được để có cảm giác "đã bắt đầu".
+
+**Q814. Bạn xây working agreement (luật chơi của team) như thế nào?**
+Team tự đề xuất trong buổi 60 phút, PM chỉ gợi khung: giờ core, thời gian phản hồi chat (vd ≤ 2 giờ trong giờ làm), quy tắc commit/review, cách báo trễ ("báo ngay khi thấy có thể trễ, không đợi đến hạn"), quy tắc họp. Chốt dưới 10 điều, dán lên wiki, xem lại ở mỗi retro. Luật do team tự đặt thì tự giữ tốt hơn luật PM áp xuống.
+
+**Q815. Những nghi thức (ritual) nào bạn duy trì để gắn kết team?**
+Chỉ giữ nghi thức có mục đích: daily ≤ 15 phút; demo cuối sprint để team thấy sản phẩm chạy; 振り返り (furikaeri – nhìn lại, retro) luôn ra hành động cải tiến; ăn mừng milestone (release đầu, nghiệm thu, khách khen). Khi ăn mừng em nêu tên đóng góp cụ thể chứ không chỉ liên hoan. Ngân sách team building xin từ đầu dự án và gắn với các mốc.
+
+**Q816. Psychological safety là gì và bạn tạo nó trong team thế nào?**
+Là cảm giác an toàn khi nói "em không biết", báo lỗi, phản biện mà không bị phạt hay chê cười. Em làm bằng hành động: tự nhận lỗi của mình trước team, cảm ơn người báo bug/báo trễ sớm, retro blameless tập trung vào quy trình, hỏi ý junior trước senior. Chỉ báo kiểm tra: rủi ro và trễ hạn được báo sớm hơn, member dám đặt câu hỏi trong họp.
+> 💡 Liên hệ 報連相 (hou-ren-sou – báo cáo, liên lạc, thảo luận): thiếu an toàn tâm lý thì team giấu tin xấu đến phút chót.
+
+**Q817. Team chia ở Hà Nội, Đà Nẵng và một người onsite Nhật — làm sao để không thành "ba team"?**
+① Một nguồn thông tin: backlog, wiki, chat chung, quyết định được ghi lại, không chốt việc ở bàn nước. ② Họp chung bật camera, luân phiên người chủ trì, không để site đông người áp đảo. ③ Ghép cặp xuyên site (review chéo, pair) thay vì chia module theo địa điểm. ④ Onsite có slot cố định chia sẻ "tiếng nói khách". ⑤ Gặp mặt trực tiếp ở mốc lớn nếu có ngân sách.
+> 💡 Bẫy hay gặp: chia module theo site — nhanh chóng thành "chúng tôi vs họ".
+
+**Q818. Làm sao để người onsite ở Nhật không bị cô lập với team offshore?**
+Người onsite chịu áp lực khách trực tiếp và lệch múi giờ 2 tiếng, nên em: 1-on-1 riêng 2 tuần/lần, mời vào daily vài buổi mỗi tuần, ghi nhận đóng góp của onsite công khai trong demo, và lên kế hoạch luân chuyển (vd 6–12 tháng, tham khảo) để không ai bị "kẹt" ở onsite. Ngược lại, onsite phải đưa feedback của khách về team đầy đủ, không lọc bớt.
+
+**Q819. Team làm hybrid (vài ngày remote), bạn giữ gắn kết thế nào?**
+Em thống nhất ngày lên văn phòng chung cho cả team (vd 2 ngày/tuần) để dồn việc cần tương tác: thiết kế, review khó, retro. Ngày remote dùng giờ core và quy tắc phản hồi rõ. Thêm điểm chạm nhẹ: kênh chat không bàn việc, cà phê online 15 phút. Đo bằng hành vi: người remote có được giao việc thú vị và lên tiếng trong họp như người ở văn phòng không.
+
+**Q820. Team mới ghép từ nhiều dự án, mỗi người quen một cách làm. Bạn thống nhất thế nào?**
+Em không áp cách của riêng mình: liệt kê các điểm cần chuẩn chung (coding convention theo yêu cầu khách, Git flow, Definition of Done, mẫu báo cáo), mời người giỏi nhất từng mảng đề xuất, team chốt và chạy thử 2 sprint rồi điều chỉnh ở retro. Điều khách đã quy định thì không bàn lại. Thói quen cũ tốt được đưa vào chuẩn mới để người đó thấy được tôn trọng.
+
+**Q821. Dự án kết thúc, team giải tán — bạn làm gì để giữ gắn kết và bài học?**
+Adjourning hay bị bỏ qua. Em làm: buổi tổng kết có số liệu QCD và bài học để 横展開 (yokotenkai – nhân rộng sang dự án khác); thư cảm ơn nêu đóng góp cụ thể từng người, gửi cả quản lý trực tiếp của họ; cập nhật đánh giá dự án vào hồ sơ performance; giới thiệu member sang dự án hợp nguyện vọng. Người rời dự án với cảm giác được ghi nhận sẽ muốn làm cùng mình lần sau.
+
+## 9.3 Tạo động lực & truyền lửa
+
+**Q822. Động lực của kỹ sư IT đến từ đâu, và tiền đóng vai trò gì?**
+Em dùng 2 khung: Herzberg — lương, điều kiện làm việc là yếu tố "duy trì": thiếu thì bất mãn, đủ chưa chắc hăng hái; Daniel Pink — động lực nội tại đến từ **autonomy** (tự chủ), **mastery** (giỏi lên), **purpose** (ý nghĩa). Nên em đảm bảo phần tiền công bằng, minh bạch, rồi tạo lửa bằng việc có thách thức, quyền quyết định và hiểu sản phẩm phục vụ ai.
+> 💡 Bẫy: nói "tiền không quan trọng" — kỹ sư sẽ không tin; hãy nói tiền là nền, không phải động cơ.
+
+**Q823. Bạn trao autonomy cho member thế nào mà vẫn kiểm soát được rủi ro?**
+Em giao "kết quả + ràng buộc", không giao từng bước: vd "module tính phí, xong trước ngày X, pass test viewpoint của QA, effort ≤ Y ngày công", người nhận tự chọn cách làm. Kiểm soát qua điểm chạm nhỏ (review thiết kế đầu, demo giữa chừng) và ngưỡng báo cáo (lệch > 1 ngày phải báo). Mức tự chủ tăng dần theo năng lực đã chứng minh.
+
+**Q824. Bạn ghi nhận (recognition) thành viên thế nào cho hiệu quả?**
+Ghi nhận phải **kịp thời, cụ thể, công khai đúng mức**: nói rõ hành vi và tác động ("A phát hiện lỗi làm tròn phí trước UAT, tránh một vòng sửa với khách"), trong vài ngày, trước team hoặc trong báo cáo gửi cấp trên. Lời cảm ơn của khách em chuyển đúng người. Với người hướng nội, em khen riêng và ghi vào hồ sơ review; em cũng ghi nhận cả việc "vô hình" như review kỹ, giúp đồng đội.
+
+**Q825. Dự án maintain nhiều năm, việc lặp lại, team chán. Bạn làm gì?**
+① Tạo mastery ngay trong maintain: mục tiêu cải tiến đo được (giảm 20% thời gian xử lý ticket, tự động hóa test hồi quy). ② Xoay vai: dev thử estimate, trả lời Q&A, phỏng vấn ứng viên. ③ Dành 10–15% thời gian (tham khảo) cho refactor hoặc đề xuất 改善 cho khách — khách Nhật thường trân trọng đề xuất chủ động. ④ Cho người muốn đổi môi trường luân chuyển có kế hoạch, thay vì để họ nghỉ.
+> 💡 Biến đề xuất cải tiến thành change request có doanh thu — ghi điểm cả với team lẫn công ty.
+
+**Q826. Dự án đỏ kéo dài 3 tháng, team mệt và mất tinh thần. Bạn giữ lửa thế nào?**
+Không hô hào, mà: ① nói thật tình hình và kế hoạch phục hồi với các mốc nhỏ thắng được trong 1–2 tuần; ② bảo vệ team: đàm phán giảm phạm vi/lùi mốc, xin thêm người, chặn yêu cầu mới; ③ ăn mừng từng mốc nhỏ; ④ theo dõi OT, cho nghỉ bù luân phiên; ⑤ có mặt cùng team lúc khó nhất. Người ta chịu được khó khi thấy đích và thấy PM đứng về phía mình.
+
+**Q827. Có nên tổ chức team building khi dự án đang đỏ, deadline gấp?**
+Không làm buổi lớn tốn nửa ngày giữa nước rút; nhưng giữ hoạt động nhỏ, ít tốn thời gian: bữa trưa chung, ăn tối khi OT, khen công khai sau mỗi mốc. Hoạt động lớn để sau milestone, như một buổi "ăn mừng phục hồi". Quan trọng hơn team building là giảm tải thật: bỏ họp không cần thiết, chặn việc ngoài phạm vi.
+> 💡 Câu trade-off — trả lời "tùy" kèm tiêu chí rõ ràng được đánh giá cao hơn "có" hay "không".
+
+**Q828. Làm outsource, member không gặp người dùng cuối — làm sao để họ thấy "purpose"?**
+Em kể câu chuyện nghiệp vụ: hệ thống của khách bảo hiểm B phục vụ ai, một lỗi tính phí ảnh hưởng người dùng thế nào; mời BrSE hoặc khách chia sẻ 15 phút ở kick-off về bối cảnh kinh doanh; chuyển feedback của người dùng cuối về team. Purpose còn là sự phát triển của chính họ: dự án này giúp họ đạt kỹ năng, chứng chỉ gì (Cloud/AWS, tiếng Nhật).
+
+**Q829. Động lực của member trẻ (Gen Z) khác thế hệ trước thế nào, bạn điều chỉnh gì?**
+Em tránh khái quát theo thế hệ, nhưng thực tế nhóm trẻ thường cần: feedback thường xuyên (không đợi 6 tháng), lộ trình nhìn thấy được, linh hoạt giờ giấc, được giải thích "vì sao". Em điều chỉnh: 1-on-1 dày hơn, mục tiêu ngắn 1–3 tháng, giải thích lý do của quy trình Nhật (vì sao checklist, vì sao review kỹ) thay vì bắt tuân thủ. Chuẩn chất lượng thì không hạ.
+> 💡 Bẫy: nói "Gen Z lười, thiếu cam kết" — lập tức mất điểm leadership.
+
+**Q830. Một member giỏi nói "em làm đủ việc, không muốn nhận thêm trách nhiệm". Bạn xử lý thế nào?**
+Đó là lựa chọn hợp lệ nếu họ hoàn thành tốt việc hiện tại. Em hỏi để hiểu (giai đoạn cuộc sống, sợ thất bại, hay thấy thăng tiến không đáng), tôn trọng quyết định, giao việc chuyên sâu kỹ thuật thay cho trách nhiệm quản lý nếu họ thích, và nói rõ cánh cửa vẫn mở. Không ép lên leader, vì người không muốn quản lý thường quản lý kém.
+
+**Q831. Bạn đo tinh thần team bằng gì thay vì cảm tính?**
+Kết hợp khảo sát và chỉ báo hành vi: ① pulse survey ẩn danh 3–5 câu mỗi tháng (thang 1–5, xem xu hướng chứ không xem số tuyệt đối); ② số đề xuất cải tiến ở retro; ③ OT, nghỉ đột xuất, trễ hạn bị báo muộn; ④ tín hiệu trong 1-on-1. Điểm giảm 2 kỳ liên tiếp hoặc một nhóm tụt mạnh là trigger để em đào sâu, không đợi có người nộp đơn nghỉ.
+
+## 9.4 Mentoring & coaching
+
+**Q832. Bạn tổ chức 1-on-1 thế nào: tần suất, thời lượng, nội dung?**
+Tham khảo: 30 phút, 2 tuần/lần với direct report và key member; 1 tháng/lần với người báo cáo qua leader. Đó là buổi **của member**: họ đặt chủ đề, em hỏi nhiều hơn nói. Nội dung xoay quanh 3 phần: đang vướng gì, cảm nhận/động lực, phát triển dài hạn. Kết thúc có 1–2 action, ghi ngắn và kiểm lại lần sau.
+> 💡 Bẫy: dùng 1-on-1 để hỏi tiến độ — tiến độ đã có daily và tool.
+
+**Q833. Những câu hỏi nào bạn hay dùng trong 1-on-1?**
+Câu mở em hay dùng: "Tuần này việc gì làm em tốn năng lượng nhất?", "Có việc gì em muốn làm mà chưa được giao?", "Nếu em là PM, em sẽ đổi điều gì trong dự án?", "6 tháng nữa em muốn giỏi thêm điều gì?". Câu cuối luôn là xin feedback cho chính em: "Anh/chị nên làm khác điều gì?". Tránh câu đóng kiểu "ổn không em?" vì đáp án luôn là "ổn ạ".
+
+**Q834. IDP (kế hoạch phát triển cá nhân) bạn xây với member gồm những gì?**
+① Mục tiêu nghề nghiệp 1–2 năm (vd lên Tech Lead, thành BrSE); ② khoảng cách kỹ năng so với mục tiêu; ③ 2–3 mục tiêu 6 tháng đo được, khớp chu kỳ review 2 lần/năm; ④ cách đạt theo tỉ lệ 70-20-10 (việc thực tế – học từ người khác – khóa học); ⑤ hỗ trợ cần có (dự án, mentor, chi phí thi). Em gắn IDP vào phân công thật, vd người muốn làm BrSE được trả lời Q&A khách có BrSE chính kèm.
+> 💡 Nối IDP với chính sách sẵn có của công ty (đào tạo tiếng Nhật, hỗ trợ thi Cloud/AWS/PMP) cho thấy bạn đã đọc kỹ JD.
+
+**Q835. Mô hình coaching GROW là gì? Cho ví dụ áp dụng.**
+GROW = **Goal** (muốn đạt gì) → **Reality** (hiện tại ra sao) → **Options** (có những cách nào) → **Will** (sẽ làm gì, khi nào). Ví dụ junior hay trễ task: G – ước lượng sát thực tế hơn; R – thường lệch 50% vì không chia nhỏ việc; O – chia task ≤ 1 ngày, hỏi senior trước khi estimate, ghi thực tế để so; W – áp dụng 2 sprint, xem lại ở 1-on-1. Coach đặt câu hỏi để member tự tìm ra, không đưa đáp án.
+
+**Q836. Khi nào bạn mentoring (chỉ dẫn), khi nào coaching (đặt câu hỏi)?**
+Tùy năng lực và mức rủi ro: người chưa có kiến thức về vấn đề → mentoring, chỉ cách làm và lý do; người đã có nền tảng → coaching để họ tự tư duy. Khi rủi ro cao, gấp (sự cố production) em chỉ dẫn trực tiếp, xong việc mới dùng buổi nhìn lại để coaching. Coaching người hoàn toàn chưa biết chỉ làm họ bối rối và tốn thời gian.
+
+**Q837. Bạn đào tạo một dev thành BrSE kế cận thế nào?**
+Lộ trình tham khảo 6–12 tháng: ① tiếng Nhật đủ đọc tài liệu (mục tiêu N2) và thuật ngữ nghiệp vụ; ② shadow BrSE chính: dự họp, đọc Q&A, viết biên bản; ③ tự xử lý Q&A nhỏ, BrSE chính duyệt trước khi gửi; ④ phụ trách trọn một module với khách. Song song rèn thói quen 確認 (kakunin – xác nhận lại hiểu biết) và viết email nghiệp vụ. Đo bằng số Q&A hiểu sai và phản hồi của khách.
+
+**Q838. Bạn đào tạo một sub-leader trong team như thế nào?**
+Em chọn người được đồng nghiệp tin và chủ động báo cáo, rồi giao quyền theo bậc: chủ trì daily → estimate một module → review code của junior → dẫn một sub-team 3–4 người với quyền phân task thật. 3 tháng đầu em làm "lưới an toàn": 1-on-1 hằng tuần, cùng xem quyết định khó, sai thì gỡ cùng chứ không lấy lại quyền. Trao quyền chứ không chỉ trao việc.
+
+**Q839. Bạn phát triển kỹ năng tiếng Nhật cho team dự án thế nào?**
+Gắn tiếng Nhật với việc thật: ① glossary nghiệp vụ Nhật–Việt dùng chung; ② đọc 設計書 (sekkeisho – tài liệu thiết kế) bản gốc, Comtor hỗ trợ khi vướng; ③ luân phiên viết daily report tiếng Nhật, Comtor sửa; ④ đặt mục tiêu JLPT trong IDP và tận dụng chương trình đào tạo tiếng Nhật của công ty. Dev đọc được tài liệu gốc thì giảm rõ lỗi hiểu sai do dịch qua nhiều tầng.
+
+**Q840. Member có thói quen 指示待ち (shiji machi – chờ chỉ thị). Bạn giúp họ chủ động thế nào?**
+Thường do môi trường cũ: từng bị phạt khi tự quyết, hoặc không được biết "vì sao". Em: ① luôn giải thích mục đích của việc; ② giao ownership một phần trọn vẹn; ③ yêu cầu "mang vấn đề thì mang kèm đề xuất" — 2 phương án và chọn 1; ④ khen hành vi chủ động kể cả khi kết quả chưa hoàn hảo; ⑤ nói rõ được tự quyết đến đâu. Sau 1–2 tháng đo bằng số đề xuất tự đưa ra.
+> 💡 Đừng đổ hết cho tính cách — chỉ ra môi trường đã tạo ra 指示待ち và PM sửa môi trường.
+
+**Q841. Bạn đánh giá hiệu quả mentoring thế nào?**
+Đo bằng thay đổi hành vi và kết quả, không bằng số buổi: mentee đạt mục tiêu IDP đúng hạn không; mức cần hỗ trợ giảm dần (số lần hỏi lại cùng một loại vấn đề); output cải thiện (bug, comment review); mentee bắt đầu kèm người khác. Em xin thêm feedback ẩn danh về mentor, và đưa kết quả mentoring vào tiêu chí đánh giá của senior/leader để việc kèm người được ghi nhận.
+
+**Q842. Senior giỏi nhưng không muốn chia sẻ kiến thức vì sợ mất vị thế. Bạn làm gì?**
+Em hiểu nỗi sợ đó và đổi hệ thống khuyến khích: ① đưa chia sẻ kiến thức vào tiêu chí đánh giá và điều kiện lên Tech Lead/Expert; ② ghi nhận công khai khi họ làm tech talk, viết tài liệu; ③ cho thấy team mạnh lên thì họ được giao việc khó, giá trị hơn. Song song giảm 属人化 (zokujinka – phụ thuộc vào một người) bằng review chéo và pair bắt buộc cho phần lõi.
+
+## 9.5 Đánh giá hiệu suất (review 2 lần/năm)
+
+**Q843. Với review performance 2 lần/năm, bạn chuẩn bị đánh giá member thế nào?**
+Không dồn cuối kỳ: em ghi nhật ký hiệu suất ngắn mỗi tháng cho từng người (sự việc, số liệu, feedback khách), thống nhất mục tiêu đầu kỳ, check-in giữa kỳ. Trước buổi review: member tự đánh giá, em thu số liệu khách quan và feedback 360°, so với mục tiêu rồi mới chấm. Buổi review là trao đổi hai chiều, kết thúc bằng mục tiêu kỳ sau; nguyên tắc "không có bất ngờ" — vấn đề phải được nói trong 1-on-1 trước đó.
+
+**Q844. KPI bạn đặt cho dev, QA và BrSE trong dự án Nhật là gì?**
+Tham khảo: **Dev** — tỉ lệ task đúng hạn, mật độ bug do QA/khách phát hiện trên khối lượng, chất lượng review; **QA** — tỉ lệ bug lọt sang UAT/khách, độ phủ test viewpoint, tỉ lệ bug hợp lệ; **BrSE** — số Q&A hiểu sai yêu cầu, thời gian phản hồi khách, chất lượng tài liệu. Mỗi vai 3–5 KPI, cộng phần định tính (thái độ, teamwork, kèm người) khoảng 30–40%.
+> 💡 Bẫy: KPI số dòng code hay số bug tìm được — dễ bị lách và phá teamwork.
+
+**Q845. Bạn dùng OKR hay KPI cho team, và hai thứ khác nhau thế nào?**
+KPI đo hiệu suất vận hành ổn định (đúng hạn, chất lượng), dùng để đánh giá; OKR đặt mục tiêu tham vọng để thay đổi, đạt 60–70% vẫn là tốt, không nên gắn thẳng vào lương thưởng. Em dùng KPI cho phần đánh giá chính và 1–2 OKR cho phát triển, vd "O: team tự giao tiếp được với khách; KR: 3 dev viết daily report tiếng Nhật, 50% Q&A trả lời không cần dịch".
+
+**Q846. Làm sao đánh giá công bằng khi mỗi người làm module có độ khó khác nhau?**
+Em chuẩn hóa theo độ khó: so thực tế với estimate team đã thống nhất (không so số task), cân nhắc độ phức tạp và rủi ro, nhìn xu hướng cả kỳ thay vì một sự việc. Ghi rõ bối cảnh: người nhận module legacy không tài liệu không thể đánh giá như người làm màn hình CRUD. Kết quả được calibrate với các PM/leader khác để cùng một thang.
+
+**Q847. Làm feedback 360° thế nào để có ích chứ không thành chấm điểm cảm tính?**
+Chọn 3–5 người làm việc trực tiếp (leader, đồng nghiệp, QA, BrSE, có thể cả onsite); hỏi bằng câu hỏi hành vi ("người này báo rủi ro sớm thế nào? cho ví dụ") thay vì thang điểm chung; đảm bảo ẩn danh; chỉ dùng xu hướng lặp lại từ nhiều người. Feedback của khách Nhật thì quy về sự việc cụ thể, tránh hiểu sai sắc thái của lời nói gián tiếp.
+
+**Q848. Những bias phổ biến khi đánh giá là gì, bạn tránh bằng cách nào?**
+Hay gặp: **recency** (chỉ nhớ 1–2 tháng gần nhất), **halo/horn** (một điểm tốt/xấu lan sang mọi tiêu chí), **leniency/central tendency** (ai cũng tốt hoặc trung bình cho an toàn), **similar-to-me** (ưu ái người giống mình). Cách tránh tương ứng: nhật ký hiệu suất hằng tháng, chấm từng tiêu chí riêng có bằng chứng, calibration giữa các PM, và tự hỏi "nếu người khác làm việc này mình chấm thế nào".
+> 💡 Kể tên bias kèm biện pháp tương ứng — cấu trúc gọn và thuyết phục.
+
+**Q849. Buổi calibration giữa các PM/leader là gì, vì sao quan trọng?**
+Là buổi những người đánh giá đặt kết quả cạnh nhau để thống nhất thang, tránh "PM dễ" và "PM khó" gây bất công giữa các team. Mỗi người trình bằng chứng cho mức cao nhất và thấp nhất, xem phân bố có lệch không. Em mang số liệu và ví dụ hành vi; sẵn sàng điều chỉnh khi bằng chứng của mình yếu, nhưng bảo vệ member khi có dữ liệu.
+
+**Q850. Mô hình SBI là gì? Cho ví dụ một feedback khó.**
+SBI = **Situation** – **Behavior** – **Impact**. Ví dụ: "Trong buổi họp với khách thứ Ba (S), em trả lời ngay 'được' khi khách hỏi thêm chức năng mà chưa kiểm effort (B); khách hiểu là đã cam kết, team phải làm thêm 3 ngày ngoài kế hoạch (I)." Sau đó em hỏi "em thấy thế nào?" và cùng chốt cách làm lần sau. Nói về hành vi quan sát được, không nhận xét tính cách ("em ẩu").
+
+**Q851. Bạn gắn kết quả đánh giá với thưởng dự án thế nào cho minh bạch?**
+Nguyên tắc công bố từ đầu dự án: thưởng phụ thuộc kết quả chung (đúng hạn, chất lượng, lợi nhuận) và mức đóng góp cá nhân theo tiêu chí biết trước. Em đề xuất phân bổ kèm bằng chứng (vai trò, độ khó, kết quả, phản hồi khách) trong khung chính sách công ty — không chia đều cho yên ổn, không thưởng theo cảm tình. Member hiểu vì sao mình nhận mức đó dù không biết mức của người khác.
+
+**Q852. Member tự đánh giá xuất sắc, bạn đánh giá chỉ đạt. Bạn dẫn buổi review thế nào?**
+① Nghe trước: hỏi căn cứ của họ, ghi nhận phần đúng. ② Đưa bằng chứng theo từng tiêu chí: mục tiêu đầu kỳ, số liệu, sự việc. ③ Phân biệt "làm nhiều" với "đạt mục tiêu". ④ Nếu họ có dữ kiện em bỏ sót, em điều chỉnh. ⑤ Chốt cụ thể cần đạt gì để được xuất sắc kỳ sau. Khoảng cách lớn thường do mục tiêu đầu kỳ không rõ — đó cũng là bài học của em.
+> 💡 Nhận phần trách nhiệm của PM (mục tiêu chưa rõ, feedback chưa đủ sớm) thể hiện sự trưởng thành.
+
+**Q853. Member xin tăng lương giữa kỳ, trước kỳ review vài tháng. Bạn trả lời thế nào?**
+Không hứa, không từ chối ngay: lắng nghe lý do (mặt bằng thị trường, có offer ngoài, đang gánh trách nhiệm lớn hơn), giải thích chu kỳ review 2 lần/năm của công ty. Nếu có cơ sở, em chuẩn bị bằng chứng để đề xuất ở kỳ gần nhất hoặc trao đổi với HR về ngoại lệ. Em hẹn mốc trả lời cụ thể và giữ đúng hẹn; nếu có offer ngoài thì chuyển sang câu chuyện retention.
+
+## 9.6 Low performer & kỷ luật
+
+**Q854. Member làm kém — bạn chẩn đoán nguyên nhân thế nào trước khi xử lý?**
+Em phân 3 nhóm: ① **năng lực** (thiếu kỹ năng, giao sai việc, chưa hiểu domain); ② **động lực** (chán, mâu thuẫn, không thấy tương lai); ③ **hoàn cảnh** (sức khỏe, gia đình, quá tải). Thu fact từ số liệu, leader và 1-on-1 hỏi mở; đồng thời soát lỗi hệ thống: kỳ vọng có rõ không, onboarding có đủ không. Mỗi nguyên nhân một cách xử lý: đào tạo, đổi việc, hỗ trợ hay kỷ luật.
+> 💡 Câu đầu tiên PM nên tự hỏi là "mình đã giao việc và kỳ vọng rõ chưa" — interviewer đánh giá cao người nhìn hệ thống trước.
+
+**Q855. PIP (performance improvement plan) bạn xây như thế nào?**
+PIP gồm: vấn đề cụ thể có bằng chứng; 2–4 mục tiêu đo được (vd task đúng hạn ≥ 85%, bug lọt ≤ mức trung bình team); thời hạn 1–3 tháng (tham khảo); hỗ trợ cụ thể (mentor, đào tạo, giảm tải); check-in hằng tuần; hệ quả nếu không đạt. Làm cùng HR theo quy chế công ty, member ký xác nhận đã hiểu. Mục tiêu thật của PIP là giúp người đó đạt, không phải thủ tục để cho nghỉ.
+
+**Q856. Khi nào bạn chọn chuyển vai trò cho member thay vì tiếp tục PIP?**
+Khi thái độ tốt nhưng không hợp vai hiện tại: dev tư duy logic, cẩn thận nhưng code chậm có thể hợp QA automation; người giao tiếp tốt, tiếng Nhật khá nhưng code yếu có thể theo hướng Comtor/BrSE. Em trao đổi thẳng, để họ chọn, có giai đoạn thử 1–2 tháng với tiêu chí đánh giá mới. Chuyển vai không phải "đẩy đi" mà là đặt đúng người đúng chỗ.
+
+**Q857. Khi nào phải cho member rời dự án hoặc rời công ty, và PM làm gì?**
+Khi đã chẩn đoán và hỗ trợ đủ (PIP có hỗ trợ thật) mà không cải thiện, hoặc vi phạm nghiêm trọng (bảo mật, gian lận). Rút khỏi dự án thì PM phối hợp phòng ban quyết; cho nghỉ việc thì PM không tự quyết, mà cung cấp hồ sơ bằng chứng cho HR/cấp trên xử lý theo quy chế công ty và Bộ luật Lao động. Em giữ thái độ tôn trọng, bàn giao đầy đủ, và rút kinh nghiệm khâu tuyển/onboard.
+> 💡 Bẫy: nói "em cho nghỉ ngay" — lộ ra chưa hiểu quy trình HR và pháp lý.
+
+**Q858. Xử lý "toxic high performer" — làm rất giỏi nhưng thái độ gây hại cho team — thế nào?**
+Em coi hành vi gây hại là vấn đề hiệu suất ngang chất lượng code: ① feedback riêng bằng SBI với ví dụ cụ thể (chê junior trước đám đông, từ chối review); ② đặt kỳ vọng hành vi rõ ràng, đưa vào tiêu chí đánh giá; ③ giảm phụ thuộc bằng chia sẻ kiến thức; ④ không thay đổi sau thời hạn thì chấp nhận rời họ dù ảnh hưởng ngắn hạn. Cái giá của một người toxic là cả team chậm lại và người giỏi khác bỏ đi.
+> 💡 Câu senior: cho thấy bạn dám đánh đổi năng suất ngắn hạn để giữ văn hóa team.
+
+**Q859. Khách Nhật rất quý một member giỏi, nhưng người này đang gây căng thẳng trong team. Bạn cân bằng thế nào?**
+Tách bạch hai việc: giá trị với khách là thật, hành vi trong team là vấn đề phải sửa. Em giữ người đó ở vai giao tiếp khách (điểm mạnh) nhưng đặt kỳ vọng hành vi rõ, đồng thời đào tạo người thứ hai đủ năng lực để khách không phụ thuộc một người. Chuyện nội bộ không đưa ra với khách; nếu cuối cùng phải thay người, em lên kế hoạch bàn giao và thông báo khách sớm.
+
+**Q860. Member đẩy source code của khách lên repo cá nhân public. Bạn xử lý thế nào?**
+① Khoanh vùng ngay: gỡ repo, thu hồi quyền, đổi secret, kiểm tra phạm vi lộ. ② Báo cấp trên và bộ phận bảo mật theo quy trình sự cố. ③ Báo khách theo hợp đồng và 報連相, nêu phạm vi ảnh hưởng và biện pháp. ④ Xử lý member theo quy chế, phân biệt cố ý hay thiếu hiểu biết. ⑤ 再発防止 (saihatsu boushi – phòng ngừa tái phát): đào tạo lại, chặn bằng kỹ thuật (secret scan, chặn push ra ngoài), 横展開 sang dự án khác.
+
+**Q861. Member hay đi muộn, nghỉ đột xuất, ảnh hưởng tiến độ. Bạn làm gì?**
+Nói chuyện riêng sớm, hỏi nguyên nhân trước (có thể là sức khỏe, gia đình) và nhắc lại quy định đã thống nhất. Có lý do chính đáng thì thử điều chỉnh giờ làm trong phạm vi chính sách; không thì ghi nhận bằng văn bản, đặt cam kết cụ thể và mốc kiểm tra 2–4 tuần. Lặp lại thì xử lý theo nội quy cùng HR. Không phê bình trước team.
+
+**Q862. Có nên công khai điểm đánh giá hay xếp hạng từng member trước team không?**
+Không công khai điểm đánh giá, thưởng cá nhân — đó là thông tin riêng và dễ gây so bì. Có thể công khai chỉ số chung của team (tiến độ, chất lượng) và ghi nhận đóng góp tích cực cụ thể. Bảng xếp hạng cá nhân theo bug hay số task khiến member chọn việc dễ, giấu lỗi và ngại giúp nhau.
+
+**Q863. Junior làm hỏng dữ liệu môi trường test của khách do thao tác sai. Bạn xử lý với member thế nào?**
+Khắc phục trước, tìm trách nhiệm sau: em cùng team khôi phục và báo khách. Với junior: buổi nhìn lại blameless hỏi "vì sao hệ thống cho phép một junior làm được việc đó" (quyền quá rộng, không review, không backup) thay vì quy kết cá nhân; junior tham gia viết 再発防止 để học. Chỉ khi cố tình làm trái quy trình đã được đào tạo mới xét trách nhiệm cá nhân.
+> 💡 Đây là câu kiểm tra psychological safety — phạt nặng junior thì lần sau lỗi sẽ bị giấu.
+
+## 9.7 Xung đột nội bộ
+
+**Q864. Mô hình Thomas–Kilmann gồm những phong cách xử lý xung đột nào, khi nào dùng?**
+Năm phong cách trên hai trục quyết đoán–hợp tác: **Competing** (áp đặt — sự cố khẩn, vi phạm bảo mật); **Collaborating** (cùng tìm win-win — vấn đề quan trọng, có thời gian); **Compromising** (mỗi bên nhượng một phần — gấp, hai bên ngang quyền); **Avoiding** (tạm né — chuyện nhỏ, cần để nguội); **Accommodating** (nhường — khi mình sai hoặc quan hệ quan trọng hơn). Không có phong cách đúng tuyệt đối, chỉ có đúng tình huống.
+> 💡 Cho một ví dụ dùng Competing đúng chỗ — chứng tỏ bạn không "hòa cả làng".
+
+**Q865. Dev và QA tranh cãi "đây là bug hay là spec". Bạn xử lý thế nào?**
+① Quay về nguồn: tài liệu yêu cầu, 設計書, Q&A đã chốt với khách. ② Tài liệu không rõ → đó là lỗ hổng spec; BrSE hỏi khách, không để dev và QA tự định nghĩa. ③ Trong lúc chờ, đặt trạng thái "pending spec" thay vì cãi tiếp. ④ Chốt quy tắc bug triage có tiêu chí và người quyết cuối (BrSE/PM). Tranh cãi lặp lại là dấu hiệu khâu review yêu cầu đang yếu.
+
+**Q866. QA bị dev coi là "người bắt lỗi", quan hệ căng thẳng. Bạn cải thiện thế nào?**
+Đổi khung từ đối đầu sang cùng mục tiêu "không lọt bug sang khách": ① QA vào sớm từ review yêu cầu/thiết kế, chia sẻ test viewpoint trước khi dev code; ② bug report viết theo sự việc, không phán xét; ③ KPI chung cho dev và QA về bug lọt sang khách; ④ ghi nhận QA khi bắt được lỗi quan trọng trước UAT. Mỗi bug QA bắt được là một lần khách không phải nhìn thấy.
+
+**Q867. Senior và junior bất đồng cách làm, junior thấy bị áp đặt. Bạn làm gì?**
+Tách hai việc: quyết định kỹ thuật và cách giao tiếp. Về kỹ thuật, hai bên trình phương án theo tiêu chí chung (đúng yêu cầu, rủi ro, effort, khả năng bảo trì), Tech Lead chốt và giải thích lý do. Về giao tiếp, em feedback riêng với senior: giải thích "vì sao" thay vì ra lệnh, vì kèm junior là trách nhiệm của senior. Junior được ghi nhận nếu ý tưởng hay, dù cuối cùng không được chọn.
+
+**Q868. Team Hà Nội và Đà Nẵng đổ lỗi cho nhau khi tích hợp lỗi. Bạn xử lý thế nào?**
+① Dừng đổ lỗi bằng dữ liệu: log, commit, interface spec cho thấy lỗi nằm ở đâu. ② Nguyên nhân gốc thường là ranh giới: interface không rõ, thiếu integration test chung, không ai sở hữu việc tích hợp. ③ Lập owner tích hợp, contract API thống nhất, CI tích hợp chạy hằng ngày. ④ Về con người: retro chung hai site, ghép cặp xuyên site. Em không đứng về phía site mình đang ngồi.
+> 💡 Câu này kiểm tra bạn có thiên vị nơi mình ngồi không — trả lời bằng dữ liệu và cơ chế.
+
+**Q869. Khi nào PM nên làm trọng tài, khi nào để team tự giải quyết xung đột?**
+Để team tự xử khi: xung đột về cách làm, hai bên ngang hàng, chưa ảnh hưởng tiến độ, team đã ở Norming/Performing. PM vào cuộc khi: kéo dài quá vài ngày gây tắc việc, chạm cam kết với khách, có yếu tố xúc phạm cá nhân, hoặc liên quan quyền hạn/nguồn lực ngoài tầm team. Ngay cả khi làm trọng tài, em ưu tiên giúp hai bên tự thỏa thuận rồi mới quyết thay.
+
+**Q870. Hai member xung đột cá nhân, không còn nói chuyện với nhau. Bạn làm gì?**
+① Gặp riêng từng người, nghe góc nhìn và tìm fact, không phán xét. ② Gặp chung khi cả hai sẵn sàng, đặt luật: nói về hành vi và tác động, không công kích. ③ Tìm điểm chung (cùng muốn dự án tốt), chốt cam kết cụ thể về cách phối hợp. ④ Theo dõi 2–4 tuần. Không cải thiện và ảnh hưởng team thì cân nhắc tách sang module/dự án khác — giải pháp cuối, không phải đầu tiên.
+
+**Q871. Bạn xử lý thế nào khi chính mình bất đồng với Tech Lead về một quyết định?**
+Tranh luận riêng, không trước team, dựa trên dữ kiện và ma trận quyền đã thống nhất. Nếu là quyết định kỹ thuật thuộc quyền Tech Lead và rủi ro chấp nhận được, em tôn trọng và ủng hộ công khai ("disagree and commit"). Nếu chạm cam kết QCD với khách, em đưa trade-off rõ ràng lên cấp trên hoặc một chuyên gia trung lập. Trước team phải là một tiếng nói thống nhất.
+> 💡 "Disagree and commit" là tinh thần interviewer muốn nghe ở vị trí senior.
+
+**Q872. Xung đột nội bộ có mặt tích cực không? Làm sao khuyến khích "xung đột tốt"?**
+Có — tranh luận về ý tưởng giúp lộ rủi ro sớm, tránh groupthink, nhất là khi cả văn hóa Việt lẫn Nhật đều ngại phản đối trực diện. Em khuyến khích: ở review thiết kế chỉ định một người đóng vai phản biện, hỏi "điều gì có thể làm phương án này thất bại?", khen người dám nêu điểm yếu. Ranh giới rõ: tranh luận về vấn đề, không về con người.
+
+## 9.8 OT, burnout & sức khỏe team
+
+**Q873. Bạn quản lý OT trong dự án thế nào?**
+OT là công cụ ngắn hạn có kế hoạch, không phải cách bù estimate sai. Em: ① lập kế hoạch OT trước (ai, bao nhiêu giờ, mục đích, đến khi nào); ② theo dõi giờ OT từng người hằng tuần, ngưỡng cảnh báo nội bộ tham khảo > 20 giờ/tháng; ③ tuân thủ giới hạn của Bộ luật Lao động và quy chế công ty, có sự đồng ý của người lao động; ④ OT kéo dài > 2 tuần là tín hiệu phải xử lý gốc: phạm vi, estimate, nguồn lực.
+> 💡 Nói "OT là triệu chứng, không phải giải pháp" kèm cách theo dõi bằng số.
+
+**Q874. Dấu hiệu burnout của member là gì, bạn phát hiện sớm thế nào?**
+Dấu hiệu: chất lượng giảm đột ngột (bug tăng ở người vốn cẩn thận), trễ việc, im lặng trong họp, dễ cáu, nghỉ ốm nhiều, làm khuya thường xuyên dù không ai yêu cầu, hoài nghi về dự án. Em phát hiện qua dữ liệu (OT, commit lúc nửa đêm, nghỉ đột xuất) kết hợp 1-on-1. Thấy dấu hiệu thì hỏi thẳng và giảm tải ngay, không đợi họ nộp đơn.
+
+**Q875. Một member có dấu hiệu burnout nặng ngay giữa giai đoạn nước rút. Bạn làm gì?**
+① Sức khỏe trước: nói chuyện riêng, đề xuất nghỉ vài ngày hoặc giảm tải ngay. ② Phân bổ lại: chuyển phần nằm trên critical path cho người khác, giao họ việc ít áp lực thời gian. ③ Cập nhật kế hoạch, rủi ro; nếu chạm mốc thì báo cấp trên và khách sớm theo 報連相. ④ Sau nước rút: tìm nguyên nhân gốc (quá tải, thiếu hỗ trợ) để 再発防止. Một người gục giữa chừng tốn hơn nhiều so với cho nghỉ 2 ngày.
+
+**Q876. Khách Nhật dồn việc vào 年度末 (nendomatsu – cuối năm tài chính). Bạn chuẩn bị team thế nào?**
+Nhiều doanh nghiệp Nhật kết thúc năm tài chính cuối tháng 3, nên tháng 1–3 thường dồn release và nghiệm thu. Em chuẩn bị từ quý trước: ① hỏi khách kế hoạch 年度末 sớm để lập capacity plan; ② hạn chế key member nghỉ dài giai đoạn này nhưng bố trí nghỉ bù trước/sau; ③ cross-training, nguồn lực dự phòng; ④ chốt phạm vi ưu tiên với khách. Tết Nguyên đán thường rơi đúng giai đoạn này, phải tính từ đầu.
+> 💡 Chi tiết Tết Nguyên đán trùng 年度末 cho thấy bạn đã thực sự vận hành dự án Nhật.
+
+**Q877. Member có quyền từ chối OT không? Nhiều người từ chối OT lúc gấp thì sao?**
+Có — theo Bộ luật Lao động, làm thêm giờ cần người lao động đồng ý, trừ một số trường hợp đặc biệt luật quy định. Em không ép, không đánh giá thấp người từ chối OT. Nhiều người cùng từ chối là tín hiệu: em tìm lý do (mệt, kéo dài, không được ghi nhận), xoay vòng OT, ưu tiên lại phạm vi, xin thêm nguồn lực hoặc đàm phán mốc. Kế hoạch phải dựa vào OT bắt buộc là kế hoạch sai.
+> 💡 Bẫy: "em sẽ thuyết phục mọi người OT vì dự án" — nghe như tư duy quản lý cũ.
+
+**Q878. Khách liên tục đẩy yêu cầu gấp, bạn bảo vệ team mà vẫn giữ khách hài lòng thế nào?**
+Em làm "lớp đệm" có nguyên tắc: mọi yêu cầu gấp đi qua PM/BrSE, được đánh giá effort và tác động, rồi đưa khách lựa chọn (làm ngay thì lùi việc nào, hoặc phát sinh chi phí). Member không nhận việc trực tiếp ngoài kênh. Em đếm số yêu cầu "gấp" mỗi tháng; nếu thành thường xuyên, đưa số liệu vào họp định kỳ để thống nhất lại quy trình. Bảo vệ team không phải nói "không", mà là làm rõ trade-off.
+
+**Q879. Bạn sắp xếp nghỉ phép cho team thế nào để không ảnh hưởng dự án?**
+Đầu năm/đầu quý em thu kế hoạch nghỉ dài, đưa vào lịch dự án cùng lịch nghỉ lễ lớn của Nhật (Golden Week, Obon, nghỉ cuối năm) và Việt Nam. Quy tắc: key member không nghỉ trùng nhau, người nghỉ có backup đã được bàn giao, nghỉ ≥ 3 ngày báo trước 1–2 tuần (tham khảo). Em khuyến khích nghỉ đủ phép, vì người cả năm không nghỉ là rủi ro burnout.
+
+**Q880. PM có nên ở lại OT cùng team không?**
+Em có mặt ở thời điểm quan trọng (release, sự cố, đêm deploy) để gỡ vướng và quyết nhanh, nhưng không ngồi lại chỉ để "làm gương" khi không có việc của PM — điều đó tạo áp lực ngầm buộc người khác ở lại. Em cũng không nhắn việc lúc khuya trừ khi khẩn, vì member sẽ hiểu là phải trả lời. Giữ sức cho PM cũng là giữ chất lượng quyết định.
+
+**Q881. Sau giai đoạn OT dồn dập, bạn phục hồi team thế nào?**
+① Nghỉ bù có kế hoạch, luân phiên để dự án vẫn chạy. ② Một sprint "nhẹ" cho nợ kỹ thuật, tài liệu, cải tiến — ít áp lực nhưng có giá trị. ③ Retro riêng về nguyên nhân OT (estimate, phạm vi, rủi ro bỏ sót) để 再発防止. ④ Ghi nhận cụ thể đóng góp, đưa vào đánh giá và đề xuất thưởng dự án. Bỏ qua phục hồi thì giai đoạn khó tiếp theo team sẽ vỡ.
+
+## 9.9 Retention & quản lý tri thức
+
+**Q882. Vì sao kỹ sư nhảy việc, và PM tác động được phần nào?**
+Thường gặp: lương dưới thị trường, không thấy lộ trình, dự án nhàm/công nghệ cũ, quan hệ với quản lý trực tiếp, quá tải kéo dài. PM không quyết hết về lương nhưng tác động trực tiếp phần còn lại: phân việc có thử thách, IDP rõ, chặn quá tải, đối xử tôn trọng, và đề xuất tăng lương/thăng chức có bằng chứng ở mỗi kỳ review. Người ta thường rời người quản lý chứ không chỉ rời công ty.
+
+**Q883. Stay interview là gì và bạn làm thế nào?**
+Là buổi trò chuyện chủ động với người đang làm tốt để hiểu vì sao họ ở lại và điều gì có thể khiến họ đi — trước khi họ có ý định nghỉ (khác exit interview vốn chỉ để rút kinh nghiệm). Câu hỏi: "Điều gì khiến em muốn tiếp tục ở đây?", "Nếu điều gì thay đổi, em sẽ cân nhắc rời đi?", "Em muốn học gì mà chưa có cơ hội?". Em làm 1–2 lần/năm với key member và hành động ngay trên ít nhất một điều.
+
+**Q884. Exit interview làm thế nào để có thông tin thật?**
+Nên để HR hoặc người không phải quản lý trực tiếp thực hiện, vì người sắp nghỉ ít khi nói thật với PM của mình. Hỏi theo sự việc: "Khi nào em bắt đầu nghĩ đến việc rời đi?", "Nếu điều gì khác đi thì em đã ở lại?". Em tổng hợp xu hướng qua nhiều người (vd 3 người nghỉ cùng vì lộ trình) để đổi chính sách, thay vì xem từng ca riêng lẻ.
+
+**Q885. Key member báo nghỉ vì có offer cao hơn 30%. Bạn có đưa counter offer không?**
+Xác định lý do thật là tiền hay điều khác. Nếu chỉ là tiền và lương hiện tại thật sự dưới thị trường, em đề xuất điều chỉnh với cấp trên/HR trong khung chính sách (lẽ ra phải phát hiện sớm hơn). Nếu lý do là lộ trình, dự án hay quản lý, counter offer chỉ trì hoãn vài tháng và tạo tiền lệ bất công với người khác. Dù kết quả thế nào, em kích hoạt kế hoạch bàn giao ngay và không gây áp lực đạo đức.
+> 💡 Nêu được rủi ro của counter offer (tiền lệ, bất công nội bộ, chỉ trì hoãn) là tư duy hệ thống của senior.
+
+**Q886. Bus factor là gì, bạn đo và giảm bus factor thế nào?**
+Bus factor là số người tối thiểu phải rời đi để dự án đình trệ; bằng 1 nghĩa là 属人化 nặng. Em lập skill matrix (module × người, mức 0–3), mục tiêu mỗi module quan trọng có ít nhất 2 người ở mức tự làm được. Cách giảm: review chéo bắt buộc, luân phiên task, pair cho phần lõi, tài liệu hóa, BrSE và Tech Lead đều có người kế cận.
+> 💡 Đưa ra skill matrix cụ thể thuyết phục hơn câu chung chung "tài liệu hóa đầy đủ".
+
+**Q887. Bạn tài liệu hóa kiến thức dự án thế nào mà không thành gánh nặng?**
+Tài liệu hóa đúng chỗ: ① tài liệu "sống" gần code (README, ghi chép quyết định kiến trúc ngắn, runbook vận hành); ② glossary nghiệp vụ Nhật–Việt; ③ FAQ đúc kết từ Q&A với khách; ④ video ngắn cho thao tác phức tạp. Đưa "cập nhật tài liệu" vào Definition of Done của task thay vì dồn cuối dự án. Chỉ số kiểm: người mới tự setup và nắm tổng quan trong 2–3 ngày (tham khảo).
+
+**Q888. Key member nghỉ, còn 30 ngày. Bạn tổ chức 引き継ぎ (hikitsugi – bàn giao) thế nào?**
+① Ngày 1–2: chọn người nhận (ưu tiên 2 người), lập danh mục: module, tài liệu, tài khoản, việc dở dang, đầu mối với khách. ② Tuần 1–2: shadowing — người nhận ngồi cùng; tuần 3: reverse shadowing — người nhận làm, người đi review. ③ Viết 引き継ぎ書 (hikitsugi-sho – tài liệu bàn giao) có checklist ký xác nhận. ④ Báo khách thay đổi nhân sự kèm kế hoạch bàn giao. ⑤ Thu hồi quyền truy cập đúng ngày cuối.
+> 💡 Reverse shadowing hay bị bỏ qua — người nhận phải "làm thật" khi người cũ vẫn còn đó.
+
+**Q889. Bạn phản ứng thế nào khi biết một member đang đi phỏng vấn nơi khác?**
+Không coi là phản bội, cũng không giả vờ không biết. Em tạo 1-on-1 tự nhiên hỏi về mức hài lòng và mong muốn phát triển — không truy hỏi "em có đi phỏng vấn không". Điều gì công ty đáp ứng được thì hành động; song song âm thầm tăng chia sẻ kiến thức ở module của người đó. Đối xử khác đi (ngừng giao việc hay, loại khỏi quyết định) chỉ đẩy họ đi nhanh hơn.
+
+**Q890. Ngoài lương, bạn có công cụ nào để giữ người giỏi?**
+① Việc có thử thách, công nghệ mới, cơ hội onsite hoặc làm việc trực tiếp với khách; ② lộ trình rõ (Tech Lead, BrSE, PM) gắn với kỳ review; ③ hỗ trợ học và thi chứng chỉ (tiếng Nhật, Cloud/AWS, PMP theo chính sách công ty); ④ ghi nhận đúng người; ⑤ quyền tự chủ, được tham gia quyết định; ⑥ môi trường không toxic. Em hỏi từng người điều gì quan trọng với họ, vì không có một công thức chung.
+
+## 9.10 Tuyển, onboard cấp dự án & phong cách lãnh đạo
+
+**Q891. Phỏng vấn dev cho dự án Nhật, ngoài kỹ thuật bạn đánh giá gì?**
+Kỹ thuật để Tech Lead đánh giá; em tập trung: ① độ cẩn thận — đưa một đoạn spec ngắn, hỏi họ sẽ xác nhận gì trước khi code; ② thói quen 報連相 — "kể lần em biết mình sẽ trễ, em đã làm gì"; ③ thái độ với quy trình, review; ④ khả năng học tiếng Nhật, đọc tài liệu; ⑤ độ hợp với team hiện tại. Dự án Nhật cần người cẩn thận, minh bạch hơn người nhanh nhưng ẩu.
+
+**Q892. Bạn phỏng vấn một BrSE như thế nào?**
+Em kiểm 3 lớp: ① tiếng Nhật thực tế — đọc một đoạn yêu cầu tiếng Nhật, tóm tắt và chỉ ra điểm mơ hồ cần hỏi khách, viết thử email xác nhận; ② tư duy nghiệp vụ–kỹ thuật — chia yêu cầu thành task, estimate sơ bộ; ③ tình huống — khách đổi yêu cầu sát deadline thì làm gì. Chứng chỉ JLPT chỉ là điều kiện cần; khả năng phát hiện điểm mơ hồ mới là năng lực lõi của BrSE.
+> 💡 Bài test "tìm điểm mơ hồ trong spec" phân loại BrSE rất nhanh.
+
+**Q893. Kế hoạch onboarding 2 tuần cho thành viên mới vào dự án gồm những gì?**
+Tuần 1: môi trường, tài khoản, quy định bảo mật của khách; tổng quan nghiệp vụ và kiến trúc; coding convention, quy trình review, checklist; gán buddy; làm 1–2 task nhỏ được review kỹ. Tuần 2: nhận task thật cỡ 1–2 ngày, dự họp với BrSE, đọc tài liệu thiết kế tiếng Nhật có glossary. Cuối tuần 2: 30 phút với PM xem tiến bộ và vướng mắc. Đích đo được: tự hoàn thành task nhỏ mà không cần kèm sát.
+
+**Q894. Đào tạo fresher cho dự án Nhật, bạn tập trung vào những gì?**
+Ngoài kỹ thuật, fresher cần thói quen làm việc dự án Nhật: ① 報連相 — báo sớm, báo cả tin xấu; ② đọc hiểu 設計書, hỏi khi chưa rõ thay vì tự đoán; ③ tự review theo checklist trước khi gửi; ④ ghi chép, tuân thủ quy trình; ⑤ hiểu vì sao khách khắt khe về chất lượng. Em dùng buddy + task tăng dần độ khó + review kỹ trong 1–3 tháng đầu, đánh giá theo mốc rõ ràng.
+
+**Q895. Bạn ủy quyền (delegation) thế nào, làm sao biết nên giao đến mức nào?**
+Mức ủy quyền theo năng lực và rủi ro: "làm theo hướng dẫn" → "đề xuất, PM duyệt" → "tự quyết, báo sau" → "tự quyết hoàn toàn". Khi giao: nói rõ kết quả, giới hạn (ngân sách, mốc), quyền hạn và điểm kiểm tra. Việc em không ủy quyền: cam kết cuối với khách, đánh giá hiệu suất, quyết định nhân sự nhạy cảm. Giao việc mà không giao quyền là giao gánh nặng.
+
+**Q896. Situational leadership là gì? Ví dụ áp dụng với các member khác nhau trong cùng team.**
+Mô hình Hersey–Blanchard: phong cách thay đổi theo mức phát triển của từng người với từng việc — **Directing**, **Coaching**, **Supporting**, **Delegating**. Ví dụ: fresher → chỉ dẫn từng bước; dev 2 năm lần đầu làm BrSE → coaching (vừa chỉ vừa động viên); senior giỏi vừa gặp thất bại → supporting, lắng nghe, củng cố tự tin; Tech Lead vững → delegating. Cùng một người có thể ở mức khác nhau với việc khác nhau.
+
+**Q897. Bạn quản lý member lớn tuổi hơn hoặc giỏi kỹ thuật hơn mình thế nào?**
+Em xác định là khác vai chứ không phải hơn kém: họ là chuyên gia kỹ thuật, em chịu trách nhiệm điều phối và cam kết với khách. Tôn trọng bằng hành động: hỏi ý kiến họ trước quyết định kỹ thuật, giao việc khó với quyền tự chủ cao, ghi nhận công khai. Nhưng thỏa thuận chung (báo cáo, quy trình, deadline) áp dụng như mọi người. Xưng hô và lễ độ phù hợp với văn hóa trọng tuổi tác.
+> 💡 Bẫy: "em sẽ chứng tỏ năng lực để họ phục" — nghe như cạnh tranh; hãy nói về phân vai và tôn trọng.
+
+**Q898. Servant leadership có phù hợp với môi trường dự án Nhật vốn trọng thứ bậc không?**
+Servant leadership là lãnh đạo bằng phục vụ: gỡ cản trở, phát triển người, đặt thành công của team lên trước. Em kết hợp: với khách và cấp trên, PM là đầu mối chịu trách nhiệm rõ ràng, đúng thứ bậc; với team nội bộ, em là servant leader — chặn yêu cầu ngoài luồng, lo nguồn lực, để team tập trung. Phục vụ không có nghĩa là thiếu quyết đoán: khi sự cố hay deadline gấp, em vẫn chỉ đạo trực tiếp.
+
+**Q899. Có nên đề bạt dev giỏi kỹ thuật nhất làm leader không?**
+Không mặc định. Leader cần năng lực khác: phân việc, kèm người, chịu trách nhiệm kết quả của người khác. Em xét bằng hành vi đã thấy (từng kèm junior chưa, xử lý bất đồng ra sao), cho thử vai nhỏ 2–3 tháng có hỗ trợ, và đề xuất lộ trình chuyên gia song song để người giỏi kỹ thuật không phải "lên quản lý mới được tăng lương". Đề bạt sai có thể mất cả một dev giỏi lẫn một leader tốt.
+> 💡 Nhắc "dual career ladder" (lộ trình kép chuyên gia/quản lý) là câu trả lời mang tầm senior.
+
+**Q900. Làm sao bạn biết mình đang lãnh đạo tốt, và xin feedback từ cấp dưới thế nào?**
+Em nhìn 3 nhóm chỉ báo: kết quả (QCD dự án), sức khỏe team (pulse survey, OT, tỉ lệ nghỉ việc) và mức tự chủ (bao nhiêu việc team tự giải quyết không cần em). Feedback từ dưới lên: khảo sát ẩn danh mỗi kỳ review, câu hỏi cố định cuối 1-on-1, retro có mục dành cho PM. Quan trọng là hành động và nói lại đã thay đổi gì; thước đo cuối cùng: team vẫn chạy tốt khi em vắng một tuần.
+
+---
+
+# Chương 10 · Chiến lược, kinh doanh, domain & phát triển chi nhánh Đà Nẵng (Q901–Q1000)
+
+## 10.1 Setup chi nhánh mới tại Đà Nẵng
+
+**Q901. Nếu được tham gia build-up chi nhánh Đà Nẵng, anh/chị chia lộ trình từ 0 lên 300 người như thế nào?**
+Tôi chia theo mốc có điều kiện chuyển, không theo ngày cứng: ① **0→30 (khởi động)** — 1–2 dự án mồi, đội lõi gồm PM, tech lead, BrSE (ブリッジSE, burijji SE – kỹ sư cầu nối), QA lead, hạ tầng bảo mật đạt chuẩn; ② **30→100 (ổn định)** — 2–3 account, process đồng bộ HQ, vị trí chủ chốt có người dự phòng; ③ **100→300 (mở rộng)** — tự làm pre-sales/estimate, có mũi nhọn domain, đào tạo nội bộ. Chỉ chuyển mốc khi đạt chỉ số chất lượng, utilization, attrition và hài lòng khách.
+> 💡 Interviewer muốn nghe "điều kiện chuyển giai đoạn" (gate), không chỉ con số headcount.
+
+**Q902. Điều kiện cụ thể để chi nhánh chuyển từ khoảng 30 người lên 100 người là gì?**
+Tôi đặt gate đo được (ngưỡng tham khảo): ① ≥ 2 dự án mồi được nghiệm thu đúng hạn, defect sau release trong ngưỡng cam kết; ② billable rate ≥ 75–80% trong 3 tháng liên tiếp; ③ mỗi dự án có người dự phòng cho vai PM/tech lead/BrSE; ④ attrition không cao hơn mức chung của công ty; ⑤ pipeline đã có đơn hàng cho 1–2 quý tới. Thiếu ② và ⑤ mà vẫn tuyển ồ ạt sẽ tạo bench lớn và đốt margin.
+
+**Q903. Trước khi nhận dự án khách Nhật ở site mới, hạ tầng và ISMS tối thiểu cần chuẩn bị những gì?**
+Khách Nhật thường gửi **セキュリティチェックシート (sekyuriti chekku shiito – bảng kiểm bảo mật)** trước khi ký, nên tôi chuẩn bị theo đúng các mục đó: kiểm soát ra vào bằng thẻ, camera, khu dự án tách biệt; máy không quyền admin, khóa USB, mã hóa ổ cứng; VPN/VDI và log truy cập; NDA từng người; quy trình báo cáo sự cố bảo mật. Nếu công ty có chứng nhận ISO/IEC 27001 thì cần mở rộng phạm vi chứng nhận sang site Đà Nẵng và chạy internal audit trước khi khách đến kiểm tra.
+> 💡 Đừng nói "công ty có ISO là đủ" — khách tài chính thường muốn bằng chứng riêng cho chính site sẽ làm dự án.
+
+**Q904. "Phòng dev an toàn" cho dự án tài chính Nhật khác phòng làm việc thường ở điểm nào?**
+Khác ở 3 lớp: ① **vật lý** — khu riêng chỉ thành viên dự án được vào, cấm điện thoại/camera, clean desk, camera giám sát lưu log; ② **logic** — dữ liệu khách chỉ truy cập qua VDI/jump server, không copy ra ngoài, dùng dữ liệu đã mask thay vì dữ liệu thật; ③ **quy trình** — danh sách người được phép do khách duyệt, cấp/thu quyền có biên bản, kiểm tra định kỳ. PM giữ danh sách này luôn khớp với **体制図 (taiseizu – sơ đồ tổ chức dự án)** đã nộp khách.
+
+**Q905. Chi nhánh mới nên kế thừa gì từ HQ và nên tự chủ ở đâu?**
+Kế thừa nguyên vẹn: quy trình chất lượng, template tài liệu, tiêu chuẩn bảo mật, chính sách nhân sự, công cụ quản lý — để khách thấy cùng một chuẩn dù làm ở site nào. Tự chủ ở: cách tuyển dụng và employer branding địa phương, chương trình fresher, hoạt động gắn kết, cải tiến vận hành nhỏ. Nguyên tắc của tôi là **"cùng chuẩn, khác cách triển khai"**: muốn đổi chuẩn thì đề xuất ngược về HQ để áp dụng toàn công ty, không tạo phiên bản riêng của chi nhánh.
+
+**Q906. Dự án "mồi" đầu tiên của chi nhánh nên được chọn theo tiêu chí nào?**
+Tôi chọn dự án: ① quy mô vừa (tham khảo 5–10 người, 3–6 tháng); ② domain/công nghệ đội đã có nền; ③ khách đã có quan hệ tốt với công ty, sẵn lòng "cho cơ hội"; ④ phạm vi rõ, rủi ro kỹ thuật thấp; ⑤ có khả năng mở rộng nếu làm tốt. Tránh dự án trọn gói gấp, hệ thống lõi tài chính hoặc khách hoàn toàn mới. Dự án mồi không cần lãi cao nhất — nó cần **một thành công kể lại được** để làm case cho khách tiếp theo.
+> 💡 Câu ghi điểm: "Dự án mồi là để bán năng lực chi nhánh, không chỉ để có doanh thu".
+
+**Q907. Làm sao để chi nhánh mới không phụ thuộc kéo dài vào HQ?**
+Phụ thuộc lúc đầu là bình thường; rủi ro là phụ thuộc không có lối ra. Tôi làm 3 việc: ① lập ma trận "HQ làm → ĐN học → ĐN làm" cho từng chức năng (estimate, pre-sales, BrSE, QA, review kiến trúc), mỗi chức năng có mốc chuyển giao; ② mỗi lần HQ hỗ trợ đều có người Đà Nẵng đi kèm để học; ③ đo tỉ lệ việc ĐN tự xử lý, ví dụ % estimate do ĐN làm. Mục tiêu tham khảo: sau 12–18 tháng ĐN tự lo trọn dự án quy mô vừa.
+
+**Q908. Rủi ro lớn nhất khi vận hành chi nhánh mới là gì và kiểm soát thế nào?**
+Tôi thấy 4 rủi ro chính: ① **thiếu leader** (PM, tech lead, BrSE) → luân chuyển người từ HQ 6–12 tháng và đào tạo kế cận ngay; ② **đơn hàng không đều** → bench tăng, cần dự báo cùng sales; ③ **chất lượng lần đầu kém** làm mất niềm tin khách → QA review chéo với HQ cho 2–3 dự án đầu; ④ **văn hóa tách rời** HQ → sinh hoạt chung, luân chuyển, kênh chia sẻ. Tôi theo dõi trong risk register cấp chi nhánh, review hàng tháng với lãnh đạo.
+
+**Q909. Trong 90 ngày đầu tham gia chi nhánh Đà Nẵng, anh/chị sẽ làm gì?**
+30 ngày đầu **lắng nghe**: gặp lãnh đạo ĐN và HQ, các PM, xem P&L, pipeline, chất lượng các dự án đang chạy. Đến ngày 60: chọn 1–2 vấn đề ưu tiên (ví dụ thiếu BrSE, process chưa đồng bộ) và đề xuất kế hoạch có chỉ số. Đến ngày 90: có kết quả nhìn thấy được ở dự án mình phụ trách và đóng góp 1 việc ngoài dự án như template, buổi đào tạo hoặc hỗ trợ một proposal. Tôi không thay đổi lớn khi chưa hiểu bối cảnh.
+> 💡 Tránh nói "sẽ thay đổi toàn bộ quy trình" khi chưa biết hiện trạng — cả lãnh đạo VN lẫn khách Nhật đều đánh giá thấp kiểu này.
+
+**Q910. Chi nhánh đang 30 người thì một khách lớn yêu cầu tăng 40 người trong 2 tháng. Anh/chị xử lý thế nào?**
+① Xác nhận fact: khách cần đủ 40 cùng lúc hay theo đợt, skill gì, cam kết bao lâu. ② Đề xuất ramp-up theo đợt (ví dụ 10–15–15), lõi là leader từ HQ/site khác cộng người ĐN có kinh nghiệm, rồi mới đến fresher tốt. ③ Báo khách năng lực thật và kế hoạch theo **報連相 (hourensou – báo cáo, liên lạc, thảo luận)**, không hứa đủ người khi chưa có. ④ Giữ tỉ lệ senior/junior tối thiểu (tham khảo 1:3); về lâu dài dự báo nhu cầu 1–2 quý với sales để lần sau không bị động.
+> 💡 Bẫy: nhận hết để có doanh thu rồi vỡ chất lượng — với khách Nhật, mất niềm tin khó lấy lại hơn mất một đơn hàng.
+
+**Q911. Ở giai đoạn 0→30 người, chi nhánh cần cơ cấu vai trò tối thiểu nào?**
+Ngoài lãnh đạo chi nhánh, đội lõi gồm: 1–2 PM, tech lead cho mỗi stack chính, ít nhất 1 BrSE hoặc comtor (phiên dịch IT), QA lead, 1 người IT–admin lo hạ tầng và bảo mật, HR tuyển dụng tại chỗ. Giai đoạn đầu một người có thể kiêm 2 vai nhưng không kiêm vai xung đột, ví dụ dev tự QA sản phẩm của mình. BrSE là nút thắt lớn nhất vì khách Nhật cần đầu mối tiếng Nhật ổn định, nên tôi tìm người dự phòng ngay từ đầu.
+
+## 10.2 Tuyển dụng & talent pool Đà Nẵng
+
+**Q912. Nguồn nhân lực IT ở Đà Nẵng đến từ đâu và anh/chị khai thác thế nào?**
+Tôi chia 3 nguồn: ① **sinh viên/fresher** từ ĐH Bách khoa – ĐH Đà Nẵng, ĐH Duy Tân, ĐH FPT Đà Nẵng, VKU và các trường miền Trung; ② **người có kinh nghiệm đang làm ở Đà Nẵng**; ③ **người gốc miền Trung** đang ở Hà Nội, TP.HCM hoặc Nhật muốn về quê. Mỗi nguồn một cách tiếp cận: ① hợp tác trường, thực tập có mentor; ② referral, sự kiện kỹ thuật; ③ chiến dịch "về quê" với dự án Nhật đủ thách thức và lộ trình rõ.
+
+**Q913. Hợp tác với các trường đại học ở Đà Nẵng nên làm gì để thật sự hiệu quả?**
+Không dừng ở ngày hội việc làm. Tôi đề xuất: ① thực tập 2–3 tháng có mentor và mini project theo quy trình Nhật; ② seminar/thỉnh giảng về quy trình outsourcing Nhật, chất lượng, Git, test; ③ học bổng hoặc cuộc thi lập trình nhỏ để nhận diện người giỏi sớm; ④ đo kết quả: % thực tập sinh được nhận, % qua thử việc, đánh giá sau 6 tháng theo từng trường. Trường nào cho tỉ lệ cao thì đầu tư sâu hơn.
+
+**Q914. Làm sao kéo kỹ sư gốc miền Trung đang làm ở Hà Nội, TP.HCM hoặc Nhật về Đà Nẵng?**
+Động lực về quê thường là gia đình và chất lượng sống; rào cản là nỗi lo "về Đà Nẵng thì dự án kém, chậm thăng tiến". Tôi xử lý rào cản: ① dự án khách Nhật lĩnh vực tài chính, bảo hiểm, sản xuất, công nghệ tương đương site lớn; ② lộ trình lên leader rõ vì chi nhánh đang mở rộng — đây là lợi thế thật; ③ người về từ Nhật có vai trò BrSE/điều phối onsite, dùng được tiếng Nhật. Kênh hiệu quả: referral, cộng đồng người miền Trung, LinkedIn.
+
+**Q915. Cạnh tranh tuyển dụng với các công ty IT khác tại Đà Nẵng, anh/chị tạo khác biệt bằng gì?**
+Không cạnh tranh chỉ bằng lương vì luôn có nơi trả cao hơn. Tôi dựa vào điều JD thể hiện: dự án khách Nhật trong tài chính, bảo hiểm, sản xuất; đào tạo tiếng Nhật; hỗ trợ thi Cloud/AWS/PMP; review performance 2 lần/năm nên tăng trưởng nhanh hơn; định hướng làm sản phẩm riêng. Cộng thêm cơ hội tham gia xây chi nhánh từ đầu — vai trò leader đến sớm hơn so với công ty đã ổn định.
+> 💡 Khi nói về employer branding, chỉ dùng fact có trong JD — đừng bịa chính sách công ty.
+
+**Q916. Anh/chị thiết kế chương trình fresher kèm tiếng Nhật cho chi nhánh như thế nào?**
+Khóa 3–4 tháng (tham khảo), 3 luồng song song: ① kỹ thuật theo stack dự án sắp cần; ② quy trình Nhật — đọc **基本設計 (kihon sekkei – thiết kế cơ bản)**, viết test case, báo cáo theo hourensou, quy tắc chất lượng; ③ tiếng Nhật để đọc tài liệu và giao tiếp cơ bản (tham khảo: mục tiêu JLPT N4, người có nền hướng tới N3). Cuối khóa làm mini project giả lập khách Nhật, chấm theo tiêu chí rõ. Vào dự án thật, fresher shadow 1–2 tháng trước khi nhận task độc lập.
+
+**Q917. Chi nhánh thiếu BrSE trầm trọng, anh/chị giải quyết ngắn hạn và dài hạn thế nào?**
+Ngắn hạn: chia sẻ BrSE từ HQ theo lịch, dùng comtor kết hợp PM/tech lead đọc được tiếng Nhật, chuẩn hóa template Q&A và báo cáo để giảm phụ thuộc vào giao tiếp tự do. Dài hạn: chọn 3–5 dev giỏi có tiếng Nhật N3 trở lên vào lộ trình "BrSE dự bị" — học nghiệp vụ, đi họp cùng BrSE chính, đi onsite ngắn hạn; tuyển thêm người về từ Nhật. Chỉ số theo dõi: số dự án có BrSE dự phòng.
+
+**Q918. Employer branding cho chi nhánh mới nên tập trung vào thông điệp nào?**
+Thông điệp phải thật và kiểm chứng được. Tôi chọn 3 trụ: ① **"Làm dự án Nhật chất lượng cao ngay tại Đà Nẵng"** — kể case dự án thật khi khách đã cho phép; ② **"Cùng xây chi nhánh, lên leader sớm"**; ③ **"Học tiếng Nhật, được hỗ trợ thi Cloud/PMP"**. Kênh: bài chia sẻ kỹ thuật của chính kỹ sư ĐN, sự kiện ở trường, câu chuyện người về quê. Kênh mạnh nhất vẫn là nhân viên hài lòng giới thiệu bạn bè.
+> 💡 Nói rõ phải xin phép khách trước khi dùng tên hoặc case dự án — khách Nhật rất nhạy cảm chuyện này.
+
+**Q919. Ở cấp chi nhánh, anh/chị giữ chân nhân sự thế nào khi đối thủ trả lương cao hơn?**
+Tôi tách nhóm **key person** (leader, BrSE, người nắm domain) khỏi phần còn lại và chấp nhận một mức nghỉ việc tự nhiên. Với key person: lộ trình rõ, review 2 lần/năm gắn tăng lương, cơ hội onsite, chứng chỉ, dự án thách thức, và điều chỉnh lương theo dữ liệu thị trường trước khi họ nhận offer. Ở cấp chi nhánh, tôi đo attrition theo nhóm và đọc exit interview mỗi quý để sửa nguyên nhân gốc, thay vì tăng lương chữa cháy từng trường hợp.
+
+**Q920. Anh/chị đo hiệu quả tuyển dụng của chi nhánh bằng những chỉ số nào?**
+Hai nhóm: **tốc độ/chi phí** — time-to-fill, tỉ lệ nhận offer, chi phí tuyển theo kênh; **chất lượng** — % qua thử việc, đánh giá performance sau 6 tháng, attrition trong 12 tháng đầu, % đến từ referral. Nhóm chất lượng quan trọng hơn: tuyển nhanh mà 6 tháng sau nghỉ thì tốn gấp đôi. Mỗi quý tôi so các chỉ số theo kênh để dồn ngân sách vào kênh tốt nhất.
+
+**Q921. Có ý kiến tuyển thật nhiều fresher thay middle/senior để giảm chi phí. Anh/chị phản biện thế nào?**
+Đồng ý một phần: fresher giảm cost per head và tạo nguồn dài hạn. Nhưng phải nhìn bằng số: fresher cần 3–6 tháng mới billable đầy đủ, chiếm thời gian mentor của senior, rủi ro defect cao hơn với khách Nhật khắt khe. Tôi đề xuất cơ cấu kim tự tháp có kiểm soát, ví dụ senior : middle : junior ≈ 1 : 2 : 3 (tham khảo), chỉ tăng fresher khi đủ mentor, và tính margin theo cả vòng đời dự án thay vì chỉ lương tháng.
+> 💡 Câu senior: quy về margin và rủi ro chất lượng có số, không trả lời đúng/sai cảm tính.
+
+## 10.3 Mô hình delivery center & chuyển giao dự án
+
+**Q922. Anh/chị lập transition plan chuyển một dự án đang chạy từ Hà Nội vào Đà Nẵng thế nào?**
+Kế hoạch **引継ぎ (hikitsugi – bàn giao)** gồm 4 pha: ① **chuẩn bị** — đánh giá tài liệu, nợ kỹ thuật, ai nắm kiến thức gì; chọn đội ĐN; xin đồng ý của khách; ② **KT (knowledge transfer)** — tài liệu, walkthrough code, nghiệp vụ; ③ **shadowing** — ĐN làm cùng, HN chịu trách nhiệm; ④ **reverse shadowing** — ĐN làm chính, HN giám sát; sau đó mới bàn giao chính thức. Mỗi pha có exit criteria đo được, người chủ chốt HN hỗ trợ thêm 1–2 tháng sau bàn giao.
+> 💡 Khách Nhật hay hỏi "người cũ còn hỗ trợ đến khi nào" — chuẩn bị sẵn câu trả lời bằng lịch cụ thể.
+
+**Q923. Exit criteria để kết thúc giai đoạn shadowing là gì?**
+Ngưỡng tham khảo: ① đội ĐN tự xử lý ≥ 80% task trong 2 sprint liên tiếp không cần HN can thiệp; ② năng suất đạt ≥ 85–90% đội cũ; ③ defect rate không tăng so với baseline; ④ trả lời Q&A nghiệp vụ của khách đúng hạn; ⑤ checklist KT được ký đủ (môi trường, deploy, vận hành, sự cố thường gặp). Chưa đạt thì kéo dài shadowing — không bàn giao chỉ vì "đến ngày".
+
+**Q924. Khách Nhật lo ngại khi biết dự án sẽ chuyển sang site mới Đà Nẵng. Anh/chị trấn an thế nào?**
+① Hiểu nỗi lo thật: sợ chất lượng giảm, mất người quen, rủi ro bảo mật. ② Đưa kế hoạch cụ thể: chuyển theo pha, người chủ chốt cũ ở lại trong giai đoạn chuyển, đầu mối liên lạc không đổi. ③ Đưa bằng chứng: site đạt cùng tiêu chuẩn bảo mật, mời khách tham quan trực tiếp hoặc online, báo cáo chỉ số chất lượng hàng tuần. ④ Bắt đầu từ phần rủi ro thấp, đặt điểm kiểm tra cùng khách trước khi chuyển phần lõi.
+> 💡 Khách cần **安心 (anshin – sự yên tâm)** hơn lời hứa: đưa kế hoạch, số liệu và quyền dừng lại cho khách.
+
+**Q925. Phân bổ dự án giữa các site Hà Nội, TP.HCM, Đà Nẵng nên dựa trên tiêu chí nào?**
+Tôi dùng ma trận 5 tiêu chí: ① năng lực sẵn có của site (stack, domain, tiếng Nhật); ② mức rủi ro dự án — khách mới, hệ thống lõi, trọn gói gấp nên đặt ở đội đã trưởng thành; ③ khả năng mở rộng nhân sự tại site; ④ chi phí; ⑤ mục tiêu chiến lược — ví dụ cố ý đưa dự án domain sản xuất về ĐN để xây mũi nhọn. Không phân theo "site nào đang trống người", vì đó là cách tạo ra dự án thất bại.
+
+**Q926. Làm sao chuẩn hóa process giữa các site để khách thấy chất lượng đồng nhất?**
+① Một bộ quy trình và template chung (WBS, Q&A list, báo cáo tuần, checklist review, test report); ② chỉ số chất lượng chung với định nghĩa thống nhất (defect density, tỉ lệ review, tỉ lệ rework); ③ audit chéo — QA site này audit dự án site kia mỗi quý; ④ cộng đồng PM/QA liên site chia sẻ bài học; ⑤ công cụ quản lý chung. Cách làm nội bộ có thể khác, nhưng đầu ra giao cho khách phải giống nhau.
+
+**Q927. Mô hình "đội ĐN là phần mở rộng của dự án HN" và "site ĐN làm trọn dự án" — anh/chị chọn thế nào?**
+Mô hình mở rộng dễ bắt đầu, tận dụng leader HN, nhưng chi phí phối hợp cao và đội ĐN khó trưởng thành vì chỉ nhận task. Mô hình làm trọn tạo ownership, xây leader ĐN, nhưng rủi ro ban đầu cao hơn. Tôi đi theo lộ trình: bắt đầu bằng module rõ ràng, sau 2–3 tháng giao trọn một module end-to-end, rồi trọn dự án. Tránh chia lâu dài theo layer kiểu "HN thiết kế, ĐN code" vì trách nhiệm chất lượng bị cắt đôi.
+> 💡 Nêu trade-off cả hai phía rồi mới chọn — đó là cách trả lời của senior.
+
+**Q928. Đang chuyển giao thì người nắm kiến thức chủ chốt ở Hà Nội xin nghỉ việc. Anh/chị xử lý thế nào?**
+① Xác nhận thời gian còn lại và phần kiến thức chưa chuyển, xếp theo rủi ro. ② Ngay lập tức: giảm việc mới của người đó, ưu tiên KT phần rủi ro cao — ghi video walkthrough, tài liệu vận hành, ghép người ĐN ngồi cùng. ③ Báo khách theo hourensou: ảnh hưởng, kế hoạch bù, đề xuất lùi mốc nếu cần. ④ **再発防止 (saihatsu boushi – phòng ngừa tái phát)**: quy định mỗi mảng kiến thức có ít nhất 2 người nắm (bus factor ≥ 2) trước khi bắt đầu mọi đợt chuyển giao.
+
+**Q929. Làm sao đo một đợt chuyển giao sang Đà Nẵng đã thành công?**
+So với baseline trước chuyển giao, đo sau 3 và 6 tháng: ① chất lượng — defect ở UAT/production không tăng; ② tiến độ — tỉ lệ đúng hạn milestone; ③ khách — điểm khảo sát, số lần phàn nàn; ④ đội — attrition, mức tự chủ; ⑤ kinh tế — margin dự án sau chuyển. Chỉ số nào xấu đi quá ngưỡng đã thống nhất với lãnh đạo, tôi kích hoạt hỗ trợ lại từ HN và báo minh bạch, không che giấu.
+
+**Q930. Chi nhánh Đà Nẵng nên chuyên môn hóa theo domain/công nghệ hay làm đa năng?**
+Giai đoạn đầu (dưới 100 người) nên đa năng vừa phải để không phụ thuộc một khách. Khi đủ quy mô, chọn 1–2 mũi nhọn để có nhận diện — ví dụ domain sản xuất hoặc dịch vụ test — dựa trên nhu cầu khách hiện có, năng lực sẵn và nguồn tuyển tại ĐN. Chuyên môn hóa giúp bán dễ hơn nhưng phải kiểm soát **rủi ro tập trung**: tôi giữ không account nào chiếm quá khoảng 40% doanh thu chi nhánh (tham khảo).
+
+**Q931. Cần chuẩn bị gì khi khách Nhật đến thăm hoặc audit site Đà Nẵng lần đầu?**
+① Gửi agenda trước 1–2 tuần, xác nhận người tham dự và mục tiêu; ② tài liệu tiếng Nhật về chi nhánh, **体制 (taisei – cơ cấu tổ chức)**, quy trình chất lượng, bảo mật; ③ tour khu làm việc bảo mật, demo kiểm soát ra vào, quản lý thiết bị; ④ để thành viên chủ chốt tự giới thiệu; ⑤ sau chuyến thăm gửi biên bản, trả lời các điểm khách lưu ý đúng hạn đã hẹn. Chi tiết nhỏ như đúng giờ, danh thiếp, phòng họp gọn gàng đều được để ý.
+
+## 10.4 Kinh tế dự án & chi nhánh
+
+**Q932. P&L của một dự án outsourcing gồm những dòng chính nào?**
+**Doanh thu** (theo man-month hoặc trọn gói, ghi nhận theo nghiệm thu/tiến độ) trừ **chi phí trực tiếp** — lương và bảo hiểm thành viên, BrSE/comtor, onsite (vé, lưu trú, phụ cấp), license, hạ tầng riêng, đào tạo riêng cho dự án — ra **gross margin**. Trừ tiếp chi phí gián tiếp phân bổ (văn phòng, quản lý, sales) ra lợi nhuận đóng góp. PM tối thiểu phải nắm gross margin dự án và biết yếu tố nào làm nó biến động hàng tháng.
+
+**Q933. Gross margin dự án là gì và PM tác động đến nó bằng cách nào?**
+Gross margin = (doanh thu − chi phí trực tiếp) / doanh thu. PM tác động qua: ① kiểm soát effort thực tế so với kế hoạch, giảm rework; ② cơ cấu đội hợp lý, không để senior làm việc junior làm được; ③ mọi phát sinh đi qua change request có tính phí; ④ cắt chi phí onsite không cần thiết; ⑤ nghiệm thu đúng hạn để ghi nhận doanh thu. Tôi xem margin hàng tháng, lệch hơn 5 điểm % so với kế hoạch (tham khảo) thì phân tích nguyên nhân và báo cấp trên.
+> 💡 "Rework và phát sinh không tính phí là hai thứ ăn margin nhiều nhất" — câu này rất thuyết phục nếu kèm ví dụ thật.
+
+**Q934. Utilization rate và billable rate khác nhau thế nào, nên đặt mục tiêu bao nhiêu?**
+**Utilization** = giờ làm việc có mã dự án (kể cả việc nội bộ) / giờ khả dụng; **billable rate** = giờ khách trả tiền / giờ khả dụng. Mục tiêu tham khảo cho kỹ sư delivery khoảng 80–85% billable; leader thấp hơn vì còn quản lý, đào tạo. 100% không phải tốt — không còn thời gian học, không có dự phòng, dễ burnout. Ở cấp chi nhánh tôi xem thêm tỉ lệ người billable trên tổng headcount, vì bộ máy gián tiếp phình nhanh cũng làm lỗ.
+
+**Q935. Bench management là gì, chi nhánh xử lý nhân sự bench thế nào?**
+Bench là nhân sự chưa được gán vào dự án có doanh thu. Tôi quản lý theo 3 hướng: ① **phòng** — dự báo nhu cầu 1–2 quý cùng sales, lên lịch release người từ dự án sắp kết thúc; ② **dùng** — bench học kỹ năng/tiếng Nhật theo pipeline, làm POC cho pre-sales, công cụ nội bộ, shadow dự án sắp mở rộng; ③ **giới hạn** — bench kéo dài quá 1–2 tháng thì xem xét chuyển site hoặc vai trò. Mức bench an toàn tham khảo 5–10% headcount, đủ đáp ứng đơn gấp.
+
+**Q936. Cost per head tính thế nào và vì sao Đà Nẵng có thể là lợi thế chi phí?**
+Cost per head = tổng chi phí (lương, bảo hiểm, phúc lợi, văn phòng, thiết bị, quản lý phân bổ) / số nhân sự, tính theo tháng. Đà Nẵng thường có chi phí thuê văn phòng và mức lương thấp hơn HN/HCM ở cùng trình độ — đây là nhận định chung, cần kiểm bằng dữ liệu HR thực tế của công ty. Lợi thế chỉ có thật khi năng suất và chất lượng tương đương; nếu phải kéo nhiều người HQ hỗ trợ hoặc rework nhiều thì lợi thế biến mất.
+> 💡 Không đưa con số lương thị trường cụ thể khi không có nguồn — nói "cần kiểm dữ liệu" là câu trả lời chín chắn.
+
+**Q937. Những chi phí "ẩn" nào thường làm dự án offshore Nhật lỗ?**
+① **BrSE/comtor**: dịch tài liệu, họp, Q&A tốn nhiều effort hơn dự tính; ② **onsite**: vé, visa, lưu trú, thời gian chưa billable; ③ **đào tạo** domain và tiếng Nhật cho người mới; ④ **rework** do hiểu sai yêu cầu; ⑤ **evidence và tài liệu chất lượng** theo yêu cầu khắt khe (ảnh chụp kết quả test, báo cáo review); ⑥ **thời gian chờ** khách trả lời Q&A; ⑦ chi phí thay người giữa chừng. Tôi tách các mục này thành dòng riêng trong ngân sách và theo dõi thực tế hàng tháng.
+
+**Q938. PM chịu trách nhiệm gì với thưởng dự án/doanh thu?**
+JD có thưởng dự án/doanh thu, nên PM chịu trách nhiệm trực tiếp với các yếu tố tạo ra nó: giao đúng hạn, đạt chất lượng để nghiệm thu và ghi nhận doanh thu, giữ margin, mở ra cơ hội mở rộng. Với đội, tôi công khai tiêu chí phân bổ thưởng dựa trên đóng góp đo được — chất lượng, trách nhiệm, hỗ trợ người khác — tránh chia đều cảm tính. Thưởng không bao giờ được đổi bằng cắt giảm test hay ép OT để "kịp số".
+> 💡 Nhấn "không đổi chất lượng lấy số" — interviewer thường kiểm tra thái độ này.
+
+**Q939. Giữa dự án, anh/chị phát hiện dự án đang lỗ. Anh/chị làm gì?**
+① Xác nhận fact: lỗ do effort vượt, phát sinh chưa tính phí, cơ cấu đội hay estimate sai từ đầu; dự báo lỗ đến cuối dự án. ② Hành động ngay: dừng việc ngoài phạm vi, tối ưu cơ cấu đội, gom phát sinh làm căn cứ change request. ③ Báo cấp trên sớm theo hourensou kèm 2–3 phương án; đàm phán với khách khi có căn cứ phạm vi rõ ràng. ④ Ghi bài học cho estimate và hợp đồng sau, **横展開 (yokotenkai – nhân rộng bài học)** sang các dự án tương tự.
+
+**Q940. Khi nào nên chấp nhận một dự án margin thấp?**
+Khi có giá trị chiến lược đo được: ① dự án mồi mở account có tiềm năng lớn; ② xây năng lực domain/công nghệ công ty đang cần; ③ lấp bench cao trong thời gian ngắn; ④ tạo case cho chi nhánh mới. Điều kiện: mục tiêu rõ (ví dụ sau 6 tháng mở rộng thêm người hoặc điều chỉnh giá ở hợp đồng sau), có giới hạn lỗ, có lãnh đạo duyệt. Không nhận margin thấp chỉ vì sợ mất khách.
+> 💡 Trả lời kiểu "đầu tư có điều kiện thoát", không phải "nhận hết" hay "từ chối hết".
+
+**Q941. Chi nhánh có utilization cao nhưng margin vẫn thấp — nguyên nhân có thể là gì?**
+Tôi kiểm lần lượt các giả thuyết: ① giá bán thấp — rate cũ chưa điều chỉnh, giảm giá để giữ khách, yên yếu làm doanh thu quy đổi giảm; ② cơ cấu đội nặng senior so với rate khách trả; ③ effort thực lớn hơn effort được tính tiền — phát sinh, rework; ④ chi phí gián tiếp của chi nhánh mới (quản lý, văn phòng) chia trên headcount còn ít; ⑤ hỗ trợ từ HQ không được phân bổ đúng. Mỗi giả thuyết có dữ liệu để kiểm trước khi hành động.
+
+**Q942. Làm sao cân bằng đầu tư đào tạo (không billable) với mục tiêu margin?**
+Tôi coi đào tạo là khoản đầu tư có ngân sách riêng, không phải chi phí "giấu" trong dự án: ① đặt % thời gian đào tạo theo vai (tham khảo 5–10% cho junior); ② gắn nội dung với pipeline — học thứ dự án sắp cần; ③ tận dụng bench và chính sách hỗ trợ thi Cloud/AWS/PMP; ④ đo ROI đơn giản: thời gian từ đào tạo đến billable, số người có chứng chỉ khách yêu cầu. Đào tạo đúng chỗ giúp bán được rate cao hơn về sau.
+
+## 10.5 Account management & tăng trưởng
+
+**Q943. Làm sao biến một dự án nhỏ thành account lớn với khách Nhật?**
+Khách Nhật mở rộng dựa trên **信頼 (shinrai – niềm tin)** tích lũy, nên thứ tự là: ① làm thật tốt dự án đầu — đúng hạn, ít lỗi, báo cáo minh bạch; ② hiểu nghiệp vụ và kế hoạch IT của khách, không chỉ phần mình làm; ③ chủ động đề xuất cải tiến nhỏ có giá trị; ④ khi khách nhắc việc mới, có ngay đề xuất kèm đội sẵn sàng. Lộ trình điển hình: maintain → phát triển tính năng → hệ thống mới → đồng hành DX.
+
+**Q944. Upsell và cross-sell khác nhau thế nào trong outsourcing? Cho ví dụ.**
+**Upsell** là tăng quy mô cùng loại dịch vụ: từ 5 lên 15 người, từ maintain 1 hệ thống lên nhiều hệ thống. **Cross-sell** là bán thêm loại dịch vụ khác: khách đang thuê phát triển → thêm test độc lập, migration lên cloud, vận hành, tự động hóa bằng AI. Ví dụ: khách sản xuất C thuê maintain hệ thống quản lý kho; đội thấy nhiều thao tác nhập tay lặp lại → đề xuất POC tự động hóa → thành dự án mới.
+
+**Q945. Chuyển từ hợp đồng 準委任 theo dự án sang ラボ型 có lợi gì cho hai bên, cần điều kiện gì?**
+**準委任 (jun'inin – hợp đồng tính theo công/thời gian)** thường gắn với từng dự án; **ラボ型 (rabo-gata – mô hình lab/ODC)** là đội cố định dài hạn dành riêng cho khách. Khách lợi: đội ổn định, giữ kiến thức, linh hoạt đổi ưu tiên; công ty lợi: doanh thu đều, dễ lập kế hoạch nhân sự. Điều kiện: khách có lượng việc liên tục, đã tin năng lực đội, có người phía khách quản lý backlog. PM phải chứng minh năng suất bằng số để lab không bị xem là "nuôi người".
+
+**Q946. Anh/chị đo mức hài lòng của khách Nhật bằng cách nào?**
+Kết hợp: ① khảo sát định kỳ (theo quý hoặc cuối phase) về chất lượng, tiến độ, giao tiếp, đề xuất cải tiến; ② chỉ số khách quan — số phàn nàn, defect khách tìm thấy, tỉ lệ đúng hạn; ③ họp review định kỳ cấp quản lý để nghe điều khách không viết ra. Câu "**問題ない (mondai nai – không có vấn đề gì)**" chưa chắc là hài lòng; tôi hỏi tiếp "có điểm nào muốn chúng tôi làm tốt hơn không" để mở cửa cho góp ý thật.
+> 💡 Đừng chỉ khảo sát người phụ trách trực tiếp; hãy hỏi cả cấp quản lý quyết định ngân sách phía khách.
+
+**Q947. NPS tính thế nào và có hạn chế gì khi dùng với khách Nhật?**
+NPS = % người chấm 9–10 (promoter) − % người chấm 0–6 (detractor) trên thang 0–10. Hạn chế: số người trả lời trong một account ít nên điểm dao động mạnh; người Nhật thường tránh chấm cực trị nên NPS có thể thấp dù khách vẫn hài lòng (nhận định chung). Vì vậy tôi dùng NPS như xu hướng của chính account qua các kỳ, kèm comment định tính và hành vi thực tế: khách có gia hạn, mở rộng, giới thiệu bộ phận khác không.
+> 💡 So xu hướng của chính account qua các kỳ thay vì so với benchmark Âu–Mỹ.
+
+**Q948. PM phối hợp với sales/pre-sales thế nào để tăng trưởng account?**
+PM là "tai mắt" bên trong account: ① chia sẻ tín hiệu cơ hội với sales hàng tháng — khách nhắc hệ thống mới, ngân sách năm sau, khó khăn của bộ phận khác; ② hỗ trợ estimate, viết phần giải pháp và thể chế đội trong proposal tiếng Nhật; ③ tham gia họp với khách ở vai người sẽ giao hàng — khách Nhật tin người làm thực tế hơn người bán; ④ thống nhất ranh giới: PM không hứa giá thay sales, sales không hứa phạm vi mà đội không làm được.
+
+**Q949. Khi nào nên đề xuất POC, và làm POC thế nào để chuyển thành dự án?**
+Đề xuất khi khách có vấn đề rõ nhưng còn do dự về công nghệ mới hoặc năng lực vendor, ví dụ AI đọc chứng từ, IoT nhà máy. POC tốt cần: ① tiêu chí thành công đo được thống nhất trước (ví dụ độ chính xác ≥ X% trên dữ liệu mẫu của khách); ② thời gian ngắn, tham khảo 2–6 tuần; ③ chi phí thấp hoặc chia sẻ; ④ kết thúc bằng báo cáo và đề xuất bước tiếp có ước tính. Thiếu tiêu chí thành công, POC dễ thành demo miễn phí kéo dài.
+> 💡 Ghi điểm khi nói "thống nhất tiêu chí thành công trước khi làm POC".
+
+**Q950. Khách chỉ giao task nhỏ và luôn so giá với vendor khác. Làm sao thoát khỏi vị trí "vendor giá rẻ"?**
+① Hiểu vì sao khách xem mình là vendor: chỉ nhận yêu cầu, không đóng góp ngoài phạm vi. ② Ngay trong task nhỏ, nâng giá trị: phát hiện rủi ro sớm, đề xuất cải tiến, tài liệu tốt hơn mong đợi. ③ Tiếp cận trưởng bộ phận, trình bày định kỳ về chất lượng và đề xuất. ④ Đào sâu domain để chuyển câu chuyện từ giá sang giá trị: rút ngắn thời gian ra thị trường, giảm lỗi vận hành. Mục tiêu là được mời vào **要件定義 (youken teigi – định nghĩa yêu cầu)**.
+> 💡 Được mời vào upstream (要件定義, 基本設計) là dấu hiệu rõ nhất bạn đã là partner, không còn là vendor.
+
+**Q951. Account đang tốt thì người phụ trách phía khách thay đổi, người mới chưa quen công ty. Anh/chị làm gì?**
+① Xác nhận: người mới có vai trò, ưu tiên gì, có ý định xem lại vendor không. ② Chủ động xin buổi **挨拶 (aisatsu – chào hỏi chính thức)** cùng cấp quản lý công ty, trình bày lịch sử hợp tác, thành tích bằng số. ③ Báo cáo nội bộ theo hourensou; hỏi kỳ vọng của người mới, điều chỉnh cách báo cáo theo họ. ④ Phòng ngừa: giữ quan hệ nhiều tầng (người thực hiện, quản lý, bộ phận liên quan) để account không phụ thuộc một người — ghi rủi ro này vào account plan.
+
+**Q952. Account plan cho một khách chiến lược gồm những nội dung gì?**
+① Hiểu khách: ngành, chiến lược kinh doanh, kế hoạch IT/DX, chu kỳ ngân sách, cách ra quyết định — kể cả **稟議 (ringi – quy trình trình duyệt nội bộ)** vốn mất nhiều thời gian; ② sơ đồ quan hệ: ai quyết định, ai ảnh hưởng, ai ủng hộ mình; ③ hiện trạng: doanh thu, margin, hài lòng, rủi ro; ④ mục tiêu 1–3 năm và cơ hội cụ thể; ⑤ hành động theo quý có người chịu trách nhiệm. PM, sales và lãnh đạo review hàng quý — không phải tài liệu viết một lần.
+
+## 10.6 Domain tài chính – ngân hàng Nhật
+
+**Q953. Phân biệt 勘定系 và 情報系 trong hệ thống ngân hàng Nhật.**
+**勘定系 (kanjoukei – hệ thống core banking)** xử lý giao dịch làm thay đổi số dư: tiền gửi, cho vay, chuyển tiền, ngoại hối; đòi hỏi chính xác tuyệt đối, availability rất cao, thay đổi cực kỳ thận trọng. **情報系 (jouhoukei – hệ thống thông tin)** dùng dữ liệu từ 勘定系 cho phân tích, báo cáo, CRM, quản lý rủi ro; linh hoạt hơn, dễ áp dụng công nghệ mới. Ngoài ra có **対外系 (taigaikei – hệ thống kết nối bên ngoài)** như mạng thanh toán liên ngân hàng, ATM.
+
+**Q954. 夜間バッチ là gì và vì sao quan trọng trong dự án ngân hàng?**
+**夜間バッチ (yakan bacchi – xử lý batch ban đêm)** là các job chạy sau giờ giao dịch: tính lãi, đối soát, cập nhật số dư, tạo báo cáo, chuyển dữ liệu sang 情報系. Nó phải xong trong cửa sổ cố định trước giờ mở cửa hôm sau; chậm hoặc lỗi ảnh hưởng trực tiếp khách hàng của ngân hàng. Khi dự án đụng batch, tôi chú ý thời gian chạy với dữ liệu lớn, thứ tự phụ thuộc giữa các job, khả năng chạy lại và kịch bản xử lý khi job lỗi lúc nửa đêm.
+
+**Q955. Vì sao khách tài chính Nhật rất bảo thủ khi thay đổi hệ thống?**
+Vì ① sự cố có cái giá cực lớn — ảnh hưởng hàng loạt giao dịch, uy tín, có thể bị xử lý; ② chịu giám sát của **金融庁 (Kinyuuchou – Cơ quan Dịch vụ Tài chính, FSA)** nên mọi thay đổi phải giải trình được; ③ hệ thống legacy lớn, phụ thuộc nhiều tầng, người hiểu ngày càng ít; ④ ra quyết định cần đồng thuận nhiều cấp. Hệ quả cho PM: kiểm thử dày, tài liệu đầy đủ, phê duyệt nhiều bước — phải tính vào kế hoạch thay vì xem là "khách chậm".
+
+**Q956. FISC là gì, PM offshore cần biết ở mức nào?**
+**FISC (金融情報システムセンター – Trung tâm Hệ thống Thông tin Tài chính)** ban hành bộ tiêu chuẩn an toàn hệ thống thông tin (thường gọi FISC安全対策基準) mà các tổ chức tài chính Nhật dùng làm chuẩn tham chiếu. PM offshore không cần thuộc chi tiết, nhưng cần biết khách sẽ đánh giá vendor theo các yêu cầu liên quan: quản lý truy cập, thiết bị, dữ liệu, quản lý bên nhận outsourcing. Khi nhận checklist bảo mật, tôi phối hợp bộ phận bảo mật công ty để trả lời có bằng chứng.
+> 💡 Nói "biết ở mức nhận biết và biết hỏi đúng người" — đừng tự nhận là chuyên gia FISC.
+
+**Q957. Yêu cầu availability và bảo mật của hệ thống ngân hàng ảnh hưởng thế nào đến cách PM lập kế hoạch?**
+① Kiểm thử chiếm tỉ trọng lớn hơn dự án thường: hiệu năng, failover, batch lỗi, tích hợp với hệ thống liên quan; ② release theo cửa sổ cố định (thường đêm hoặc cuối tuần) với kế hoạch rollback đã diễn tập; ③ dữ liệu thật không ra khỏi môi trường khách — chuẩn bị dữ liệu test giả lập từ sớm; ④ evidence cho từng test case; ⑤ phê duyệt nhiều cấp phía khách, nên đặt buffer riêng cho quy trình phê duyệt chứ không chỉ cho dev.
+
+**Q958. Dự án migration hệ thống ngân hàng có những rủi ro đặc thù nào?**
+① **Dữ liệu**: chuyển sai một trường số tiền/lãi là sự cố nghiêm trọng → đối soát tự động trước–sau, chạy thử nhiều lần; ② **nghiệp vụ ẩn** trong code legacy (COBOL…) không có tài liệu → phân tích hiện trạng, phỏng vấn người vận hành; ③ **cutover** trong khung giờ hẹp → rehearsal nhiều lần; ④ có thể phải **chạy song song** cũ–mới để so kết quả; ⑤ **con người**: người hiểu hệ thống cũ sắp nghỉ hưu. Tôi đặt tiêu chí go/no-go cụ thể cho cutover và thống nhất trước với khách.
+> 💡 Nhắc "rehearsal cutover nhiều lần + tiêu chí go/no-go" cho thấy bạn từng làm migration thật.
+
+**Q959. Khi làm việc với dữ liệu khách tài chính ở offshore, nguyên tắc nào không được vi phạm?**
+① Không dùng dữ liệu thật của khách hàng ngân hàng ở môi trường dev/test offshore, trừ khi khách cho phép bằng văn bản và dữ liệu đã được mask; ② truy cập theo quyền tối thiểu, có log; ③ không đưa dữ liệu, tài liệu, mã nguồn của khách vào công cụ bên ngoài chưa được duyệt — kể cả công cụ GenAI; ④ báo ngay khi nghi rò rỉ, không tự xử lý ngầm. Tôi phổ biến các quy tắc này khi onboarding và kiểm tra định kỳ.
+> 💡 Nhắc riêng rủi ro dán code/tài liệu khách vào GenAI — đây là mối lo rất thời sự của khách Nhật.
+
+**Q960. PM offshore nên nắm tối thiểu những nghiệp vụ ngân hàng nào?**
+① Tiền gửi không kỳ hạn/có kỳ hạn và cách tính lãi; ② cho vay: giải ngân, lịch trả nợ, quá hạn; ③ chuyển tiền trong nước, ngoại hối ở mức khái niệm; ④ ngày làm việc ngân hàng và ngày lễ Nhật ảnh hưởng xử lý giao dịch; ⑤ đối soát, kế toán kép, KYC/AML ở mức nhận biết. Không cần là chuyên gia, nhưng phải đủ để đọc hiểu tài liệu yêu cầu và đặt câu hỏi Q&A đúng trọng tâm.
+
+**Q961. Phần nào của hệ thống tài chính phù hợp để offshore, phần nào nên giữ onsite hoặc để khách tự làm?**
+Phù hợp offshore: 情報系, hệ thống vệ tinh (web/app khách hàng, cổng nội bộ, báo cáo), kiểm thử, migration với dữ liệu đã mask, maintain theo yêu cầu rõ. Nên giữ onsite/phía khách: phần chạm dữ liệu thật nhạy cảm, quyết định nghiệp vụ lõi, vận hành production cần quyền cao, điều phối nhiều vendor. Thực tế thường là mô hình lai: BrSE/onsite phân tích và điều phối, offshore phát triển và test. PM nên đề xuất ranh giới này rõ ngay trong proposal.
+> 💡 Nói được "bắt đầu từ 情報系 và hệ thống vệ tinh" cho thấy hiểu cách khách tài chính mở cửa cho vendor mới.
+
+**Q962. Xu hướng số hóa nào đang tác động đến khách tài chính Nhật mà PM nên biết?**
+Ở mức xu hướng: ① dịch chuyển dần từ mainframe/on-premise sang cloud có kiểm soát; ② **オープンAPI (oupun API – API mở)** để hợp tác với fintech; ③ thanh toán không tiền mặt, ngân hàng số trên app; ④ AI cho tự động hóa back-office, chống gian lận; ⑤ hiện đại hóa hệ thống COBOL khi người vận hành già đi. Mỗi xu hướng là cơ hội đề xuất cho offshore, nhưng phải đi kèm năng lực bảo mật và chất lượng tương xứng.
+
+## 10.7 Domain bảo hiểm
+
+**Q963. 生命保険 và 損害保険 khác nhau thế nào, ảnh hưởng gì đến hệ thống?**
+**生命保険 (seimei hoken – bảo hiểm nhân thọ)** bảo hiểm sinh mạng/sức khỏe, hợp đồng kéo dài hàng chục năm, nên hệ thống phải quản lý vòng đời rất dài và nhiều thế hệ sản phẩm cùng tồn tại. **損害保険 (songai hoken – bảo hiểm phi nhân thọ)** bảo hiểm tài sản, xe, trách nhiệm, thường ngắn hạn, tái tục hằng năm, khối lượng bồi thường lớn. Ngoài ra có **第三分野 (daisan bunya – nhóm thứ ba)** như bảo hiểm y tế, ung thư. Khác biệt này quyết định thiết kế dữ liệu, batch và kiểm thử.
+
+**Q964. Nêu chuỗi nghiệp vụ lõi của một hệ thống bảo hiểm.**
+① Bán/tư vấn qua đại lý, nhân viên, online; ② **引受 (hikiuke – thẩm định nhận bảo hiểm)**; ③ **契約管理 (keiyaku kanri – quản lý hợp đồng)**: phát hành, thay đổi, gia hạn, hủy — phần sau phát hành thường gọi **保全 (hozen – nghiệp vụ duy trì hợp đồng)**; ④ **保険料計算 (hokenryou keisan – tính phí bảo hiểm)** và thu phí; ⑤ **保険金支払 (hokenkin shiharai – chi trả quyền lợi/bồi thường)**; ⑥ kế toán và báo cáo cho cơ quan quản lý. Dự án offshore thường rơi vào ③④ hoặc số hóa kênh bán.
+
+**Q965. Vì sao kiểm thử số liệu trong hệ thống bảo hiểm đặc biệt quan trọng, anh/chị tổ chức thế nào?**
+Sai một quy tắc làm tròn hay một bảng tỉ lệ có thể làm sai phí/quyền lợi của rất nhiều hợp đồng, gây thiệt hại tài chính và pháp lý. Tôi tổ chức: ① dữ liệu kỳ vọng do **アクチュアリー (akuchuarii – chuyên gia định phí)** phía khách xác nhận; ② test bảng quyết định với giá trị biên — tuổi, kỳ hạn, ngày hiệu lực, năm nhuận; ③ so tự động kết quả hệ thống mới với cũ trên tập hợp đồng lớn; ④ quy tắc làm tròn, thứ tự tính ghi rõ trong tài liệu yêu cầu.
+> 💡 Nhắc "quy tắc làm tròn và giá trị biên ngày tháng" cho thấy bạn hiểu lỗi tính toán đến từ đâu.
+
+**Q966. Hệ thống bảo hiểm legacy lớn thường gây khó gì khi đội offshore tham gia?**
+① Logic sản phẩm tích lũy qua nhiều thế hệ, hợp đồng cũ vẫn hiệu lực nên không thể bỏ code cũ; ② tài liệu thiếu hoặc lệch với code; ③ người hiểu nghiệp vụ ít và bận; ④ sửa một chỗ ảnh hưởng chéo khó lường. Cách làm: mọi thay đổi bắt đầu bằng **影響調査 (eikyou chousa – điều tra phạm vi ảnh hưởng)** kỹ; xây dần tài liệu hiện trạng; tự động hóa test hồi quy cho luồng chính; ghép người offshore với chuyên gia phía khách.
+
+**Q967. Khách bảo hiểm B muốn số hóa kênh bán. Anh/chị tư vấn hướng nào?**
+① Hiểu kênh hiện tại — đại lý, nhân viên, bán qua ngân hàng, online — kênh nào là trọng tâm; ② đề xuất từng bước nhỏ: app hỗ trợ nhân viên/đại lý tư vấn (mô phỏng phí, gợi ý sản phẩm), ký hợp đồng điện tử giảm giấy tờ, cổng tự phục vụ cho khách hàng (đổi thông tin, yêu cầu bồi thường online); ③ mỗi bước có chỉ số như thời gian hoàn tất hợp đồng, tỉ lệ hồ sơ lỗi; ④ kết nối với hệ thống lõi qua API, chưa sửa lõi ở bước đầu.
+
+**Q968. Phí bảo hiểm phụ thuộc vào những yếu tố nào, PM cần hiểu đến mức nào?**
+Ở mức khái niệm: phí dựa trên tỉ lệ rủi ro (với nhân thọ là tỉ lệ tử vong/bệnh theo tuổi, giới), lãi suất dự định, chi phí vận hành, kỳ hạn, số tiền bảo hiểm và phương thức đóng phí. PM không tự tính, nhưng phải phân biệt được đâu là **tham số cấu hình** (bảng tỉ lệ, hệ số) và đâu là **logic cứng**, để ước lượng đúng mức thay đổi khi khách ra sản phẩm mới và đặt câu hỏi đúng cho actuary.
+
+**Q969. Khi khách bảo hiểm ra sản phẩm mới, đội offshore thường phải làm gì, rủi ro nằm ở đâu?**
+Thường phải thêm định nghĩa sản phẩm, quy tắc tính phí/quyền lợi, màn hình, chứng từ in, batch liên quan và kiểm thử toàn chuỗi từ bán đến chi trả. Rủi ro: ngày ra mắt cố định gắn với kế hoạch kinh doanh và thủ tục với cơ quan quản lý nên khó lùi; yêu cầu chốt muộn; ảnh hưởng tới sản phẩm cũ. Tôi đặt mốc chốt yêu cầu sớm, chuẩn bị bộ test hồi quy cho sản phẩm cũ và dành buffer lớn hơn cho giai đoạn kiểm thử nghiệp vụ.
+
+**Q970. 帳票 trong dự án bảo hiểm/tài chính Nhật có gì đặc thù?**
+**帳票 (chouhyou – chứng từ, biểu mẫu in)** như giấy chứng nhận hợp đồng, thông báo phí, thông báo chi trả phải chính xác đến từng ký tự, vị trí, cách viết số và lịch Nhật **和暦 (wareki – niên hiệu, ví dụ 令和 Reiwa)**. Lỗi nhỏ trên chứng từ gửi khách hàng cuối có thể phải in lại hàng loạt và xin lỗi chính thức. Tôi đưa 帳票 thành hạng mục kiểm thử riêng, so sánh bằng ảnh/PDF với mẫu chuẩn, và xin khách duyệt mẫu từ sớm.
+> 💡 Biết 和暦 và 帳票 là điểm cộng lớn — nhiều đội offshore vấp lỗi chính ở đây.
+
+**Q971. Những thay đổi thị trường nào khiến khách bảo hiểm Nhật cần đầu tư IT nhiều hơn?**
+Ở mức xu hướng: ① dân số già làm nhu cầu dịch chuyển sang sản phẩm y tế, chăm sóc, hưu trí; ② khách hàng trẻ quen thủ tục online, ít muốn gặp trực tiếp; ③ hệ thống legacy và đội vận hành lâu năm sắp nghỉ hưu; ④ thiên tai khiến bảo hiểm phi nhân thọ cần xử lý bồi thường nhanh với khối lượng lớn; ⑤ dữ liệu và AI được dùng vào thẩm định, chi trả. Mỗi điểm là một cơ hội dự án cụ thể mà PM có thể gợi ý cho sales.
+
+## 10.8 Domain sản xuất
+
+**Q972. 生産管理 và MES khác nhau thế nào?**
+**生産管理 (seisan kanri – quản lý sản xuất)** ở tầng kế hoạch: lập kế hoạch sản xuất, tính nhu cầu vật tư (MRP), tồn kho, đặt hàng, giá thành — thường nằm trong hoặc gắn với ERP. **MES (Manufacturing Execution System)** ở tầng xưởng: điều độ thực tế, theo dõi từng công đoạn, thu dữ liệu máy, truy xuất nguồn gốc, chất lượng tại dây chuyền. Nói gọn: ERP/生産管理 trả lời "làm gì, bao nhiêu, khi nào", MES trả lời "đang làm thế nào, ở đâu".
+
+**Q973. Với dự án ERP như SAP ở khách sản xuất Nhật, offshore thường đảm nhận phần nào?**
+Thường là: ① phát triển add-on/customize, interface kết nối ERP với MES, kho, EDI nhà cung cấp; ② migration dữ liệu khi nâng cấp; ③ test hồi quy và test tích hợp; ④ báo cáo, dashboard. Cấu hình nghiệp vụ lõi và tư vấn quy trình thường do khách hoặc đối tác tư vấn đảm nhận. Nhiều khách đang tính chuyển từ SAP ECC lên S/4HANA vì mốc kết thúc bảo trì chuẩn của ECC cuối năm 2027 — cơ hội nếu công ty có năng lực.
+> 💡 Đừng nhận "làm được SAP" khi đội chưa có kinh nghiệm — đề xuất bắt đầu từ interface, migration, test.
+
+**Q974. トヨタ生産方式 và カイゼン ảnh hưởng thế nào đến cách khách sản xuất Nhật nhìn dự án IT?**
+Khách quen **トヨタ生産方式 (Toyota seisan houshiki – Hệ thống sản xuất Toyota, TPS)** với JIT và **自働化 (jidouka – dừng ngay khi có bất thường)**, nên kỳ vọng vendor: ① **見える化 (mieruka – minh bạch hóa)** tiến độ và vấn đề; ② phát hiện bất thường là dừng lại báo ngay, không giấu; ③ **カイゼン (kaizen – cải tiến liên tục)** mỗi kỳ; ④ **なぜなぜ分析 (naze naze bunseki – hỏi "tại sao" nhiều lần đến gốc)** khi có lỗi; ⑤ **現地現物 (genchi genbutsu – xem tận nơi, tận vật)**. Tôi dùng chính ngôn ngữ này trong báo cáo.
+> 💡 Báo cáo lỗi kèm なぜなぜ分析 + 再発防止 là cách "nói cùng ngôn ngữ" với khách sản xuất.
+
+**Q975. Dự án IoT/nhà máy thông minh khác dự án phần mềm thuần ở điểm nào?**
+① Có thiết bị hiện trường (cảm biến, PLC, gateway), giao thức đa dạng, phải test trên thiết bị thật; ② môi trường nhà máy: mạng hạn chế, quy định an toàn, tuyệt đối không làm dừng dây chuyền; ③ dữ liệu thời gian thực khối lượng lớn; ④ nhiều bên — hãng thiết bị, đơn vị tích hợp, bộ phận sản xuất và IT của khách; ⑤ giá trị đo bằng chỉ số sản xuất. PM cần kế hoạch truy cập hiện trường và lịch làm việc khớp với ca sản xuất.
+
+**Q976. Vì sao nên nói chuyện với khách sản xuất bằng chỉ số như OEE thay vì tính năng phần mềm?**
+Người ra quyết định ở nhà máy đo thành công bằng **QCD (Quality, Cost, Delivery)**. **OEE (Overall Equipment Effectiveness)** = tỉ lệ khả dụng × hiệu suất × tỉ lệ chất lượng — ngôn ngữ chung của bộ phận sản xuất. Khi đề xuất hệ thống giám sát, tôi nói "mục tiêu giảm thời gian dừng máy ngoài kế hoạch ở dây chuyền X" và đo trước–sau, thay vì "dashboard realtime đẹp". Tính năng chỉ là phương tiện; chỉ số sản xuất mới là thứ khách mua.
+
+**Q977. 品質管理 trong nhà máy Nhật ảnh hưởng thế nào đến kỳ vọng chất lượng phần mềm?**
+Khách sản xuất quen **品質管理 (hinshitsu kanri – quản lý chất lượng)** dựa trên số liệu: kiểm soát quá trình, biểu đồ kiểm soát, phân tích nguyên nhân, tiêu chuẩn rõ cho từng công đoạn. Họ áp cách nghĩ đó lên vendor: muốn thấy chỉ số chất lượng theo từng giai đoạn (review, test), xu hướng lỗi, nguyên nhân gốc, và chất lượng phải được "làm ra trong quy trình" chứ không chỉ kiểm ở cuối. Tôi đưa mật độ lỗi theo giai đoạn và phân tích Pareto vào báo cáo định kỳ.
+
+**Q978. Khách sản xuất C muốn dùng AI để kiểm tra ngoại quan sản phẩm. Anh/chị tiếp cận thế nào?**
+① Làm rõ bài toán: loại lỗi, tỉ lệ lỗi hiện tại, chi phí kiểm tra thủ công, tốc độ dây chuyền; ② đánh giá dữ liệu: có đủ ảnh lỗi gán nhãn không — lỗi hiếm nên thường thiếu; ③ POC 4–8 tuần (tham khảo) với tiêu chí đo thống nhất trước: tỉ lệ bỏ sót lỗi, tỉ lệ báo nhầm; ④ thiết kế để AI hỗ trợ người kiểm tra trước, chưa thay thế ngay — hợp với tư duy chất lượng của khách. Đo trên dây chuyền thật rồi mới mở rộng.
+> 💡 Với kiểm tra chất lượng, "tỉ lệ bỏ sót lỗi" quan trọng hơn "độ chính xác chung" — nói được điều này là điểm cộng.
+
+**Q979. Làm việc với hiện trường nhà máy của khách Nhật cần lưu ý gì?**
+**現場 (genba – hiện trường)** có tiếng nói lớn trong doanh nghiệp sản xuất Nhật; hệ thống mà người ở genba không dùng thì thất bại dù phòng IT đã duyệt. Tôi: ① mời đại diện genba tham gia từ giai đoạn yêu cầu, quan sát thao tác thực tế; ② thiết kế cho điều kiện thật — đeo găng, màn hình cảm ứng, tiếng ồn, chữ đơn giản; ③ triển khai thử ở một dây chuyền rồi mới nhân rộng; ④ tuân thủ quy tắc an toàn và lịch sản xuất khi vào nhà máy.
+
+**Q980. Nhiều khách sản xuất Nhật có nhà máy ở Đông Nam Á — đây là cơ hội gì cho vendor Việt Nam?**
+Nhà máy của khách ở VN và khu vực cần hệ thống được triển khai, hỗ trợ gần chỗ. Cơ hội: ① hỗ trợ hệ thống cho các nhà máy này — gần về địa lý, có người nói cả tiếng Việt và tiếng Nhật; ② chuẩn hóa hệ thống giữa nhà máy mẹ ở Nhật và các nhà máy con; ③ hỗ trợ đa ngôn ngữ, quy định địa phương. Nếu chi nhánh ĐN chọn mũi nhọn sản xuất, đây là lợi thế nên tận dụng, kèm lưu ý khác biệt quy định, kế toán từng nước.
+
+## 10.9 Xu hướng thị trường Nhật & offshore
+
+**Q981. "2025年の崖" là gì và tạo ra cơ hội gì cho offshore Việt Nam?**
+**2025年の崖 (2025-nen no gake – vách đá năm 2025)** là cảnh báo trong báo cáo DX năm 2018 của **経済産業省 (Keizai Sangyoushou – Bộ Kinh tế, Thương mại và Công nghiệp Nhật, METI)**: nếu doanh nghiệp không xử lý hệ thống legacy phức tạp, lạc hậu, thiếu người duy trì, thiệt hại kinh tế có thể tới khoảng 12 nghìn tỷ yên mỗi năm từ sau 2025. Cơ hội cho offshore: hiện đại hóa, migration, chuyển lên cloud, tài liệu hóa hệ thống cũ, bù nhân lực khi Nhật thiếu kỹ sư.
+> 💡 Nêu đúng nguồn (METI, 2018) — interviewer đánh giá cao sự chính xác.
+
+**Q982. Thiếu hụt nhân lực IT ở Nhật ảnh hưởng thế nào đến thị trường offshore?**
+Tình trạng thiếu kỹ sư IT ở Nhật đã được nhiều báo cáo của chính phủ Nhật (như METI) cảnh báo, do dân số già và nhu cầu số hóa tăng. Tác động: ① khách tìm offshore để có đủ người, không chỉ để giảm chi phí; ② chuộng đội dài hạn ổn định hơn dự án ngắn; ③ sẵn sàng giao upstream nếu vendor đủ năng lực; ④ cạnh tranh giữa các nước offshore gay gắt hơn. Với chi nhánh mới, đây là lý do đầu tư năng lực dài hạn thay vì chỉ cạnh tranh giá.
+
+**Q983. DX ở doanh nghiệp Nhật khác "số hóa" đơn thuần thế nào?**
+Phân biệt 3 mức: ① **デジタイゼーション (dejitaizeeshon – số hóa dữ liệu)**, ví dụ giấy sang file; ② **デジタライゼーション (dejitaraizeeshon – số hóa quy trình)**, ví dụ tự động hóa luồng phê duyệt; ③ **DX** — đổi mô hình kinh doanh và văn hóa bằng công nghệ. Nhiều doanh nghiệp Nhật còn ở mức ①② và vướng hệ thống cũ, văn hóa con dấu, giấy tờ. Vendor có giá trị khi giúp khách đi từng bước có kết quả đo được, thay vì bán khái niệm DX chung chung.
+> 💡 Phân biệt 3 mức này cho thấy bạn không dùng "DX" như từ khóa marketing.
+
+**Q984. GenAI/AI agent đang thay đổi dự án outsourcing thế nào, PM chuẩn bị gì?**
+Thay đổi: năng suất một số việc (code, test, tài liệu) tăng; khách bắt đầu hỏi "đã dùng AI chưa, giá có giảm không"; xuất hiện dự án tích hợp AI vào nghiệp vụ. PM chuẩn bị: ① chính sách dùng AI được khách đồng ý — dữ liệu nào được đưa vào công cụ nào; ② đo năng suất thật trước–sau trên dự án pilot; ③ cập nhật quy trình review cho code do AI sinh; ④ xây năng lực làm dự án AI để chuyển từ bán giờ công sang bán giá trị.
+> 💡 Bẫy: hứa "AI giảm 30–50% chi phí" khi chưa đo — khách Nhật sẽ đòi đúng con số đó trong hợp đồng.
+
+**Q985. Việt Nam cạnh tranh thế nào với Ấn Độ, Philippines, Trung Quốc trên thị trường offshore Nhật?**
+Nhận định chung: Việt Nam có kỹ sư trẻ, số người học tiếng Nhật đáng kể, văn hóa làm việc khá gần Nhật, quan hệ hai nước tốt, chi phí hợp lý. Ấn Độ mạnh quy mô và tiếng Anh nhưng vướng rào cản tiếng Nhật; Trung Quốc từng là điểm offshore lớn của Nhật, nhưng chi phí tăng và rủi ro địa chính trị khiến khách đa dạng hóa; Philippines mạnh BPO và tiếng Anh. Lợi thế giá của VN sẽ mỏng dần, nên phải cạnh tranh bằng năng lực và chất lượng.
+
+**Q986. Yên yếu ảnh hưởng thế nào đến dự án offshore, công ty và PM nên ứng phó ra sao?**
+Hợp đồng với khách Nhật thường tính bằng yên, chi phí ở VN trả bằng VND, nên yên yếu làm doanh thu quy đổi giảm trong khi lương không giảm → margin bị ép. Ứng phó: ① đàm phán điều chỉnh rate theo kỳ có căn cứ năng suất, giá trị; ② tăng năng suất, tối ưu cơ cấu đội; ③ đa dạng thị trường — JD nêu cả Hàn, Singapore; ④ chuyển sang dịch vụ giá trị cao hơn. PM cần hiểu để không hứa giảm giá thêm khi margin đã mỏng.
+
+**Q987. Khách Nhật đang chuyển từ tìm "giá rẻ" sang tìm "năng lực" — dấu hiệu là gì và vendor phải làm gì?**
+Dấu hiệu (nhận định từ thị trường): ① khách hỏi năng lực upstream — 要件定義, 基本設計, tư vấn kiến trúc; ② yêu cầu kỹ năng cloud, bảo mật, AI và chứng chỉ cụ thể; ③ đánh giá vendor theo chất lượng, độ ổn định đội, tiếng Nhật chứ không chỉ đơn giá; ④ muốn hợp tác dài hạn. Vendor phải đầu tư đào tạo, chứng chỉ, domain — JD có hỗ trợ thi Cloud/AWS/PMP và đào tạo tiếng Nhật, và chi nhánh mới nên xây theo hướng này ngay từ đầu.
+
+**Q988. JD nhắc cả khách Hàn và Singapore — làm việc với các thị trường này khác Nhật ở điểm nào?**
+Nhận định chung, mỗi khách vẫn khác: khách Hàn thường ưu tiên tốc độ, quyết định nhanh, đổi yêu cầu nhiều — PM phải quản lý thay đổi chặt, phản hồi nhanh. Khách Singapore thường làm bằng tiếng Anh, hợp đồng theo thông lệ quốc tế, nhiều dự án mang tính khu vực. Khách Nhật coi trọng tài liệu, chuẩn bị kỹ, đồng thuận và chất lượng chi tiết. Đa dạng thị trường giúp giảm phụ thuộc một khách, một đồng tiền, nhưng cần đội tách bạch về ngôn ngữ và cách làm.
+
+**Q989. Xu hướng chuyển hệ thống lên cloud ở doanh nghiệp Nhật mang lại cơ hội gì cho chi nhánh?**
+Doanh nghiệp Nhật, kể cả ngành tài chính, đang dịch chuyển dần lên cloud theo hướng có kiểm soát. Cơ hội: ① migration và hiện đại hóa ứng dụng; ② vận hành, giám sát, tối ưu chi phí cloud; ③ bảo mật và tuân thủ trên cloud; ④ DevOps, tự động hóa hạ tầng. Chi nhánh có thể xây đội cloud ngay từ đầu, tận dụng chính sách hỗ trợ thi Cloud/AWS trong JD để có chứng chỉ mà khách thường yêu cầu khi chọn vendor.
+
+**Q990. Theo anh/chị, trong 3–5 năm tới vai trò offshore Việt Nam cho thị trường Nhật sẽ thay đổi thế nào?**
+Nhận định có lập luận: ① từ "đội code theo thiết kế" sang "đối tác cả vòng đời" — tham gia upstream và vận hành; ② việc lặp lại được AI làm nhanh hơn, giá trị dịch chuyển sang domain, thiết kế, chất lượng, tích hợp AI; ③ mô hình đội dài hạn tăng vì Nhật thiếu người; ④ cạnh tranh bằng giá yếu dần do chi phí VN tăng và yên biến động. Vendor xây được domain và năng lực upstream sẽ thắng — đó cũng là hướng tôi muốn góp cho chi nhánh Đà Nẵng.
+
+## 10.10 Tư duy chiến lược của Senior PM
+
+**Q991. Ngoài giao hàng dự án, Senior PM có thể đóng góp gì cho công ty?**
+Bốn hướng đo được: ① **process** — cải tiến template, checklist, chia sẻ bài học giữa dự án; ② **pre-sales** — estimate, viết proposal tiếng Nhật, tham gia gặp khách tiềm năng; ③ **đào tạo** — mentor PM/leader kế cận, dạy quy trình Nhật cho fresher; ④ **tài sản** — gom thành phần tái sử dụng, viết case study. Tôi đặt mục tiêu cụ thể cho mỗi kỳ review (công ty review 2 lần/năm), ví dụ "đào tạo 1 PM dự bị, hỗ trợ 3 proposal".
+
+**Q992. Tầm nhìn 1–3 năm của anh/chị cho chi nhánh Đà Nẵng là gì?**
+Năm 1 — **giao hàng tin cậy**: dự án mồi thành công, process đồng bộ, đội lõi đủ leader, khách quen với "đội Đà Nẵng". Năm 2 — **tự chủ**: tự làm pre-sales và estimate cho dự án vừa, có 1–2 mũi nhọn domain/công nghệ, tỉ lệ leader là người ĐN tăng. Năm 3 — **trung tâm năng lực**: được khách chọn đích danh, có giải pháp/tài sản riêng, đóng góp vào định hướng sản phẩm riêng của công ty. Mỗi năm có chỉ số đo và review cùng lãnh đạo.
+> 💡 Nói tầm nhìn theo năm kèm chỉ số; tránh khẩu hiệu kiểu "trở thành chi nhánh số 1".
+
+**Q993. Làm sao xây sản phẩm riêng/IP từ các dự án outsourcing?**
+JD nêu công ty muốn phát triển sản phẩm riêng; lộ trình tôi thấy hợp lý: ① nhận diện phần lặp lại giữa nhiều dự án (phân quyền, xuất 帳票, xử lý chứng từ, khung test tự động); ② tách thành thành phần tái sử dụng **không chứa** mã hay dữ liệu thuộc quyền khách; ③ dùng nội bộ trước để chứng minh giảm effort; ④ đóng gói thành giải pháp bán được. Điều kiện tiên quyết: kiểm tra điều khoản sở hữu trí tuệ trong hợp đồng — phần lớn sản phẩm làm cho khách thuộc về khách.
+> 💡 Bẫy lớn: dùng code của khách làm sản phẩm riêng — vi phạm hợp đồng và mất niềm tin; luôn nói rõ ranh giới IP.
+
+**Q994. Anh/chị đo thành công của chi nhánh bằng những chỉ số nào?**
+Bảng cân bằng 4 nhóm: ① **khách hàng** — mức hài lòng, tỉ lệ gia hạn/mở rộng, số khách chọn ĐN đích danh; ② **tài chính** — doanh thu, gross margin, billable rate, bench; ③ **delivery** — tỉ lệ đúng hạn, defect sau release, 0 sự cố bảo mật; ④ **con người** — attrition, số leader phát triển nội bộ, tỉ lệ có chứng chỉ/tiếng Nhật. Chỉ nhìn doanh thu là nguy hiểm: tăng nhanh mà attrition cao, chất lượng giảm thì năm sau phải trả giá.
+
+**Q995. Nếu được làm Giám đốc chi nhánh Đà Nẵng trong 1 ngày, anh/chị sẽ làm gì?**
+Tôi không ra quyết định lớn trong một ngày; tôi dùng nó để nhìn toàn hệ thống: ① buổi sáng xem pipeline, P&L, bench, chất lượng các dự án; ② gặp nhanh từng PM/leader với một câu hỏi "điều gì đang cản em nhất"; ③ gọi một khách quan trọng để nghe trực tiếp; ④ cuối ngày chọn **một** việc tác động lớn nhất — ví dụ kế hoạch BrSE dự phòng — giao cho người phụ trách kèm hạn và chỉ số. Một ngày để hiểu và chọn ưu tiên, không phải để thay đổi mọi thứ.
+> 💡 Câu này kiểm tra khả năng ưu tiên — "một việc tác động lớn nhất" ghi điểm hơn một danh sách dài.
+
+**Q996. Khi mục tiêu ngắn hạn (doanh thu quý) xung đột với mục tiêu dài hạn (đào tạo, chất lượng), anh/chị chọn thế nào?**
+Tôi không chọn tuyệt đối một bên mà đặt **"sàn" cho dài hạn**: không cắt đào tạo dưới mức tối thiểu, không bỏ review/test để kịp doanh thu; phần còn lại tối ưu cho ngắn hạn. Khi buộc phải đánh đổi, tôi lượng hóa: cắt đào tạo quý này tiết kiệm bao nhiêu, quý sau thiếu người cho đơn mới thì mất bao nhiêu — rồi trình lãnh đạo quyết bằng số liệu. Mất niềm tin khách Nhật vì chất lượng là cái giá dài hạn đắt nhất.
+
+**Q997. Làm sao để tỉ lệ thắng proposal của chi nhánh tăng lên theo thời gian?**
+Tôi coi pre-sales là một quy trình cải tiến được: ① trước khi viết, đặt câu hỏi để hiểu vấn đề và bối cảnh khách tốt hơn đối thủ; ② thể chế đội nêu người thật, có kinh nghiệm tương tự; ③ nêu thẳng rủi ro và cách kiểm soát — khách Nhật tin vendor thấy rủi ro hơn vendor hứa không có rủi ro; ④ thắng hay thua đều xin feedback, ghi lý do vào một bảng chung. Theo dõi tỉ lệ thắng theo loại khách, domain để biết nên tập trung vào đâu.
+> 💡 "Thua cũng xin feedback" — ít vendor làm, nhưng giúp hiểu tiêu chí thật của khách.
+
+**Q998. Chi nhánh phải chọn giữa nhận một khách mới lớn nhưng rủi ro, hoặc tập trung mở rộng khách cũ. Anh/chị tư vấn thế nào?**
+Tôi đánh giá: năng lực hiện có đáp ứng không; rủi ro tập trung — khách cũ đang chiếm bao nhiêu % doanh thu; margin dự kiến; giá trị chiến lược (domain mới, thương hiệu); và chi phí cơ hội — dồn leader giỏi cho khách mới thì ai giữ khách cũ. Thường tôi đề xuất: chất lượng khách cũ là ưu tiên số một, nhận khách mới khi có đội lõi riêng và quy mô khởi đầu vừa phải. Nếu khách cũ đã chiếm tỉ trọng quá lớn, có thêm khách mới chính là giảm rủi ro.
+
+**Q999. Làm sao để chi nhánh Đà Nẵng có tiếng nói trong định hướng chung của công ty, không chỉ là "nơi nhận việc"?**
+① Có kết quả đo được để nói — chất lượng, margin, khách hài lòng; ② đưa đề xuất có số liệu lên lãnh đạo, ví dụ một mô hình fresher kèm tiếng Nhật hiệu quả có thể nhân rộng toàn công ty; ③ xây năng lực mà site khác chưa có — domain, công nghệ, giải pháp; ④ tham gia các sáng kiến chung: chuẩn hóa process, đào tạo, pre-sales. Tiếng nói đến từ đóng góp được ghi nhận, không phải từ việc đòi quyền.
+
+**Q1000. Nếu công ty muốn Đà Nẵng trở thành delivery center chiến lược, theo anh/chị điều gì quyết định thành bại?**
+Theo tôi là **đội lãnh đạo tầng giữa** — PM, tech lead, BrSE. Hạ tầng và quy trình có thể kế thừa từ HQ trong vài tháng, khách có thể được giới thiệu, nhưng chỉ đội leader giỏi và gắn bó với Đà Nẵng mới tạo ra chất lượng ổn định và niềm tin lâu dài của khách Nhật. Vì vậy ưu tiên của tôi là: dự án mồi thành công, xây leader kế cận ngay từ năm đầu, và giữ chuẩn chất lượng không thỏa hiệp — đó cũng là phần tôi muốn đóng góp trực tiếp.
+> 💡 Kết bằng một luận điểm rõ và nối với vai trò của bạn — để lại ấn tượng chiến lược mà cụ thể.

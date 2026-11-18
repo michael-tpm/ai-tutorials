@@ -1,0 +1,103 @@
+## Mở đầu, động lực & behavioral
+- Giới thiệu bản thân & hành trình PM
+  - Pitch 60–90 giây: Hiện tại – Quá khứ – Tương lai
+    - 150–220 chữ
+    - kết bằng câu nối sang JD
+  - Dự án nổi bật kể STAR, thuộc 3 con số
+    - team · man-month · kết quả
+  - Nói thật mức làm việc trực tiếp với khách Nhật
+    - 定例会 (teireikai)
+    - 報連相 (hou-ren-sou)
+  - Senior = phạm vi ảnh hưởng, không phải số năm
+    - lãi lỗ · tình huống xám · người kế cận
+  - Đã "sống" trong nhiều mô hình hợp đồng
+    - 請負 (ukeoi) · 準委任 (jun-inin) · ODC/Labo
+- Động lực: vì sao VTI, Đà Nẵng, Senior PM, thị trường Nhật
+  - Ba lớp lý do: thị trường · khách hàng · hướng phát triển
+    - chỉ dùng fact từ JD/trang chính thức
+  - Đà Nẵng: cam kết gắn bó 2–3 năm trở lên
+    - lợi thế build-up chi nhánh
+  - Senior PM: tham gia estimate, proposal từ đầu
+    - 見積もり (mitsumori) · 提案書 (teiansho)
+  - Mục tiêu 3–5 năm đo được, gắn với công ty
+    - Delivery/Program Manager
+  - Không coi outsourcing là bước đệm sang sản phẩm
+- Behavioral STAR: thành công, thất bại, bài học
+  - STAR + Learning, Action chiếm khoảng 60%
+    - Result phải có số
+  - Thất bại: nhận phần mình sai, nói thay đổi đã làm
+    - change request · Definition of Done
+  - Thay đổi team bằng thử nghiệm nhỏ có đo lường
+    - 振り返り (furikaeri)
+  - Đóng góp cho tổ chức ngoài dự án
+    - 横展開 (yokotenkai)
+  - Tách rõ việc của team và quyết định của mình
+    - chịu được 3 lớp "vì sao"
+- Behavioral: áp lực, deadline, thiếu thông tin, bất đồng
+  - Nhịp tình huống 4 bước
+    - fact → khoanh vùng → 報連相 → 再発防止 / 横展開
+  - Deadline bất khả: số liệu + 2–3 phương án
+    - giảm phạm vi · thêm người · giao từng phần
+  - Thiếu thông tin: đảo ngược được thì quyết nhanh
+    - ghi giả định · điểm kiểm tra lại
+  - Bất đồng sếp: dữ liệu, trao đổi riêng trước
+    - 根回し (nemawashi)
+  - Không che giấu lỗi với khách
+    - báo fact sớm, đối sách sau
+  - Onsite đổ lỗi: nhìn số liệu, một tiếng nói với khách
+- Phong cách lãnh đạo & giá trị cá nhân
+  - Servant leadership, đổi phong cách theo tình huống
+    - situational leadership
+  - Điểm yếu thật → hậu quả → hành động → bằng chứng
+  - Trao quyền theo năng lực × mức rủi ro
+    - kiểm soát điểm rủi ro, không kiểm soát người
+  - KPI bản thân 4 nhóm
+    - tiến độ · chất lượng · effort · con người & khách
+  - Thành công = giá trị + lãi + khách quay lại + team khỏe
+- Phỏng vấn bằng tiếng Nhật
+  - Khiêm nhường ngữ, nói kết luận trước
+    - 敬語 (keigo) · 結論から (ketsuron kara) · 〜と申します
+  - Gọi công ty đúng ngữ cảnh
+    - 御社 (onsha) khi nói · 貴社 (kisha) khi viết
+  - Trình độ tiếng Nhật: nói thật, nêu việc làm được
+    - JLPT N〇 + họp, email, xác nhận spec bằng văn bản
+  - Kể thất bại có nhân–quả rõ
+    - 〜ため · それ以降
+  - Luôn có câu hỏi ngược, không nói 特にありません
+    - 伺ってもよろしいでしょうか
+  - Chưa hiểu thì xin nhắc lại hoặc xác nhận ý
+    - 〜という理解でよろしいでしょうか
+- Chứng chỉ & học tập liên tục
+  - Chứng chỉ = đã dùng để làm gì khác đi
+  - Chưa có chứng chỉ: thực hành tương đương + mốc thi
+  - Bộ đôi nền tảng + agile
+    - PMP/PRINCE2 · PSM/CSM/PMI-ACP
+  - Cloud ở mức đủ ra quyết định
+    - shared responsibility · Cloud Practitioner
+  - Dùng AI nhưng giữ bảo mật dữ liệu khách
+- Câu "bẫy" của HR/interviewer
+  - Lý do nghỉ khớp lý do ứng tuyển
+  - Job hopping: luôn bàn giao xong dự án mới đi
+  - Lương: đưa khoảng, nhìn tổng gói
+    - chênh 10–15% · thưởng dự án/doanh thu · review 2 lần/năm
+  - OT: có khi sự cố, kéo dài là lỗi kế hoạch
+  - Chuyển về Đà Nẵng: đưa bằng chứng ổn định
+  - Offer khác: trung thực, nói vì sao ưu tiên
+- Câu nên hỏi ngược interviewer
+  - Dự án, giai đoạn, người ra quyết định phía khách
+  - Tiêu chí thành công sau 6 tháng
+    - nguyên liệu cho kế hoạch 30-60-90
+  - Cơ cấu team Đà Nẵng và phối hợp onsite
+  - Quy trình chất lượng, chỉ số đang theo dõi
+  - Tránh hỏi lương, nghỉ phép ở vòng chuyên môn
+  - Chốt: "anh/chị còn băn khoăn gì về em?"
+- Đàm phán offer & kế hoạch 30-60-90 ngày
+  - Đàm phán theo giá trị, nhìn tổng gói
+    - mức tối thiểu đặt trước
+  - Thỏa thuận thêm phải ghi trong offer letter
+    - review sau thử việc có tiêu chí + thời điểm
+  - 30 ngày: học, xây quan hệ, đo hiện trạng
+    - bản đánh giá hiện trạng + top rủi ro
+  - 60 ngày: ổn định nhịp, 2–3 cải tiến lớn
+  - 90 ngày: tự chủ, có kết quả đo được
+  - Tự đề xuất tiêu chí thành công thử việc

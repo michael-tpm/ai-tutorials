@@ -1,0 +1,153 @@
+## Tình huống thực tế với khách Nhật
+- Trễ tiến độ & 納期 cứng
+  - Báo sớm kèm phương án, không đợi cạn buffer
+    - 報連相
+    - lệch > 2 ngày → escalate
+  - Giữ 納期 bằng chia đợt, không cắt chất lượng ngầm
+    - 段階リリース
+    - must-have vs làm sau
+  - Đầu vào trễ: định lượng ảnh hưởng, ghi văn bản
+    - 課題管理表
+    - お客様作業
+    - 前提条件
+  - Báo cáo bằng chỉ số khách quan, không tô xanh
+    - burndown / EVM
+    - tiêu chí "vàng" định lượng
+  - Mốc cứng cần rehearsal và điểm go/no-go
+    - 移行
+    - 切り戻し
+- Sự cố 本番 & 障害
+  - Báo đầu tiên trước, nguyên nhân sau
+    - 第一報
+    - cập nhật theo mốc giờ
+  - Khoanh vùng trước, sửa gốc sau
+    - 暫定対応 → 恒久対応
+    - 影響範囲
+  - Chỉ làm trong thẩm quyền đã thỏa thuận
+    - runbook đã duyệt
+    - ngoại lệ có phê duyệt văn bản
+  - Phòng ngừa là cơ chế, không phải nhắc nhở
+    - なぜなぜ分析
+    - 再発防止 · 横展開
+  - Bẫy đặc thù hệ thống Nhật
+    - 外字 / Shift_JIS
+    - đóng băng release quanh 年度末
+- Yêu cầu mơ hồ & thay đổi
+  - Thay đổi sau khi chốt đều qua CR có estimate
+    - 仕様変更
+    - impact analysis 2–3 ngày
+  - Đưa về tài liệu, không cãi đúng sai trong họp
+    - 当然
+    - 議事録 · QA表
+  - Chặn scope creep bằng số liệu từ sớm
+    - 請負
+    - định nghĩa "chỉnh nhỏ" đo được
+  - Yêu cầu qua chat phải xác nhận bằng văn bản
+    - 窓口
+    - ticket hóa
+  - Câu hỏi đóng + hạn quyết định để gỡ mơ hồ
+    - 検討します
+    - tìm người quyết định thật
+  - "Giống hệ cũ" phải thành tài liệu kiểm chứng
+    - 現行踏襲
+    - reverse engineering có phí
+- Khiếu nại chất lượng & niềm tin
+  - Nhận trách nhiệm trước, phân loại lỗi sau
+    - 指摘
+    - bảng đối chiếu sửa
+  - Tài liệu giải trình giúp 担当者 trình nội bộ
+    - なぜなぜ分析 nộp nháp trước
+  - Minh bạch bằng chỉ số và bằng chứng
+    - エビデンス
+    - bug density thống nhất cách đếm
+  - Đe dọa đổi vendor → kéo cấp trên vào cuộc
+    - 品質改善計画
+    - mốc 30/60 ngày
+  - Kiểm soát của khách: nhận trước, giảm dần bằng dữ liệu
+    - review theo rủi ro
+- Onsite–offshore & cầu nối
+  - Trước khách là một công ty, truy lỗi trong nội bộ
+    - 認識合わせ
+  - Không tin "わかりました", thiết kế bước xác nhận
+    - 復唱
+    - ví dụ input/output
+  - Rủi ro ngôn ngữ nằm ở từ điều kiện
+    - 以上/超 · 以下/未満
+    - glossary dịch bắt buộc
+  - Yêu cầu nhận ở onsite vào ticket trong 24 giờ
+    - PM xem backlog hằng ngày
+  - Vai trò cầu nối luôn có người backup
+    - 引継ぎ
+    - 体制図 · RACI
+- Nguồn lực
+  - Báo khách khi đã có phương án thay người
+    - 体制
+    - mỗi module ≥ 2 người hiểu sâu
+  - Ramp-up theo đợt, người cũ kèm người mới
+    - onboarding kit
+    - review 100% tháng đầu
+  - Thay người theo dữ liệu, giữ thể diện member
+  - Giảm người thì khách phải chọn cạnh tam giác
+    - scope – thời gian – chi phí
+  - Không hứa điều mình không kiểm soát được
+    - điều khoản báo trước + overlap
+  - Lịch nghỉ hai nước đưa vào WBS từ đầu
+    - Tết ~ お正月
+    - 年度末 · Golden Week · お盆
+- Chi phí & hợp đồng
+  - Vượt effort: báo nội bộ ngay, tách phần có căn cứ
+    - EAC
+    - 見積 · ngưỡng lệch 10%
+  - Đòi phí CR bằng bằng chứng từng hạng mục
+    - nhượng vùng xám, giữ phần rõ
+  - Loại hợp đồng phải khớp độ rõ yêu cầu
+    - 準委任 vs 請負
+    - 契約不適合責任
+  - 前提条件 là lá chắn của báo giá
+    - スコープ外
+    - báo giá 2 bước
+  - Nghiệm thu cần tiêu chí đo được
+    - 検収 · 残課題
+  - Giá dưới vốn: đủ số liệu, không giảm chất lượng
+    - ngưỡng dừng lỗ
+- Xung đột & stakeholder
+  - Không phân xử nội bộ khách, đưa dữ liệu cho người quyết
+    - RACI phía khách
+  - Giữ 窓口 ở trung tâm, không vượt mặt
+  - Họp nóng: tiếp nhận, xin lỗi, hẹn mốc
+  - 担当者 mới: hồ sơ quyết định + giúp họ thắng sớm
+    - 引継ぎ
+  - Quyết định chậm: phục vụ quy trình phê duyệt của khách
+    - 稟議
+  - Một tiếng nói nội bộ trước khi gặp khách
+    - bàn giao sales → delivery
+- Bảo mật & tuân thủ
+  - Rò rỉ: khoanh vùng, báo sớm, không giấu
+    - 第一報
+    - rotate secret
+  - Thu hồi kèm bằng chứng xóa/khóa
+    - MDM
+    - xác nhận xóa bằng văn bản
+  - Chính sách AI và dữ liệu test rõ ràng
+    - tool được phép
+    - masking
+  - Quyền truy cập theo vòng đời nhân sự
+    - offboarding trong ngày
+    - review quyền hằng tháng
+  - Trả lời audit/checklist trung thực, có kế hoạch khắc phục
+    - 是正処置
+  - Kiểm license OSS trước khi dùng
+    - GPL · scan trong CI
+- Tình huống xám & tổng hợp
+  - Không sửa số, nhưng giúp khách diễn giải
+  - Trung thực với khách là giới hạn cứng
+    - escalate PMO
+  - Lỗi sai tiền/dữ liệu/bảo mật thì không giao
+    - 既知不具合一覧
+    - khách quyết với đủ thông tin
+  - Ưu tiên: vận hành khách > hợp đồng > nội bộ
+  - Tiếp nhận 炎上: tự kiểm thực trạng trước khi hứa
+    - 再計画
+    - quick win lấy lại niềm tin
+  - Bảo vệ thông tin khách khác, chủ động báo lỗi tiềm ẩn
+    - NDA

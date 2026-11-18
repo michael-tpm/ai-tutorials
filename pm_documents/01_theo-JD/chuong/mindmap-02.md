@@ -1,0 +1,116 @@
+## Nền tảng QLDA (PMBOK · PRINCE2 · EVM)
+- Khung tổng: dự án, vòng đời, quy trình, tailoring
+  - Dự án tạm thời, duy nhất; vận hành lặp lại
+    - 運用保守 (unyou hoshu) đo bằng SLA
+  - 5 process group lặp trong mỗi pha, không tuần tự
+    - Initiating → Closing · M&C chạy suốt
+  - PMBOK 7: principles + performance domains, đo outcome
+    - 12 principles · 8 domains · value
+  - Charter do sponsor ký, trao quyền cho PM
+    - 前提条件 (zentei jouken) · 対象外 (taishougai)
+  - Tailoring: mức kiểm soát tương xứng rủi ro
+  - Outsourcing là matrix: chốt resource plan với line manager
+    - % allocation · escalate có số liệu
+- Tích hợp & kiểm soát thay đổi
+  - Integration = trade-off toàn cục, chỉ PM làm
+  - Baseline chỉ đổi khi CR được duyệt
+    - scope + schedule + cost = PMB
+  - Quy trình CR 6 bước, CR từ chối vẫn lưu
+    - change log · 工数 (kousuu) · 稟議 (ringi)
+  - CCB có ngưỡng phân quyền cho PM
+    - ví dụ ≤ 2–3 man-day, không chạm milestone
+  - Configuration management giữ version nhất quán
+    - 構成管理 (kousei kanri) · CI · audit trước 納品
+  - "Thay đổi nhỏ" vẫn ghi log, cộng dồn có ngưỡng
+- Phạm vi & yêu cầu
+  - WBS theo quy tắc 100%, kể cả việc ẩn
+    - PM · review · môi trường · migration · UAT
+  - Work package 8–80 giờ, có tiêu chí xong
+    - WBS dictionary
+  - Scope statement ghi rõ loại trừ và giả định
+    - 要件定義書 · 対象外 · 前提条件
+  - RTM nối yêu cầu → thiết kế → test → CR
+  - Scope creep (khách) vs gold plating (team)
+  - Validate (khách nhận) ≠ control (PM theo dõi) ≠ QC
+- Tiến độ: CPM, nén lịch, PERT, critical chain
+  - CPM: forward/backward pass tìm critical path
+    - TF = LS − ES · FF = ES sau − EF
+  - Float âm = kế hoạch không khả thi
+    - luật Parkinson · student syndrome
+  - Crashing tốn tiền, fast-tracking tăng làm lại
+    - chi phí/ngày = ΔCost/ΔTime · luật Brooks
+  - PERT ba điểm cho khoảng tin cậy
+    - E = (O + 4M + P)/6 · σ = (P − O)/6
+  - Critical chain: buffer gom cuối chuỗi
+    - project buffer · feeding buffer · fever chart
+  - Leveling đổi ngày kết thúc, smoothing chỉ dùng float
+- Chi phí & EVM
+  - Cost baseline gồm contingency, không gồm MR
+    - budget = baseline + MR · 予実管理 (yojitsu kanri)
+  - Chỉ số bắt đầu từ EV
+    - CV = EV − AC · SV = EV − PV
+    - CPI = EV/AC · SPI = EV/PV
+  - Dự báo bằng dải EAC, không một con số
+    - BAC/CPI · AC + (BAC − EV) · AC + (BAC − EV)/(CPI×SPI)
+  - ETC, VAC, TCPI đo độ khả thi
+    - ETC = EAC − AC · VAC = BAC − EAC · TCPI = (BAC − EV)/(BAC − AC)
+  - Đo EV khách quan tránh hội chứng 90%
+    - 0/100 · 50/50 · 20/80 · weighted milestone
+  - SPI về 1 cuối dự án; FP dùng EVM bảo vệ margin
+    - Earned Schedule · 原価 (genka) · S-curve
+- Quản lý rủi ro
+  - Risk chưa xảy ra, issue đã xảy ra
+    - 課題管理表 (kadai kanrihyou)
+  - Mô tả nguyên nhân – sự kiện – tác động
+    - trigger · risk owner gần nguồn rủi ro
+  - Định tính cho mọi rủi ro, định lượng cho top
+    - P × I · EMV = xác suất × tác động · decision tree
+  - Ứng phó rủi ro tiêu cực và cơ hội
+    - avoid/transfer/mitigate/accept/escalate
+    - exploit/enhance/share
+  - Residual (còn lại) vs secondary (mới sinh ra)
+  - Contingency → fallback; workaround khi không có kế hoạch
+    - giả định sai = rủi ro
+- Stakeholder & giao tiếp
+  - Power/interest grid ra chiến lược từng nhóm
+    - 体制図 (taiseizu) · manage closely · keep satisfied
+  - Engagement matrix: hiện tại C vs mong muốn D
+  - RACI: mỗi việc đúng một A
+  - Kênh giao tiếp tăng gần theo bình phương
+    - n(n − 1)/2 · 10→15 người: +60 kênh
+  - Status report: kết luận trước, tiêu chí màu rõ
+    - 進捗報告 (shinchoku houkoku) · 議事録 (gijiroku)
+  - Tin xấu báo interactive trước, văn bản sau
+    - 根回し (nemawashi) · Q&A表
+- Procurement & loại hợp đồng
+  - FP: vendor gánh rủi ro chi phí; T&M: khách gánh
+  - Cost-reimbursable chia sẻ rủi ro bằng phí
+    - CPFF · CPIF · CPAF
+  - FPIF tính theo target, share ratio, ceiling
+  - Make-or-buy xét năng lực lõi, IP, bảo mật
+    - 再委託 (saiitaku) cần khách cho phép
+  - RFP: bám tiêu chí chấm, hỏi rõ trong hạn
+    - RFI · RFQ · 提案依頼書 (teian iraisho)
+  - Subcontractor back-to-back, mình chịu trách nhiệm cuối
+- Đóng dự án & đo thành công
+  - Đóng chính thức, kể cả dự án bị hủy
+    - 検収 · 完了報告書 (kanryou houkokusho)
+  - Lessons learned thu suốt dự án, dùng lại
+    - 横展開 (yokotenkai) · KPT · 振り返り (furikaeri)
+  - Thành công ngoài tam giác sắt
+    - chất lượng · khách ký tiếp · margin · sức khỏe team
+  - Benefits realization đo sau go-live
+    - business case · benefits management plan
+  - Chọn dự án: ưu tiên NPV, bỏ qua sunk cost
+    - NPV · IRR · payback · opportunity cost
+- PRINCE2 & đề PMP
+  - 7 principles, 7 themes, 7 processes
+    - manage by stages · focus on products
+  - Management by exception theo tolerance
+    - Highlight Report · Exception Report · Exception Plan
+  - Project Board: Executive, Senior User, Senior Supplier
+  - PRINCE2 cho quản trị, PMBOK cho kỹ thuật
+  - Logic đề PMP: phân tích tác động trước
+    - change control · update register · đưa phương án cho sponsor
+  - Chứng chỉ là ngôn ngữ chung, không thay kinh nghiệm
+    - PMP · PRINCE2 · PMI-ACP · PSM/CSM

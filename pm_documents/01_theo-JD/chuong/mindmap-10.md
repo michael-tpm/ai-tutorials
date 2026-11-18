@@ -1,0 +1,161 @@
+## Chiến lược & chi nhánh Đà Nẵng
+- Setup chi nhánh mới tại Đà Nẵng
+  - Lộ trình 0→30→100→300 theo gate, không theo ngày
+    - billable ≥ 75–80% (tham khảo)
+    - pipeline 1–2 quý
+    - vị trí chủ chốt có người dự phòng
+  - Bảo mật site đạt chuẩn trước dự án đầu
+    - セキュリティチェックシート
+    - ISO/IEC 27001 mở rộng phạm vi
+    - VDI · phòng dev riêng · 体制図
+  - Kế thừa chuẩn HQ, tự chủ cách triển khai
+    - "cùng chuẩn, khác cách triển khai"
+  - Dự án mồi: vừa, rủi ro thấp, kể lại được
+    - 5–10 người · 3–6 tháng (tham khảo)
+  - Thoát phụ thuộc HQ có lộ trình
+    - ma trận HQ làm → ĐN học → ĐN làm
+  - Tăng đột biến: ramp-up theo đợt, giữ tỉ lệ senior
+    - 報連相
+- Tuyển dụng & talent pool Đà Nẵng
+  - Ba nguồn: trường, người tại ĐN, người về quê
+    - ĐH Bách khoa ĐN · ĐH Duy Tân · ĐH FPT ĐN · VKU
+    - referral
+  - Khác biệt bằng dự án và lộ trình, không chỉ lương
+    - đào tạo tiếng Nhật
+    - hỗ trợ thi Cloud/AWS/PMP
+    - review 2 lần/năm
+  - Fresher ba luồng: kỹ thuật, quy trình Nhật, tiếng Nhật
+    - 基本設計
+    - shadow 1–2 tháng
+  - BrSE là nút thắt, cần lộ trình dự bị
+    - ブリッジSE
+    - N3 trở lên
+  - Đo tuyển dụng bằng chất lượng hơn tốc độ
+    - time-to-fill
+    - % qua thử việc
+    - attrition 12 tháng đầu
+  - Kim tự tháp nhân sự có kiểm soát
+    - senior : middle : junior ≈ 1 : 2 : 3 (tham khảo)
+- Delivery center & chuyển giao dự án
+  - Chuyển giao bốn pha có exit criteria
+    - 引継ぎ
+    - KT → shadowing → reverse shadowing
+    - tự xử lý ≥ 80% task (tham khảo)
+  - Trấn an khách bằng kế hoạch và số liệu
+    - 安心
+    - chuyển phần rủi ro thấp trước
+  - Phân bổ dự án theo năng lực, rủi ro, chiến lược
+  - Chuẩn hóa process liên site
+    - template chung · audit chéo
+  - Mở rộng → trọn module → trọn dự án
+    - tránh chia theo layer
+  - Mỗi mảng kiến thức có ít nhất hai người
+    - bus factor ≥ 2
+    - 再発防止
+- Kinh tế dự án & chi nhánh
+  - P&L dự án và gross margin
+    - GM = (doanh thu − chi phí trực tiếp) / doanh thu
+  - Utilization khác billable rate
+    - billable 80–85% (tham khảo)
+    - 100% không phải tốt
+  - Bench: phòng, dùng, giới hạn
+    - bench 5–10% headcount (tham khảo)
+  - Chi phí ẩn ăn margin
+    - BrSE/comtor · onsite
+    - rework · chờ Q&A
+  - Margin thấp chỉ khi có lý do chiến lược
+    - điều kiện thoát · giới hạn lỗ
+  - Thưởng doanh thu không đổi bằng chất lượng
+    - 横展開 bài học dự án lỗ
+- Account management & tăng trưởng
+  - Mở rộng account dựa trên niềm tin tích lũy
+    - 信頼
+    - maintain → tính năng → hệ thống mới → DX
+  - Upsell tăng quy mô, cross-sell thêm dịch vụ
+  - Chuyển sang đội dài hạn khi việc liên tục
+    - 準委任 → ラボ型
+  - Đo hài lòng: khảo sát, chỉ số, hành vi
+    - NPS = %(9–10) − %(0–6)
+    - 問題ない chưa chắc là hài lòng
+  - POC chốt tiêu chí thành công trước
+    - 2–6 tuần (tham khảo)
+  - Từ vendor thành partner bằng upstream
+    - 要件定義
+    - account plan · 稟議 · 挨拶
+- Domain tài chính – ngân hàng Nhật
+  - Ba khối hệ thống ngân hàng
+    - 勘定系 · 情報系 · 対外系
+  - Batch đêm có cửa sổ cố định
+    - 夜間バッチ
+    - rerun · thứ tự job
+  - Bảo thủ vì giám sát và giá sự cố
+    - 金融庁 (FSA)
+    - FISC安全対策基準
+  - Migration: đối soát, rehearsal, go/no-go
+    - COBOL · chạy song song
+  - Dữ liệu thật không ra offshore
+    - mask · quyền tối thiểu
+    - không dán vào GenAI
+  - Offshore bắt đầu từ 情報系 và hệ thống vệ tinh
+- Domain bảo hiểm
+  - Nhân thọ dài hạn, phi nhân thọ ngắn hạn
+    - 生命保険 · 損害保険
+    - 第三分野
+  - Chuỗi nghiệp vụ lõi bảo hiểm
+    - 引受 · 契約管理 / 保全
+    - 保険料計算
+    - 保険金支払
+  - Kiểm thử số liệu: biên, làm tròn, so cũ–mới
+    - アクチュアリー
+  - Legacy: điều tra ảnh hưởng trước mọi thay đổi
+    - 影響調査
+  - Chứng từ in chính xác từng ký tự
+    - 帳票
+    - 和暦 (令和)
+  - Số hóa kênh bán theo bước nhỏ có chỉ số
+- Domain sản xuất
+  - 生産管理/ERP lập kế hoạch, MES điều hành xưởng
+    - MRP · traceability
+  - SAP: offshore làm interface, migration, test
+    - ECC → S/4HANA · mốc cuối 2027
+  - TPS định hình kỳ vọng với vendor
+    - トヨタ生産方式 · 自働化
+    - 見える化 · カイゼン
+    - なぜなぜ分析 · 現地現物
+  - Nói bằng chỉ số sản xuất, không bằng tính năng
+    - QCD
+    - OEE = khả dụng × hiệu suất × chất lượng
+  - Tôn trọng hiện trường, thử một dây chuyền trước
+    - 現場
+    - 品質管理
+  - AI kiểm ngoại quan ưu tiên tỉ lệ bỏ sót
+- Xu hướng thị trường Nhật & offshore
+  - Vách đá 2025 → hiện đại hóa legacy
+    - 2025年の崖
+    - 経済産業省 (METI) 2018
+    - ~12 nghìn tỷ yên/năm
+  - Nhật thiếu kỹ sư → đội dài hạn, upstream
+  - DX có ba mức
+    - デジタイゼーション
+    - デジタライゼーション
+    - DX
+  - GenAI: đo năng suất trước khi hứa giảm giá
+    - chính sách dùng AI được khách duyệt
+    - review code do AI sinh
+  - Yên yếu ép margin → đa thị trường, giá trị cao
+    - Hàn · Singapore
+  - Khách chuyển từ giá rẻ sang năng lực
+    - cloud · bảo mật · chứng chỉ
+- Tư duy chiến lược Senior PM
+  - Đóng góp ngoài dự án phải đo được
+    - process · pre-sales
+    - đào tạo · tài sản tái sử dụng
+  - Tầm nhìn 3 năm: tin cậy, tự chủ, trung tâm năng lực
+  - Sản phẩm riêng từ phần lặp lại, tôn trọng IP khách
+    - kiểm tra điều khoản sở hữu trí tuệ
+  - Thẻ điểm cân bằng bốn nhóm
+    - khách hàng · tài chính
+    - delivery · con người
+  - Đặt "sàn" dài hạn khi đánh đổi ngắn hạn
+  - Leader tầng giữa quyết định thành bại chi nhánh
+    - PM · tech lead · BrSE

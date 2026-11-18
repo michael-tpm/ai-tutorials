@@ -1,0 +1,127 @@
+## Base kỹ thuật cho PM
+- Kiến trúc & thiết kế hệ thống
+  - Hiểu đủ để hỏi đúng và chọn trade-off
+    - 方式設計
+    - 3 rủi ro kỹ thuật lớn nhất
+  - Mặc định modular monolith, microservices cần lý do thật
+    - scale khác nhau · release độc lập
+    - ADR ghi cái giá
+  - Batch phải xong trong batch window, rerun không trùng
+    - 夜間バッチ · ジョブネット · JP1
+    - dư ≥ 30% window (tham khảo)
+  - NFR chốt bằng con số + điều kiện đo
+    - 非機能要件 · 非機能要求グレード (IPA)
+    - 99.9% ≈ 8,8 giờ/năm · 99.99% ≈ 52 phút/năm
+  - Bất đồng kỹ thuật: cùng khung so sánh, PoC, ADR
+- API & tích hợp hệ thống
+  - Contract-first: OpenAPI là baseline, đổi có version
+    - mock server · v1/v2 song song
+  - Ủy quyền khác xác thực
+    - OAuth2 · OIDC · SSO/SAML · IdP
+  - File interface: bẫy bảng mã tính theo byte
+    - 固定長 · Shift_JIS/UTF-8/EBCDIC
+    - 全角 · 外字 · 和暦
+  - Chống trùng và chống lan lỗi
+    - idempotency key · timeout/retry/backoff · dead-letter queue
+  - Môi trường đối tác là mốc phụ thuộc trong kế hoạch
+    - ma trận interface · stub/mock · 報連相
+  - Challenge estimate bằng checklist câu hỏi kỹ thuật
+- Database & dữ liệu
+  - RDBMS cho tiền/hợp đồng, NoSQL cho key/scale
+    - ACID · eventual consistency
+  - Chậm: xem execution plan trước khi mua phần cứng
+    - index · N+1 · partition/archive
+  - Migration là dự án con từ ngày đầu
+    - データ移行 · profiling dữ liệu
+  - Rehearsal 2–3 lần, đối soát nhiều tầng
+    - 移行リハーサル · số bản ghi/tổng tiền/mẫu/báo cáo
+  - Rollback phải diễn tập, schema đổi kiểu expand–contract
+    - 切り戻し · Go/No-Go có giờ
+  - Không đưa dữ liệu thật về offshore
+    - giả lập → mask → test tại môi trường khách
+- Cloud
+  - Càng lên SaaS càng ít vận hành, càng phụ thuộc
+    - IaaS/PaaS/SaaS · 運用保守
+    - shared responsibility
+  - Dịch vụ lõi AWS để đọc sơ đồ, đọc hóa đơn
+    - EC2 · S3 · RDS · Lambda (≤ 15 phút) · VPC · IAM
+  - FinOps: ước tính, tag, alert, review hằng tháng
+    - Pricing Calculator · budget alert · NAT Gateway/log
+  - DR theo RPO/RTO khách chọn theo chi phí
+    - Multi-AZ · Tokyo + Osaka
+  - Khách tài chính ưa on-prem: hiểu lý do trước khi thuyết phục
+    - 閉域網 · chủ quyền dữ liệu · lộ trình hệ thống không lõi
+  - Lock-in chấp nhận có ý thức, ghi chi phí thoát
+- DevOps & release
+  - Quy tắc nhánh quan trọng hơn mô hình nhánh
+    - GitFlow vs trunk-based · デグレ
+  - CI/CD và IaC đưa vào sprint 0
+    - 構成管理 · Terraform/CloudFormation
+  - Chọn Kubernetes chỉ khi có người vận hành
+  - Môi trường tách bạch, quyền 本番 tối thiểu
+    - dev · 検証環境 · 本番
+  - Tiêu chí rollback chốt trước release
+    - 本番リリース手順書 · blue-green/canary · feature flag
+  - Đo pipeline theo ngữ cảnh release của khách
+    - DORA
+- Testing kỹ thuật & automation
+  - Tự động hóa đáy tháp, test tay cho nghiệp vụ
+    - UT/IT/ST/UAT · 単体テスト · 受入テスト
+  - Coverage là cờ báo, không phải KPI
+    - C0/C1 · assertion
+  - Test hiệu năng sớm, theo NFR đã chốt
+    - performance/load/stress · JMeter/k6/Gatling
+  - ROI automation tính bằng ngày công
+    - (tiết kiệm − viết − bảo trì) / đầu tư
+  - Hồi quy theo rủi ro, test data là task có owner
+    - 影響調査 · smoke + luồng chính
+- Bảo mật
+  - OWASP vào quy trình, không chỉ vào slide
+    - Broken Access Control · SAST · dependency scan
+  - Secret không nằm trong code; lộ là revoke ngay
+    - secret manager · pre-commit scan
+  - Least privilege, quyền 本番 tạm thời có log
+    - bastion/VPN · rà quyền hằng tháng
+  - Vendor là bên nhận ủy thác, khách phải giám sát
+    - 個人情報保護法 (APPI) · FISC 安全対策基準
+  - ISMS thể hiện ở vận hành hằng ngày
+    - phòng dev riêng · khóa USB · audit
+  - Sự cố lộ code: báo sớm, không che giấu
+    - 報連相 · 再発防止 · 横展開
+- Legacy modernization
+  - Nhu cầu modernization lớn từ cảnh báo 2025
+    - 2025年の崖 · DX Report METI 2018
+  - Mainframe: rủi ro tài liệu lệch code, thiếu người
+    - ホスト系 · COBOL/JCL · CRUD matrix
+  - Chọn chiến lược theo từng hệ thống
+    - rehost · replatform · refactor · rebuild
+  - "Giữ như cũ" phải chốt tiêu chí so sánh
+    - 現行踏襲 · cùng input so output
+  - Giảm rủi ro cutover bằng chạy song song, chuyển dần
+    - 並行稼働 · strangler fig vs big-bang
+  - Assessment trước, cam kết sau
+- Code quality & nợ kỹ thuật
+  - Review PR nhỏ, máy lo hình thức
+    - ソースレビュー · コーディング規約 · linter
+  - Quality Gate áp cho code mới
+    - SonarQube · code smell
+  - Nợ kỹ thuật phải đo được mới xin được trả
+    - 技術的負債 · thời gian thay đổi · số lần デグレ
+  - Trả nợ bằng capacity cố định, minh bạch phần lỗi vendor
+    - 10–20% sprint (tham khảo)
+  - Tiếp quản: báo cáo hiện trạng có số liệu tháng đầu
+  - Theo dõi EOL, đề xuất trước 6–12 tháng
+    - năm tài chính bắt đầu tháng 4
+- Vận hành, sự cố & công cụ
+  - Log, monitoring, alert có người nhận trước go-live
+    - correlation ID · mask dữ liệu
+  - SLA lỏng hơn SLO, dùng error budget để quyết release
+    - SLI · SLO · SLA
+  - RCA đi đến tầng quy trình, không đổ lỗi cá nhân
+    - timeline · 暫定対応 · 恒久対応
+  - Dùng công cụ khách chọn, một nguồn sự thật
+    - Redmine · Backlog · Excel WBS · 課題管理表
+  - GenAI: đo trong dự án, xin phép bằng văn bản
+    - gói doanh nghiệp · guideline · chặn công cụ cá nhân
+  - Giữ base kỹ thuật bằng thói quen có lịch
+    - đọc PR/ADR · lab AWS · chứng chỉ

@@ -1,0 +1,118 @@
+## Nguồn lực & phát triển đội ngũ
+- Cơ cấu team offshore cho dự án Nhật
+  - Vai trò rõ, chốt bằng RACI ngay kick-off
+    - PM · BrSE · Tech Lead · QA/QC · Comtor
+    - mỗi hoạt động đúng 1 A
+  - Tỉ lệ tham khảo, chỉnh theo số liệu dự án
+    - BrSE:Dev 1:5–8
+    - QA:Dev 1:3–5
+  - Span of control 6–8, vượt thì chia sub-team
+    - leader sub-team · daily ≤ 15 phút
+  - Đa dự án: phân bổ theo rủi ro, không chia đều
+    - dashboard chung · member tối đa 2 dự án
+  - Ramp-up theo phase, không đổ người sớm
+    - resource histogram · QA vào trước test 2–3 tuần
+  - Tech Lead quyết cách làm, PM quyết phạm vi–thời gian–chi phí
+    - ma trận quyền · 要件定義 cần BrSE
+- Team building & gắn kết
+  - Tuckman: đi từ chỉ dẫn sang ủy quyền
+    - Forming → Storming → Norming → Performing → Adjourning
+  - Luật chơi do team tự đặt
+    - working agreement < 10 điều
+  - Nghi thức có mục đích
+    - daily · demo · 振り返り · ăn mừng milestone
+  - Psychological safety là nền của báo cáo sớm
+    - blameless · 報連相
+  - Đa địa điểm: một nguồn thông tin, ghép cặp xuyên site
+    - HN–ĐN–onsite · luân chuyển onsite
+  - Kết thúc dự án: tổng kết và ghi nhận
+    - 横展開 · cảm ơn gửi cả line manager
+- Tạo động lực & truyền lửa
+  - Tiền là nền, động lực nội tại là động cơ
+    - Herzberg · Pink: autonomy–mastery–purpose
+  - Giao kết quả + ràng buộc, không giao từng bước
+    - lệch > 1 ngày phải báo
+  - Ghi nhận kịp thời, cụ thể, công khai đúng mức
+  - Maintain nhàm: mục tiêu cải tiến đo được, xoay vai
+    - 改善 · 10–15% thời gian refactor
+  - Dự án đỏ: nói thật, mốc nhỏ thắng được, bảo vệ team
+  - Đo tinh thần bằng xu hướng
+    - pulse survey · giảm 2 kỳ liên tiếp = trigger
+- Mentoring & coaching
+  - 1-on-1 là buổi của member
+    - 30 phút / 2 tuần · không hỏi tiến độ
+  - IDP gắn chu kỳ review 6 tháng
+    - 70-20-10 · đào tạo tiếng Nhật, thi Cloud/AWS/PMP
+  - Coaching bằng câu hỏi, mentoring khi chưa có nền
+    - GROW: Goal–Reality–Options–Will
+  - Đào tạo người kế cận BrSE và sub-leader
+    - shadow → làm có duyệt → tự phụ trách
+    - 確認 · JLPT N2
+  - Biến 指示待ち thành chủ động
+    - giải thích "vì sao" · mang vấn đề kèm đề xuất
+  - Chia sẻ kiến thức vào tiêu chí đánh giá
+    - 属人化 · review chéo · pair
+- Đánh giá hiệu suất
+  - Không bất ngờ: nhật ký hiệu suất hằng tháng
+    - tự đánh giá · 360° · check-in giữa kỳ
+  - KPI 3–5 mỗi vai + định tính 30–40%
+    - Dev: đúng hạn, mật độ bug
+    - QA: bug lọt · BrSE: Q&A hiểu sai
+  - KPI để đánh giá, OKR để thay đổi
+  - Tránh bias bằng bằng chứng và calibration
+    - recency · halo/horn · leniency · similar-to-me
+  - Feedback khó theo SBI
+    - Situation–Behavior–Impact
+  - Thưởng dự án theo tiêu chí công bố trước
+- Low performer & kỷ luật
+  - Chẩn đoán trước khi xử lý
+    - năng lực · động lực · hoàn cảnh
+  - PIP để giúp đạt, không phải thủ tục
+    - 2–4 mục tiêu đo được · 1–3 tháng · cùng HR
+  - Chuyển vai trò trước khi cho rời
+  - Toxic high performer: hành vi cũng là hiệu suất
+  - Sự cố do member: khắc phục trước, blameless sau
+    - 再発防止 · 横展開
+  - Cho nghỉ việc: PM cấp bằng chứng, HR xử lý
+    - quy chế công ty · Bộ luật Lao động
+- Xung đột nội bộ
+  - Chọn phong cách theo tình huống
+    - Thomas–Kilmann: Competing · Collaborating · Compromising · Avoiding · Accommodating
+  - Bug hay spec: quay về nguồn, BrSE hỏi khách
+    - 設計書 · bug triage
+  - Dev–QA cùng mục tiêu không lọt bug
+    - KPI chung · QA vào từ review yêu cầu
+  - Hai site đổ lỗi: dùng dữ liệu và cơ chế
+    - owner tích hợp · contract API · CI hằng ngày
+  - PM làm trọng tài khi tắc việc hoặc chạm cam kết
+    - disagree and commit
+- OT, burnout & sức khỏe team
+  - OT là triệu chứng, cần kế hoạch và số đo
+    - cảnh báo > 20 giờ/tháng · Bộ luật Lao động
+  - Phát hiện burnout từ dữ liệu + 1-on-1
+    - bug tăng bất thường · commit nửa đêm
+  - 年度末 trùng Tết: capacity plan từ quý trước
+  - Quyền từ chối OT, kế hoạch không dựa vào OT
+  - PM là lớp đệm: yêu cầu gấp đi qua một kênh
+  - Phục hồi sau nước rút
+    - nghỉ bù · sprint nhẹ · retro nguyên nhân OT
+- Retention & quản lý tri thức
+  - Người ta rời quản lý, không chỉ rời công ty
+  - Stay interview phòng ngừa, exit interview tìm xu hướng
+  - Counter offer chỉ khi lý do thật là tiền
+    - tiền lệ · bất công nội bộ
+  - Mỗi module quan trọng ≥ 2 người tự làm được
+    - bus factor · skill matrix · 属人化
+  - Bàn giao có reverse shadowing
+    - 引き継ぎ · 引き継ぎ書
+  - Tài liệu "sống" nằm trong Definition of Done
+- Tuyển, onboard cấp dự án & phong cách lãnh đạo
+  - Tuyển dev: cẩn thận và 報連相 hơn tốc độ
+  - Tuyển BrSE: test tìm điểm mơ hồ trong spec
+  - Onboarding 2 tuần: buddy, task tăng dần
+  - Ủy quyền: giao việc phải giao quyền
+    - 4 mức ủy quyền · việc không ủy quyền
+  - Situational leadership theo người và theo việc
+    - Directing · Coaching · Supporting · Delegating
+  - Servant leadership + quyết đoán khi khủng hoảng
+    - dual career ladder

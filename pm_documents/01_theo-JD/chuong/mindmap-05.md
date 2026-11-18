@@ -1,0 +1,133 @@
+## Estimation, proposal & hợp đồng
+- Đơn vị effort & năng suất
+  - Chốt quy đổi giờ với khách từ đầu
+    - 1人日 = 8h · 1人月 = 20人日 = 160h (tham khảo)
+    - ghi vào điều kiện báo giá
+  - Effort ≠ thời gian: thêm người không rút lịch tuyến tính
+    - Brooks's law
+    - kênh giao tiếp n(n−1)/2
+  - Tách effort, duration, cost; tách theo vai trò
+    - 工数 · 体制
+    - PM / BrSE / dev / QA / comtor
+  - Offshore: đơn giá thấp nhưng có overhead cầu nối
+    - Q&A, dịch, review chéo
+  - Lịch nghỉ hai nước và người mới đổi lịch, không đổi effort
+    - Tết · GW · お盆 · năm tài chính tháng 3
+    - ramp-up 50–70% tháng đầu (tham khảo)
+- Phương pháp estimate
+  - Chọn theo giai đoạn, luôn kiểm chéo 2 cách
+    - analogous → parametric → WBS bottom-up
+    - lệch > 20% thì tìm nguyên nhân
+  - FP đo chức năng, độc lập ngôn ngữ
+    - IFPUG: ILF · EIF · EI · EO · EQ
+    - đếm nhanh kiểu NESMA cho 概算
+  - 3-point/PERT lộ độ bất định
+    - E = (O + 4M + P)/6
+    - σ ≈ (P − O)/6
+  - Delphi ẩn danh lộ giả định ngầm
+    - Wideband Delphi · expert judgment
+  - Dữ liệu lịch sử cùng định nghĩa đơn vị
+    - actual + % lệch + nguyên nhân
+  - Phi chức năng phải có checklist riêng
+    - 非機能要件 · 非機能要求グレード (IPA)
+- Phân bổ effort theo 工程
+  - Tỷ lệ tham khảo để lọc bất hợp lý
+    - 要件定義 10–15% · 製造・単体 25–35%
+    - 結合 ~15% · 総合 10–15%
+  - Ghi rõ ranh giới công đoạn vendor nhận
+    - 詳細設計 → 結合テスト (phổ biến)
+    - hỗ trợ 受入テスト tính dòng riêng
+  - Overhead tính bottom-up rồi so %
+    - PM 10–15% · QA 10–20% · BrSE 10–20% (tham khảo)
+  - Tài liệu tiếng Nhật, Q&A, evidence là effort thật
+    - 設計書 · QA表 · エビデンス
+  - Chi phí ngoài nhân công và bảo trì
+    - 支給 · 保守運用 · SLA
+- Buffer, rủi ro & 前提条件
+  - Contingency gắn rủi ro có tên, không cộng % mù
+    - known vs unknown unknowns
+    - 10–15% / 20–30% (tham khảo)
+  - 前提条件 kiểm chứng được = căn cứ 追加見積
+    - có ngày, số, phiên bản tài liệu
+  - 対象外 liệt kê cụ thể
+    - migration · UAT · vận hành · license
+  - 概算 là range, có hạn hiệu lực
+    - 概算見積 vs 詳細見積 · 有効期限 · 稟議
+  - Chia giai đoạn để giảm bất định
+    - 多段階見積 · mẫu hợp đồng METI/IPA
+  - Rủi ro ngoài kiểm soát → điều khoản
+    - 変更管理 · tỷ giá · đầu vào của khách
+- Bảo vệ estimate
+  - Giảm giá thì phải giảm việc
+    - phạm vi · điều kiện · loại hợp đồng · lịch
+  - Cone of uncertainty giải thích vì sao cần range
+    - 0.25x–4x → 0.67x–1.5x (McConnell)
+  - Estimate ≠ target ≠ commitment
+    - P80 cho 請負 · tách estimate và price
+  - So đối thủ trên cùng phạm vi
+    - 見積根拠 · cùng 前提条件/対象外
+  - Chống bias bằng quy trình
+    - anchoring · planning fallacy · checklist
+- Proposal & 見積書 tiếng Nhật
+  - Đi từ vấn đề khách đến giải pháp
+    - 背景・課題 → 提案概要 → 対応範囲 → 体制図 → 見積
+  - 1 slide 1 message
+    - メッセージライン · 体言止め
+  - Chất lượng tiếng Nhật kiểm bằng quy trình
+    - 表記ゆれ · 用語集 · font Nhật
+  - Cho khách lựa chọn, dễ trình duyệt nội bộ
+    - 松竹梅 · 稟議
+  - 見積書 khớp từng yên với 提案書
+    - 単価 · 納期 · 支払条件 · 備考
+  - 実績 ẩn danh theo NDA
+    - 大手保険会社様
+- RFP, コンペ & プレゼン
+  - Go/No-Go trước khi viết proposal
+    - năng lực · độ rõ yêu cầu · khả năng thắng
+  - Q&A kèm giả định đề xuất
+    - 〜と想定していますが
+  - Thắng bằng giảm rủi ro, không phá giá
+    - 評価基準 · POC · 実績 cùng ngành
+  - Không cam kết tại chỗ
+    - 持ち帰って検討 · trả lời đúng hạn
+  - POC có tiêu chí và nên tính phí
+    - 概念実証 · 準委任 · timebox
+  - Thua thì học
+    - 失注理由
+- Hợp đồng kiểu Nhật
+  - 請負 cam kết kết quả, 準委任 cam kết công sức
+    - 成果物 · 善管注意義務
+    - 履行割合型 vs 成果完成型
+  - Quyền chỉ huy luôn ở vendor
+    - 派遣 · 指揮命令 · 偽装請負
+  - Mô hình team dài hạn
+    - ラボ型開発 · SES · 精算幅 140–180h
+  - 検収 có tiêu chí và hạn
+    - 検収書 · みなし検収 · 分割検収
+  - Trách nhiệm sau giao từ luật 2020
+    - 契約不適合責任 · 追完 · thỏa thuận hạn
+  - Khung pháp lý và bảo mật
+    - 基本契約 + 個別契約 · 著作権 · NDA
+- Đơn giá & đàm phán
+  - Đơn giá từ chi phí thật
+    - chi phí ÷ utilization + rủi ro + margin
+    - bench cost
+  - Discount phải đổi lấy điều kiện
+    - volume · cam kết dài hạn
+  - Yên yếu: chia sẻ rủi ro, không chỉ giảm giá
+    - cơ cấu nhân sự · điều khoản tỷ giá
+  - Thay đổi có quy trình
+    - 仕様変更 · 追加見積 · bug vs thay đổi
+  - Hợp đồng phải khớp vận hành
+    - 一括請負 · đơn giá × số lượng · margin forecast
+- Tình huống senior
+  - Migration: kiểm kê trước, test so sánh là phần đắt
+    - 棚卸し · 現新比較
+  - AI: chia phần cam kết được và không
+    - 努力目標 · PoC 準委任
+  - Không spec thì không ký 請負 trọn gói
+    - 要件定義 準委任 trước
+  - Lỗ do estimate sai: nhận trách nhiệm, sửa quy trình
+    - 報連相 · 再発防止 · 横展開
+  - Team mới: dự án đầu là nguồn dữ liệu
+    - hệ số ramp-up · pilot
