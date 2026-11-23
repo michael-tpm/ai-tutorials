@@ -43,6 +43,13 @@
 
 Ba trang 03, 04, 05 liên kết với nhau: bấm ký hiệu tài liệu hoặc chỉ số ở trang này sẽ mở đúng mục ở trang kia (giữ nguyên cấu trúc thư mục khi tải về).
 
+## 1000 tình huống PM · Waterfall kiểu Nhật (`06_1000-tinh-huong-PM/`)
+
+1000 tình huống có đáp án theo **PMP** và **kinh nghiệm thực tế với khách Nhật** (tài chính, bảo hiểm, dự án migration), 8 chương × 125 câu: vòng đời Waterfall (khảo sát, 方式設計 → BD/DD → 製造 → UT/IT/ST → UAT → release, bàn giao vận hành) · lịch và gate PoC/pilot/cutover · change request và re-estimate · rủi ro migration · chất lượng deliverable và bảo mật ngành bảo hiểm · theo dõi và báo cáo · quy trình Waterfall Nhật, Q&A, quản lý chất lượng bằng số liệu · lập kế hoạch, rủi ro, thay đổi, giải quyết vấn đề. Mỗi câu: đáp án 4 nhịp + 1 dòng PMP (quy trình, công cụ áp dụng) + khoảng một nửa có dòng kinh nghiệm Nhật.
+
+- **Đọc trên GitHub:** [1000 tình huống](06_1000-tinh-huong-PM/1000-tinh-huong-PM.md) · [từng chương](06_1000-tinh-huong-PM/chuong/)
+- **Bản tương tác:** `06_1000-tinh-huong-PM/on-tap-1000-tinh-huong.html` (tìm không dấu, che đáp án tự kiểm, đánh dấu đã thuộc)
+
 ## Cấu trúc
 
 ```
@@ -61,10 +68,14 @@ pm_documents/
 │   ├── bang-tra-chi-so-PM.md          bảng tra 64 chỉ số theo 9 câu hỏi
 │   ├── mindmap-chi-so-PM.md
 │   └── bang-chi-so-PM.html            trang tương tác + máy tính
-└── 05_tinh-huong-PM/
-    ├── tinh-huong-PM.md               45 tình huống, đáp án gập lại
-    ├── mindmap-tinh-huong-PM.md
-    └── tinh-huong-PM.html             trang luyện tình huống
+├── 05_tinh-huong-PM/
+│   ├── tinh-huong-PM.md               45 tình huống, đáp án gập lại
+│   ├── mindmap-tinh-huong-PM.md
+│   └── tinh-huong-PM.html             trang luyện tình huống
+└── 06_1000-tinh-huong-PM/
+    ├── 1000-tinh-huong-PM.md          bản đầy đủ (khung trả lời + mục lục + 8 chương)
+    ├── on-tap-1000-tinh-huong.html    trang ôn tập
+    └── chuong/                        chuong-01…08 (đọc lẻ trên GitHub)
 ```
 
 ## Cách ôn
