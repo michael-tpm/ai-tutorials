@@ -43,12 +43,15 @@
 
 Ba trang 03, 04, 05 liên kết với nhau: bấm ký hiệu tài liệu hoặc chỉ số ở trang này sẽ mở đúng mục ở trang kia (giữ nguyên cấu trúc thư mục khi tải về).
 
-## 1000 tình huống PM · Waterfall kiểu Nhật (`06_1000-tinh-huong-PM/`)
+## Quy trình chuẩn + 1125 tình huống PM · Waterfall cho khách Nhật (`06_1000-tinh-huong-PM/`)
 
-1000 tình huống có đáp án theo **PMP** và **kinh nghiệm thực tế với khách Nhật** (tài chính, bảo hiểm, dự án migration), 8 chương × 125 câu: vòng đời Waterfall (khảo sát, 方式設計 → BD/DD → 製造 → UT/IT/ST → UAT → release, bàn giao vận hành) · lịch và gate PoC/pilot/cutover · change request và re-estimate · rủi ro migration · chất lượng deliverable và bảo mật ngành bảo hiểm · theo dõi và báo cáo · quy trình Waterfall Nhật, Q&A, quản lý chất lượng bằng số liệu · lập kế hoạch, rủi ro, thay đổi, giải quyết vấn đề. Mỗi câu: đáp án 4 nhịp + 1 dòng PMP (quy trình, công cụ áp dụng) + khoảng một nửa có dòng kinh nghiệm Nhật.
+Toàn bộ viết bằng **tiếng Việt** (chỉ giữ thuật ngữ tiếng Anh phổ biến như UT, IT, ST, UAT, Basic Design, CR, cutover).
 
-- **Đọc trên GitHub:** [1000 tình huống](06_1000-tinh-huong-PM/1000-tinh-huong-PM.md) · [từng chương](06_1000-tinh-huong-PM/chuong/)
-- **Bản tương tác:** `06_1000-tinh-huong-PM/on-tap-1000-tinh-huong.html` (tìm không dấu, che đáp án tự kiểm, đánh dấu đã thuộc)
+- **Quy trình chuẩn** từ nhận yêu cầu (RFP) đến đóng dự án: 16 giai đoạn theo 5 nhóm quy trình PMP, 7 team (khách hàng, sales/lãnh đạo/PMO, PM, BrSE/BA, Dev, QA, hạ tầng). Mỗi giai đoạn có đầu vào, **đầu ra của từng team**, **vai trò PM**, **gate** (tiêu chí + người duyệt) và bẫy hay gặp. Có flowchart và sơ đồ tuần tự "ai gửi gì cho ai".
+- **1125 tình huống** có đáp án theo **PMP** và **kinh nghiệm thực tế với khách Nhật** (tài chính, bảo hiểm, migration), 9 chương: vòng đời Waterfall · lịch và gate PoC/pilot/cutover · change request và re-estimate · rủi ro migration · chất lượng deliverable và bảo mật ngành bảo hiểm · theo dõi và báo cáo · quy trình Waterfall Nhật, Q&A, quản lý chất lượng bằng số liệu · lập kế hoạch, rủi ro, thay đổi, giải quyết vấn đề · **chương 9: đầu ra từng giai đoạn, từng team và vai trò PM**. Mỗi câu: đáp án 4 nhịp + 1 dòng PMP + khoảng một nửa có dòng kinh nghiệm với khách Nhật.
+
+- **Đọc trên GitHub:** [quy trình chuẩn (flowchart + sequence)](06_1000-tinh-huong-PM/quy-trinh-chuan.md) · [1125 tình huống](06_1000-tinh-huong-PM/1000-tinh-huong-PM.md) · [từng chương](06_1000-tinh-huong-PM/chuong/)
+- **Bản tương tác:** `06_1000-tinh-huong-PM/on-tap-1000-tinh-huong.html`: tab **Quy trình chuẩn** (luồng tổng bấm từng giai đoạn, bảng đầu ra theo team, sơ đồ ai gửi gì cho ai) và tab **Tình huống** (tìm không dấu, che đáp án tự kiểm, đánh dấu đã thuộc)
 
 ## Cấu trúc
 
@@ -73,9 +76,10 @@ pm_documents/
 │   ├── mindmap-tinh-huong-PM.md
 │   └── tinh-huong-PM.html             trang luyện tình huống
 └── 06_1000-tinh-huong-PM/
-    ├── 1000-tinh-huong-PM.md          bản đầy đủ (khung trả lời + mục lục + 8 chương)
-    ├── on-tap-1000-tinh-huong.html    trang ôn tập
-    └── chuong/                        chuong-01…08 (đọc lẻ trên GitHub)
+    ├── quy-trinh-chuan.md             16 giai đoạn × 7 team: flowchart, sequence, đầu ra, vai trò PM, gate
+    ├── 1000-tinh-huong-PM.md          bản đầy đủ (khung trả lời + mục lục + 9 chương, 1125 câu)
+    ├── on-tap-1000-tinh-huong.html    trang tương tác: sơ đồ quy trình + ôn tình huống
+    └── chuong/                        chuong-01…09 (đọc lẻ trên GitHub)
 ```
 
 ## Cách ôn
